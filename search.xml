@@ -8,14 +8,14 @@
   <entry>
     <title><![CDATA[test-demo]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F01%2F30%2Ftest-demo%2F</url>
-    <content type="text"><![CDATA[Test demo折腾了三五天，零基础的我，终于可以测试自己博客了 编译环境：（Windows 10 操作系统） Git version：2.20.1 Node version：10.15.0 模板Next version：5.1.4 Markdown编辑器 version：0.9.64]]></content>
+    <content type="text"><![CDATA[Hexo博客框架下，模板的选择与主题优化折腾了两三天，零基础的我，终于找到一个喜欢的模板，并做好了优化 编译环境：（Windows 10 操作系统） Git version：2.20.1 Node version：10.15.0 模板Next version：5.1.4 Markdown编辑器 version：0.9.64 关于利用GithubPages和Hexo搭建个人独立博客，和下载Hexo主题模板的教程，可以查阅 ，有非常简单易懂的教程 Next模板主题优化选择SchemeNext模板内置四种不同的主题，可以自定义开启，参考文档： 选择Scheme 设置语言参考文档：设置语言 如果你想设置多种语言，可以参考以下指令： 1234language: - zh-Hans - en - zh-hk .yml 文件修改是需要注意：每一个值的冒号后面都有一个半角空格！ 未生效的写法：title:Darer‘Blog 能生效的写法：title:[空格]Darer‘Blog 设置菜单参考文档：设置菜单]]></content>
       <categories>
-        <category>独立博客</category>
+        <category>小白学习</category>
       </categories>
       <tags>
-        <tag>随想</tag>
-        <tag>test</tag>
-        <tag>demo</tag>
+        <tag>搭建博客</tag>
+        <tag>Hexo</tag>
+        <tag>Next模板</tag>
       </tags>
   </entry>
 </search>
