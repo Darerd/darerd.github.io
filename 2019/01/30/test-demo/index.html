@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next pisces use-motion" lang="zh-Hans,en,zh-hk,default">
+<html class="theme-next pisces" lang="zh-Hans,en,zh-hk,default">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -166,7 +164,7 @@
     sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -396,7 +394,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-30T23:05:13+08:00">
+                2019-01-30
+              </time>
             
           </span>
 
@@ -494,6 +504,35 @@
 	
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Darer 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Darer 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -652,26 +691,32 @@
                 
                   <span class="links-of-author-item">
                     <a href="https://github.com/Darerd" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                      GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.linkedin.com/in/yuhui-dai-877295178/" target="_blank" title="Linkedin">
-                      
-                        <i class="fa fa-fw fa-linkedin"></i>Linkedin</a>
+                      Linkedin</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://blog.csdn.net/weixin_44441012" target="_blank" title="CSDN">
-                      
-                        <i class="fa fa-fw fa-CSDN"></i>CSDN</a>
+                      CSDN</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.zhihu.com/people/darer-74/activities" target="_blank" title="知乎">
-                      
-                        <i class="fa fa-fw fa-zhihu"></i>知乎</a>
+                      知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.woshipm.com/u/776589" target="_blank" title="产品经理">
+                      产品经理</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.pmcaff.com/user/profile/XxBaW0GALM" target="_blank" title="PMcaff">
+                      PMcaff</a>
                   </span>
                 
             </div>
@@ -690,7 +735,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://blog.csdn.net/weixin_44441012" title="Darer'CSDN" target="_blank">Darer'CSDN</a>
+                    <a href="https://home.ctfile.com/#item-files" title="城通网盘" target="_blank">城通网盘</a>
                   </li>
                 
               </ul>
@@ -1297,10 +1342,6 @@
   
 
   
-
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script> 
 
 
 </body>
