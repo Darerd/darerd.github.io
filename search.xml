@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F01%2F30%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[test-demo]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F01%2F30%2Ftest-demo%2F</url>
+    <content type="text"><![CDATA[Test demo折腾了三五天，零基础的我，终于可以测试自己博客了 编译环境：（Windows 10 操作系统） Git version：2.20.1 Node version：10.15.0 模板Next version：5.1.4 Markdown编辑器 version：0.9.64]]></content>
+      <categories>
+        <category>独立博客</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+        <tag>test</tag>
+        <tag>demo</tag>
+      </tags>
+  </entry>
+</search>
