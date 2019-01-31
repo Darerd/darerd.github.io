@@ -452,17 +452,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/darerd.github.io/2019/01/30/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -646,44 +644,18 @@
       
         
           
-            <h2 id="Hexo博客框架下，模板的选择与主题优化"><a href="#Hexo博客框架下，模板的选择与主题优化" class="headerlink" title="Hexo博客框架下，模板的选择与主题优化"></a>Hexo博客框架下，模板的选择与主题优化</h2><p>折腾了两三天，零基础的我，终于找到一个喜欢的模板，并做好了优化</p>
-<hr>
-<p>编译环境：（Windows 10 操作系统）</p>
-<p>Git                   version：2.20.1                 Node    version：10.15.0</p>
-<p>模板Next    version：5.1.4                Markdown编辑器    version：0.9.64</p>
-<hr>
-<blockquote>
-<p>关于利用GithubPages和Hexo搭建个人独立博客，和下载Hexo主题模板的教程，可以<a href="https://blog.csdn.net/weixin_44441012/article/details/86685251" target="_blank" rel="noopener">查阅</a> ，有非常简单易懂的教程</p>
-</blockquote>
-<hr>
-<h3 id="Next模板主题优化"><a href="#Next模板主题优化" class="headerlink" title="Next模板主题优化"></a>Next模板主题优化</h3><h4 id="选择Scheme"><a href="#选择Scheme" class="headerlink" title="选择Scheme"></a>选择Scheme</h4><p>Next模板内置四种不同的主题，可以自定义开启，参考文档：</p>
-<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">选择Scheme</a></p>
-<h4 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置语言</a></p>
-<p>如果你想设置多种语言，可以参考以下指令：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> </span><br><span class="line"><span class="bullet"> -</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="bullet"> -</span> <span class="string">en</span> </span><br><span class="line"><span class="bullet"> -</span> <span class="string">zh-hk</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>.yml 文件修改是需要注意：每一个值的冒号后面都有一个半角空格！</p>
-<ul>
-<li>未生效的写法：title:Darer‘Blog</li>
-<li>能生效的写法：title:[空格]Darer‘Blog</li>
-</ul>
-</blockquote>
-<h4 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置菜单</a></p>
-<p>补充说明：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
-<p>以上设置 菜单栏 的指令 也决定了 菜单栏各项菜单的顺序，以上面的指令为例，顺序依次为：主页、标签、目录、归档、关于</p>
-<h4 id="设置侧栏"><a href="#设置侧栏" class="headerlink" title="设置侧栏"></a>设置侧栏</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置侧栏</a></p>
-<p>补充说明：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sidebar offset from top menubar in pixels (only for Pisces | Gemini).</span></span><br><span class="line"><span class="comment">###侧栏与顶部菜单栏的 空隙距离</span></span><br><span class="line"><span class="attr">  offset:</span> <span class="number">12</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.(only for Pisces | Gemini).</span></span><br><span class="line">  <span class="comment">### 侧边栏加入一个 回到顶部 按钮</span></span><br><span class="line"><span class="attr">  b2t:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  <span class="comment">## 侧边栏加入一个 阅读进度 按钮</span></span><br><span class="line"><span class="attr">  scrollpercent:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Enable sidebar on narrow view (only for Muse | Mist).</span></span><br><span class="line">  <span class="comment">##适配 小窗口</span></span><br><span class="line"><span class="attr">  onmobile:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置头像"><a href="#设置头像" class="headerlink" title="设置头像"></a>设置头像</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置头像</a></p>
-<h4 id="设置作者昵称"><a href="#设置作者昵称" class="headerlink" title="设置作者昵称"></a>设置作者昵称</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置作者昵称</a></p>
-<h4 id="博客描述"><a href="#博客描述" class="headerlink" title="博客描述"></a>博客描述</h4><p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">博客描述</a></p>
-<h4 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h4><p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">设置字体</a></p>
-<h4 id="设置代码高亮"><a href="#设置代码高亮" class="headerlink" title="设置代码高亮"></a>设置代码高亮</h4><p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">设置代码高亮</a></p>
-<h4 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h4><h5 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h5><p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">社交链接</a></p>
-<h5 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h5><p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">友情链接</a></p>
+          Hexo博客框架下，模板的选择与主题优化折腾了两三天，零基础的我，终于找到一个喜欢的模板，并做好了优化
 
-          
+编译环境：（Windows 10 操作系统）
+Git                   version：2.20.1                 Node    version：10.15
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/darerd.github.io/2019/01/30/test-demo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
