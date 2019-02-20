@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LaTex:参考文献引用的方法]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F20%2FLaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[LaTex排版时，引入参考文献的方法 引入参考文献主要分为两种： 不使用BibTex 使用BibTex 这里我们主要介绍更为复杂的第二种：==使用BibTex引入参考文献== 利用==BibTex==的方法引入文献： 分为以下四步： 用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用 用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以） 再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对 最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关） 如果你采用的是==TexStudio==作为编译器，具体的操作方法如下： 按F6编译写好的 .tex 文件 按F8编译生成的 .aux 文件 按F6编译写好的 .tex 文件 按F6编译写好的 .tex 文件 以上就是使用LaTex排版时，遇到的引入参考文献的解决方法]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>LaTex系列</category>
+      </categories>
+      <tags>
+        <tag>入门教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown语法基本编辑指南]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F20%2FMarkdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E6%9C%AC%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[Markdown语法基本编辑指南 Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog 本指南所用Markdown编辑器软件:Typora 0.9.60 Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉使用。 Markdown语法 突出显示 12==我是高亮== （默认为黄色)`我是标记` 字体修饰 1234**加粗***斜体*&lt;u&gt;下划线&lt;/u&gt;~~删除线~~ 自动编号 1[TOC] 硬换行符 123&lt;br/&gt;shift+enter双击space键，右侧会出现一个灰色的向下箭头 字体颜色、字号、大小 1234&lt;font color=red&gt;我是红色&lt;/font&gt;&lt;font face=黑体&gt;我是黑体&lt;/font&gt;&lt;font size=5&gt;我是5号字体&lt;/font&gt;&lt;font size=5 color=red face=黑体&gt;红色5号黑体字&lt;/font&gt; 上下标 12H^2^H~2~O 插入表情 1:happy: 引用 1&gt; 水平分割线 12---*** 数学表达式 12使用$$符号包裹的Tex命令右键&gt;插入&gt;公式 标注 12这是一个注释[^注释][^注释]： 这是一个注释 插入图片(默认为 ==居中==) 12右键&gt;插入&gt;图像可以直接从“剪贴板”复制过来 调整图片尺寸 12&lt;img src='图片网址或者图片文件地址' style='width:300px;height:100 px'/&gt;&lt;img src='图片网址或者图片文件地址' style='zoom:50%'/&gt; 插入视频 1将视频文件拖放到Typora中，Typora会自动插入视频 HTML常用语法 居中 1&lt;center&gt;居中&lt;/center&gt; 高亮（默认为黄色） 1&lt;mark&gt;高亮&lt;/mark&gt; 字体修饰 1234&lt;b&gt;加粗&lt;/b&gt;&lt;i&gt;斜体&lt;/i&gt;&lt;u&gt;下划线&lt;/u&gt;&lt;s&gt;删除线&lt;/s&gt; 上下标 12&lt; SUP &gt; I’m feeling high. &lt;/ SUP &gt; &lt; SUB &gt; I’m feeling low. &lt;/ SUB &gt;]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Markdown系列</category>
+      </categories>
+      <tags>
+        <tag>入门教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown:从0到1入门]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F20%2FMarkdown-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[Markdown:从0到1入门 [TOC] 写在前面的话： 博主于2019年1月4号开始接触 Markdown语言，此前从未听说过；而且也非计算机背景。 所以本文非常适合新手==从0到1入门== 0.第零步 认识 Markdown 语言： 一篇详细的关于Markdown的介绍 Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog 1.第一步到这一步，我们知道Markdown是一种编译语言，算是HTML的一个子集，主要作用是让你专注于写作，“易读”、“易写”、“易记”。​ 既然是一种语言，那就需要能够==编辑它和翻译它的工具==—Markdown编辑器​ 我试了很多编辑器，如：小书匠、Bookpad、网易云笔记、简书，用来用去最后最爱的还是Typora。​ 不过Typora和前面介绍的这些不太一样，它不支持左右分屏预览，而是所写及所得(卖个关子，用了你就清楚啦)。==我不建议新手从Typora入手学Markdown，它的预览模式对新手很不友好；建议新手从网易云笔记或者简书的编辑器(线上编辑器，不需要下载软件，学习成本低)入手学习==。 到了这一步，你了解了Markdown语言，也知道需要编译工具，但是这里我必须要告诉你一个事实:==markdown 没有统一的规范，每家编辑器都想实现特殊语法让自己的产品更好用，所以不同编译平台会有一篇不兼容== 一篇详细的介绍Markdown编辑器的帖子 2. 第二步如果你看到这里，恭喜你，终于可以开始学Markdown语法了。 这里就先推荐我自己写的一篇Markdown语法基本入门的帖子​ 这里附上#Typora编辑器基本编辑指南#的md文件，供学习。 下载地址 种草几个不错的帖子： LaTex开源小屋 帖子2 网上有很多资源，自己取挖掘啦 3. 第三步到了这一步，你应该已经用线上编译器做过一些练习和学习了，如果你还很兴趣，就可以下载一些编译器软件了，强烈推荐Typora Typora官网 但是每一款编译器都有其优缺点，下面是一个关于Typora不足的讨论，可以看一下。偷偷告诉你，这个知乎问答的提问者就是我啊，可以点一下关注 讨论的链接 加油！坚持就是胜利！]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Markdown系列</category>
+      </categories>
+      <tags>
+        <tag>入门教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[LaTex:从0到1入门]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F20%2FLaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[写在前面的话： 博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。 所以本文非常适合新手==从0到1入门== 第零步 认识 LaTex ： 一篇详细的关于LaTex的介绍 LaTex适合文章等的排版，让你专注于结构和内容 关于和 word对比，孰优孰劣的问题 word更易上手，是一种文档处理软件 LaTex上手更难，是一种排版工具 LaTex 和 word 优劣的讨论帖 第一步到这一步，我们知道LaTex是一种电子排版系统，是公认的数学公式排得最好的系统，主要作用是让你专注于写作，得到高质量的排版输出。​ 学习LaTex，那就需要能够==编辑它和翻译它的工具==—LaTex编译器(小编自己起的名字:laughing: )​ 我试了很多编译器，如：Lyx、TeXworks、WinEdt，用来用去最后最爱的还是TexStudio。​ ==我建议新手可以先从线上编辑器(如：Overleaf) 先学习==。 一篇详细介绍LaTex编译器的帖子 第二步如果你在线上试了试LaTex练习，还是想学，那么你在电脑上安装LaTex运行的环境，这里推荐下载Texlive。 一篇介绍LaTex软件下载的帖子 当你安装好Texlive后，电脑就有了LaTex的编译环境，​ 这时，你需要一个好用的第三方编译器来帮助你编译​ 我自己最喜欢的LaTex编译器—TexStudio​ 下载地址 种草几个LaTex学习社区： LaTex开源小屋 LaTeX 快速入门 网上有很多资源，自己取挖掘啦 第三步我是因为要写毕业论文，需要排版，所以开始学习LaTex；​ 参考我的学习经验，我建议是找一份模板，然后去研究这部分模板；​ 我就是发现网上的论文模板和学校要求的有出入，然后自己就试着对模板​ 去修改，就是在这样的过程中，慢慢有了提高；​ 现在也算是入门了。 推荐一些模板网站：​ 网站1​ 网站2 最后祝你成功！！！]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>LaTex系列</category>
+      </categories>
+      <tags>
+        <tag>入门教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[学习中需要了解的Python知识]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F19%2F%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84Python%E7%9F%A5%E8%AF%86%2F</url>
     <content type="text"><![CDATA[在通过《笨方法学Python》学习Python的过程中，作者在每一节，提出了一些Python的知识，以让读者提前研习。 Pydoc命令 input() 和 raw_input() 命令的区别 import命令 1. Pydoc命令 pydoc — Documentation generator and online help system 帮你从代码和注释自动生成文档的工具 所以我们可以利用pydoc查询某些命令的用法 123# 比如我想查input命令的用法# 可以在命令行键入以下指令python -m pydoc input 2. input() 和 raw_input() 命令的区别 Python2.x 中 input() 相等于 eval(raw_input(prompt)) ，用来获取控制台的输入。 raw_input() 将所有输入作为字符串看待，返回字符串类型。 而 input() 在对待纯数字输入时具有自己的特性，它返回所输入的数字的类型（ int, float ）。 12345注意：input() 和 raw_input() 这两个函数均能接收 字符串 ，但 raw_input() 直接读取控制台的输入（任何类型的输入它都可以接收）。而对于 input() ，它希望能够读取一个合法的 python 表达式，即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError 。除非对 input() 有特别需要，否则一般情况下我们都是推荐使用 raw_input() 来与用户交互。 参考资料 3. import命令 利用import语句来引入python中的模块(module) 语法如下： 123456import module1[, module2[,... moduleN]]# 示例# 想要导入模块 math.py，需要把命令放在脚本的顶端：import math# 一个模块只会被导入一次，不管你执行了多少次import。# 这样可以防止导入模块被一遍又一遍地执行 Python 的 from 语句让你从模块中导入一个指定的部分到当前命名空间中 from…import 语句 ，语法如下： 1234from modname import name1[, name2[, ... nameN]]# 示例# 要导入模块 fib 的 fibonacci 函数from fib import fibonacci 参考资料]]></content>
@@ -18,48 +66,9 @@
     <content type="text"><![CDATA[不知为何图片无法上传]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Test4_字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex6.py &amp; ex8.py1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
-      <categories>
-        <category>小白学习</category>
-        <category>Python系列</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test3_变量和命名]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版ex4.py &amp; ex5.py123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？使用ｒｏｕｎｄ（）函数]]></content>
-      <categories>
-        <category>小白学习</category>
-        <category>Python系列</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test1_第一个程序]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex1.py1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号” “ 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法书写时，注意这个细节，按照规范书写即可 附加练习以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符”#”，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
-      <categories>
-        <category>小白学习</category>
-        <category>Python系列</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test6_参数、变量]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex13.py &amp; ex14.py1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE ex13.py12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd ex14.py123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell” 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ ‘）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
       <categories>
         <category>小白学习</category>
         <category>Python系列</category>
@@ -86,6 +95,45 @@
     <title><![CDATA[Test5_更多字符串练习]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex10.py 、ex11.py &amp; ex12.py1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用；\n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（”””）之间放入任意多行的文字。 附加练习以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Python系列</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test1_第一个程序]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex1.py1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号” “ 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法书写时，注意这个细节，按照规范书写即可 附加练习以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符”#”，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Python系列</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test4_字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex6.py &amp; ex8.py1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Python系列</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test6_参数、变量]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版ex13.py &amp; ex14.py1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE ex13.py12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd ex14.py123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell” 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ ‘）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
       <categories>
         <category>小白学习</category>
         <category>Python系列</category>
