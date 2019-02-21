@@ -123,18 +123,18 @@
 
 
 
-<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 <meta name="keywords" content="笨方法学Python,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Test5_更多字符串练习">
 <meta property="og:url" content="https://darerd.github.io/2019/02/03/Test5-更多字符串练习/index.html">
 <meta property="og:site_name" content="Darer &#39; Blog">
-<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-02-19T07:18:50.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Test5_更多字符串练习">
-<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 
 
 
@@ -455,7 +455,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  435
+                  439
                 </span>
               
 
@@ -493,7 +493,8 @@
 
       
         <blockquote>
-<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>的学习思路和理解，如有不如之处，望指出！！！</p>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>
+的学习思路和理解，如有不如之处，望指出！！！</p>
 </blockquote>
 <p>文章主要分为三个部分：</p>
 <ol>
@@ -503,20 +504,29 @@
 <li>附加练习</li>
 </ol>
 <a id="more"></a>
-<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id="ex10-py-、ex11-py-amp-ex12-py"><a href="#ex10-py-、ex11-py-amp-ex12-py" class="headerlink" title="ex10.py 、ex11.py &amp; ex12.py"></a>ex10.py 、ex11.py &amp; ex12.py</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex10.py</span></span><br><span class="line"></span><br><span class="line">tabby_cat=<span class="string">"\t I'm tabbed in."</span></span><br><span class="line">persian_cat=<span class="string">"I'm split \n on line. "</span></span><br><span class="line">backslash_cat=<span class="string">"I'm \\ a \\ cat."</span></span><br><span class="line"></span><br><span class="line">fat_cat= <span class="string">"""</span></span><br><span class="line"><span class="string">I'll do a list:</span></span><br><span class="line"><span class="string">\t * Cat foog</span></span><br><span class="line"><span class="string">\t * Fishies</span></span><br><span class="line"><span class="string">\t * Catnip \n \t *Grass</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tabby_cat</span><br><span class="line"><span class="keyword">print</span> persian_cat</span><br><span class="line"><span class="keyword">print</span> backslash_cat</span><br><span class="line"><span class="keyword">print</span> fat_cat</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex11.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"How old are you?"</span>,</span><br><span class="line">age=raw_input()</span><br><span class="line"><span class="keyword">print</span> <span class="string">"How tall are you?"</span>,</span><br><span class="line">height=raw_input()</span><br><span class="line"><span class="keyword">print</span> <span class="string">"How much do you weigh?"</span>,</span><br><span class="line">weight=raw_input()</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"So, you're %r old,%r tall and %r heavy."</span>%(age,height,weight)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#ex12.py</span></span><br><span class="line"></span><br><span class="line">age=raw_input(<span class="string">"How old are you? "</span>)</span><br><span class="line">height=raw_input(<span class="string">"How tall are you? "</span>)</span><br><span class="line">weight=raw_input(<span class="string">"How much do you weigh? "</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"So, you're %r old,%r tall and %r heavy."</span>%(age,height,weight)</span><br></pre></td></tr></table></figure>
-<h3 id="需要注意的几个地方"><a href="#需要注意的几个地方" class="headerlink" title="需要注意的几个地方"></a>需要注意的几个地方</h3><ol>
-<li>python中 \t 的效果，类似于在word写作中，tab键起到的作用；<br>\n 的效果，类似于在word写作中，enter 键起到的作用；</li>
-<li>在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。</li>
-<li>python 中可以在一组三引号（”””）之间放入任意多行的文字。</li>
-</ol>
-<h3 id="附加练习"><a href="#附加练习" class="headerlink" title="附加练习"></a>附加练习</h3><p>以下摘录自原文</p>
+<h3 id="原文摘录至笨方法学python第三版"><a class="markdownIt-Anchor" href="#原文摘录至笨方法学python第三版"></a> 原文—摘录至《笨方法学Python》第三版</h3>
+<h4 id="ex10py"><a class="markdownIt-Anchor" href="#ex10py"></a> <a href="http://ex10.py" target="_blank" rel="noopener">ex10.py</a> 、<a href="http://ex11.py" target="_blank" rel="noopener">ex11.py</a> &amp; <a href="http://ex12.py" target="_blank" rel="noopener">ex12.py</a></h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex10.py</span></span><br><span class="line"></span><br><span class="line">tabby_cat=<span class="string">"\t I'm tabbed in."</span></span><br><span class="line">persian_cat=<span class="string">"I'm split \n on line. "</span></span><br><span class="line">backslash_cat=<span class="string">"I'm \\ a \\ cat."</span></span><br><span class="line"></span><br><span class="line">fat_cat= <span class="string">"""</span></span><br><span class="line"><span class="string">I'll do a list:</span></span><br><span class="line"><span class="string">\t * Cat foog</span></span><br><span class="line"><span class="string">\t * Fishies</span></span><br><span class="line"><span class="string">\t * Catnip \n \t *Grass</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> tabby_cat</span><br><span class="line"><span class="keyword">print</span> persian_cat</span><br><span class="line"><span class="keyword">print</span> backslash_cat</span><br><span class="line"><span class="keyword">print</span> fat_cat</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex11.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"How old are you?"</span>,</span><br><span class="line">age=raw_input()</span><br><span class="line"><span class="keyword">print</span> <span class="string">"How tall are you?"</span>,</span><br><span class="line">height=raw_input()</span><br><span class="line"><span class="keyword">print</span> <span class="string">"How much do you weigh?"</span>,</span><br><span class="line">weight=raw_input()</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"So, you're %r old,%r tall and %r heavy."</span>%(age,height,weight)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#ex12.py</span></span><br><span class="line"></span><br><span class="line">age=raw_input(<span class="string">"How old are you? "</span>)</span><br><span class="line">height=raw_input(<span class="string">"How tall are you? "</span>)</span><br><span class="line">weight=raw_input(<span class="string">"How much do you weigh? "</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"So, you're %r old,%r tall and %r heavy."</span>%(age,height,weight)</span><br></pre></td></tr></table></figure>
+<h3 id="需要注意的几个地方"><a class="markdownIt-Anchor" href="#需要注意的几个地方"></a> 需要注意的几个地方</h3>
 <ol>
-<li><p>下面是python支持的转义序列</p>
+<li>python中 \t 的效果，类似于在word写作中，tab键起到的作用；<br>
+\n 的效果，类似于在word写作中，enter 键起到的作用；</li>
+<li><a href="http://xn--ex11-ft4g.py" target="_blank" rel="noopener">在ex11.py</a> 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。</li>
+<li>python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。</li>
+</ol>
+<h3 id="附加练习"><a class="markdownIt-Anchor" href="#附加练习"></a> 附加练习</h3>
+<p>以下摘录自原文</p>
+<ol>
+<li>
+<p>下面是python支持的转义序列</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">\\					<span class="comment"># 反斜杠（\）</span></span><br><span class="line">\<span class="string">'					# 单引号</span></span><br><span class="line"><span class="string">\"					# 双引号</span></span><br><span class="line"><span class="string">\a            		# ASCII 响铃符</span></span><br><span class="line"><span class="string">\b					# ASCII 退格符</span></span><br><span class="line"><span class="string">\f 					# ASCII 进纸符</span></span><br><span class="line"><span class="string">\r					# ASCII 回车符</span></span><br><span class="line"><span class="string">\uxxxx				# 值为16位十六进制值xxxx的字符（仅适用于Unicode）</span></span><br><span class="line"><span class="string">\Uxxxxxxxx			# 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）</span></span><br><span class="line"><span class="string">\v					# ASCII 垂直制表符</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>Python 的raw_input实现的是什么功能？以及其他用法</p>
+<li>
+<p>Python 的raw_input实现的是什么功能？以及其他用法</p>
 </li>
-<li>input()和raw_input()有何不同？</li>
+<li>
+<p>input()和raw_input()有何不同？</p>
+</li>
 </ol>
 
       
@@ -594,8 +604,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test2-数字和数学计算/" rel="next" title="Test2_数字和数学计算">
-                <i class="fa fa-chevron-left"></i> Test2_数字和数学计算
+              <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/" rel="next" title="Test4_字符串练习">
+                <i class="fa fa-chevron-left"></i> Test4_字符串练习
               </a>
             
           </div>
@@ -604,8 +614,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test6-参数、变量/" rel="prev" title="Test6_参数、变量">
-                Test6_参数、变量 <i class="fa fa-chevron-right"></i>
+              <a href="/darerd.github.io/2019/02/03/Test2-数字和数学计算/" rel="prev" title="Test2_数字和数学计算">
+                Test2_数字和数学计算 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -695,7 +705,7 @@
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -792,7 +802,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文—摘录至《笨方法学Python》第三版"><span class="nav-number">1.</span> <span class="nav-text">原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex10-py-、ex11-py-amp-ex12-py"><span class="nav-number">1.1.</span> <span class="nav-text">ex10.py 、ex11.py &amp; ex12.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要注意的几个地方"><span class="nav-number">2.</span> <span class="nav-text">需要注意的几个地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">3.</span> <span class="nav-text">附加练习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文摘录至笨方法学python第三版"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex10py"><span class="nav-number">1.1.</span> <span class="nav-text"> ex10.py 、ex11.py &amp; ex12.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要注意的几个地方"><span class="nav-number">2.</span> <span class="nav-text"> 需要注意的几个地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">3.</span> <span class="nav-text"> 附加练习</span></a></li></ol></div>
             
 
           </div>

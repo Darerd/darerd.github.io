@@ -123,18 +123,18 @@
 
 
 
-<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 <meta name="keywords" content="笨方法学Python,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Test6_参数、变量">
 <meta property="og:url" content="https://darerd.github.io/2019/02/03/Test6-参数、变量/index.html">
 <meta property="og:site_name" content="Darer &#39; Blog">
-<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-02-21T12:39:30.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Test6_参数、变量">
-<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
+<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习">
 
 
 
@@ -455,7 +455,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  595
+                  599
                 </span>
               
 
@@ -493,7 +493,8 @@
 
       
         <blockquote>
-<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>的学习思路和理解，如有不如之处，望指出！！！</p>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>
+的学习思路和理解，如有不如之处，望指出！！！</p>
 </blockquote>
 <p>文章主要分为三个部分：</p>
 <ol>
@@ -503,38 +504,52 @@
 <li>附加练习</li>
 </ol>
 <a id="more"></a>
-<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id="ex13-py-amp-ex14-py"><a href="#ex13-py-amp-ex14-py" class="headerlink" title="ex13.py &amp; ex14.py"></a>ex13.py &amp; ex14.py</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex13.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, first, second, third=argv</span><br><span class="line"><span class="keyword">print</span> <span class="string">"The script is called:"</span>,script</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your first variable is:"</span>,first</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your second variable is:"</span>,second</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your third variable is:"</span>,third</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex14.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, user_name =argv</span><br><span class="line">prompt=<span class="string">'&gt; '</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Hi %s, I'm the %s script."</span>%(user_name,script)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"I'd like to ask you a few questions."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Do you like me %s?"</span>%user_name</span><br><span class="line">likes=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Where do you live %s?"</span>%user_name</span><br><span class="line">lives=raw_input(<span class="string">'&gt; '</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"What kind of computer do you have?"</span></span><br><span class="line">computer=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span><span class="string">"""</span></span><br><span class="line"><span class="string">Alright, so you said %r about liking me.</span></span><br><span class="line"><span class="string">You live in %r. Not sure where that is.</span></span><br><span class="line"><span class="string">And you have a %r computer. Nice!</span></span><br><span class="line"><span class="string">"""</span> %(likes,lives,computer)</span><br></pre></td></tr></table></figure>
-<h3 id="应该看到的结果"><a href="#应该看到的结果" class="headerlink" title="应该看到的结果"></a>应该看到的结果</h3><hr>
+<h3 id="原文摘录至笨方法学python第三版"><a class="markdownIt-Anchor" href="#原文摘录至笨方法学python第三版"></a> 原文—摘录至《笨方法学Python》第三版</h3>
+<h4 id="ex13py"><a class="markdownIt-Anchor" href="#ex13py"></a> <a href="http://ex13.py" target="_blank" rel="noopener">ex13.py</a> &amp; <a href="http://ex14.py" target="_blank" rel="noopener">ex14.py</a></h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex13.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, first, second, third=argv</span><br><span class="line"><span class="keyword">print</span> <span class="string">"The script is called:"</span>,script</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your first variable is:"</span>,first</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your second variable is:"</span>,second</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your third variable is:"</span>,third</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex14.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, user_name =argv</span><br><span class="line">prompt=<span class="string">'&gt; '</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Hi %s, I'm the %s script."</span>%(user_name,script)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"I'd like to ask you a few questions."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Do you like me %s?"</span>%user_name</span><br><span class="line">likes=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Where do you live %s?"</span>%user_name</span><br><span class="line">lives=raw_input(<span class="string">'&gt; '</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"What kind of computer do you have?"</span></span><br><span class="line">computer=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span><span class="string">"""</span></span><br><span class="line"><span class="string">Alright, so you said %r about liking me.</span></span><br><span class="line"><span class="string">You live in %r. Not sure where that is.</span></span><br><span class="line"><span class="string">And you have a %r computer. Nice!</span></span><br><span class="line"><span class="string">"""</span> %(likes,lives,computer)</span><br></pre></td></tr></table></figure>
+<h3 id="应该看到的结果"><a class="markdownIt-Anchor" href="#应该看到的结果"></a> 应该看到的结果</h3>
+<hr>
 <p>原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行）</p>
 <p><code>不清楚为什么不建议使用IDLE</code></p>
 <hr>
-<h4 id="ex13-py"><a href="#ex13-py" class="headerlink" title="ex13.py"></a>ex13.py</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex13.py <span class="number">1</span>st <span class="number">2</span>nd <span class="number">3</span>rd</span><br><span class="line">The script <span class="keyword">is</span> called:ex13.py</span><br><span class="line">Your first variable <span class="keyword">is</span>:<span class="number">1</span>st</span><br><span class="line">Your second variable <span class="keyword">is</span>:<span class="number">2</span>nd</span><br><span class="line">Your third variable <span class="keyword">is</span>:<span class="number">3</span>rd</span><br></pre></td></tr></table></figure>
-<h4 id="ex14-py"><a href="#ex14-py" class="headerlink" title="ex14.py"></a>ex14.py</h4><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex14.py darer</span><br><span class="line">Hi darer, I<span class="comment">'m the ex14.py script.</span></span><br><span class="line">I<span class="comment">'d like to ask you a few questions.</span></span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">like</span> <span class="keyword">me</span> darer?</span><br><span class="line">&gt; yes</span><br><span class="line"></span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">do</span> you live darer?</span><br><span class="line">&gt; china</span><br><span class="line"></span><br><span class="line">What kind <span class="keyword">of</span> computer <span class="keyword">do</span> you have?</span><br><span class="line">&gt; lenovo</span><br><span class="line"></span><br><span class="line">Alright, so you said <span class="comment">'yes' about liking me.</span></span><br><span class="line">You live <span class="keyword">in</span> <span class="comment">'china'. Not sure where that is.</span></span><br><span class="line"><span class="keyword">And</span> you have a <span class="comment">'lenovo' computer. Nice!</span></span><br></pre></td></tr></table></figure>
-<h3 id="需要注意的几个地方"><a href="#需要注意的几个地方" class="headerlink" title="需要注意的几个地方"></a>需要注意的几个地方</h3><ol>
-<li><p>怎么在当前文件夹运行Powershell</p>
+<h4 id="ex13py-2"><a class="markdownIt-Anchor" href="#ex13py-2"></a> <a href="http://ex13.py" target="_blank" rel="noopener">ex13.py</a></h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex13.py <span class="number">1</span>st <span class="number">2</span>nd <span class="number">3</span>rd</span><br><span class="line">The script <span class="keyword">is</span> called:ex13.py</span><br><span class="line">Your first variable <span class="keyword">is</span>:<span class="number">1</span>st</span><br><span class="line">Your second variable <span class="keyword">is</span>:<span class="number">2</span>nd</span><br><span class="line">Your third variable <span class="keyword">is</span>:<span class="number">3</span>rd</span><br></pre></td></tr></table></figure>
+<h4 id="ex14py"><a class="markdownIt-Anchor" href="#ex14py"></a> <a href="http://ex14.py" target="_blank" rel="noopener">ex14.py</a></h4>
+<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex14.py darer</span><br><span class="line">Hi darer, I<span class="comment">'m the ex14.py script.</span></span><br><span class="line">I<span class="comment">'d like to ask you a few questions.</span></span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">like</span> <span class="keyword">me</span> darer?</span><br><span class="line">&gt; yes</span><br><span class="line"></span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">do</span> you live darer?</span><br><span class="line">&gt; china</span><br><span class="line"></span><br><span class="line">What kind <span class="keyword">of</span> computer <span class="keyword">do</span> you have?</span><br><span class="line">&gt; lenovo</span><br><span class="line"></span><br><span class="line">Alright, so you said <span class="comment">'yes' about liking me.</span></span><br><span class="line">You live <span class="keyword">in</span> <span class="comment">'china'. Not sure where that is.</span></span><br><span class="line"><span class="keyword">And</span> you have a <span class="comment">'lenovo' computer. Nice!</span></span><br></pre></td></tr></table></figure>
+<h3 id="需要注意的几个地方"><a class="markdownIt-Anchor" href="#需要注意的几个地方"></a> 需要注意的几个地方</h3>
+<ol>
+<li>
+<p>怎么在当前文件夹运行Powershell</p>
 <ul>
 <li>利用命令行指令 cd</li>
-<li>在当前文件夹 shift+鼠标右键  选择“打开powershell”</li>
+<li>在当前文件夹 shift+鼠标右键  选择“打开powershell&quot;</li>
 </ul>
 </li>
-<li><p>注意ex14.py中，raw_input()的用法</p>
+<li>
+<p>注意ex14.py中，raw_input()的用法</p>
 </li>
-<li><p>为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ ‘）呢？</p>
+<li>
+<p><a href="http://xn--ex14-uh5f0ct5b.py" target="_blank" rel="noopener">为什么ex14.py</a> 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？</p>
 <p>因为%r是调试专用，它输出的是“原始表示”出来的字符</p>
 <p>而%s是为了给用户显示</p>
 </li>
 </ol>
-<h3 id="附加练习"><a href="#附加练习" class="headerlink" title="附加练习"></a>附加练习</h3><p>以下摘录自原文</p>
+<h3 id="附加练习"><a class="markdownIt-Anchor" href="#附加练习"></a> 附加练习</h3>
+<p>以下摘录自原文</p>
 <ol>
-<li><p>是否可以用双引号定义prompt变量的值？</p>
+<li>
+<p>是否可以用双引号定义prompt变量的值？</p>
 </li>
-<li><p>argv和raw_input()有什么不同？</p>
+<li>
+<p>argv和raw_input()有什么不同？</p>
 <p>如果参数是在用户执行命令时就要输入的，那就是argv</p>
 <p>如果是在脚本运行过程中需要用户输入，那就使用raw_input()</p>
 </li>
-<li><p>argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。</p>
+<li>
+<p>argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。</p>
 </li>
-<li><p>脚本中出现import语句，非常重要，它用于导入模块（module）</p>
+<li>
+<p>脚本中出现import语句，非常重要，它用于导入模块（module）</p>
 </li>
 </ol>
 
@@ -613,8 +628,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/" rel="next" title="Test5_更多字符串练习">
-                <i class="fa fa-chevron-left"></i> Test5_更多字符串练习
+              <a href="/darerd.github.io/2019/02/03/Test2-数字和数学计算/" rel="next" title="Test2_数字和数学计算">
+                <i class="fa fa-chevron-left"></i> Test2_数字和数学计算
               </a>
             
           </div>
@@ -623,8 +638,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/" rel="prev" title="Test4_字符串练习">
-                Test4_字符串练习 <i class="fa fa-chevron-right"></i>
+              <a href="/darerd.github.io/2019/02/14/七牛图片测试demo/" rel="prev" title="七牛图片测试demo">
+                七牛图片测试demo <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -714,7 +729,7 @@
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -811,7 +826,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文—摘录至《笨方法学Python》第三版"><span class="nav-number">1.</span> <span class="nav-text">原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex13-py-amp-ex14-py"><span class="nav-number">1.1.</span> <span class="nav-text">ex13.py &amp; ex14.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应该看到的结果"><span class="nav-number">2.</span> <span class="nav-text">应该看到的结果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex13-py"><span class="nav-number">2.1.</span> <span class="nav-text">ex13.py</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ex14-py"><span class="nav-number">2.2.</span> <span class="nav-text">ex14.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要注意的几个地方"><span class="nav-number">3.</span> <span class="nav-text">需要注意的几个地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">4.</span> <span class="nav-text">附加练习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文摘录至笨方法学python第三版"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex13py"><span class="nav-number">1.1.</span> <span class="nav-text"> ex13.py &amp; ex14.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应该看到的结果"><span class="nav-number">2.</span> <span class="nav-text"> 应该看到的结果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex13py-2"><span class="nav-number">2.1.</span> <span class="nav-text"> ex13.py</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ex14py"><span class="nav-number">2.2.</span> <span class="nav-text"> ex14.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需要注意的几个地方"><span class="nav-number">3.</span> <span class="nav-text"> 需要注意的几个地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">4.</span> <span class="nav-text"> 附加练习</span></a></li></ol></div>
             
 
           </div>

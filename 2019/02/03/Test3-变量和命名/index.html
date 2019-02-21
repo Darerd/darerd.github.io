@@ -123,18 +123,18 @@
 
 
 
-<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
+<meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
 <meta name="keywords" content="笨方法学Python,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Test3_变量和命名">
 <meta property="og:url" content="https://darerd.github.io/2019/02/03/Test3-变量和命名/index.html">
 <meta property="og:site_name" content="Darer &#39; Blog">
-<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-02-14T16:04:41.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Test3_变量和命名">
-<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
+<meta name="twitter:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习">
 
 
 
@@ -455,7 +455,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  445
+                  446
                 </span>
               
 
@@ -493,7 +493,8 @@
 
       
         <blockquote>
-<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>的学习思路和理解，如有不如之处，望指出！！！</p>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>
+的学习思路和理解，如有不如之处，望指出！！！</p>
 </blockquote>
 <p>文章主要分为三个部分：</p>
 <ol>
@@ -502,8 +503,11 @@
 <li>附加练习</li>
 </ol>
 <a id="more"></a>
-<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id="ex4-py-amp-ex5-py"><a href="#ex4-py-amp-ex5-py" class="headerlink" title="ex4.py &amp; ex5.py"></a>ex4.py &amp; ex5.py</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex4.py#</span></span><br><span class="line"></span><br><span class="line">cars=<span class="number">100</span></span><br><span class="line">space_in_car=<span class="number">4.0</span></span><br><span class="line">drivers=<span class="number">30</span></span><br><span class="line">passengers=<span class="number">90</span></span><br><span class="line">cars_not_driven=cars-drivers</span><br><span class="line">cars-driven=drivers</span><br><span class="line">carpool_capacity=cars-driven*space_in_a_car</span><br><span class="line">average_passengers_per_car=passengers/cars-driven</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"There are"</span>,cars,<span class="string">"cars available."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"There are only "</span>,drivers,<span class="string">"drivers available."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Ther will be"</span>,cars_not_driven,<span class="string">"empty cars today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We can transport"</span>,carpool_capacity,<span class="string">"people today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We have"</span>,passengers,<span class="string">"to carpool today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We need to put about"</span>,average_passengers_per_car,<span class="string">"in each car."</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex5.py#</span></span><br><span class="line"></span><br><span class="line">my_name=<span class="string">'Zed A. Shaw'</span> <span class="comment"># 《笨方法学Python》作者</span></span><br><span class="line">my_age=<span class="number">35</span></span><br><span class="line">my_height=<span class="number">74</span> <span class="comment">#inches</span></span><br><span class="line">my_weight=<span class="number">180</span> <span class="comment">#lbs</span></span><br><span class="line">my_eyes=<span class="string">'Blue'</span></span><br><span class="line">my_teeth=<span class="string">'while'</span></span><br><span class="line">my_hair=<span class="string">'Brown'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Let's talk about %s."</span> %my_name</span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's %d inches tall."</span> %my_height</span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's %d ponds heavy."</span> %my_weight</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Actually that's not too heavy."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's got %s eyes and %s hair."</span> % (my_eyes,my_hair)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"His teeth are usually %s depending on the coffee."</span> %my_teeth</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"If I add %d ,%d ,and %d I get %d. "</span> %(my_age,my_height,my_weight,my_age+my_height+my_weight)</span><br></pre></td></tr></table></figure>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><ol>
+<h3 id="原文摘录至笨方法学python第三版"><a class="markdownIt-Anchor" href="#原文摘录至笨方法学python第三版"></a> 原文—摘录至《笨方法学Python》第三版</h3>
+<h4 id="ex4py"><a class="markdownIt-Anchor" href="#ex4py"></a> <a href="http://ex4.py" target="_blank" rel="noopener">ex4.py</a> &amp; <a href="http://ex5.py" target="_blank" rel="noopener">ex5.py</a></h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex4.py#</span></span><br><span class="line"></span><br><span class="line">cars=<span class="number">100</span></span><br><span class="line">space_in_car=<span class="number">4.0</span></span><br><span class="line">drivers=<span class="number">30</span></span><br><span class="line">passengers=<span class="number">90</span></span><br><span class="line">cars_not_driven=cars-drivers</span><br><span class="line">cars-driven=drivers</span><br><span class="line">carpool_capacity=cars-driven*space_in_a_car</span><br><span class="line">average_passengers_per_car=passengers/cars-driven</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"There are"</span>,cars,<span class="string">"cars available."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"There are only "</span>,drivers,<span class="string">"drivers available."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Ther will be"</span>,cars_not_driven,<span class="string">"empty cars today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We can transport"</span>,carpool_capacity,<span class="string">"people today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We have"</span>,passengers,<span class="string">"to carpool today."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"We need to put about"</span>,average_passengers_per_car,<span class="string">"in each car."</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex5.py#</span></span><br><span class="line"></span><br><span class="line">my_name=<span class="string">'Zed A. Shaw'</span> <span class="comment"># 《笨方法学Python》作者</span></span><br><span class="line">my_age=<span class="number">35</span></span><br><span class="line">my_height=<span class="number">74</span> <span class="comment">#inches</span></span><br><span class="line">my_weight=<span class="number">180</span> <span class="comment">#lbs</span></span><br><span class="line">my_eyes=<span class="string">'Blue'</span></span><br><span class="line">my_teeth=<span class="string">'while'</span></span><br><span class="line">my_hair=<span class="string">'Brown'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Let's talk about %s."</span> %my_name</span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's %d inches tall."</span> %my_height</span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's %d ponds heavy."</span> %my_weight</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Actually that's not too heavy."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"He's got %s eyes and %s hair."</span> % (my_eyes,my_hair)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"His teeth are usually %s depending on the coffee."</span> %my_teeth</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"If I add %d ,%d ,and %d I get %d. "</span> %(my_age,my_height,my_weight,my_age+my_height+my_weight)</span><br></pre></td></tr></table></figure>
+<h3 id="遇到的问题"><a class="markdownIt-Anchor" href="#遇到的问题"></a> 遇到的问题</h3>
+<ol>
 <li>一些关于<strong>字符串</strong>（string）的知识</li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用“ 或 ‘ 来创建字符串</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">'这是一个字符串'</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"这也是一个字符串"</span></span><br><span class="line"><span class="comment"># 字符串也可以相加</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Hello"</span> + <span class="string">' world'</span></span><br></pre></td></tr></table></figure>
@@ -515,10 +519,12 @@
 <li>代码中 %s 、%d 和 %r 是起什么作用？</li>
 </ol>
 <figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># <span class="built_in">%s</span> 、<span class="built_in">%d</span> 和　％ｒ　是一种”格式控制工具“，</span><br><span class="line">＃指令告诉Ｐｙｔｈｏｎ　把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置</span><br><span class="line">＃如果变量是字符串，使用％ｓ</span><br><span class="line">＃如果变量是数字，使用％ｄ</span><br><span class="line">＃无论变量是什么，都可以用％ｒ</span><br></pre></td></tr></table></figure>
-<h3 id="附加练习"><a href="#附加练习" class="headerlink" title="附加练习"></a>附加练习</h3><p>以下摘录自原文</p>
+<h3 id="附加练习"><a class="markdownIt-Anchor" href="#附加练习"></a> 附加练习</h3>
+<p>以下摘录自原文</p>
 <ol>
 <li>单等号和双等号有什么不同？</li>
-<li>如何将浮点数四舍五入？<br>使用ｒｏｕｎｄ（）函数</li>
+<li>如何将浮点数四舍五入？<br>
+使用ｒｏｕｎｄ（）函数</li>
 </ol>
 <hr>
 
@@ -597,8 +603,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/" rel="next" title="Test4_字符串练习">
-                <i class="fa fa-chevron-left"></i> Test4_字符串练习
+              <a href="/darerd.github.io/2019/02/03/Test1-第一个程序/" rel="next" title="Test1_第一个程序">
+                <i class="fa fa-chevron-left"></i> Test1_第一个程序
               </a>
             
           </div>
@@ -607,8 +613,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test1-第一个程序/" rel="prev" title="Test1_第一个程序">
-                Test1_第一个程序 <i class="fa fa-chevron-right"></i>
+              <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/" rel="prev" title="Test4_字符串练习">
+                Test4_字符串练习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -698,7 +704,7 @@
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -795,7 +801,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文—摘录至《笨方法学Python》第三版"><span class="nav-number">1.</span> <span class="nav-text">原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex4-py-amp-ex5-py"><span class="nav-number">1.1.</span> <span class="nav-text">ex4.py &amp; ex5.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">3.</span> <span class="nav-text">附加练习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文摘录至笨方法学python第三版"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ex4py"><span class="nav-number">1.1.</span> <span class="nav-text"> ex4.py &amp; ex5.py</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">2.</span> <span class="nav-text"> 遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加练习"><span class="nav-number">3.</span> <span class="nav-text"> 附加练习</span></a></li></ol></div>
             
 
           </div>
