@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Typora+七牛云，高效写Markdown|产品必用软件|第1期]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F22%2FTypora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6-%E7%AC%AC1%E6%9C%9F%2F</url>
-    <content type="text"><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等 而且产品人日常还要写写文章什么的。 如果用传统的word去写文档，真的是： 写作两分钟，格式两小时 而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率 进门右转，Markdown入门 一篇文章主要有文字、链接、图片以及格式等组成 利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些Latex排版) 但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。 最好可以一键式操作。 下面就是见证奇迹的时刻！ 首先给大家推荐一篇博客，本文借鉴了这篇文章的内容。 1. Markdown编辑器–Typora# Typora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。 这是操作界面，干净、简约 免费下载传送门 Typora官网 图片–最好用的截图工具–Snipaste# windowns系统最好用 核心功能有截图、贴图两个 截图 贴图 免费下载传送门 官网点这里 参考资料 图床—用于存储写作用到的图片# 推荐 七牛云 为什么是七牛云： 提供稳定的存储服务， 是免费的 大家都在用 七牛云图床使用指南 ### 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具 MPic windows系统少有的可以方便上传到图床的工具(且只支持七牛云) 如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。 而且你随时的分享，都不会受到影响！ 需要”设置账号“和你的七牛云绑定 免费下载传送门](https://u19341005.pipipan.com/fs/19341005-338119197) 官网点这里 参考资料 更多有趣的使用技巧，需要你自己去探索了！]]></content>
+    <content type="text"><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等 而且产品人日常还要写写文章什么的。 如果用传统的word去写文档，真的是： 写作两分钟，格式两小时 而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率 进门右转，Markdown入门 一篇文章主要有文字、链接、图片以及格式等组成 利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些Latex排版) 但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。 最好可以一键式操作。 下面就是见证奇迹的时刻！ 首先给大家推荐一篇博客，本文借鉴了这篇文章的内容。 1. Markdown编辑器–Typora# Typora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。 这是操作界面，干净、简约 免费下载传送门 Typora官网 2. 图片–最好用的截图工具–Snipaste# windowns系统最好用 核心功能有截图、贴图两个 截图 贴图 免费下载传送门 官网点这里 参考资料 3. 图床—用于存储写作用到的图片# 推荐 七牛云 为什么是七牛云： 提供稳定的存储服务， 是免费的 大家都在用 七牛云图床使用指南 4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具# MPic windows系统少有的可以方便上传到图床的工具(且只支持七牛云) 如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。 而且你随时的分享，都不会受到影响！ 需要”设置账号“和你的七牛云绑定 免费下载传送门 官网点这里 参考资料 更多有趣的使用技巧，需要你自己去探索了！]]></content>
       <categories>
         <category>产品必用软件</category>
       </categories>
@@ -115,32 +115,6 @@
     <content type="text"><![CDATA[不知为何图片无法上传]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# 、 &amp; # 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方# python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习# 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
-      <categories>
-        <category>小白学习</category>
-        <category>Python系列</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test3_变量和命名]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题# 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习# 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
-      <categories>
-        <category>小白学习</category>
-        <category>Python系列</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test4_字符串练习]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题# ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习# 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
@@ -167,9 +141,35 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# 、 &amp; # 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方# python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习# 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Python系列</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test2_数字和数学计算]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版# # 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题# 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习# 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+      <categories>
+        <category>小白学习</category>
+        <category>Python系列</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test3_变量和命名]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题# 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习# 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
       <categories>
         <category>小白学习</category>
         <category>Python系列</category>
