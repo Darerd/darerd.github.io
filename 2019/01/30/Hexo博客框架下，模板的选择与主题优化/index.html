@@ -503,11 +503,11 @@
 </blockquote>
 <hr>
 <a id="more"></a>
-<h3 id="next模板主题优化"><a class="markdownIt-Anchor" href="#next模板主题优化"></a> Next模板主题优化</h3>
-<h4 id="选择scheme"><a class="markdownIt-Anchor" href="#选择scheme"></a> 选择Scheme</h4>
+<h3><span id="next模板主题优化"> Next模板主题优化</span></h3>
+<h4><span id="选择scheme"> 选择Scheme</span></h4>
 <p>Next模板内置四种不同的主题，可以自定义开启，参考文档：</p>
 <p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">选择Scheme</a></p>
-<h4 id="设置语言"><a class="markdownIt-Anchor" href="#设置语言"></a> 设置语言</h4>
+<h4><span id="设置语言"> 设置语言</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置语言</a></p>
 <p>如果你想设置多种语言，可以参考以下指令：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> </span><br><span class="line"><span class="bullet"> -</span> <span class="string">zh-Hans</span></span><br><span class="line"><span class="bullet"> -</span> <span class="string">en</span> </span><br><span class="line"><span class="bullet"> -</span> <span class="string">zh-hk</span></span><br></pre></td></tr></table></figure>
@@ -518,52 +518,52 @@
 <li>能生效的写法：title:[空格]Darer‘Blog</li>
 </ul>
 </blockquote>
-<h4 id="设置菜单"><a class="markdownIt-Anchor" href="#设置菜单"></a> 设置菜单</h4>
+<h4><span id="设置菜单"> 设置菜单</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置菜单</a></p>
 <p>补充说明：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line"><span class="attr">  about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
 <p>以上设置 菜单栏 的指令 也决定了 菜单栏各项菜单的顺序，以上面的指令为例，顺序依次为：主页、标签、目录、归档、关于</p>
-<h4 id="设置侧栏"><a class="markdownIt-Anchor" href="#设置侧栏"></a> 设置侧栏</h4>
+<h4><span id="设置侧栏"> 设置侧栏</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置侧栏</a></p>
 <p>补充说明：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sidebar offset from top menubar in pixels (only for Pisces | Gemini).</span></span><br><span class="line"><span class="comment">###侧栏与顶部菜单栏的 空隙距离</span></span><br><span class="line"><span class="attr">  offset:</span> <span class="number">12</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.(only for Pisces | Gemini).</span></span><br><span class="line">  <span class="comment">### 侧边栏加入一个 回到顶部 按钮</span></span><br><span class="line"><span class="attr">  b2t:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  <span class="comment">## 侧边栏加入一个 阅读进度 按钮</span></span><br><span class="line"><span class="attr">  scrollpercent:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Enable sidebar on narrow view (only for Muse | Mist).</span></span><br><span class="line">  <span class="comment">##适配 小窗口</span></span><br><span class="line"><span class="attr">  onmobile:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置头像"><a class="markdownIt-Anchor" href="#设置头像"></a> 设置头像</h4>
+<h4><span id="设置头像"> 设置头像</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置头像</a></p>
-<h4 id="设置作者昵称"><a class="markdownIt-Anchor" href="#设置作者昵称"></a> 设置作者昵称</h4>
+<h4><span id="设置作者昵称"> 设置作者昵称</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">设置作者昵称</a></p>
-<h4 id="博客描述"><a class="markdownIt-Anchor" href="#博客描述"></a> 博客描述</h4>
+<h4><span id="博客描述"> 博客描述</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">博客描述</a></p>
-<h4 id="设置字体"><a class="markdownIt-Anchor" href="#设置字体"></a> 设置字体</h4>
+<h4><span id="设置字体"> 设置字体</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">设置字体</a></p>
-<h4 id="设置代码高亮"><a class="markdownIt-Anchor" href="#设置代码高亮"></a> 设置代码高亮</h4>
+<h4><span id="设置代码高亮"> 设置代码高亮</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">设置代码高亮</a></p>
-<h4 id="侧边栏"><a class="markdownIt-Anchor" href="#侧边栏"></a> 侧边栏</h4>
-<h5 id="社交链接"><a class="markdownIt-Anchor" href="#社交链接"></a> 社交链接</h5>
+<h4><span id="侧边栏"> 侧边栏</span></h4>
+<h5><span id="社交链接"> 社交链接</span></h5>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">社交链接</a></p>
-<h5 id="友情链接"><a class="markdownIt-Anchor" href="#友情链接"></a> 友情链接</h5>
+<h5><span id="友情链接"> 友情链接</span></h5>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">友情链接</a></p>
-<h4 id="打赏功能设置"><a class="markdownIt-Anchor" href="#打赏功能设置"></a> 打赏功能设置</h4>
+<h4><span id="打赏功能设置"> 打赏功能设置</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">打赏功能设置</a></p>
 <blockquote>
 <p>提醒：注意图片的格式（是.jpg还是.png）</p>
 </blockquote>
-<h4 id="站点建立时间"><a class="markdownIt-Anchor" href="#站点建立时间"></a> 站点建立时间</h4>
+<h4><span id="站点建立时间"> 站点建立时间</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">站点建立时间</a></p>
-<h4 id="微信公众号订阅"><a class="markdownIt-Anchor" href="#微信公众号订阅"></a> 微信公众号订阅</h4>
+<h4><span id="微信公众号订阅"> 微信公众号订阅</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">微信公众号订阅</a></p>
 <blockquote>
 <p>提醒：此特性在版本 <strong>5.0.1</strong>  中引入</p>
 </blockquote>
 <hr>
-<h3 id="引入三方服务以优化模板"><a class="markdownIt-Anchor" href="#引入三方服务以优化模板"></a> 引入三方服务以优化模板</h3>
-<h4 id="添加文章评分功能"><a class="markdownIt-Anchor" href="#添加文章评分功能"></a> 添加文章评分功能</h4>
+<h3><span id="引入三方服务以优化模板"> 引入三方服务以优化模板</span></h3>
+<h4><span id="添加文章评分功能"> 添加文章评分功能</span></h4>
 <p>参考文档：<a href="https://segmentfault.com/a/1190000013660164#articleHeader19" target="_blank" rel="noopener">添加文章评分功能</a></p>
 <blockquote>
 <p>我还没试过，感兴趣可以参考以上文档说明</p>
 </blockquote>
-<h4 id="添加文章分享功能"><a class="markdownIt-Anchor" href="#添加文章分享功能"></a> 添加文章分享功能</h4>
+<h4><span id="添加文章分享功能"> 添加文章分享功能</span></h4>
 <p>参考文档：<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">文章分享</a></p>
-<h3 id="更多功能"><a class="markdownIt-Anchor" href="#更多功能"></a> 更多功能</h3>
+<h3><span id="更多功能"> 更多功能</span></h3>
 <p>如果你还还想添加更多功能，比如：</p>
 <ul>
 <li>增加版权信息</li>
@@ -866,7 +866,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#next模板主题优化"><span class="nav-number">1.</span> <span class="nav-text"> Next模板主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择scheme"><span class="nav-number">1.1.</span> <span class="nav-text"> 选择Scheme</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置语言"><span class="nav-number">1.2.</span> <span class="nav-text"> 设置语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置菜单"><span class="nav-number">1.3.</span> <span class="nav-text"> 设置菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置侧栏"><span class="nav-number">1.4.</span> <span class="nav-text"> 设置侧栏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置头像"><span class="nav-number">1.5.</span> <span class="nav-text"> 设置头像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置作者昵称"><span class="nav-number">1.6.</span> <span class="nav-text"> 设置作者昵称</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客描述"><span class="nav-number">1.7.</span> <span class="nav-text"> 博客描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置字体"><span class="nav-number">1.8.</span> <span class="nav-text"> 设置字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置代码高亮"><span class="nav-number">1.9.</span> <span class="nav-text"> 设置代码高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#侧边栏"><span class="nav-number">1.10.</span> <span class="nav-text"> 侧边栏</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#社交链接"><span class="nav-number">1.10.1.</span> <span class="nav-text"> 社交链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#友情链接"><span class="nav-number">1.10.2.</span> <span class="nav-text"> 友情链接</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打赏功能设置"><span class="nav-number">1.11.</span> <span class="nav-text"> 打赏功能设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点建立时间"><span class="nav-number">1.12.</span> <span class="nav-text"> 站点建立时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#微信公众号订阅"><span class="nav-number">1.13.</span> <span class="nav-text"> 微信公众号订阅</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入三方服务以优化模板"><span class="nav-number">2.</span> <span class="nav-text"> 引入三方服务以优化模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加文章评分功能"><span class="nav-number">2.1.</span> <span class="nav-text"> 添加文章评分功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加文章分享功能"><span class="nav-number">2.2.</span> <span class="nav-text"> 添加文章分享功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多功能"><span class="nav-number">3.</span> <span class="nav-text"> 更多功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> Next模板主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text"> 选择Scheme</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text"> 设置语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text"> 设置菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text"> 设置侧栏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.5.</span> <span class="nav-text"> 设置头像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.6.</span> <span class="nav-text"> 设置作者昵称</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.7.</span> <span class="nav-text"> 博客描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.8.</span> <span class="nav-text"> 设置字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.9.</span> <span class="nav-text"> 设置代码高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.10.</span> <span class="nav-text"> 侧边栏</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.10.1.</span> <span class="nav-text"> 社交链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.10.2.</span> <span class="nav-text"> 友情链接</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.11.</span> <span class="nav-text"> 打赏功能设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.12.</span> <span class="nav-text"> 站点建立时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.13.</span> <span class="nav-text"> 微信公众号订阅</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text"> 引入三方服务以优化模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text"> 添加文章评分功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text"> 添加文章分享功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text"> 更多功能</span></a></li></ol></div>
             
 
           </div>
