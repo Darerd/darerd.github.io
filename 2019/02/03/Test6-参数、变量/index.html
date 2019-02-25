@@ -504,19 +504,19 @@
 <li>附加练习</li>
 </ol>
 <a id="more"></a>
-<h3><span id="yuan-wen-zhai-lu-zhi-ben-fang-fa-xue-python-di-san-ban"> 原文—摘录至《笨方法学Python》第三版</span><a href="#yuan-wen-zhai-lu-zhi-ben-fang-fa-xue-python-di-san-ban" class="header-anchor">#</a></h3>
-<h4><span id="ex13-py-amp-ex14-py">  &amp; </span><a href="#ex13-py-amp-ex14-py" class="header-anchor">#</a></h4>
+<h3><span id="原文摘录至笨方法学python第三版"> 原文—摘录至《笨方法学Python》第三版</span></h3>
+<h4><span id="ex13py-amp-ex14py">  &amp; </span></h4>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex13.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, first, second, third=argv</span><br><span class="line"><span class="keyword">print</span> <span class="string">"The script is called:"</span>,script</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your first variable is:"</span>,first</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your second variable is:"</span>,second</span><br><span class="line"><span class="keyword">print</span> <span class="string">"Your third variable is:"</span>,third</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex14.py</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sys <span class="keyword">import</span> argv</span><br><span class="line">script, user_name =argv</span><br><span class="line">prompt=<span class="string">'&gt; '</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Hi %s, I'm the %s script."</span>%(user_name,script)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"I'd like to ask you a few questions."</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Do you like me %s?"</span>%user_name</span><br><span class="line">likes=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"Where do you live %s?"</span>%user_name</span><br><span class="line">lives=raw_input(<span class="string">'&gt; '</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"What kind of computer do you have?"</span></span><br><span class="line">computer=raw_input(prompt)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span><span class="string">"""</span></span><br><span class="line"><span class="string">Alright, so you said %r about liking me.</span></span><br><span class="line"><span class="string">You live in %r. Not sure where that is.</span></span><br><span class="line"><span class="string">And you have a %r computer. Nice!</span></span><br><span class="line"><span class="string">"""</span> %(likes,lives,computer)</span><br></pre></td></tr></table></figure>
-<h3><span id="ying-gai-kan-dao-de-jie-guo"> 应该看到的结果</span><a href="#ying-gai-kan-dao-de-jie-guo" class="header-anchor">#</a></h3>
+<h3><span id="应该看到的结果"> 应该看到的结果</span></h3>
 <hr>
 <p>原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行）</p>
 <p><code>不清楚为什么不建议使用IDLE</code></p>
 <hr>
-<h4><span id="ex13-py"> </span><a href="#ex13-py" class="header-anchor">#</a></h4>
+<h4><span id="ex13py"> </span></h4>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex13.py <span class="number">1</span>st <span class="number">2</span>nd <span class="number">3</span>rd</span><br><span class="line">The script <span class="keyword">is</span> called:ex13.py</span><br><span class="line">Your first variable <span class="keyword">is</span>:<span class="number">1</span>st</span><br><span class="line">Your second variable <span class="keyword">is</span>:<span class="number">2</span>nd</span><br><span class="line">Your third variable <span class="keyword">is</span>:<span class="number">3</span>rd</span><br></pre></td></tr></table></figure>
-<h4><span id="ex14-py"> </span><a href="#ex14-py" class="header-anchor">#</a></h4>
+<h4><span id="ex14py"> </span></h4>
 <figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt; python ex14.py darer</span><br><span class="line">Hi darer, I<span class="comment">'m the ex14.py script.</span></span><br><span class="line">I<span class="comment">'d like to ask you a few questions.</span></span><br><span class="line"><span class="keyword">Do</span> you <span class="keyword">like</span> <span class="keyword">me</span> darer?</span><br><span class="line">&gt; yes</span><br><span class="line"></span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">do</span> you live darer?</span><br><span class="line">&gt; china</span><br><span class="line"></span><br><span class="line">What kind <span class="keyword">of</span> computer <span class="keyword">do</span> you have?</span><br><span class="line">&gt; lenovo</span><br><span class="line"></span><br><span class="line">Alright, so you said <span class="comment">'yes' about liking me.</span></span><br><span class="line">You live <span class="keyword">in</span> <span class="comment">'china'. Not sure where that is.</span></span><br><span class="line"><span class="keyword">And</span> you have a <span class="comment">'lenovo' computer. Nice!</span></span><br></pre></td></tr></table></figure>
-<h3><span id="xu-yao-zhu-yi-de-ji-ge-di-fang"> 需要注意的几个地方</span><a href="#xu-yao-zhu-yi-de-ji-ge-di-fang" class="header-anchor">#</a></h3>
+<h3><span id="需要注意的几个地方"> 需要注意的几个地方</span></h3>
 <ol>
 <li>
 <p>怎么在当前文件夹运行Powershell</p>
@@ -534,7 +534,7 @@
 <p>而%s是为了给用户显示</p>
 </li>
 </ol>
-<h3><span id="fu-jia-lian-xi"> 附加练习</span><a href="#fu-jia-lian-xi" class="header-anchor">#</a></h3>
+<h3><span id="附加练习"> 附加练习</span></h3>
 <p>以下摘录自原文</p>
 <ol>
 <li>
@@ -628,8 +628,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test3-变量和命名/" rel="next" title="Test3_变量和命名">
-                <i class="fa fa-chevron-left"></i> Test3_变量和命名
+              <a href="/darerd.github.io/2019/02/03/Test1-第一个程序/" rel="next" title="Test1_第一个程序">
+                <i class="fa fa-chevron-left"></i> Test1_第一个程序
               </a>
             
           </div>
@@ -638,8 +638,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/" rel="prev" title="Test4_字符串练习">
-                Test4_字符串练习 <i class="fa fa-chevron-right"></i>
+              <a href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/" rel="prev" title="Test5_更多字符串练习">
+                Test5_更多字符串练习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -729,7 +729,7 @@
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -751,7 +751,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/darerd.github.io/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -826,7 +826,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版#</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">  &amp; #</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text"> 应该看到的结果#</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text"> #</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text"> #</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text"> 需要注意的几个地方#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text"> 附加练习#</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">  &amp; </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text"> 应该看到的结果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text"> </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text"> 需要注意的几个地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text"> 附加练习</span></a></li></ol></div>
             
 
           </div>
@@ -867,7 +867,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">11.1k</span>
+    <span title="Site words total count">11.7k</span>
   
 </div>
 

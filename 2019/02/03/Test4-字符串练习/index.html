@@ -504,10 +504,10 @@
 <li>附加练习</li>
 </ol>
 <a id="more"></a>
-<h3><span id="yuan-wen-zhai-lu-zhi-ben-fang-fa-xue-python-di-san-ban"> 原文—摘录至《笨方法学Python》第三版</span><a href="#yuan-wen-zhai-lu-zhi-ben-fang-fa-xue-python-di-san-ban" class="header-anchor">#</a></h3>
-<h4><span id="ex6-py-amp-ex8-py">  &amp; </span><a href="#ex6-py-amp-ex8-py" class="header-anchor">#</a></h4>
+<h3><span id="原文摘录至笨方法学python第三版"> 原文—摘录至《笨方法学Python》第三版</span></h3>
+<h4><span id="ex6py-amp-ex8py">  &amp; </span></h4>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex6.py</span></span><br><span class="line"></span><br><span class="line">x=<span class="string">"There are %d types of people."</span> %<span class="number">10</span></span><br><span class="line">binary=<span class="string">"binary"</span></span><br><span class="line">do_not=<span class="string">"don't"</span></span><br><span class="line">y=<span class="string">"Those who know %s and those who %s."</span> %(binary,do_not)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> x</span><br><span class="line"><span class="keyword">print</span> y</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> <span class="string">"I said: %r."</span> % x </span><br><span class="line"><span class="keyword">print</span> <span class="string">"I also said: '%s'."</span> %y </span><br><span class="line"></span><br><span class="line">hilarious=<span class="keyword">False</span></span><br><span class="line">joke_evaluation=<span class="string">"Isn't that joke so funny?! %r "</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> joke_evaluation % hilarious</span><br><span class="line">w=<span class="string">"This is the left side of ..."</span></span><br><span class="line">e=<span class="string">"a sting with a right side."</span></span><br><span class="line"><span class="keyword">print</span> w+e </span><br><span class="line"></span><br><span class="line"><span class="comment"># ex8.py</span></span><br><span class="line"></span><br><span class="line">fomatter=<span class="string">"%r %r %r %r"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> fomatter %(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line"><span class="keyword">print</span> fomatter %(<span class="string">"one"</span>,<span class="string">"two"</span>,<span class="string">"three"</span>,<span class="string">"four"</span>)</span><br><span class="line"><span class="keyword">print</span> fomatter %(<span class="keyword">True</span>,<span class="keyword">False</span>,<span class="keyword">False</span>,<span class="keyword">True</span>)</span><br><span class="line"><span class="keyword">print</span> fomatter %(fomatter,fomatter,fomatter,fomatter)</span><br><span class="line"><span class="keyword">print</span> fomatter %(</span><br><span class="line">	<span class="string">"I had this thing."</span>,</span><br><span class="line">	<span class="string">"That you could type up right."</span></span><br><span class="line">	<span class="string">"But it didn't sing."</span></span><br><span class="line">	<span class="string">"So I said goodnight."</span></span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
-<h3><span id="yu-dao-de-wen-ti"> 遇到的问题</span><a href="#yu-dao-de-wen-ti" class="header-anchor">#</a></h3>
+<h3><span id="遇到的问题"> 遇到的问题</span></h3>
 <ol>
 <li><a href="http://ex8.py" target="_blank" rel="noopener">ex8.py</a> 的代码中 %r打印出来的是单引号，但是实际上用的双引号<br>
 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。</li>
@@ -515,7 +515,7 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
 <li>%r的作用<br>
 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。</li>
 </ol>
-<h3><span id="fu-jia-lian-xi"> 附加练习</span><a href="#fu-jia-lian-xi" class="header-anchor">#</a></h3>
+<h3><span id="附加练习"> 附加练习</span></h3>
 <p>以下摘录自原文</p>
 <ol>
 <li>每一行加一段注释</li>
@@ -597,8 +597,8 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/03/Test6-参数、变量/" rel="next" title="Test6_参数、变量">
-                <i class="fa fa-chevron-left"></i> Test6_参数、变量
+              <a href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/" rel="next" title="Test5_更多字符串练习">
+                <i class="fa fa-chevron-left"></i> Test5_更多字符串练习
               </a>
             
           </div>
@@ -607,8 +607,8 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/darerd.github.io/2019/02/19/学习中需要了解的Python知识/" rel="prev" title="学习中需要了解的Python知识">
-                学习中需要了解的Python知识 <i class="fa fa-chevron-right"></i>
+              <a href="/darerd.github.io/2019/02/03/Test3-变量和命名/" rel="prev" title="Test3_变量和命名">
+                Test3_变量和命名 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -698,7 +698,7 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -720,7 +720,7 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
               
               <div class="site-state-item site-state-tags">
                 <a href="/darerd.github.io/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -795,7 +795,7 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版#</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">  &amp; #</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text"> 遇到的问题#</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text"> 附加练习#</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text"> 原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">  &amp; </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text"> 遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text"> 附加练习</span></a></li></ol></div>
             
 
           </div>
@@ -836,7 +836,7 @@ python会用最有效的方式打印出字符串，而不是完全按照你写�
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">11.1k</span>
+    <span title="Site words total count">11.7k</span>
   
 </div>
 
