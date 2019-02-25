@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于手机厂商竞相推出折叠屏手机的思考]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F25%2F%E5%85%B3%E4%BA%8E%E5%8E%82%E5%95%86%E6%8E%A8%E5%87%BA%E6%8A%98%E5%8F%A0%E5%B1%8F%E6%89%8B%E6%9C%BA%E7%9A%84%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。 去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。 [TOC] 1. 为什么厂商要竞相发布折叠屏手机？# 尽快的占领用户心智 现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。 全面屏手机，小米拔得头筹 折叠屏手机，三星、华为不遑多让 在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。 折叠屏是手机形态发展的下一个阶段，也有可能是终点 手机在经历全面屏的过渡期后，不可避免的要进入折叠屏 手机需要兼具通讯+上网两大功能 通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验 折叠屏即可大屏看视频、打游戏；又可小屏放兜里 对手机的复杂使用场景有着更好的兼容性 2. 2019年，折叠屏手机会占据主流市场？# 2019年，折叠屏手机应该还不会占据主流手机市场，不会是普罗大众的选择，还是土豪们的“玩物” 主要有以下几个原因： 成本 电量 重量 成本 折叠屏采用的是OLED柔性屏幕，屏幕生产的良率低，成本高，现在手机均在一万三左右， 高昂的售价会导致其出货量低，产能低，成本下降的空间小。 去年，苹果手机售价也达到一万元，结果大家都知道，市场给苹果浇了一盆冷水。 而且最近几年，经济形势不好，消费者更会捂紧钱袋子 电量 消费者买折叠屏手机当然是为了享受到其大屏的爽感 我们知道，屏幕越大、电量的消耗也是极高 目前，电池技术的发展已到瓶颈，还没有突破性技术出现 虽然厂商推出了快充技术，但是电量仍然是会制约折叠屏手机发展的一个重要因素 重量 为了解决电量问题，目前方案多采用两款电池 但是两块电池又会带来手机重量的增加 前面我们提到，手机要求有较高的便携性，重量大的手机显然不会有好的体验 3. 折叠屏手机会带来机遇吗？# 折叠屏手机一定会进入主流市场，顺利的话可能需要三年左右的时间 折叠屏会带来与普通手机完全不同的交互体验 对于软件开发者来说，这里会潜藏这巨大的机会 我理想中的折叠屏手机]]></content>
+      <categories>
+        <category>产品方法论</category>
+      </categories>
+      <tags>
+        <tag>产品方法论</tag>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[来看看产品汪的电脑里都有啥？|产品软件更新|1st]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F24%2F%E6%9D%A5%E7%9C%8B%E7%9C%8B%E4%BA%A7%E5%93%81%E6%B1%AA%E7%9A%84%E7%94%B5%E8%84%91%E9%87%8C%E9%83%BD%E6%9C%89%E5%95%A5%EF%BC%9F-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0-1st%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>产品必用软件</category>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo框架下，实现图片一键式上传到七牛云]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F23%2Fhexo%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E4%B8%80%E9%94%AE%E5%BC%8F%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91%2F</url>
     <content type="text"><![CDATA[在使用hexo框架驱动个人博客时，图片的插入是一个比较费心的事情 以我为例，我使用hexo+Github搭建个人独立博客 但是Github仓库提供的存储空间是有限的，如果把图片保存到本地(对应的是Github仓库)，那么不多久就会占满整个空间。 最好的解决办法，就是把图片上传到图床，目前主流采用的是七牛云(可以通过我的链接注册：https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu ，而且七牛云平台还会送你优惠券)存储图片。 但是hexo在搭建博客的过程中，对图片上传到七牛云的工作并不友好。 下面，就扒一扒，为了便于把图片上传到七牛云，我都采用了哪些方法？ 第一种方法# 安装hexo-qiniu-sync插件 1npm install hexo-qiniu-sync --save hexo-qiniu-sync安装教程，可以参考这个博客 假设，我们安装好了hexo-qiniu-sync插件，我们数一数在写博客时，上传图片到图床需要几步？ 通过截图、复制等方式找到需要插入的图片demo.jpg 把图片放在**&gt;cdn&gt;images文件夹下** 在博客编辑器(我用的是Typora)，插入这个图片，需要一个这样的指令 这是在生成站点时，就会被同步上传到图床，并在博客网站上引用这个图片 但是这里有一个问题：Typora插入一个这样的指令，并不能同时预览这张图片 为了介绍空间，把放置在&gt;cdn&gt;images文件夹下的图片删除 以上方法存在两个不满意的地方： 图片还是先放在Github的本地仓库中，为了节省空间，需要定期删除 (如果我可以从本地的任意位置导入图片，并自动上传图床就太棒了) 在Typora中插入指令不能在预览到图片 (如果可以直接在Typora中预览到插入图片的效果，就太棒了) 第二种方法# 安装hexo-admin插件，使用博客后端管理工具 1npm install hexo-admin --save 这个使用过程，我不太有发言权 我一直没有安装成功，原因目前还没有找到 hexo-admin插件使用教程，可以参考这篇博客 使用hexo-admin有两个好处 非常方便的管理后台的博客 可以实现将本地任意文件夹的图片上传到图床 解决第一种方法的第一个问题 但是我还是不满意，因为我已经用习惯了编辑器-Typora，就想用Typora编写自己博客，那这时hexo-admin就帮不了你了，怎么办呢？ 第三种方法# 使用Mpic第三方软件，帮你一键上传到七牛云 如图所示，图片在上传到七牛云后，会生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。 可以同步预览图片效果，非常方便。 需要”设置账号“和你的七牛云绑定 免费下载传送门 官网点这里 参考资料 所以利用Typora+Mpic 两个软件合作，可以非常方便的实现图片上传到图床，且还可以实现： 使用Typora编辑器编写博客 图片可以在任意本地文件夹中上传到七牛云 在编写博客时，可以同步预览效果 以上]]></content>
@@ -135,9 +159,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版# # 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题# 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习# 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+    <title><![CDATA[Test4_字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题# ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习# 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test6_参数、变量]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果# 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE # 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd # 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方# 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习# 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
@@ -161,19 +198,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test4_字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题# ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习# 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test1_第一个程序]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# # 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题# 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法# 书写时，注意这个细节，按照规范书写即可 附加练习# 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
@@ -187,9 +211,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test6_参数、变量]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版# &amp; # 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果# 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE # 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd # 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方# 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习# 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版# # 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题# 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习# 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
