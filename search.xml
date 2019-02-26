@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Test10-变量与函数]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F26%2FTest10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节主要学习函数的多种参数传递方式 我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。 [TOC] 源代码 12345678910111213141516171819# ex19.pydef cheese_and_crackers(cheese_count,boxes_of_crackers): print "You have %d cheeses!"%cheese_count print "You have %d boxes of crackers!"%boxes_of_crackers print "Get a blanket.\n" print "We can just give that function numbers directly:"cheese_and_crackers(20,30)print "Or,we can use variables from our script:"amount_of_cheese=10amount_of_crackers=50cheese_and_crackers(amount_of_cheese,amount_of_crackers)print "We can even do much inside too:"cheese_and_crackers(10+20,5+6)print "And we can combine the two, variables and math:"cheese_and_crackers(amount_of_cheese+100,amount_of_crackers+1000) 这个函数脚本思路很简单，主要以下几个点需要注意： def()指令后，记得加: 回想下前面学过的%d、%r、%s之间的区别 \n的作用 应该看到的结果 常见问题 对每一行代码添加#注释 第11行和12行创建的变量会不会改变函数中的变量 不会。这些变量是在函数之外的，当它们被传递到函数中以后，函数会为这些变量创建一些临时的版本，当函数运行结束后，这些临时变量就被丢弃了。 函数的参数个数有限制吗？ 取决于Python的版本和所用的操作系统，不过就算有限制，限值也是很大的。 一个问题 作者在文中提出了一个问题： 如果让用户给函数传递变量呢？应该怎么写？比如：让用户输入cracker和cheese的数量 我写的指令如下： 1234print "Or,we can use variables from user:"amount_of_cheese=raw_input("Enter your numbers: ")amount_of_crackers=raw_input("Enter your numbers: ")cheese_and_crackers(amount_of_cheese,amount_of_crackers) 但是在运行时，一直报错 希望大佬可以帮忙解释写这个非常简单的基础问题 这是**《笨方法学Python》**的第十篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test8-变量、函数]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F25%2FTest8-%E5%8F%98%E9%87%8F%E3%80%81%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 这一节我们会学习到“函数”，函数可以做到以下三件事： 它可以给代码段命名，就跟“变量”给字符串命名一样 它可以接收参数，就想前面的脚本接收argv一样 使用上面第一条和第二条，可以创建**“小命令”** 文章主要分为以下部分： [TOC] 源代码 我们使用def指令建立函数 12345678910111213141516171819# ex18.py# this one is like your scripts with argvdef print_two(*args): arg1,arg2=args print "arg1:%r,arg2:%r"%(arg1,arg2)#ok,that *args is actually pointless,we can just do thisdef print_two_again(arg1,arg2): print "arg1:%r,arg2:%r"%(arg1,arg2)#this just takes one argumentdef print_one(arg1): print "arg1:%r"%arg1#this one takes no argumentsdef print_none(): print "I got nothing." print_two("darer","d")print_two_again("darer","d")print_one("First!")print_none() 应该看到的结果 对源代码的解释 首先我们告诉Python使用def命令创建一个函数，也就是define(定义)意思 紧挨这def命令的是函数的名字。本例子中，它的名字是print_two，但是名字可以随便取，比如叫darerpm，但是最好可以体现这个函数的功能 然后告诉函数，我们需要*args(asterisk argv),这和脚本的argv非常相似，参数必须圆括号()中才能执行 接着用冒号:结束本行，然后开始下一行缩进(可使用tab键缩进) 以print_two函数为例，其中第一行的作用是将参数解包，这个脚本参数解包的原理类似 为了演示它的工作原理，我们把解包后的每一个参数都print出来 函数print_two存在一些问题：它并不是创建函数最简单的方法，在Python函数中，可以跳过整个参数解包 的过程，直接使用()里边的名称作为变量名，这就是print_two_again实验的功能。 接下来的例子是print_one，它演示了函数如何接收单个参数 最后一个例子是print_none，它演示了函数可以不接收任何参数 常见问题 函数命名有什么规则？ 和变量名一样，只要以字母、数字和下划线组成，而且不是数字开始，就可以了 *args里的*是什么意思？ 它的功能是告诉Python把函数的所有参数都接收进来，然后放到名叫args的列表中去。和前面在用的argv差不多，只不过前者用在函数上。 这是**《笨方法学Python》**的第八篇文章 希望自己可以继续坚持下去 希望你也可以坚持下去 ​]]></content>
@@ -9,8 +22,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -25,9 +38,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[来看看产品汪的电脑里都有啥？|产品软件更新|1st]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F24%2F%E6%9D%A5%E7%9C%8B%E7%9C%8B%E4%BA%A7%E5%93%81%E6%B1%AA%E7%9A%84%E7%94%B5%E8%84%91%E9%87%8C%E9%83%BD%E6%9C%89%E5%95%A5%EF%BC%9F-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0-1st%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[产品人必用的大幅提高办公效率的工具|产品软件更新|1st]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F24%2F%E4%BA%A7%E5%93%81%E4%BA%BA%E5%BF%85%E7%94%A8%E7%9A%84%E5%A4%A7%E5%B9%85%E6%8F%90%E9%AB%98%E5%8A%9E%E5%85%AC%E6%95%88%E7%8E%87%E7%9A%84%E5%B7%A5%E5%85%B7%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B01st%2F</url>
+    <content type="text"><![CDATA[[TOC] Groupy 每一位产品经理都会触发一下“彩蛋”： 办公时会打开多个软件，需要在不同软件之间切换，查看 有时会被搞的眼花缭乱 你肯定会有以下需求： 希望把所有的软件整合在一起 软件切换和查看可以非常方便 既然有需求，那就一定有解决需求的办法： 有这么一款软件，它可以把所有软件整合在一起，就像浏览器的标签页一样，点击不同的标签页即可实现软件之间的切换。 Groupy可以帮助把Windows桌面上的多个软件整合到一个窗口，就如同浏览器的标签页一样。 只需要把一个窗口拖到另外一个已经打开的窗口上，窗口就会自动整合到一起，每个窗口都会自动转换为标签页，只需要在标签页点击不同的标签，即可切换程序。 你的工作桌面(without Groupy) 经过Groupy整理后的桌面 Groupy操作界面 演示demo: 更多好玩的功能，可以下载后探索 在微信公众号后台回复：groupy，即刻免费下载]]></content>
       <categories>
         <category>产品必用软件</category>
         <category>软件资源</category>
@@ -82,8 +95,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -158,6 +171,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Test4_字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test6_参数、变量]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
@@ -166,21 +192,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
         <tag>Python</tag>
-        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -192,8 +205,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -205,21 +218,21 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test4_字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -231,8 +244,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>笨方法学Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
