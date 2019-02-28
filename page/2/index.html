@@ -338,6 +338,451 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/23/hexo框架下，实现图片一键式上传到七牛云/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Darer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/darerd.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darer ' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/darerd.github.io/2019/02/23/hexo框架下，实现图片一键式上传到七牛云/" itemprop="url">hexo框架下，实现图片一键式上传到七牛云</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T07:50:42+08:00">
+                2019-02-23
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:36:11+08:00">
+                2019-02-24
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/darerd.github.io/categories/产品经理学技术/" itemprop="url" rel="index">
+                    <span itemprop="name">产品经理学技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/darerd.github.io/categories/产品经理学技术/博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">博客搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/darerd.github.io/2019/02/23/hexo框架下，实现图片一键式上传到七牛云/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/23/hexo框架下，实现图片一键式上传到七牛云/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  898
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在使用hexo框架驱动个人博客时，图片的插入是一个比较费心的事情</p>
+<p>以我为例，我使用hexo+Github搭建个人独立博客</p>
+<p>但是Github仓库提供的存储空间是有限的，如果把图片保存到本地(对应的是Github仓库)，那么不多久就会占满整个空间。</p>
+<p>最好的解决办法，就是把图片上传到图床，目前主流采用的是七牛云(可以通过我的链接注册：<a href="https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu" target="_blank" rel="noopener">https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu</a> ，而且七牛云平台还会送你优惠券)存储图片。</p>
+<p>但是hexo在搭建博客的过程中，对图片上传到七牛云的工作并不友好。</p>
+<p>下面，就扒一扒，为了便于把图片上传到七牛云，我都采用了哪些方法？</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/darerd.github.io/2019/02/23/hexo框架下，实现图片一键式上传到七牛云/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  <div>
+    
+ </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/22/Typora-七牛云，高效写Markdown-产品必用软件-第1期/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Darer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/darerd.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darer ' Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/darerd.github.io/2019/02/22/Typora-七牛云，高效写Markdown-产品必用软件-第1期/" itemprop="url">Typora+七牛云，高效写Markdown|产品必用软件|第1期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-22T22:40:53+08:00">
+                2019-02-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:42:11+08:00">
+                2019-02-24
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/darerd.github.io/categories/产品必用软件/" itemprop="url" rel="index">
+                    <span itemprop="name">产品必用软件</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/darerd.github.io/categories/产品必用软件/软件教程/" itemprop="url" rel="index">
+                    <span itemprop="name">软件教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/darerd.github.io/2019/02/22/Typora-七牛云，高效写Markdown-产品必用软件-第1期/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/22/Typora-七牛云，高效写Markdown-产品必用软件-第1期/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  619
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等</p>
+<p>而且产品人日常还要写写文章什么的。</p>
+<p>如果用传统的word去写文档，真的是：</p>
+<blockquote>
+<p>写作两分钟，格式两小时</p>
+</blockquote>
+<p>而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率</p>
+<p><a href="https://blog.csdn.net/weixin_44441012/article/details/86084778" target="_blank" rel="noopener">进门右转，Markdown入门</a></p>
+<hr>
+<p>一篇文章主要有文字、链接、图片以及格式等组成</p>
+<p>利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些<a href="https://blog.csdn.net/weixin_44441012/article/details/86173262" target="_blank" rel="noopener">Latex排版</a>)</p>
+<hr>
+<p>但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。</p>
+<p>最好可以一键式操作。</p>
+<p>下面就是见证奇迹的时刻！</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/darerd.github.io/2019/02/22/Typora-七牛云，高效写Markdown-产品必用软件-第1期/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  <div>
+    
+ </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/22/Python_文件IO_知识/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1880,7 +2325,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/03/Test3-变量和命名/">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/03/Test5-更多字符串练习/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Darer">
@@ -1899,7 +2344,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/darerd.github.io/2019/02/03/Test3-变量和命名/" itemprop="url">Test3_变量和命名</a></h1>
+                <a class="post-title-link" href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/" itemprop="url">Test5_更多字符串练习</a></h1>
         
 
         <div class="post-meta">
@@ -1927,7 +2372,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:40:27+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:40:40+08:00">
                 2019-02-24
               </time>
             
@@ -1975,8 +2420,8 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/darerd.github.io/2019/02/03/Test3-变量和命名/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/03/Test3-变量和命名/" itemprop="commentCount"></span>
+                <a href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/03/Test5-更多字符串练习/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1998,452 +2443,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  442
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>
-的学习思路和理解，如有不如之处，望指出！！！</p>
-</blockquote>
-<p>文章主要分为三个部分：</p>
-<ol>
-<li>原文—摘录至《笨方法学Python》第三版</li>
-<li>学习中遇到的问题</li>
-<li>附加练习</li>
-</ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/darerd.github.io/2019/02/03/Test3-变量和命名/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  <div>
-    
- </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/03/Test6-参数、变量/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/darerd.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darer ' Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/darerd.github.io/2019/02/03/Test6-参数、变量/" itemprop="url">Test6_参数、变量</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-03T12:47:02+08:00">
-                2019-02-03
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:40:46+08:00">
-                2019-02-24
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/darerd.github.io/categories/产品经理学技术/" itemprop="url" rel="index">
-                    <span itemprop="name">产品经理学技术</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/darerd.github.io/categories/产品经理学技术/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/darerd.github.io/2019/02/03/Test6-参数、变量/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/03/Test6-参数、变量/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  591
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>
-的学习思路和理解，如有不如之处，望指出！！！</p>
-</blockquote>
-<p>文章主要分为三个部分：</p>
-<ol>
-<li>原文—摘录至《笨方法学Python》第三版</li>
-<li>学习中遇到的问题</li>
-<li>问题的解决方法</li>
-<li>附加练习</li>
-</ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/darerd.github.io/2019/02/03/Test6-参数、变量/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  <div>
-    
- </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/darerd.github.io/2019/02/03/Test4-字符串练习/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/darerd.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darer ' Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/darerd.github.io/2019/02/03/Test4-字符串练习/" itemprop="url">Test4_字符串练习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-03T12:47:02+08:00">
-                2019-02-03
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-24T22:40:34+08:00">
-                2019-02-24
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/darerd.github.io/categories/产品经理学技术/" itemprop="url" rel="index">
-                    <span itemprop="name">产品经理学技术</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/darerd.github.io/categories/产品经理学技术/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/darerd.github.io/2019/02/03/Test4-字符串练习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/darerd.github.io/2019/02/03/Test4-字符串练习/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  402
+                  433
                 </span>
               
 
@@ -2494,7 +2494,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/darerd.github.io/2019/02/03/Test4-字符串练习/#more" rel="contents">
+            <a class="btn" href="/darerd.github.io/2019/02/03/Test5-更多字符串练习/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2585,7 +2585,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
               
                 <a href="/darerd.github.io/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2707,7 +2707,7 @@ Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.5k</span>
+    <span title="Site words total count">14.9k</span>
   
 </div>
 
