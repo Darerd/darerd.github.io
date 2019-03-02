@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Test15-if和else语言]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F02%2FTest15-if%E5%92%8Celse%E8%AF%AD%E8%A8%80%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节主要学习程序学习中都会学习的if和else语言，运用和理解起来也是非常简单 [TOC] 源代码 12345678910111213141516171819202122# ex30.pypeople=30cars=40buses=15if cars&gt;people: print "we should take the cars."elif cars&lt;people: print "we should not take the cars."else: print "we can't decide."if buses&gt;cars: print "that's we could take the buses."elif buses&lt;cars: print "maybe we could take the buses."else: print "we still can't decide."if people&gt;buses: print "alright,let's just take the buses."else: print "fine,let's stay home then." 应该看到的结果 本节需要注意的事 如果多个elif块都是True，Python会如何处理？ Python只会运行它遇到的是True的第一个块，所以只有第一个为True的块会运行。 if和elif的区别 如果程序中判断事件很多，全部用if的话，会遍历整个程序，用elif 程序运行时，只要if或后续某一个elif之一满足逻辑值为True，则程序执行完对应输出语句后自动结束该轮if-elif（即不会再去冗余地执行后续的elif或else） 示例如下： 123456789101112131415161718192021#encoding=utf-8a=88if a&gt;= 90: print u"优秀"if a == 88: print u"正好88"if a &gt;= 80: print u"良好"else: print u"都不合格" print "* * "*10 if a&gt;= 90: print u"优秀"elif a == 88: print u"正好88"elif a &gt;= 80: print u"良好"else: print u"都不合格" 以上指令的执行结果如下： 1234正好88良好* * * * * * * * * * * * * * * * * * * * 正好88 if、elif和else语句注意一下两点： else、elif为子块，不能独立使用 一个if语句中可以包含多个elif语句，但是结尾只能有一个else语句 这是**《笨方法学Python》**的第十二篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test14-布尔表达式练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F02%2FTest14-%E5%B8%83%E5%B0%94%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 这节我们主要做“布尔逻辑表达式”（boolean logic expression）的练习 [TOC] 源代码 1234567891011121314151617181920212223# ex28.py##逻辑语句True and FalseFalse and False1==1 and 2==1"test" == "test"1==1 or 2!=1True and 1==1False and 0!=0True or 1==1"test" == "testing""test"==11!=0 and 2==1"test" == "testing""test" == 1not (True and False)not (1==1 and 0 !=1)not (10==1 or 1000==1000)not (1!=10 or 3==4)not ("testing"=="testing" and "zed"=="cool guy")1==1 and not ("testing" ==1 or 1==0)"chunky"=="bacon" and not (3==4 or 3==3)3==3 and not ("testing"=="testing" or "Python"=="Fun") 应该看到的结果 这里我只摘抄了以上部分布尔表达式，每一种表达式写法都类似 这一块的知识，在高中时应该学过这里的逻辑问题 这里只列出最简单的逻辑关系 常见问题 为什么“test” and “test”返回“test”, 1 and 1返回1， 而不是返回True呢？ Python 和许多语言一样，都是返回两个被操作对象中的一个，而非它们的布尔表达式True或False。这意味着，如果你写了False and 1，得到的第一个操作数（False），而非第二个操作数（1）。 这是**《笨方法学Python》**的第十二篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[产品人必用的下载工具|产品软件|3rd]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F02%2F%E4%BA%A7%E5%93%81%E4%BA%BA%E5%BF%85%E7%94%A8%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-3rd%2F</url>
+    <content type="text"><![CDATA[资源来自互联网 如有侵权，请联系删除 [TOC] 迅雷X无广告版 每一位产品人都会触发以下“彩蛋” 平时下载都会用到迅雷， 可以这“流氓”软件 真的是广告不断，时不时来个弹窗 真的烦 如果你和我一样，讨厌无处不在的广告、讨厌弹窗 那这个迅雷X-破解版-无广告一定合你胃口 我们来做下对比： 迅雷X 放眼望去，全是和下载无关的推广 迅雷X-破解版-无广告 小窗口： 大窗口： 没有任何和下载无关的事情 大窗口有点丑，不过默认打开小窗口 破解版的特点： -本地SVIP 10会员(已开通VIP会员的正常显示)，移除下载区文字链接广告，默认竖屏只显示下载区 -移除迅雷主页和影评，移除影评弹窗 -移除多余菜单 -移除顶栏搜索框，消息管理器 -移除皮肤中心文字链接”开通会员”，移除非会员开通会员按钮 -禁止更新版本 搜索微信号：darerpm，关注公众号 公众号后台回复迅雷X，即刻获得下载链接 冰点文库下载器无广告版 每一位产品人都会遇到以下“彩蛋” 想从百度文库下载些资料 可是还需要付费 可自己又是偶尔使用 不要着急，文档资料下载神器–冰点文库下载器，满足你的需求 它不仅支持百度文库，还支持支持豆丁、丁香、畅享、MBALib、HP009、MAX、Book118、金字塔医学、大桔灯等文库文档。 基本上国内主流，它都支持。 下载的文档为PDF格式 这里提供了一款无广告版的冰点文库下载器 演示demo： 操作很简单： 找到所需文档的链接，复制到下载冰点下载器，即可下载 搜索微信号：darerpm，关注公众号 公众号后台回复冰点下载器，即刻获得下载链接 Pandownload 每一位产品人都会遇到以下“需求” 坑爹的百度云下载限速！！！ 这一款是现在非常常用的破解百度云下载速度限制的软件 应该很多人都知道 这里就不具体演示了 提醒一句： 如果你在较短的时间内，利用Pandownload从百度云盘下载大量大文件 即使是从你自己的百度云盘下载也不行 即使这些大文件是你上传的也不行 百度云盘检测到这种行为，认为是可疑下载 把你的账号列为异常，强制对账号下载限速 这时，Pandownload也无能为例 需要过一段时间才可以回复正常 搜索微信号：darerpm，关注公众号 公众号后台回复pandownload，即刻获得下载链接 这是产品人必用软件系列的第三期 此系列逢五更新 也就是每月的5号、15号和25号更新]]></content>
+      <categories>
+        <category>产品必用软件</category>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test13-用函数写一个简单的模块]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F03%2F01%2FTest13-%E7%94%A8%E5%87%BD%E6%95%B0%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%A8%A1%E5%9D%97%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节我们利用前面学习的Python函数(def)知识，做一个简单的模块(module)，然后我们从外部调用这个模块的函数。 [TOC] 源代码 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950# ex25.pydef break_words(stuff): """ This function will break up words for us. """ words=stuff.split(' ') return words def sort_words(words): """ sorts the words. """ return sorted (words) def print_first_word(words): """ prints the first word after popping it off. """ word=words.pop(0) print worddef print_last_word(words): """ prints the last word after popping it off. """ word=words.pop(-1) print word def sort_sentence(sentence): """ takes in a full sentence and returns the sorted words. """ words=break_words(sentence) return sort_words(words) def print_first_and_last(sentence): """ prints the first and last words of the sentence. """ words=break_words(sentence) print_first_word(words) print_last_word(words) def print_first_and_last_sorted(sentence): """ sorts the words then prints the first and last one. """ words=sort_sentence(sentence) print_first_word(words) print_last_word(words) 我们来分析下以上代码中，每一个函数的作用 把句子中的字母分离，然后返回到words中 把words中的字母重新排序，然后返回到sorted_words中 输出words中存储的第一个字母 输出words中存储的最后一个字母 把重新的排序的字母组成一个句子，然后返回到sorted_words中 输出words的第一个和最后一个字母 输出sorted_words的第一个和最后一个字母 你应该看到的结果 注意：我对上面这个代码文件的命名是test13.py 我们来分析下编译时每一句的作用是什么？ 在第5行，将test13.py执行了import,和我们前面介绍的import作用是一样的。在import的时候是不需要加.py后缀的。把test13.py当成一个模块module来使用，在这个模块里定义的函数是可以直接调用的。 第6行创建了一个语句 第7行使用test13调用第一个函数test13.break_words。其中的.符号可以告诉Python：“我要运行test13模块里那个叫break_words的函数。” 第8行只是输入words，而Python会在第9行打印出words这个变量里的内容，输出的结果是一个列表，后面小节会讲到的 第10~11行使用test13.sort_words来得到一个排序过的句子 第13~16行使用test13.print_first_word和test13.print_last_word将第一个词和最后一个词打印出来 第17行和第8行的作用是一样的，输出words这个变量里的内容 第19行和第21行的作用同上，是打印出第一个词和最后一个词 第23行和第8行的作用类似 第25行调用函数test13.sort_sentence 剩下几行的作用都和前面的作用都类似了 本节要掌握的知识 pop() 函数用于移除列表中的一个元素（默认最后一个元素），并且返回该元素的值。 标准写法： 1list.pop(obj=list[-1]) 参数： 123obj -- 可选参数，要移除列表元素的对象。默认参数为-1，是最后一个元素参数0，是第一个元素 示例： 123456789aList = [123, 'xyz', 'zara', 'abc']print "A List : ", aList.pop(-1)# 参数 -1 指向的是 abcprint "B List : ", aList.pop(0)# 参数 0 指向的是 123print "C List : ", aList.pop(1)# 参数 1 指向的是 xyzprint "D List : ", aList.pop(2)# 参数 2 指向的是 zara 这是**《笨方法学Python》**的第十二篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
@@ -234,19 +272,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test1_第一个程序]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test6_参数、变量]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
@@ -260,9 +285,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+    <title><![CDATA[Test3_变量和命名]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
@@ -286,9 +311,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test3_变量和命名]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test1_第一个程序]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
