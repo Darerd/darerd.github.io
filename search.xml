@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Test18-while循环]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F04%2FTest18-while%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ while循环：while循环会一直执行它下面的代码块，直到它对应的布尔表达式为False时才会停下来 while循环有一个问题，那就是有时它会永远不结束 为了避免这样的问题，你需要遵循下面的规定 尽量少用while循环，大部分时候for循环是更好的选择 重复检查你的while语句，确定你测试的布尔表达式最终会变成False 如果不确定，就在while循环的结果打印出你要测试的值，看看它的变化 [TOC] 源代码 12345678910111213141516# ex33.pyi=0numbers=[]while i&lt;6: print "at the top i is %d"%i numbers.append(i) i=i+1 print "numbers now: ",numbers print "at the bottom i is %d"%iprint "The numbers: "for num in numbers: print num 应该看到的结果 附加练习 把这个while循环改成一个函数 1234567891011i=0numbers=[]def while_1(n): global i #global定义全局变量 while i&lt;n: numbers.append(i) i=i+1 return numbers new_number=while_1(6)print "The numbers: ",new_number 这是**《笨方法学Python》**的第十八篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test17-for循环]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F04%2FTest17-for%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节主要学习for循环语句和如何创建一个列表 [TOC] 源代码 12345678910111213141516171819202122232425262728293031# ex32.pythe_count=[1,2,3,4,5]fruits=['apples','oranges','pears','apricots']change=[1,'pennies',2,'dimes',3,'quarters']#this first kind of for-loop goes through a listfor number in the_count: print "this is count %d"%number #same as abovefor fruit in fruits: print "A fruit of type: %s"%fruit #also we can go through mixed lists too#notice we have to use %r since we don't know what's in itfor i in change: print "I got %r"%i #we can also build lists,first start with an empty oneelements=[]#then use the range function to do 0 to 5 countsfor i in range(0,6): print "adding %d to the list."%i #append is a function that lists understand elements.append(i) #now we can print them out toofor i in elements: print "element was:%d"%i 应该看的结果 这里需要注意的一点： 注意%r和%s输出结果的不同 这个知识点，前面有介绍过 本节需要学习的知识 range()指令 range() 函数可创建一个整数列表，一般用在 for 循环中 标准语法 1range(start, stop[, step]) 参数说明 start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0,5）; stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5 step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1) 示例 1234567891011121314&gt;&gt;&gt;range(10) # 从 0 开始到 10[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]&gt;&gt;&gt; range(1, 11) # 从 1 开始到 11[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]&gt;&gt;&gt; range(0, 30, 5) # 步长为 5[0, 5, 10, 15, 20, 25]&gt;&gt;&gt; range(0, 10, 3) # 步长为 3[0, 3, 6, 9]&gt;&gt;&gt; range(0, -10, -1) # 负数[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]&gt;&gt;&gt; range(0)[]&gt;&gt;&gt; range(1, 0)[] append()指令 append() 方法用于在列表末尾添加新的对象。 标准语法 1list.append(obj) 参数说明 obj – 添加到列表末尾的对象。 如何创建二维列表 就是在列表中包含列表，如[[1,2,3],[4,5,6]] 这是**《笨方法学Python》**的第十七篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown写作必用软件|产品软件|4th]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F03%2F04%2FMarkdown%E5%86%99%E4%BD%9C%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-4th%2F</url>
     <content type="text"><![CDATA[本文适合正在使用Markdown写作和准备学习Markdown写作的产品人 本期主要介绍在使用Markdown写作时，有哪些软件是必不可少的，一定会用得到的 一篇文章主要包括三个要素： 文字 图片 排版 与此对应的，我们需要一款Markdown编辑器、一款截图软件和一款图床工具 [TOC] Markdown编辑器 Markdown编辑器有很多，随便在知乎一搜，markdown编辑器推荐，就可以找到很多介绍的文章，这里我就不重复造轮子了。 我主要推荐一款Markdown编辑器–Typora Typora 演示.demo Typora设计的核心理念是：所见即所得 软件的颜值非常高，而且完全免费 不过Markdown新手需要一些时间去适应，开始用的时候会非常不习惯 搜索微信号：darerpm，关注公众号 公众号后台回复typora，即刻获得下载链接 截图软件 Snipaste 我认为这一款是windows系统中最好用的截图工具，简单、好用 演示.demo 核心功能是截图 特色功能是贴图 都支持自定义快捷键，用起来非常方便 搜索微信号：darerpm，关注公众号 公众号后台回复snipaste，即刻获得下载链接 ScreentoGif 除了图片之外，越来越多人喜欢用gif图，来演示 ScreentoGif录制简单，编辑功能强大 把需要制作的gif的部分，放在框里，录制即可 支持导出gif、mp4等格式 搜索微信号：darerpm，关注公众号 公众号后台回复screentogif，即刻获得下载链接 图床工具 Picgo 关于图床工具，我前面出过一期非常详细的介绍，这里是详细完备的图床工具介绍 演示.demo 搜索微信号：darerpm，关注公众号 公众号后台回复picgo，即刻获得下载链接 Markdown写作是有一定学习成本的，希望你可以坚持下去 最后会感受到Markdown写作的便捷之处 这是产品人必用软件系列的第四期 此系列逢五更新 也就是每月的5号、15号和25号更新]]></content>
@@ -309,9 +335,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+    <title><![CDATA[Test1_第一个程序]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
@@ -348,35 +387,22 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>笨方法学Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test4_字符串练习]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test1_第一个程序]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
