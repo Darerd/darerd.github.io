@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F12%2FWindows%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E5%B7%A5%E5%85%B7-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-5th%2F</url>
+    <content type="text"><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th 预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。 今天推荐的这一款软件就是 windows系统中 最好用的一款 QuickLook QuickLook支持以下文件格式： 图片: .png, .jpg, .bmp and .gif 压缩包： .zip, .rar, .7z PDF 文件 文本文件 Microsoft Word (.doc, .docx), Excel (.xls, .xlsx) and PowerPoint (.ppt, .pptx) files (需要安装 Office) 视频文件 (.mp4, .mkv, .m2ts 等) HTML 文件 (.htm, .html) Markdown 文件 (.md) 其他文件和文件夹会显示一个信息框 演示： 预览图片 预览markdown文件 预览PDF文件 总之，用起来非常方便，大大提高工作的效率和逼格 搜索微信号：darerpm，关注公众号 公众号后台回复QuickLook，即刻获得下载链接]]></content>
+      <categories>
+        <category>产品必用软件</category>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test21-做一个字典]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F03%2F11%2FTest21-%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AD%97%E5%85%B8%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节学一个新概念—字典(dictionary) Python将其成为“字典”，有的语言里它的名称是“散列”。 [TOC] 先了解的知识 我们可以用列表做这些事 123456789&gt;&gt;&gt; things=['a','b','c','d']&gt;&gt;&gt; print things[1]b&gt;&gt;&gt; things[1]='z'&gt;&gt;&gt; print things[1]z&gt;&gt;&gt; print things['a','b','c','d']&gt;&gt;&gt; 你可以使用数字作为列表的索引，也就是利用数找到列表中的元素。 而字典所做的是，让你通过任何东西(不只是数字)找到元素。 字典可以将一个物件和另外一个东西关联，不管它们的类型是什么？ 1234567891011&gt;&gt;&gt; stuff=&#123;'name':'zed','age':36,'height':6*12+2&#125;&gt;&gt;&gt; print stuff['name']zed&gt;&gt;&gt; print stuff['age']36&gt;&gt;&gt; print stuff['height']74&gt;&gt;&gt; stuff['city']="San Francisco"&gt;&gt;&gt; print stuff['city']San Francisco&gt;&gt;&gt; 你将看到除了通过数字之外，还可以用字符串来从字典中获取stuff，我们还可以用字符串来往字典中添加元素。 123456789&gt;&gt;&gt; stuff[1]="WOW"&gt;&gt;&gt; stuff[2]="Neato"&gt;&gt;&gt; print stuff[1]WOW&gt;&gt;&gt; print stuff[2]Neato&gt;&gt;&gt; print stuff&#123;'city':'San Francisco',2:'Neato','name':'zed',1:'WOW','age':36,'height':74&#125;&gt;&gt;&gt; 只能放东西进去的字典是没啥意思的，所以我们还要有删除物件的方法，也就是使用del这个关键字： 123456&gt;&gt;&gt; del stuff['city']&gt;&gt;&gt; del stuff[1]&gt;&gt;&gt; del stuff[2]&gt;&gt;&gt; stuff&#123;'name':'zed','age':36,'height':6*12+2&#125;&gt;&gt;&gt; 源代码 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748# ex39.pystates=&#123; 'Oregon':'OR', 'Florida':'FL', 'California':'CA', 'New York':'NY', 'Michigan':'MI'&#125;cities=&#123; 'CA':'San Francisco', 'MI':'Detroit', 'FL':'Jacksonville'&#125;cities['NY']='New York'cities['OR']='Portland'print '-'*10print "NY State has: ",cities['NY']print "OR State has: ",cities['OR']print '-'*10print "Michigan's abbreviation is: ",states['Michigan']print "Florida's abbreviation is: ",states['Florida']print '-'*10for state,abbrev in states.items(): print "%s is abbreviation %s"%(state,abbrev) print '-'*10for abbrev,city in cities.items(): print "%s has the city %s"%(abbrev,city) print '-'*10for state,abbrev in states.items(): print "%s state is abbreviated %s and has city %s"%( state,abbrev,cities[abbrev]) print '-'*10state=states.get('Texas',None)if not state: print 'Sorry, no Texas.' city=cities.get('TX','Does Not Exist')print "The city for the state 'TX' is: %s"%city 应该看到的结果 这是**《笨方法学Python》**的第二十一篇文章 希望自己可以坚持下去 希望你也可以坚持下去]]></content>
@@ -9,8 +21,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -33,8 +45,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -57,8 +69,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -70,8 +82,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -83,8 +95,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -119,8 +131,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -132,8 +144,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -145,8 +157,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -170,8 +182,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -195,8 +207,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -220,8 +232,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -233,8 +245,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -246,8 +258,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -319,8 +331,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -403,60 +415,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
         <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test6_参数、变量]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test1_第一个程序]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>笨方法学Python</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -468,8 +428,60 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test1_第一个程序]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test6_参数、变量]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
