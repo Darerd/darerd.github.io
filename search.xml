@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[通过上瘾模型分析虎扑是怎么让你一步步上瘾的]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F18%2F%E9%80%9A%E8%BF%87%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E8%99%8E%E6%89%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E4%B8%80%E6%AD%A5%E6%AD%A5%E4%B8%8A%E7%98%BE%E7%9A%84%2F</url>
+    <content type="text"><![CDATA[通过上瘾模型分析虎扑是怎么让你一步步上瘾的 上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。 **第一阶段：**引发用户去使用你的产品，这叫作“触发”。 第二阶段：行动。行动要兼具动机和能力，有了动机，还需要用户的能力足够完成行为。 第三阶段：给用户多变的酬赏。所谓多变的酬赏，就是指酬赏要有不可预期性。 第四阶段：是让用户在产品上进行越来越多的投入。用户与产品亲密接触得越多，沉没成本就越大，也就越离不开它。 我们用上瘾模型看一看虎扑是怎么让你一步步上瘾的 第一阶段：触发 外部触发 朋友推荐、虎扑的营销推广（比如，去年的kris吴事件） 内部触发 正在寻找一个专业看球平台、即时资讯（能得到更多关于NBA的讯息） 第二阶段：行动 福格认为，要使人们行动起来，三个要素必不可少。 第一，充分的动机；第二，完成这一行为的能力；第三，促使人们付诸行动的触发。 动机： 正在寻找专业的看球平台，更快的了解到NBA的讯息 能力： 虎扑的下载、注册和使用都非常简单，这一过程完全没有阻碍 第三阶段：多变的酬赏 驱使我们采取行动的，并不是酬赏本身，而是渴望酬赏时产生的那份迫切需要。 还记得自己为什么要下载虎扑吗？专业看球平台、即时资讯（能得到更多关于NBA的讯息） 酬赏1： 满足你下载的目的（虎扑的护城河之一）专业看球平台、即时资讯（能得到更多关于NBA的讯息） 酬赏2： 高质量的赛后分析贴，让自己更加懂球，更加懂比赛 酬赏3： 虎扑社区里JRs的氛围，步行街上有趣而温暖的帖子 酬赏4：（最不容易被注意） 比你的朋友知道多一点，得到朋友们的认可和赞赏 这也就是渴望酬赏时产生的那份迫切需要 第三阶段：投入 投入1： 更加关心比赛时间，结果和赛后采访、资讯和赛后分析 投入2： 对论坛优秀帖子的转发、收藏、点赞 投入3： 无意间又打开了虎扑，分配了更多的时间 现在你可以利用上瘾模型询问自己关于如何让用户上瘾的五个基本问题： 用户真正需要什么？你的产品可以缓解什么样的痛苦？（内部触发） 你靠什么吸引用户使用你的服务？（外部触发） 期待酬赏的时候，用户可采取的最简单的操作行为是什么？如何简化产品使该操作行为更轻松容易？（行动） 用户是满足于所得酬赏，还是想要更多酬赏？（多变的酬赏） 用户对你的产品做出了哪些“点滴投入”？这些投入是否有助于加载下一个触发并储存价值，使产品质量在使用过程中获得提升？（投入） 在相同条件下，满足用户的群体价值（让用户在群体中发光）比仅满足用户的个人价值（比如，给用户金钱奖励）更有用。 人生来就希望被认可]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test23-学习面向对象术语]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F03%2F16%2FTest23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 本节学习面向对象术语 [TOC] 单词练习 类（class）：告诉python创建新类型的东西 对象（object）：两个意思，即最基本的东西，或者某个东西的实例 实例（instance）：让python创建一个时得到的东西 def：创建函数 self：在类的函数中，self指代被访问的对象或者实例的一个变量 继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似 组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系 属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量 是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼） 有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴） 语汇练习 class X(Y)：创建一个叫X的类，它是Y的一种 class X(object):def_init_(self,J)：类X有一个_init_接收self和J作为参数 class X(object):def M(self,J)：类X有一个函数名称为M，它接收self和J作为参数 foo=X():将foo设为类X的一个实例 foo.M(J):从foo中找到M函数，并使用self和J参数调用它 foo.K=Q：从foo中获取K属性，并将其设为Q 每一条中，你看到X、Y、M、J、K、Q及foo的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样 创建一个叫???的类，它是Y的一种 类???有一个_init_，能接收self和???作为参数 类???有一个函数名称为???，可以接收self和???作为参数 将foo设为class ???的一个实例 从foo中找到???函数，并使用self和???参数调用它 从foo中获取???属性，并将其设为??? 源代码 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677# ex41.pyimport randomfrom urllib import urlopenimport sysWORD_URL="http://learncodethehardway.org/words.txt"WORDS=[]PHRASES=&#123; "class %%%(%%%):": "Make a class named %%% that is-a %%%.", "class %%%(object):\n\tdef _init_(self,***)": "class %%% has-a _init_ that takes self and *** parameters.", "class %%%(object):\n\tdef ***(self, @@@)": "class %%% has-a function named *** that takes self and @@@ parameters.", "***=%%%()": "Set *** to an instance of class %%%.", "***.***(@@@)": "From *** get the *** function, and call it with parameters self,@@@.", "***.***='***'": "From *** get the *** attribute and set it to '***'." &#125; # do they want to drill phrases firstPHRASES_FIRST=Falseif len (sys.argv)==2 and sys.argv[1]=="english": PHRASES_FIRST=True# load up the words from the websitefor word in urlopen(WORD_URL).readlines(): WORDS.append(word.strip()) def convert(snippet,phrase): class_names=[w.capitalize() for w in random.sample(WORDS,snippet.count("%%%"))] other_names=random.sample(WORDS,snippet.count("***")) results=[] param_names=[] for i in range(0,snippet.count("@@@")): param_count=random.randint(1,3) param_names.append(','.join(random.sample(WORDS,param_count))) for sentence in snippet,phrase: result=sentence[:] # fake class names for word in class_names: result=result.replace("%%%",word,1) # fake other names for word in other_names: result=result.replace("***",word,1) # fake parameter lists for word in param_names: result=result.replace("@@@",word,1) results.append(result) return results # keep going until they hit CTRL-Dtry: while True: snippets=PHRASES.keys() random.shuffle(snippets) for snippet in snippets: phrase=PHRASES[snippet] question,answer=convert(snippet,phrase) if PHRASES_FIRST: question,answer=answer,question print question raw_input("&gt; ") print "ANSWER: %s\n\n" %answerexcept EOFError: print "\nBye" 应该看到的结果 代码解释 目前能力不够，不能完全解释和理解每一段代码的作用 下面仅介绍部分需要注意的知识 Python异常处理 最后一段用try/except语句来检测异常 语法： 12345678try:&lt;语句&gt; #运行别的代码except &lt;名字&gt;：&lt;语句&gt; #如果在try部份引发了'name'异常except &lt;名字&gt;，&lt;数据&gt;:&lt;语句&gt; #如果引发了'name'异常，获得附加的数据else:&lt;语句&gt; #如果没有异常发生 try的工作原理是，当开始一个try语句后，python就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，try子句先执行，接下来会发生什么依赖于执行时是否出现异常。 如果当try后的语句执行时发生异常，python就跳回到try并执行第一个匹配该异常的except子句，异常处理完毕，控制流就通过整个try语句（除非在处理异常时又引发新的异常）。 如果在try后的语句里发生了异常，却没有匹配的except子句，异常将被递交到上层的try，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。 如果在try子句执行时没有发生异常，python将执行else语句后的语句（如果有else的话），然后控制流通过整个try语句。 更多关于Python异常处理的资料 这是**《笨方法学Python》**的第二十三篇文章 希望自己可以坚持下去 希望你也可以坚持下去 后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[应届生：为何你的工资会比老员工高？]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F03%2F16%2F%E5%BA%94%E5%B1%8A%E7%94%9F%EF%BC%9A%E4%B8%BA%E4%BD%95%E4%BD%A0%E7%9A%84%E5%B7%A5%E8%B5%84%E4%BC%9A%E6%AF%94%E8%80%81%E5%91%98%E5%B7%A5%E9%AB%98%EF%BC%9F%2F</url>
     <content type="text"><![CDATA[在应届生市场上，**“倒挂”**是一个蛮普遍的现象(至少我身边的朋友多如此) 受到一位朋友的启发，在思考 为什么企业给应届生的工资会比去年入职的老员工高呢？ 最近看到这篇文章，很受启发 文章中的老员工指的是刚入职1-2年的员工 企业在雇佣员工时，就已经把未来增值的那部分钱提前包含在薪酬里了。 企业在招人时，不光要考虑应聘者是否可以满足目前的需求，还要考虑是否能满足未来一段时间的需求。不然当员工跟不上企业发展时，再重新换人损失的成本就会更大（这部分成本可不仅仅是钱这么简单，还有时间成本、机会成本、内部磨合成本、培训成本等等）。 这就意味着企业为应聘者开出的薪资待遇，有一部分是用来购买应聘者现在尚未具备（但未来可能会）的能力。 所以我们可以将应届生薪资分成两部分： 确定的部分：经验、个人能力、自身资源等 不确定的部分：未来的潜力（应届生的主要卖点） 确定的部分会遵循当时的市场价，一分钱一分货 而对于不确定的部分，则需要企业进行评估 这时，就会出现应届生薪资高于老员工的情况。 但需要注意的是，公司此时正在回收老员工身上的投资——在老员工身上所投入的购买潜力的成本。 而应届生的投资回收，才刚刚开始。 对于老员工来说，薪资没有时刻跟随市场价增加，是不是就亏了？ 不是的。 第一、企业帮员工抵御了市场价格波动风险——人才市场上的价格不会永远上升，也会有年景不好薪资下降的情况，但大多数企业只要盈利尚可，都不太可能出现降薪的情况。 第二、员工在工作过程中，经验和能力都在持续增加，当他再次在市场上询价时，也会得到更高的待遇报酬。 所以，我们身边常见的情况，就是新员工入职后，可能两三年收入没有大幅度上涨，但跳槽之后，薪水一下子就翻倍了。 即使是收入停滞的阶段，个人的经验、能力也在持续上涨 这种交易模式，在过去是较为公平合理的，因为大多数行业的薪资短期（1-3年）内不会有特别大的变动。 但现在情况开始变得不太一样，一方面是通货膨胀的影响，另一方面是很多行业开始进入产业升级，市场竞争激烈，相关从业者的待遇在短时间内出现大幅度增长。(互联网公司就是一个典型) 可能今年你入职的时候价格是10K，到了明年应届生的价格就是15K，这就出现了倒挂的情况，属于市场竞争导致的结果（这种情况会造成部分的市场价值溢价）。 于是人才市场上出现了微妙的平衡：员工将已有的工作经验拿到市场上去变现，从而达到增加收入的目的；企业为了控制成本，也不会频繁调整员工的薪资。 很受启发，其实这也是一种投资 这种情况在现阶段是较为合理且公平的方式：增加人才流动性，这样最终企业和个人都会在人才市场上，达到更好的供需平衡。 不过面对这样的情况，很多大企业还是进行薪资结构的调整（这类公司愿意为优秀人才付出更多成本），比如将薪资结构改为基础工资+绩效，保证「付出与回报对等」。每年进行全员薪资普调，避免人才流失。 （但是，请记住，公司的调薪政策都是基于你入职时的薪资来决定的，且都是小幅调薪，不可能出现大幅度薪水猛涨的情况，因为从公司层面上讲，进行大幅度调薪政策所付出的管理成本远高于小范围人员流失。） 最后再用几句话做个总结 理论上，能力相同的老员工和应届生收入相差不会太大，但因为企业为应届生未来的潜力也买了单，导致应届生收入比老员工要多不少。 企业为员工的潜力先行买单，在员工之后一段时间内，会优先收回之前的投资成本（除非此人特别优秀，能为公司带来更大价值）。 员工的收入增长可以分成两个阶段，变现期与积累期。变现期就是刚入职的那会，已有的经验能力和潜力一起打包变现；积累期则是变现之后收入没有明显增长的时期，新老员工收入相差很大，就是因为新员工正处于变现期，而老员工则在积累期。（如下图） 新老员工在某一时间点处于不同阶段所造成的收入差 对个人的启示(值得思考的四条职场建议) 跳槽是增加收入的好办法，要谨慎把握机会。这一步没走好，会带来很多损失。 多关注市场行情，了解自己的身价，比起薪资成长空间更为重要，积累资本，才能在下一次变现期获得更多回报。 公司对你的期望，会在给你的待遇上直接体现出来，你拿到手多少钱，就说明你在公司眼里值多少钱。 老员工值钱的原因还是经验与能力的提升，如果工作时间长但能力没有上升，依然在市场上卖不出好价钱。 应届生薪资公式 应届生薪资=实际价值+市场溢价+潜力价值+学校品牌价值+学历价值 实际价值：应聘岗位的市场价值 市场溢价：由于人才竞争等导致的薪酬提高，当然增加的薪资是符合市场规律的，但是如果过高，就如同房价一样，有泡沫了 潜力价值：面试表现，个人能力，思维等会提高自己的潜力价值，就是offer有sp、ssp的嘛 学校品牌价值：985和211的应届生薪资略有不同 学历价值：专科、本科、硕士薪资也不同 真的非常感谢作者的这篇文章，很受启发]]></content>
@@ -453,32 +477,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test4_字符串练习]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test6_参数、变量]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
@@ -505,6 +503,32 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Test3_变量和命名]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test1_第一个程序]]></title>
     <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 1234567print "Hello world"print "Hello again"print "I like typing this"print "This is fun"print 'Yay! printing'print "I'd much rather you 'not'."print 'I "said" do not touch this.' 遇到的问题 如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’ 如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot; 否则就会出现如下结果： 1234&gt;&gt;&gt; print " I"d much rather you "not"."SyntaxError: invalid syntax&gt;&gt;&gt; print ' I 'said' do not touch this.'SyntaxError: invalid syntax 解决办法 书写时，注意这个细节，按照规范书写即可 附加练习 以下摘录自原文 多打印一行脚本 让脚本只打印一行 如果在代码前加一个“#”，会出现什么效果呢？ 程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。 为什么 Print “Hi # there.” 里的#没被忽略掉呢？ 这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。]]></content>
@@ -518,9 +542,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test3_变量和命名]]></title>
-    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
+    <title><![CDATA[Test4_字符串练习]]></title>
+    <url>%2Fdarerd.github.io%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
