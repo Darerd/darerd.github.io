@@ -20,8 +20,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -55,8 +55,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -91,8 +91,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -115,8 +115,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -139,8 +139,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -152,8 +152,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -165,8 +165,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -201,8 +201,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -214,8 +214,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -227,8 +227,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -252,8 +252,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -277,8 +277,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -302,8 +302,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -315,8 +315,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -328,8 +328,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -401,8 +401,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -485,21 +485,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
         <tag>笨方法学Python</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -511,21 +498,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test3_变量和命名]]></title>
-    <url>%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
         <tag>笨方法学Python</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -537,8 +511,34 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test3_变量和命名]]></title>
+    <url>%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -550,8 +550,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
