@@ -20,8 +20,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -55,8 +55,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -91,8 +91,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -115,8 +115,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -139,8 +139,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -152,8 +152,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -165,8 +165,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -201,8 +201,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -214,8 +214,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -227,8 +227,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -252,8 +252,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -277,8 +277,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -302,8 +302,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -315,8 +315,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -328,8 +328,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -401,8 +401,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -477,6 +477,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Test6_参数、变量]]></title>
+    <url>%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Test5_更多字符串练习]]></title>
     <url>%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
@@ -485,8 +498,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -498,21 +511,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test6_参数、变量]]></title>
-    <url>%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
         <tag>笨方法学Python</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -524,8 +524,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -537,8 +537,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -550,8 +550,8 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>笨方法学Python</tag>
         <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
