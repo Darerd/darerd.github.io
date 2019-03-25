@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了]]></title>
+    <url>%2F2019%2F03%2F25%2F%E8%BD%AF%E4%BB%B6-Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%94%B9%E7%89%88%EF%BC%9A%E5%9F%BA%E4%BA%8EChromium%E5%86%85%E6%A0%B8%E7%9A%84Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BB%88%E4%BA%8E%E5%8F%98%E5%A5%BD%E7%9C%8B%E4%BA%86%2F</url>
+    <content type="text"><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了 **微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。 泄露版Edge的开发完成度较高，在Windows 10上运行良好，但是，您可能会从Edge中看到一些还没有完工的地方。例如，微软尚未提供其预留选项卡功能，尚未实现使用手写笔功能的电子墨水特性，而黑暗模式目前只能通过手动打开测试标记获得，就像Google在Chrome中实现它一样。 另一方面，微软也正在开发适用于Mac的Edge版本，但目前尚不清楚它是否会与新版Edge for Windows版本同时亮相。 终于没有了Edge浏览器的塑料感了，质感更强了 账户头像也可以定制了 目前仅为泄漏版Edge浏览器，仅支持英文，后续若有官方发布，请尽快更新 转载于网络 若想尝鲜，关注微信公众号：产品汪darer 后台回复：edge浏览器，即可下载]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[爬虫-怎么爬静态网站]]></title>
+    <url>%2F2019%2F03%2F25%2F%E7%88%AC%E8%99%AB-%E6%80%8E%E4%B9%88%E7%88%AC%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[爬虫-怎么爬静态网站 爬静态网站主要分为两部分： 爬静态网站的文字 爬静态网站的图片 [TOC] 爬文字 思路 用requests模块得到网站的HTML 用BeautifulSoup模块得到HTML的正则文本 用find或者find_all函数从正则文本中得到自己想要的 用repalce去除不需要的字符 源代码 1234567891011121314151617181920# coding:utf-8# 使脚本可以识别中文# 爬网站：http://www.hbrchina.org/import requestsfrom bs4 import BeautifulSoup# 调用需要的模块if __name__ == '__main__': req = requests.get ('http://www.hbrchina.org/2019-02-18/7150.html') # 得到网站的HTML req.encoding = req.apparent_encoding #获取文本原来编码，使两者编码一致才能正确显示 html = req.text bf = BeautifulSoup(html,'html.parser') # 把HTML文件转为正则文件（我的理解是文本文件） body = bf.body texts = body.find_all ('div',&#123;'class':'article-content'&#125;) # 用find_all函数找到 这样的div文件，其class是article-content print(texts[0].text.replace('\xa0'*8,'\n\n')) # 用replace函数提出所有的字符、空格等 可以看到的结果 爬图片 思路 用requests模块得到网站的HTML 用BeautifulSoup得到HTML的正则文本 用find函数从正则文本中得到自己想要的，比如关键词img 利用urllib模块下载 利用for语句下载所有图片 源代码 123456789101112131415161718192021# coding:utf-8import requests,urllibfrom bs4 import BeautifulSoupif __name__ == '__main__': rep = requests.get('https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/') rep.encoding = rep.apparent_encoding html = rep.text bs = BeautifulSoup(html,'html.parser') img = bs.find_all('img') # 在bs正则文件中找到所有 带有img标签的结果 x=1 for i in img : # 利用for语句得到每一个图片的src imgsrc = i.get('src') # 从img中找到图片的下载链接，src urllib.request.urlretrieve(imgsrc,'./%s.jpg' %x) # 利用urllib模块去下载图片 x=x+1 print ('正在下载: %d '%x) 爬虫时必须会用网页源代码 以爬图片为例： 这是我们要爬的网站：[https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/] 打开网站后（我用的Chrome浏览器），键盘快捷键F12，即可打开网站的调试模式，效果如下： 右侧就是网站的源代码，可以用来爬 如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，选择检查，如下图所示： 如果我们要快速定位某图片所在的代码位置，演示如下： 用这种方法观察每一张图片的源码： 它们的写法都是非常类似的，如下： 1&lt;img src="http://upload.hbrchina.org/2019/0213/1550028457604.jpg" alt="1550028961(1)"&gt; src是图片的下载地址，alt是图片的便签，每一张图片都在img语句中 所以我们只要得到所有的img语句，然后从img语句中得到所有的src链接，就可以下载图片了。 每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。 对于小白，难度就在于怎么样找到要爬部分的特点 以上]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[随想-新零售企业““智胜”未来]]></title>
     <url>%2F2019%2F03%2F21%2F%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5%2F</url>
     <content type="text"><![CDATA[新零售企业“智胜”未来 最近看到一篇蛮有趣的文章，新零售企业“智胜”未来 作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。 以下是全文（有删改）： 在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。 现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。 随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。 一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。 生态格局演变与新生态价值 从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。 第一阶段，为我所用。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段/渠道。 第二阶段，分庭抗礼。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。 第三阶段，互相融合。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。 一句话道出了“美团”、“阿里”们的野心，要做大平台 “大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。 随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。 在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。 在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。 在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态/场景拓展是大市场的引爆点。 此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。 近年来，线下业态/场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式： 餐饮零售化，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等； 场景拓展，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等； 跨界融合，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等； 全渠道一站式消费体验，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。 零售企业的“智”胜之道 在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。 第一，以线上线下融合，建立流量壁垒。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。 第二，以赋能合纵连横，构建生态平台。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。 但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。 第三，以数据重塑管理模式，革故鼎新。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场/消费者/价值链/品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。 数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。 “智”胜未来将是每一个零售企业都需要面临的重要抉择。]]></content>
@@ -51,7 +75,7 @@
   </entry>
   <entry>
     <title><![CDATA[通过上瘾模型分析虎扑是怎么让你一步步上瘾的]]></title>
-    <url>%2F2019%2F03%2F18%2F%E9%80%9A%E8%BF%87%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E8%99%8E%E6%89%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E4%B8%80%E6%AD%A5%E6%AD%A5%E4%B8%8A%E7%98%BE%E7%9A%84%2F</url>
+    <url>%2F2019%2F03%2F18%2F%E9%9A%8F%E6%83%B3-%E9%80%9A%E8%BF%87%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E8%99%8E%E6%89%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E4%B8%80%E6%AD%A5%E6%AD%A5%E4%B8%8A%E7%98%BE%E7%9A%84%2F</url>
     <content type="text"><![CDATA[通过上瘾模型分析虎扑是怎么让你一步步上瘾的 上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。 **第一阶段：**引发用户去使用你的产品，这叫作“触发”。 第二阶段：行动。行动要兼具动机和能力，有了动机，还需要用户的能力足够完成行为。 第三阶段：给用户多变的酬赏。所谓多变的酬赏，就是指酬赏要有不可预期性。 第四阶段：是让用户在产品上进行越来越多的投入。用户与产品亲密接触得越多，沉没成本就越大，也就越离不开它。 我们用上瘾模型看一看虎扑是怎么让你一步步上瘾的 第一阶段：触发 外部触发 朋友推荐、虎扑的营销推广（比如，去年的kris吴事件） 内部触发 正在寻找一个专业看球平台、即时资讯（能得到更多关于NBA的讯息） 第二阶段：行动 福格认为，要使人们行动起来，三个要素必不可少。 第一，充分的动机；第二，完成这一行为的能力；第三，促使人们付诸行动的触发。 动机： 正在寻找专业的看球平台，更快的了解到NBA的讯息 能力： 虎扑的下载、注册和使用都非常简单，这一过程完全没有阻碍 第三阶段：多变的酬赏 驱使我们采取行动的，并不是酬赏本身，而是渴望酬赏时产生的那份迫切需要。 还记得自己为什么要下载虎扑吗？专业看球平台、即时资讯（能得到更多关于NBA的讯息） 酬赏1： 满足你下载的目的（虎扑的护城河之一）专业看球平台、即时资讯（能得到更多关于NBA的讯息） 酬赏2： 高质量的赛后分析贴，让自己更加懂球，更加懂比赛 酬赏3： 虎扑社区里JRs的氛围，步行街上有趣而温暖的帖子 酬赏4：（最不容易被注意） 比你的朋友知道多一点，得到朋友们的认可和赞赏 这也就是渴望酬赏时产生的那份迫切需要 第三阶段：投入 投入1： 更加关心比赛时间，结果和赛后采访、资讯和赛后分析 投入2： 对论坛优秀帖子的转发、收藏、点赞 投入3： 无意间又打开了虎扑，分配了更多的时间 现在你可以利用上瘾模型询问自己关于如何让用户上瘾的五个基本问题： 用户真正需要什么？你的产品可以缓解什么样的痛苦？（内部触发） 你靠什么吸引用户使用你的服务？（外部触发） 期待酬赏的时候，用户可采取的最简单的操作行为是什么？如何简化产品使该操作行为更轻松容易？（行动） 用户是满足于所得酬赏，还是想要更多酬赏？（多变的酬赏） 用户对你的产品做出了哪些“点滴投入”？这些投入是否有助于加载下一个触发并储存价值，使产品质量在使用过程中获得提升？（投入） 在相同条件下，满足用户的群体价值（让用户在群体中发光）比仅满足用户的个人价值（比如，给用户金钱奖励）更有用。 人生来就希望被认可]]></content>
       <categories>
         <category>随想</category>
@@ -307,7 +331,7 @@
   </entry>
   <entry>
     <title><![CDATA[图床工具选择哪个好？|产品软件|2rd]]></title>
-    <url>%2F2019%2F03%2F01%2F%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%AA%E5%A5%BD%EF%BC%9F-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-2rd%2F</url>
+    <url>%2F2019%2F03%2F01%2F%E8%BD%AF%E4%BB%B6-%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%AA%E5%A5%BD%EF%BC%9F-2rd%2F</url>
     <content type="text"><![CDATA[在上一期我们介绍了Markdown写作必须知道的图床知识这是传送们，点击查看上期内容 这一期，我们会介绍图片上传图床时，非常好用的工具，大大提高你的写作效率 假如不利用图床工具，我们插入图片时，需要几步呢？ 以SM.MS图床为例演示 演示demo 假如，我们不使用图床工具，那我们就需要从本地上传到图床，然后复制其生成的Markdown指令， 将指令复制到编辑器，即可使用。 但很多情况下，我们会有如下需求： 图片上传到图床后，自动把Markdown指令复制到粘贴板 复制图片到剪贴板，然后工具可以自动上传到图床，并实现上一条的功能 很棒的需求，确实有一些能够满足以上需求的工具 [TOC] Mpic 这一款图床工具仅仅支持七牛云 如果你不用七牛云 可以跳过这趴了 软件图标，右键，之后会看到下图 这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传 图片上传后，会自动生成Markdown指令到粘贴板 不过，需要你提前设置好七牛云的账号 操作很简单，上手超级容易 搜索微信号：darerpm，关注公众号 公众号后台回复mpic，即刻获得下载链接 Fu 这一款支持的图床有：SM.MS和路过图床 如果你使用七牛云、阿里云、腾讯云、又拍云、微博等，可以跳过这一趴 除了图床之外，这款还支持： sftp和ftp 设置 这一款同第一款一样，这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传 图片上传后，会自动生成Markdown指令到粘贴板 只要提前设置好即可 搜索微信号：darerpm，关注公众号 公众号后台回复fu，即刻获得下载链接 Picgo 这三款中，颜值最高的图床工具 支持平台最多的图床工具 支持的平台有： 勾选即可使用，但是需要设置和选择一个作为默认图床 设置demo 不过，这款不支持剪贴板自动上传到图床，需要设置快捷键，才可以支持剪贴板自动上传到图床 我快捷键设置为ctrl+tab 搜索微信号：darerpm，关注公众号 公众号后台回复picgo，即刻获得下载链接 经过实践发现，以上所有对gif动图的支持都不好，不能很好的支持自动上传，需要选择本地导入的方式。 总之： 如果你仅仅使用七牛云，选择Mpic 如果你想使用sftp和ftp,必须选择Fu 如果你想要一款高颜值，支持平台多的，选择Picgo]]></content>
       <categories>
         <category>产品必用软件</category>
@@ -423,10 +447,10 @@
     <content type="text"><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等 而且产品人日常还要写写文章什么的。 如果用传统的word去写文档，真的是： 写作两分钟，格式两小时 而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率 进门右转，Markdown入门 一篇文章主要有文字、链接、图片以及格式等组成 利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些Latex排版) 但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。 最好可以一键式操作。 下面就是见证奇迹的时刻！ 首先给大家推荐一篇博客，本文借鉴了这篇文章的内容。 1. Markdown编辑器–Typora Typora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。 这是操作界面，干净、简约 免费下载传送门 Typora官网 2. 图片–最好用的截图工具–Snipaste windowns系统最好用 核心功能有截图、贴图两个 截图 贴图 免费下载传送门 官网点这里 参考资料 3. 图床—用于存储写作用到的图片 推荐 七牛云 为什么是七牛云： 提供稳定的存储服务， 是免费的 大家都在用 七牛云图床使用指南 4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具 MPic windows系统少有的可以方便上传到图床的工具(且只支持七牛云) 如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。 而且你随时的分享，都不会受到影响！ 需要”设置账号“和你的七牛云绑定 免费下载传送门 官网点这里 参考资料 更多有趣的使用技巧，需要你自己去探索了！]]></content>
       <categories>
         <category>产品必用软件</category>
-        <category>软件教程</category>
+        <category>软件资源</category>
       </categories>
       <tags>
-        <tag>Typora</tag>
+        <tag>软件资源</tag>
       </tags>
   </entry>
   <entry>
@@ -526,32 +550,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test6_参数、变量]]></title>
-    <url>%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Test4_字符串练习]]></title>
-    <url>%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test3_变量和命名]]></title>
     <url>%2F2019%2F02%2F03%2FTest3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D%2F</url>
     <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 123456789101112131415161718192021222324252627282930313233343536# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprint "There are",cars,"cars available."print "There are only ",drivers,"drivers available."print "Ther will be",cars_not_driven,"empty cars today."print "We can transport",carpool_capacity,"people today."print "We have",passengers,"to carpool today."print "We need to put about",average_passengers_per_car,"in each car."# ex5.py#my_name='Zed A. Shaw' # 《笨方法学Python》作者my_age=35my_height=74 #inchesmy_weight=180 #lbsmy_eyes='Blue'my_teeth='while'my_hair='Brown'print "Let's talk about %s." %my_nameprint "He's %d inches tall." %my_heightprint "He's %d ponds heavy." %my_weightprint "Actually that's not too heavy."print "He's got %s eyes and %s hair." % (my_eyes,my_hair)print "His teeth are usually %s depending on the coffee." %my_teethprint "If I add %d ,%d ,and %d I get %d. " %(my_age,my_height,my_weight,my_age+my_height+my_weight) 遇到的问题 一些关于字符串（string）的知识 12345# 使用“ 或 ‘ 来创建字符串print '这是一个字符串'print "这也是一个字符串"# 字符串也可以相加print "Hello" + ' world' 关于变量名的知识 1# 变量名设置的要求：使用下划线分割的小写字母 代码中 %s 、%d 和 %r 是起什么作用？ 12345# %s 、%d 和 ％ｒ 是一种”格式控制工具“，＃指令告诉Ｐｙｔｈｏｎ 把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ 附加练习 以下摘录自原文 单等号和双等号有什么不同？ 如何将浮点数四舍五入？ 使用ｒｏｕｎｄ（）函数]]></content>
@@ -565,9 +563,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test2_数字和数学计算]]></title>
-    <url>%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+    <title><![CDATA[Test6_参数、变量]]></title>
+    <url>%2F2019%2F02%2F03%2FTest6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132# ex13.pyfrom sys import argvscript, first, second, third=argvprint "The script is called:",scriptprint "Your first variable is:",firstprint "Your second variable is:",secondprint "Your third variable is:",third# ex14.pyfrom sys import argvscript, user_name =argvprompt='&gt; 'print "Hi %s, I'm the %s script."%(user_name,script)print "I'd like to ask you a few questions."print "Do you like me %s?"%user_namelikes=raw_input(prompt)print "Where do you live %s?"%user_namelives=raw_input('&gt; ')print "What kind of computer do you have?"computer=raw_input(prompt)print"""Alright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!""" %(likes,lives,computer) 应该看到的结果 原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行） 不清楚为什么不建议使用IDLE 12345&gt; python ex13.py 1st 2nd 3rdThe script is called:ex13.pyYour first variable is:1stYour second variable is:2ndYour third variable is:3rd 123456789101112131415&gt; python ex14.py darerHi darer, I'm the ex14.py script.I'd like to ask you a few questions.Do you like me darer?&gt; yesWhere do you live darer?&gt; chinaWhat kind of computer do you have?&gt; lenovoAlright, so you said 'yes' about liking me.You live in 'china'. Not sure where that is.And you have a 'lenovo' computer. Nice! 需要注意的几个地方 怎么在当前文件夹运行Powershell 利用命令行指令 cd 在当前文件夹 shift+鼠标右键 选择“打开powershell&quot; 注意ex14.py中，raw_input()的用法 为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ '）呢？ 因为%r是调试专用，它输出的是“原始表示”出来的字符 而%s是为了给用户显示 附加练习 以下摘录自原文 是否可以用双引号定义prompt变量的值？ argv和raw_input()有什么不同？ 如果参数是在用户执行命令时就要输入的，那就是argv 如果是在脚本运行过程中需要用户输入，那就使用raw_input() argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。 脚本中出现import语句，非常重要，它用于导入模块（module）]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test5_更多字符串练习]]></title>
+    <url>%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
@@ -591,9 +602,22 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Test5_更多字符串练习]]></title>
-    <url>%2F2019%2F02%2F03%2FTest5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 、 &amp; 1234567891011121314151617181920212223242526272829303132333435363738# ex10.pytabby_cat="\t I'm tabbed in."persian_cat="I'm split \n on line. "backslash_cat="I'm \\ a \\ cat."fat_cat= """I'll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass"""print tabby_catprint persian_catprint backslash_catprint fat_cat# ex11.pyprint "How old are you?",age=raw_input()print "How tall are you?",height=raw_input()print "How much do you weigh?",weight=raw_input()print "So, you're %r old,%r tall and %r heavy."%(age,height,weight)#ex12.pyage=raw_input("How old are you? ")height=raw_input("How tall are you? ")weight=raw_input("How much do you weigh? ")print "So, you're %r old,%r tall and %r heavy."%(age,height,weight) 需要注意的几个地方 python中 \t 的效果，类似于在word写作中，tab键起到的作用； \n 的效果，类似于在word写作中，enter 键起到的作用； 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。 python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。 附加练习 以下摘录自原文 下面是python支持的转义序列 12345678910\\ # 反斜杠（\）\' # 单引号\" # 双引号\a # ASCII 响铃符\b # ASCII 退格符\f # ASCII 进纸符\r # ASCII 回车符\uxxxx # 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx # 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v # ASCII 垂直制表符 Python 的raw_input实现的是什么功能？以及其他用法 input()和raw_input()有何不同？]]></content>
+    <title><![CDATA[Test2_数字和数学计算]]></title>
+    <url>%2F2019%2F02%2F03%2FTest2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 附加练习 原文—摘录至《笨方法学Python》第三版 1234567891011121314151617print "I will now count my chickens:"print "Hens" , 25+30/6print "Roosters", 100-25*3%4print "Now, I will count the eggs:"print 3+2+1-5+4%2-1/4+6print "Is it true that 3+2&lt;5-7"print 3+2&lt;5-7print "What is 3+2?",3+2print "What is 5-7?",5-7print "Oh, that's why it's False."print "Is it greater?",5&gt;-2print "Is it greater or equal?",5&gt;=-2print "Is it less than or equal?",5&lt;=-2 遇到的问题 利用Python做四则运算非常简单，但是除法运算略有一些复杂 例如： 123print 5/2 # 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整 为了解决以上除法运算时出现的问题，我们需要理解浮点数 1232.0 # 这是一个浮点数(float)print 11.0/4.0# 输出结果是2.75 可以使用小括号强制计算的先后顺序 布尔值也是基本数据类型 比较运算的结果直接输出布尔值（True or False） 12print 2&gt;4# 输出结果是False 附加练习 以下摘录自原文 每一行的代码用#写注释，说明一些这一行的作用 使用浮点数重新写一下ex3.py]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test4_字符串练习]]></title>
+    <url>%2F2019%2F02%2F03%2FTest4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著 的学习思路和理解，如有不如之处，望指出！！！ 文章主要分为三个部分： 原文—摘录至《笨方法学Python》第三版 学习中遇到的问题 问题的解决方法 附加练习 原文—摘录至《笨方法学Python》第三版 &amp; 1234567891011121314151617181920212223242526272829303132333435# ex6.pyx="There are %d types of people." %10binary="binary"do_not="don't"y="Those who know %s and those who %s." %(binary,do_not)print xprint yprint "I said: %r." % x print "I also said: '%s'." %y hilarious=Falsejoke_evaluation="Isn't that joke so funny?! %r " print joke_evaluation % hilariousw="This is the left side of ..."e="a sting with a right side."print w+e # ex8.pyfomatter="%r %r %r %r"print fomatter %(1,2,3,4)print fomatter %("one","two","three","four")print fomatter %(True,False,False,True)print fomatter %(fomatter,fomatter,fomatter,fomatter)print fomatter %( "I had this thing.", "That you could type up right." "But it didn't sing." "So I said goodnight." ) 遇到的问题 ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号 python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。 %r的作用 %r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。 附加练习 以下摘录自原文 每一行加一段注释 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？]]></content>
       <categories>
         <category>产品经理学技术</category>
         <category>Python</category>
