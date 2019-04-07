@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://darerd.github.io/"/>
-  <updated>2019-04-04T05:49:36.886Z</updated>
+  <updated>2019-04-07T12:08:38.079Z</updated>
   <id>https://darerd.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal</title>
+    <link href="https://darerd.github.io/2019/04/07/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6-%E6%A1%8C%E9%9D%A2%E6%97%A5%E5%8E%86DesktopCal/"/>
+    <id>https://darerd.github.io/2019/04/07/软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal/</id>
+    <published>2019-04-07T11:53:01.000Z</published>
+    <updated>2019-04-07T12:08:38.079Z</updated>
+    
+    <content type="html"><![CDATA[<h1><span id="windows系统下最实用的日程管理软件-桌面日历desktopcal"> Windows系统下最实用的日程管理软件-桌面日历DesktopCal</span></h1><p>时间管理，无论是对工作、还是学习都非常重要。</p><p>所以有一款好用的时间管理软件，会让你事半功倍，时间安排更加心中有数</p><p>今天推荐的一款应该是Windows系统下最实用的日常管理 软件</p><p><code>桌面日历DesktopCal</code></p><h3><span id="界面"> 界面</span></h3><p><img src="https://i.loli.net/2019/04/07/5ca9e5f89afd5.png" alt=""></p><h3><span id="演示"> 演示</span></h3><p><img src="https://i.loli.net/2019/04/07/5ca9e6bb218a9.gif" alt=""></p><h3><span id="主要功能"> 主要功能</span></h3><p><img src="https://i.loli.net/2019/04/07/5ca9e6f13a18a.png" alt=""></p><blockquote><p>自从发现了这款软件之后，真的是爱不释手</p><p>这款软件可以很好的帮助你对整体的日程安排有一个非常直接的认识</p><p>知道每一个任务或者计划需要多长时间，需要在哪几天完成等等</p><p><a href="http://chs.desktopcal.com/" target="_blank" rel="noopener">官网地址</a></p></blockquote><h3><span id="下载方式"> 下载方式</span></h3><p>关注微信公众号：<strong>产品汪darer</strong>，后台回复关键词：<strong>桌面日历DesktopCal</strong>，即可下载</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;&lt;span id=&quot;windows系统下最实用的日程管理软件-桌面日历desktopcal&quot;&gt; Windows系统下最实用的日程管理软件-桌面日历DesktopCal&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;时间管理，无论是对工作、还是学习都非常重要。&lt;/p&gt;
+&lt;p&gt;所以有一款好用
+      
+    
+    </summary>
+    
+      <category term="软件资源" scheme="https://darerd.github.io/categories/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="软件资源" scheme="https://darerd.github.io/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="产品必用软件" scheme="https://darerd.github.io/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>随想-我对996工作制的看法</title>
@@ -563,38 +592,6 @@
     
     
       <category term="产品问答" scheme="https://darerd.github.io/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Test22-Python中字典、模块等的知识入门</title>
-    <link href="https://darerd.github.io/2019/03/13/Test22-Python%E4%B8%AD%E5%AD%97%E5%85%B8%E3%80%81%E6%A8%A1%E5%9D%97%E7%AD%89%E7%9A%84%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/"/>
-    <id>https://darerd.github.io/2019/03/13/Test22-Python中字典、模块等的知识入门/</id>
-    <published>2019-03-13T07:08:33.000Z</published>
-    <updated>2019-03-13T07:30:29.227Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著<br>的学习思路和理解，如有不如之处，望指出！！！</p></blockquote><p>上一期，我们学期了<code>字典(dictionary)</code>这个知识</p><p>因为后面要学习<code>面向对象的编程：OOP</code>，为了更好的学习和理解<code>OOP</code>的知识</p><p>这一期，先学习下<code>字典</code>和<code>模块</code>的知识</p><a id="more"></a><p>[TOC]</p><h3><span id="字典dictionary"> 字典(dictionary)</span></h3><p>字典是一种可变容器模型，且可存储任意类型对象。</p><p>字典的每个键值 <strong>key=&gt;value</strong> 对用冒号 <strong><code>:</code></strong> 分割，每个键值对之间用逗号 <strong><code>,</code></strong> 分割，整个字典包括在花括号 <strong><code>{}</code></strong> 中 ,格式如下所示：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;key1 : value1, key2 : value2 &#125;</span><br></pre></td></tr></table></figure><p><strong>键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一</strong><br><strong>键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;dict = &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="number">2</span>, <span class="string">'b'</span>: <span class="string">'3'</span>&#125;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dict[<span class="string">'b'</span>]</span><br><span class="line"><span class="string">'3'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>dict</span><br><span class="line">&#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'b'</span>: <span class="string">'3'</span>&#125;</span><br></pre></td></tr></table></figure><p><strong>值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组</strong></p><blockquote><p>谈一下我的理解，不一定正确</p><p>上面所说的<strong>键</strong>，也就是<code>key</code>。要求其是唯一的，不可重复<br>很想软件注册时的<strong>用户名</strong>，要求不能和他人重复，且一般只能用数字、字母和下划线注册<br>这样理解虽然不准确，可能会易懂一些</p></blockquote><p><strong>示例</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Zara'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['Name']: "</span>, dict[<span class="string">'Name'</span>]</span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">###输出结果</span></span><br><span class="line">dict[<span class="string">'Name'</span>]:  Zara</span><br><span class="line">dict[<span class="string">'Age'</span>]:  <span class="number">7</span></span><br></pre></td></tr></table></figure><p><strong>修改字典的内容</strong></p><p>向字典添加新内容的方法是增加新的键/值对，修改或删除已有键/值对</p><p><strong>示例</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Zara'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125;</span><br><span class="line"> </span><br><span class="line">dict[<span class="string">'Age'</span>] = <span class="number">8</span> <span class="comment"># 更新</span></span><br><span class="line">dict[<span class="string">'School'</span>] = <span class="string">"RUNOOB"</span> <span class="comment"># 添加</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>]</span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['School']: "</span>, dict[<span class="string">'School'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">###输出结果</span></span><br><span class="line">dict[<span class="string">'Age'</span>]:  <span class="number">8</span></span><br><span class="line">dict[<span class="string">'School'</span>]:  RUNOOB</span><br></pre></td></tr></table></figure><p><strong>删除字典元素</strong></p><p>能删单一的元素也能清空字典，清空只需一项操作</p><p><strong>示例</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;<span class="string">'Name'</span>: <span class="string">'Zara'</span>, <span class="string">'Age'</span>: <span class="number">7</span>, <span class="string">'Class'</span>: <span class="string">'First'</span>&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">del</span> dict[<span class="string">'Name'</span>]  <span class="comment"># 删除键是'Name'的条目</span></span><br><span class="line">dict.clear()      <span class="comment"># 清空词典所有条目</span></span><br><span class="line"><span class="keyword">del</span> dict          <span class="comment"># 删除词典</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['Age']: "</span>, dict[<span class="string">'Age'</span>] </span><br><span class="line"><span class="keyword">print</span> <span class="string">"dict['School']: "</span>, dict[<span class="string">'School'</span>]</span><br></pre></td></tr></table></figure><h3><span id="模块"> 模块</span></h3><p>Python 模块(<code>Module</code>)，是一个 Python 文件，以 <code>.py</code>结尾，包含了 Python 对象定义和Python语句。</p><p>模块让你能够有逻辑地组织你的 Python 代码段。</p><p>把相关的代码分配到一个模块里能让你的代码更好用，更易懂。</p><p>模块能定义函数，类和变量，模块里也能包含可执行的代码。</p><p><strong>模块的引入用<code>import</code>语句</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> module1[, module2[,... moduleN]]</span><br></pre></td></tr></table></figure><p>比如要引用模块 <code>math</code>，就可以在文件最开始的地方用 <strong><code>import math</code></strong> 来引入。在调用 <code>math</code> 模块中的函数时，必须这样引用：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">模块名.函数名</span><br></pre></td></tr></table></figure><hr><blockquote><p>这是**《笨方法学Python》**的第二十二篇文章</p></blockquote><blockquote><p>希望自己可以坚持下去</p></blockquote><blockquote><p>希望你也可以坚持下去</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著&lt;br&gt;
-的学习思路和理解，如有不如之处，望指出！！！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;上一期，我们学期了&lt;code&gt;字典(dictionary)&lt;/code&gt;这个知识&lt;/p&gt;
-&lt;p&gt;因为后面要学习&lt;code&gt;面向对象的编程：OOP&lt;/code&gt;，为了更好的学习和理解&lt;code&gt;OOP&lt;/code&gt;的知识&lt;/p&gt;
-&lt;p&gt;这一期，先学习下&lt;code&gt;字典&lt;/code&gt;和&lt;code&gt;模块&lt;/code&gt;的知识&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="产品经理学技术" scheme="https://darerd.github.io/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Python" scheme="https://darerd.github.io/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/Python/"/>
-    
-    
-      <category term="Python" scheme="https://darerd.github.io/tags/Python/"/>
-    
-      <category term="笨方法学Python" scheme="https://darerd.github.io/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/"/>
     
   </entry>
   
