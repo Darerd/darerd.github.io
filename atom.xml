@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://darerd.github.io/"/>
-  <updated>2019-04-27T02:45:27.364Z</updated>
+  <updated>2019-07-06T14:02:25.500Z</updated>
   <id>https://darerd.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信PC端多开的方法</title>
+    <link href="https://darerd.github.io/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://darerd.github.io/2019/07/06/微信PC端多开的方法/</id>
+    <published>2019-07-06T13:43:29.000Z</published>
+    <updated>2019-07-06T14:02:25.500Z</updated>
+    
+    <content type="html"><![CDATA[<h1><span id="微信电脑版多开的方法"> 微信电脑版多开的方法</span></h1><p>现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？</p><p>经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法</p><p>以下内容来自<a href="https://www.jianshu.com/p/951266077d4b" target="_blank" rel="noopener">网络</a>，经验证，可以安全简单的使用</p><p><strong>bat文件多开</strong></p><p>第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。</p><p><img src="https://i.loli.net/2019/07/06/5d20a7e30aa7a94620.jpg" alt=""></p><p>第二步，新建一个文本文档，命名“微信多开”在文档中键入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;</span><br><span class="line"></span><br><span class="line">start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;</span><br><span class="line"></span><br><span class="line">exit</span><br></pre></td></tr></table></figure><p>两行 <code>start &quot;&quot;</code> 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在<code>exit</code>上面即可，以上代码所示是两开。</p><p>完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入<code>“微信多开.bat”</code>。</p><p><img src="https://i.loli.net/2019/07/06/5d20a8db29f4089847.jpg" alt=""></p><p>然后桌面上会出现一个<code>bat</code>文件，双击<code>bat</code>文件即可实现微信双开。</p><p><img src="https://i.loli.net/2019/07/06/5d20a90adac8367372.jpg" alt=""></p><p><img src="https://i.loli.net/2019/07/06/5d20a98766f6662151.jpg" alt=""></p><p>操作起来，简单又方便</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;&lt;span id=&quot;微信电脑版多开的方法&quot;&gt; 微信电脑版多开的方法&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？&lt;/p&gt;
+&lt;p&gt;经过多方搜索，找到了一个操作简单、目前使用起来很方便的方
+      
+    
+    </summary>
+    
+      <category term="技巧" scheme="https://darerd.github.io/categories/%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="技巧" scheme="https://darerd.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>问答-工作被流程化，到底该不该？</title>
@@ -560,42 +587,6 @@
     
     
       <category term="软件资源" scheme="https://darerd.github.io/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫-怎么爬静态网站</title>
-    <link href="https://darerd.github.io/2019/03/25/%E7%88%AC%E8%99%AB-%E6%80%8E%E4%B9%88%E7%88%AC%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/"/>
-    <id>https://darerd.github.io/2019/03/25/爬虫-怎么爬静态网站/</id>
-    <published>2019-03-25T03:51:56.000Z</published>
-    <updated>2019-03-25T03:53:37.134Z</updated>
-    
-    <content type="html"><![CDATA[<h1><span id="爬虫-怎么爬静态网站"> 爬虫-怎么爬静态网站</span></h1><p>爬静态网站主要分为两部分：</p><ol><li>爬静态网站的文字</li><li>爬静态网站的图片</li></ol><p>[TOC]</p><h3><span id="爬文字"> 爬文字</span></h3><h4><span id="思路"> 思路</span></h4><ol><li>用<code>requests</code>模块得到网站的HTML</li><li>用<code>BeautifulSoup</code>模块得到HTML的正则文本</li><li>用<code>find</code>或者<code>find_all</code>函数从正则文本中得到自己想要的</li><li>用<code>repalce</code>去除不需要的字符</li></ol><h4><span id="源代码"> 源代码</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line"><span class="comment"># 使脚本可以识别中文</span></span><br><span class="line"><span class="comment"># 爬网站：http://www.hbrchina.org/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="comment"># 调用需要的模块</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">req = requests.get (<span class="string">'http://www.hbrchina.org/2019-02-18/7150.html'</span>)</span><br><span class="line">   <span class="comment"># 得到网站的HTML</span></span><br><span class="line">req.encoding = req.apparent_encoding</span><br><span class="line"><span class="comment">#获取文本原来编码，使两者编码一致才能正确显示</span></span><br><span class="line">html = req.text</span><br><span class="line">bf = BeautifulSoup(html,<span class="string">'html.parser'</span>)</span><br><span class="line">  <span class="comment"># 把HTML文件转为正则文件（我的理解是文本文件）</span></span><br><span class="line">body = bf.body</span><br><span class="line">texts = body.find_all (<span class="string">'div'</span>,&#123;<span class="string">'class'</span>:<span class="string">'article-content'</span>&#125;)</span><br><span class="line">  <span class="comment"># 用find_all函数找到 这样的div文件，其class是article-content</span></span><br><span class="line">print(texts[<span class="number">0</span>].text.replace(<span class="string">'\xa0'</span>*<span class="number">8</span>,<span class="string">'\n\n'</span>))</span><br><span class="line">  <span class="comment"># 用replace函数提出所有的字符、空格等</span></span><br></pre></td></tr></table></figure><h4><span id="可以看到的结果"> 可以看到的结果</span></h4><p><img src="https://i.loli.net/2019/03/24/5c97217a9dc30.png" alt=""></p><h3><span id="爬图片"> 爬图片</span></h3><h4><span id="思路"> 思路</span></h4><ol><li>用requests模块得到网站的HTML</li><li>用BeautifulSoup得到HTML的正则文本</li><li>用find函数从正则文本中得到自己想要的，比如关键词img</li><li>利用urllib模块下载</li><li>利用for语句下载所有图片</li></ol><h4><span id="源代码"> 源代码</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests,urllib</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">rep = requests.get(<span class="string">'https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/'</span>)</span><br><span class="line">rep.encoding = rep.apparent_encoding</span><br><span class="line">html = rep.text</span><br><span class="line">bs = BeautifulSoup(html,<span class="string">'html.parser'</span>)</span><br><span class="line">img = bs.find_all(<span class="string">'img'</span>)</span><br><span class="line"><span class="comment"># 在bs正则文件中找到所有 带有img标签的结果</span></span><br><span class="line">x=<span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> img :</span><br><span class="line">    <span class="comment"># 利用for语句得到每一个图片的src</span></span><br><span class="line">imgsrc = i.get(<span class="string">'src'</span>)</span><br><span class="line">    <span class="comment"># 从img中找到图片的下载链接，src</span></span><br><span class="line">urllib.request.urlretrieve(imgsrc,<span class="string">'./%s.jpg'</span> %x)</span><br><span class="line">    <span class="comment"># 利用urllib模块去下载图片</span></span><br><span class="line">x=x+<span class="number">1</span></span><br><span class="line"><span class="keyword">print</span> (<span class="string">'正在下载: %d '</span>%x)</span><br></pre></td></tr></table></figure><h3><span id="爬虫时必须会用网页源代码"> 爬虫时必须会用网页源代码</span></h3><p>以爬图片为例：</p><p>这是我们要爬的网站：[<a href="https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/">https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/</a>]</p><p>打开网站后（我用的Chrome浏览器），键盘快捷键<strong>F12</strong>，即可打开网站的调试模式，效果如下：</p><p><img src="https://i.loli.net/2019/03/24/5c9725b26483e.png" alt=""></p><p>右侧就是网站的源代码，可以用来爬</p><p>如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，<strong>选择检查</strong>，如下图所示：</p><p><img src="https://i.loli.net/2019/03/24/5c9726466f7dd.png" alt=""></p><p>如果我们要快速定位某图片所在的代码位置，演示如下：</p><p><img src="https://i.loli.net/2019/03/24/5c9726d13491f.gif" alt=""></p><p>用这种方法观察每一张图片的源码：</p><p>它们的写法都是非常类似的，如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"http://upload.hbrchina.org/2019/0213/1550028457604.jpg"</span> <span class="attr">alt</span>=<span class="string">"1550028961(1)"</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>src</code>是图片的下载地址，<code>alt</code>是图片的便签，每一张图片都在<code>img</code>语句中</p><p>所以我们只要得到所有的<code>img</code>语句，然后从<code>img</code>语句中得到所有的<code>src</code>链接，就可以下载图片了。</p><p>每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。</p><p>对于小白，难度就在于怎么样找到要爬部分的特点</p><hr><p>以上</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1&gt;&lt;span id=&quot;爬虫-怎么爬静态网站&quot;&gt; 爬虫-怎么爬静态网站&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;爬静态网站主要分为两部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;爬静态网站的文字&lt;/li&gt;
-&lt;li&gt;爬静态网站的图片&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h3&gt;&lt;span
-      
-    
-    </summary>
-    
-      <category term="产品经理学技术" scheme="https://darerd.github.io/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Python" scheme="https://darerd.github.io/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/Python/"/>
-    
-    
-      <category term="Python" scheme="https://darerd.github.io/tags/Python/"/>
-    
-      <category term="爬虫" scheme="https://darerd.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
