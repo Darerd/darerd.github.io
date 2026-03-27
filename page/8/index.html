@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="记录技术成长，分享个人经验">
 <meta property="og:type" content="website">
@@ -50,9 +50,12 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
 <script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
 
 
 
@@ -78,6 +81,9 @@
       <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -93,15 +99,46 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -138,18 +175,24 @@
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+          <a href="/categories/">
         <span class="site-state-item-count">8</span>
-        <span class="site-state-item-name">分类</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+          <a href="/tags/">
         <span class="site-state-item-count">21</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
 
         </div>
       </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
     </div>
 
     
@@ -168,7 +211,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -186,7 +229,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/" class="post-title-link" itemprop="url">Test3_变量和命名</a>
+          <a href="/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/" class="post-title-link" itemprop="url">Test4_字符串练习</a>
         </h2>
 
         <div class="post-meta-container">
@@ -231,38 +274,29 @@
 </li>
 <li><p>学习中遇到的问题</p>
 </li>
+<li><p>问题的解决方法</p>
+</li>
 <li><p>附加练习</p>
 </li>
 </ol>
-<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id=""><a href="#" class="headerlink" title="&amp;"></a>&amp;</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex4.py#</span></span><br><span class="line"></span><br><span class="line">cars=<span class="number">100</span></span><br><span class="line">space_in_car=<span class="number">4.0</span></span><br><span class="line">drivers=<span class="number">30</span></span><br><span class="line">passengers=<span class="number">90</span></span><br><span class="line">cars_not_driven=cars-drivers</span><br><span class="line">cars-driven=drivers</span><br><span class="line">carpool_capacity=cars-driven*space_in_a_car</span><br><span class="line">average_passengers_per_car=passengers/cars-driven</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex5.py#</span></span><br><span class="line"></span><br><span class="line">my_name=<span class="string">&#x27;Zed A. Shaw&#x27;</span></span><br><span class="line">my_age=<span class="number">35</span></span><br><span class="line">my_height=<span class="number">74</span></span><br><span class="line">my_weight=<span class="number">180</span></span><br><span class="line">my_eyes=<span class="string">&#x27;Blue&#x27;</span></span><br><span class="line">my_teeth=<span class="string">&#x27;while&#x27;</span></span><br><span class="line">my_hair=<span class="string">&#x27;Brown&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br></pre></td></tr></table></figure>
+<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id=""><a href="#" class="headerlink" title="&amp;"></a>&amp;</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex6.py</span></span><br><span class="line"></span><br><span class="line">x=<span class="string">&quot;There are %d types of people.&quot;</span></span><br><span class="line">binary=<span class="string">&quot;binary&quot;</span></span><br><span class="line">do_not=<span class="string">&quot;don&#x27;t&quot;</span></span><br><span class="line">y=<span class="string">&quot;Those who know %s and those who %s.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line">hilarious=<span class="literal">False</span></span><br><span class="line">joke_evaluation=<span class="string">&quot;Isn&#x27;t that joke so funny?! %r &quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">w=<span class="string">&quot;This is the left side of ...&quot;</span></span><br><span class="line">e=<span class="string">&quot;a sting with a right side.&quot;</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex8.py</span></span><br><span class="line"></span><br><span class="line">fomatter=<span class="string">&quot;%r %r %r %r&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">	<span class="string">&quot;I had this thing.&quot;</span></span><br><span class="line">	<span class="string">&quot;That you could type up right.&quot;</span></span><br><span class="line">	<span class="string">&quot;But it didn&#x27;t sing.&quot;</span></span><br><span class="line">	<span class="string">&quot;So I said goodnight.&quot;</span></span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
 
 
 <h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><ol>
-<li>一些关于<strong>字符串</strong>（string）的知识</li>
+<li><p><a target="_blank" rel="noopener" href="http://ex8.py/">ex8.py</a> 的代码中 %r打印出来的是单引号，但是实际上用的双引号<br>python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。</p>
+</li>
+<li><p>True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。</p>
+</li>
+<li><p>%r的作用<br>%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。</p>
+</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用“ 或 ‘ 来创建字符串</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="comment"># 字符串也可以相加</span></span><br><span class="line"><span class="built_in">print</span></span><br></pre></td></tr></table></figure>
-
-
-<ol>
-<li>关于变量名的知识</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量名设置的要求：使用下划线分割的小写字母</span></span><br></pre></td></tr></table></figure>
-
-
-<ol>
-<li>代码中 %s 、%d 和 %r 是起什么作用？</li>
-</ol>
-<figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># <span class="built_in">%s</span></span><br><span class="line">＃指令告诉Ｐｙｔｈｏｎ　把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置</span><br><span class="line">＃如果变量是字符串，使用％ｓ</span><br><span class="line">＃如果变量是数字，使用％ｄ</span><br><span class="line">＃无论变量是什么，都可以用％ｒ</span><br></pre></td></tr></table></figure>
-
-
 <h3 id="附加练习"><a href="#附加练习" class="headerlink" title="附加练习"></a>附加练习</h3><p>以下摘录自原文</p>
 <ol>
-<li><p>单等号和双等号有什么不同？</p>
+<li><p>每一行加一段注释</p>
 </li>
-<li><p>如何将浮点数四舍五入？<br>使用ｒｏｕｎｄ（）函数</p>
+<li><p>最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？</p>
 </li>
 </ol>
-<hr>
 
       
     </div>
@@ -856,14 +890,14 @@
     <div class="footer-inner">
 
   <div class="copyright">
-    &copy; 
+    &copy; 2019 – 
     <span itemprop="copyrightYear">2026</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
     <span class="author" itemprop="copyrightHolder">Darerd</span>
   </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
     </div>
@@ -876,10 +910,7 @@
     <span class="toggle-line"></span>
   </div>
   <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
