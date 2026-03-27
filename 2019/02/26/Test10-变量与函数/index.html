@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节主要学习函数的多种参数传递方式 我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。 [TOC] 源代码12345678910111213141516171819# ex19.pydef	pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test10-变量与函数">
+<meta property="og:url" content="https://darerd.github.io/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节主要学习函数的多种参数传递方式 我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。 [TOC] 源代码12345678910111213141516171819# ex19.pydef	pr">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/02/26/5c7533b1d4665.jpg">
+<meta property="article:published_time" content="2019-02-26T12:41:58.000Z">
+<meta property="article:modified_time" content="2019-02-26T12:41:58.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="笨方法学Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/26/5c7533b1d4665.jpg">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/","path":"2019/02/26/Test10-变量与函数/","title":"Test10-变量与函数"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Test10-变量与函数 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text">源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E8%AF%A5%E7%9C%8B%E5%88%B0%E7%9A%84%E7%BB%93%E6%9E%9C"><span class="nav-number">2.</span> <span class="nav-text">应该看到的结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">一个问题</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Test10-变量与函数 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Test10-变量与函数
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-26 20:41:58" itemprop="dateCreated datePublished" datetime="2019-02-26T20:41:58+08:00">2019-02-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">产品经理学技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+</blockquote>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著</p>
+<blockquote>
+<p>的学习思路和理解，如有不如之处，望指出！！！</p>
+</blockquote>
+<p>本节主要学习函数的多种参数传递方式</p>
+<p>我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。</p>
+<p>[TOC]</p>
+<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex19.py</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">print</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line">	</span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">cheese_and_crackers(<span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">amount_of_cheese=<span class="number">10</span></span><br><span class="line">amount_of_crackers=<span class="number">50</span></span><br><span class="line">cheese_and_crackers(amount_of_cheese,amount_of_crackers)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">cheese_and_crackers(<span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">cheese_and_crackers(amount_of_cheese+<span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+
+<p>这个函数脚本思路很简单，主要以下几个点需要注意：</p>
+<ol>
+<li><p><code>def()</code>指令后，记得加<code>:</code></p>
+</li>
+<li><p>回想下前面学过的<code>%d</code>、<code>%r</code>、<code>%s</code>之间的区别</p>
+</li>
+<li><p><code>\n</code>的作用</p>
+</li>
+</ol>
+<h3 id="应该看到的结果"><a href="#应该看到的结果" class="headerlink" title="应该看到的结果"></a>应该看到的结果</h3><p><img src="https://i.loli.net/2019/02/26/5c7533b1d4665.jpg"></p>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ol>
+<li><p>对每一行代码添加<code>#</code>注释</p>
+</li>
+<li><p>第11行和12行创建的变量会不会改变函数中的变量<br>不会。这些变量是在函数之外的，当它们被传递到函数中以后，函数会为这些变量创建一些临时的版本，当函数运行结束后，这些临时变量就被丢弃了。</p>
+</li>
+<li><p>函数的参数个数有限制吗？<br>取决于Python的版本和所用的操作系统，不过就算有限制，限值也是很大的。</p>
+</li>
+</ol>
+<hr>
+<h3 id="一个问题"><a href="#一个问题" class="headerlink" title="一个问题"></a>一个问题</h3><p>作者在文中提出了一个问题：</p>
+<p><strong>如果让用户给函数传递变量呢？应该怎么写？比如：让用户输入cracker和cheese的数量</strong></p>
+<p>我写的指令如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span></span><br><span class="line">amount_of_cheese=raw_input(<span class="string">&quot;Enter your numbers: &quot;</span></span><br><span class="line">amount_of_crackers=raw_input(<span class="string">&quot;Enter your numbers: &quot;</span></span><br><span class="line">cheese_and_crackers(amount_of_cheese,amount_of_crackers)</span><br></pre></td></tr></table></figure>
+
+
+<p>但是在运行时，一直报错</p>
+<p><strong>希望大佬可以帮忙解释写这个非常简单的基础问题</strong></p>
+<hr>
+<blockquote>
+</blockquote>
+<p>这是**《笨方法学Python》**的第十篇文章</p>
+<blockquote>
+</blockquote>
+<p>希望自己可以坚持下去</p>
+<blockquote>
+</blockquote>
+<p>希望你也可以坚持下去</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" rel="tag"># 笨方法学Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/02/25/Test8-%E5%8F%98%E9%87%8F%E3%80%81%E5%87%BD%E6%95%B0/" rel="prev" title="Test8-变量、函数">
+                  <i class="fa fa-angle-left"></i> Test8-变量、函数
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/02/27/Test11-%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/" rel="next" title="Test11-函数和文件">
+                  Test11-函数和文件 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

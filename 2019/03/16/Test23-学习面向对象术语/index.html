@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节学习面向对象术语 [TOC] 单词练习 类（class）：告诉python创建新类型的东西  对象（object）：两个意思，即最基本的东西，或者某个东西的实例  实例（instance）：让python创建一个时得到的东西  def：创建函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test23-学习面向对象术语">
+<meta property="og:url" content="https://darerd.github.io/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节学习面向对象术语 [TOC] 单词练习 类（class）：告诉python创建新类型的东西  对象（object）：两个意思，即最基本的东西，或者某个东西的实例  实例（instance）：让python创建一个时得到的东西  def：创建函数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/03/16/5c8d0d809c5b9.png">
+<meta property="article:published_time" content="2019-03-16T13:52:09.000Z">
+<meta property="article:modified_time" content="2019-03-16T13:52:09.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="笨方法学Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/16/5c8d0d809c5b9.png">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/","path":"2019/03/16/Test23-学习面向对象术语/","title":"Test23-学习面向对象术语"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Test23-学习面向对象术语 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E8%AF%8D%E7%BB%83%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">单词练习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E6%B1%87%E7%BB%83%E4%B9%A0"><span class="nav-number">2.</span> <span class="nav-text">语汇练习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E8%AF%A5%E7%9C%8B%E5%88%B0%E7%9A%84%E7%BB%93%E6%9E%9C"><span class="nav-number">4.</span> <span class="nav-text">应该看到的结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%A3%E9%87%8A"><span class="nav-number">5.</span> <span class="nav-text">代码解释</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Test23-学习面向对象术语 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Test23-学习面向对象术语
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-16 21:52:09" itemprop="dateCreated datePublished" datetime="2019-03-16T21:52:09+08:00">2019-03-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">产品经理学技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+</blockquote>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著</p>
+<blockquote>
+<p>的学习思路和理解，如有不如之处，望指出！！！</p>
+</blockquote>
+<p>本节学习面向对象术语</p>
+<p>[TOC]</p>
+<h3 id="单词练习"><a href="#单词练习" class="headerlink" title="单词练习"></a>单词练习</h3><ul>
+<li><p>类（<code>class</code>）：告诉<code>python</code>创建新类型的东西</p>
+</li>
+<li><p>对象（<code>object</code>）：两个意思，即最基本的东西，或者某个东西的实例</p>
+</li>
+<li><p>实例（<code>instance</code>）：让<code>python</code>创建一个时得到的东西</p>
+</li>
+<li><p><code>def</code>：创建函数</p>
+</li>
+<li><p><code>self</code>：在类的函数中，<code>self</code>指代被访问的对象或者实例的一个变量</p>
+</li>
+<li><p>继承（<code>inheritance</code>）：指一个类可以继承另一个类的特性，和父子关系类似</p>
+</li>
+<li><p>组合（<code>composition</code>）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系</p>
+</li>
+<li><p>属性（<code>attribute</code>）：类的一个属性，它来自于组合，而且通常是一个变量</p>
+</li>
+<li><p>是什么（<code>is-a</code>）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）</p>
+</li>
+<li><p>有什么（<code>has-a</code>）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）</p>
+</li>
+</ul>
+<h3 id="语汇练习"><a href="#语汇练习" class="headerlink" title="语汇练习"></a>语汇练习</h3><ol>
+<li><p><code>class X(Y)</code>：创建一个叫<code>X</code>的类，它是<code>Y</code>的一种</p>
+</li>
+<li><p><code>class X(object):def_init_(self,J)</code>：类<code>X</code>有一个<code>_init_</code>接收<code>self</code>和<code>J</code>作为参数</p>
+</li>
+<li><p><code>class X(object):def M(self,J)</code>：类<code>X</code>有一个函数名称为<code>M</code>，它接收<code>self</code>和<code>J</code>作为参数</p>
+</li>
+<li><p><code>foo=X()</code>:将<code>foo</code>设为类<code>X</code>的一个实例</p>
+</li>
+<li><p><code>foo.M(J)</code>:从<code>foo</code>中找到<code>M</code>函数，并使用<code>self</code>和<code>J</code>参数调用它</p>
+</li>
+<li><p><code>foo.K=Q</code>：从<code>foo</code>中获取<code>K</code>属性，并将其设为<code>Q</code></p>
+</li>
+</ol>
+<p>每一条中，你看到<code>X、Y、M、J、K、Q及foo</code>的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样</p>
+<ol>
+<li><p>创建一个叫<code>???</code>的类，它是<code>Y</code>的一种</p>
+</li>
+<li><p>类<code>???</code>有一个<code>_init_</code>，能接收<code>self</code>和<code>???</code>作为参数</p>
+</li>
+<li><p>类<code>???</code>有一个函数名称为<code>???</code>，可以接收<code>self</code>和<code>???</code>作为参数</p>
+</li>
+<li><p>将<code>foo</code>设为<code>class ???</code>的一个实例</p>
+</li>
+<li><p>从<code>foo</code>中找到<code>???</code>函数，并使用<code>self</code>和<code>???</code>参数调用它</p>
+</li>
+<li><p>从<code>foo</code>中获取<code>???</code>属性，并将其设为<code>???</code></p>
+</li>
+</ol>
+<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex41.py</span></span><br><span class="line"><span class="keyword">import</span></span><br><span class="line"><span class="keyword">from</span></span><br><span class="line"><span class="keyword">import</span></span><br><span class="line"></span><br><span class="line">WORD_URL=<span class="string">&quot;http://learncodethehardway.org/words.txt&quot;</span></span><br><span class="line">WORDS=[]</span><br><span class="line"></span><br><span class="line">PHRASES=&#123;</span><br><span class="line">    <span class="string">&quot;class %%%(%%%):&quot;</span></span><br><span class="line">     <span class="string">&quot;Make a class named %%% that is-a %%%.&quot;</span></span><br><span class="line">    <span class="string">&quot;class %%%(object):\n\tdef _init_(self,***)&quot;</span></span><br><span class="line">     <span class="string">&quot;class %%% has-a _init_ that takes self and *** parameters.&quot;</span></span><br><span class="line">    <span class="string">&quot;class %%%(object):\n\tdef ***(self, @@@)&quot;</span></span><br><span class="line">     <span class="string">&quot;class %%% has-a function named *** that takes self and @@@ parameters.&quot;</span></span><br><span class="line">    <span class="string">&quot;***=%%%()&quot;</span></span><br><span class="line">     <span class="string">&quot;Set *** to an instance of class %%%.&quot;</span></span><br><span class="line">    <span class="string">&quot;***.***(@@@)&quot;</span></span><br><span class="line">     <span class="string">&quot;From *** get the *** function, and call it with parameters self,@@@.&quot;</span></span><br><span class="line">    <span class="string">&quot;***.***=&#x27;***&#x27;&quot;</span></span><br><span class="line">     <span class="string">&quot;From *** get the *** attribute and set it to &#x27;***&#x27;.&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"><span class="comment"># do they want to drill phrases first</span></span><br><span class="line">PHRASES_FIRST=<span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span></span><br><span class="line">    PHRASES_FIRST=<span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># load up the words from the website</span></span><br><span class="line"><span class="keyword">for</span></span><br><span class="line">    WORDS.append(word.strip())</span><br><span class="line">    </span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">    <span class="title function_">class_names</span>=[w.capitalize() <span class="keyword">for</span></span><br><span class="line">                random.sample(WORDS,snippet.count(<span class="string">&quot;%%%&quot;</span></span><br><span class="line">    other_names=random.sample(WORDS,snippet.count(<span class="string">&quot;***&quot;</span></span><br><span class="line">    results=[]</span><br><span class="line">    param_names=[]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span></span><br><span class="line">        param_count=random.randint(<span class="number">1</span></span><br><span class="line">        param_names.append(<span class="string">&#x27;,&#x27;</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">for</span></span><br><span class="line">        result=sentence[:]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># fake class names</span></span><br><span class="line">        <span class="keyword">for</span></span><br><span class="line">            result=result.replace(<span class="string">&quot;%%%&quot;</span></span><br><span class="line">        <span class="comment"># fake other names</span></span><br><span class="line">        <span class="keyword">for</span></span><br><span class="line">            result=result.replace(<span class="string">&quot;***&quot;</span></span><br><span class="line">        <span class="comment"># fake parameter lists</span></span><br><span class="line">        <span class="keyword">for</span></span><br><span class="line">            result=result.replace(<span class="string">&quot;@@@&quot;</span></span><br><span class="line">        </span><br><span class="line">        results.append(result)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># keep going until they hit CTRL-D</span></span><br><span class="line"><span class="keyword">try</span></span><br><span class="line">    <span class="keyword">while</span></span><br><span class="line">        snippets=PHRASES.keys()</span><br><span class="line">        random.shuffle(snippets)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span></span><br><span class="line">            phrase=PHRASES[snippet]</span><br><span class="line">            question,answer=convert(snippet,phrase)</span><br><span class="line">            <span class="keyword">if</span></span><br><span class="line">                question,answer=answer,question</span><br><span class="line">                </span><br><span class="line">            <span class="built_in">print</span></span><br><span class="line">            </span><br><span class="line">            raw_input(<span class="string">&quot;&gt; &quot;</span></span><br><span class="line">            <span class="built_in">print</span></span><br><span class="line"><span class="keyword">except</span></span><br><span class="line">    <span class="built_in">print</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="应该看到的结果"><a href="#应该看到的结果" class="headerlink" title="应该看到的结果"></a>应该看到的结果</h3><p><img src="https://i.loli.net/2019/03/16/5c8d0d809c5b9.png"></p>
+<h3 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h3><blockquote>
+</blockquote>
+<p>目前能力不够，不能完全解释和理解每一段代码的作用</p>
+<blockquote>
+</blockquote>
+<p>下面仅介绍部分需要注意的知识</p>
+<ol>
+<li>Python异常处理</li>
+</ol>
+<p>最后一段用<code>try/except</code>语句来检测异常</p>
+<p>语法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span></span><br><span class="line">&lt;语句&gt;        <span class="comment">#运行别的代码</span></span><br><span class="line"><span class="keyword">except</span></span><br><span class="line">&lt;语句&gt;        <span class="comment">#如果在try部份引发了&#x27;name&#x27;异常</span></span><br><span class="line"><span class="keyword">except</span></span><br><span class="line">&lt;语句&gt;        <span class="comment">#如果引发了&#x27;name&#x27;异常，获得附加的数据</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&lt;语句&gt;        <span class="comment">#如果没有异常发生</span></span><br></pre></td></tr></table></figure>
+
+
+<p><code>try</code>的工作原理是，当开始一个<code>try</code>语句后，<code>python</code>就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，<code>try</code>子句先执行，接下来会发生什么依赖于执行时是否出现异常。</p>
+<ul>
+<li><p>如果当<code>try</code>后的语句执行时发生异常，<code>python</code>就跳回到<code>try</code>并执行第一个匹配该异常的<code>except</code>子句，异常处理完毕，控制流就通过整个<code>try</code>语句（除非在处理异常时又引发新的异常）。</p>
+</li>
+<li><p>如果在<code>try</code>后的语句里发生了异常，却没有匹配的<code>except</code>子句，异常将被递交到上层的<code>try</code>，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。</p>
+</li>
+<li><p>如果在<code>try</code>子句执行时没有发生异常，<code>python</code>将执行<code>else</code>语句后的语句（如果有<code>else</code>的话），然后控制流通过整个<code>try</code>语句。</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://www.runoob.com/python/python-exceptions.html">更多关于Python异常处理的资料</a></p>
+<hr>
+<blockquote>
+</blockquote>
+<p>这是**《笨方法学Python》**的第二十三篇文章</p>
+<blockquote>
+</blockquote>
+<p>希望自己可以坚持下去</p>
+<blockquote>
+</blockquote>
+<p>希望你也可以坚持下去</p>
+<blockquote>
+</blockquote>
+<p>后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" rel="tag"># 笨方法学Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/03/16/%E9%9A%8F%E6%83%B3-%E5%BA%94%E5%B1%8A%E7%94%9F%EF%BC%9A%E4%B8%BA%E4%BD%95%E4%BD%A0%E7%9A%84%E5%B7%A5%E8%B5%84%E4%BC%9A%E6%AF%94%E8%80%81%E5%91%98%E5%B7%A5%E9%AB%98%EF%BC%9F/" rel="prev" title="应届生：为何你的工资会比老员工高？">
+                  <i class="fa fa-angle-left"></i> 应届生：为何你的工资会比老员工高？
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/03/18/%E9%9A%8F%E6%83%B3-%E9%80%9A%E8%BF%87%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E8%99%8E%E6%89%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E4%B8%80%E6%AD%A5%E6%AD%A5%E4%B8%8A%E7%98%BE%E7%9A%84/" rel="next" title="通过上瘾模型分析虎扑是怎么让你一步步上瘾的">
+                  通过上瘾模型分析虎扑是怎么让你一步步上瘾的 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

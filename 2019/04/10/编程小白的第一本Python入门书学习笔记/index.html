@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="编程小白的第一本Python入门书学习笔记最近在学习Python的过程中，发现一本对小白非常友好的入门书-《编程小白的第一本Python入门书》，书中对知识点的讲解很易懂，一些以前不太理解的概念，在看完这本书之后也有眉目了。 这里主要介绍下自己学习时做的一些笔记，如果其中有理解错误的地方，麻烦评论或者私信告知。 有幕布账号的小伙伴也可以去幕布链接 [TOC] 字符串 字符串  字符串的分片与索引">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程小白的第一本Python入门书学习笔记">
+<meta property="og:url" content="https://darerd.github.io/2019/04/10/%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACPython%E5%85%A5%E9%97%A8%E4%B9%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="编程小白的第一本Python入门书学习笔记最近在学习Python的过程中，发现一本对小白非常友好的入门书-《编程小白的第一本Python入门书》，书中对知识点的讲解很易懂，一些以前不太理解的概念，在看完这本书之后也有眉目了。 这里主要介绍下自己学习时做的一些笔记，如果其中有理解错误的地方，麻烦评论或者私信告知。 有幕布账号的小伙伴也可以去幕布链接 [TOC] 字符串 字符串  字符串的分片与索引">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.mubu.com/document_image/079ab1e3-ebf3-4a7d-9e29-29aec94729da-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/f15e9c26-acf1-40be-a061-793501745ab9-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/f86a1b84-fbee-40ea-b637-4564804385ec-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/f608d9fc-284b-477e-99d7-fbb1fadf3d46-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/e335bee1-1539-4d84-8363-cd2350b57e5b-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/fb0159b5-73da-4436-85a2-dd106adb8a73-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/9ce6a90d-480b-4641-99ad-f3d3c094b00d-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/badf9ad1-8f74-4284-a537-eb5c37138fda-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/d93b4a35-4de3-4864-92b7-77fe93a6e75a-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/613f0ad2-da43-436d-a134-fdbb6c2a1d97-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/81078827-81ba-439f-8b83-00d7c9605f0b-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/846b4aa0-8ba1-44ac-89d6-e38f3f6faa01-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/54640cf8-9410-4d41-b339-446229e9dc2d-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/061ee58c-0ccd-4e2e-96b9-90aed00783fa-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/5c1d8bb6-7adc-4dad-86fd-0982cd5b7436-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/fe566539-a680-4141-8734-511a6c9f91b0-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/9c55b7ad-464e-4d14-b74e-2561aeca679e-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/6238fa97-c51f-4242-81fc-8b34fd1115c9-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/0c93129a-2cd2-4288-b1cb-0b603b6e1a0b-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/3cef2a50-6b87-4b1d-88c7-e1b6a355cc67-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/e0e9e6b4-e9a5-49e0-a7dc-202f155e27a2-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/9592930d-a16a-4213-ba30-31ea6924a421-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/32c0c977-2f43-4c2d-a50f-e4db1c82ff31-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/32c0c977-2f43-4c2d-a50f-e4db1c82ff31-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/30f154bd-0d45-4afe-a795-266045254d9c-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/2ca03c9a-2d06-46c9-981f-b0b565e149c8-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/86bf1b24-30c2-4193-bdf3-72953e7be913-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/6580704f-a3f4-4ba8-abd3-242b746c4385-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/bc1c1b80-e487-4119-a4fd-3ae8b22ffb81-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/c48923d0-c709-460b-97a4-dbe0e8e5a17d-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/559bdb9c-70cb-482c-862a-338148025317-2686885.jpg">
+<meta property="og:image" content="https://img.mubu.com/document_image/5274043d-413b-4e13-8ffe-2875efedaab2-2686885.jpg">
+<meta property="article:published_time" content="2019-04-10T13:34:19.000Z">
+<meta property="article:modified_time" content="2019-04-10T13:34:19.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.mubu.com/document_image/079ab1e3-ebf3-4a7d-9e29-29aec94729da-2686885.jpg">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/04/10/%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACPython%E5%85%A5%E9%97%A8%E4%B9%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/04/10/%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACPython%E5%85%A5%E9%97%A8%E4%B9%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2019/04/10/编程小白的第一本Python入门书学习笔记/","title":"编程小白的第一本Python入门书学习笔记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>编程小白的第一本Python入门书学习笔记 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACPython%E5%85%A5%E9%97%A8%E4%B9%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">编程小白的第一本Python入门书学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.1.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E4%B8%8E%E5%88%A4%E6%96%AD"><span class="nav-number">1.3.</span> <span class="nav-text">循环与判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%8E%A7%E5%88%B6"><span class="nav-number">1.4.</span> <span class="nav-text">条件控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.5.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">1.6.</span> <span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E4%B9%A6%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="nav-number">1.7.</span> <span class="nav-text">全书下载地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%A6%E4%B8%AD%E4%B9%A0%E9%A2%98%E7%BB%83%E4%B9%A0%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.8.</span> <span class="nav-text">书中习题练习源代码</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/10/%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%ACPython%E5%85%A5%E9%97%A8%E4%B9%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="编程小白的第一本Python入门书学习笔记 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          编程小白的第一本Python入门书学习笔记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-10 21:34:19" itemprop="dateCreated datePublished" datetime="2019-04-10T21:34:19+08:00">2019-04-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">产品经理学技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="编程小白的第一本Python入门书学习笔记"><a href="#编程小白的第一本Python入门书学习笔记" class="headerlink" title="编程小白的第一本Python入门书学习笔记"></a>编程小白的第一本Python入门书学习笔记</h1><p>最近在学习Python的过程中，发现一本对小白非常友好的入门书-《编程小白的第一本Python入门书》，书中对知识点的讲解很易懂，一些以前不太理解的概念，在看完这本书之后也有眉目了。</p>
+<p>这里主要介绍下自己学习时做的一些笔记，<strong>如果其中有理解错误的地方，麻烦评论或者私信告知。</strong></p>
+<p>有幕布账号的小伙伴也可以去<a target="_blank" rel="noopener" href="https://mubu.com/doc/a7RG89q8Kw">幕布链接</a></p>
+<p>[TOC]</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
+<li><p>字符串<br><img src="https://img.mubu.com/document_image/079ab1e3-ebf3-4a7d-9e29-29aec94729da-2686885.jpg" alt="img"></p>
+</li>
+<li><p>字符串的分片与索引</p>
+</li>
+</ul>
+<p>字符串可以通过<code>string[x]</code>的方式进行索引、分片，也就是加一个<code>[]</code><br><img src="https://img.mubu.com/document_image/f15e9c26-acf1-40be-a061-793501745ab9-2686885.jpg" alt="img"></p>
+<p>字符串的方法</p>
+<p><img src="https://img.mubu.com/document_image/f86a1b84-fbee-40ea-b637-4564804385ec-2686885.jpg" alt="img"></p>
+<p>非常形象的比喻</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><ul>
+<li><p>函数<br><img src="https://img.mubu.com/document_image/f608d9fc-284b-477e-99d7-fbb1fadf3d46-2686885.jpg" alt="img"></p>
+</li>
+<li><p>创建函数<br><img src="https://img.mubu.com/document_image/e335bee1-1539-4d84-8363-cd2350b57e5b-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<p>如果忘记写<code>return</code>，会出现什么情况<br><img src="https://img.mubu.com/document_image/fb0159b5-73da-4436-85a2-dd106adb8a73-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/9ce6a90d-480b-4641-99ad-f3d3c094b00d-2686885.jpg" alt="img"></p>
+<p>调用函数</p>
+<ul>
+<li>两点最重要：</li>
+</ul>
+<p>定义的函数名（这个人叫什么）</p>
+<ul>
+<li>定义的函数参数（这个人的特点是什么，不然遇到重名，无法识别）</li>
+</ul>
+<h3 id="循环与判断"><a href="#循环与判断" class="headerlink" title="循环与判断"></a>循环与判断</h3><ul>
+<li><p>逻辑循环<br><img src="https://img.mubu.com/document_image/badf9ad1-8f74-4284-a537-eb5c37138fda-2686885.jpg" alt="img"></p>
+</li>
+<li><p>比较运算<br><img src="https://img.mubu.com/document_image/d93b4a35-4de3-4864-92b7-77fe93a6e75a-2686885.jpg" alt="img"></p>
+</li>
+<li><p>布尔值<br><img src="https://img.mubu.com/document_image/613f0ad2-da43-436d-a134-fdbb6c2a1d97-2686885.jpg" alt="img"></p>
+</li>
+<li><p>列表<br><img src="https://img.mubu.com/document_image/81078827-81ba-439f-8b83-00d7c9605f0b-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<h3 id="条件控制"><a href="#条件控制" class="headerlink" title="条件控制"></a>条件控制</h3><ul>
+<li><p><code>if ...... else......</code><br><img src="https://img.mubu.com/document_image/846b4aa0-8ba1-44ac-89d6-e38f3f6faa01-2686885.jpg" alt="img"></p>
+</li>
+<li><p><code>if ..... elif...... else.........</code><br><img src="https://img.mubu.com/document_image/54640cf8-9410-4d41-b339-446229e9dc2d-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ul>
+<li><p><code>for</code> 循环<br><img src="https://img.mubu.com/document_image/061ee58c-0ccd-4e2e-96b9-90aed00783fa-2686885.jpg" alt="img"></p>
+</li>
+<li><p><code>while</code>循环<br><img src="https://img.mubu.com/document_image/5c1d8bb6-7adc-4dad-86fd-0982cd5b7436-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/fe566539-a680-4141-8734-511a6c9f91b0-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><ul>
+<li>四种数据结构<br><img src="https://img.mubu.com/document_image/9c55b7ad-464e-4d14-b74e-2561aeca679e-2686885.jpg" alt="img"></li>
+</ul>
+<p>列表<br><img src="https://img.mubu.com/document_image/6238fa97-c51f-4242-81fc-8b34fd1115c9-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/0c93129a-2cd2-4288-b1cb-0b603b6e1a0b-2686885.jpg" alt="img"></p>
+<ul>
+<li><p>字典<br><img src="https://img.mubu.com/document_image/3cef2a50-6b87-4b1d-88c7-e1b6a355cc67-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/e0e9e6b4-e9a5-49e0-a7dc-202f155e27a2-2686885.jpg" alt="img"></p>
+</li>
+<li><p>元组<br><img src="https://img.mubu.com/document_image/9592930d-a16a-4213-ba30-31ea6924a421-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/32c0c977-2f43-4c2d-a50f-e4db1c82ff31-2686885.jpg" alt="img"></p>
+</li>
+<li><p>集合<br><img src="https://img.mubu.com/document_image/32c0c977-2f43-4c2d-a50f-e4db1c82ff31-2686885.jpg" alt="img"></p>
+</li>
+<li><p>列表推导式<br><img src="https://img.mubu.com/document_image/30f154bd-0d45-4afe-a795-266045254d9c-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/2ca03c9a-2d06-46c9-981f-b0b565e149c8-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<p>###类</p>
+<ul>
+<li><p>类的概念<br><img src="https://img.mubu.com/document_image/86bf1b24-30c2-4193-bdf3-72953e7be913-2686885.jpg" alt="img"><br><img src="https://img.mubu.com/document_image/6580704f-a3f4-4ba8-abd3-242b746c4385-2686885.jpg" alt="img"></p>
+</li>
+<li><p>类有很多概念还是没有吃透和理解</p>
+</li>
+<li><p>类有属性</p>
+</li>
+</ul>
+<p>类的属性就如同可口可乐的饮料配方<br><img src="https://img.mubu.com/document_image/bc1c1b80-e487-4119-a4fd-3ae8b22ffb81-2686885.jpg" alt="img"></p>
+<p>类可以实例化</p>
+<ul>
+<li><p>利用饮料的配方在生产线上生产出饮料产品</p>
+</li>
+<li><p>生产的饮料产品有着相同的配发(属性)<br><img src="https://img.mubu.com/document_image/c48923d0-c709-460b-97a4-dbe0e8e5a17d-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<p>类实例化后也有属性</p>
+<ul>
+<li>生产线生产出的饮料，需要对其进行包装，包装就是实例的属性<br><img src="https://img.mubu.com/document_image/559bdb9c-70cb-482c-862a-338148025317-2686885.jpg" alt="img"></li>
+</ul>
+<p>类实例化后 肯定是希望能做一些事情</p>
+<ul>
+<li><p>这是就可以在类里定义函数，让这个类去做一些事情</p>
+</li>
+<li><p>比如，可乐可以用来喝，用来赠送等等行为<br><img src="https://img.mubu.com/document_image/5274043d-413b-4e13-8ffe-2875efedaab2-2686885.jpg" alt="img"></p>
+</li>
+</ul>
+<p><strong>后面关于 <code>__init__</code>的用法，还是没有看懂</strong>（有大佬懂的话，可以在评论区或者留言区解释下）</p>
+<h3 id="全书下载地址"><a href="#全书下载地址" class="headerlink" title="全书下载地址"></a>全书下载地址</h3><p><a target="_blank" rel="noopener" href="http://www.ituring.com.cn/book/1863">应该是官网地址</a></p>
+<p><a target="_blank" rel="noopener" href="https://u19341005.pipipan.com/fs/19341005-363267201">或者去我的网盘直接下载</a></p>
+<h3 id="书中习题练习源代码"><a href="#书中习题练习源代码" class="headerlink" title="书中习题练习源代码"></a>书中习题练习源代码</h3><p>书中提供了一些习题，我按照自己的理解写了一些代码，分享给大家，可能代码写的不是非常合理和优雅，也希望大家多多指正。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8</span></span><br><span class="line"><span class="comment"># 编程小白的第一本Python</span></span><br><span class="line"><span class="comment"># Version：Python 3</span></span><br><span class="line"><span class="comment"># 书中有趣的程序</span></span><br><span class="line"></span><br><span class="line">search = <span class="string">&#x27;168&#x27;</span></span><br><span class="line">num_a = <span class="string">&#x27;1386-168-0006&#x27;</span></span><br><span class="line">num_b = <span class="string">&#x27;1681-222-0006&#x27;</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 把上面的结果改编为以下的函数</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">num_a</span> = <span class="string">&#x27;1386-168-0006&#x27;</span></span><br><span class="line">	num_b = <span class="string">&#x27;1681-222-0006&#x27;</span></span><br><span class="line">	a=search + <span class="string">&#x27;is at&#x27;</span></span><br><span class="line">	<span class="keyword">return</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 练习题1#--------------质量转换-----------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">M</span> = m/<span class="number">1000</span></span><br><span class="line">	<span class="keyword">return</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="comment"># 练习题2#---------------勾股定理----------------</span></span><br><span class="line"><span class="keyword">import</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">c</span> = math.sqrt(<span class="built_in">pow</span>(a,<span class="number">2</span></span><br><span class="line">	<span class="keyword">return</span></span><br><span class="line">a = <span class="built_in">int</span>(<span class="built_in">input</span> (<span class="string">&#x27;&gt; &#x27;</span></span><br><span class="line">b = <span class="built_in">int</span>(<span class="built_in">input</span> (<span class="string">&#x27;&gt; &#x27;</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设计一个函数：写入文件#---------------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">desktop_path</span> = <span class="string">&#x27;C://Users/admin/Desktop/&#x27;</span></span><br><span class="line">	full_path = desktop_path + name + <span class="string">&#x27;.txt&#x27;</span></span><br><span class="line">	file = <span class="built_in">open</span> (full_path,<span class="string">&#x27;w&#x27;</span></span><br><span class="line">	<span class="comment"># 参数&#x27;w&#x27;的作用：如果该路径没有文件，就会创建一个有该名称的文件，并写入内容；如果该路径有此文件，就会覆盖文本内容</span></span><br><span class="line">	file.write(msg)</span><br><span class="line">	file.close()</span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line">text_create(<span class="string">&#x27;hello&#x27;</span></span><br><span class="line"><span class="comment"># 设计一个函数：敏感词过滤#---------------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">return</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="comment"># 合并上面的两个函数，做一个敏感词过滤器#---------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">clean_msg</span> = text_filter(msg)</span><br><span class="line">	text_create(name,clean_msg)</span><br><span class="line">censored_text_filter(<span class="string">&#x27;try&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 练习题3#---------------创建十个文本，并以数字命名----------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">desktop_path</span> = <span class="string">&#x27;C://Users/admin/Desktop/&#x27;</span></span><br><span class="line">	<span class="keyword">for</span></span><br><span class="line">	<span class="comment"># range()函数得到的是整数</span></span><br><span class="line">		full_path = desktop_path + <span class="built_in">str</span>(name) + <span class="string">&#x27;.txt&#x27;</span></span><br><span class="line">		<span class="comment"># 路径中需要的是字符，需要用str()函数把整数转化为字符</span></span><br><span class="line">		file = <span class="built_in">open</span> (full_path,<span class="string">&#x27;w&#x27;</span></span><br><span class="line">		file.write(msg)</span><br><span class="line">		file.close()</span><br><span class="line">		<span class="built_in">print</span></span><br><span class="line">text_ten(name = <span class="built_in">input</span>(<span class="string">&#x27;&gt; &#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 练习题4#---------------复利计算器----------------</span></span><br><span class="line"><span class="keyword">def</span></span><br><span class="line">	<span class="title function_">rate</span> = <span class="number">0.05</span></span><br><span class="line">	amount = <span class="number">100</span></span><br><span class="line">	<span class="keyword">for</span></span><br><span class="line">		compounding_amount = amount*(<span class="number">1</span></span><br><span class="line">		<span class="built_in">print</span></span><br><span class="line">		<span class="built_in">print</span></span><br><span class="line">Compounding_Calculator(<span class="built_in">input</span>(<span class="string">&#x27;&gt; &#x27;</span></span><br><span class="line">		</span><br><span class="line"><span class="comment"># 练习题5#---------------打印1-100的偶数----------------		</span></span><br><span class="line"><span class="keyword">for</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 练习题6#---------------电话号码小游戏----------------			</span></span><br><span class="line">CN_mobile = [<span class="number">134</span></span><br><span class="line">CN_union = [<span class="number">130</span></span><br><span class="line">CN_telecom = [<span class="number">133</span></span><br><span class="line">num = <span class="built_in">input</span>()</span><br><span class="line"><span class="keyword">if</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"><span class="keyword">elif</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"><span class="keyword">elif</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"><span class="keyword">elif</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	<span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/04/07/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6-%E6%A1%8C%E9%9D%A2%E6%97%A5%E5%8E%86DesktopCal/" rel="prev" title="软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal">
+                  <i class="fa fa-angle-left"></i> 软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/04/11/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E5%85%8D%E8%B4%B9%E3%80%8B%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3%E7%BA%B5%E6%A8%AA%E6%8D%AD%E9%98%96%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/" rel="next" title="产品书单-《免费》：互联网时代纵横捭阖的商业模式">
+                  产品书单-《免费》：互联网时代纵横捭阖的商业模式 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

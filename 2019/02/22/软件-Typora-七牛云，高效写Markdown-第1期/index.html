@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等 而且产品人日常还要写写文章什么的。 如果用传统的word去写文档，真的是：   写作两分钟，格式两小时 而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率 进门右转，Markdown入门  一篇文章主要有文字、链接、图片以及格式等组成 利用Markdown写作基本帮我们解决">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora+七牛云，高效写Markdown|产品必用软件|第1期">
+<meta property="og:url" content="https://darerd.github.io/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等 而且产品人日常还要写写文章什么的。 如果用传统的word去写文档，真的是：   写作两分钟，格式两小时 而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率 进门右转，Markdown入门  一篇文章主要有文字、链接、图片以及格式等组成 利用Markdown写作基本帮我们解决">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/nNfgF8rG5iCE.png?imageslim">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/B31fK7NgUbms.jpg!720">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/jczd2fqnQXLa.gif">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/Y0E0wIPQrBBX.gif">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/NXcTI8YPFBCJ.png?imageslim">
+<meta property="article:published_time" content="2019-02-22T14:40:53.000Z">
+<meta property="article:modified_time" content="2019-02-22T14:40:53.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="产品必用软件">
+<meta property="article:tag" content="软件资源">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/nNfgF8rG5iCE.png?imageslim">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/","path":"2019/02/22/软件-Typora-七牛云，高效写Markdown-第1期/","title":"Typora+七牛云，高效写Markdown|产品必用软件|第1期"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Typora+七牛云，高效写Markdown|产品必用软件|第1期 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E2%80%93Typora"><span class="nav-number">1.</span> <span class="nav-text">1. Markdown编辑器–Typora</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%9B%BE%E7%89%87%E2%80%93%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7%E2%80%93Snipaste"><span class="nav-number">2.</span> <span class="nav-text">2. 图片–最好用的截图工具–Snipaste</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%9B%BE%E5%BA%8A%E2%80%94%E7%94%A8%E4%BA%8E%E5%AD%98%E5%82%A8%E5%86%99%E4%BD%9C%E7%94%A8%E5%88%B0%E7%9A%84%E5%9B%BE%E7%89%87"><span class="nav-number">3.</span> <span class="nav-text">3. 图床—用于存储写作用到的图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%B8%80%E6%AC%BE%E5%B8%AE%E5%8A%A9%E4%BD%A0%E6%91%86%E8%84%B1%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E5%9B%B0%E6%89%B0%EF%BC%8C%E4%B8%80%E9%94%AE%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91%E7%9A%84%E5%B7%A5%E5%85%B7"><span class="nav-number">4.</span> <span class="nav-text">4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Typora+七牛云，高效写Markdown|产品必用软件|第1期 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Typora+七牛云，高效写Markdown|产品必用软件|第1期
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-22 22:40:53" itemprop="dateCreated datePublished" datetime="2019-02-22T22:40:53+08:00">2019-02-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" itemprop="url" rel="index"><span itemprop="name">软件资源</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等</p>
+<p>而且产品人日常还要写写文章什么的。</p>
+<p>如果用传统的word去写文档，真的是：</p>
+<blockquote>
+</blockquote>
+<p>写作两分钟，格式两小时</p>
+<p>而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44441012/article/details/86084778">进门右转，Markdown入门</a></p>
+<hr>
+<p>一篇文章主要有文字、链接、图片以及格式等组成</p>
+<p>利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44441012/article/details/86173262">Latex排版</a>)</p>
+<hr>
+<p>但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。</p>
+<p>最好可以一键式操作。</p>
+<p>下面就是见证奇迹的时刻！</p>
+<p>首先给大家推荐一篇<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e5612b10c7fd">博客</a>，本文借鉴了这篇文章的内容。</p>
+<h3 id="1-Markdown编辑器–Typora"><a href="#1-Markdown编辑器–Typora" class="headerlink" title="1. Markdown编辑器–Typora"></a>1. Markdown编辑器–Typora</h3><p>Typora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。</p>
+<p><strong>这是操作界面，干净、简约</strong></p>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/nNfgF8rG5iCE.png?imageslim" alt="mark"></p>
+<p><a target="_blank" rel="noopener" href="https://u19341005.pipipan.com/fs/19341005-333495568">免费下载传送门</a>	<a target="_blank" rel="noopener" href="https://typora.io/">Typora官网</a></p>
+<hr>
+<h3 id="2-图片–最好用的截图工具–Snipaste"><a href="#2-图片–最好用的截图工具–Snipaste" class="headerlink" title="2. 图片–最好用的截图工具–Snipaste"></a>2. 图片–最好用的截图工具–Snipaste</h3><blockquote>
+</blockquote>
+<p>windowns系统最好用</p>
+<p>核心功能有<strong>截图</strong>、<strong>贴图</strong>两个</p>
+<ol>
+<li>截图</li>
+</ol>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/B31fK7NgUbms.jpg!720" alt="mark"></p>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/jczd2fqnQXLa.gif" alt="mark"></p>
+<ol>
+<li>贴图</li>
+</ol>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/Y0E0wIPQrBBX.gif" alt="mark"></p>
+<p><a target="_blank" rel="noopener" href="https://u19341005.pipipan.com/fs/19341005-337702129">免费下载传送门</a>	<a target="_blank" rel="noopener" href="https://zh.snipaste.com/">官网点这里</a>	<a target="_blank" rel="noopener" href="https://www.ifanr.com/app/744064">参考资料</a></p>
+<hr>
+<h3 id="3-图床—用于存储写作用到的图片"><a href="#3-图床—用于存储写作用到的图片" class="headerlink" title="3. 图床—用于存储写作用到的图片"></a>3. 图床—用于存储写作用到的图片</h3><blockquote>
+</blockquote>
+<p>推荐 七牛云</p>
+<p>为什么是七牛云：</p>
+<blockquote>
+</blockquote>
+<p>提供<strong>稳定</strong>的存储服务，</p>
+<blockquote>
+</blockquote>
+<p>是<strong>免费</strong>的</p>
+<blockquote>
+</blockquote>
+<p>大家都在用</p>
+<p><a target="_blank" rel="noopener" href="https://developer.qiniu.com/kodo/manual/1233/console-quickstart">七牛云图床使用指南</a></p>
+<hr>
+<h3 id="4-一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具"><a href="#4-一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具" class="headerlink" title="4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具"></a>4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具</h3><blockquote>
+</blockquote>
+<p>MPic</p>
+<p>windows系统少有的可以方便上传到图床的工具(且只支持七牛云)</p>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/NXcTI8YPFBCJ.png?imageslim" alt="mark"></p>
+<p>如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。</p>
+<p>而且你随时的分享，都不会受到影响！</p>
+<blockquote>
+</blockquote>
+<p>需要”设置账号“和你的七牛云绑定</p>
+<p><a target="_blank" rel="noopener" href="https://u19341005.pipipan.com/fs/19341005-338119197">免费下载传送门</a>	<a target="_blank" rel="noopener" href="https://zh.snipaste.com/">官网点这里</a>	<a target="_blank" rel="noopener" href="https://www.ifanr.com/app/744064">参考资料</a></p>
+<hr>
+<p>更多有趣的使用技巧，需要你自己去探索了！</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" rel="tag"># 软件资源</a>
+              <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" rel="tag"># 产品必用软件</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/" rel="prev" title="Python_文件IO_知识">
+                  <i class="fa fa-angle-left"></i> Python_文件IO_知识
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/02/23/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E4%B8%80%E9%94%AE%E5%BC%8F%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91/" rel="next" title="hexo框架下，实现图片一键式上传到七牛云">
+                  hexo框架下，实现图片一键式上传到七牛云 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -133,16 +133,16 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">75</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -196,9 +196,8 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2026-03-27 21:30:00 / 修改时间：21:34:33" itemprop="dateCreated datePublished" datetime="2026-03-27T21:30:00+08:00">2026-03-27</time>
+      <time title="创建时间：2026-03-27 21:30:00" itemprop="dateCreated datePublished" datetime="2026-03-27T21:30:00+08:00">2026-03-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -327,6 +326,883 @@
 
 
 
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">微信PC端多开的方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-07-06 21:43:29" itemprop="dateCreated datePublished" datetime="2019-07-06T21:43:29+08:00">2019-07-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技巧</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="微信电脑版多开的方法"><a href="#微信电脑版多开的方法" class="headerlink" title="微信电脑版多开的方法"></a>微信电脑版多开的方法</h1><p>现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？</p>
+<p>经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法</p>
+<p>以下内容来自<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/951266077d4b">网络</a>，经验证，可以安全简单的使用</p>
+<p><strong>bat文件多开</strong></p>
+<p>第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是”D:Program Files (x86)TencentWeChatWeChat.exe”，注意，双引号要一块儿复制上。</p>
+<p><img src="https://i.loli.net/2019/07/06/5d20a7e30aa7a94620.jpg"></p>
+<p>第二步，新建一个文本文档，命名“微信多开”在文档中键入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;</span><br><span class="line"></span><br><span class="line">start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;</span><br><span class="line"></span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+
+<p>两行 <code>start &quot;&quot;</code> 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在<code>exit</code>上面即可，以上代码所示是两开。</p>
+<p>完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入<code>“微信多开.bat”</code>。</p>
+<p><img src="https://i.loli.net/2019/07/06/5d20a8db29f4089847.jpg"></p>
+<p>然后桌面上会出现一个<code>bat</code>文件，双击<code>bat</code>文件即可实现微信双开。</p>
+<p><img src="https://i.loli.net/2019/07/06/5d20a90adac8367372.jpg"></p>
+<p><img src="https://i.loli.net/2019/07/06/5d20a98766f6662151.jpg"></p>
+<p>操作起来，简单又方便</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/" class="post-title-link" itemprop="url">问答-工作被流程化，到底该不该？</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-27 10:19:51" itemprop="dateCreated datePublished" datetime="2019-04-27T10:19:51+08:00">2019-04-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" itemprop="url" rel="index"><span itemprop="name">产品问答</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+</blockquote>
+<p>看看同行们都在想些啥</p>
+<p><code>以下内容来自产品相关社区，如有侵权，请联系删除</code></p>
+<p>[TOC]</p>
+<h3 id="Q1-工作被流程化，到底该不该？"><a href="#Q1-工作被流程化，到底该不该？" class="headerlink" title="Q1 : 工作被流程化，到底该不该？"></a>Q1 : 工作被流程化，到底该不该？</h3><blockquote>
+</blockquote>
+<p>有人认为，流程化有助于公司拥有更长远的竞争力；</p>
+<blockquote>
+<p>有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。</p>
+</blockquote>
+<p><code>author:Hysterin @人人都是产品经理</code></p>
+<p><strong>如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。</strong></p>
+<p>无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。</p>
+<p>从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，<strong>无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。</strong></p>
+<p><strong>但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。</strong></p>
+<p>举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。</p>
+<p>很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。</p>
+<p>三年过去，这位学员现在已在五百强企业做专职产品经理了。</p>
+<p><strong>工作可以被流程化，可以被定性。但人不可以。记住这句话。</strong></p>
+<h3 id="Q2-：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？"><a href="#Q2-：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？" class="headerlink" title="Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？"></a>Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？</h3><blockquote>
+</blockquote>
+<p>当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。</p>
+<blockquote>
+</blockquote>
+<p>在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。</p>
+<blockquote>
+</blockquote>
+<p>如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？</p>
+<p><code>author:李小玉 @人人都是产品经理</code></p>
+<p>别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。</p>
+<p>当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。</p>
+<p>如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。</p>
+<p>做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。</p>
+<blockquote>
+</blockquote>
+<p>被别人带跑偏，说明自己对方案的考虑存在纰漏</p>
+<h3 id="Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？"><a href="#Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？" class="headerlink" title="Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？"></a>Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？</h3><blockquote>
+</blockquote>
+<p>有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？</p>
+<p><code>author:阿不 @人人都是产品经理</code></p>
+<p>这个代码我看了。</p>
+<p>分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。</p>
+<p>播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。</p>
+<p>其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/25/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%B6%85%E7%BA%A7IP%E3%80%8B%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B0%E7%89%A9%E7%A7%8D%E6%96%B9%E6%B3%95%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/25/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%B6%85%E7%BA%A7IP%E3%80%8B%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B0%E7%89%A9%E7%A7%8D%E6%96%B9%E6%B3%95%E8%AE%BA/" class="post-title-link" itemprop="url">产品书单-《超级IP》：互联网新物种方法论</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-25 22:17:47" itemprop="dateCreated datePublished" datetime="2019-04-25T22:17:47+08:00">2019-04-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" itemprop="url" rel="index"><span itemprop="name">产品书单</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="《超级IP》：互联网新物种方法论"><a href="#《超级IP》：互联网新物种方法论" class="headerlink" title="《超级IP》：互联网新物种方法论"></a>《超级IP》：互联网新物种方法论</h1><p>前一阵子，看了一本书**《超级IP》：互联网新物种方法论**，书中提了不少实操性的方法</p>
+<p>建议大家看一看，非常感兴趣的可以去买一本纸质书，放在手边</p>
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>书中提出不少蛮有趣的见解</p>
+<p>这个时代“新物种”的第一个商业内涵：新想象——要有更多想象力的边界拓展。我们能否避免被万物互联的浪潮裹挟，取决于我们能否去洞察这个时代的先机。</p>
+<p>新物种”的第二个商业内涵是新物理，代表着新的模式架构和连接方式，超前洞察用户的深层需求，从而打造专属定制的新品类战略和引爆全方案。</p>
+<p>新物种”的第三个商业内涵是新物质，即新的材料和商业基因。</p>
+<p>新物种”的第四个商业内涵是新物语，新的话语体系和故事叙述方式。</p>
+<p>人生而孤独，却不甘寂寞。我们的潜意识是想通过分享内容，找到趣味相投的人，如同生物界的动物会通过散发气味找到同类。所以我们在朋友圈更新状态，分享的动作不重要，重要的是能否有积极的回应与点赞、热烈的评论和转发，一种源出同脉的认同。</p>
+<h3 id="《超级IP》"><a href="#《超级IP》" class="headerlink" title="《超级IP》"></a>《超级IP》</h3><p><img src="https://i.loli.net/2019/04/25/5cc1c5072babc.png"></p>
+<h3 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h3><p>一切商业皆内容，一切内容皆IP！</p>
+<p>从迪士尼、airbnb、YouTube、Instagram到微信、Papi酱、芈月传、鹿晗，IP浪潮席卷全球，这不仅仅是互联网领域的革命，更是未来商业的游戏新规则。</p>
+<p>IP从泛娱乐形态快速渗透新商业生态全维度，正深化为不同行业共同的战略方法，甚至是一种全新的商业生存方式，即IP化生存。</p>
+<p>超级IP的内核，是辨识度极高的可认同的商业符号，它意味着一种对于打动人心的内容的身份认同，意味着自带势能和流量，自带压强，或者具有足够压强的一种社群商业标签。</p>
+<p>在这种全新的商业表达中，IP俨然成为商业逻辑的基础设施。以IP为起点，产品、品牌、渠道、用户等商业元素与IP的连接形成场景化的解决方案，赋能商业，同时 IP价值不断沉淀，并形成新的商业反哺。在IP的催化作用之下，流量、用户、产品天然整合一体，并形成了极具吸引力的售卖逻辑。</p>
+<p>《超级IP：互联网新物种方法论》是逻辑思维联合创始人吴声对未来图景的深度思考，深度解构这一移动互联时代新的连接符号和话语体系，帮助企业、品牌、个人迎接IP时代的变革与挑战。</p>
+<h3 id="作者介绍"><a href="#作者介绍" class="headerlink" title="作者介绍"></a>作者介绍</h3><p>吴声，场景实验室创始人，场景基金管理合伙人，中国电子商务委员会执行秘书长。一九九五年毕业于南京大学，先后在凡客诚品、京东商城、乐蜂网等电子商务企业担任高管、顾问，作为联合创始人参与创办罗辑思维，运用场景思维策划多起IP商业案例。二零一五年著有《场景革命：重构人与商业的连接》。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p><img src="https://i.loli.net/2019/04/25/5cc1c4bab71c1.png"></p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a target="_blank" rel="noopener" href="https://www.amazon.cn/dp/B01G6CQOY6/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=%E8%B6%85%E7%BA%A7IP&qid=1556202629&s=gateway&sr=8-1">这是亚马逊购书链接</a></p>
+<p>关注微信公众号：<strong>产品汪darer</strong>，后台回复关键词：<strong>超级IP</strong>，即可下载</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/21/%E8%BD%AF%E4%BB%B6-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84To-Do%E6%B8%85%E5%8D%95-%E5%B0%8F%E9%BB%84%E6%9D%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/21/%E8%BD%AF%E4%BB%B6-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84To-Do%E6%B8%85%E5%8D%95-%E5%B0%8F%E9%BB%84%E6%9D%A1/" class="post-title-link" itemprop="url">软件-简单实用的To-Do清单-小黄条</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-21 21:31:42" itemprop="dateCreated datePublished" datetime="2019-04-21T21:31:42+08:00">2019-04-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" itemprop="url" rel="index"><span itemprop="name">软件资源</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="简单实用的To-Do清单-小黄条"><a href="#简单实用的To-Do清单-小黄条" class="headerlink" title="简单实用的To-Do清单-小黄条"></a>简单实用的To-Do清单-小黄条</h1><p>在前几期，为大家推荐了非常好用的<strong>桌面日程管理软件-桌面日历DesktopCal</strong></p>
+<p>用过的小伙伴应该会有这样一种感觉，桌面日历DesktopCal更适合从宏观的角度对时间做一个安排，但是如果具体到每时每刻要做的To-Do安排，桌面日历DesktopCal就会显得有些有气无力了。</p>
+<p>今天为大家推荐的<strong>小黄条To-Do清单</strong>，可以非常完美的解决这个痛点，和桌面日历DesktopCal的合作简直是绝配。</p>
+<p><img src="https://i.loli.net/2019/04/21/5cbc746ec223f.jpg"></p>
+<h3 id="界面"><a href="#界面" class="headerlink" title="界面"></a>界面</h3><p><img src="C:%5CUsers%5Clenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1555854053732.png" alt="1555854053732"></p>
+<h3 id="Demo演示"><a href="#Demo演示" class="headerlink" title="Demo演示"></a>Demo演示</h3><p><img src="https://i.loli.net/2019/04/21/5cbc7394b9eff.gif"></p>
+<h3 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h3><ul>
+<li><p>无推送、无广告、无红点，不主动打扰</p>
+</li>
+<li><p>一览式todolist清单，简单、纯粹、实用</p>
+</li>
+<li><p>任务记录云端存储永不丢失</p>
+</li>
+<li><p>任务支持简单排序，可对重要的任务设置“置顶”</p>
+</li>
+<li><p>跨平台同步，覆盖所有办公场景，随时随地查看、记录、编辑、管理任务</p>
+</li>
+<li><p>已完成的任务按天归档，方便快速回顾本周主要工作，高效输出工作周报</p>
+</li>
+<li><p>windows版本支持嵌入桌面，搭配【极简】模式完美融入系统桌面</p>
+</li>
+<li><p>windows版本支持窗体移动到屏幕边缘时自动隐藏，便于保护隐私</p>
+</li>
+<li><p>windows版本支持自定义字体、字号、间距、文字颜色</p>
+</li>
+<li><p>windows版本支持使用快捷键快速隐藏&#x2F;显示主界面</p>
+</li>
+<li><p>App可对每个任务单独设置提醒</p>
+</li>
+<li><p>App图标可显示未完成任务数量，需要在more页面手动开启</p>
+</li>
+<li><p>App支持Widget，Widget上可直接完成任务，无需启动应用也能浏览、管理Todolist，更直观高效的自我管理</p>
+</li>
+</ul>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><ol>
+<li><p><a target="_blank" rel="noopener" href="http://www.6fcsj.com/">官网地址</a></p>
+</li>
+<li><p>关注微信公众号：<strong>产品汪darer</strong>，后台回复关键词：<strong>小黄条</strong>，即可下载</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/" class="post-title-link" itemprop="url">产品书单-《长尾理论》：为什么商业的未来是小众市场</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-18 23:01:06" itemprop="dateCreated datePublished" datetime="2019-04-18T23:01:06+08:00">2019-04-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" itemprop="url" rel="index"><span itemprop="name">产品书单</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="《长尾理论》：为什么商业的未来是小众市场"><a href="#《长尾理论》：为什么商业的未来是小众市场" class="headerlink" title="《长尾理论》：为什么商业的未来是小众市场"></a>《长尾理论》：为什么商业的未来是小众市场</h1><p>今天推荐一本互联网从业者的必备枕边书：<strong>《长尾理论》：为什么商业的未来是小众市场</strong></p>
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p><img src="https://i.loli.net/2019/04/18/5cb89372d424c.gif"></p>
+<p>举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，<strong>只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。</strong></p>
+<p>长尾市场也称之为“利基市场”。 “利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。</p>
+<p>通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。</p>
+<h3 id="《长尾理论》"><a href="#《长尾理论》" class="headerlink" title="《长尾理论》"></a>《长尾理论》</h3><p><img src="https://i.loli.net/2019/04/18/5cb8947044675.png"></p>
+<h3 id="内容介绍"><a href="#内容介绍" class="headerlink" title="内容介绍"></a>内容介绍</h3><p>书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。</p>
+<p>这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。</p>
+<p>传统的市场曲线是符合<strong>80&#x2F;20定律</strong>的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。</p>
+<h3 id="作者介绍"><a href="#作者介绍" class="headerlink" title="作者介绍"></a>作者介绍</h3><p>克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p><img src="https://i.loli.net/2019/04/18/5cb8959da8479.png"></p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a target="_blank" rel="noopener" href="https://www.amazon.cn/dp/B01429M426/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA&qid=1555600915&s=gateway&sr=8-1">这是亚马逊购书链接</a></p>
+<p>关注微信公众号：<strong>产品汪darer</strong>，后台回复关键词：<strong>长尾理论</strong>，即可下载</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/14/%E8%BD%AF%E4%BB%B6-%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E8%89%AF%E5%BF%83%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%88%E9%87%8D%E8%A6%81-Cent%E6%B5%8F%E8%A7%88%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/14/%E8%BD%AF%E4%BB%B6-%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E8%89%AF%E5%BF%83%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%88%E9%87%8D%E8%A6%81-Cent%E6%B5%8F%E8%A7%88%E5%99%A8/" class="post-title-link" itemprop="url">软件-选择一款良心浏览器很重要-Cent浏览器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-14 20:06:40" itemprop="dateCreated datePublished" datetime="2019-04-14T20:06:40+08:00">2019-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" itemprop="url" rel="index"><span itemprop="name">软件资源</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="选择一款良心浏览器很重要-Cent浏览器"><a href="#选择一款良心浏览器很重要-Cent浏览器" class="headerlink" title="选择一款良心浏览器很重要-Cent浏览器"></a>选择一款良心浏览器很重要-Cent浏览器</h1><p>最近一段时间，996是最火的数字了，各方媒体、各方大佬都在发声</p>
+<p>但是在前不久，国内大厂旗下的浏览器做了一件非常非常流氓的事情：屏蔽了996.icu项目，也就是下面这个网址</p>
+<blockquote>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/996icu/996.ICU">https://github.com/996icu/996.ICU</a></p>
+<p>部分<a target="_blank" rel="noopener" href="https://www.cnbeta.com/articles/tech/833669.htm#cb-lightbox">浏览器屏蔽截图</a>：</p>
+<p><img src="https://static.cnbetacdn.com/article/2019/04/65eae929d75b744.webp" alt="img"></p>
+<p>据统计“流氓”浏览器包括但不仅限于：</p>
+<p><strong>360系（360浏览器等）、腾讯系（QQ浏览器、微信等）、阿里系（UC浏览器、夸克浏览器等）、小米系（小米手机内嵌浏览器）等</strong></p>
+<p>在发觉这件事情之后，我就立刻卸载了360安全浏览器和夸克浏览器（微信没有替代品，不然我也卸载了）</p>
+<blockquote>
+</blockquote>
+<p>没有能力去改变，但是我会选择去抵制</p>
+<blockquote>
+</blockquote>
+<p>在没有违反国家法律的情况下，用户有权选择自己想要的资讯</p>
+<p><strong>那市场上有没有好用的替代浏览器呢？</strong></p>
+<p>在卸载后，我主要尝试了Firefox浏览器和Cent浏览器，Firefox浏览器不是非常符合自己的使用习惯，最终选择了Cent浏览器。</p>
+<h3 id="Cent浏览器是什么？"><a href="#Cent浏览器是什么？" class="headerlink" title="Cent浏览器是什么？"></a>Cent浏览器是什么？</h3><p>Cent浏览器又称百分浏览器：追求速度、安全和简约的网络浏览器</p>
+<p>它基于最新的Chromium开源内核进行优化开发，充分继承其高速安全的特性</p>
+<p>如果问大家最好用的浏览器是什么？几乎六成的人会说是<strong>Chrome浏览器</strong></p>
+<p>Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验更舒服</p>
+<p><img src="https://i.loli.net/2019/04/14/5cb32b893ce34.png"></p>
+<p>从上图可见，主界面和Chrome几乎完全一样，操作上比Chrome更舒服</p>
+<h3 id="主要特色功能"><a href="#主要特色功能" class="headerlink" title="主要特色功能"></a>主要特色功能</h3><p><img src="https://i.loli.net/2019/04/14/5cb32b52c552c.png"></p>
+<p>比如，可以双击关闭Tab标签，还有许多定制的鼠标手势</p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>可以去 <a target="_blank" rel="noopener" href="https://www.centbrowser.cn/">官网地址</a> 下载</p>
+<p>或者 关注微信公众号：<strong>产品汪darer</strong>，后台回复关键词：<strong>Cent浏览器</strong>，即可下载</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/" class="post-title-link" itemprop="url">随想-我对投资的认识</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-13 11:55:20" itemprop="dateCreated datePublished" datetime="2019-04-13T11:55:20+08:00">2019-04-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%9A%8F%E6%83%B3/" itemprop="url" rel="index"><span itemprop="name">随想</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="我对投资的认识"><a href="#我对投资的认识" class="headerlink" title="我对投资的认识"></a>我对投资的认识</h1><p>我认为投资主要分为两个部分：</p>
+<ol>
+<li><p>投资资产</p>
+</li>
+<li><p>投资自己</p>
+</li>
+</ol>
+<p>[TOC]</p>
+<h3 id="1-投资资产"><a href="#1-投资资产" class="headerlink" title="1. 投资资产"></a>1. 投资资产</h3><p><strong>目的是让自己的财富实现增值</strong></p>
+<p>目前国内的主要途径有：（入手程度由易到难）</p>
+<ul>
+<li><p>存储</p>
+</li>
+<li><p>基金</p>
+</li>
+<li><p>股票</p>
+</li>
+<li><p>房产和房产出租</p>
+</li>
+<li><p>创业</p>
+</li>
+</ul>
+<h3 id="2-投资自己"><a href="#2-投资自己" class="headerlink" title="2. 投资自己"></a>2. 投资自己</h3><p><strong>目的是让自己更多创造财富的价值</strong></p>
+<p>分为两块：</p>
+<ol>
+<li><p>投资“硬件”</p>
+</li>
+<li><p>投资“软件”</p>
+</li>
+</ol>
+<h4 id="1-投资硬件"><a href="#1-投资硬件" class="headerlink" title="1. 投资硬件"></a>1. 投资硬件</h4><p>主要是锻炼身体、强健体魄、保养身体</p>
+<h4 id="2-投资软件"><a href="#2-投资软件" class="headerlink" title="2. 投资软件"></a>2. 投资软件</h4><p>主要是投资思想和技能</p>
+<p>比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/04/13/%E9%97%AE%E7%AD%94-%E6%80%8E%E4%B9%88%E2%80%9C%E2%80%9C%E9%AA%82%E2%80%9D%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/13/%E9%97%AE%E7%AD%94-%E6%80%8E%E4%B9%88%E2%80%9C%E2%80%9C%E9%AA%82%E2%80%9D%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/" class="post-title-link" itemprop="url">问答-怎么““骂”一个产品经理|产品问答|第4期</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-13 09:28:50" itemprop="dateCreated datePublished" datetime="2019-04-13T09:28:50+08:00">2019-04-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" itemprop="url" rel="index"><span itemprop="name">产品问答</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+</blockquote>
+<p>看看同行们都在想些啥</p>
+<p><code>以下内容来自产品相关社区，如有侵权，请联系删除</code></p>
+<p>[TOC]</p>
+<h3 id="Q1：“骂”一个产品经理，最狠的方式是什么？"><a href="#Q1：“骂”一个产品经理，最狠的方式是什么？" class="headerlink" title="Q1：“骂”一个产品经理，最狠的方式是什么？"></a>Q1：“骂”一个产品经理，最狠的方式是什么？</h3><blockquote>
+</blockquote>
+<p>在产品工作中，难免会出现摩擦的时刻；辣么，你曾见过“骂”一个产品经理的最狠方式是啥？一起来吐槽下~</p>
+<blockquote>
+</blockquote>
+<p>看到这个问题，我就被吸引了，看看大家怎么说的</p>
+<p><code>author:Hsia @人人都是产品经理</code></p>
+<p>不就是抄的xxx吗</p>
+<p><code>author:向日葵诗人kevin @人人都是产品经理</code></p>
+<p>分享一个最近和技术撕逼的例子</p>
+<p>技术：你拿数据来说话</p>
+<p>我：功能没做我哪里来的数据</p>
+<p>技术：你去做用户调研，做访谈</p>
+<p>我：不可能每个功能都去做调研</p>
+<p>技术：那是你的事，不是我的事</p>
+<p>我……</p>
+<p><code>author:夜月沉星 @人人都是产品经理</code></p>
+<p>你写的文档，就和cxk打球一样</p>
+<blockquote>
+</blockquote>
+<p>和cxk比较，真tm狠</p>
+<p><code>author:阳光懒人 @人人都是产品经理</code></p>
+<ol>
+<li><p>你自己需求都没想清楚</p>
+</li>
+<li><p>不用那么麻烦了，把你抄的APP给我们下载一个</p>
+</li>
+<li><p>产品经理不就是把老板想法复述一遍么……</p>
+</li>
+</ol>
+<blockquote>
+</blockquote>
+<p>巴拉巴拉的还有很多，就不写了，附个<a target="_blank" rel="noopener" href="https://wen.woshipm.com/question/detail/8bdlm9.html">链接</a>，大家可以去补充</p>
+<h3 id="Q2：朋友圈广告可以艾特好友有什么意义？"><a href="#Q2：朋友圈广告可以艾特好友有什么意义？" class="headerlink" title="Q2：朋友圈广告可以艾特好友有什么意义？"></a>Q2：朋友圈广告可以艾特好友有什么意义？</h3><p><code>author:阳光懒人 @人人都是产品经理</code></p>
+<p>朋友圈广告可以艾特好友，可能存在以下几个好处：</p>
+<ol>
+<li><p>增加了广告的社交属性，会让广告有更多的玩法，让广告商在设计广告的时候添加更多的互动性的创意，同时互动性、创意好的广告又能通过艾特功能提高传播效率和扩大传播范围，良性循环；</p>
+</li>
+<li><p>对于用户来说，也会有几种场景会用到艾特功能，比如说：微信给女朋友推了一个channel化妆品广告，女朋友很心动然后就艾特男朋友。类似这样的互动玩法也会增加广告的乐趣，让广告植入不那么生硬；</p>
+</li>
+<li><p>对于微信收集数据来说意义也是很大的，之前全靠推荐算法来推荐不同广告给不同用户群体，有了这个功能可能让广告投放更加精准。</p>
+</li>
+</ol>
+<blockquote>
+</blockquote>
+<p>看到这个消息，我的第一感受就是<strong>微信也要在商业化上提速了</strong></p>
+<h3 id="Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？"><a href="#Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？" class="headerlink" title="Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？"></a>Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？</h3><p><code>author:chitang @人人都是产品经理</code></p>
+<p>关于微信发现一栏里的搜一搜和看一看在2017年5月份正式更新上线。但对于一个产品来说都属于半成品都未全面的打开流量入口，当然凭借微信月活跃用户量10亿来说未来这两个依旧是不可估量的流量入口，目前都还停留在“实验室”中；</p>
+<p><strong>「搜一搜」</strong></p>
+<p>搜一搜的feed流则提供了长尾流量的能力，一方面是给公众号导流，另一方面也提供了变现的可能性。同时出现了很多可选内容，公众号、朋友圈、小程序、文章、小说、音乐、表情、视频、搜狗、知乎、外部资讯；搜一搜将搜索能力延申到更多外部信息内容，这一举措算是比较大的创新了，打破了以往腾讯的封闭圈。</p>
+<p>对于全网搜索，已经是一片红海了，百度在移动端依然覆盖80%左右的市场份额，别说“怼”百度了，就是和360搜索“PK”起来都不是很容易。另外在用户搜索上，已经习惯性的通过百度或者谷歌等浏览器去搜索信息，很少人会去使用微信搜内容？用户习惯暂时形成不了，所以说搜一搜目前还是一个未成熟的功能。</p>
+<p><strong>「看一看」</strong></p>
+<p>看一看的内容主要是以展现朋友圈，好友，微信群，公众号等渠道看到的内容—统称为**“已关注或已关联”**内容。但还有未关注和未关联的内容也将展现在这里（这部分未关联内容可能和个人的兴趣关注、地理位置、热点资讯、好友的分享，转发，点赞等相关维度做信息推荐及展现）属于微信的个性化智能化推荐；</p>
+<p><strong>微信对于「搜一搜」和「看一看」的流量分配中“看一看”目前的流量大于“搜一搜”；</strong></p>
+<p>“搜一搜”则是用来帮助用户快速查找内容或服务，搜索项目包括朋友圈、文章、公众号、小说和表情等，但，” 搜一搜 “基于知乎用户的使用习惯和操作方式来看目前使用频次较少；</p>
+<p>“ 看一看 “ 所呈现内容，目前跟它们的阅读量、点赞量、转发量、留言评论量及赞赏数量等尚未显现出强关联的关系。看一看的主要呈现为：已认证公众号内容、原创内容、长篇内容这几大类型；用户可以浏览热点资讯、好友关注的资讯以及自己感兴趣的文章，“看一看”则提供了用户感兴趣的热点资讯“集合”，并且有小红点加持，消灭小红点的时候你也会打开它。</p>
+<p>其中，微信对于用户停留时长，即用户如果阅读这篇文章的时间越长，它越有可能被精选、分发到 “ 看一看 “、” 搜一搜 “ 等页面。</p>
+<p>再说一句，其中还存在用户使用习惯和人性的特点：<strong>被动获取内容  &gt; 主动获取内容，人性上都是比较懒惰的 … …</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
 
 </div>
   </main>

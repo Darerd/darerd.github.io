@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="用户画像的架构  内容转载于：https:&#x2F;&#x2F;www.iamue.com&#x2F;34391  作者：秦路  原文很长，干货很多，为了便于理解，我把文章拆分为了三期 今天介绍第三期：用户画像的进阶  不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。 用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="方法论-用户画像知识进阶">
+<meta property="og:url" content="https://darerd.github.io/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="用户画像的架构  内容转载于：https:&#x2F;&#x2F;www.iamue.com&#x2F;34391  作者：秦路  原文很长，干货很多，为了便于理解，我把文章拆分为了三期 今天介绍第三期：用户画像的进阶  不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。 用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/03/12/5c8798fecc96e.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/12/5c8799bc799c7.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/12/5c8799a7220b2.jpg">
+<meta property="article:published_time" content="2019-03-27T15:10:43.000Z">
+<meta property="article:modified_time" content="2019-03-27T15:10:43.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="用户画像">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/12/5c8798fecc96e.jpg">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/","path":"2019/03/27/方法论-用户画像知识进阶/","title":"方法论-用户画像知识进阶"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>方法论-用户画像知识进阶 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">用户画像的架构</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="方法论-用户画像知识进阶 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          方法论-用户画像知识进阶
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-27 23:10:43" itemprop="dateCreated datePublished" datetime="2019-03-27T23:10:43+08:00">2019-03-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">方法论</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="用户画像的架构"><a href="#用户画像的架构" class="headerlink" title="用户画像的架构"></a>用户画像的架构</h1><blockquote>
+</blockquote>
+<p>内容转载于：<code>https://www.iamue.com/34391</code></p>
+<blockquote>
+<p>作者：<code>秦路</code></p>
+</blockquote>
+<p><code>原文很长，干货很多，为了便于理解，我把文章拆分为了三期</code></p>
+<p><code>今天介绍第三期：用户画像的进阶</code></p>
+<hr>
+<p>不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。</p>
+<p>用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，像金融领域，还会有风险画像，包括征信、违约、洗钱、还款能力、保险黑名单等。电商领域会有商品的类目偏好、品类偏好、品牌偏好，不一而足。</p>
+<p><img src="https://i.loli.net/2019/03/12/5c8798fecc96e.jpg"></p>
+<p>上图是随手画的的例子，画一个架构不难，难得是了解每个标签背后的业务逻辑和落地方式，至于算法，又能单独扯很多文章了。</p>
+<p><strong>从数据流向和加工看，用户画像包含上下级递进关系。</strong></p>
+<p>以上文的流失系数举例，它通过建模，其依赖于用户早期的历史行为。而用户早期的历史行为，即10天内的消费金额、消费次数、登录次数等，本身也是一个标签，它们是通过原始的明细数据获得。</p>
+<p><img src="https://i.loli.net/2019/03/12/5c8799bc799c7.jpg"></p>
+<p>上图列举了标签加工和计算的过程，很好理解。最上层的策略标签，是针对业务的落地，运营人员通过多个标签的组合形成一个用户群组，方便执行。</p>
+<p>公司越大，用户画像越复杂。某家主打内容分发的公司进入了全新的视频领域，现在有两款APP，那么用户画像的结构也需要改变。既有内容相关的标签，也有视频相关的标签，两者是并行且关联的。</p>
+<p>比如A用户在内容标签下是重度使用，而在视频标签下是轻度。比如B用户很久没打开内容APP有流失风险，但在视频APP的使用时长上看很忠诚。如此种种，看的是灵活应用。当然，姓名性别这类人口统计标签，是通用的。</p>
+<p><strong>用户画像作为平台级的应用，很多运营策略及工具，都是在其基础上构建的。</strong></p>
+<p><img src="https://i.loli.net/2019/03/12/5c8799a7220b2.jpg"></p>
+<p>基于营销和消费相关的标签，新客、老客、用户的流失和忠诚、用户的消费水平和频率等，都是构成CRM（客户关系管理）的基础，可能大家更习惯叫它用户&#x2F;会员管理运营平台。</p>
+<p>它的作用在于，将数据化的标签，转换成产品运营策略。不同的标签对应不同的用户群体，也对应不同的营销手段。CRM的结构中会包含各类触达用户的常用渠道比如短信、邮件、推送等。也包含CMS（内容管理系统），执行人员通过其快速配置活动页、活动通道、优惠券等，靠营销活动拉动数据。</p>
+<p>老王的沙拉业务要是做大，那么运营平台就会以图中的结构搭建。老王在CRM中组合标签，新客老客流失客的数据借助BI监控，然后通过CMS系统配置红包啊优惠券啊等等，再通过短或Push触达。</p>
+<p>好的用户画像系统，既是数据生态体系，也是业务和运营的生态体系，它是一门复杂的交叉领域。</p>
+<p>万千用法，存乎一心。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" rel="tag"># 用户画像</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E6%AD%A3%E7%A1%AE%E7%9A%84%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%EF%BC%9F/" rel="prev" title="方法论-如何建立正确的用户画像？">
+                  <i class="fa fa-angle-left"></i> 方法论-如何建立正确的用户画像？
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/03/27/%E9%9A%8F%E6%83%B3-%E5%A6%82%E6%9E%9C%E8%84%B1%E7%A6%BB%E7%8E%B0%E6%9C%89%E7%9A%84%E5%B9%B3%E5%8F%B0%EF%BC%8C%E4%BD%A0%E8%BF%98%E5%89%A9%E4%B8%8B%E4%BB%80%E4%B9%88%EF%BC%9F/" rel="next" title="随想-如果脱离现有的平台，你还剩下什么？">
+                  随想-如果脱离现有的平台，你还剩下什么？ <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版  学习中遇到的问题  问题的解决方法  附加练习   原文—摘录至《笨方法学Python》第三版&amp;123456789101112131415161718192021222">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test4_字符串练习">
+<meta property="og:url" content="https://darerd.github.io/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  文章主要分为三个部分：  原文—摘录至《笨方法学Python》第三版  学习中遇到的问题  问题的解决方法  附加练习   原文—摘录至《笨方法学Python》第三版&amp;123456789101112131415161718192021222">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-02-03T04:47:02.000Z">
+<meta property="article:modified_time" content="2019-02-03T04:47:02.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="笨方法学Python">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/","path":"2019/02/03/Test4-字符串练习/","title":"Test4_字符串练习"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Test4_字符串练习 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E6%96%87%E2%80%94%E6%91%98%E5%BD%95%E8%87%B3%E3%80%8A%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python%E3%80%8B%E7%AC%AC%E4%B8%89%E7%89%88"><span class="nav-number">1.</span> <span class="nav-text">原文—摘录至《笨方法学Python》第三版</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">&amp;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%84%E5%8A%A0%E7%BB%83%E4%B9%A0"><span class="nav-number">3.</span> <span class="nav-text">附加练习</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Test4_字符串练习 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Test4_字符串练习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-03 12:47:02" itemprop="dateCreated datePublished" datetime="2019-02-03T12:47:02+08:00">2019-02-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">产品经理学技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+</blockquote>
+<p>Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著</p>
+<blockquote>
+<p>的学习思路和理解，如有不如之处，望指出！！！</p>
+</blockquote>
+<p>文章主要分为三个部分：</p>
+<ol>
+<li><p>原文—摘录至《笨方法学Python》第三版</p>
+</li>
+<li><p>学习中遇到的问题</p>
+</li>
+<li><p>问题的解决方法</p>
+</li>
+<li><p>附加练习</p>
+</li>
+</ol>
+<h3 id="原文—摘录至《笨方法学Python》第三版"><a href="#原文—摘录至《笨方法学Python》第三版" class="headerlink" title="原文—摘录至《笨方法学Python》第三版"></a>原文—摘录至《笨方法学Python》第三版</h3><h4 id=""><a href="#" class="headerlink" title="&amp;"></a>&amp;</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ex6.py</span></span><br><span class="line"></span><br><span class="line">x=<span class="string">&quot;There are %d types of people.&quot;</span></span><br><span class="line">binary=<span class="string">&quot;binary&quot;</span></span><br><span class="line">do_not=<span class="string">&quot;don&#x27;t&quot;</span></span><br><span class="line">y=<span class="string">&quot;Those who know %s and those who %s.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line">hilarious=<span class="literal">False</span></span><br><span class="line">joke_evaluation=<span class="string">&quot;Isn&#x27;t that joke so funny?! %r &quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">w=<span class="string">&quot;This is the left side of ...&quot;</span></span><br><span class="line">e=<span class="string">&quot;a sting with a right side.&quot;</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ex8.py</span></span><br><span class="line"></span><br><span class="line">fomatter=<span class="string">&quot;%r %r %r %r&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">	<span class="string">&quot;I had this thing.&quot;</span></span><br><span class="line">	<span class="string">&quot;That you could type up right.&quot;</span></span><br><span class="line">	<span class="string">&quot;But it didn&#x27;t sing.&quot;</span></span><br><span class="line">	<span class="string">&quot;So I said goodnight.&quot;</span></span><br><span class="line">	)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><ol>
+<li><p><a target="_blank" rel="noopener" href="http://ex8.py/">ex8.py</a> 的代码中 %r打印出来的是单引号，但是实际上用的双引号<br>python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。</p>
+</li>
+<li><p>True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。</p>
+</li>
+<li><p>%r的作用<br>%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。</p>
+</li>
+</ol>
+<h3 id="附加练习"><a href="#附加练习" class="headerlink" title="附加练习"></a>附加练习</h3><p>以下摘录自原文</p>
+<ol>
+<li><p>每一行加一段注释</p>
+</li>
+<li><p>最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？</p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" rel="tag"># 笨方法学Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/" rel="prev" title="Test3_变量和命名">
+                  <i class="fa fa-angle-left"></i> Test3_变量和命名
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/" rel="next" title="Test2_数字和数学计算">
+                  Test2_数字和数学计算 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="在通过《笨方法学Python》学习利用Python读取、读写文件的过程中，需要掌握一些基础知识。 [TOC]  open命令  write命令  close命令、read命令   1. open命令open()指令的作用是打开文件 标准的语法如下：   open(file[, mode[, buffering[, encoding[, errors[, newline[, closefd&#x3D;True">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python_文件IO_知识">
+<meta property="og:url" content="https://darerd.github.io/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="在通过《笨方法学Python》学习利用Python读取、读写文件的过程中，需要掌握一些基础知识。 [TOC]  open命令  write命令  close命令、read命令   1. open命令open()指令的作用是打开文件 标准的语法如下：   open(file[, mode[, buffering[, encoding[, errors[, newline[, closefd&#x3D;True">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/K9jD34caydHP.png?imageslim">
+<meta property="article:published_time" content="2019-02-22T12:22:12.000Z">
+<meta property="article:modified_time" content="2019-02-22T12:22:12.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://pm856iabj.bkt.clouddn.com/static/20190222/K9jD34caydHP.png?imageslim">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/","path":"2019/02/22/Python_文件IO_知识/","title":"Python_文件IO_知识"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Python_文件IO_知识 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-open%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">1. open命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-write%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">2. write命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-close%E5%91%BD%E4%BB%A4%E3%80%81read%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">3. close命令、read命令</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Python_文件IO_知识 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python_文件IO_知识
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-22 20:22:12" itemprop="dateCreated datePublished" datetime="2019-02-22T20:22:12+08:00">2019-02-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">产品经理学技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>在通过《笨方法学Python》学习利用Python读取、读写文件的过程中，需要掌握一些基础知识。</p>
+<p>[TOC]</p>
+<ol>
+<li><p>open命令</p>
+</li>
+<li><p>write命令</p>
+</li>
+<li><p>close命令、read命令</p>
+</li>
+</ol>
+<h3 id="1-open命令"><a href="#1-open命令" class="headerlink" title="1. open命令"></a>1. open命令</h3><p><code>open()</code>指令的作用是<strong>打开文件</strong></p>
+<p>标准的语法如下：</p>
+<blockquote>
+</blockquote>
+<p><code>open(file[, mode[, buffering[, encoding[, errors[, newline[, closefd=True]]]]]])</code></p>
+<p>指令的参数说明：</p>
+<blockquote>
+</blockquote>
+<p>file：              要打开的文件名，需加路径(除非是在当前目录)。<strong>唯一强制参数</strong></p>
+<blockquote>
+<p>mode：         文件打开的模式</p>
+</blockquote>
+<blockquote>
+<p>buffering：    设置buffer（取值为0,1,&gt;1）</p>
+</blockquote>
+<blockquote>
+<p>encoding：   返回数据的编码（一般为UTF8或GBK）</p>
+</blockquote>
+<blockquote>
+<p>errors：         报错级别（一般为strict，ignore）</p>
+</blockquote>
+<blockquote>
+<p>newline：      用于区分换行符(只对文本模式有效，可以取的值有None,’\n’,’\r’,’’,’\r\n’)</p>
+</blockquote>
+<blockquote>
+<p>closefd：       传入的file参数类型（缺省为True）</p>
+</blockquote>
+<p>常用的<code>mode</code>参数有哪些：</p>
+<p><code>‘r’</code>:以只读模式打开(缺省)，(必须<strong>保证文件存在</strong>)</p>
+<p><code>‘w’</code>:以只写模式打开。<strong>若文件存在，则会自动清空文件</strong>，然后重新创建；若文件不存在，则新建文件。使用这个模式必须要保证文件所在目录存在，文件可以不存在。</p>
+<p><code>‘a’</code>:以追加模式打开。若文件存在，则会追加到文件的末尾；若文件不存在，则新建文件。</p>
+<p><code>‘+’</code>:以读写模式打开。</p>
+<p>各参数之间的关系：<strong>详见下图</strong></p>
+<p><img src="http://pm856iabj.bkt.clouddn.com/static/20190222/K9jD34caydHP.png?imageslim" alt="mark"></p>
+<hr>
+<p>参考的一些博客，讲的更加详细：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/doiido/article/details/43675465">1</a>	<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41809469/article/details/79594224">2</a>	<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/34d7fff5fc51">3</a></p>
+<hr>
+<h3 id="2-write命令"><a href="#2-write命令" class="headerlink" title="2. write命令"></a>2. write命令</h3><p><code>wite()</code>指令可将任何字符串写入一个打开的文件。<strong>Python字符串可以是二进制数据，而不是仅仅是文字。</strong></p>
+<p><code>write()</code>指令的标准语法如下：</p>
+<blockquote>
+</blockquote>
+<p><code>filename.write(string)</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打开一个文件</span></span><br><span class="line">fo=<span class="built_in">open</span>(<span class="string">&#x27;foo.txt&#x27;</span></span><br><span class="line"><span class="comment"># 如果这么写： fo=open(&quot;foo.txt&quot;,&quot;w&quot;)   运行结果会有不同吗？</span></span><br><span class="line">fo.write(<span class="string">&#x27;I like coding.\n&#x27;</span></span><br><span class="line"><span class="comment"># 回想下 `\n` 的作用是什么？</span></span><br><span class="line"><span class="comment"># 关闭文件并保存</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="3-close命令、read命令"><a href="#3-close命令、read命令" class="headerlink" title="3. close命令、read命令"></a>3. close命令、read命令</h3><p><code>close()</code>命令用于关闭一个已打开的文件。关闭后的文件不能再进行读写操作， 否则会触发 <em>ValueError</em> 错误。 <code>close()</code>方法允许调用多次。<strong>用 close（）方法关闭文件是一个很好的习惯</strong></p>
+<p><code>close()</code>指令的标准语法如下：</p>
+<blockquote>
+</blockquote>
+<p><code>fileObject.close()</code></p>
+<hr>
+<p><code>read()</code>命令方法从一个打开的文件中读取一个字符串。<strong>Python字符串可以是二进制数据，而不是仅仅是文字。</strong></p>
+<p><code>read()</code>指令的标准语法如下：</p>
+<blockquote>
+</blockquote>
+<p><code>flieObject.read([count])</code></p>
+<p>在这里，被传递的参数是要从已打开文件中读取的字节计数。该方法从文件的开头开始读入，如果没有传入count，它会尝试尽可能多地读取更多的内容，很可能是直到文件的末尾。</p>
+<p>下面的代码接上面的代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fo=<span class="built_in">open</span>(<span class="string">&#x27;fo.txt&#x27;</span></span><br><span class="line"><span class="built_in">str</span>=foo.read(<span class="number">6</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+
+
+<p>运行看一看输出结果</p>
+<hr>
+<p>输出结果为：<code>I like</code></p>
+<p><strong>注意</strong>：空格也是一个字符</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="http://www.runoob.com/python/python-files-io.html">全文参考博客</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/02/21/Test7-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/" rel="prev" title="Test7-读取文件和读写文件">
+                  <i class="fa fa-angle-left"></i> Test7-读取文件和读写文件
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/" rel="next" title="Typora+七牛云，高效写Markdown|产品必用软件|第1期">
+                  Typora+七牛云，高效写Markdown|产品必用软件|第1期 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

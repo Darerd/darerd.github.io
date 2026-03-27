@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="温故而知新   产品新人们回过头来看看大佬当年的想法   也是蛮有启发的 今天这一期我们分享的是雷军在2008-12-22发表在新浪博客上的一篇文章   感兴趣的小伙伴，百度“雷军 新浪博客” 就可以找到了  关于互联网的两次长考—雷军2008年4月，李彦宏说，“五年后不再有互联网公司，因为所有公司都在用互联网”。这句话引起了很大轰动。我非常赞同他的观点。未来不再有所谓的互联网公司，我曾为这个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="雷军：关于互联网的两次长考|大佬的思考|方法论">
+<meta property="og:url" content="https://darerd.github.io/2019/03/10/%E6%96%B9%E6%B3%95%E8%AE%BA-%E9%9B%B7%E5%86%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%95%BF%E8%80%83-%E5%A4%A7%E4%BD%AC%E7%9A%84%E6%80%9D%E8%80%83/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="温故而知新   产品新人们回过头来看看大佬当年的想法   也是蛮有启发的 今天这一期我们分享的是雷军在2008-12-22发表在新浪博客上的一篇文章   感兴趣的小伙伴，百度“雷军 新浪博客” 就可以找到了  关于互联网的两次长考—雷军2008年4月，李彦宏说，“五年后不再有互联网公司，因为所有公司都在用互联网”。这句话引起了很大轰动。我非常赞同他的观点。未来不再有所谓的互联网公司，我曾为这个">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-03-10T01:44:02.000Z">
+<meta property="article:modified_time" content="2019-03-10T01:44:02.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="大佬思考">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/03/10/%E6%96%B9%E6%B3%95%E8%AE%BA-%E9%9B%B7%E5%86%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%95%BF%E8%80%83-%E5%A4%A7%E4%BD%AC%E7%9A%84%E6%80%9D%E8%80%83/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/03/10/%E6%96%B9%E6%B3%95%E8%AE%BA-%E9%9B%B7%E5%86%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%95%BF%E8%80%83-%E5%A4%A7%E4%BD%AC%E7%9A%84%E6%80%9D%E8%80%83/","path":"2019/03/10/方法论-雷军：关于互联网的两次长考-大佬的思考/","title":"雷军：关于互联网的两次长考|大佬的思考|方法论"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>雷军：关于互联网的两次长考|大佬的思考|方法论 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%95%BF%E8%80%83%E2%80%94%E9%9B%B7%E5%86%9B"><span class="nav-number">1.</span> <span class="nav-text">关于互联网的两次长考—雷军</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%811999%E5%B9%B4%E6%9C%80%E5%9B%B0%E6%89%B0%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">一、1999年最困扰的问题：互联网公司是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%812004%E5%B9%B4%E5%8D%96%E4%BA%86%E5%8D%93%E8%B6%8A%E5%90%8E%E6%95%B4%E6%95%B4%E6%83%B3%E4%BA%86%E5%8D%8A%E5%B9%B4%E6%97%B6%E9%97%B4%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">二、2004年卖了卓越后整整想了半年时间：互联网到底是什么？</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/03/10/%E6%96%B9%E6%B3%95%E8%AE%BA-%E9%9B%B7%E5%86%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%B8%A4%E6%AC%A1%E9%95%BF%E8%80%83-%E5%A4%A7%E4%BD%AC%E7%9A%84%E6%80%9D%E8%80%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="雷军：关于互联网的两次长考|大佬的思考|方法论 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          雷军：关于互联网的两次长考|大佬的思考|方法论
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-10 09:44:02" itemprop="dateCreated datePublished" datetime="2019-03-10T09:44:02+08:00">2019-03-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">方法论</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+</blockquote>
+<p>温故而知新</p>
+<blockquote>
+</blockquote>
+<p>产品新人们回过头来看看大佬当年的想法</p>
+<blockquote>
+</blockquote>
+<p>也是蛮有启发的</p>
+<p>今天这一期我们分享的是<code>雷军</code>在<code>2008-12-22</code>发表在<code>新浪博客</code>上的一篇文章</p>
+<blockquote>
+</blockquote>
+<p>感兴趣的小伙伴，百度“雷军 新浪博客” 就可以找到了</p>
+<hr>
+<h3 id="关于互联网的两次长考—雷军"><a href="#关于互联网的两次长考—雷军" class="headerlink" title="关于互联网的两次长考—雷军"></a>关于互联网的两次长考—雷军</h3><p>2008年4月，李彦宏说，“五年后不再有互联网公司，因为所有公司都在用互联网”。这句话引起了很大轰动。我非常赞同他的观点。未来不再有所谓的互联网公司，我曾为这个问题在1999年就思考了半年时间，至于是不是五年时间，现在还不好说。</p>
+<p>虽然我早在1993年就开始用互联网，1996年是发烧级的BBS站友，但关于互联网是什么这么简单的一个问题，我曾思考过两次很长时间，一次是1999年创办卓越网之前，一次是2004年出售卓越网之后，每次都长达半年时间。两次长考的结论也很简单：</p>
+<ol>
+<li><p>互联网首先是工具，未来不存在所谓的互联网公司。</p>
+</li>
+<li><p>互联网是一次观念的革命，只有改变观念，才能跟上互联网时代。</p>
+</li>
+</ol>
+<h4 id="一、1999年最困扰的问题：互联网公司是什么？"><a href="#一、1999年最困扰的问题：互联网公司是什么？" class="headerlink" title="一、1999年最困扰的问题：互联网公司是什么？"></a>一、1999年最困扰的问题：互联网公司是什么？</h4><p>那是一个疯狂的年代。</p>
+<p>美国互联网热潮从1995年Netscape上市开始拉开序幕，AOL, Yahoo, Amazon, eBay等公司陆续登场，NASDAQ指数1000点涨到创纪录的5132点。</p>
+<p>2000年4月互联网泡沫破灭终止了这次热潮，接着大批 <code>.com</code> 公司关门，NASDAQ指数跌回1000多点。</p>
+<p>这种疯狂是1998年传到中国的，到1999年达到巅峰。处在躁动中心的北京，每个人都有点慌乱。只要是互联网，无论做什么，不管是否能赚钱，都有VC的巨额美元投资。</p>
+<p>我明白在这样的潮流面前，不能做时代的看客。但十年商业经验让我想不明白：**这些公司靠什么挣钱？什么时候能挣回烧掉的钱？**实在有太多想不通的问题，我决定先跳进去，边做边想。</p>
+<p>1999年初，我在金山内部种了一块试验田，建立了一个专门的事业部，招了十多个人，做软件下载站，取名叫卓越网。很快我们做到了第一名。但接着问题出来了，做下载需要很多服务器和带宽，而当时服务器和带宽都非常贵，用户又不愿意付钱。没有任何收入，同时需要消耗大量的费用，这个业务如何支撑下去呢？软件下载业务每天着消耗的大量现金，我当时非常痛苦，内心有很多问题没有答案：<strong>互联网公司是什么样的公司？互联网公司靠什么挣钱？做什么样的互联网公司有前途？</strong></p>
+<p>想了半年多时间，一直到1999年10月。有一天，我突然明白了：</p>
+<ol>
+<li><p>不存在所谓的互联网公司。<br><strong>互联网只是一个工具</strong>，未来每个公司都变成互联网公司。</p>
+</li>
+<li><p><strong>做电子商务最有前途</strong>。<br>因为互联网是一个先进的生产工具，传统公司应用互联网最快的方式就是电子商务，这就是所谓的“水泥＋鼠标”。当然，电子商务也是过度性名词，因为未来所有公司都会是电子商务公司。</p>
+</li>
+<li><p>当时我们做的软件下载不 下功夫做，因为<strong>软件下载投入太高，而想象空间有限</strong>。</p>
+</li>
+</ol>
+<p>就这样，我痛下决心，放弃软件下载业务，转型做电子商务，做图书音像的网上零售。</p>
+<p>为了把这件事情做大，1999年底，我说服了金山董事会把卓越分拆出来，单独运作。当时我非常自信，觉得已经想透了，一定能成功。我力主不融VC的钱，而是金山股东自己投资。后来，金山主要股东投资了1600万，因为联想是金山的大股东，也投资了几百万元。</p>
+<p>那个时代，大家都是烧VC的钱。而卓越网，从一开始，我就坚信一定会成功，这种信心是用我们自己投入的1600万来表达的。</p>
+<h4 id="二、2004年卖了卓越后整整想了半年时间：互联网到底是什么？"><a href="#二、2004年卖了卓越后整整想了半年时间：互联网到底是什么？" class="headerlink" title="二、2004年卖了卓越后整整想了半年时间：互联网到底是什么？"></a>二、2004年卖了卓越后整整想了半年时间：互联网到底是什么？</h4><p>2004年9月，我在出售卓越网的协议上正式签字了，亚马逊以7500万美元全资收购了卓越网。卓越网从2000年5月正式创办到出售，仅四年四个月时间。</p>
+<p>对于创业者来说，卖掉亲手创办的企业，一定是件非常痛苦的事情。我为了尽快从痛苦的情绪中走出来，决定尽量不上卓越网，决定尽量不见卓越网老同事，把主要精力用来总结卓越网四五年的成与败，琢磨未来的发展机会。这个过程想了半年多，</p>
+<p>后来主要在想：<strong>什么是互联网？为什么互联网公司毛利率高增长快？未来的发展趋势是什么？</strong></p>
+<p>得出了如下的结论，今天回想起来也非常有意思：</p>
+<ol>
+<li><p><strong>开放和合作是互联网公司成功的关键</strong>。<br>互联网首先是一张无边无际的网，每个人都是节点，互联是互联网成功最关键的要素。任何封闭式的业务模式都会遇到很大挑战，今天Yahoo（一站式门户）困境也折射了我当年的想法。</p>
+</li>
+<li><p><strong>互联网公司最厉害是靠机器赚钱</strong>。一旦产品研发完成，用户量到了一定的规模，只要服务器开着就可以赚钱了。到了这个阶段，产品研发推广的边际成本为零，服务器带宽成本逐年下降，毛利率自然就上来了，业务增长速度也比较快。而且，机器是7X24小时工作的，当然运维人员要全天候确保运营质量。</p>
+</li>
+<li><p><strong>口碑营销和网盟是互联网公司营销核心</strong>。互联网公司直接面对所有用户，好产品仅靠口口相传就能成功。和拥有用户的其他互联网公司结盟推广，也是最有效的推广模式。</p>
+</li>
+<li><p><strong>互联网公司管理相对容易</strong>。首先是业务、内部运作系统高度IT化，这点和传统公司非常不同；其次，很容易推动量化管理；还有，对人的依赖并不高，很容易做知识管理，系统自动记录了大部分人的工作，人员流动对企业影响比较小。</p>
+</li>
+<li><p><strong>互联网公司靠提供服务来挣钱</strong>，而软件公司靠卖产品挣钱，这种模式就决定了软件公司的业务不容易持续稳定增长。一定要从卖产品模式走到卖服务的模式。</p>
+</li>
+<li><p><strong>互联网的关键就是快</strong>。互联网产品的模式就是研发人员和用户一起开发产品，有阶段性成果就先推出去，听用户反馈，按用户意见去修改。</p>
+</li>
+<li><p><strong>未来十年的热点是移动互联网，手机上网是一种趋势</strong>。</p>
+</li>
+</ol>
+<p>我把这些全部总结成一条：<strong>互联网是一次观念革命，是“深度互联，全天候快速反应”的观念</strong>。</p>
+<p>这里面有几个关键词，互联、全天候、快速。</p>
+<p>因为是互联网，所以联盟非常关键，联盟是互联网业务必须考虑的最关键的因素，就是说如何整合上下流，如何整合更多的推广资源；</p>
+<p>全天候，传统的业务是 5X8，而互联网必须是 7X24，必须确保任何时候业务都能正常运行；</p>
+<p>快速，更是互联网的精粹，必须快速开发、快速推广、业务快速成长等，反应速度一定要比传统业务反应快十倍，才有更大的发展机会。</p>
+<p>就是想清楚了这些，我做了两件事情：</p>
+<ol>
+<li><p>从2005年初开始我在金山内部发布了全面转型互联网的动员令，现在金山业务几乎全部来自互联网。</p>
+</li>
+<li><p>2006年初我毫不犹豫投身了移动互联网行业，比如投资了乐讯（移动互联网最大的社区）和UCWEB等。最近出任UCWEB董事长，为移动互联网行业摇旗呐喊，也是我深思后的决定。</p>
+</li>
+</ol>
+<p><strong>在一些重大产业变革的时候，认真思考，的确可以帮助自己把握机会。</strong></p>
+<hr>
+<p>关于文章开头提高的未来的公司都是互联网公司的论述，我在36氪推荐的一篇文章也看到类似的描述。</p>
+<p>2018年，全球科技企业股票缩水，这篇文章讲到，当所有的公司都是科技公司，那么科技公司的高估值就会下跌，就会挤科技泡沫。</p>
+<hr>
+<p>大家有任何想法，可以在评论区留言讨论</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" rel="tag"># 大佬思考</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/" rel="prev" title="Test20-列表的操作">
+                  <i class="fa fa-angle-left"></i> Test20-列表的操作
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/03/11/Test21-%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AD%97%E5%85%B8/" rel="next" title="Test21-做一个字典">
+                  Test21-做一个字典 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

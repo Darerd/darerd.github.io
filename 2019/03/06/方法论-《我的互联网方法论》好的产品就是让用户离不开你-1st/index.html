@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="大家好，我是Darer 近期看了周鸿祎的书《我的互联网方法论》 整理了下看书时做的标注 并附上一些自己的理解 周鸿祎自述: 我的互联网方法论周鸿祎  互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。  互联网在给予消费者更多知情权和选择权的同时也在减少消费者的知情权   什么是商业模式？其实，商业模式不是赚钱模式。它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模式，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论">
+<meta property="og:url" content="https://darerd.github.io/2019/03/06/%E6%96%B9%E6%B3%95%E8%AE%BA-%E3%80%8A%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%8B%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E5%B0%B1%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E7%A6%BB%E4%B8%8D%E5%BC%80%E4%BD%A0-1st/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="大家好，我是Darer 近期看了周鸿祎的书《我的互联网方法论》 整理了下看书时做的标注 并附上一些自己的理解 周鸿祎自述: 我的互联网方法论周鸿祎  互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。  互联网在给予消费者更多知情权和选择权的同时也在减少消费者的知情权   什么是商业模式？其实，商业模式不是赚钱模式。它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模式，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-03-06T10:06:24.000Z">
+<meta property="article:modified_time" content="2019-03-06T10:06:24.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="阅读体会">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/03/06/%E6%96%B9%E6%B3%95%E8%AE%BA-%E3%80%8A%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%8B%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E5%B0%B1%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E7%A6%BB%E4%B8%8D%E5%BC%80%E4%BD%A0-1st/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/03/06/%E6%96%B9%E6%B3%95%E8%AE%BA-%E3%80%8A%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%8B%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E5%B0%B1%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E7%A6%BB%E4%B8%8D%E5%BC%80%E4%BD%A0-1st/","path":"2019/03/06/方法论-《我的互联网方法论》好的产品就是让用户离不开你-1st/","title":"《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%A8%E9%B8%BF%E7%A5%8E%E8%87%AA%E8%BF%B0-%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">周鸿祎自述: 我的互联网方法论</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/03/06/%E6%96%B9%E6%B3%95%E8%AE%BA-%E3%80%8A%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%8B%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E5%B0%B1%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E7%A6%BB%E4%B8%8D%E5%BC%80%E4%BD%A0-1st/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-06 18:06:24" itemprop="dateCreated datePublished" datetime="2019-03-06T18:06:24+08:00">2019-03-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">方法论</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>大家好，我是Darer</p>
+<p>近期看了周鸿祎的书《我的互联网方法论》</p>
+<p>整理了下看书时做的标注</p>
+<p>并附上一些自己的理解</p>
+<h3 id="周鸿祎自述-我的互联网方法论"><a href="#周鸿祎自述-我的互联网方法论" class="headerlink" title="周鸿祎自述: 我的互联网方法论"></a>周鸿祎自述: 我的互联网方法论</h3><p><code>周鸿祎</code></p>
+<ul>
+<li><p>互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。</p>
+<blockquote>
+<p>互联网在给予消费者更多知情权和选择权的同时<br>也在减少消费者的知情权</p>
+</blockquote>
+</li>
+<li><p>什么是商业模式？其实，商业模式不是赚钱模式。<br>它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模式，也就是<strong>怎么去赚钱</strong>。一句话，商业模式就是你能提供什么样的产品，给什么样的用户创造什么样的价值，在创造用户价值的过程中，用什么样的方法获得商业价值。</p>
+<blockquote>
+<p>我的理解是商业模式不能只是做一锤子买卖，而是要从头到尾做一个<strong>赚钱的产线</strong>，源源不断。</p>
+</blockquote>
+</li>
+<li><p><strong>判断是不是真正的推广，最简单的标准是把推广资源一撤，不再砸钱，看产品的用户量是不是往下掉</strong>。如果用户量一下子掉下来了，说明产品肯定存在问题。这个时候如果不对产品进行调整，你和团队将面临非常大的挑战。<strong>真正的推广是对产品的不断完善和提升</strong>。在推广的过程中，你要研究市场，跟目标用户打交道，了解用户真正的需求，了解用户使用产品时遇到的困惑和问题，再反馈到产品上进行改进，由此不断调整和完善。这样，即使推广没有取得理想的结果，但是通过推广，你发现了产品的问题，了解到真正的用户需求，发现了新的用户群，这些收获也远比单纯的产品安装量要有价值得多。</p>
+<blockquote>
+<p>看到一篇介绍<strong>趣头条</strong>的文章，2018年第四季度的营收虽然在增加，但是亏损仍在扩大，已接近4亿。<br>趣头条的一个营销套路就是为了吸引用户，对用户进行金钱补贴<br>这是在来品品这句话，还是挺有意思的<br>但是国内的环境是遍地撒钱，有时候，你不想上这个船，也没办法</p>
+</blockquote>
+</li>
+<li><p>商业的本质就是让人性得到释放，颠覆式创新也不例外，归根结底就是怎样满足人性。</p>
+</li>
+<li><p>反思是360的文化，反思不是一件负面的事情，并不是做错事情了才需要反思。每个人每天都需要反思，经验是过去的，要敢于不断否定自己。</p>
+<blockquote>
+<p>产品人或者说每一位职业人都需要学会反思，学会复盘吧<br>可是敢于否认自己的错误，敢于改正自己坏习惯<br>也是挺难的</p>
+</blockquote>
+</li>
+<li><p>在360，我们提倡“三个凡是”：凡是用户提的问题，一定要追根述源，找到问题的原因，从用户的角度想解决的方案；凡是负面的信息，即使是对手的枪稿，也要找到可以改进产品的启发点；凡是竞争对手的产品，都必然有学习借鉴的优点。</p>
+<blockquote>
+<p>用户至上、用户至上、用户至上</p>
+</blockquote>
+</li>
+<li><p>你可能经常刷微博，但是在微博上你是得不到智慧的，大家还是要看书才行。微博上是像方便面一样的东西，各种心灵鸡汤，140个字的总结如果能让你顿悟，那你算是高人。但是，那些心灵鸡汤其实都是正确的废话。所以，我还是提倡大家要看书。</p>
+<blockquote>
+<p>听大佬的话，快去看书、看书、看书</p>
+</blockquote>
+</li>
+<li><p>要找到自己的定位，找准自己的定位，然后像一把锥子一样，先在人们脑子中占据一个位置，而不是先去扩大市场份额。</p>
+<blockquote>
+<p>关于定位，有本书《定位》真的不可错过<br>在这一点，拼多多做的真不多<br>听到拼多多的BGM<br>你就会想起拼多多</p>
+</blockquote>
+</li>
+<li><p>如果你只会生产硬件、卖硬件，一旦你的价值链被人免费，对不起，你最后只能沦为代工，挣点微薄的利润。要想生存下去，你需要建立一种新的商业模式，要创造新的价值链。所以，“硬件免费”必须要创造新的价值链来支撑，这也是传统企业转型互联网时必须要考虑的问题。</p>
+<blockquote>
+<p>这句话我不理解<br>说不清楚，总觉得哪里不对<br><code>如果你有想法，可以在评论区评论</code></p>
+</blockquote>
+</li>
+<li><p>在我看来，包括智能手机、平板电脑在内，硬件的互联网化分为以下“四化”。</p>
+</li>
+</ul>
+<ol>
+<li><p>商业模式互联网化。</p>
+</li>
+<li><p>产品体验互联网化。</p>
+</li>
+<li><p>市场推广的互联网化。</p>
+</li>
+<li><p>产品销售的互联网化。</p>
+</li>
+</ol>
+<blockquote>
+<p>太深奥，还无法理解<br><code>如果你有想法，可以在评论区评论</code></p>
+</blockquote>
+<ul>
+<li><p>超出预期的体验，不一定是给用户1万块钱，而是超出用户的期望，才能获得更高的用户满意度。</p>
+<blockquote>
+<p>雷军也提到过：为用户提供超出预期的产品<br>小米手机一直以来的营销也在贯彻这个思路<br>记得雷总在小米9的发布会上，印象最深的就是<br><strong>这个价钱能买到这些、那些还有这些</strong></p>
+</blockquote>
+</li>
+<li><p>先创造用户价值，然后再产生商业价值</p>
+<blockquote>
+<p>用户至上、用户至上、用户至上</p>
+</blockquote>
+</li>
+<li><p>虽然我们做产品时候，应该全方位系统性思考，应该考虑得面面俱到，但思考完了，要在众多的功能中找到一个点作为突破口。再大的市场也需要一个针尖一样的点做切入，所有成功的产品都要找到一个点，把有限的资源聚焦到一个点上，才能形成压强。</p>
+<blockquote>
+<p>互联网的标准思维：快速启动、MVP</p>
+</blockquote>
+</li>
+<li><p>有两点很关键：第一从小处着眼，贴近用户需求心理；第二要小步快跑，快速出击，不断试错。我把这两点称为互联网上的“微创新”规律。</p>
+</li>
+<li><p>关于产品，我提两个数字概念。第一，产品刚出来的时候最不重要，哪怕第一天有1 000个用户，第二天有2 000个用户，第三天有3 000个用户，第四天有5 000个用户，这就是一条健康的曲线。但是如果我们花了很多钱做推广，结果第一天有1万个用户，第二天还是1万个用户，接着第三天8 000，第四天5 000。大家会更加喜欢哪条曲线？肯定是第一条增长曲线。所以，做产品不要在乎绝对数，而是要关注相对的增长趋势。 第二个数字，就是产品有很多环节，如果满分是1分，但每个环节我们都只做到0.8。你以为产品出来就是0.8分？错了，是0.8乘以0.8乘以0.8，总分是0.51。功能越多，数字就越小，产品失败得就越快。所以，功能更贵精，不贵多，要在每一个点上做到极致。</p>
+<blockquote>
+<p>只要在增长就说明攻略方向是对的，只要进一步提高攻略效率<br>但是增长不断衰减，说明方向是错的，前期跑到再快，如果这时<br>不做出反应，就很快泯然众人<br>有句话叫啥：先胖不算胖，后胖压倒炕</p>
+</blockquote>
+</li>
+<li><p>用户使用你的产品，只关心你做的是什么东西，能解决什么问题，根本不听你背后的理念。</p>
+<blockquote>
+<p>非常对！！！<br>说的天花乱坠，不好使，也没人用</p>
+</blockquote>
+</li>
+<li><p>互联网产品有几个容易被忽视的特点：</p>
+</li>
+</ul>
+<ol>
+<li><p>互联网产品要有一个灵魂，要符合相关领域的游戏规则，能打动用户的心。</p>
+<blockquote>
+<p>产品的定位和Slogan</p>
+</blockquote>
+</li>
+<li><p>互联网产品需要不断运营、持续打磨。好产品是运营出来的，不是开发出来的。</p>
+<blockquote>
+<p>好产品需要不断迭代，需要宣传、推广<br>好酒也怕巷子深</p>
+</blockquote>
+</li>
+<li><p>大家都说产品要做到专注和极致。在产品方向上，一定要先学会做减法，而不是做加法。要先找对一个点做到极致，否则你什么功能都做，最后都不突出，没有鲜明的卖点。</p>
+<blockquote>
+<p>还是定位，围绕自己的核心功能画圆，不要画多个圆</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li><p>究竟什么是好的产品？怎么做好的产品？在这里有一个衡量标准，就是让用户离不开你。</p>
+<blockquote>
+<p>就是让用户上瘾</p>
+</blockquote>
+</li>
+<li><p>怎样才能找到用户的需要？我经常说，一线的客服、运营员工才是创新的动力。只有不断地接触用户，不放过每一个小抱怨，才能找到真正的点</p>
+</li>
+<li><p>在寻找用户点的时候，我们要抛弃一个专业人士的思维方式，把自己当成一个小白用户，否则你永远不知道用户真正需要什么。</p>
+</li>
+<li><p>找到用户的需要，下一步就要把这个点做到极致，给他好的体验。如果这个体验能够从微观入手，超出用户预期，你很容易就能做出好的东西。</p>
+</li>
+<li><p>我的观点是，不论产品名称还是功能名称，最好的就是一目了然，让人一眼能看明白到底解决了什么问题，不用动脑子。</p>
+<blockquote>
+<p>产品请名字越来越难了<br>马桶都出来了</p>
+</blockquote>
+</li>
+<li><p>强需求产品可以自我发展成强大的渠道，而弱需求产品独立做很难，必须有一个强大的渠道。</p>
+<blockquote>
+<p>互联网领域最强的需求：就是搜索、社交和网购吧<br>移动互联网时代新增的需求：吃、行和娱乐</p>
+</blockquote>
+</li>
+<li><p>有太多做产品的人有三个假设：<strong>第一是假设某个功能用户一定需要；第二是假设用户一定知道某个功能的存在；第三是假设用户一定会按照自己设计的方式使用</strong>。比如有一家公司找我来谈合作，说做了一个软件，功能是类似到邻居家串门，看到邻居的鞋很好看，一拍就可以在网上买了。我说不用那么麻烦，直接问他在哪儿买的不就可以了，所以这样的产品连第一关都过不了。</p>
+</li>
+<li><p>比尔 · 盖茨曾经说过，初出茅庐的时候你要自尊干什么？那自尊是假的，当你做出真正的好产品的时候，当你成功的时候，大家都会尊重你。</p>
+<blockquote>
+<p>等你成功的时候，你就可以给别人鸡汤喝了</p>
+</blockquote>
+</li>
+<li><p>乔布斯还说过一句经典的话“Stay hungry, stay foolish”</p>
+<blockquote>
+<p>放低姿态，保持饥饿感</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>以上是在看《我的互联网方法论》时做的一些标注</p>
+<p>如果你觉得还不错，可以看一看</p>
+<blockquote>
+</blockquote>
+<p><strong>搜索微信号：<code>darerpm</code></strong>，关注公众号</p>
+<blockquote>
+</blockquote>
+<p>公众号后台回复<code>我的互联网方法论</code>，即刻下载</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" rel="tag"># 阅读体会</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/03/05/Test19-%E7%94%A8%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5%E3%80%81if%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%87%BD%E6%95%B0%E5%81%9A%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F/" rel="prev" title="Test19-用循环语句、if语句和函数做一个小游戏">
+                  <i class="fa fa-angle-left"></i> Test19-用循环语句、if语句和函数做一个小游戏
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/" rel="next" title="Test20-列表的操作">
+                  Test20-列表的操作 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

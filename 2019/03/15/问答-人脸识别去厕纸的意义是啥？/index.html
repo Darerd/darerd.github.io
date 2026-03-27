@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"darerd.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="产品人只有不断思考、复盘，逐步形成自己方法论，才能形成有效的护城河   俗话说：“三人行，必有我师”   产品人应该多看看同行对事情的理解和分析角度 以下内容来自产品相关社区，如有侵权，请联系删除 [TOC] Q1:在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？  主要功能：厕所入口处有个人脸识别取手纸的终端机，每10秒钟可以人脸识别取一次。不知道这样">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人脸识别取厕纸的意义是啥？|产品问答|第2期">
+<meta property="og:url" content="https://darerd.github.io/2019/03/15/%E9%97%AE%E7%AD%94-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8E%BB%E5%8E%95%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F/index.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="产品人只有不断思考、复盘，逐步形成自己方法论，才能形成有效的护城河   俗话说：“三人行，必有我师”   产品人应该多看看同行对事情的理解和分析角度 以下内容来自产品相关社区，如有侵权，请联系删除 [TOC] Q1:在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？  主要功能：厕所入口处有个人脸识别取手纸的终端机，每10秒钟可以人脸识别取一次。不知道这样">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://static.woshipm.com/TTW_QUESTION_201903_20190315105729_0762.jpg">
+<meta property="og:image" content="https://static.woshipm.com/YY_A_20190313_1552460998597039359.jpg">
+<meta property="article:published_time" content="2019-03-15T10:23:45.000Z">
+<meta property="article:modified_time" content="2019-03-15T10:23:45.000Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="产品问答">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://static.woshipm.com/TTW_QUESTION_201903_20190315105729_0762.jpg">
+
+
+<link rel="canonical" href="https://darerd.github.io/2019/03/15/%E9%97%AE%E7%AD%94-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8E%BB%E5%8E%95%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://darerd.github.io/2019/03/15/%E9%97%AE%E7%AD%94-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8E%BB%E5%8E%95%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F/","path":"2019/03/15/问答-人脸识别去厕纸的意义是啥？/","title":"人脸识别取厕纸的意义是啥？|产品问答|第2期"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>人脸识别取厕纸的意义是啥？|产品问答|第2期 | Darerd's Blog</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Darerd's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">分享技术与经验</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1-%E5%9C%A8%E6%9D%AD%E5%B7%9E%E7%81%AB%E8%BD%A6%E7%AB%99%E5%8F%91%E7%8E%B0%E7%AB%99%E5%86%85%E5%8E%95%E6%89%80%E6%9C%89%E4%B8%AA%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8F%96%E6%89%8B%E7%BA%B8%E7%9A%84%E7%BB%88%E7%AB%AF%E4%B8%80%E4%BD%93%E6%9C%BA%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8F%96%E6%89%8B%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">Q1:在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2%EF%BC%9A%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E7%9A%84%E2%80%9C%E7%82%B9%E8%B5%9E%E2%80%9D%E5%88%B0%E2%80%9C%E5%A5%BD%E7%9C%8B%E2%80%9D%E5%88%B0%E2%80%9C%E5%9C%A8%E7%9C%8B%E2%80%9D%EF%BC%8C%E4%BD%A0%E8%A7%89%E5%BE%97%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%A5%91%E5%90%88%E5%9C%BA%E6%99%AF%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">Q2：微信公众号的“点赞”到“好看”到“在看”，你觉得哪个更契合场景？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%99%BE%E5%BA%A6%E9%97%AE%E7%AD%94%E6%B2%A1%E6%9C%89%E5%8F%91%E5%B1%95%E6%88%90%E7%9F%A5%E4%B9%8E%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">Q3:为什么百度问答没有发展成知乎？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4-%E7%91%9E%E5%B9%B8%E3%80%81%E6%AF%8F%E6%97%A5%E4%BC%98%E9%B2%9C%E7%BB%8F%E5%B8%B8%E5%8F%91%E5%88%B8%E6%88%91%E7%90%86%E8%A7%A3%EF%BC%8C%E8%B4%A7%E6%8B%89%E6%8B%89%E4%B8%BA%E5%95%A5%E4%B9%9F%E8%A6%81%E5%8F%91%E5%88%B8%EF%BC%9F"><span class="nav-number">4.</span> <span class="nav-text">Q4:瑞幸、每日优鲜经常发券我理解，货拉拉为啥也要发券？</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Darerd</p>
+  <div class="site-description" itemprop="description">记录技术成长，分享个人经验</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://darerd.github.io/2019/03/15/%E9%97%AE%E7%AD%94-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8E%BB%E5%8E%95%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Darerd">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Darerd's Blog">
+      <meta itemprop="description" content="记录技术成长，分享个人经验">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="人脸识别取厕纸的意义是啥？|产品问答|第2期 | Darerd's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          人脸识别取厕纸的意义是啥？|产品问答|第2期
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-15 18:23:45" itemprop="dateCreated datePublished" datetime="2019-03-15T18:23:45+08:00">2019-03-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" itemprop="url" rel="index"><span itemprop="name">产品问答</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+</blockquote>
+<p>产品人只有<code>不断思考、复盘，逐步形成自己方法论</code>，才能形成有效的护城河</p>
+<blockquote>
+</blockquote>
+<p>俗话说：“三人行，必有我师”</p>
+<blockquote>
+</blockquote>
+<p>产品人应该多看看同行对事情的理解和分析角度</p>
+<p><code>以下内容来自产品相关社区，如有侵权，请联系删除</code></p>
+<p>[TOC]</p>
+<h3 id="Q1-在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？"><a href="#Q1-在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？" class="headerlink" title="Q1:在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？"></a>Q1:在杭州火车站发现站内厕所有个人脸识别取手纸的终端一体机，不知道人脸识别取手纸的意义是啥？</h3><blockquote>
+</blockquote>
+<p>主要功能：厕所入口处有个人脸识别取手纸的终端机，每10秒钟可以人脸识别取一次。不知道这样做有什么意义，虽然确实用上了黑科技。但是目的呢？统计多少个人用完一卷纸吗？感觉没有意义啊，顶多有个用完手纸通知打扫阿姨来补充纸就行了啊，难道是人脸识别一下让人有个危险意识已经录下你了不能浪费纸吗？（这个可以有，但是感觉用纸多少这个不用那么太在意吧）不过站内厕所外边有个男女厕所位使用状况实时统计展示显示大屏，这个倒是觉得还蛮好的，可以看到挤不挤，要不要进去之类的。你们觉得呢？</p>
+<p><code>author:泽度 @人人都是产品经理社区</code></p>
+<p><strong>Answer</strong></p>
+<p>无利不起早，企业做一个产品总有某些利益，无论是个体还是组织</p>
+<ol>
+<li><p>无金钱利益：单纯的理想，想做一件事(这种情况太少，而且缺乏目标性也往往难成)；</p>
+</li>
+<li><p>直接金钱利益：产品直接变现</p>
+</li>
+<li><p>间接金钱利益：政府补贴、资本投资、跨界合作等；</p>
+</li>
+<li><p>原始积累：商业探索、数据收集、运营积累等；</p>
+</li>
+</ol>
+<p>根据你所提到的人脸识别取手指，成本不会低，这种很大程度是组织制作；</p>
+<p>人脸数据库是在公安，在国家手里，那么多少也有国家支持；</p>
+<p>产品很难直接商业变现，从目前市场分布来看还是在初期体验阶段；</p>
+<p>由此，该产品更大可能是</p>
+<p><strong>1. 政府背后支持；</strong></p>
+<p><strong>2. 智能科技产品技术、应用探索，以及技术、数据、运营积累；</strong></p>
+<p><strong>3. 可能存在的数据商业交易行为。</strong></p>
+<p>注：某一事物对我们而言也许看起来没有太大价值，但存在即是合理，他或许对某些事物推动有所帮助，亦或者增加公职人员政绩这般。</p>
+<blockquote>
+</blockquote>
+<p>比较认可是政府推动，我觉得更多是弥补天网漏洞，对追踪疑犯很有帮助</p>
+<h3 id="Q2：微信公众号的“点赞”到“好看”到“在看”，你觉得哪个更契合场景？"><a href="#Q2：微信公众号的“点赞”到“好看”到“在看”，你觉得哪个更契合场景？" class="headerlink" title="Q2：微信公众号的“点赞”到“好看”到“在看”，你觉得哪个更契合场景？"></a>Q2：微信公众号的“点赞”到“好看”到“在看”，你觉得哪个更契合场景？</h3><blockquote>
+</blockquote>
+<p>微信再次悄悄进行功能改动，即微信公众号文章右下角的“好看”换成了“在看”；同时，第一个点击文章“在看”的读者，在看一看中会有一个爱心图标，即：首个“在看”用户才会拥有爱心图标，其他用户可以为这个用户点赞，来作为感谢他分享的方式。</p>
+<blockquote>
+</blockquote>
+<p>可是“在看”这个词非常有机械感，有种为什么要人来确认的感觉？</p>
+<blockquote>
+</blockquote>
+<p><img src="https://static.woshipm.com/TTW_QUESTION_201903_20190315105729_0762.jpg" alt="img"></p>
+<p><code>author:迷宫小巷 @人人都是产品经理社区</code></p>
+<p><strong>Answer</strong></p>
+<p>估计是为了充实[看一看]栏目的内容，[看一看]里每天的文章屈指可数（可能是好友太少？）希望[看一看]能发挥一个以好友推荐为机制的内容分发渠道的作用。</p>
+<p>如果用[好看]，文章质量通常要好到让用户发出wow~（8分以上吧） 才会驱使用户点下，让别人知道这才是我的品位 ，我觉得好看的文章都是精品（￣_,￣ ）</p>
+<p>如果用[在看]，文章达到“哎呦还不错哦”的水准（≥6分吧）就足以让我点下了，“我在看这个耶，没有特别好但也值得一看，你要不要也看看？”</p>
+<blockquote>
+</blockquote>
+<p>提问的作者真的很仔细，没看到这个答案，自己还真的没有注意到这个细节，给提问者点赞</p>
+<blockquote>
+</blockquote>
+<p>关于这个问题，自己很不理解，吃不透背后的心理逻辑</p>
+<h3 id="Q3-为什么百度问答没有发展成知乎？"><a href="#Q3-为什么百度问答没有发展成知乎？" class="headerlink" title="Q3:为什么百度问答没有发展成知乎？"></a>Q3:为什么百度问答没有发展成知乎？</h3><blockquote>
+</blockquote>
+<p>百度问答很早就有了，且最开始做的不错。</p>
+<blockquote>
+</blockquote>
+<p>后来就被知乎掀翻了。</p>
+<blockquote>
+</blockquote>
+<p>最开始知乎很专业，讨论比较小众</p>
+<blockquote>
+</blockquote>
+<p>但是现在讨论的东西，和百度知道也差不多了</p>
+<p><code>author:连长 @人人都是产品经理社区</code></p>
+<p>百度的入口是个问题，搜索本身面向的用户太宽泛，知道最开始也是通过搜索问答引入的，没有独立，这就很难界定内容的属性，大家搜的问题信息量大，面很广，也不够具体。另一点百度知道早期做的时候，互联网没现在这么复杂，而且很好的满足了大家的普遍的提问需求，当然了时间久了，流量稳定后，大部分用户开始借助这一渠道做推广，而知道的杂乱很难营造类似知乎这样的社区氛围，这个时候再想挽回也就很难了</p>
+<blockquote>
+</blockquote>
+<p>百度对知道的定位和维护是最大的问题吧</p>
+<blockquote>
+</blockquote>
+<p>知道是百度的一个小产品，而知乎全部身家就是知识问答社区</p>
+<blockquote>
+</blockquote>
+<p>公司对产品的重视自然不一样，资源倾斜也不同</p>
+<blockquote>
+</blockquote>
+<p>此外，百度知道做大之后，维护跟不上，东西良秀不齐，会慢慢被营销充斥，这样贡献精品回答的少数人会渐生反感，逐渐被主打差异化的知乎、豆瓣的等挖走了，百度贴吧的没落也是如此</p>
+<blockquote>
+</blockquote>
+<p>还有没有搭上移动互联网时代的大环境</p>
+<h3 id="Q4-瑞幸、每日优鲜经常发券我理解，货拉拉为啥也要发券？"><a href="#Q4-瑞幸、每日优鲜经常发券我理解，货拉拉为啥也要发券？" class="headerlink" title="Q4:瑞幸、每日优鲜经常发券我理解，货拉拉为啥也要发券？"></a>Q4:瑞幸、每日优鲜经常发券我理解，货拉拉为啥也要发券？</h3><blockquote>
+</blockquote>
+<p>前段时间搬家所以下载了货拉拉，结果发现这段时间他每隔几天就给我推送“XX元门槛优惠券已入账，用卷下单更优惠哦~~~”频率堪比瑞幸咖啡给我送券。可是这不是个拉货的APP吗！就算是便宜了，我没货也不可能变出来货啊！！那发优惠券是为了干嘛？促活的话感觉也达不到啊</p>
+<blockquote>
+</blockquote>
+<p><img src="https://static.woshipm.com/YY_A_20190313_1552460998597039359.jpg" alt="img"></p>
+<p><code>author:魏雅 @人人都是产品经理社区</code></p>
+<p>我认为是可以促活的，大多数人运货频率不会很高，属于临时刚性需求。其实说刚性都勉强了因为一方面竞品多另一方面有的时候将就将就货也能拉回去没必要叫货拉拉。</p>
+<p>所以这时候不断的推送优惠券一方面加深对品牌的印象，另一方面在用户心理种草“我很优惠”“用我划算”。</p>
+<p>这样用户要用的时候，第一时间就想起来，我要用拉货软件，并且我要用货拉拉！</p>
+<blockquote>
+</blockquote>
+<p>首先，下载了app的用户，自然是存在需求的潜在用户</p>
+<blockquote>
+</blockquote>
+<p>利用人的趋利心理，当你再次想拉货时，你第一回答、反应就是我要用货啦啦，占据用户的心智</p>
+<blockquote>
+</blockquote>
+<p>敢肯定货啦啦一定会出分享好友会免单等营销行为</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" rel="tag"># 产品问答</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/03/13/Test22-Python%E4%B8%AD%E5%AD%97%E5%85%B8%E3%80%81%E6%A8%A1%E5%9D%97%E7%AD%89%E7%9A%84%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/" rel="prev" title="Test22-Python中字典、模块等的知识入门">
+                  <i class="fa fa-angle-left"></i> Test22-Python中字典、模块等的知识入门
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/03/16/%E9%9A%8F%E6%83%B3-%E5%BA%94%E5%B1%8A%E7%94%9F%EF%BC%9A%E4%B8%BA%E4%BD%95%E4%BD%A0%E7%9A%84%E5%B7%A5%E8%B5%84%E4%BC%9A%E6%AF%94%E8%80%81%E5%91%98%E5%B7%A5%E9%AB%98%EF%BC%9F/" rel="next" title="应届生：为何你的工资会比老员工高？">
+                  应届生：为何你的工资会比老员工高？ <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Darerd</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
