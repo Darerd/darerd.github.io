@@ -1,219 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
-    <url>/2026/03/27/Claude-Code%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
-
-
-Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
-/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-
-
-参考文档：Homebrew 国内镜像安装教程
-
-第二步：安装 Node.jsbrew install node
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
-第二步：安装 Node.js推荐使用 winget 安装最新版本：
-winget install -e --id OpenJS.NodeJS
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-客户端选择安装完成后，有两种使用方式：
-
-
-
-方式
-工具
-特点
-
-
-
-CLI（命令行）
-CC Switch
-轻量，支持多 Agent 管理
-
-
-GUI（图形界面）
-Tokenicode
-轻量级图形界面，配合 CC Switch 做 Agent 管理
-
-
-推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
-
-总结
-
-
-平台
-核心依赖
-安装命令
-
-
-
-Mac
-Homebrew + Node.js
-国内镜像脚本
-
-
-Windows
-Git + Node.js
-winget + npm
-
-
-两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Claude Code</tag>
-        <tag>开发工具</tag>
-        <tag>Mac</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用网站导航</title>
-    <url>/2019/03/19/@%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/</url>
-    <content><![CDATA[网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮
-1. 资讯👉cnBeta		👉数位时代	👉科技行者
-2. 博客👉刘未鹏	👉酷壳	👉崔庆才	👈Benson‘s Blog
-3. 社区👉产品经理	👉PMCAFF	👉V2EX​
-4. 管理👉哈佛商业评论	👉MBA智库
-5. 数据分析👉国家数据	👉世界银行公开数据	👉移动观象台	👉百度指数	👉天眼查	👉艾瑞数据	👉APP Annie	👉七麦
-6. 投融资👉创业邦	👉i黑马	👉创新工场
-7. 产品资源👉产品原型设计	👉产品文档规范
-8. 技术指南👉Python文档	👉Web文档	👉Git文档​	👉iFixit
-9. 工具👉临时邮箱	👉临时手机号	👉创客贴
-10. 软件下载👉MSDN	👉小众软件	👉胡萝卜周	👉吾爱破解
-]]></content>
-  </entry>
-  <entry>
-    <title>LaTex:从0到1入门</title>
-    <url>/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[
-写在前面的话：
-
-
-博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。
-
-
-所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
-
-第零步
-
-认识 LaTex ：
-
-
-一篇详细的关于LaTex的介绍
-
-
-LaTex适合文章等的排版，让你专注于结构和内容
-
-
-关于和 word对比，孰优孰劣的问题
-
-
-word更易上手，是一种文档处理软件
-
-
-LaTex上手更难，是一种排版工具
-
-
-LaTex 和 word 优劣的讨论帖
-第一步到这一步，我们知道LaTex是一种电子排版系统，是公认的数学公式排得最好的系统，主要作用是让你专注于写作，得到高质量的排版输出。
-​	学习LaTex，那就需要能够编辑它和翻译它的工具—LaTex编译器(小编自己起的名字😆 )
-​	我试了很多编译器，如：Lyx、TeXworks、WinEdt，用来用去最后最爱的还是TexStudio。
-​	我建议新手可以先从线上编辑器(如：Overleaf) 先学习。
-
-一篇详细介绍LaTex编译器的帖子
-第二步如果你在线上试了试LaTex练习，还是想学，那么你在电脑上安装LaTex运行的环境，这里推荐下载Texlive。
-
-一篇介绍LaTex软件下载的帖子
-
-当你安装好Texlive后，电脑就有了LaTex的编译环境，
-​	这时，你需要一个好用的第三方编译器来帮助你编译
-​	我自己最喜欢的LaTex编译器—TexStudio
-​	下载地址
-
-种草几个LaTex学习社区：
-LaTex开源小屋
-LaTeX 快速入门
-
-网上有很多资源，自己取挖掘啦
-第三步我是因为要写毕业论文，需要排版，所以开始学习LaTex；
-​	参考我的学习经验，我建议是找一份模板，然后去研究这部分模板；
-​	我就是发现网上的论文模板和学校要求的有出入，然后自己就试着对模板
-​	去修改，就是在这样的过程中，慢慢有了提高；
-​	现在也算是入门了。
-
-推荐一些模板网站：
-​	网站1
-​	网站2
-
-最后祝你成功！！！
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>LaTex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTex:参考文献引用的方法</title>
-    <url>/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[LaTex排版时，引入参考文献的方法
-
-引入参考文献主要分为两种：
-
-不使用BibTex
-
-使用BibTex
-
-
-这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
-
-利用BibTex的方法引入文献：
-分为以下四步：
-
-用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
-
-用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
-
-再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
-
-最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
-
-
-
-如果你采用的是TexStudio作为编译器，具体的操作方法如下：
-
-按F6编译写好的 .tex 文件
-
-按F8编译生成的 .aux 文件
-
-按F6编译写好的 .tex 文件
-
-按F6编译写好的 .tex 文件
-
-
-
-以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>LaTex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客框架下，模板的选择与主题优化</title>
     <url>/2019/01/30/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E6%A8%A1%E6%9D%BF%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[折腾了两三天，零基础的我，终于找到一个喜欢的模板，并做好了优化
@@ -325,6 +112,147 @@ nMask’s Blog
       <tags>
         <tag>Hexo</tag>
         <tag>Next模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用网站导航</title>
+    <url>/2019/03/19/@%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/</url>
+    <content><![CDATA[网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮
+1. 资讯👉cnBeta		👉数位时代	👉科技行者
+2. 博客👉刘未鹏	👉酷壳	👉崔庆才	👈Benson‘s Blog
+3. 社区👉产品经理	👉PMCAFF	👉V2EX​
+4. 管理👉哈佛商业评论	👉MBA智库
+5. 数据分析👉国家数据	👉世界银行公开数据	👉移动观象台	👉百度指数	👉天眼查	👉艾瑞数据	👉APP Annie	👉七麦
+6. 投融资👉创业邦	👉i黑马	👉创新工场
+7. 产品资源👉产品原型设计	👉产品文档规范
+8. 技术指南👉Python文档	👉Web文档	👉Git文档​	👉iFixit
+9. 工具👉临时邮箱	👉临时手机号	👉创客贴
+10. 软件下载👉MSDN	👉小众软件	👉胡萝卜周	👉吾爱破解
+]]></content>
+  </entry>
+  <entry>
+    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
+    <url>/2026/03/27/Claude-Code%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
+
+
+Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
+/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
+
+
+参考文档：Homebrew 国内镜像安装教程
+
+第二步：安装 Node.jsbrew install node
+
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
+
+
+Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
+第二步：安装 Node.js推荐使用 winget 安装最新版本：
+winget install -e --id OpenJS.NodeJS
+
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
+
+
+客户端选择安装完成后，有两种使用方式：
+
+
+
+方式
+工具
+特点
+
+
+
+CLI（命令行）
+CC Switch
+轻量，支持多 Agent 管理
+
+
+GUI（图形界面）
+Tokenicode
+轻量级图形界面，配合 CC Switch 做 Agent 管理
+
+
+推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
+
+总结
+
+
+平台
+核心依赖
+安装命令
+
+
+
+Mac
+Homebrew + Node.js
+国内镜像脚本
+
+
+Windows
+Git + Node.js
+winget + npm
+
+
+两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Claude Code</tag>
+        <tag>开发工具</tag>
+        <tag>Mac</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTex:参考文献引用的方法</title>
+    <url>/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[LaTex排版时，引入参考文献的方法
+
+引入参考文献主要分为两种：
+
+不使用BibTex
+
+使用BibTex
+
+
+这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
+
+利用BibTex的方法引入文献：
+分为以下四步：
+
+用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
+
+用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
+
+再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
+
+最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
+
+
+
+如果你采用的是TexStudio作为编译器，具体的操作方法如下：
+
+按F6编译写好的 .tex 文件
+
+按F8编译生成的 .aux 文件
+
+按F6编译写好的 .tex 文件
+
+按F6编译写好的 .tex 文件
+
+
+
+以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>LaTex</tag>
       </tags>
   </entry>
   <entry>
@@ -601,6 +529,78 @@ HTML常用语法
       </tags>
   </entry>
   <entry>
+    <title>LaTex:从0到1入门</title>
+    <url>/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[
+写在前面的话：
+
+
+博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。
+
+
+所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
+
+第零步
+
+认识 LaTex ：
+
+
+一篇详细的关于LaTex的介绍
+
+
+LaTex适合文章等的排版，让你专注于结构和内容
+
+
+关于和 word对比，孰优孰劣的问题
+
+
+word更易上手，是一种文档处理软件
+
+
+LaTex上手更难，是一种排版工具
+
+
+LaTex 和 word 优劣的讨论帖
+第一步到这一步，我们知道LaTex是一种电子排版系统，是公认的数学公式排得最好的系统，主要作用是让你专注于写作，得到高质量的排版输出。
+​	学习LaTex，那就需要能够编辑它和翻译它的工具—LaTex编译器(小编自己起的名字😆 )
+​	我试了很多编译器，如：Lyx、TeXworks、WinEdt，用来用去最后最爱的还是TexStudio。
+​	我建议新手可以先从线上编辑器(如：Overleaf) 先学习。
+
+一篇详细介绍LaTex编译器的帖子
+第二步如果你在线上试了试LaTex练习，还是想学，那么你在电脑上安装LaTex运行的环境，这里推荐下载Texlive。
+
+一篇介绍LaTex软件下载的帖子
+
+当你安装好Texlive后，电脑就有了LaTex的编译环境，
+​	这时，你需要一个好用的第三方编译器来帮助你编译
+​	我自己最喜欢的LaTex编译器—TexStudio
+​	下载地址
+
+种草几个LaTex学习社区：
+LaTex开源小屋
+LaTeX 快速入门
+
+网上有很多资源，自己取挖掘啦
+第三步我是因为要写毕业论文，需要排版，所以开始学习LaTex；
+​	参考我的学习经验，我建议是找一份模板，然后去研究这部分模板；
+​	我就是发现网上的论文模板和学校要求的有出入，然后自己就试着对模板
+​	去修改，就是在这样的过程中，慢慢有了提高；
+​	现在也算是入门了。
+
+推荐一些模板网站：
+​	网站1
+​	网站2
+
+最后祝你成功！！！
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>LaTex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown写作必须知道的图床知识</title>
     <url>/2019/02/28/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%BE%E5%BA%8A%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[
@@ -701,225 +701,6 @@ https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu
       </tags>
   </entry>
   <entry>
-    <title>Test1_第一个程序</title>
-    <url>/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-问题的解决方法
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprint
-
-
-遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’
-如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号” “
-否则就会出现如下结果：
-&gt;&gt;&gt; SyntaxError: invalid syntax&gt;&gt;&gt; print &#x27; I &#x27;said&#x27; do not touch this.&#x27;SyntaxError: invalid syntax
-
-
-解决办法书写时，注意这个细节，按照规范书写即可
-附加练习以下摘录自原文
-
-多打印一行脚本
-
-让脚本只打印一行
-
-如果在代码前加一个“#”，会出现什么效果呢？
-
-
-
-程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符”#”，来把这段代码注释掉，而不被Python执行。
-
-为什么  Print “Hi # there.”  里的#没被忽略掉呢？
-这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test11-函数和文件</title>
-    <url>/2019/02/27/Test11-%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节是利用Python的函数做文件的IO处理
-[TOC]
-源代码#ex20.pyfromscript,input_file=argvdef	printdef	f.seek(0def	printcurrent_file=open(input_file)printprint_all(current_file)printrewind(current_file)printcurrent_line=1print_a_line(current_line,current_file)current_line=current_line+1print_a_line(current_line,current_file)current_line=current_line+1print_a_line(current_line,current_file)
-
-
-这里需要注意，在编译前需要创建一个txt文件
-# 文件命名为11.txtthis is line 1this is line 2this is line 3
-
-
-应该看到的编译结果
-需要注意的知识点
-复习下，我们前面学过的文件I&#x2F;O的知识复习传送门：知乎传送门	CSDN传送门这里就简单复习下read()的知识read()命令方法从一个打开的文件中读取一个字符串。Python字符串可以是二进制数据，而不是仅仅是文字。read()指令的标准语法如下：
-
-flieObject.read([count])
-
-
-代码中用到了readline()指令readline()会扫面文件中的每一个字节，知道找到一个\n为止，然后它会停止读取文件，并且作为字符串返回此前的文件内容。文件f会记录每次调用readline()后的读取位置，这样它就可以在下次被调用时读取接下来的一行了。
-
-代码中用到的seek()指令seek()方法用于移动文件读取指针到指定位置标准写法：
-
-
-fileObject.seek(offset[, whence])
-
-参数：
-offset： 开始的偏移量，也就是代表需要移动偏移的字节数
-
-**whence：**可选，默认值为 0。给offset参数一个定义，表示要从哪个位置开始偏移；0代表从文件开头开始算起，1代表从当前位置开始算起，2代表从文件末尾算起。
-
-所以seek(0)的意思是从文件开头开始算起
-
-
-
-这是**《笨方法学Python》**的第十一篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test10-变量与函数</title>
-    <url>/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节主要学习函数的多种参数传递方式
-我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。
-[TOC]
-源代码# ex19.pydef	print	print	print	printcheese_and_crackers(20printamount_of_cheese=10amount_of_crackers=50cheese_and_crackers(amount_of_cheese,amount_of_crackers)printcheese_and_crackers(10printcheese_and_crackers(amount_of_cheese+100
-
-
-这个函数脚本思路很简单，主要以下几个点需要注意：
-
-def()指令后，记得加:
-
-回想下前面学过的%d、%r、%s之间的区别
-
-\n的作用
-
-
-应该看到的结果
-常见问题
-对每一行代码添加#注释
-
-第11行和12行创建的变量会不会改变函数中的变量不会。这些变量是在函数之外的，当它们被传递到函数中以后，函数会为这些变量创建一些临时的版本，当函数运行结束后，这些临时变量就被丢弃了。
-
-函数的参数个数有限制吗？取决于Python的版本和所用的操作系统，不过就算有限制，限值也是很大的。
-
-
-
-一个问题作者在文中提出了一个问题：
-如果让用户给函数传递变量呢？应该怎么写？比如：让用户输入cracker和cheese的数量
-我写的指令如下：
-printamount_of_cheese=raw_input(&quot;Enter your numbers: &quot;amount_of_crackers=raw_input(&quot;Enter your numbers: &quot;cheese_and_crackers(amount_of_cheese,amount_of_crackers)
-
-
-但是在运行时，一直报错
-希望大佬可以帮忙解释写这个非常简单的基础问题
-
-
-
-这是**《笨方法学Python》**的第十篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test12-函数可以返回某些结果</title>
-    <url>/2019/02/28/Test12-%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E6%9F%90%E4%BA%9B%E7%BB%93%E6%9E%9C/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节主要学习return()的用法：将变量设置为“一个函数的值”
-[TOC]
-源代码# ex21.pydef	print	return	def	print	return		def	print	return	def	print	return	printage=add(30height=subtract(78weight=multifly(90iq=divide(100printprintwhat=add(age,subtract(height,multifly(weight,divide(iq,2print
-
-
-需要注意的地方
-代码用用到的add()，是自定义的函数，而不是python支持的add()指令的用法
-你应该看到的结果
-本节学到的知识点
-return()指令
-return 语句是Python语言中函数返回的一个值，每个函数都应该有一个返回值；其中，return返回值可以是一个数值，一个字符串，一个布尔值或者一个列表。
-
-
-
-
-Python 函数返回值return ，函数中一定要有return 返回值才是完整的函数，如果你没有定义Python 函数返回值，那么得到一个结果是None对象，而None表示没有任何值
-
-示例，转载地址
-
-注意最后一行print输出句的写法最后一句的写法挺有意思的
-
-
-这是**《笨方法学Python》**的第十二篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python_文件IO_知识</title>
     <url>/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[在通过《笨方法学Python》学习利用Python读取、读写文件的过程中，需要掌握一些基础知识。
@@ -1006,6 +787,176 @@ fo=open(&#x27;fo.txt&#x27;str=foo.read(6printfo.close()
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test1_第一个程序</title>
+    <url>/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprint
+
+
+遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’
+如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot;
+否则就会出现如下结果：
+&gt;&gt;&gt; SyntaxError: invalid syntax&gt;&gt;&gt; print &#x27; I &#x27;said&#x27; do not touch this.&#x27;SyntaxError: invalid syntax
+
+
+解决办法书写时，注意这个细节，按照规范书写即可
+附加练习以下摘录自原文
+
+多打印一行脚本
+
+让脚本只打印一行
+
+如果在代码前加一个“#”，会出现什么效果呢？
+
+
+
+程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。
+
+为什么  Print “Hi # there.”  里的#没被忽略掉呢？
+这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test10-变量与函数</title>
+    <url>/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节主要学习函数的多种参数传递方式
+我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。
+[TOC]
+源代码# ex19.pydef	print	print	print	printcheese_and_crackers(20printamount_of_cheese=10amount_of_crackers=50cheese_and_crackers(amount_of_cheese,amount_of_crackers)printcheese_and_crackers(10printcheese_and_crackers(amount_of_cheese+100
+
+
+这个函数脚本思路很简单，主要以下几个点需要注意：
+
+def()指令后，记得加:
+
+回想下前面学过的%d、%r、%s之间的区别
+
+\n的作用
+
+
+应该看到的结果
+常见问题
+对每一行代码添加#注释
+
+第11行和12行创建的变量会不会改变函数中的变量
+不会。这些变量是在函数之外的，当它们被传递到函数中以后，函数会为这些变量创建一些临时的版本，当函数运行结束后，这些临时变量就被丢弃了。
+
+函数的参数个数有限制吗？
+取决于Python的版本和所用的操作系统，不过就算有限制，限值也是很大的。
+
+
+
+一个问题作者在文中提出了一个问题：
+如果让用户给函数传递变量呢？应该怎么写？比如：让用户输入cracker和cheese的数量
+我写的指令如下：
+printamount_of_cheese=raw_input(&quot;Enter your numbers: &quot;amount_of_crackers=raw_input(&quot;Enter your numbers: &quot;cheese_and_crackers(amount_of_cheese,amount_of_crackers)
+
+
+但是在运行时，一直报错
+希望大佬可以帮忙解释写这个非常简单的基础问题
+
+
+
+这是**《笨方法学Python》**的第十篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test12-函数可以返回某些结果</title>
+    <url>/2019/02/28/Test12-%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E6%9F%90%E4%BA%9B%E7%BB%93%E6%9E%9C/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节主要学习return()的用法：将变量设置为“一个函数的值”
+[TOC]
+源代码# ex21.pydef	print	return	def	print	return		def	print	return	def	print	return	printage=add(30height=subtract(78weight=multifly(90iq=divide(100printprintwhat=add(age,subtract(height,multifly(weight,divide(iq,2print
+
+
+需要注意的地方
+代码用用到的add()，是自定义的函数，而不是python支持的add()指令的用法
+你应该看到的结果
+本节学到的知识点
+return()指令
+return 语句是Python语言中函数返回的一个值，每个函数都应该有一个返回值；
+其中，return返回值可以是一个数值，一个字符串，一个布尔值或者一个列表。
+
+
+
+
+Python 函数返回值return ，函数中一定要有return 返回值才是完整的函数，
+如果你没有定义Python 函数返回值，那么得到一个结果是None对象，
+而None表示没有任何值
+
+示例，转载地址
+
+
+
+注意最后一行print输出句的写法
+最后一句的写法挺有意思的
+
+
+这是**《笨方法学Python》**的第十二篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1101,6 +1052,73 @@ aList = [123print# 参数 -1  指向的是 abcprint# 参数 0  指向的是 123p
       </tags>
   </entry>
   <entry>
+    <title>Test11-函数和文件</title>
+    <url>/2019/02/27/Test11-%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节是利用Python的函数做文件的IO处理
+[TOC]
+源代码#ex20.pyfromscript,input_file=argvdef	printdef	f.seek(0def	printcurrent_file=open(input_file)printprint_all(current_file)printrewind(current_file)printcurrent_line=1print_a_line(current_line,current_file)current_line=current_line+1print_a_line(current_line,current_file)current_line=current_line+1print_a_line(current_line,current_file)
+
+
+这里需要注意，在编译前需要创建一个txt文件
+# 文件命名为11.txtthis is line 1this is line 2this is line 3
+
+
+应该看到的编译结果
+需要注意的知识点
+复习下，我们前面学过的文件I&#x2F;O的知识
+复习传送门：知乎传送门	CSDN传送门
+这里就简单复习下read()的知识
+read()命令方法从一个打开的文件中读取一个字符串。Python字符串可以是二进制数据，而不是仅仅是文字。
+read()指令的标准语法如下：
+
+flieObject.read([count])
+
+
+代码中用到了readline()指令
+readline()会扫面文件中的每一个字节，知道找到一个\n为止，然后它会停止读取文件，并且
+作为字符串返回此前的文件内容。文件f会记录每次调用readline()后的读取位置，这样它就可
+以在下次被调用时读取接下来的一行了。
+
+代码中用到的seek()指令
+seek()方法用于移动文件读取指针到指定位置
+标准写法：
+
+
+fileObject.seek(offset[, whence])
+
+参数：
+offset： 开始的偏移量，也就是代表需要移动偏移的字节数
+
+**whence：**可选，默认值为 0。给offset参数一个定义，表示要从哪个位置开始偏移；
+0代表从文件开头开始算起，1代表从当前位置开始算起，2代表从文件末尾算起。
+
+所以seek(0)的意思是从文件开头开始算起
+
+
+
+这是**《笨方法学Python》**的第十一篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Test14-布尔表达式练习</title>
     <url>/2019/03/02/Test14-%E5%B8%83%E5%B0%94%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[
@@ -1125,6 +1143,47 @@ Python 和许多语言一样，都是返回两个被操作对象中的一个，�
 
 
 这是**《笨方法学Python》**的第十四篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test16-用if、else语句做一个小游戏</title>
+    <url>/2019/03/03/Test16-%E7%94%A8if%E3%80%81else%E8%AF%AD%E5%8F%A5%E5%81%9A%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节我们利用前面学过的if、else和elif语言知识，做一个小游戏，比较简单，很好理解
+[TOC]
+源代码# ex31.pyprintyou enter a dark room with two doors.Do you go through door #1 or door #2?&quot;&quot;&quot;door=raw_input(&quot;&gt; &quot;if	print	print	print		bear=raw_input(&quot;&gt; &quot;	if		print	elif		print	else		printelif	print	print	print	print		insanity=raw_input(&quot;&gt; &quot;	if		print	else		printelse	print
+
+
+需要注意的几点：
+
+if语句必须以else语句结尾，中间elif语句的数量没有限制
+
+if语句、else语句和elif语句中间可以任意插入if语句、else语句和elif语句
+
+
+你应该看到的结果
+
+
+
+这是**《笨方法学Python》**的第十六篇文章
 
 
 希望自己可以坚持下去
@@ -1184,93 +1243,6 @@ else、elif为子块，不能独立使用
 
 
 这是**《笨方法学Python》**的第十五篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test18-while循环</title>
-    <url>/2019/03/04/Test18-while%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-while循环：while循环会一直执行它下面的代码块，直到它对应的布尔表达式为False时才会停下来
-while循环有一个问题，那就是有时它会永远不结束
-为了避免这样的问题，你需要遵循下面的规定
-
-尽量少用while循环，大部分时候for循环是更好的选择
-
-重复检查你的while语句，确定你测试的布尔表达式最终会变成False
-
-如果不确定，就在while循环的结果打印出你要测试的值，看看它的变化
-
-
-[TOC]
-源代码# ex33.pyi=0numbers=[]while	print	numbers.append(i)		i=i+1	print	printprintfor	print
-
-
-应该看到的结果
-附加练习把这个while循环改成一个函数
-i=0numbers=[]def	global	while		numbers.append(i)		i=i+1	return	new_number=while_1(6print
-
-
-
-这是**《笨方法学Python》**的第十八篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test16-用if、else语句做一个小游戏</title>
-    <url>/2019/03/03/Test16-%E7%94%A8if%E3%80%81else%E8%AF%AD%E5%8F%A5%E5%81%9A%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节我们利用前面学过的if、else和elif语言知识，做一个小游戏，比较简单，很好理解
-[TOC]
-源代码# ex31.pyprintyou enter a dark room with two doors.Do you go through door #1 or door #2?&quot;&quot;&quot;door=raw_input(&quot;&gt; &quot;if	print	print	print		bear=raw_input(&quot;&gt; &quot;	if		print	elif		print	else		printelif	print	print	print	print		insanity=raw_input(&quot;&gt; &quot;	if		print	else		printelse	print
-
-
-需要注意的几点：
-
-if语句必须以else语句结尾，中间elif语句的数量没有限制
-
-if语句、else语句和elif语句中间可以任意插入if语句、else语句和elif语句
-
-
-你应该看到的结果
-
-
-
-这是**《笨方法学Python》**的第十六篇文章
 
 
 希望自己可以坚持下去
@@ -1361,64 +1333,103 @@ obj – 添加到列表末尾的对象。
       </tags>
   </entry>
   <entry>
-    <title>Test20-列表的操作</title>
-    <url>/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/</url>
+    <title>Test18-while循环</title>
+    <url>/2019/03/04/Test18-while%E5%BE%AA%E7%8E%AF/</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节我们来学习Python是怎么对列表实行操作的
+while循环：while循环会一直执行它下面的代码块，直到它对应的布尔表达式为False时才会停下来
+while循环有一个问题，那就是有时它会永远不结束
+为了避免这样的问题，你需要遵循下面的规定
+
+尽量少用while循环，大部分时候for循环是更好的选择
+
+重复检查你的while语句，确定你测试的布尔表达式最终会变成False
+
+如果不确定，就在while循环的结果打印出你要测试的值，看看它的变化
+
+
 [TOC]
-示例：当你看到mystuff.append(&#39;hello&#39;)这样的代码时，它已经在Python内部激发了一个连锁反应。以下是它的工作原理。
-
-Python看到你用到mystuff，于是就去找这个变量。也许它需要倒着检查看你有没有在哪里用=创建过这个变量，或者检查它是不是一个函数参数，或者看它是不是一个全局变量。不管哪种方式，它得先找到mystuff这个变量才行。
-
-一旦它找到了mystuff，就轮到处理句点(.)这个操作符，而且开始查看mystuff内部的一些变量了。由于mystuff是一个列表，Python知道mystuff支持一些函数。
-
-接下来轮到处理append。Python会将append和mystuff支持的所有函数的名称一一对比，如果确实有一个叫append的函数，那么Python就会去使用这个函数。
-
-接下来Python看到了括号(并意识到：“奥，原来这应该是一个函数。”到了这里，它就正常调用这个函数了，不过这里的函数还要多一个参数才行。
-
-这个额外的参数其实就是mystuff。很奇怪是不是？不过这就是Python的工作原理，所以请记住这一点，就当它是正常的好了。真正发生的事情其实是appeng(mystuff,&#39;hello&#39;)，不过写法是mystuff.append(&#39;hello&#39;)。
-
-
-源代码ten_things=&quot;apples oranges crows telephone light sugar&quot;printstuff=ten_things.split(&#x27; &#x27;more_stuff=[&quot;day&quot;while	next_one=more_stuff.pop()	print	stuff.append(next_one)	print	printprintprintprintprintprintprint
+源代码# ex33.pyi=0numbers=[]while	print	numbers.append(i)		i=i+1	print	printprintfor	print
 
 
 应该看到的结果
-本节需要学习的知识
-把每一个被调用的函数翻译成Python实际执行的动作
-
-‘ ’.join(things)其实就是join(&#39; &#39;,things)。
-‘ ’.join(things)可以翻译成“用‘ ’连接things”，而join(&#39; &#39;,things)意思是“为‘ ’和things调用join函数”。
-
-len()函数
-
-len() 方法返回对象（字符、列表、元组等）长度或项目个数。
-语法
-len( s )
-
-
-示例
-&gt;&gt;&gt;str = &quot;runoob&quot;&gt;&gt;&gt; 6&gt;&gt;&gt; &gt;&gt;&gt; 5
+附加练习把这个while循环改成一个函数
+i=0numbers=[]def	global	while		numbers.append(i)		i=i+1	return	new_number=while_1(6print
 
 
 
-stuff[3:5]的作用
-
-它会从stuff列表的第3个元素开始取值，知道第5个元素，注意这里并不包含第5个元素。
-
-
-
-这是**《笨方法学Python》**的第二十篇文章
+这是**《笨方法学Python》**的第十八篇文章
 
 
 希望自己可以坚持下去
 
 
 希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test2_数字和数学计算</title>
+    <url>/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
+
+
+遇到的问题
+利用Python做四则运算非常简单，但是除法运算略有一些复杂
+
+例如：
+print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
+
+
+
+为了解决以上除法运算时出现的问题，我们需要理解浮点数
+
+2.0print# 输出结果是2.75
+
+
+
+可以使用小括号强制计算的先后顺序
+
+布尔值也是基本数据类型
+
+
+比较运算的结果直接输出布尔值（True or False）
+print# 输出结果是False
+
+
+附加练习以下摘录自原文
+
+每一行的代码用#写注释，说明一些这一行的作用
+
+使用浮点数重新写一下ex3.py
+
+
+
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -1495,57 +1506,176 @@ base – 进制数，默认十进制。
       </tags>
   </entry>
   <entry>
-    <title>Test2_数字和数学计算</title>
-    <url>/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/</url>
+    <title>Test20-列表的操作</title>
+    <url>/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-文章主要分为三个部分：
+本节我们来学习Python是怎么对列表实行操作的
+[TOC]
+示例：当你看到mystuff.append(&#39;hello&#39;)这样的代码时，它已经在Python内部激发了一个连锁反应。以下是它的工作原理。
 
-原文—摘录至《笨方法学Python》第三版
+Python看到你用到mystuff，于是就去找这个变量。也许它需要倒着检查看你有没有在哪里用=创建过这个变量，或者检查它是不是一个函数参数，或者看它是不是一个全局变量。不管哪种方式，它得先找到mystuff这个变量才行。
 
-学习中遇到的问题
+一旦它找到了mystuff，就轮到处理句点(.)这个操作符，而且开始查看mystuff内部的一些变量了。由于mystuff是一个列表，Python知道mystuff支持一些函数。
 
-附加练习
+接下来轮到处理append。Python会将append和mystuff支持的所有函数的名称一一对比，如果确实有一个叫append的函数，那么Python就会去使用这个函数。
 
+接下来Python看到了括号(并意识到：“奥，原来这应该是一个函数。”到了这里，它就正常调用这个函数了，不过这里的函数还要多一个参数才行。
 
-原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
-
-
-遇到的问题
-利用Python做四则运算非常简单，但是除法运算略有一些复杂
-
-例如：
-print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
+这个额外的参数其实就是mystuff。很奇怪是不是？不过这就是Python的工作原理，所以请记住这一点，就当它是正常的好了。真正发生的事情其实是appeng(mystuff,&#39;hello&#39;)，不过写法是mystuff.append(&#39;hello&#39;)。
 
 
-
-为了解决以上除法运算时出现的问题，我们需要理解浮点数
-
-2.0print# 输出结果是2.75
+源代码ten_things=&quot;apples oranges crows telephone light sugar&quot;printstuff=ten_things.split(&#x27; &#x27;more_stuff=[&quot;day&quot;while	next_one=more_stuff.pop()	print	stuff.append(next_one)	print	printprintprintprintprintprintprint
 
 
+应该看到的结果
+本节需要学习的知识
+把每一个被调用的函数翻译成Python实际执行的动作
 
-可以使用小括号强制计算的先后顺序
+‘ ’.join(things)其实就是join(&#39; &#39;,things)。
+‘ ’.join(things)可以翻译成“用‘ ’连接things”，而join(&#39; &#39;,things)意思是“为‘ ’和things调用join函数”。
 
-布尔值也是基本数据类型
+len()函数
+
+len() 方法返回对象（字符、列表、元组等）长度或项目个数。
+语法
+len( s )
 
 
-比较运算的结果直接输出布尔值（True or False）
-print# 输出结果是False
-
-
-附加练习以下摘录自原文
-
-每一行的代码用#写注释，说明一些这一行的作用
-
-使用浮点数重新写一下ex3.py
+示例
+&gt;&gt;&gt;str = &quot;runoob&quot;&gt;&gt;&gt; 6&gt;&gt;&gt; &gt;&gt;&gt; 5
 
 
 
+stuff[3:5]的作用
+
+它会从stuff列表的第3个元素开始取值，知道第5个元素，注意这里并不包含第5个元素。
+
+
+
+这是**《笨方法学Python》**的第二十篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test23-学习面向对象术语</title>
+    <url>/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节学习面向对象术语
+[TOC]
+单词练习
+类（class）：告诉python创建新类型的东西
+
+对象（object）：两个意思，即最基本的东西，或者某个东西的实例
+
+实例（instance）：让python创建一个时得到的东西
+
+def：创建函数
+
+self：在类的函数中，self指代被访问的对象或者实例的一个变量
+
+继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似
+
+组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系
+
+属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量
+
+是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）
+
+有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）
+
+
+语汇练习
+class X(Y)：创建一个叫X的类，它是Y的一种
+
+class X(object):def_init_(self,J)：类X有一个_init_接收self和J作为参数
+
+class X(object):def M(self,J)：类X有一个函数名称为M，它接收self和J作为参数
+
+foo=X():将foo设为类X的一个实例
+
+foo.M(J):从foo中找到M函数，并使用self和J参数调用它
+
+foo.K=Q：从foo中获取K属性，并将其设为Q
+
+
+每一条中，你看到X、Y、M、J、K、Q及foo的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样
+
+创建一个叫???的类，它是Y的一种
+
+类???有一个_init_，能接收self和???作为参数
+
+类???有一个函数名称为???，可以接收self和???作为参数
+
+将foo设为class ???的一个实例
+
+从foo中找到???函数，并使用self和???参数调用它
+
+从foo中获取???属性，并将其设为???
+
+
+源代码# ex41.pyimportfromimportWORD_URL=&quot;http://learncodethehardway.org/words.txt&quot;WORDS=[]PHRASES=&#123;    &quot;class %%%(%%%):&quot;     &quot;Make a class named %%% that is-a %%%.&quot;    &quot;class %%%(object):\n\tdef _init_(self,***)&quot;     &quot;class %%% has-a _init_ that takes self and *** parameters.&quot;    &quot;class %%%(object):\n\tdef ***(self, @@@)&quot;     &quot;class %%% has-a function named *** that takes self and @@@ parameters.&quot;    &quot;***=%%%()&quot;     &quot;Set *** to an instance of class %%%.&quot;    &quot;***.***(@@@)&quot;     &quot;From *** get the *** function, and call it with parameters self,@@@.&quot;    &quot;***.***=&#x27;***&#x27;&quot;     &quot;From *** get the *** attribute and set it to &#x27;***&#x27;.&quot;    &#125;    # do they want to drill phrases firstPHRASES_FIRST=Falseif    PHRASES_FIRST=True# load up the words from the websitefor    WORDS.append(word.strip())    def    class_names=[w.capitalize() for                random.sample(WORDS,snippet.count(&quot;%%%&quot;    other_names=random.sample(WORDS,snippet.count(&quot;***&quot;    results=[]    param_names=[]        for        param_count=random.randint(1        param_names.append(&#x27;,&#x27;            for        result=sentence[:]                # fake class names        for            result=result.replace(&quot;%%%&quot;        # fake other names        for            result=result.replace(&quot;***&quot;        # fake parameter lists        for            result=result.replace(&quot;@@@&quot;                results.append(result)    return    # keep going until they hit CTRL-Dtry    while        snippets=PHRASES.keys()        random.shuffle(snippets)                for            phrase=PHRASES[snippet]            question,answer=convert(snippet,phrase)            if                question,answer=answer,question                            print                        raw_input(&quot;&gt; &quot;            printexcept    print
+
+
+应该看到的结果
+代码解释
+
+目前能力不够，不能完全解释和理解每一段代码的作用
+
+
+下面仅介绍部分需要注意的知识
+
+Python异常处理
+
+最后一段用try/except语句来检测异常
+语法：
+try&lt;语句&gt;        #运行别的代码except&lt;语句&gt;        #如果在try部份引发了&#x27;name&#x27;异常except&lt;语句&gt;        #如果引发了&#x27;name&#x27;异常，获得附加的数据else&lt;语句&gt;        #如果没有异常发生
+
+
+try的工作原理是，当开始一个try语句后，python就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，try子句先执行，接下来会发生什么依赖于执行时是否出现异常。
+
+如果当try后的语句执行时发生异常，python就跳回到try并执行第一个匹配该异常的except子句，异常处理完毕，控制流就通过整个try语句（除非在处理异常时又引发新的异常）。
+
+如果在try后的语句里发生了异常，却没有匹配的except子句，异常将被递交到上层的try，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。
+
+如果在try子句执行时没有发生异常，python将执行else语句后的语句（如果有else的话），然后控制流通过整个try语句。
+
+
+更多关于Python异常处理的资料
+
+
+
+这是**《笨方法学Python》**的第二十三篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+
+
+后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -1692,183 +1822,6 @@ import
       </tags>
   </entry>
   <entry>
-    <title>Test23-学习面向对象术语</title>
-    <url>/2019/03/16/Test23-%E5%AD%A6%E4%B9%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%9C%AF%E8%AF%AD/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节学习面向对象术语
-[TOC]
-单词练习
-类（class）：告诉python创建新类型的东西
-
-对象（object）：两个意思，即最基本的东西，或者某个东西的实例
-
-实例（instance）：让python创建一个时得到的东西
-
-def：创建函数
-
-self：在类的函数中，self指代被访问的对象或者实例的一个变量
-
-继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似
-
-组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系
-
-属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量
-
-是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）
-
-有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）
-
-
-语汇练习
-class X(Y)：创建一个叫X的类，它是Y的一种
-
-class X(object):def_init_(self,J)：类X有一个_init_接收self和J作为参数
-
-class X(object):def M(self,J)：类X有一个函数名称为M，它接收self和J作为参数
-
-foo=X():将foo设为类X的一个实例
-
-foo.M(J):从foo中找到M函数，并使用self和J参数调用它
-
-foo.K=Q：从foo中获取K属性，并将其设为Q
-
-
-每一条中，你看到X、Y、M、J、K、Q及foo的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样
-
-创建一个叫???的类，它是Y的一种
-
-类???有一个_init_，能接收self和???作为参数
-
-类???有一个函数名称为???，可以接收self和???作为参数
-
-将foo设为class ???的一个实例
-
-从foo中找到???函数，并使用self和???参数调用它
-
-从foo中获取???属性，并将其设为???
-
-
-源代码# ex41.pyimportfromimportWORD_URL=&quot;http://learncodethehardway.org/words.txt&quot;WORDS=[]PHRASES=&#123;    &quot;class %%%(%%%):&quot;     &quot;Make a class named %%% that is-a %%%.&quot;    &quot;class %%%(object):\n\tdef _init_(self,***)&quot;     &quot;class %%% has-a _init_ that takes self and *** parameters.&quot;    &quot;class %%%(object):\n\tdef ***(self, @@@)&quot;     &quot;class %%% has-a function named *** that takes self and @@@ parameters.&quot;    &quot;***=%%%()&quot;     &quot;Set *** to an instance of class %%%.&quot;    &quot;***.***(@@@)&quot;     &quot;From *** get the *** function, and call it with parameters self,@@@.&quot;    &quot;***.***=&#x27;***&#x27;&quot;     &quot;From *** get the *** attribute and set it to &#x27;***&#x27;.&quot;    &#125;    # do they want to drill phrases firstPHRASES_FIRST=Falseif    PHRASES_FIRST=True# load up the words from the websitefor    WORDS.append(word.strip())    def    class_names=[w.capitalize() for                random.sample(WORDS,snippet.count(&quot;%%%&quot;    other_names=random.sample(WORDS,snippet.count(&quot;***&quot;    results=[]    param_names=[]        for        param_count=random.randint(1        param_names.append(&#x27;,&#x27;            for        result=sentence[:]                # fake class names        for            result=result.replace(&quot;%%%&quot;        # fake other names        for            result=result.replace(&quot;***&quot;        # fake parameter lists        for            result=result.replace(&quot;@@@&quot;                results.append(result)    return    # keep going until they hit CTRL-Dtry    while        snippets=PHRASES.keys()        random.shuffle(snippets)                for            phrase=PHRASES[snippet]            question,answer=convert(snippet,phrase)            if                question,answer=answer,question                            print                        raw_input(&quot;&gt; &quot;            printexcept    print
-
-
-应该看到的结果
-代码解释
-
-目前能力不够，不能完全解释和理解每一段代码的作用
-
-
-下面仅介绍部分需要注意的知识
-
-Python异常处理
-
-最后一段用try/except语句来检测异常
-语法：
-try&lt;语句&gt;        #运行别的代码except&lt;语句&gt;        #如果在try部份引发了&#x27;name&#x27;异常except&lt;语句&gt;        #如果引发了&#x27;name&#x27;异常，获得附加的数据else&lt;语句&gt;        #如果没有异常发生
-
-
-try的工作原理是，当开始一个try语句后，python就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，try子句先执行，接下来会发生什么依赖于执行时是否出现异常。
-
-如果当try后的语句执行时发生异常，python就跳回到try并执行第一个匹配该异常的except子句，异常处理完毕，控制流就通过整个try语句（除非在处理异常时又引发新的异常）。
-
-如果在try后的语句里发生了异常，却没有匹配的except子句，异常将被递交到上层的try，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。
-
-如果在try子句执行时没有发生异常，python将执行else语句后的语句（如果有else的话），然后控制流通过整个try语句。
-
-
-更多关于Python异常处理的资料
-
-
-
-这是**《笨方法学Python》**的第二十三篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-
-
-后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test6_参数、变量</title>
-    <url>/2019/02/03/Test6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-问题的解决方法
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版&amp;# ex13.pyfromscript, first, second, third=argvprintprintprintprint# ex14.pyfromscript, user_name =argvprompt=&#x27;&gt; &#x27;printprintprintlikes=raw_input(prompt)printlives=raw_input(&#x27;&gt; &#x27;printcomputer=raw_input(prompt)printAlright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!&quot;&quot;&quot;
-
-
-应该看到的结果
-原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行）
-不清楚为什么不建议使用IDLE
-
-&gt; python ex13.py 1The script isYour first variable isYour second variable isYour third variable is
-
-
-&gt; python ex14.py darerHi darer, I&#x27;m the ex14.py script.I&#x27;d like to ask you a few questions.Do&gt; yesWhere&gt; chinaWhat kind of&gt; lenovoAlright, so you said &#x27;yes&#x27; about liking me.You live inAnd
-
-
-需要注意的几个地方
-怎么在当前文件夹运行Powershell
-
-利用命令行指令 cd
-
-在当前文件夹 shift+鼠标右键  选择“打开powershell”
-
-注意ex14.py中，raw_input()的用法
-
-为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ ‘）呢？因为%r是调试专用，它输出的是“原始表示”出来的字符而%s是为了给用户显示
-
-
-附加练习以下摘录自原文
-
-是否可以用双引号定义prompt变量的值？
-
-argv和raw_input()有什么不同？如果参数是在用户执行命令时就要输入的，那就是argv如果是在脚本运行过程中需要用户输入，那就使用raw_input()
-
-argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。
-
-脚本中出现import语句，非常重要，它用于导入模块（module）
-
-
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Test5_更多字符串练习</title>
     <url>/2019/02/03/Test5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[
@@ -1892,11 +1845,12 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 
 
 需要注意的几个地方
-python中 \t 的效果，类似于在word写作中，tab键起到的作用；\n 的效果，类似于在word写作中，enter 键起到的作用；
+python中 \t 的效果，类似于在word写作中，tab键起到的作用；
+\n 的效果，类似于在word写作中，enter 键起到的作用；
 
 在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。
 
-python 中可以在一组三引号（”””）之间放入任意多行的文字。
+python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。
 
 
 附加练习以下摘录自原文
@@ -1963,8 +1917,78 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 
 单等号和双等号有什么不同？
 
-如何将浮点数四舍五入？使用ｒｏｕｎｄ（）函数
+如何将浮点数四舍五入？
+使用ｒｏｕｎｄ（）函数
 
+
+
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test6_参数、变量</title>
+    <url>/2019/02/03/Test6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版&amp;# ex13.pyfromscript, first, second, third=argvprintprintprintprint# ex14.pyfromscript, user_name =argvprompt=&#x27;&gt; &#x27;printprintprintlikes=raw_input(prompt)printlives=raw_input(&#x27;&gt; &#x27;printcomputer=raw_input(prompt)printAlright, so you said %r about liking me.You live in %r. Not sure where that is.And you have a %r computer. Nice!&quot;&quot;&quot;
+
+
+应该看到的结果
+原文作者不建议使用python的IDLE运行程序，推荐使用windows下的Powershell（命令行）
+不清楚为什么不建议使用IDLE
+
+&gt; python ex13.py 1The script isYour first variable isYour second variable isYour third variable is
+
+
+&gt; python ex14.py darerHi darer, I&#x27;m the ex14.py script.I&#x27;d like to ask you a few questions.Do&gt; yesWhere&gt; chinaWhat kind of&gt; lenovoAlright, so you said &#x27;yes&#x27; about liking me.You live inAnd
+
+
+需要注意的几个地方
+怎么在当前文件夹运行Powershell
+
+利用命令行指令 cd
+
+在当前文件夹 shift+鼠标右键  选择“打开powershell&quot;
+
+注意ex14.py中，raw_input()的用法
+
+为什么ex14.py 中，键入的字符没有单引号，但是输出的结果中却有单引号（’ &#39;）呢？
+因为%r是调试专用，它输出的是“原始表示”出来的字符
+而%s是为了给用户显示
+
+
+附加练习以下摘录自原文
+
+是否可以用双引号定义prompt变量的值？
+
+argv和raw_input()有什么不同？
+如果参数是在用户执行命令时就要输入的，那就是argv
+如果是在脚本运行过程中需要用户输入，那就使用raw_input()
+
+argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。
+
+脚本中出现import语句，非常重要，它用于导入模块（module）
 
 
 ]]></content>
@@ -2000,11 +2024,13 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 
 
 遇到的问题
-ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
+ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号
+python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
 
 True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。
 
-%r的作用%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
+%r的作用
+%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
 
 
 附加练习以下摘录自原文
@@ -2012,6 +2038,50 @@ True和False是Pyhthon的关键字，用来表示真和假的概念。如果加�
 每一行加一段注释
 
 最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？
+
+
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test7-读取文件和读写文件</title>
+    <url>/2019/02/21/Test7-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+ex15 涉及两个文件：一个是ex15.py文件，一个是ex15_sample.txt文件。该文本文件的内容如下：
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots and lots of fun to have in here.
+ex15.py 的作用就是用自己设计的脚本“打开”txt文件。
+文章主要分为以下部分：
+[TOC]
+原文—摘录至《笨方法学Python》第三版&amp;# ex15.pyfromscript,filename=argvtxt=open(filename)printprintprintfile_again=raw_input(&#x27;&gt; &#x27;txt_again=open(file_again)print# ex16.pyfromscript,filename=argvprintprintprintraw_input(&quot;?&quot;printtarget=open(filename,&#x27;w&#x27;printtarget.truncate()printline1=raw_input(&quot;line 1: &quot;line2=raw_input(&quot;line 2: &quot;line3=raw_input(&quot;line 3: &quot;printtarget.write(line1)target.write(&quot;\n&quot;target.write(line2)target.write(&quot;\n&quot;target.write(line3)target.write(&quot;\n&quot;printtarget.close()
+
+
+应该看到的结果
+推荐使用windows下的Powershell（命令行）
+
+&gt; python ex15.py ex15_sample.txtThis isIt isLots andType the filename again:&gt; ex15_sample.txtThis isIt isLots and
+
+
+&gt; python ex16.py test.txtWe&#x27;reIfIf?Opening the fileTruncating the fileNow I&#x27;mI&#x27;mline1: Hello worldline2: Hello Pythonline3: let&#x27;sI&#x27;mAnd
+
+
+附加练习以下摘录自原文
+
+每一行都写一下注释
+
+利用pydoc 功能查一下read()命令、write()命令、close()命令等
 
 
 ]]></content>
@@ -2067,9 +2137,11 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 接下来的例子是print_one，它演示了函数如何接收单个参数
 最后一个例子是print_none，它演示了函数可以不接收任何参数
 常见问题
-函数命名有什么规则？和变量名一样，只要以字母、数字和下划线组成，而且不是数字开始，就可以了
+函数命名有什么规则？
+和变量名一样，只要以字母、数字和下划线组成，而且不是数字开始，就可以了
 
-*args里的*是什么意思？它的功能是告诉Python把函数的所有参数都接收进来，然后放到名叫args的列表中去。和前面在用的argv差不多，只不过前者用在函数上。
+*args里的*是什么意思？
+它的功能是告诉Python把函数的所有参数都接收进来，然后放到名叫args的列表中去。和前面在用的argv差不多，只不过前者用在函数上。
 
 
 
@@ -2083,50 +2155,6 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 
 希望你也可以坚持下去
 ​
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test7-读取文件和读写文件</title>
-    <url>/2019/02/21/Test7-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-ex15 涉及两个文件：一个是ex15.py文件，一个是ex15_sample.txt文件。该文本文件的内容如下：
-This is stuff I typed into a file.
-It is really cool stuff.
-Lots and lots of fun to have in here.
-ex15.py 的作用就是用自己设计的脚本“打开”txt文件。
-文章主要分为以下部分：
-[TOC]
-原文—摘录至《笨方法学Python》第三版&amp;# ex15.pyfromscript,filename=argvtxt=open(filename)printprintprintfile_again=raw_input(&#x27;&gt; &#x27;txt_again=open(file_again)print# ex16.pyfromscript,filename=argvprintprintprintraw_input(&quot;?&quot;printtarget=open(filename,&#x27;w&#x27;printtarget.truncate()printline1=raw_input(&quot;line 1: &quot;line2=raw_input(&quot;line 2: &quot;line3=raw_input(&quot;line 3: &quot;printtarget.write(line1)target.write(&quot;\n&quot;target.write(line2)target.write(&quot;\n&quot;target.write(line3)target.write(&quot;\n&quot;printtarget.close()
-
-
-应该看到的结果
-推荐使用windows下的Powershell（命令行）
-
-&gt; python ex15.py ex15_sample.txtThis isIt isLots andType the filename again:&gt; ex15_sample.txtThis isIt isLots and
-
-
-&gt; python ex16.py test.txtWe&#x27;reIfIf?Opening the fileTruncating the fileNow I&#x27;mI&#x27;mline1: Hello worldline2: Hello Pythonline3: let&#x27;sI&#x27;mAnd
-
-
-附加练习以下摘录自原文
-
-每一行都写一下注释
-
-利用pydoc 功能查一下read()命令、write()命令、close()命令等
-
-
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -2156,7 +2184,9 @@ hexo-qiniu-sync安装教程，可以参考这个博客
 
 把图片放在**&gt;cdn&gt;images文件夹下**
 
-在博客编辑器(我用的是Typora)，插入这个图片，需要一个这样的指令&#96;&#96;这是在生成站点时，就会被同步上传到图床，并在博客网站上引用这个图片但是这里有一个问题：Typora插入一个这样的指令，并不能同时预览这张图片
+在博客编辑器(我用的是Typora)，插入这个图片，需要一个这样的指令&#96;&#96;
+这是在生成站点时，就会被同步上传到图床，并在博客网站上引用这个图片
+但是这里有一个问题：Typora插入一个这样的指令，并不能同时预览这张图片
 
 为了介绍空间，把放置在&gt;cdn&gt;images文件夹下的图片删除
 
@@ -2164,9 +2194,11 @@ hexo-qiniu-sync安装教程，可以参考这个博客
 
 以上方法存在两个不满意的地方：
 
-图片还是先放在Github的本地仓库中，为了节省空间，需要定期删除(如果我可以从本地的任意位置导入图片，并自动上传图床就太棒了)
+图片还是先放在Github的本地仓库中，为了节省空间，需要定期删除
+(如果我可以从本地的任意位置导入图片，并自动上传图床就太棒了)
 
-在Typora中插入指令&#96;&#96;不能在预览到图片(如果可以直接在Typora中预览到插入图片的效果，就太棒了)
+在Typora中插入指令&#96;&#96;不能在预览到图片
+(如果可以直接在Typora中预览到插入图片的效果，就太棒了)
 
 
 
@@ -2187,7 +2219,8 @@ hexo-admin插件使用教程，可以参考这篇博客
 
 
 
-可以实现将本地任意文件夹的图片上传到图床解决第一种方法的第一个问题
+可以实现将本地任意文件夹的图片上传到图床
+解决第一种方法的第一个问题
 
 
 但是我还是不满意，因为我已经用习惯了编辑器-Typora，就想用Typora编写自己博客，那这时hexo-admin就帮不了你了，怎么办呢？
@@ -2219,6 +2252,41 @@ hexo-admin插件使用教程，可以参考这篇博客
       <tags>
         <tag>Hexo</tag>
         <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>上瘾：让用户养成使用习惯的四大产品逻辑|产品书单|第二期</title>
+    <url>/2019/03/20/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E4%B8%8A%E7%98%BE%E3%80%8B%EF%BC%9A%E8%AE%A9%E7%94%A8%E6%88%B7%E5%85%BB%E6%88%90%E4%BD%BF%E7%94%A8%E4%B9%A0%E6%83%AF%E7%9A%84%E5%9B%9B%E5%A4%A7%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</url>
+    <content><![CDATA[《上瘾》：让用户养成使用习惯的四大产品逻辑
+
+每一位产品人都应该多看书，读好书
+
+只有这样才能不断进步
+
+
+形成自己的方法论
+
+本期推荐的书是《上瘾》：让用户养成使用习惯的四大产品逻辑
+本书专为产品经理、设计师、市场销售人员、广告创意者打造，每一位跟用户行为打交道的人，都值得将其奉为案头必备指南。
+
+《上瘾》author:[美]尼尔·埃亚尔 / [美] 瑞安·胡佛
+
+内容简介——为什么我们会习惯性地点开某个App？
+——这种使用习惯到底是如何养成的？
+——为什么有些产品能让我们戒不掉，而其他的产品却不行？
+——是否有什么秘诀能让用户对你的产品形成使用习惯，欲罢不能？
+《上瘾》揭示了很多让用户形成使用习惯，甚至“上瘾”的互联网产品服务背后的基本设计原理，告诉你怎样打造一款让用户欲罢不能的产品。作者根据自己多年的研究、咨询及实际经验，提出了新颖而实用的“上瘾模型”（Hook Model），即通过四个方面来养成用户的使用习惯。通过连续的“上瘾循环”，让用户成为“回头客”，进而实现循环消费的终极目标，而不是依赖高昂的广告投入或泛滥粗暴的信息传播。
+作者介绍尼尔·埃亚尔（Nir Eyal），曾在斯坦福大学商学院与Hasso Plattner研究所任教，并有多篇技术、心理学及商业文章在《哈佛商业评论》《大西洋月刊》、TechCrunch网站和《今日心理学》等媒体上发表。
+瑞安·胡佛（Ryan Hoover），曾任撰稿人，长期为《福布斯》《快公司》等媒体撰稿，Product Hunt公司创始人。
+目录
+下载地址关注微信公众号：产品汪darer，后台回复关键词：上瘾，即可下载
+如果想要目录的思维导图，后台留言：上瘾，我全都要
+]]></content>
+      <categories>
+        <category>产品书单</category>
+      </categories>
+      <tags>
+        <tag>产品书单</tag>
       </tags>
   </entry>
   <entry>
@@ -2266,41 +2334,6 @@ hexo-admin插件使用教程，可以参考这篇博客
 作者介绍克里斯·安德森，自2001年起担任美国《连线》杂志总编辑。他被誉为“信息时代的精神领袖”。在其领导下，数字世界的“号角”——《连线》杂志获奖无数。他有关互联网经济的演讲赢得了广泛称赞。他还是一位才华横溢的记者，他的作品《长尾理论》开创了一个新的商业模式，同时，该书也成为全球畅销书。
 目录
 下载地址关注微信公众号：产品汪darer，后台回复关键词：免费，即可下载
-]]></content>
-      <categories>
-        <category>产品书单</category>
-      </categories>
-      <tags>
-        <tag>产品书单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>上瘾：让用户养成使用习惯的四大产品逻辑|产品书单|第二期</title>
-    <url>/2019/03/20/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E4%B8%8A%E7%98%BE%E3%80%8B%EF%BC%9A%E8%AE%A9%E7%94%A8%E6%88%B7%E5%85%BB%E6%88%90%E4%BD%BF%E7%94%A8%E4%B9%A0%E6%83%AF%E7%9A%84%E5%9B%9B%E5%A4%A7%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</url>
-    <content><![CDATA[《上瘾》：让用户养成使用习惯的四大产品逻辑
-
-每一位产品人都应该多看书，读好书
-
-只有这样才能不断进步
-
-
-形成自己的方法论
-
-本期推荐的书是《上瘾》：让用户养成使用习惯的四大产品逻辑
-本书专为产品经理、设计师、市场销售人员、广告创意者打造，每一位跟用户行为打交道的人，都值得将其奉为案头必备指南。
-
-《上瘾》author:[美]尼尔·埃亚尔 / [美] 瑞安·胡佛
-
-内容简介——为什么我们会习惯性地点开某个App？
-——这种使用习惯到底是如何养成的？
-——为什么有些产品能让我们戒不掉，而其他的产品却不行？
-——是否有什么秘诀能让用户对你的产品形成使用习惯，欲罢不能？
-《上瘾》揭示了很多让用户形成使用习惯，甚至“上瘾”的互联网产品服务背后的基本设计原理，告诉你怎样打造一款让用户欲罢不能的产品。作者根据自己多年的研究、咨询及实际经验，提出了新颖而实用的“上瘾模型”（Hook Model），即通过四个方面来养成用户的使用习惯。通过连续的“上瘾循环”，让用户成为“回头客”，进而实现循环消费的终极目标，而不是依赖高昂的广告投入或泛滥粗暴的信息传播。
-作者介绍尼尔·埃亚尔（Nir Eyal），曾在斯坦福大学商学院与Hasso Plattner研究所任教，并有多篇技术、心理学及商业文章在《哈佛商业评论》《大西洋月刊》、TechCrunch网站和《今日心理学》等媒体上发表。
-瑞安·胡佛（Ryan Hoover），曾任撰稿人，长期为《福布斯》《快公司》等媒体撰稿，Product Hunt公司创始人。
-目录
-下载地址关注微信公众号：产品汪darer，后台回复关键词：上瘾，即可下载
-如果想要目录的思维导图，后台留言：上瘾，我全都要
 ]]></content>
       <categories>
         <category>产品书单</category>
@@ -2622,30 +2655,6 @@ IP从泛娱乐形态快速渗透新商业生态全维度，正深化为不同行
       </tags>
   </entry>
   <entry>
-    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
-    <url>/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/</url>
-    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
-写在前面
-举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
-长尾市场也称之为“利基市场”。 “利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
-通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
-《长尾理论》
-内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
-这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
-传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
-作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
-目录
-下载地址这是亚马逊购书链接
-关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
-]]></content>
-      <categories>
-        <category>产品书单</category>
-      </categories>
-      <tags>
-        <tag>产品书单</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《运营之光》：据说每一位运营喵都看过|产品书单|第二期</title>
     <url>/2019/03/13/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%BF%90%E8%90%A5%E4%B9%8B%E5%85%89%E3%80%8B%EF%BC%9A%E6%8D%AE%E8%AF%B4%E6%AF%8F%E4%B8%80%E4%BD%8D%E8%BF%90%E8%90%A5%E5%96%B5%E9%83%BD%E7%9C%8B%E8%BF%87-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</url>
     <content><![CDATA[
@@ -2785,13 +2794,37 @@ from# 示例# 要导入模块 fib 的 fibonacci 函数from
       </tags>
   </entry>
   <entry>
+    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
+    <url>/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/</url>
+    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
+写在前面
+举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
+长尾市场也称之为“利基市场”。 &quot;利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
+通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
+《长尾理论》
+内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
+这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
+传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
+作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
+目录
+下载地址这是亚马逊购书链接
+关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
+]]></content>
+      <categories>
+        <category>产品书单</category>
+      </categories>
+      <tags>
+        <tag>产品书单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微信PC端多开的方法</title>
     <url>/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[微信电脑版多开的方法现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？
 经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法
 以下内容来自网络，经验证，可以安全简单的使用
 bat文件多开
-第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是”D:Program Files (x86)TencentWeChatWeChat.exe”，注意，双引号要一块儿复制上。
+第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。
 
 第二步，新建一个文本文档，命名“微信多开”在文档中键入：
 @echo offstart &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;exit
@@ -2813,6 +2846,56 @@ bat文件多开
       </tags>
   </entry>
   <entry>
+    <title>思考：为什么全网都在“养龙虾”？</title>
+    <url>/2026/03/28/%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E7%BD%91%E9%83%BD%E5%9C%A8%E2%80%9C%E5%85%BB%E9%BE%99%E8%99%BE%E2%80%9D%EF%BC%9F/</url>
+    <content><![CDATA[2026开年首爆：为什么全网都在“养龙虾”？——OpenClaw爆火的思考2026年初，OpenClaw（俗称“龙虾”）以垂直攀升的姿态统治了 GitHub 和朋友圈。这只“龙虾”凭什么让程序猿的专属工具成了打工人的外挂？
+
+一、 技术平权：当 AI 从“嘴炮”长出了“手脚”过去我们用 AI，是**“对话式”**的。你求它写个文档，它给你一堆文字，你还得自己复制粘贴。
+而“龙虾”的爆火，本质上是 程序员常用ClaudeCode 的技术下放。；让每个人都可以轻松使用ClaudeCode的技术，使得大模型不再是一个只会聊天的机器人，而是一个能操作本地电脑的智能体（Agent）：
+
+不仅会说，更会干： 它能接管你的鼠标键盘，在 Excel、邮件、浏览器之间横跳。
+成本塌陷： 2026 年推理成本的断崖式下降，让“24 小时挂机干活”从奢侈品变成了可行的日常标配。
+心跳机制（Heartbeat）： 这是龙虾的灵魂。它不再是“拨一拨动一动”，而是具备了自动续命、定时巡视的主动性。你睡觉时，它的“心跳”在跳动，活儿就在推进。
+
+
+二、 心理透视：谁还没个想当“邪恶包工头”的梦？一个有趣的词：“邪恶包工头”心理。
+为什么企业家和白领会集体 FOMO（错失恐惧）？
+
+权力的赛博化： 现实中管理员工很累，但管理“龙虾”很爽。它绝对服从、不领薪水、没有情绪。这种通过手机随时随地“派活儿、查岗”的掌控感，极大满足了人性中对补偿性控制的渴望。
+效率降维打击： 当你发现隔壁工位的同事用“龙虾小队”5 分钟搞定了你一天的报销和周报，那种焦虑感比任何职场 PUA 都管用。
+
+
+三、 传播学视角：一场关于“龙虾”的狂欢从学术角度看，龙虾的火爆是一场精准的社会心理共振：
+
+形象化传播： “龙虾”这个绰号比“开源智能体架构”更具传播力。它降低了大众的认知门槛，让技术工具带上了“养成系”的色彩。
+数字主权的回归： 不同于大厂的云端黑盒，OpenClaw 的本地化部署给了一向谨慎的企业家一种“我的数据我做主”的心理安全感。
+
+
+四、 深度拷问：职场空心化，还是精英进化？当“养龙虾”成为职场主流，一个细思极恐的问题出现了：大家都在监工，谁在干实事？
+我们正面临一个潜在的**“空心化”危机**：
+
+技能退化： 习惯了让龙虾“一键代劳”的新人，是否会失去对底层业务逻辑的“手感”？
+职业断层： 那些初级、繁琐的岗位消失后，未来是否还有足够的土壤长出高级架构师？
+
+但硬币的另一面，是**“Agent 架构思维”精英**的崛起。未来的顶级白领，核心竞争力将不再是“亲自上手”，而是：
+
+拆解力： 把混沌的需求拆成龙虾能懂的子任务。
+纠错力： 在龙虾逻辑跑偏的瞬间，精准揪出那 20% 的幻觉。
+集成力： 编织一套海、陆、空协同的自动化工作流。
+
+
+五、 结语：控制还是被控制？龙虾的爆火，标志着我们正式从“AI 辅助时代”跨入了“AI 代理时代”。
+我们既享受着当“包工头”的爽感，也承担着被技术掏空的风险。正如一位资深“养虾人”所说：“如果你不知道龙虾是怎么帮你把活儿干完的，那么总有一天，你会发现自己也被某种算法‘自动化’掉了。”
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>Claude Code</tag>
+        <tag>Open claw</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论</title>
     <url>/2019/03/06/%E6%96%B9%E6%B3%95%E8%AE%BA-%E3%80%8A%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA%E3%80%8B%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E5%B0%B1%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E7%A6%BB%E4%B8%8D%E5%BC%80%E4%BD%A0-1st/</url>
     <content><![CDATA[大家好，我是Darer
@@ -2823,24 +2906,31 @@ bat文件多开
 
 互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。
 
-互联网在给予消费者更多知情权和选择权的同时也在减少消费者的知情权
+互联网在给予消费者更多知情权和选择权的同时
+也在减少消费者的知情权
 
 
-什么是商业模式？其实，商业模式不是赚钱模式。它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模式，也就是怎么去赚钱。一句话，商业模式就是你能提供什么样的产品，给什么样的用户创造什么样的价值，在创造用户价值的过程中，用什么样的方法获得商业价值。
+什么是商业模式？其实，商业模式不是赚钱模式。
+它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模式，也就是怎么去赚钱。一句话，商业模式就是你能提供什么样的产品，给什么样的用户创造什么样的价值，在创造用户价值的过程中，用什么样的方法获得商业价值。
 
 我的理解是商业模式不能只是做一锤子买卖，而是要从头到尾做一个赚钱的产线，源源不断。
 
 
 判断是不是真正的推广，最简单的标准是把推广资源一撤，不再砸钱，看产品的用户量是不是往下掉。如果用户量一下子掉下来了，说明产品肯定存在问题。这个时候如果不对产品进行调整，你和团队将面临非常大的挑战。真正的推广是对产品的不断完善和提升。在推广的过程中，你要研究市场，跟目标用户打交道，了解用户真正的需求，了解用户使用产品时遇到的困惑和问题，再反馈到产品上进行改进，由此不断调整和完善。这样，即使推广没有取得理想的结果，但是通过推广，你发现了产品的问题，了解到真正的用户需求，发现了新的用户群，这些收获也远比单纯的产品安装量要有价值得多。
 
-看到一篇介绍趣头条的文章，2018年第四季度的营收虽然在增加，但是亏损仍在扩大，已接近4亿。趣头条的一个营销套路就是为了吸引用户，对用户进行金钱补贴这是在来品品这句话，还是挺有意思的但是国内的环境是遍地撒钱，有时候，你不想上这个船，也没办法
+看到一篇介绍趣头条的文章，2018年第四季度的营收虽然在增加，但是亏损仍在扩大，已接近4亿。
+趣头条的一个营销套路就是为了吸引用户，对用户进行金钱补贴
+这是在来品品这句话，还是挺有意思的
+但是国内的环境是遍地撒钱，有时候，你不想上这个船，也没办法
 
 
 商业的本质就是让人性得到释放，颠覆式创新也不例外，归根结底就是怎样满足人性。
 
 反思是360的文化，反思不是一件负面的事情，并不是做错事情了才需要反思。每个人每天都需要反思，经验是过去的，要敢于不断否定自己。
 
-产品人或者说每一位职业人都需要学会反思，学会复盘吧可是敢于否认自己的错误，敢于改正自己坏习惯也是挺难的
+产品人或者说每一位职业人都需要学会反思，学会复盘吧
+可是敢于否认自己的错误，敢于改正自己坏习惯
+也是挺难的
 
 
 在360，我们提倡“三个凡是”：凡是用户提的问题，一定要追根述源，找到问题的原因，从用户的角度想解决的方案；凡是负面的信息，即使是对手的枪稿，也要找到可以改进产品的启发点；凡是竞争对手的产品，都必然有学习借鉴的优点。
@@ -2855,12 +2945,17 @@ bat文件多开
 
 要找到自己的定位，找准自己的定位，然后像一把锥子一样，先在人们脑子中占据一个位置，而不是先去扩大市场份额。
 
-关于定位，有本书《定位》真的不可错过在这一点，拼多多做的真不多听到拼多多的BGM你就会想起拼多多
+关于定位，有本书《定位》真的不可错过
+在这一点，拼多多做的真不多
+听到拼多多的BGM
+你就会想起拼多多
 
 
 如果你只会生产硬件、卖硬件，一旦你的价值链被人免费，对不起，你最后只能沦为代工，挣点微薄的利润。要想生存下去，你需要建立一种新的商业模式，要创造新的价值链。所以，“硬件免费”必须要创造新的价值链来支撑，这也是传统企业转型互联网时必须要考虑的问题。
 
-这句话我不理解说不清楚，总觉得哪里不对如果你有想法，可以在评论区评论
+这句话我不理解
+说不清楚，总觉得哪里不对
+如果你有想法，可以在评论区评论
 
 
 在我看来，包括智能手机、平板电脑在内，硬件的互联网化分为以下“四化”。
@@ -2877,12 +2972,16 @@ bat文件多开
 
 
 
-太深奥，还无法理解如果你有想法，可以在评论区评论
+太深奥，还无法理解
+如果你有想法，可以在评论区评论
 
 
 超出预期的体验，不一定是给用户1万块钱，而是超出用户的期望，才能获得更高的用户满意度。
 
-雷军也提到过：为用户提供超出预期的产品小米手机一直以来的营销也在贯彻这个思路记得雷总在小米9的发布会上，印象最深的就是这个价钱能买到这些、那些还有这些
+雷军也提到过：为用户提供超出预期的产品
+小米手机一直以来的营销也在贯彻这个思路
+记得雷总在小米9的发布会上，印象最深的就是
+这个价钱能买到这些、那些还有这些
 
 
 先创造用户价值，然后再产生商业价值
@@ -2899,12 +2998,16 @@ bat文件多开
 
 关于产品，我提两个数字概念。第一，产品刚出来的时候最不重要，哪怕第一天有1 000个用户，第二天有2 000个用户，第三天有3 000个用户，第四天有5 000个用户，这就是一条健康的曲线。但是如果我们花了很多钱做推广，结果第一天有1万个用户，第二天还是1万个用户，接着第三天8 000，第四天5 000。大家会更加喜欢哪条曲线？肯定是第一条增长曲线。所以，做产品不要在乎绝对数，而是要关注相对的增长趋势。 第二个数字，就是产品有很多环节，如果满分是1分，但每个环节我们都只做到0.8。你以为产品出来就是0.8分？错了，是0.8乘以0.8乘以0.8，总分是0.51。功能越多，数字就越小，产品失败得就越快。所以，功能更贵精，不贵多，要在每一个点上做到极致。
 
-只要在增长就说明攻略方向是对的，只要进一步提高攻略效率但是增长不断衰减，说明方向是错的，前期跑到再快，如果这时不做出反应，就很快泯然众人有句话叫啥：先胖不算胖，后胖压倒炕
+只要在增长就说明攻略方向是对的，只要进一步提高攻略效率
+但是增长不断衰减，说明方向是错的，前期跑到再快，如果这时
+不做出反应，就很快泯然众人
+有句话叫啥：先胖不算胖，后胖压倒炕
 
 
 用户使用你的产品，只关心你做的是什么东西，能解决什么问题，根本不听你背后的理念。
 
-非常对！！！说的天花乱坠，不好使，也没人用
+非常对！！！
+说的天花乱坠，不好使，也没人用
 
 
 互联网产品有几个容易被忽视的特点：
@@ -2918,7 +3021,8 @@ bat文件多开
 
 互联网产品需要不断运营、持续打磨。好产品是运营出来的，不是开发出来的。
 
-好产品需要不断迭代，需要宣传、推广好酒也怕巷子深
+好产品需要不断迭代，需要宣传、推广
+好酒也怕巷子深
 
 
 大家都说产品要做到专注和极致。在产品方向上，一定要先学会做减法，而不是做加法。要先找对一个点做到极致，否则你什么功能都做，最后都不突出，没有鲜明的卖点。
@@ -2941,12 +3045,14 @@ bat文件多开
 
 我的观点是，不论产品名称还是功能名称，最好的就是一目了然，让人一眼能看明白到底解决了什么问题，不用动脑子。
 
-产品请名字越来越难了马桶都出来了
+产品请名字越来越难了
+马桶都出来了
 
 
 强需求产品可以自我发展成强大的渠道，而弱需求产品独立做很难，必须有一个强大的渠道。
 
-互联网领域最强的需求：就是搜索、社交和网购吧移动互联网时代新增的需求：吃、行和娱乐
+互联网领域最强的需求：就是搜索、社交和网购吧
+移动互联网时代新增的需求：吃、行和娱乐
 
 
 有太多做产品的人有三个假设：第一是假设某个功能用户一定需要；第二是假设用户一定知道某个功能的存在；第三是假设用户一定会按照自己设计的方式使用。比如有一家公司找我来谈合作，说做了一个软件，功能是类似到邻居家串门，看到邻居的鞋很好看，一拍就可以在网上买了。我说不用那么麻烦，直接问他在哪儿买的不就可以了，所以这样的产品连第一关都过不了。
@@ -3046,56 +3152,6 @@ bat文件多开
       </categories>
       <tags>
         <tag>用户画像</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>思考：为什么全网都在“养龙虾”？</title>
-    <url>/2026/03/28/%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E7%BD%91%E9%83%BD%E5%9C%A8%E2%80%9C%E5%85%BB%E9%BE%99%E8%99%BE%E2%80%9D%EF%BC%9F/</url>
-    <content><![CDATA[2026开年首爆：为什么全网都在“养龙虾”？——OpenClaw爆火的思考2026年初，OpenClaw（俗称“龙虾”）以垂直攀升的姿态统治了 GitHub 和朋友圈。这只“龙虾”凭什么让程序猿的专属工具成了打工人的外挂？
-
-一、 技术平权：当 AI 从“嘴炮”长出了“手脚”过去我们用 AI，是**“对话式”**的。你求它写个文档，它给你一堆文字，你还得自己复制粘贴。
-而“龙虾”的爆火，本质上是 程序员常用ClaudeCode 的技术下放。；让每个人都可以轻松使用ClaudeCode的技术，使得大模型不再是一个只会聊天的机器人，而是一个能操作本地电脑的智能体（Agent）：
-
-不仅会说，更会干： 它能接管你的鼠标键盘，在 Excel、邮件、浏览器之间横跳。
-成本塌陷： 2026 年推理成本的断崖式下降，让“24 小时挂机干活”从奢侈品变成了可行的日常标配。
-心跳机制（Heartbeat）： 这是龙虾的灵魂。它不再是“拨一拨动一动”，而是具备了自动续命、定时巡视的主动性。你睡觉时，它的“心跳”在跳动，活儿就在推进。
-
-
-二、 心理透视：谁还没个想当“邪恶包工头”的梦？一个有趣的词：“邪恶包工头”心理。
-为什么企业家和白领会集体 FOMO（错失恐惧）？
-
-权力的赛博化： 现实中管理员工很累，但管理“龙虾”很爽。它绝对服从、不领薪水、没有情绪。这种通过手机随时随地“派活儿、查岗”的掌控感，极大满足了人性中对补偿性控制的渴望。
-效率降维打击： 当你发现隔壁工位的同事用“龙虾小队”5 分钟搞定了你一天的报销和周报，那种焦虑感比任何职场 PUA 都管用。
-
-
-三、 传播学视角：一场关于“龙虾”的狂欢从学术角度看，龙虾的火爆是一场精准的社会心理共振：
-
-形象化传播： “龙虾”这个绰号比“开源智能体架构”更具传播力。它降低了大众的认知门槛，让技术工具带上了“养成系”的色彩。
-数字主权的回归： 不同于大厂的云端黑盒，OpenClaw 的本地化部署给了一向谨慎的企业家一种“我的数据我做主”的心理安全感。
-
-
-四、 深度拷问：职场空心化，还是精英进化？当“养龙虾”成为职场主流，一个细思极恐的问题出现了：大家都在监工，谁在干实事？
-我们正面临一个潜在的**“空心化”危机**：
-
-技能退化： 习惯了让龙虾“一键代劳”的新人，是否会失去对底层业务逻辑的“手感”？
-职业断层： 那些初级、繁琐的岗位消失后，未来是否还有足够的土壤长出高级架构师？
-
-但硬币的另一面，是**“Agent 架构思维”精英**的崛起。未来的顶级白领，核心竞争力将不再是“亲自上手”，而是：
-
-拆解力： 把混沌的需求拆成龙虾能懂的子任务。
-纠错力： 在龙虾逻辑跑偏的瞬间，精准揪出那 20% 的幻觉。
-集成力： 编织一套海、陆、空协同的自动化工作流。
-
-
-五、 结语：控制还是被控制？龙虾的爆火，标志着我们正式从“AI 辅助时代”跨入了“AI 代理时代”。
-我们既享受着当“包工头”的爽感，也承担着被技术掏空的风险。正如一位资深“养虾人”所说：“如果你不知道龙虾是怎么帮你把活儿干完的，那么总有一天，你会发现自己也被某种算法‘自动化’掉了。”
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>Claude Code</tag>
-        <tag>Open claw</tag>
       </tags>
   </entry>
   <entry>
@@ -3231,9 +3287,11 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 1999年初，我在金山内部种了一块试验田，建立了一个专门的事业部，招了十多个人，做软件下载站，取名叫卓越网。很快我们做到了第一名。但接着问题出来了，做下载需要很多服务器和带宽，而当时服务器和带宽都非常贵，用户又不愿意付钱。没有任何收入，同时需要消耗大量的费用，这个业务如何支撑下去呢？软件下载业务每天着消耗的大量现金，我当时非常痛苦，内心有很多问题没有答案：互联网公司是什么样的公司？互联网公司靠什么挣钱？做什么样的互联网公司有前途？
 想了半年多时间，一直到1999年10月。有一天，我突然明白了：
 
-不存在所谓的互联网公司。互联网只是一个工具，未来每个公司都变成互联网公司。
+不存在所谓的互联网公司。
+互联网只是一个工具，未来每个公司都变成互联网公司。
 
-做电子商务最有前途。因为互联网是一个先进的生产工具，传统公司应用互联网最快的方式就是电子商务，这就是所谓的“水泥＋鼠标”。当然，电子商务也是过度性名词，因为未来所有公司都会是电子商务公司。
+做电子商务最有前途。
+因为互联网是一个先进的生产工具，传统公司应用互联网最快的方式就是电子商务，这就是所谓的“水泥＋鼠标”。当然，电子商务也是过度性名词，因为未来所有公司都会是电子商务公司。
 
 当时我们做的软件下载不 下功夫做，因为软件下载投入太高，而想象空间有限。
 
@@ -3246,7 +3304,8 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 后来主要在想：什么是互联网？为什么互联网公司毛利率高增长快？未来的发展趋势是什么？
 得出了如下的结论，今天回想起来也非常有意思：
 
-开放和合作是互联网公司成功的关键。互联网首先是一张无边无际的网，每个人都是节点，互联是互联网成功最关键的要素。任何封闭式的业务模式都会遇到很大挑战，今天Yahoo（一站式门户）困境也折射了我当年的想法。
+开放和合作是互联网公司成功的关键。
+互联网首先是一张无边无际的网，每个人都是节点，互联是互联网成功最关键的要素。任何封闭式的业务模式都会遇到很大挑战，今天Yahoo（一站式门户）困境也折射了我当年的想法。
 
 互联网公司最厉害是靠机器赚钱。一旦产品研发完成，用户量到了一定的规模，只要服务器开着就可以赚钱了。到了这个阶段，产品研发推广的边际成本为零，服务器带宽成本逐年下降，毛利率自然就上来了，业务增长速度也比较快。而且，机器是7X24小时工作的，当然运维人员要全天候确保运营质量。
 
@@ -3297,20 +3356,26 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 字符串
 字符串
 
+
 字符串的分片与索引
 
 
 字符串可以通过string[x]的方式进行索引、分片，也就是加一个[]
+
 字符串的方法
 
 非常形象的比喻
 函数
 函数
 
+
 创建函数
 
 
+
 如果忘记写return，会出现什么情况
+
+
 调用函数
 
 两点最重要：
@@ -3322,42 +3387,63 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 循环与判断
 逻辑循环
 
+
 比较运算
+
 
 布尔值
 
+
 列表
+
 
 
 条件控制
 if ...... else......
 
+
 if ..... elif...... else.........
+
 
 
 循环
 for 循环
 
+
 while循环
+
+
 
 
 数据结构
 四种数据结构
 
+
 列表
+
+
 
 字典
 
+
+
 元组
+
+
 
 集合
 
+
 列表推导式
+
+
 
 
 ###类
 
 类的概念
+
+
 
 类有很多概念还是没有吃透和理解
 
@@ -3365,6 +3451,7 @@ while循环
 
 
 类的属性就如同可口可乐的饮料配方
+
 类可以实例化
 
 利用饮料的配方在生产线上生产出饮料产品
@@ -3372,15 +3459,18 @@ while循环
 生产的饮料产品有着相同的配发(属性)
 
 
+
 类实例化后也有属性
 
 生产线生产出的饮料，需要对其进行包装，包装就是实例的属性
+
 
 类实例化后 肯定是希望能做一些事情
 
 这是就可以在类里定义函数，让这个类去做一些事情
 
 比如，可乐可以用来喝，用来赠送等等行为
+
 
 
 后面关于 __init__的用法，还是没有看懂（有大佬懂的话，可以在评论区或者留言区解释下）
@@ -3394,30 +3484,6 @@ while循环
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了</title>
-    <url>/2019/03/25/%E8%BD%AF%E4%BB%B6-Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%94%B9%E7%89%88%EF%BC%9A%E5%9F%BA%E4%BA%8EChromium%E5%86%85%E6%A0%B8%E7%9A%84Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BB%88%E4%BA%8E%E5%8F%98%E5%A5%BD%E7%9C%8B%E4%BA%86/</url>
-    <content><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了**微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。
-泄露版Edge的开发完成度较高，在Windows 10上运行良好，但是，您可能会从Edge中看到一些还没有完工的地方。例如，微软尚未提供其预留选项卡功能，尚未实现使用手写笔功能的电子墨水特性，而黑暗模式目前只能通过手动打开测试标记获得，就像Google在Chrome中实现它一样。
-另一方面，微软也正在开发适用于Mac的Edge版本，但目前尚不清楚它是否会与新版Edge for Windows版本同时亮相。
-
-终于没有了Edge浏览器的塑料感了，质感更强了
-
-
-
-账户头像也可以定制了
-目前仅为泄漏版Edge浏览器，仅支持英文，后续若有官方发布，请尽快更新
-转载于网络
-若想尝鲜，关注微信公众号：产品汪darer
-后台回复：edge浏览器，即可下载
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
       </tags>
   </entry>
   <entry>
@@ -3487,6 +3553,30 @@ src是图片的下载地址，alt是图片的便签，每一张图片都在img�
       <tags>
         <tag>Python</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了</title>
+    <url>/2019/03/25/%E8%BD%AF%E4%BB%B6-Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%94%B9%E7%89%88%EF%BC%9A%E5%9F%BA%E4%BA%8EChromium%E5%86%85%E6%A0%B8%E7%9A%84Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BB%88%E4%BA%8E%E5%8F%98%E5%A5%BD%E7%9C%8B%E4%BA%86/</url>
+    <content><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了**微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。
+泄露版Edge的开发完成度较高，在Windows 10上运行良好，但是，您可能会从Edge中看到一些还没有完工的地方。例如，微软尚未提供其预留选项卡功能，尚未实现使用手写笔功能的电子墨水特性，而黑暗模式目前只能通过手动打开测试标记获得，就像Google在Chrome中实现它一样。
+另一方面，微软也正在开发适用于Mac的Edge版本，但目前尚不清楚它是否会与新版Edge for Windows版本同时亮相。
+
+终于没有了Edge浏览器的塑料感了，质感更强了
+
+
+
+账户头像也可以定制了
+目前仅为泄漏版Edge浏览器，仅支持英文，后续若有官方发布，请尽快更新
+转载于网络
+若想尝鲜，关注微信公众号：产品汪darer
+后台回复：edge浏览器，即可下载
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
       </tags>
   </entry>
   <entry>
@@ -3588,65 +3678,6 @@ windows系统少有的可以方便上传到图床的工具(且只支持七牛云
 
 官网地址
 下载方式关注微信公众号：产品汪darer，后台回复关键词：桌面日历DesktopCal，即可下载
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title> Windows系统最好用的文件预览工具|产品软件|5th</title>
-    <url>/2019/03/12/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E5%B7%A5%E5%85%B7-5th/</url>
-    <content><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。
-今天推荐的这一款软件就是 windows系统中 最好用的一款
-QuickLook
-QuickLook支持以下文件格式：
-
-图片: .png, .jpg, .bmp and .gif
-
-压缩包： .zip, .rar, .7z
-
-PDF 文件
-
-文本文件
-
-Microsoft Word (.doc, .docx), Excel (.xls, .xlsx) and PowerPoint (.ppt, .pptx) files (需要安装 Office)
-
-视频文件 (.mp4, .mkv, .m2ts 等)
-
-HTML 文件 (.htm, .html)
-
-Markdown 文件 (.md)
-
-其他文件和文件夹会显示一个信息框
-
-
-
-演示：
-
-预览图片
-
-
-
-预览markdown文件
-
-
-
-预览PDF文件
-
-
-
-总之，用起来非常方便，大大提高工作的效率和逼格
-
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复QuickLook，即刻获得下载链接
 ]]></content>
       <categories>
         <category>软件资源</category>
@@ -3930,6 +3961,65 @@ Ditto就是这样一款剪贴板增强神器
       </tags>
   </entry>
   <entry>
+    <title> Windows系统最好用的文件预览工具|产品软件|5th</title>
+    <url>/2019/03/12/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E5%B7%A5%E5%85%B7-5th/</url>
+    <content><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。
+今天推荐的这一款软件就是 windows系统中 最好用的一款
+QuickLook
+QuickLook支持以下文件格式：
+
+图片: .png, .jpg, .bmp and .gif
+
+压缩包： .zip, .rar, .7z
+
+PDF 文件
+
+文本文件
+
+Microsoft Word (.doc, .docx), Excel (.xls, .xlsx) and PowerPoint (.ppt, .pptx) files (需要安装 Office)
+
+视频文件 (.mp4, .mkv, .m2ts 等)
+
+HTML 文件 (.htm, .html)
+
+Markdown 文件 (.md)
+
+其他文件和文件夹会显示一个信息框
+
+
+
+演示：
+
+预览图片
+
+
+
+预览markdown文件
+
+
+
+预览PDF文件
+
+
+
+总之，用起来非常方便，大大提高工作的效率和逼格
+
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复QuickLook，即刻获得下载链接
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图床工具选择哪个好？|产品软件|2rd</title>
     <url>/2019/03/01/%E8%BD%AF%E4%BB%B6-%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%AA%E5%A5%BD%EF%BC%9F-2rd/</url>
     <content><![CDATA[
@@ -4129,62 +4219,6 @@ Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验�
       </tags>
   </entry>
   <entry>
-    <title>问答-工作被流程化，到底该不该？</title>
-    <url>/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/</url>
-    <content><![CDATA[
-
-看看同行们都在想些啥
-以下内容来自产品相关社区，如有侵权，请联系删除
-[TOC]
-Q1 : 工作被流程化，到底该不该？
-
-有人认为，流程化有助于公司拥有更长远的竞争力；
-
-有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
-
-author:Hysterin @人人都是产品经理
-如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
-无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
-从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
-但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
-举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
-很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
-三年过去，这位学员现在已在五百强企业做专职产品经理了。
-工作可以被流程化，可以被定性。但人不可以。记住这句话。
-Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
-
-当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
-
-
-在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
-
-
-如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
-author:李小玉 @人人都是产品经理
-别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
-当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
-如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
-做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
-
-
-被别人带跑偏，说明自己对方案的考虑存在纰漏
-Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
-
-有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
-author:阿不 @人人都是产品经理
-这个代码我看了。
-分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
-播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
-其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
-]]></content>
-      <categories>
-        <category>产品问答</category>
-      </categories>
-      <tags>
-        <tag>产品问答</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>人脸识别取厕纸的意义是啥？|产品问答|第2期</title>
     <url>/2019/03/15/%E9%97%AE%E7%AD%94-%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%8E%BB%E5%8E%95%E7%BA%B8%E7%9A%84%E6%84%8F%E4%B9%89%E6%98%AF%E5%95%A5%EF%BC%9F/</url>
     <content><![CDATA[
@@ -4303,6 +4337,136 @@ author:魏雅 @人人都是产品经理社区
       </tags>
   </entry>
   <entry>
+    <title>问答-工作被流程化，到底该不该？</title>
+    <url>/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/</url>
+    <content><![CDATA[
+
+看看同行们都在想些啥
+以下内容来自产品相关社区，如有侵权，请联系删除
+[TOC]
+Q1 : 工作被流程化，到底该不该？
+
+有人认为，流程化有助于公司拥有更长远的竞争力；
+
+有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
+
+author:Hysterin @人人都是产品经理
+如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
+无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
+从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
+但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
+举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
+很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
+三年过去，这位学员现在已在五百强企业做专职产品经理了。
+工作可以被流程化，可以被定性。但人不可以。记住这句话。
+Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
+
+当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
+
+
+在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
+
+
+如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
+author:李小玉 @人人都是产品经理
+别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
+当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
+如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
+做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
+
+
+被别人带跑偏，说明自己对方案的考虑存在纰漏
+Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
+
+有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
+author:阿不 @人人都是产品经理
+这个代码我看了。
+分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
+播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
+其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
+]]></content>
+      <categories>
+        <category>产品问答</category>
+      </categories>
+      <tags>
+        <tag>产品问答</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问答-怎么““骂”一个产品经理|产品问答|第4期</title>
+    <url>/2019/04/13/%E9%97%AE%E7%AD%94-%E6%80%8E%E4%B9%88%E2%80%9C%E2%80%9C%E9%AA%82%E2%80%9D%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</url>
+    <content><![CDATA[
+
+看看同行们都在想些啥
+以下内容来自产品相关社区，如有侵权，请联系删除
+[TOC]
+Q1：“骂”一个产品经理，最狠的方式是什么？
+
+在产品工作中，难免会出现摩擦的时刻；辣么，你曾见过“骂”一个产品经理的最狠方式是啥？一起来吐槽下~
+
+
+看到这个问题，我就被吸引了，看看大家怎么说的
+author:Hsia @人人都是产品经理
+不就是抄的xxx吗
+author:向日葵诗人kevin @人人都是产品经理
+分享一个最近和技术撕逼的例子
+技术：你拿数据来说话
+我：功能没做我哪里来的数据
+技术：你去做用户调研，做访谈
+我：不可能每个功能都去做调研
+技术：那是你的事，不是我的事
+我……
+author:夜月沉星 @人人都是产品经理
+你写的文档，就和cxk打球一样
+
+
+和cxk比较，真tm狠
+author:阳光懒人 @人人都是产品经理
+
+你自己需求都没想清楚
+
+不用那么麻烦了，把你抄的APP给我们下载一个
+
+产品经理不就是把老板想法复述一遍么……
+
+
+
+
+巴拉巴拉的还有很多，就不写了，附个链接，大家可以去补充
+Q2：朋友圈广告可以艾特好友有什么意义？author:阳光懒人 @人人都是产品经理
+朋友圈广告可以艾特好友，可能存在以下几个好处：
+
+增加了广告的社交属性，会让广告有更多的玩法，让广告商在设计广告的时候添加更多的互动性的创意，同时互动性、创意好的广告又能通过艾特功能提高传播效率和扩大传播范围，良性循环；
+
+对于用户来说，也会有几种场景会用到艾特功能，比如说：微信给女朋友推了一个channel化妆品广告，女朋友很心动然后就艾特男朋友。类似这样的互动玩法也会增加广告的乐趣，让广告植入不那么生硬；
+
+对于微信收集数据来说意义也是很大的，之前全靠推荐算法来推荐不同广告给不同用户群体，有了这个功能可能让广告投放更加精准。
+
+
+
+
+看到这个消息，我的第一感受就是微信也要在商业化上提速了
+Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？author:chitang @人人都是产品经理
+关于微信发现一栏里的搜一搜和看一看在2017年5月份正式更新上线。但对于一个产品来说都属于半成品都未全面的打开流量入口，当然凭借微信月活跃用户量10亿来说未来这两个依旧是不可估量的流量入口，目前都还停留在“实验室”中；
+「搜一搜」
+搜一搜的feed流则提供了长尾流量的能力，一方面是给公众号导流，另一方面也提供了变现的可能性。同时出现了很多可选内容，公众号、朋友圈、小程序、文章、小说、音乐、表情、视频、搜狗、知乎、外部资讯；搜一搜将搜索能力延申到更多外部信息内容，这一举措算是比较大的创新了，打破了以往腾讯的封闭圈。
+对于全网搜索，已经是一片红海了，百度在移动端依然覆盖80%左右的市场份额，别说“怼”百度了，就是和360搜索“PK”起来都不是很容易。另外在用户搜索上，已经习惯性的通过百度或者谷歌等浏览器去搜索信息，很少人会去使用微信搜内容？用户习惯暂时形成不了，所以说搜一搜目前还是一个未成熟的功能。
+「看一看」
+看一看的内容主要是以展现朋友圈，好友，微信群，公众号等渠道看到的内容—统称为**“已关注或已关联”**内容。但还有未关注和未关联的内容也将展现在这里（这部分未关联内容可能和个人的兴趣关注、地理位置、热点资讯、好友的分享，转发，点赞等相关维度做信息推荐及展现）属于微信的个性化智能化推荐；
+微信对于「搜一搜」和「看一看」的流量分配中“看一看”目前的流量大于“搜一搜”；
+“搜一搜”则是用来帮助用户快速查找内容或服务，搜索项目包括朋友圈、文章、公众号、小说和表情等，但，&quot; 搜一搜 &quot;基于知乎用户的使用习惯和操作方式来看目前使用频次较少；
+&quot; 看一看 &quot; 所呈现内容，目前跟它们的阅读量、点赞量、转发量、留言评论量及赞赏数量等尚未显现出强关联的关系。看一看的主要呈现为：已认证公众号内容、原创内容、长篇内容这几大类型；用户可以浏览热点资讯、好友关注的资讯以及自己感兴趣的文章，“看一看”则提供了用户感兴趣的热点资讯“集合”，并且有小红点加持，消灭小红点的时候你也会打开它。
+其中，微信对于用户停留时长，即用户如果阅读这篇文章的时间越长，它越有可能被精选、分发到 &quot; 看一看 “、” 搜一搜 &quot; 等页面。
+再说一句，其中还存在用户使用习惯和人性的特点：被动获取内容  &gt; 主动获取内容，人性上都是比较懒惰的 … …
+]]></content>
+      <categories>
+        <category>产品问答</category>
+      </categories>
+      <tags>
+        <tag>产品问答</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>问答-特斯拉入局，蔚来们是在裸泳吗？</title>
     <url>/2019/03/29/%E9%97%AE%E7%AD%94-%E7%89%B9%E6%96%AF%E6%8B%89%E5%85%A5%E5%B1%80%EF%BC%8C%E8%94%9A%E6%9D%A5%E4%BB%AC%E6%98%AF%E5%9C%A8%E8%A3%B8%E6%B3%B3%E5%90%97%EF%BC%9F/</url>
     <content><![CDATA[
@@ -4411,100 +4575,6 @@ Answer
       </categories>
       <tags>
         <tag>产品问答</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HuPu商业化困境</title>
-    <url>/2019/03/20/%E9%9A%8F%E6%83%B3-HuPu%E5%95%86%E4%B8%9A%E5%8C%96%E5%9B%B0%E5%A2%83/</url>
-    <content><![CDATA[虎扑的商业化困局用户体验一句话：取消发帖门槛后，垃圾贴、卖片贴丛生
-数据
-体育资讯排名对比
-
-用户画像对比，都是直男额
-
-
-百度指数
-百度指数和Talkigdata的数据有些出入，两者对比，关注懂球帝的中年人更多
-
-
-从数据看，虎扑现在是后有追兵，一家独大的地位受到了冲击，用户流失会不断增加
-从定位来看，两者仍有不同，虎扑定位是Jrs社区，偏向UGC（用户分享内容），随着发帖权限的开放，内容质量越来越低，有逐渐脱离体育的本质，往日常生活社区发展，比如虎扑步行街的流量极大。
-懂球帝定位是体育类深度资讯，从名字的“懂”就可以看出，偏向PGC（专业人士认识分享内容），从人群属性可以看到，懂球帝中年龄在30岁以上的用户较多，这部分年龄的人阅历更加丰富，更为专业。下面这个图更可以说明情况：
-
-懂球号自媒体平台
-最近也很明显感觉到虎扑上优质球评的帖子越来越少，撕逼贴越来越多
-假以时日，失去了PGC江山的虎扑，定会在撕逼灌水社区中越走越远，历史证明这样的发展之路活不了，贴吧的没落就是很好的证据。
-融资情况
-2007年成立的虎扑，现在也已经12岁了，在2015年D轮融资后，开始着手IPO，但是无疾而终。在2018年融资6.18亿，是目前中国体育领域单笔融资的最高纪录。从虎扑融资历史来看，IPO是不得不发的事，投资方需要融资收回投资成本，12岁的虎扑仍未上市，在互联网行业已是“大龄”。在2018年拿到融资后，虎扑也是动作频频，比如投资了电竟行业，虎扑直男和吴亦凡粉丝的大战等等，探索和拓展其商业化之路。
-商业化透过版本迭代看商业化以下是2018融资后的几次重要版本迭代
-版本 7.1.16 (2018年2月9日)
-可以在底部「社区」里看视频了；
-
-在个人主页可以看自己的声望了，声望代表你对社区的贡献；
-
-
-
-
-增加 视频 这一媒介，
-版本 7.1.20 (2018年5月5日)
-「比赛」页面增加绝地求生比赛，祝虎扑签约战队 iFTY、17和4AM天天吃鸡
-
-「社区」-「视频」页面增加分类，查找视频更快更方便
-
-
-
-
-发力 电竞
-版本 7.2.0 (2018年6月13日)
-首页新增个性化「热门」页面，聚合新闻、帖子、视频、亮评等各种内容，刷也刷不完
-
-
-
-设计了类似 头条 的新闻聚合
-版本 7.2.10 (2018年9月9日)
-新增了「首页」-「视频」列表，给你推荐喜欢的内容
-
-版本 7.3.0 (2018年10月12日)
-重新设计了界面样式，疯狂提升交互体验
-
-视频页支持向上滑动查看更多视频
-
-新增「装备」首页，可查询球鞋发售日历
-
-
-
-
-结合虎扑旗下”识货“app 发力电商
-从版本迭代可以看到，虎扑在往泛娱乐化社区倾斜（增加视频和新闻聚合）；新增装备页面，为自家电商引流。
-商业化的三驾马车
-虎扑社区
-
-取消发帖门槛，继续深耕社区发展，坐拥大流量，广告是其主要收入
-
-
-据其2016年递交的招股书，虎扑从2013年到2015年的营业收入分别为0.98亿元、1.4亿元、2亿元。尽管在资本市场，广告业务听上去没那么吸引人，但它目前是虎扑最大的收入来源。2013年到2015年，虎扑的广告收入分别达到5473.57万元、7860.13万元和1.22亿元，占比由55.64%上升至60.78%
-
-电商变现
-
-结合体育，做电商（“识货”APP）
-
-
-识货”在2012年6月上线，早期做的事情类似“淘宝客”——把虎扑用户导流到淘宝商城购买商品，虎扑从中抽取佣金，平均返点比例在6%-8%。到了2016年，“识货”开始尝试自营。截至2017年12月31日，“识货”共完成商品交易总量20亿元，2017年营收额在1.2-1.6亿元之间。在虎扑的总收入中，这部分营业收入占比超过三分之一。
-
-体育IP开发
-
-开发路人王赛事
-困局虎扑最大护城河是其粉丝，是所谓的Jrs
-但是如果虎扑走上娱乐化的倾斜道路，势必会偏离体育社区的本质，那么这个时候用户是否会买账呢？
-用户是忠于虎扑Jrs这个品牌？还是忠于体育社区这个产品呢？
-是彻底走上泛娱乐化的道路，为电商拓宽流量来源，还是回归专业体育社区，寻找尚不明晰的盈利路径？
-这是虎扑最大的困局
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -4644,77 +4714,97 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>问答-怎么““骂”一个产品经理|产品问答|第4期</title>
-    <url>/2019/04/13/%E9%97%AE%E7%AD%94-%E6%80%8E%E4%B9%88%E2%80%9C%E2%80%9C%E9%AA%82%E2%80%9D%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</url>
-    <content><![CDATA[
+    <title>HuPu商业化困境</title>
+    <url>/2019/03/20/%E9%9A%8F%E6%83%B3-HuPu%E5%95%86%E4%B8%9A%E5%8C%96%E5%9B%B0%E5%A2%83/</url>
+    <content><![CDATA[虎扑的商业化困局用户体验一句话：取消发帖门槛后，垃圾贴、卖片贴丛生
+数据
+体育资讯排名对比
 
-看看同行们都在想些啥
-以下内容来自产品相关社区，如有侵权，请联系删除
-[TOC]
-Q1：“骂”一个产品经理，最狠的方式是什么？
-
-在产品工作中，难免会出现摩擦的时刻；辣么，你曾见过“骂”一个产品经理的最狠方式是啥？一起来吐槽下~
+用户画像对比，都是直男额
 
 
-看到这个问题，我就被吸引了，看看大家怎么说的
-author:Hsia @人人都是产品经理
-不就是抄的xxx吗
-author:向日葵诗人kevin @人人都是产品经理
-分享一个最近和技术撕逼的例子
-技术：你拿数据来说话
-我：功能没做我哪里来的数据
-技术：你去做用户调研，做访谈
-我：不可能每个功能都去做调研
-技术：那是你的事，不是我的事
-我……
-author:夜月沉星 @人人都是产品经理
-你写的文档，就和cxk打球一样
+百度指数
+百度指数和Talkigdata的数据有些出入，两者对比，关注懂球帝的中年人更多
 
 
-和cxk比较，真tm狠
-author:阳光懒人 @人人都是产品经理
+从数据看，虎扑现在是后有追兵，一家独大的地位受到了冲击，用户流失会不断增加
+从定位来看，两者仍有不同，虎扑定位是Jrs社区，偏向UGC（用户分享内容），随着发帖权限的开放，内容质量越来越低，有逐渐脱离体育的本质，往日常生活社区发展，比如虎扑步行街的流量极大。
+懂球帝定位是体育类深度资讯，从名字的“懂”就可以看出，偏向PGC（专业人士认识分享内容），从人群属性可以看到，懂球帝中年龄在30岁以上的用户较多，这部分年龄的人阅历更加丰富，更为专业。下面这个图更可以说明情况：
 
-你自己需求都没想清楚
+懂球号自媒体平台
+最近也很明显感觉到虎扑上优质球评的帖子越来越少，撕逼贴越来越多
+假以时日，失去了PGC江山的虎扑，定会在撕逼灌水社区中越走越远，历史证明这样的发展之路活不了，贴吧的没落就是很好的证据。
+融资情况
+2007年成立的虎扑，现在也已经12岁了，在2015年D轮融资后，开始着手IPO，但是无疾而终。在2018年融资6.18亿，是目前中国体育领域单笔融资的最高纪录。从虎扑融资历史来看，IPO是不得不发的事，投资方需要融资收回投资成本，12岁的虎扑仍未上市，在互联网行业已是“大龄”。在2018年拿到融资后，虎扑也是动作频频，比如投资了电竟行业，虎扑直男和吴亦凡粉丝的大战等等，探索和拓展其商业化之路。
+商业化透过版本迭代看商业化以下是2018融资后的几次重要版本迭代
+版本 7.1.16 (2018年2月9日)
+可以在底部「社区」里看视频了；
 
-不用那么麻烦了，把你抄的APP给我们下载一个
-
-产品经理不就是把老板想法复述一遍么……
+在个人主页可以看自己的声望了，声望代表你对社区的贡献；
 
 
 
 
-巴拉巴拉的还有很多，就不写了，附个链接，大家可以去补充
-Q2：朋友圈广告可以艾特好友有什么意义？author:阳光懒人 @人人都是产品经理
-朋友圈广告可以艾特好友，可能存在以下几个好处：
+增加 视频 这一媒介，
+版本 7.1.20 (2018年5月5日)
+「比赛」页面增加绝地求生比赛，祝虎扑签约战队 iFTY、17和4AM天天吃鸡
 
-增加了广告的社交属性，会让广告有更多的玩法，让广告商在设计广告的时候添加更多的互动性的创意，同时互动性、创意好的广告又能通过艾特功能提高传播效率和扩大传播范围，良性循环；
-
-对于用户来说，也会有几种场景会用到艾特功能，比如说：微信给女朋友推了一个channel化妆品广告，女朋友很心动然后就艾特男朋友。类似这样的互动玩法也会增加广告的乐趣，让广告植入不那么生硬；
-
-对于微信收集数据来说意义也是很大的，之前全靠推荐算法来推荐不同广告给不同用户群体，有了这个功能可能让广告投放更加精准。
+「社区」-「视频」页面增加分类，查找视频更快更方便
 
 
 
 
-看到这个消息，我的第一感受就是微信也要在商业化上提速了
-Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？author:chitang @人人都是产品经理
-关于微信发现一栏里的搜一搜和看一看在2017年5月份正式更新上线。但对于一个产品来说都属于半成品都未全面的打开流量入口，当然凭借微信月活跃用户量10亿来说未来这两个依旧是不可估量的流量入口，目前都还停留在“实验室”中；
-「搜一搜」
-搜一搜的feed流则提供了长尾流量的能力，一方面是给公众号导流，另一方面也提供了变现的可能性。同时出现了很多可选内容，公众号、朋友圈、小程序、文章、小说、音乐、表情、视频、搜狗、知乎、外部资讯；搜一搜将搜索能力延申到更多外部信息内容，这一举措算是比较大的创新了，打破了以往腾讯的封闭圈。
-对于全网搜索，已经是一片红海了，百度在移动端依然覆盖80%左右的市场份额，别说“怼”百度了，就是和360搜索“PK”起来都不是很容易。另外在用户搜索上，已经习惯性的通过百度或者谷歌等浏览器去搜索信息，很少人会去使用微信搜内容？用户习惯暂时形成不了，所以说搜一搜目前还是一个未成熟的功能。
-「看一看」
-看一看的内容主要是以展现朋友圈，好友，微信群，公众号等渠道看到的内容—统称为**“已关注或已关联”**内容。但还有未关注和未关联的内容也将展现在这里（这部分未关联内容可能和个人的兴趣关注、地理位置、热点资讯、好友的分享，转发，点赞等相关维度做信息推荐及展现）属于微信的个性化智能化推荐；
-微信对于「搜一搜」和「看一看」的流量分配中“看一看”目前的流量大于“搜一搜”；
-“搜一搜”则是用来帮助用户快速查找内容或服务，搜索项目包括朋友圈、文章、公众号、小说和表情等，但，” 搜一搜 “基于知乎用户的使用习惯和操作方式来看目前使用频次较少；
-“ 看一看 “ 所呈现内容，目前跟它们的阅读量、点赞量、转发量、留言评论量及赞赏数量等尚未显现出强关联的关系。看一看的主要呈现为：已认证公众号内容、原创内容、长篇内容这几大类型；用户可以浏览热点资讯、好友关注的资讯以及自己感兴趣的文章，“看一看”则提供了用户感兴趣的热点资讯“集合”，并且有小红点加持，消灭小红点的时候你也会打开它。
-其中，微信对于用户停留时长，即用户如果阅读这篇文章的时间越长，它越有可能被精选、分发到 “ 看一看 “、” 搜一搜 “ 等页面。
-再说一句，其中还存在用户使用习惯和人性的特点：被动获取内容  &gt; 主动获取内容，人性上都是比较懒惰的 … …
+发力 电竞
+版本 7.2.0 (2018年6月13日)
+首页新增个性化「热门」页面，聚合新闻、帖子、视频、亮评等各种内容，刷也刷不完
+
+
+
+设计了类似 头条 的新闻聚合
+版本 7.2.10 (2018年9月9日)
+新增了「首页」-「视频」列表，给你推荐喜欢的内容
+
+版本 7.3.0 (2018年10月12日)
+重新设计了界面样式，疯狂提升交互体验
+
+视频页支持向上滑动查看更多视频
+
+新增「装备」首页，可查询球鞋发售日历
+
+
+
+
+结合虎扑旗下”识货“app 发力电商
+从版本迭代可以看到，虎扑在往泛娱乐化社区倾斜（增加视频和新闻聚合）；新增装备页面，为自家电商引流。
+商业化的三驾马车
+虎扑社区
+
+取消发帖门槛，继续深耕社区发展，坐拥大流量，广告是其主要收入
+
+
+据其2016年递交的招股书，虎扑从2013年到2015年的营业收入分别为0.98亿元、1.4亿元、2亿元。尽管在资本市场，广告业务听上去没那么吸引人，但它目前是虎扑最大的收入来源。2013年到2015年，虎扑的广告收入分别达到5473.57万元、7860.13万元和1.22亿元，占比由55.64%上升至60.78%
+
+电商变现
+
+结合体育，做电商（“识货”APP）
+
+
+识货”在2012年6月上线，早期做的事情类似“淘宝客”——把虎扑用户导流到淘宝商城购买商品，虎扑从中抽取佣金，平均返点比例在6%-8%。到了2016年，“识货”开始尝试自营。截至2017年12月31日，“识货”共完成商品交易总量20亿元，2017年营收额在1.2-1.6亿元之间。在虎扑的总收入中，这部分营业收入占比超过三分之一。
+
+体育IP开发
+
+开发路人王赛事
+困局虎扑最大护城河是其粉丝，是所谓的Jrs
+但是如果虎扑走上娱乐化的倾斜道路，势必会偏离体育社区的本质，那么这个时候用户是否会买账呢？
+用户是忠于虎扑Jrs这个品牌？还是忠于体育社区这个产品呢？
+是彻底走上泛娱乐化的道路，为电商拓宽流量来源，还是回归专业体育社区，寻找尚不明晰的盈利路径？
+这是虎扑最大的困局
 ]]></content>
       <categories>
-        <category>产品问答</category>
+        <category>随想</category>
       </categories>
       <tags>
-        <tag>产品问答</tag>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -4792,9 +4882,18 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。
 [TOC]
 1. 为什么厂商要竞相发布折叠屏手机？
-尽快的占领用户心智现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。全面屏手机，小米拔得头筹折叠屏手机，三星、华为不遑多让在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。
+尽快的占领用户心智
+现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。
+全面屏手机，小米拔得头筹
+折叠屏手机，三星、华为不遑多让
+在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。
 
-折叠屏是手机形态发展的下一个阶段，也有可能是终点手机在经历全面屏的过渡期后，不可避免的要进入折叠屏手机需要兼具通讯+上网两大功能通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验折叠屏即可大屏看视频、打游戏；又可小屏放兜里对手机的复杂使用场景有着更好的兼容性
+折叠屏是手机形态发展的下一个阶段，也有可能是终点
+手机在经历全面屏的过渡期后，不可避免的要进入折叠屏
+手机需要兼具通讯+上网两大功能
+通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验
+折叠屏即可大屏看视频、打游戏；又可小屏放兜里
+对手机的复杂使用场景有着更好的兼容性
 
 
 2. 2019年，折叠屏手机会占据主流市场？2019年，折叠屏手机应该还不会占据主流手机市场，不会是普罗大众的选择，还是土豪们的“玩物”
@@ -4809,11 +4908,21 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 
 
 
-成本折叠屏采用的是OLED柔性屏幕，屏幕生产的良率低，成本高，现在手机均在一万三左右， 高昂的售价会导致其出货量低，产能低，成本下降的空间小。去年，苹果手机售价也达到一万元，结果大家都知道，市场给苹果浇了一盆冷水。而且最近几年，经济形势不好，消费者更会捂紧钱袋子
+成本
+折叠屏采用的是OLED柔性屏幕，屏幕生产的良率低，成本高，现在手机均在一万三左右， 高昂的售价会导致其出货量低，产能低，成本下降的空间小。
+去年，苹果手机售价也达到一万元，结果大家都知道，市场给苹果浇了一盆冷水。
+而且最近几年，经济形势不好，消费者更会捂紧钱袋子
 
-电量消费者买折叠屏手机当然是为了享受到其大屏的爽感我们知道，屏幕越大、电量的消耗也是极高目前，电池技术的发展已到瓶颈，还没有突破性技术出现虽然厂商推出了快充技术，但是电量仍然是会制约折叠屏手机发展的一个重要因素
+电量
+消费者买折叠屏手机当然是为了享受到其大屏的爽感
+我们知道，屏幕越大、电量的消耗也是极高
+目前，电池技术的发展已到瓶颈，还没有突破性技术出现
+虽然厂商推出了快充技术，但是电量仍然是会制约折叠屏手机发展的一个重要因素
 
-重量为了解决电量问题，目前方案多采用两款电池但是两块电池又会带来手机重量的增加前面我们提到，手机要求有较高的便携性，重量大的手机显然不会有好的体验
+重量
+为了解决电量问题，目前方案多采用两款电池
+但是两块电池又会带来手机重量的增加
+前面我们提到，手机要求有较高的便携性，重量大的手机显然不会有好的体验
 
 
 3. 折叠屏手机会带来机遇吗？折叠屏手机一定会进入主流市场，顺利的话可能需要三年左右的时间
@@ -4833,7 +4942,8 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
   <entry>
     <title>随想-如果脱离现有的平台，你还剩下什么？</title>
     <url>/2019/03/27/%E9%9A%8F%E6%83%B3-%E5%A6%82%E6%9E%9C%E8%84%B1%E7%A6%BB%E7%8E%B0%E6%9C%89%E7%9A%84%E5%B9%B3%E5%8F%B0%EF%BC%8C%E4%BD%A0%E8%BF%98%E5%89%A9%E4%B8%8B%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-    <content><![CDATA[2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台，你还能剩下什么？
+    <content><![CDATA[2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台，
+你还能剩下什么？
 
 
 
@@ -4842,7 +4952,8 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 
 脱离平台的“硬件”，你还有平台带给你的“软件”
 
-先介绍下自己：现就读于安徽一985高校，本科毕业于河南一211高校
+先介绍下自己：
+现就读于安徽一985高校，本科毕业于河南一211高校
 
 我会从以下两个方面阐述观点：
 
@@ -4854,13 +4965,25 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 平台带给我哪些软件
 
 
-开拓视野在这里，我获得了与全国顶级高校的学生交流的机会(有幸去上海同济参加了一个两岸三地的创新创业比赛)；这是我第一次接触创业比赛、接触路演、接触另一种社会形态培养出来的学生，真的是一种打开异世界的感觉；在心底埋下了一颗种子，从此看世界的角度和思维都在慢慢改变。平台越高、看得越远。
+开拓视野
+在这里，我获得了与全国顶级高校的学生交流的机会(有幸去上海同济参加了一个两岸三地的创新创业比赛)；
+这是我第一次接触创业比赛、接触路演、接触另一种社会形态培养出来的学生，真的是一种打开异世界的感觉；在心底埋下了一颗种子，从此看世界的角度和思维都在慢慢改变。
+平台越高、看得越远。
 
-自信心在这里，我参加了学校和百度举办的创新创业活动，和来自全国高校的小伙伴同台竞技，并且取得了不错成绩；这次让我认识到，自己并没有那么差和不堪，给一个机会，有信心做到更好；平台会给你自信心。
+自信心
+在这里，我参加了学校和百度举办的创新创业活动，和来自全国高校的小伙伴同台竞技，并且取得了不错成绩；
+这次让我认识到，自己并没有那么差和不堪，给一个机会，有信心做到更好；
+平台会给你自信心。
 
-人脉&amp;资源在这里，我认识了各种各样优秀的人；他们各有所长，都对自己给予了帮助和启发；在为院系运营公众号时，结识一位朋友A；通过A，加入了学校团委下属的一个部门，幸运的有一次机会去同济参加了活动，认识了港理工B；后来我们一起参加百度的活动，获得了不错的成绩。人脉&amp;资源就像一个雪球，它会越滚越大，为你带来更多的机会。
+人脉&amp;资源
+在这里，我认识了各种各样优秀的人；他们各有所长，都对自己给予了帮助和启发；
+在为院系运营公众号时，结识一位朋友A；通过A，加入了学校团委下属的一个部门，幸运的有一次机会去同济参加了活动，认识了港理工B；后来我们一起参加百度的活动，获得了不错的成绩。
+人脉&amp;资源就像一个雪球，它会越滚越大，为你带来更多的机会。
 
-机会平台会提高你获得机会的几率，还是那句老话：机会是给有准备的人的所以：积极进取、以终为始
+机会
+平台会提高你获得机会的几率，
+还是那句老话：机会是给有准备的人的
+所以：积极进取、以终为始
 
 
 
@@ -4881,50 +5004,6 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 
 
 以上仅为我个人见解
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随想-我对996工作制的看法</title>
-    <url>/2019/04/04/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9996%E5%B7%A5%E4%BD%9C%E5%88%B6%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
-    <content><![CDATA[我对996工作制的看法由于996.icu的出现，最近关于996的讨论，越来越多，也看了不少人的看法
-主流是两种看法：
-
-如果你不认可公司的996制度，你可以不来，你可以不选择公司，没人逼你
-
-另外一种是996违反劳动法，我们要维护自己的权益
-
-
-先说下自己的看法，我会做996的工作，因为自己能力不够，因为自己没钱，因为自己没得选择，
-但是我反对996的制度和文化，我不会赞同996的制度。
-简单表达下对主流两种说法的态度：
-支持第一种观点的主要是企业管理者和部分打工仔
-这种观点明显是一种，你爱来不来，你不来有人来，中国不缺人。这根本就不是一种解决问题的态度，一种小孩子撒泼耍赖的态度。
-996代表的是一种高负荷的工作强度，无数的研究告诉你，高负荷的工作带来的是低效的成果。
-为什么明明知道这是一种低效的方法还不改正呢？
-因为改正的成本比不改正的成本高，为了追求更高的价值，肯定不改正。
-其实个人认为大企业应该承担这种革新管理制度的责任，虽然国家经济发展越来越好，对全球经济发展贡献越来越多了，但是关于企业管理这块，咱们还很弱小，我们仍然不思进取，只会人海战术。
-这也是一种企业应该承担起来的社会责任，而不是耍赖的说，你爱来不来。
-支持第二种说法的，多是打工仔，有人统计了996.icu的关注者，多是基层程序员。
-这类人拿起了法律的武器，个人还是蛮认可这种做法。可是其中应该也有不少是这样的想法吧，钱给的不够，给够了我才不反对996。
-关于这类人，我觉得我不佩服你，你从心里并不反对996这种文化，制度。你反对的是钱太少了。
-希望企业和社会都可以认识到996是一种落后的管理方式，都敢于承认这是一种错误，而不是一种耍赖的态度，那些反对996的程序员们，希望你们是真心的反对这种文化，而不是仅仅因为钱不够采取反对，希望社会重视起来法律，依法治国，只有企业觉得996的成本变高了，才会去变革管理方法，这样才会长久，没有先进的管理方法，一个企业是长久不了的。
-其实社会上比程序员996累的多的，没有保障的工作遍地都是。
-很多医生，列车乘务员，工厂的工人，农民工，个体户，金融从业者，科研工作者等等吧，他们的工作强度都不亚于996。
-我妈妈在一家药店（个体户）上班，可以说是867，全年就过年放个假，自己看着真的心疼
-我爸爸是农民工，工地的环境和工作强度，我体验过，很差
-而我，面对996，有什么办法吗？
-我觉得自己比父母的环境好太多了，对我自己而言，我自己会做996的工作，因为我一无所有，只有不断拼命的工作，但是如果你问我是否认可996的文化和制度，我不认可。
-错的就是错的，首先你要去承认，只有承认了，才能去做出改变。
-希望类似996的工作文化和制度，能在我这一辈终结，让自己的孩子未来过得更幸福。
-我只是中国亿万群体中的一个小个体，无力改变什么，只有在这写写东西，表达自己的观点，以后翻回来看看，也不后悔，给孩子看看，让他觉得老爸棒棒的。
-思绪很乱，写在火车卧铺上
-以上都是个人看法，严禁转载！！！
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5021,6 +5100,94 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
       </tags>
   </entry>
   <entry>
+    <title>随想-我对投资的认识</title>
+    <url>/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/</url>
+    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
+
+投资资产
+
+投资自己
+
+
+[TOC]
+1. 投资资产目的是让自己的财富实现增值
+目前国内的主要途径有：（入手程度由易到难）
+
+存储
+
+基金
+
+股票
+
+房产和房产出租
+
+创业
+
+
+2. 投资自己目的是让自己更多创造财富的价值
+分为两块：
+
+投资“硬件”
+
+投资“软件”
+
+
+1. 投资硬件主要是锻炼身体、强健体魄、保养身体
+2. 投资软件主要是投资思想和技能
+比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随想-我对996工作制的看法</title>
+    <url>/2019/04/04/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9996%E5%B7%A5%E4%BD%9C%E5%88%B6%E7%9A%84%E7%9C%8B%E6%B3%95/</url>
+    <content><![CDATA[我对996工作制的看法由于996.icu的出现，最近关于996的讨论，越来越多，也看了不少人的看法
+主流是两种看法：
+
+如果你不认可公司的996制度，你可以不来，你可以不选择公司，没人逼你
+
+另外一种是996违反劳动法，我们要维护自己的权益
+
+
+先说下自己的看法，我会做996的工作，因为自己能力不够，因为自己没钱，因为自己没得选择，
+但是我反对996的制度和文化，我不会赞同996的制度。
+简单表达下对主流两种说法的态度：
+支持第一种观点的主要是企业管理者和部分打工仔
+这种观点明显是一种，你爱来不来，你不来有人来，中国不缺人。这根本就不是一种解决问题的态度，一种小孩子撒泼耍赖的态度。
+996代表的是一种高负荷的工作强度，无数的研究告诉你，高负荷的工作带来的是低效的成果。
+为什么明明知道这是一种低效的方法还不改正呢？
+因为改正的成本比不改正的成本高，为了追求更高的价值，肯定不改正。
+其实个人认为大企业应该承担这种革新管理制度的责任，虽然国家经济发展越来越好，对全球经济发展贡献越来越多了，但是关于企业管理这块，咱们还很弱小，我们仍然不思进取，只会人海战术。
+这也是一种企业应该承担起来的社会责任，而不是耍赖的说，你爱来不来。
+支持第二种说法的，多是打工仔，有人统计了996.icu的关注者，多是基层程序员。
+这类人拿起了法律的武器，个人还是蛮认可这种做法。可是其中应该也有不少是这样的想法吧，钱给的不够，给够了我才不反对996。
+关于这类人，我觉得我不佩服你，你从心里并不反对996这种文化，制度。你反对的是钱太少了。
+希望企业和社会都可以认识到996是一种落后的管理方式，都敢于承认这是一种错误，而不是一种耍赖的态度，那些反对996的程序员们，希望你们是真心的反对这种文化，而不是仅仅因为钱不够采取反对，希望社会重视起来法律，依法治国，只有企业觉得996的成本变高了，才会去变革管理方法，这样才会长久，没有先进的管理方法，一个企业是长久不了的。
+其实社会上比程序员996累的多的，没有保障的工作遍地都是。
+很多医生，列车乘务员，工厂的工人，农民工，个体户，金融从业者，科研工作者等等吧，他们的工作强度都不亚于996。
+我妈妈在一家药店（个体户）上班，可以说是867，全年就过年放个假，自己看着真的心疼
+我爸爸是农民工，工地的环境和工作强度，我体验过，很差
+而我，面对996，有什么办法吗？
+我觉得自己比父母的环境好太多了，对我自己而言，我自己会做996的工作，因为我一无所有，只有不断拼命的工作，但是如果你问我是否认可996的文化和制度，我不认可。
+错的就是错的，首先你要去承认，只有承认了，才能去做出改变。
+希望类似996的工作文化和制度，能在我这一辈终结，让自己的孩子未来过得更幸福。
+我只是中国亿万群体中的一个小个体，无力改变什么，只有在这写写东西，表达自己的观点，以后翻回来看看，也不后悔，给孩子看看，让他觉得老爸棒棒的。
+思绪很乱，写在火车卧铺上
+以上都是个人看法，严禁转载！！！
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我是如何利用不同的网盘管理文件的？</title>
     <url>/2019/02/01/%E9%9A%8F%E6%83%B3-%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BD%91%E7%9B%98%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E7%9A%84%EF%BC%9F/</url>
     <content><![CDATA[
@@ -5064,9 +5231,11 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 仅短期保存的文件一般我都是压缩后，保存到百度云盘
 但是对一些文件，我们想在电脑、PC、笔记本之间快速共享，仅利用网盘的共享功能，而不把文件存储起来，这里我推荐两种方法：
 
-对于小文件（Word、PPT、表格、照片等），我推荐坚果云 ，非常良心，免费版每30天，有1G的上传流量和3G的下载流量，上传、下载都是满速，无广告！！！小文件，基本够用的！！
+对于小文件（Word、PPT、表格、照片等），我推荐坚果云 ，非常良心，免费版每30天，有1G的上传流量和3G的下载流量，上传、下载都是满速，无广告！！！
+小文件，基本够用的！！
 
-对于一些大文件（设计稿、视频处理等等），我推荐GoodSync , 介绍说明 ，可以实现不同终端之间数据的同步共享，就是一神器。这里下载神器
+对于一些大文件（设计稿、视频处理等等），我推荐GoodSync , 介绍说明 ，可以实现不同终端之间数据的同步共享，就是一神器。
+这里下载神器
 
 
 公共资源公共资源主要有：好用的软件、电子书、电影、教程、模板等等
@@ -5084,50 +5253,6 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 以上，就是我利用不同网盘管理文件的方法
 如果你有更好的想法，可以下方留言讨论，欢迎转发分享！
 
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随想-我对投资的认识</title>
-    <url>/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/</url>
-    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
-
-投资资产
-
-投资自己
-
-
-[TOC]
-1. 投资资产目的是让自己的财富实现增值
-目前国内的主要途径有：（入手程度由易到难）
-
-存储
-
-基金
-
-股票
-
-房产和房产出租
-
-创业
-
-
-2. 投资自己目的是让自己更多创造财富的价值
-分为两块：
-
-投资“硬件”
-
-投资“软件”
-
-
-1. 投资硬件主要是锻炼身体、强健体魄、保养身体
-2. 投资软件主要是投资思想和技能
-比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5207,24 +5332,48 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
 
 我们用上瘾模型看一看虎扑是怎么让你一步步上瘾的
 
-第一阶段：触发外部触发朋友推荐、虎扑的营销推广（比如，去年的kris吴事件）内部触发正在寻找一个专业看球平台、即时资讯（能得到更多关于NBA的讯息）
+第一阶段：触发
+外部触发
+朋友推荐、虎扑的营销推广（比如，去年的kris吴事件）
+内部触发
+正在寻找一个专业看球平台、即时资讯（能得到更多关于NBA的讯息）
 
 第二阶段：行动
 
-福格认为，要使人们行动起来，三个要素必不可少。第一，充分的动机；第二，完成这一行为的能力；第三，促使人们付诸行动的触发。
+福格认为，要使人们行动起来，三个要素必不可少。
+第一，充分的动机；第二，完成这一行为的能力；第三，促使人们付诸行动的触发。
 
 
 
-动机：正在寻找专业的看球平台，更快的了解到NBA的讯息能力：虎扑的下载、注册和使用都非常简单，这一过程完全没有阻碍
+动机：
+正在寻找专业的看球平台，更快的了解到NBA的讯息
+能力：
+虎扑的下载、注册和使用都非常简单，这一过程完全没有阻碍
+
 
 第三阶段：多变的酬赏
 驱使我们采取行动的，并不是酬赏本身，而是渴望酬赏时产生的那份迫切需要。
 
 
 
-还记得自己为什么要下载虎扑吗？专业看球平台、即时资讯（能得到更多关于NBA的讯息）酬赏1：满足你下载的目的（虎扑的护城河之一）专业看球平台、即时资讯（能得到更多关于NBA的讯息）酬赏2：高质量的赛后分析贴，让自己更加懂球，更加懂比赛酬赏3：虎扑社区里JRs的氛围，步行街上有趣而温暖的帖子酬赏4：（最不容易被注意）比你的朋友知道多一点，得到朋友们的认可和赞赏这也就是渴望酬赏时产生的那份迫切需要
+还记得自己为什么要下载虎扑吗？专业看球平台、即时资讯（能得到更多关于NBA的讯息）
+酬赏1：
+满足你下载的目的（虎扑的护城河之一）专业看球平台、即时资讯（能得到更多关于NBA的讯息）
+酬赏2：
+高质量的赛后分析贴，让自己更加懂球，更加懂比赛
+酬赏3：
+虎扑社区里JRs的氛围，步行街上有趣而温暖的帖子
+酬赏4：（最不容易被注意）
+比你的朋友知道多一点，得到朋友们的认可和赞赏
+这也就是渴望酬赏时产生的那份迫切需要
 
-第三阶段：投入投入1：更加关心比赛时间，结果和赛后采访、资讯和赛后分析投入2：对论坛优秀帖子的转发、收藏、点赞投入3：无意间又打开了虎扑，分配了更多的时间
+第三阶段：投入
+投入1：
+更加关心比赛时间，结果和赛后采访、资讯和赛后分析
+投入2：
+对论坛优秀帖子的转发、收藏、点赞
+投入3：
+无意间又打开了虎扑，分配了更多的时间
 
 
 现在你可以利用上瘾模型询问自己关于如何让用户上瘾的五个基本问题：

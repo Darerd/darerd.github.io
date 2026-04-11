@@ -1,115 +1,338 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>Darerd's Blog | 分享技术与经验</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Darerd's Blog</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2019/02/28/Test12-%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E6%9F%90%E4%BA%9B%E7%BB%93%E6%9E%9C/">Test12-函数可以返回某些结果</a></h1><div class="post-meta">2019-02-28</div><div class="post-content">
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>Darerd's Blog | 分享技术与经验</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+// Check stored preference or system preference
+var stored = localStorage.getItem('dark');
+if (stored === null) {
+  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
+} else {
+  html.dataset.dark = stored;
+}
+
+// Update toggle icon based on current theme
+function updateToggleIcon() {
+  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
+}
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  var isDark = html.dataset.dark === 'true';
+  html.dataset.dark = isDark ? 'false' : 'true';
+  localStorage.setItem('dark', html.dataset.dark);
+  updateToggleIcon();
+});
+
+// Listen for system preference changes
+prefersDarkMode.addEventListener('change', (e) => {
+  if (localStorage.getItem('dark') === null) {
+    html.dataset.dark = e.matches ? 'true' : 'false';
+    updateToggleIcon();
+  }
+});
+
+// Add smooth transition for theme changes
+html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Darerd's Blog</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a id="search-toggle" href="javascript:;" aria-label="搜索"><i class="fa fa-search"></i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="article-list"><article class="article-card"><h2 class="article-title"><a href="/2019/02/21/Test7-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/">Test7-读取文件和读写文件</a></h2><div class="article-meta"><time datetime="2019-02-21T12:29:43.000Z">2019-02-21</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节主要学习return()的用法：将变量设置为“一个函数的值”
+ex15 涉及两个文件：一个是ex15.py文件，一个是ex15_sample.txt文件。该文本文件的内容如下：
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots a...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/21/Test7-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/20/%E9%97%AE%E7%AD%94-%E7%9C%8B%E7%9C%8B%E4%BA%A7%E5%93%81%E4%BA%BA%E9%83%BD%E5%9C%A8%E5%85%B3%E6%B3%A8%E4%BA%9B%E5%95%A5%EF%BC%9F-%E7%AC%AC1%E6%9C%9F/">看看产品人都在关注些啥？|产品问答|第1期</a></h2><div class="article-meta"><time datetime="2019-02-20T13:47:42.000Z">2019-02-20</time><div class="article-tags"><a class="tag-pill" href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/">产品问答</a></div></div><div class="article-excerpt"><p>
+
+产品人只有不断思考、复盘，逐步形成自己方法论，才能形成有效的护城河
+
+
+俗话说：“三人行，必有我师”
+
+
+产品人应该多看看同行对事情的理解和分析角度
+以下内容来自产品相关社区，如有侵权，请联系删除
 [TOC]
-源代码12345678910111213141516171819202122232425262728293031# ex21.py...</div><p class="readmore"><a href="/2019/02/28/Test12-%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E6%9F%90%E4%BA%9B%E7%BB%93%E6%9E%9C/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/28/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%BE%E5%BA%8A%E7%9F%A5%E8%AF%86/">Markdown写作必须知道的图床知识</a></h1><div class="post-meta">2019-02-28</div><div class="post-content">
+Q1：新产品战胜老产品，你觉得最重要的原因是什么？
 
-如果你喜欢用Markdown写文章，又或者刚入了Markdown的坑
-
-
-那么你一定会遇到一个绕不开的问题：
+常言道，“长江后浪推前浪，前浪拍死在沙滩上。”此句对于产品圈的新旧交替同样适用。
 
 
-图片的插入
-Markdown插入图片很简单，不少markdown编辑器都支持本地图片插入、图片直接拖入
-但是除非你导出为pdf或者word格式。
-否则，只要改动了图片在本地的位置，这个图就会挂掉。
+在同一个赛道里面，一款扬名于江湖的产品却跑不过...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/20/%E9%97%AE%E7%AD%94-%E7%9C%8B%E7%9C%8B%E4%BA%A7%E5%93%81%E4%BA%BA%E9%83%BD%E5%9C%A8%E5%85%B3%E6%B3%A8%E4%BA%9B%E5%95%A5%EF%BC%9F-%E7%AC%AC1%E6%9C%9F/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/">LaTex:参考文献引用的方法</a></h2><div class="article-meta"><time datetime="2019-02-20T11:55:11.000Z">2019-02-20</time><div class="article-tags"><a class="tag-pill" href="/tags/LaTex/">LaTex</a></div></div><div class="article-excerpt"><p>LaTex排版时，引入参考文献的方法
 
-为了解决这个问题，一般需要图床来解决
+引入参考文献主要分为两种：
 
-图...</div><p class="readmore"><a href="/2019/02/28/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%BE%E5%BA%8A%E7%9F%A5%E8%AF%86/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/27/Test11-%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/">Test11-函数和文件</a></h1><div class="post-meta">2019-02-27</div><div class="post-content">
+不使用BibTex
+
+使用BibTex
+
+
+这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
+
+利用BibTex的方法引入文献：
+分为以下四步：
+
+用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
+
+用BibTex编译 .aux文件（有些仅编译 .bib文件，...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/20/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E6%9C%AC%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97/">Markdown语法基本编辑指南</a></h2><div class="article-meta"><time datetime="2019-02-20T11:52:20.000Z">2019-02-20</time><div class="article-tags"><a class="tag-pill" href="/tags/Markdown/">Markdown</a></div></div><div class="article-excerpt"><p>Markdown语法基本编辑指南
+
+
+
+Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog
+
+本指南所用Markdown编辑器软件:Typora 0.9.60
+
+Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉使用。
+
+Markdown语法
+突出显示
+
+12==我是高亮== （默认为黄色)`我是标记`
+
+
+
+字体修饰
+
+1234**加粗**...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/20/Markdown%E8%AF%AD%E6%B3%95%E5%9F%BA%E6%9C%AC%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/20/Markdown-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/">Markdown:从0到1入门</a></h2><div class="article-meta"><time datetime="2019-02-20T11:47:53.000Z">2019-02-20</time><div class="article-tags"><a class="tag-pill" href="/tags/Markdown/">Markdown</a></div></div><div class="article-excerpt"><p>**
+Markdown:从0到1入门**
+[TOC]
+
+写在前面的话：
+
+
+博主于2019年1月4号开始接触 Markdown语言，此前从未听说过；而且也非计算机背景。
+
+
+所以本文非常适合新手&amp;#x3D;&amp;#x3D;从0到1入门&amp;#x3D;&amp;#x3D;
+
+0.第零步
+
+认识 Markdown 语言：
+
+
+一篇详细的关于Markdown的介绍
+
+
+Markdown语言侧重于内容编写，而不是排版，主...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/20/Markdown-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/">LaTex:从0到1入门</a></h2><div class="article-meta"><time datetime="2019-02-20T11:38:13.000Z">2019-02-20</time><div class="article-tags"><a class="tag-pill" href="/tags/LaTex/">LaTex</a></div></div><div class="article-excerpt"><p>
+写在前面的话：
+
+
+博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。
+
+
+所以本文非常适合新手&amp;#x3D;&amp;#x3D;从0到1入门&amp;#x3D;&amp;#x3D;
+
+第零步
+
+认识 LaTex ：
+
+
+一篇详细的关于LaTex的介绍
+
+
+LaTex适合文章等的排版，让你专注于结构和内容
+
+
+关于和 word对比，孰优孰劣的问题
+
+
+word更易上手，是一种文档处理软件
+
+
+LaTex上...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/19/%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84Python%E7%9F%A5%E8%AF%86/">学习中需要了解的Python知识</a></h2><div class="article-meta"><time datetime="2019-02-19T13:43:06.000Z">2019-02-19</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a></div></div><div class="article-excerpt"><p>在通过《笨方法学Python》学习Python的过程中，作者在每一节，提出了一些Python的知识，以让读者提前研习。
+
+Pydoc命令
+
+input() 和 raw_input() 命令的区别
+
+import命令
+
+
+1. Pydoc命令
+
+pydoc — Documentation generator and online help system
+
+
+帮你从代码和注释自动生成文档的工具
+
+所以...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/19/%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84Python%E7%9F%A5%E8%AF%86/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/">Test1_第一个程序</a></h2><div class="article-meta"><time datetime="2019-02-03T04:47:02.000Z">2019-02-03</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节是利用Python的函数做文件的IO处理
-[TOC]
-源代码12345678910111213141516171819202122232425262728#ex20.pyfromscript,input_...</div><p class="readmore"><a href="/2019/02/27/Test11-%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%87%E4%BB%B6/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/">Test10-变量与函数</a></h1><div class="post-meta">2019-02-26</div><div class="post-content">
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版1234567printprintprintprintprintprintprin...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/">Test2_数字和数学计算</a></h2><div class="article-meta"><time datetime="2019-02-03T04:47:02.000Z">2019-02-03</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节主要学习函数的多种参数传递方式
-我们可以直接给函数传递数字，也可以传递变量，还可以传递给它数学公式，甚至也可以把数学公式和变量合起来用。
-[TOC]
-源代码123456789101112131415161...</div><p class="readmore"><a href="/2019/02/26/Test10-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/25/Test8-%E5%8F%98%E9%87%8F%E3%80%81%E5%87%BD%E6%95%B0/">Test8-变量、函数</a></h1><div class="post-meta">2019-02-25</div><div class="post-content">
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版1234567891011121314151617printprintprintprintprint...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/03/Test5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/">Test5_更多字符串练习</a></h2><div class="article-meta"><time datetime="2019-02-03T04:47:02.000Z">2019-02-03</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-这一节我们会学习到“函数”，函数可以做到以下三件事：
+文章主要分为三个部分：
 
-它可以给代码段命名，就跟“变量”给字符串命名一样
+原文—摘录至《笨方法学Python》第三版
 
-它可以接收参数，就想前面的脚本接收argv一样
+学习中遇到的问题
 
-使用上面第一条和第二条，可以创建**“小命令”**...</div><p class="readmore"><a href="/2019/02/25/Test8-%E5%8F%98%E9%87%8F%E3%80%81%E5%87%BD%E6%95%B0/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/25/%E9%9A%8F%E6%83%B3-%E5%85%B3%E4%BA%8E%E5%8E%82%E5%95%86%E6%8E%A8%E5%87%BA%E6%8A%98%E5%8F%A0%E5%B1%8F%E6%89%8B%E6%9C%BA%E7%9A%84%E6%80%9D%E8%80%83/">关于手机厂商竞相推出折叠屏手机的思考</a></h1><div class="post-meta">2019-02-25</div><div class="post-content">前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。
-去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。
-[TOC]
-1. 为什么厂商要竞相发布折叠屏手机？
-尽快的占领用户心智现在手机同质化太严重，去除...</div><p class="readmore"><a href="/2019/02/25/%E9%9A%8F%E6%83%B3-%E5%85%B3%E4%BA%8E%E5%8E%82%E5%95%86%E6%8E%A8%E5%87%BA%E6%8A%98%E5%8F%A0%E5%B1%8F%E6%89%8B%E6%9C%BA%E7%9A%84%E6%80%9D%E8%80%83/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/24/%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E4%BA%BA%E5%BF%85%E7%94%A8%E7%9A%84%E5%A4%A7%E5%B9%85%E6%8F%90%E9%AB%98%E5%8A%9E%E5%85%AC%E6%95%88%E7%8E%87%E7%9A%84%E5%B7%A5%E5%85%B7-1st/">产品人必用的大幅提高办公效率的工具|产品软件更新|1st</a></h1><div class="post-meta">2019-02-24</div><div class="post-content">[TOC]
-Groupy
+问题的解决方法
 
-每一位产品经理都会触发一下“彩蛋”：
+附加练习
 
 
-办公时会打开多个软件，需要在不同软件之间切换，查看
+原文—摘录至《笨方法学Python》第三版、 &amp;amp;1234567891011121314151617181920212...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/03/Test5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/">Test3_变量和命名</a></h2><div class="article-meta"><time datetime="2019-02-03T04:47:02.000Z">2019-02-03</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
 
 
-有时会被搞的眼花缭乱
+原文—摘录至《笨方法学Python》第三版&amp;amp;123456789101112131415161718192021222324252627...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/">Read More<i class="fa fa-arrow-right"></i></a></div></article><article class="article-card"><h2 class="article-title"><a href="/2019/02/03/Test6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F/">Test6_参数、变量</a></h2><div class="article-meta"><time datetime="2019-02-03T04:47:02.000Z">2019-02-03</time><div class="article-tags"><a class="tag-pill" href="/tags/Python/">Python</a><a class="tag-pill" href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/">笨方法学Python</a></div></div><div class="article-excerpt"><p>
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
 
 
-你肯定会有以下需求：
-
-
-希望把所有的软件整合在一起
-
-
-
-
-软件切换和查看可以非常方便
-
-
-
-
-既然有需求，那就一定有解决需求的办法：
-有这么一款软件，它可以把所有软件整合在一起，就像浏览器的标签页一样，点...</div><p class="readmore"><a href="/2019/02/24/%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E4%BA%BA%E5%BF%85%E7%94%A8%E7%9A%84%E5%A4%A7%E5%B9%85%E6%8F%90%E9%AB%98%E5%8A%9E%E5%85%AC%E6%95%88%E7%8E%87%E7%9A%84%E5%B7%A5%E5%85%B7-1st/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/23/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E4%B8%80%E9%94%AE%E5%BC%8F%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91/">hexo框架下，实现图片一键式上传到七牛云</a></h1><div class="post-meta">2019-02-23</div><div class="post-content">在使用hexo框架驱动个人博客时，图片的插入是一个比较费心的事情
-以我为例，我使用hexo+Github搭建个人独立博客
-但是Github仓库提供的存储空间是有限的，如果把图片保存到本地(对应的是Github仓库)，那么不多久就会占满整个空间。
-最好的解决办法，就是把图片上传到图床，目前主流采用的是七牛云(可以通过我的链接注册：https://portal....</div><p class="readmore"><a href="/2019/02/23/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E4%B8%80%E9%94%AE%E5%BC%8F%E4%B8%8A%E4%BC%A0%E5%88%B0%E4%B8%83%E7%89%9B%E4%BA%91/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/">Typora+七牛云，高效写Markdown|产品必用软件|第1期</a></h1><div class="post-meta">2019-02-22</div><div class="post-content">作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等
-而且产品人日常还要写写文章什么的。
-如果用传统的word去写文档，真的是：
-
-
-写作两分钟，格式两小时
-而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率
-进门右转，Markdown入门
-
-一篇文章主要有文字、链接、图片以及格式等组成...</div><p class="readmore"><a href="/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/">Python_文件IO_知识</a></h1><div class="post-meta">2019-02-22</div><div class="post-content">在通过《笨方法学Python》学习利用Python读取、读写文件的过程中，需要掌握一些基础知识。
-[TOC]
-
-open命令
-
-write命令
-
-close命令、read命令
-
-
-1. open命令open()指令的作用是打开文件
-标准的语法如下：
-
-
-open(file[, mode[, buffering[, encoding[, errors[, ne...</div><p class="readmore"><a href="/2019/02/22/Python_%E6%96%87%E4%BB%B6IO_%E7%9F%A5%E8%AF%86/">阅读全文</a></p></div><nav class="page-navigator"><a class="extend prev" rel="prev" href="/page/5/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/7/">下一页</a></nav></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>分享技术与经验</p><a class="info-icon" href="https://github.com/Darerd" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="#" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Claude-Code/" style="font-size: 15px;">Claude Code</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">开发工具</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next%E6%A8%A1%E6%9D%BF/" style="font-size: 15px;">Next模板</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" style="font-size: 15px;">笨方法学Python</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 15px;">图床</a> <a href="/tags/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">产品书单</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 15px;">技巧</a> <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" style="font-size: 15px;">阅读体会</a> <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" style="font-size: 15px;">用户画像</a> <a href="/tags/Open-claw/" style="font-size: 15px;">Open claw</a> <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" style="font-size: 15px;">大佬思考</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" style="font-size: 15px;">软件资源</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px;">爬虫</a> <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" style="font-size: 15px;">产品必用软件</a> <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" style="font-size: 15px;">产品问答</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2026/03/28/%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E7%BD%91%E9%83%BD%E5%9C%A8%E2%80%9C%E5%85%BB%E9%BE%99%E8%99%BE%E2%80%9D%EF%BC%9F/">思考：为什么全网都在“养龙虾”？</a></li><li class="post-list-item"><a class="post-list-link" href="/2026/03/27/Claude-Code%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Claude Code 安装与使用指南（Mac & Windows）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/">微信PC端多开的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/">问答-工作被流程化，到底该不该？</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/25/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%B6%85%E7%BA%A7IP%E3%80%8B%EF%BC%9A%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B0%E7%89%A9%E7%A7%8D%E6%96%B9%E6%B3%95%E8%AE%BA/">产品书单-《超级IP》：互联网新物种方法论</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/21/%E8%BD%AF%E4%BB%B6-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84To-Do%E6%B8%85%E5%8D%95-%E5%B0%8F%E9%BB%84%E6%9D%A1/">软件-简单实用的To-Do清单-小黄条</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/">产品书单-《长尾理论》：为什么商业的未来是小众市场</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/14/%E8%BD%AF%E4%BB%B6-%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E8%89%AF%E5%BF%83%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%88%E9%87%8D%E8%A6%81-Cent%E6%B5%8F%E8%A7%88%E5%99%A8/">软件-选择一款良心浏览器很重要-Cent浏览器</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/">随想-我对投资的认识</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/13/%E9%97%AE%E7%AD%94-%E6%80%8E%E4%B9%88%E2%80%9C%E2%80%9C%E9%AA%82%E2%80%9D%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">问答-怎么““骂”一个产品经理|产品问答|第4期</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+原文—摘录至《笨方法学Python》第三版&amp;amp;123456789101112131415161718192021222...</p></div><div class="article-footer"><a class="read-more" href="/2019/02/03/Test6-%E5%8F%82%E6%95%B0%E3%80%81%E5%8F%98%E9%87%8F/">Read More<i class="fa fa-arrow-right"></i></a></div></article></div><nav class="page-navigator"><a class="extend prev" rel="prev" href="/page/5/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/">下一页</a></nav></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><div id="search-overlay"><div class="search-overlay-inner"><div class="search-overlay-close" title="关闭">&times;</div><input id="search-overlay-input" type="text" placeholder="搜索文章..." autocomplete="off"><div id="search-overlay-result"></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
 if (search_path.length == 0) {
   search_path = 'search.xml';
 }
 var path = '/' + search_path;
 searchFunc(path, 'local-search-input', 'local-search-result');
-</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+
+// Search overlay toggle
+(function() {
+  var overlay = document.getElementById('search-overlay');
+  var input = document.getElementById('search-overlay-input');
+  var result = document.getElementById('search-overlay-result');
+  var toggle = document.getElementById('search-toggle');
+  var closeBtn = document.querySelector('.search-overlay-close');
+
+  if (!overlay || !input || !toggle) return;
+
+  function openSearch() {
+    overlay.classList.add('active');
+    input.focus();
+    // Trigger search on input
+    input.addEventListener('input', handleOverlaySearch);
+  }
+
+  function closeSearch() {
+    overlay.classList.remove('active');
+    input.value = '';
+    if (result) result.innerHTML = '';
+  }
+
+  function handleOverlaySearch() {
+    if (!result) return;
+    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+    result.innerHTML = '<p style="text-align:center;color:#999;padding:20px;">搜索中...</p>';
+    if (this.value.trim().length <= 0) {
+      result.innerHTML = '';
+      return;
+    }
+
+    function doSearch(datas) {
+      var str = '<ul class="search-result-list">';
+      var matchCount = 0;
+      datas.forEach(function(data) {
+        var isMatch = true;
+        var data_title = (data.title || '').trim().toLowerCase();
+        var data_content = (data.content || '').replace(/<[^>]+>/g, '').toLowerCase();
+        var data_url = data.url || '';
+        keywords.forEach(function(keyword) {
+          if (data_title.indexOf(keyword) < 0 && data_content.indexOf(keyword) < 0) {
+            isMatch = false;
+          }
+        });
+        if (isMatch && matchCount < 8) {
+          matchCount++;
+          var idx = data_content.indexOf(keywords[0]);
+          var content = '';
+          if (idx > -1) {
+            var start = Math.max(0, idx - 40);
+            var end = Math.min(data_content.length, idx + 80);
+            content = (start > 0 ? '...' : '') + data_content.substring(start, end) + (end < data_content.length ? '...' : '');
+          }
+          str += '<li><a class="search-result-title" href="' + data_url + '">' + data.title + '</a>';
+          if (content) str += '<p class="search-result">' + content + '</p>';
+          str += '</li>';
+        }
+      });
+      str += '</ul>';
+      result.innerHTML = matchCount === 0 ? '<p style="text-align:center;color:#999;padding:20px;">未找到相关文章</p>' : str;
+    }
+
+    if (window._searchData) {
+      doSearch(window._searchData);
+    } else {
+      $.ajax({
+        url: path,
+        dataType: 'xml',
+        success: function(xmlResponse) {
+          var datas = $('entry', xmlResponse).map(function() {
+            return {
+              title: $('title', this).text(),
+              content: $('content', this).text(),
+              url: $('url', this).text()
+            };
+          }).get();
+          window._searchData = datas;
+          doSearch(datas);
+        }
+      });
+    }
+  }
+
+  if (toggle) toggle.addEventListener('click', openSearch);
+  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+  if (overlay) overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeSearch();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeSearch();
+  });
+})();
+</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/heatmap.css?v=1.0.0"><script type="text/javascript" src="/js/heatmap.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/wechat-modal.css?v=1.0.0"><script type="text/javascript" src="/js/wechat-modal.js?v=1.0.0"></script></div></body></html>
