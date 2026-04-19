@@ -125,15 +125,6 @@ body {
   color: var(--selection-text);
 }
 
-.body_container {
-  padding: 0 60px;
-  max-width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 #layout {
   flex: 1;
 }
@@ -162,12 +153,14 @@ body {
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color var(--transition-fast);
+  border-bottom: 1px solid var(--border-color);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
 }
 
 a:hover,
 a:active {
   color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
 }
 
 a:focus {
@@ -358,12 +351,8 @@ div {
   border: 1px solid #bbb;
   width: 65%;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 #sidebar .widget .author-info {
@@ -394,12 +383,12 @@ div {
 }
 .post .post-title {
   margin: 0;
-  color: #555;
+  color: #333;
   text-align: left;
   font: bold 25px/1.1 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Georgia, serif;
 }
 .post .post-title a {
-  color: #555;
+  color: #333;
 }
 .post .post-title .top-post {
   font-weight: 400;
@@ -719,7 +708,7 @@ div {
 /* middle*/
 @media print, screen and (max-width: 48em) {
   .body_container {
-    padding: 0 30px;
+    padding: 0 40px;
   }
   .content_container {
     padding-right: 15px;
@@ -748,10 +737,16 @@ div {
 /* small*/
 @media print, screen and (max-width: 35.5em) {
   .body_container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .content_container {
     padding-right: 0;
+  }
+}
+/* extra small*/
+@media print, screen and (max-width: 25em) {
+  .body_container {
+    padding: 0 15px;
   }
 }
 blockquote,

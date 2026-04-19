@@ -1,6 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>常用网站导航</title>
+    <url>/2019/03/19/@%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/</url>
+    <content><![CDATA[网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮
+1. 资讯👉cnBeta		👉数位时代	👉科技行者
+2. 博客👉刘未鹏	👉酷壳	👉崔庆才	👈Benson‘s Blog
+3. 社区👉产品经理	👉PMCAFF	👉V2EX​
+4. 管理👉哈佛商业评论	👉MBA智库
+5. 数据分析👉国家数据	👉世界银行公开数据	👉移动观象台	👉百度指数	👉天眼查	👉艾瑞数据	👉APP Annie	👉七麦
+6. 投融资👉创业邦	👉i黑马	👉创新工场
+7. 产品资源👉产品原型设计	👉产品文档规范
+8. 技术指南👉Python文档	👉Web文档	👉Git文档​	👉iFixit
+9. 工具👉临时邮箱	👉临时手机号	👉创客贴
+10. 软件下载👉MSDN	👉小众软件	👉胡萝卜周	👉吾爱破解
+]]></content>
+  </entry>
+  <entry>
+    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
+    <url>/2026/03/27/Claude-Code%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
+
+
+Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
+/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
+
+
+参考文档：Homebrew 国内镜像安装教程
+
+第二步：安装 Node.jsbrew install node
+
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
+
+
+Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
+第二步：安装 Node.js推荐使用 winget 安装最新版本：
+winget install -e --id OpenJS.NodeJS
+
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
+
+
+客户端选择安装完成后，有两种使用方式：
+
+
+
+方式
+工具
+特点
+
+
+
+CLI（命令行）
+CC Switch
+轻量，支持多 Agent 管理
+
+
+GUI（图形界面）
+Tokenicode
+轻量级图形界面，配合 CC Switch 做 Agent 管理
+
+
+推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
+
+总结
+
+
+平台
+核心依赖
+安装命令
+
+
+
+Mac
+Homebrew + Node.js
+国内镜像脚本
+
+
+Windows
+Git + Node.js
+winget + npm
+
+
+两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Claude Code</tag>
+        <tag>开发工具</tag>
+        <tag>Mac</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTex:从0到1入门</title>
+    <url>/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[
+写在前面的话：
+
+
+博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。
+
+
+所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
+
+第零步
+
+认识 LaTex ：
+
+
+一篇详细的关于LaTex的介绍
+
+
+LaTex适合文章等的排版，让你专注于结构和内容
+
+
+关于和 word对比，孰优孰劣的问题
+
+
+word更易上手，是一种文档处理软件
+
+
+LaTex上手更难，是一种排版工具
+
+
+LaTex 和 word 优劣的讨论帖
+第一步到这一步，我们知道LaTex是一种电子排版系统，是公认的数学公式排得最好的系统，主要作用是让你专注于写作，得到高质量的排版输出。
+​	学习LaTex，那就需要能够编辑它和翻译它的工具—LaTex编译器(小编自己起的名字😆 )
+​	我试了很多编译器，如：Lyx、TeXworks、WinEdt，用来用去最后最爱的还是TexStudio。
+​	我建议新手可以先从线上编辑器(如：Overleaf) 先学习。
+
+一篇详细介绍LaTex编译器的帖子
+第二步如果你在线上试了试LaTex练习，还是想学，那么你在电脑上安装LaTex运行的环境，这里推荐下载Texlive。
+
+一篇介绍LaTex软件下载的帖子
+
+当你安装好Texlive后，电脑就有了LaTex的编译环境，
+​	这时，你需要一个好用的第三方编译器来帮助你编译
+​	我自己最喜欢的LaTex编译器—TexStudio
+​	下载地址
+
+种草几个LaTex学习社区：
+LaTex开源小屋
+LaTeX 快速入门
+
+网上有很多资源，自己取挖掘啦
+第三步我是因为要写毕业论文，需要排版，所以开始学习LaTex；
+​	参考我的学习经验，我建议是找一份模板，然后去研究这部分模板；
+​	我就是发现网上的论文模板和学校要求的有出入，然后自己就试着对模板
+​	去修改，就是在这样的过程中，慢慢有了提高；
+​	现在也算是入门了。
+
+推荐一些模板网站：
+​	网站1
+​	网站2
+
+最后祝你成功！！！
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>LaTex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTex:参考文献引用的方法</title>
+    <url>/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[LaTex排版时，引入参考文献的方法
+
+引入参考文献主要分为两种：
+
+不使用BibTex
+
+使用BibTex
+
+
+这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
+
+利用BibTex的方法引入文献：
+分为以下四步：
+
+用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
+
+用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
+
+再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
+
+最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
+
+
+
+如果你采用的是TexStudio作为编译器，具体的操作方法如下：
+
+按F6编译写好的 .tex 文件
+
+按F8编译生成的 .aux 文件
+
+按F6编译写好的 .tex 文件
+
+按F6编译写好的 .tex 文件
+
+
+
+以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>LaTex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown写作必用软件|产品软件|4th</title>
+    <url>/2019/03/04/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-4th/</url>
+    <content><![CDATA[
+
+本文适合正在使用Markdown写作和准备学习Markdown写作的产品人
+本期主要介绍在使用Markdown写作时，有哪些软件是必不可少的，一定会用得到的
+一篇文章主要包括三个要素：
+
+文字
+
+图片
+
+排版
+
+
+与此对应的，我们需要一款Markdown编辑器、一款截图软件和一款图床工具
+[TOC]
+Markdown编辑器Markdown编辑器有很多，随便在知乎一搜，markdown编辑器推荐，就可以找到很多介绍的文章，这里我就不重复造轮子了。
+我主要推荐一款Markdown编辑器–Typora
+Typora演示.demo
+
+Typora设计的核心理念是：所见即所得
+软件的颜值非常高，而且完全免费
+不过Markdown新手需要一些时间去适应，开始用的时候会非常不习惯
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复typora，即刻获得下载链接
+截图软件Snipaste我认为这一款是windows系统中最好用的截图工具，简单、好用
+演示.demo
+
+核心功能是截图
+特色功能是贴图
+都支持自定义快捷键，用起来非常方便
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复snipaste，即刻获得下载链接
+ScreentoGif除了图片之外，越来越多人喜欢用gif图，来演示
+ScreentoGif录制简单，编辑功能强大
+
+
+把需要制作的gif的部分，放在框里，录制即可
+支持导出gif、mp4等格式
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复screentogif，即刻获得下载链接
+图床工具Picgo关于图床工具，我前面出过一期非常详细的介绍，这里是详细完备的图床工具介绍
+演示.demo
+
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复picgo，即刻获得下载链接
+
+
+
+Markdown写作是有一定学习成本的，希望你可以坚持下去
+
+
+最后会感受到Markdown写作的便捷之处
+
+
+
+这是产品人必用软件系列的第四期
+
+
+此系列逢五更新
+
+
+也就是每月的5号、15号和25号更新
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客框架下，模板的选择与主题优化</title>
     <url>/2019/01/30/Hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6%E4%B8%8B%EF%BC%8C%E6%A8%A1%E6%9D%BF%E7%9A%84%E9%80%89%E6%8B%A9%E4%B8%8E%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[折腾了两三天，零基础的我，终于找到一个喜欢的模板，并做好了优化
@@ -115,147 +417,6 @@ nMask’s Blog
       </tags>
   </entry>
   <entry>
-    <title>常用网站导航</title>
-    <url>/2019/03/19/@%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/</url>
-    <content><![CDATA[网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮
-1. 资讯👉cnBeta		👉数位时代	👉科技行者
-2. 博客👉刘未鹏	👉酷壳	👉崔庆才	👈Benson‘s Blog
-3. 社区👉产品经理	👉PMCAFF	👉V2EX​
-4. 管理👉哈佛商业评论	👉MBA智库
-5. 数据分析👉国家数据	👉世界银行公开数据	👉移动观象台	👉百度指数	👉天眼查	👉艾瑞数据	👉APP Annie	👉七麦
-6. 投融资👉创业邦	👉i黑马	👉创新工场
-7. 产品资源👉产品原型设计	👉产品文档规范
-8. 技术指南👉Python文档	👉Web文档	👉Git文档​	👉iFixit
-9. 工具👉临时邮箱	👉临时手机号	👉创客贴
-10. 软件下载👉MSDN	👉小众软件	👉胡萝卜周	👉吾爱破解
-]]></content>
-  </entry>
-  <entry>
-    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
-    <url>/2026/03/27/Claude-Code%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
-
-
-Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
-/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-
-
-参考文档：Homebrew 国内镜像安装教程
-
-第二步：安装 Node.jsbrew install node
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
-第二步：安装 Node.js推荐使用 winget 安装最新版本：
-winget install -e --id OpenJS.NodeJS
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-客户端选择安装完成后，有两种使用方式：
-
-
-
-方式
-工具
-特点
-
-
-
-CLI（命令行）
-CC Switch
-轻量，支持多 Agent 管理
-
-
-GUI（图形界面）
-Tokenicode
-轻量级图形界面，配合 CC Switch 做 Agent 管理
-
-
-推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
-
-总结
-
-
-平台
-核心依赖
-安装命令
-
-
-
-Mac
-Homebrew + Node.js
-国内镜像脚本
-
-
-Windows
-Git + Node.js
-winget + npm
-
-
-两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Claude Code</tag>
-        <tag>开发工具</tag>
-        <tag>Mac</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTex:参考文献引用的方法</title>
-    <url>/2019/02/20/LaTex-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E5%BC%95%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[LaTex排版时，引入参考文献的方法
-
-引入参考文献主要分为两种：
-
-不使用BibTex
-
-使用BibTex
-
-
-这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
-
-利用BibTex的方法引入文献：
-分为以下四步：
-
-用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
-
-用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
-
-再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
-
-最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
-
-
-
-如果你采用的是TexStudio作为编译器，具体的操作方法如下：
-
-按F6编译写好的 .tex 文件
-
-按F8编译生成的 .aux 文件
-
-按F6编译写好的 .tex 文件
-
-按F6编译写好的 .tex 文件
-
-
-
-以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>LaTex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown:从0到1入门</title>
     <url>/2019/02/20/Markdown-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[**
@@ -313,86 +474,97 @@ Typora官网
       </tags>
   </entry>
   <entry>
-    <title>Markdown写作必用软件|产品软件|4th</title>
-    <url>/2019/03/04/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E8%BD%AF%E4%BB%B6-4th/</url>
+    <title>Markdown写作必须知道的图床知识</title>
+    <url>/2019/02/28/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%BE%E5%BA%8A%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[
 
-本文适合正在使用Markdown写作和准备学习Markdown写作的产品人
-本期主要介绍在使用Markdown写作时，有哪些软件是必不可少的，一定会用得到的
-一篇文章主要包括三个要素：
-
-文字
-
-图片
-
-排版
+如果你喜欢用Markdown写文章，又或者刚入了Markdown的坑
 
 
-与此对应的，我们需要一款Markdown编辑器、一款截图软件和一款图床工具
+那么你一定会遇到一个绕不开的问题：
+
+
+图片的插入
+Markdown插入图片很简单，不少markdown编辑器都支持本地图片插入、图片直接拖入
+但是除非你导出为pdf或者word格式。
+否则，只要改动了图片在本地的位置，这个图就会挂掉。
+
+为了解决这个问题，一般需要图床来解决
+
+图床简单理解就是一个存放你图片的云盘
+图片上传到云端后，图床会给你生成一个url，在markdown编辑器插入这个url，就可以插
+入图片了。
+
+
+所以，如果你喜欢Markdown写作的爽感，就需要了解下图床知识
+重要图片不适合使用图床，云端再好用，都不如本地安全
 [TOC]
-Markdown编辑器Markdown编辑器有很多，随便在知乎一搜，markdown编辑器推荐，就可以找到很多介绍的文章，这里我就不重复造轮子了。
-我主要推荐一款Markdown编辑器–Typora
-Typora演示.demo
-
-Typora设计的核心理念是：所见即所得
-软件的颜值非常高，而且完全免费
-不过Markdown新手需要一些时间去适应，开始用的时候会非常不习惯
+收费图床1. 七牛云
+利用其对象存储的服务，可以用作个人图床
 
 
-搜索微信号：darerpm，关注公众号
+注册认证后有10G永久免费空间，每月10G国内和10G国外流量，速度相当快，
 
 
-公众号后台回复typora，即刻获得下载链接
-截图软件Snipaste我认为这一款是windows系统中最好用的截图工具，简单、好用
-演示.demo
-
-核心功能是截图
-特色功能是贴图
-都支持自定义快捷键，用起来非常方便
+七牛云是国内专业CDN服务商，插件支持比较多，有免费ssl证书，但https流量收费
+注意：七牛云30天后会回收测试域名，因此你必须要绑定自己的已经备案的域名
+如果你没有备案域名、不做个人网站，平时就是写写文章的话，不建议使用
+因为域名回收后，图床就无法使用了
 
 
-搜索微信号：darerpm，关注公众号
+如果你还是想体验下，可以使用我的邀请链接注册：
 
 
-公众号后台回复snipaste，即刻获得下载链接
-ScreentoGif除了图片之外，越来越多人喜欢用gif图，来演示
-ScreentoGif录制简单，编辑功能强大
+https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu
 
 
-把需要制作的gif的部分，放在框里，录制即可
-支持导出gif、mp4等格式
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复screentogif，即刻获得下载链接
-图床工具Picgo关于图床工具，我前面出过一期非常详细的介绍，这里是详细完备的图床工具介绍
-演示.demo
+因为我也可以得到一些奖励
 
 
 
-搜索微信号：darerpm，关注公众号
+2. 又拍云
+和前面提到的七牛云一样，两家的业务也类似，服务也类似
 
 
-公众号后台回复picgo，即刻获得下载链接
+注册认证后有10G永久免费空间，每月15G的HTTP和HTTPS流量，提供两款可以免费续期的SSL证书，不过用户需要加入又拍云联盟（即在网站底部添加又拍云logo及官网链接）
+目前还不清楚又拍云提供的域名是否会回收，没有查到相关讯息
+3. 腾讯云
+
+
+可以使用六个月的免费存储容量、免费请求和免费流量
+4. 阿里云
+收费情况：
+
+
+总之，对于企业级的图床服务，想长期免费是不可能的
+如果你只是用来写写文章，建议实用下面介绍的免费图床
+如果你想建站，可以考虑以上收费图床
+不过一般都会要求你绑定已备案的域名
+
+免费图床1. 微博图床
+
+微博图床的特点是免费，没有容量限制，全网 CDN 加速，支持 HTTPS，到哪里都很快。但是免费的服务也有不足的地方，上传的图片会被转成 jpg，图片中可能加上了肉眼难以识别的水印，另外微博的图片鉴别服务也可能会随时删除你的图片。
+大陆最好用的免费图床了
+需要注册微博账号
+使用微博图床，一般需要一些图床上传工具，
+关于图床上传工具，后面会介绍
+2. SM.MS图床
+服务器搭建在香港，免费使用，官网链接
+3. 路过图床(imgchr)
+
+服务器在海外，感觉随时有可能被墙额。。。
+
+免费图床有很多，最常用的就是这三个了
+微博图床应该算是最稳定的了
 
 
 
-Markdown写作是有一定学习成本的，希望你可以坚持下去
+还是那句话：
 
 
-最后会感受到Markdown写作的便捷之处
+重要的图片不要用图床，云端在方便，也不如本地安全
 
-
-
-这是产品人必用软件系列的第四期
-
-
-此系列逢五更新
-
-
-也就是每月的5号、15号和25号更新
+一般图床上传都需要一些辅助工具，来减少工作量，改天会介绍图床工具的选择
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -529,175 +701,56 @@ HTML常用语法
       </tags>
   </entry>
   <entry>
-    <title>LaTex:从0到1入门</title>
-    <url>/2019/02/20/LaTex-%E4%BB%8E0%E5%88%B01%E5%85%A5%E9%97%A8/</url>
+    <title>Test1_第一个程序</title>
+    <url>/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[
-写在前面的话：
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
 
 
-博主于2019年1月2号开始接触 LaTex语言,也非计算机背景。
+原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprint
 
 
-所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
-
-第零步
-
-认识 LaTex ：
-
-
-一篇详细的关于LaTex的介绍
+遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’
+如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot;
+否则就会出现如下结果：
+&gt;&gt;&gt; SyntaxError: invalid syntax&gt;&gt;&gt; print &#x27; I &#x27;said&#x27; do not touch this.&#x27;SyntaxError: invalid syntax
 
 
-LaTex适合文章等的排版，让你专注于结构和内容
+解决办法书写时，注意这个细节，按照规范书写即可
+附加练习以下摘录自原文
+
+多打印一行脚本
+
+让脚本只打印一行
+
+如果在代码前加一个“#”，会出现什么效果呢？
 
 
-关于和 word对比，孰优孰劣的问题
 
+程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。
 
-word更易上手，是一种文档处理软件
-
-
-LaTex上手更难，是一种排版工具
-
-
-LaTex 和 word 优劣的讨论帖
-第一步到这一步，我们知道LaTex是一种电子排版系统，是公认的数学公式排得最好的系统，主要作用是让你专注于写作，得到高质量的排版输出。
-​	学习LaTex，那就需要能够编辑它和翻译它的工具—LaTex编译器(小编自己起的名字😆 )
-​	我试了很多编译器，如：Lyx、TeXworks、WinEdt，用来用去最后最爱的还是TexStudio。
-​	我建议新手可以先从线上编辑器(如：Overleaf) 先学习。
-
-一篇详细介绍LaTex编译器的帖子
-第二步如果你在线上试了试LaTex练习，还是想学，那么你在电脑上安装LaTex运行的环境，这里推荐下载Texlive。
-
-一篇介绍LaTex软件下载的帖子
-
-当你安装好Texlive后，电脑就有了LaTex的编译环境，
-​	这时，你需要一个好用的第三方编译器来帮助你编译
-​	我自己最喜欢的LaTex编译器—TexStudio
-​	下载地址
-
-种草几个LaTex学习社区：
-LaTex开源小屋
-LaTeX 快速入门
-
-网上有很多资源，自己取挖掘啦
-第三步我是因为要写毕业论文，需要排版，所以开始学习LaTex；
-​	参考我的学习经验，我建议是找一份模板，然后去研究这部分模板；
-​	我就是发现网上的论文模板和学校要求的有出入，然后自己就试着对模板
-​	去修改，就是在这样的过程中，慢慢有了提高；
-​	现在也算是入门了。
-
-推荐一些模板网站：
-​	网站1
-​	网站2
-
-最后祝你成功！！！
+为什么  Print “Hi # there.”  里的#没被忽略掉呢？
+这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
       </categories>
       <tags>
-        <tag>LaTex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown写作必须知道的图床知识</title>
-    <url>/2019/02/28/Markdown%E5%86%99%E4%BD%9C%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%BE%E5%BA%8A%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[
-
-如果你喜欢用Markdown写文章，又或者刚入了Markdown的坑
-
-
-那么你一定会遇到一个绕不开的问题：
-
-
-图片的插入
-Markdown插入图片很简单，不少markdown编辑器都支持本地图片插入、图片直接拖入
-但是除非你导出为pdf或者word格式。
-否则，只要改动了图片在本地的位置，这个图就会挂掉。
-
-为了解决这个问题，一般需要图床来解决
-
-图床简单理解就是一个存放你图片的云盘
-图片上传到云端后，图床会给你生成一个url，在markdown编辑器插入这个url，就可以插
-入图片了。
-
-
-所以，如果你喜欢Markdown写作的爽感，就需要了解下图床知识
-重要图片不适合使用图床，云端再好用，都不如本地安全
-[TOC]
-收费图床1. 七牛云
-利用其对象存储的服务，可以用作个人图床
-
-
-注册认证后有10G永久免费空间，每月10G国内和10G国外流量，速度相当快，
-
-
-七牛云是国内专业CDN服务商，插件支持比较多，有免费ssl证书，但https流量收费
-注意：七牛云30天后会回收测试域名，因此你必须要绑定自己的已经备案的域名
-如果你没有备案域名、不做个人网站，平时就是写写文章的话，不建议使用
-因为域名回收后，图床就无法使用了
-
-
-如果你还是想体验下，可以使用我的邀请链接注册：
-
-
-https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu
-
-
-因为我也可以得到一些奖励
-
-
-
-2. 又拍云
-和前面提到的七牛云一样，两家的业务也类似，服务也类似
-
-
-注册认证后有10G永久免费空间，每月15G的HTTP和HTTPS流量，提供两款可以免费续期的SSL证书，不过用户需要加入又拍云联盟（即在网站底部添加又拍云logo及官网链接）
-目前还不清楚又拍云提供的域名是否会回收，没有查到相关讯息
-3. 腾讯云
-
-
-可以使用六个月的免费存储容量、免费请求和免费流量
-4. 阿里云
-收费情况：
-
-
-总之，对于企业级的图床服务，想长期免费是不可能的
-如果你只是用来写写文章，建议实用下面介绍的免费图床
-如果你想建站，可以考虑以上收费图床
-不过一般都会要求你绑定已备案的域名
-
-免费图床1. 微博图床
-
-微博图床的特点是免费，没有容量限制，全网 CDN 加速，支持 HTTPS，到哪里都很快。但是免费的服务也有不足的地方，上传的图片会被转成 jpg，图片中可能加上了肉眼难以识别的水印，另外微博的图片鉴别服务也可能会随时删除你的图片。
-大陆最好用的免费图床了
-需要注册微博账号
-使用微博图床，一般需要一些图床上传工具，
-关于图床上传工具，后面会介绍
-2. SM.MS图床
-服务器搭建在香港，免费使用，官网链接
-3. 路过图床(imgchr)
-
-服务器在海外，感觉随时有可能被墙额。。。
-
-免费图床有很多，最常用的就是这三个了
-微博图床应该算是最稳定的了
-
-
-
-还是那句话：
-
-
-重要的图片不要用图床，云端在方便，也不如本地安全
-
-一般图床上传都需要一些辅助工具，来减少工作量，改天会介绍图床工具的选择
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -787,59 +840,6 @@ fo=open(&#x27;fo.txt&#x27;str=foo.read(6printfo.close()
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test1_第一个程序</title>
-    <url>/2019/02/03/Test1-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-问题的解决方法
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprint
-
-
-遇到的问题如果用双引号” “ ，把字符串包起来，那么，句中不能用双引号，只能用单引号‘ ’
-如果用单引号‘ ’ ，把字符串包起来，那么，句中不能用单引号，只能用双引号&quot; &quot;
-否则就会出现如下结果：
-&gt;&gt;&gt; SyntaxError: invalid syntax&gt;&gt;&gt; print &#x27; I &#x27;said&#x27; do not touch this.&#x27;SyntaxError: invalid syntax
-
-
-解决办法书写时，注意这个细节，按照规范书写即可
-附加练习以下摘录自原文
-
-多打印一行脚本
-
-让脚本只打印一行
-
-如果在代码前加一个“#”，会出现什么效果呢？
-
-
-
-程序中注释是非常重要的，我们可以在一段代码的前面加上一个字符&quot;#&quot;，来把这段代码注释掉，而不被Python执行。
-
-为什么  Print “Hi # there.”  里的#没被忽略掉呢？
-这行代码里的#处于字符串内部，所以它就是引号结束前的字符串中的一部分，这时它只是一个普通字符，而不是代表注释的意思。
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1119,6 +1119,65 @@ offset： 开始的偏移量，也就是代表需要移动偏移的字节数
       </tags>
   </entry>
   <entry>
+    <title>Test15-if和else语言</title>
+    <url>/2019/03/02/Test15-if%E5%92%8Celse%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节主要学习程序学习中都会学习的if和else语言，运用和理解起来也是非常简单
+[TOC]
+源代码# ex30.pypeople=30cars=40buses=15if	printelif	printelse	printif	printelif	printelse	printif	printelse	print
+
+
+应该看到的结果
+本节需要注意的事
+如果多个elif块都是True，Python会如何处理？
+
+Python只会运行它遇到的是True的第一个块，所以只有第一个为True的块会运行。
+
+if和elif的区别
+
+如果程序中判断事件很多，全部用if的话，会遍历整个程序，用elif 程序运行时，只要if或后续某一个elif之一满足逻辑值为True，则程序执行完对应输出语句后自动结束该轮if-elif（即不会再去冗余地执行后续的elif或else）
+示例如下：
+#encoding=utf-8a=88if    printif    printif    printelse    print print if    printelif    printelif    printelse    print
+
+
+以上指令的执行结果如下：
+正好88良好* 正好88
+
+
+
+if、elif和else语句注意一下两点：
+
+
+else、elif为子块，不能独立使用
+
+一个if语句中可以包含多个elif语句，但是结尾只能有一个else语句
+
+
+
+
+
+这是**《笨方法学Python》**的第十五篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Test14-布尔表达式练习</title>
     <url>/2019/03/02/Test14-%E5%B8%83%E5%B0%94%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[
@@ -1184,65 +1243,6 @@ if语句、else语句和elif语句中间可以任意插入if语句、else语句�
 
 
 这是**《笨方法学Python》**的第十六篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test15-if和else语言</title>
-    <url>/2019/03/02/Test15-if%E5%92%8Celse%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节主要学习程序学习中都会学习的if和else语言，运用和理解起来也是非常简单
-[TOC]
-源代码# ex30.pypeople=30cars=40buses=15if	printelif	printelse	printif	printelif	printelse	printif	printelse	print
-
-
-应该看到的结果
-本节需要注意的事
-如果多个elif块都是True，Python会如何处理？
-
-Python只会运行它遇到的是True的第一个块，所以只有第一个为True的块会运行。
-
-if和elif的区别
-
-如果程序中判断事件很多，全部用if的话，会遍历整个程序，用elif 程序运行时，只要if或后续某一个elif之一满足逻辑值为True，则程序执行完对应输出语句后自动结束该轮if-elif（即不会再去冗余地执行后续的elif或else）
-示例如下：
-#encoding=utf-8a=88if    printif    printif    printelse    print print if    printelif    printelif    printelse    print
-
-
-以上指令的执行结果如下：
-正好88良好* 正好88
-
-
-
-if、elif和else语句注意一下两点：
-
-
-else、elif为子块，不能独立使用
-
-一个if语句中可以包含多个elif语句，但是结尾只能有一个else语句
-
-
-
-
-
-这是**《笨方法学Python》**的第十五篇文章
 
 
 希望自己可以坚持下去
@@ -1333,6 +1333,74 @@ obj – 添加到列表末尾的对象。
       </tags>
   </entry>
   <entry>
+    <title>Test20-列表的操作</title>
+    <url>/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节我们来学习Python是怎么对列表实行操作的
+[TOC]
+示例：当你看到mystuff.append(&#39;hello&#39;)这样的代码时，它已经在Python内部激发了一个连锁反应。以下是它的工作原理。
+
+Python看到你用到mystuff，于是就去找这个变量。也许它需要倒着检查看你有没有在哪里用=创建过这个变量，或者检查它是不是一个函数参数，或者看它是不是一个全局变量。不管哪种方式，它得先找到mystuff这个变量才行。
+
+一旦它找到了mystuff，就轮到处理句点(.)这个操作符，而且开始查看mystuff内部的一些变量了。由于mystuff是一个列表，Python知道mystuff支持一些函数。
+
+接下来轮到处理append。Python会将append和mystuff支持的所有函数的名称一一对比，如果确实有一个叫append的函数，那么Python就会去使用这个函数。
+
+接下来Python看到了括号(并意识到：“奥，原来这应该是一个函数。”到了这里，它就正常调用这个函数了，不过这里的函数还要多一个参数才行。
+
+这个额外的参数其实就是mystuff。很奇怪是不是？不过这就是Python的工作原理，所以请记住这一点，就当它是正常的好了。真正发生的事情其实是appeng(mystuff,&#39;hello&#39;)，不过写法是mystuff.append(&#39;hello&#39;)。
+
+
+源代码ten_things=&quot;apples oranges crows telephone light sugar&quot;printstuff=ten_things.split(&#x27; &#x27;more_stuff=[&quot;day&quot;while	next_one=more_stuff.pop()	print	stuff.append(next_one)	print	printprintprintprintprintprintprint
+
+
+应该看到的结果
+本节需要学习的知识
+把每一个被调用的函数翻译成Python实际执行的动作
+
+‘ ’.join(things)其实就是join(&#39; &#39;,things)。
+‘ ’.join(things)可以翻译成“用‘ ’连接things”，而join(&#39; &#39;,things)意思是“为‘ ’和things调用join函数”。
+
+len()函数
+
+len() 方法返回对象（字符、列表、元组等）长度或项目个数。
+语法
+len( s )
+
+
+示例
+&gt;&gt;&gt;str = &quot;runoob&quot;&gt;&gt;&gt; 6&gt;&gt;&gt; &gt;&gt;&gt; 5
+
+
+
+stuff[3:5]的作用
+
+它会从stuff列表的第3个元素开始取值，知道第5个元素，注意这里并不包含第5个元素。
+
+
+
+这是**《笨方法学Python》**的第二十篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Test18-while循环</title>
     <url>/2019/03/04/Test18-while%E5%BE%AA%E7%8E%AF/</url>
     <content><![CDATA[
@@ -1369,67 +1437,6 @@ i=0numbers=[]def	global	while		numbers.append(i)		i=i+1	return	new_number=while_
 
 
 希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test2_数字和数学计算</title>
-    <url>/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
-
-
-遇到的问题
-利用Python做四则运算非常简单，但是除法运算略有一些复杂
-
-例如：
-print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
-
-
-
-为了解决以上除法运算时出现的问题，我们需要理解浮点数
-
-2.0print# 输出结果是2.75
-
-
-
-可以使用小括号强制计算的先后顺序
-
-布尔值也是基本数据类型
-
-
-比较运算的结果直接输出布尔值（True or False）
-print# 输出结果是False
-
-
-附加练习以下摘录自原文
-
-每一行的代码用#写注释，说明一些这一行的作用
-
-使用浮点数重新写一下ex3.py
-
-
-
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -1506,64 +1513,250 @@ base – 进制数，默认十进制。
       </tags>
   </entry>
   <entry>
-    <title>Test20-列表的操作</title>
-    <url>/2019/03/06/Test20-%E5%88%97%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C/</url>
+    <title>Test21-做一个字典</title>
+    <url>/2019/03/11/Test21-%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AD%97%E5%85%B8/</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节我们来学习Python是怎么对列表实行操作的
+本节学一个新概念—字典(dictionary)
+Python将其成为“字典”，有的语言里它的名称是“散列”。
 [TOC]
-示例：当你看到mystuff.append(&#39;hello&#39;)这样的代码时，它已经在Python内部激发了一个连锁反应。以下是它的工作原理。
-
-Python看到你用到mystuff，于是就去找这个变量。也许它需要倒着检查看你有没有在哪里用=创建过这个变量，或者检查它是不是一个函数参数，或者看它是不是一个全局变量。不管哪种方式，它得先找到mystuff这个变量才行。
-
-一旦它找到了mystuff，就轮到处理句点(.)这个操作符，而且开始查看mystuff内部的一些变量了。由于mystuff是一个列表，Python知道mystuff支持一些函数。
-
-接下来轮到处理append。Python会将append和mystuff支持的所有函数的名称一一对比，如果确实有一个叫append的函数，那么Python就会去使用这个函数。
-
-接下来Python看到了括号(并意识到：“奥，原来这应该是一个函数。”到了这里，它就正常调用这个函数了，不过这里的函数还要多一个参数才行。
-
-这个额外的参数其实就是mystuff。很奇怪是不是？不过这就是Python的工作原理，所以请记住这一点，就当它是正常的好了。真正发生的事情其实是appeng(mystuff,&#39;hello&#39;)，不过写法是mystuff.append(&#39;hello&#39;)。
+先了解的知识我们可以用列表做这些事
+&gt;&gt;&gt; &gt;&gt;&gt; b&gt;&gt;&gt; &gt;&gt;&gt; z&gt;&gt;&gt; [&#x27;a&#x27;&gt;&gt;&gt;
 
 
-源代码ten_things=&quot;apples oranges crows telephone light sugar&quot;printstuff=ten_things.split(&#x27; &#x27;more_stuff=[&quot;day&quot;while	next_one=more_stuff.pop()	print	stuff.append(next_one)	print	printprintprintprintprintprintprint
+你可以使用数字作为列表的索引，也就是利用数找到列表中的元素。
+而字典所做的是，让你通过任何东西(不只是数字)找到元素。
+字典可以将一个物件和另外一个东西关联，不管它们的类型是什么？
+&gt;&gt;&gt; &gt;&gt;&gt; zed&gt;&gt;&gt; 36&gt;&gt;&gt; 74&gt;&gt;&gt; &gt;&gt;&gt; San Francisco&gt;&gt;&gt;
+
+
+你将看到除了通过数字之外，还可以用字符串来从字典中获取stuff，我们还可以用字符串来往字典中添加元素。
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; WOW&gt;&gt;&gt; Neato&gt;&gt;&gt; &#123;&#x27;city&#x27;&gt;&gt;&gt;
+
+
+只能放东西进去的字典是没啥意思的，所以我们还要有删除物件的方法，也就是使用del这个关键字：
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &#123;&#x27;name&#x27;&gt;&gt;&gt;
+
+
+源代码# ex39.pystates=&#123;	&#x27;Oregon&#x27;	&#x27;Florida&#x27;	&#x27;California&#x27;	&#x27;New York&#x27;	&#x27;Michigan&#x27;&#125;cities=&#123;	&#x27;CA&#x27;	&#x27;MI&#x27;	&#x27;FL&#x27;&#125;cities[&#x27;NY&#x27;cities[&#x27;OR&#x27;printprintprintprintprintprintprintfor	print	printfor	print	printfor	print		state,abbrev,cities[abbrev])		printstate=states.get(&#x27;Texas&#x27;if	print	city=cities.get(&#x27;TX&#x27;print
 
 
 应该看到的结果
-本节需要学习的知识
-把每一个被调用的函数翻译成Python实际执行的动作
-
-‘ ’.join(things)其实就是join(&#39; &#39;,things)。
-‘ ’.join(things)可以翻译成“用‘ ’连接things”，而join(&#39; &#39;,things)意思是“为‘ ’和things调用join函数”。
-
-len()函数
-
-len() 方法返回对象（字符、列表、元组等）长度或项目个数。
-语法
-len( s )
-
-
-示例
-&gt;&gt;&gt;str = &quot;runoob&quot;&gt;&gt;&gt; 6&gt;&gt;&gt; &gt;&gt;&gt; 5
 
 
 
-stuff[3:5]的作用
-
-它会从stuff列表的第3个元素开始取值，知道第5个元素，注意这里并不包含第5个元素。
-
-
-
-这是**《笨方法学Python》**的第二十篇文章
+这是**《笨方法学Python》**的第二十一篇文章
 
 
 希望自己可以坚持下去
 
 
 希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test3_变量和命名</title>
+    <url>/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版&amp;# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprintprintprintprintprintprint# ex5.py#my_name=&#x27;Zed A. Shaw&#x27;my_age=35my_height=74my_weight=180my_eyes=&#x27;Blue&#x27;my_teeth=&#x27;while&#x27;my_hair=&#x27;Brown&#x27;printprintprintprintprintprintprint
+
+
+遇到的问题
+一些关于字符串（string）的知识
+
+# 使用“ 或 ‘ 来创建字符串printprint# 字符串也可以相加print
+
+
+
+关于变量名的知识
+
+# 变量名设置的要求：使用下划线分割的小写字母
+
+
+
+代码中 %s 、%d 和 %r 是起什么作用？
+
+# %s＃指令告诉Ｐｙｔｈｏｎ　把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ
+
+
+附加练习以下摘录自原文
+
+单等号和双等号有什么不同？
+
+如何将浮点数四舍五入？
+使用ｒｏｕｎｄ（）函数
+
+
+
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test22-Python中字典、模块等的知识入门</title>
+    <url>/2019/03/13/Test22-Python%E4%B8%AD%E5%AD%97%E5%85%B8%E3%80%81%E6%A8%A1%E5%9D%97%E7%AD%89%E7%9A%84%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+上一期，我们学期了字典(dictionary)这个知识
+因为后面要学习面向对象的编程：OOP，为了更好的学习和理解OOP的知识
+这一期，先学习下字典和模块的知识
+[TOC]
+字典(dictionary)字典是一种可变容器模型，且可存储任意类型对象。
+字典的每个键值 key&#x3D;&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：
+d = &#123;key1 : value1, key2 : value2 &#125;
+
+
+键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一
+键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
+&gt;&gt;&gt;dict = &#123;&#x27;a&#x27;&gt;&gt;&gt; &#x27;3&#x27;&gt;&gt;&gt; &#123;&#x27;a&#x27;
+
+
+值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组
+
+
+谈一下我的理解，不一定正确
+
+
+上面所说的键，也就是key。要求其是唯一的，不可重复
+
+很想软件注册时的用户名，要求不能和他人重复，且一般只能用数字、字母和下划线注册
+
+
+这样理解虽然不准确，可能会易懂一些
+
+示例
+dict = &#123;&#x27;Name&#x27; printprint###输出结果dict[&#x27;Name&#x27;dict[&#x27;Age&#x27;
+
+
+修改字典的内容
+向字典添加新内容的方法是增加新的键&#x2F;值对，修改或删除已有键&#x2F;值对
+示例
+dict = &#123;&#x27;Name&#x27; dict[&#x27;Age&#x27;dict[&#x27;School&#x27; printprint###输出结果dict[&#x27;Age&#x27;dict[&#x27;School&#x27;
+
+
+删除字典元素
+能删单一的元素也能清空字典，清空只需一项操作
+示例
+dict = &#123;&#x27;Name&#x27; deldict.clear()      # 清空词典所有条目del printprint
+
+
+模块Python 模块(Module)，是一个 Python 文件，以 .py结尾，包含了 Python 对象定义和Python语句。
+模块让你能够有逻辑地组织你的 Python 代码段。
+把相关的代码分配到一个模块里能让你的代码更好用，更易懂。
+模块能定义函数，类和变量，模块里也能包含可执行的代码。
+模块的引入用import语句
+import
+
+
+比如要引用模块 math，就可以在文件最开始的地方用 import math 来引入。在调用 math 模块中的函数时，必须这样引用：
+模块名.函数名
+
+
+
+
+
+这是**《笨方法学Python》**的第二十二篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test2_数字和数学计算</title>
+    <url>/2019/02/03/Test2-%E6%95%B0%E5%AD%97%E5%92%8C%E6%95%B0%E5%AD%A6%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
+
+
+遇到的问题
+利用Python做四则运算非常简单，但是除法运算略有一些复杂
+
+例如：
+print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
+
+
+
+为了解决以上除法运算时出现的问题，我们需要理解浮点数
+
+2.0print# 输出结果是2.75
+
+
+
+可以使用小括号强制计算的先后顺序
+
+布尔值也是基本数据类型
+
+
+比较运算的结果直接输出布尔值（True or False）
+print# 输出结果是False
+
+
+附加练习以下摘录自原文
+
+每一行的代码用#写注释，说明一些这一行的作用
+
+使用浮点数重新写一下ex3.py
+
+
+
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -1686,144 +1879,8 @@ try的工作原理是，当开始一个try语句后，python就在当前程序�
       </tags>
   </entry>
   <entry>
-    <title>Test21-做一个字典</title>
-    <url>/2019/03/11/Test21-%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AD%97%E5%85%B8/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节学一个新概念—字典(dictionary)
-Python将其成为“字典”，有的语言里它的名称是“散列”。
-[TOC]
-先了解的知识我们可以用列表做这些事
-&gt;&gt;&gt; &gt;&gt;&gt; b&gt;&gt;&gt; &gt;&gt;&gt; z&gt;&gt;&gt; [&#x27;a&#x27;&gt;&gt;&gt;
-
-
-你可以使用数字作为列表的索引，也就是利用数找到列表中的元素。
-而字典所做的是，让你通过任何东西(不只是数字)找到元素。
-字典可以将一个物件和另外一个东西关联，不管它们的类型是什么？
-&gt;&gt;&gt; &gt;&gt;&gt; zed&gt;&gt;&gt; 36&gt;&gt;&gt; 74&gt;&gt;&gt; &gt;&gt;&gt; San Francisco&gt;&gt;&gt;
-
-
-你将看到除了通过数字之外，还可以用字符串来从字典中获取stuff，我们还可以用字符串来往字典中添加元素。
-&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; WOW&gt;&gt;&gt; Neato&gt;&gt;&gt; &#123;&#x27;city&#x27;&gt;&gt;&gt;
-
-
-只能放东西进去的字典是没啥意思的，所以我们还要有删除物件的方法，也就是使用del这个关键字：
-&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &#123;&#x27;name&#x27;&gt;&gt;&gt;
-
-
-源代码# ex39.pystates=&#123;	&#x27;Oregon&#x27;	&#x27;Florida&#x27;	&#x27;California&#x27;	&#x27;New York&#x27;	&#x27;Michigan&#x27;&#125;cities=&#123;	&#x27;CA&#x27;	&#x27;MI&#x27;	&#x27;FL&#x27;&#125;cities[&#x27;NY&#x27;cities[&#x27;OR&#x27;printprintprintprintprintprintprintfor	print	printfor	print	printfor	print		state,abbrev,cities[abbrev])		printstate=states.get(&#x27;Texas&#x27;if	print	city=cities.get(&#x27;TX&#x27;print
-
-
-应该看到的结果
-
-
-
-这是**《笨方法学Python》**的第二十一篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test22-Python中字典、模块等的知识入门</title>
-    <url>/2019/03/13/Test22-Python%E4%B8%AD%E5%AD%97%E5%85%B8%E3%80%81%E6%A8%A1%E5%9D%97%E7%AD%89%E7%9A%84%E7%9F%A5%E8%AF%86%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-上一期，我们学期了字典(dictionary)这个知识
-因为后面要学习面向对象的编程：OOP，为了更好的学习和理解OOP的知识
-这一期，先学习下字典和模块的知识
-[TOC]
-字典(dictionary)字典是一种可变容器模型，且可存储任意类型对象。
-字典的每个键值 key&#x3D;&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：
-d = &#123;key1 : value1, key2 : value2 &#125;
-
-
-键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一
-键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
-&gt;&gt;&gt;dict = &#123;&#x27;a&#x27;&gt;&gt;&gt; &#x27;3&#x27;&gt;&gt;&gt; &#123;&#x27;a&#x27;
-
-
-值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组
-
-
-谈一下我的理解，不一定正确
-
-
-上面所说的键，也就是key。要求其是唯一的，不可重复
-
-很想软件注册时的用户名，要求不能和他人重复，且一般只能用数字、字母和下划线注册
-
-
-这样理解虽然不准确，可能会易懂一些
-
-示例
-dict = &#123;&#x27;Name&#x27; printprint###输出结果dict[&#x27;Name&#x27;dict[&#x27;Age&#x27;
-
-
-修改字典的内容
-向字典添加新内容的方法是增加新的键&#x2F;值对，修改或删除已有键&#x2F;值对
-示例
-dict = &#123;&#x27;Name&#x27; dict[&#x27;Age&#x27;dict[&#x27;School&#x27; printprint###输出结果dict[&#x27;Age&#x27;dict[&#x27;School&#x27;
-
-
-删除字典元素
-能删单一的元素也能清空字典，清空只需一项操作
-示例
-dict = &#123;&#x27;Name&#x27; deldict.clear()      # 清空词典所有条目del printprint
-
-
-模块Python 模块(Module)，是一个 Python 文件，以 .py结尾，包含了 Python 对象定义和Python语句。
-模块让你能够有逻辑地组织你的 Python 代码段。
-把相关的代码分配到一个模块里能让你的代码更好用，更易懂。
-模块能定义函数，类和变量，模块里也能包含可执行的代码。
-模块的引入用import语句
-import
-
-
-比如要引用模块 math，就可以在文件最开始的地方用 import math 来引入。在调用 math 模块中的函数时，必须这样引用：
-模块名.函数名
-
-
-
-
-
-这是**《笨方法学Python》**的第二十二篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test5_更多字符串练习</title>
-    <url>/2019/02/03/Test5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/</url>
+    <title>Test4_字符串练习</title>
+    <url>/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
@@ -1841,85 +1898,24 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 附加练习
 
 
-原文—摘录至《笨方法学Python》第三版、 &amp;# ex10.pytabby_cat=&quot;\t I&#x27;m tabbed in.&quot;persian_cat=&quot;I&#x27;m split \n on line. &quot;backslash_cat=&quot;I&#x27;m \\ a \\ cat.&quot;fat_cat= &quot;&quot;&quot;I&#x27;ll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass&quot;&quot;&quot;printprintprintprint# ex11.pyprintage=raw_input()printheight=raw_input()printweight=raw_input()print#ex12.pyage=raw_input(&quot;How old are you? &quot;height=raw_input(&quot;How tall are you? &quot;weight=raw_input(&quot;How much do you weigh? &quot;print
-
-
-需要注意的几个地方
-python中 \t 的效果，类似于在word写作中，tab键起到的作用；
-\n 的效果，类似于在word写作中，enter 键起到的作用；
-
-在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。
-
-python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。
-
-
-附加练习以下摘录自原文
-
-下面是python支持的转义序列
-
-\\					# 反斜杠（\）\&#x27;					# 单引号\&quot;					# 双引号\a            		# ASCII 响铃符\b					# ASCII 退格符\f 					# ASCII 进纸符\r					# ASCII 回车符\uxxxx				# 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx			# 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v					# ASCII 垂直制表符
-
-
-Python 的raw_input实现的是什么功能？以及其他用法
-
-input()和raw_input()有何不同？
-
-
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test3_变量和命名</title>
-    <url>/2019/02/03/Test3-%E5%8F%98%E9%87%8F%E5%92%8C%E5%91%BD%E5%90%8D/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版&amp;# ex4.py#cars=100space_in_car=4.0drivers=30passengers=90cars_not_driven=cars-driverscars-driven=driverscarpool_capacity=cars-driven*space_in_a_caraverage_passengers_per_car=passengers/cars-drivenprintprintprintprintprintprint# ex5.py#my_name=&#x27;Zed A. Shaw&#x27;my_age=35my_height=74my_weight=180my_eyes=&#x27;Blue&#x27;my_teeth=&#x27;while&#x27;my_hair=&#x27;Brown&#x27;printprintprintprintprintprintprint
+原文—摘录至《笨方法学Python》第三版&amp;# ex6.pyx=&quot;There are %d types of people.&quot;binary=&quot;binary&quot;do_not=&quot;don&#x27;t&quot;y=&quot;Those who know %s and those who %s.&quot;printprintprintprinthilarious=Falsejoke_evaluation=&quot;Isn&#x27;t that joke so funny?! %r &quot;printw=&quot;This is the left side of ...&quot;e=&quot;a sting with a right side.&quot;print# ex8.pyfomatter=&quot;%r %r %r %r&quot;printprintprintprintprint	&quot;I had this thing.&quot;	&quot;That you could type up right.&quot;	&quot;But it didn&#x27;t sing.&quot;	&quot;So I said goodnight.&quot;	)
 
 
 遇到的问题
-一些关于字符串（string）的知识
+ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号
+python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
 
-# 使用“ 或 ‘ 来创建字符串printprint# 字符串也可以相加print
+True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。
 
-
-
-关于变量名的知识
-
-# 变量名设置的要求：使用下划线分割的小写字母
-
-
-
-代码中 %s 、%d 和 %r 是起什么作用？
-
-# %s＃指令告诉Ｐｙｔｈｏｎ　把右边的变量带到字符串，并把变量的值放到％ｓ等所在的位置＃如果变量是字符串，使用％ｓ＃如果变量是数字，使用％ｄ＃无论变量是什么，都可以用％ｒ
+%r的作用
+%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
 
 
 附加练习以下摘录自原文
 
-单等号和双等号有什么不同？
+每一行加一段注释
 
-如何将浮点数四舍五入？
-使用ｒｏｕｎｄ（）函数
-
+最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？
 
 
 ]]></content>
@@ -1989,55 +1985,6 @@ argv和raw_input()有什么不同？
 argv就是所谓的”参数变量“（argument variable），这个变量保存着你运行Python脚本时传递给Python脚本的参数。
 
 脚本中出现import语句，非常重要，它用于导入模块（module）
-
-
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test4_字符串练习</title>
-    <url>/2019/02/03/Test4-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-问题的解决方法
-
-附加练习
-
-
-原文—摘录至《笨方法学Python》第三版&amp;# ex6.pyx=&quot;There are %d types of people.&quot;binary=&quot;binary&quot;do_not=&quot;don&#x27;t&quot;y=&quot;Those who know %s and those who %s.&quot;printprintprintprinthilarious=Falsejoke_evaluation=&quot;Isn&#x27;t that joke so funny?! %r &quot;printw=&quot;This is the left side of ...&quot;e=&quot;a sting with a right side.&quot;print# ex8.pyfomatter=&quot;%r %r %r %r&quot;printprintprintprintprint	&quot;I had this thing.&quot;	&quot;That you could type up right.&quot;	&quot;But it didn&#x27;t sing.&quot;	&quot;So I said goodnight.&quot;	)
-
-
-遇到的问题
-ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号
-python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
-
-True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。
-
-%r的作用
-%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
-
-
-附加练习以下摘录自原文
-
-每一行加一段注释
-
-最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？
 
 
 ]]></content>
@@ -2155,6 +2102,59 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 
 希望你也可以坚持下去
 ​
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test5_更多字符串练习</title>
+    <url>/2019/02/03/Test5-%E6%9B%B4%E5%A4%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+问题的解决方法
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版、 &amp;# ex10.pytabby_cat=&quot;\t I&#x27;m tabbed in.&quot;persian_cat=&quot;I&#x27;m split \n on line. &quot;backslash_cat=&quot;I&#x27;m \\ a \\ cat.&quot;fat_cat= &quot;&quot;&quot;I&#x27;ll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass&quot;&quot;&quot;printprintprintprint# ex11.pyprintage=raw_input()printheight=raw_input()printweight=raw_input()print#ex12.pyage=raw_input(&quot;How old are you? &quot;height=raw_input(&quot;How tall are you? &quot;weight=raw_input(&quot;How much do you weigh? &quot;print
+
+
+需要注意的几个地方
+python中 \t 的效果，类似于在word写作中，tab键起到的作用；
+\n 的效果，类似于在word写作中，enter 键起到的作用；
+
+在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。
+
+python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。
+
+
+附加练习以下摘录自原文
+
+下面是python支持的转义序列
+
+\\					# 反斜杠（\）\&#x27;					# 单引号\&quot;					# 双引号\a            		# ASCII 响铃符\b					# ASCII 退格符\f 					# ASCII 进纸符\r					# ASCII 回车符\uxxxx				# 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx			# 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v					# ASCII 垂直制表符
+
+
+Python 的raw_input实现的是什么功能？以及其他用法
+
+input()和raw_input()有何不同？
+
+
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -2554,6 +2554,83 @@ TGIF
       </tags>
   </entry>
   <entry>
+    <title>《运营之光》：据说每一位运营喵都看过|产品书单|第二期</title>
+    <url>/2019/03/13/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%BF%90%E8%90%A5%E4%B9%8B%E5%85%89%E3%80%8B%EF%BC%9A%E6%8D%AE%E8%AF%B4%E6%AF%8F%E4%B8%80%E4%BD%8D%E8%BF%90%E8%90%A5%E5%96%B5%E9%83%BD%E7%9C%8B%E8%BF%87-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</url>
+    <content><![CDATA[
+
+每一位产品人都应该多看书、看好书
+
+只有这样才能不断进步
+
+
+形成自己的方法论
+
+
+本期推荐一本书《运营之光》
+据说每一位运营小伙伴都要看这本书
+[TOC]
+
+《运营之光》author:黄有璨
+
+
+
+简介
+在互联网行业内，“运营”这个职能发展到一定阶段后，往往更需要有成熟的知识体系和工作方法来给予行业从业者们以指引。
+《运营之光：我的互联网运营方法论与自白》尤其难得之处在于：它既对“什么是运营”这样的概念认知类问题进行了解读，又带有大量实际的工作技巧、工作思维和工作方法，还包含了很多对于运营的思考、宏观分析和建议，可谓内容完整而全面，同时书中加入了作者亲历的大量真实案例，让全书读起来深入浅出、耐人寻味。
+从内容的受众来说，它既有面向初入互联网行业的运营从业者们的具体工作方法讲解和建议，又有适合3～5年运营从业者们阅读的一些案例解析、思考方法分享，也有更适合创业者、互联网公司高管阅读的一些运营体系搭建、不同类型产品所适合的运营方法等更为宏观的问题的解读。
+
+
+作者介绍
+黄有璨
+互联网运营从业近10年，曾先后就职于美国About.com、第九课堂、新浪微米、周伯通招聘等互联网公司，历任运营经理、COO助理、COO等职。
+现任互联网人在线学习社区三节课（sanjieke.cn）联合创始人。
+同时为36氪、百度百家等专栏作家，多篇关于运营的文章被疯转，仅2016年上半年，个人所著文章线上浏览量已近千万。小饭桌创业课堂创业导师。
+
+
+目录
+
+
+
+下载地址
+微信搜索产品汪darer，关注公众号
+后台回复运营之光，即可获得下载链接
+
+
+如果你想要《运营之光》目录的思维导图，可以在后台留言我想要《运营之光》目录的思维导图
+彩蛋时刻不要走开，这是一个彩蛋
+
+
+百度公司最近在公司全面推行OKR工作法
+那什么是OKR工作法呢？
+
+
+OKR是指南针，KPI是秒表
+下面这本书做了非常详细的介绍
+
+
+
+只要点下右下角的好看
+
+
+并分享本文到朋友圈(不可设置分组可见哦)
+
+
+或者分享到微信群(最好是百人群)
+
+
+然后截图(以上二选一即可)发到微信公众号后台
+
+
+就可以啦，非常简单
+]]></content>
+      <categories>
+        <category>产品书单</category>
+      </categories>
+      <tags>
+        <tag>产品书单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>产品书单-《稀缺》：你是怎么不断陷入deadline循环的？</title>
     <url>/2019/04/01/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E7%A8%80%E7%BC%BA%E3%80%8B%EF%BC%9A%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%8D%E6%96%AD%E9%99%B7%E5%85%A5deadline%E5%BE%AA%E7%8E%AF%E7%9A%84%EF%BC%9F/</url>
     <content><![CDATA[《稀缺》：你是怎么不断陷入deadline循环的？
@@ -2655,74 +2732,21 @@ IP从泛娱乐形态快速渗透新商业生态全维度，正深化为不同行
       </tags>
   </entry>
   <entry>
-    <title>《运营之光》：据说每一位运营喵都看过|产品书单|第二期</title>
-    <url>/2019/03/13/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E8%BF%90%E8%90%A5%E4%B9%8B%E5%85%89%E3%80%8B%EF%BC%9A%E6%8D%AE%E8%AF%B4%E6%AF%8F%E4%B8%80%E4%BD%8D%E8%BF%90%E8%90%A5%E5%96%B5%E9%83%BD%E7%9C%8B%E8%BF%87-%E7%AC%AC%E4%BA%8C%E6%9C%9F/</url>
-    <content><![CDATA[
-
-每一位产品人都应该多看书、看好书
-
-只有这样才能不断进步
-
-
-形成自己的方法论
-
-
-本期推荐一本书《运营之光》
-据说每一位运营小伙伴都要看这本书
-[TOC]
-
-《运营之光》author:黄有璨
-
-
-
-简介
-在互联网行业内，“运营”这个职能发展到一定阶段后，往往更需要有成熟的知识体系和工作方法来给予行业从业者们以指引。
-《运营之光：我的互联网运营方法论与自白》尤其难得之处在于：它既对“什么是运营”这样的概念认知类问题进行了解读，又带有大量实际的工作技巧、工作思维和工作方法，还包含了很多对于运营的思考、宏观分析和建议，可谓内容完整而全面，同时书中加入了作者亲历的大量真实案例，让全书读起来深入浅出、耐人寻味。
-从内容的受众来说，它既有面向初入互联网行业的运营从业者们的具体工作方法讲解和建议，又有适合3～5年运营从业者们阅读的一些案例解析、思考方法分享，也有更适合创业者、互联网公司高管阅读的一些运营体系搭建、不同类型产品所适合的运营方法等更为宏观的问题的解读。
-
-
-作者介绍
-黄有璨
-互联网运营从业近10年，曾先后就职于美国About.com、第九课堂、新浪微米、周伯通招聘等互联网公司，历任运营经理、COO助理、COO等职。
-现任互联网人在线学习社区三节课（sanjieke.cn）联合创始人。
-同时为36氪、百度百家等专栏作家，多篇关于运营的文章被疯转，仅2016年上半年，个人所著文章线上浏览量已近千万。小饭桌创业课堂创业导师。
-
-
+    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
+    <url>/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/</url>
+    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
+写在前面
+举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
+长尾市场也称之为“利基市场”。 &quot;利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
+通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
+《长尾理论》
+内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
+这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
+传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
+作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
 目录
-
-
-
-下载地址
-微信搜索产品汪darer，关注公众号
-后台回复运营之光，即可获得下载链接
-
-
-如果你想要《运营之光》目录的思维导图，可以在后台留言我想要《运营之光》目录的思维导图
-彩蛋时刻不要走开，这是一个彩蛋
-
-
-百度公司最近在公司全面推行OKR工作法
-那什么是OKR工作法呢？
-
-
-OKR是指南针，KPI是秒表
-下面这本书做了非常详细的介绍
-
-
-
-只要点下右下角的好看
-
-
-并分享本文到朋友圈(不可设置分组可见哦)
-
-
-或者分享到微信群(最好是百人群)
-
-
-然后截图(以上二选一即可)发到微信公众号后台
-
-
-就可以啦，非常简单
+下载地址这是亚马逊购书链接
+关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
 ]]></content>
       <categories>
         <category>产品书单</category>
@@ -2794,58 +2818,6 @@ from# 示例# 要导入模块 fib 的 fibonacci 函数from
       </tags>
   </entry>
   <entry>
-    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
-    <url>/2019/04/18/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95-%E3%80%8A%E9%95%BF%E5%B0%BE%E7%90%86%E8%AE%BA%E3%80%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%95%86%E4%B8%9A%E7%9A%84%E6%9C%AA%E6%9D%A5%E6%98%AF%E5%B0%8F%E4%BC%97%E5%B8%82%E5%9C%BA/</url>
-    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
-写在前面
-举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
-长尾市场也称之为“利基市场”。 &quot;利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
-通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
-《长尾理论》
-内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
-这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
-传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
-作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
-目录
-下载地址这是亚马逊购书链接
-关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
-]]></content>
-      <categories>
-        <category>产品书单</category>
-      </categories>
-      <tags>
-        <tag>产品书单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信PC端多开的方法</title>
-    <url>/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[微信电脑版多开的方法现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？
-经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法
-以下内容来自网络，经验证，可以安全简单的使用
-bat文件多开
-第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。
-
-第二步，新建一个文本文档，命名“微信多开”在文档中键入：
-@echo offstart &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;exit
-
-
-两行 start &quot;&quot; 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在exit上面即可，以上代码所示是两开。
-完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入“微信多开.bat”。
-
-然后桌面上会出现一个bat文件，双击bat文件即可实现微信双开。
-
-
-操作起来，简单又方便
-]]></content>
-      <categories>
-        <category>技巧</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>思考：为什么全网都在“养龙虾”？</title>
     <url>/2026/03/28/%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E7%BD%91%E9%83%BD%E5%9C%A8%E2%80%9C%E5%85%BB%E9%BE%99%E8%99%BE%E2%80%9D%EF%BC%9F/</url>
     <content><![CDATA[2026开年首爆：为什么全网都在“养龙虾”？——OpenClaw爆火的思考2026年初，OpenClaw（俗称“龙虾”）以垂直攀升的姿态统治了 GitHub 和朋友圈。这只“龙虾”凭什么让程序猿的专属工具成了打工人的外挂？
@@ -2893,6 +2865,139 @@ bat文件多开
       <tags>
         <tag>Claude Code</tag>
         <tag>Open claw</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信PC端多开的方法</title>
+    <url>/2019/07/06/%E5%BE%AE%E4%BF%A1PC%E7%AB%AF%E5%A4%9A%E5%BC%80%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[微信电脑版多开的方法现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？
+经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法
+以下内容来自网络，经验证，可以安全简单的使用
+bat文件多开
+第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。
+
+第二步，新建一个文本文档，命名“微信多开”在文档中键入：
+@echo offstart &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;exit
+
+
+两行 start &quot;&quot; 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在exit上面即可，以上代码所示是两开。
+完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入“微信多开.bat”。
+
+然后桌面上会出现一个bat文件，双击bat文件即可实现微信双开。
+
+
+操作起来，简单又方便
+]]></content>
+      <categories>
+        <category>技巧</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法论-啥是用户画像？只是用户的标签吗？</title>
+    <url>/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E5%95%A5%E6%98%AF%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%EF%BC%9F%E5%8F%AA%E6%98%AF%E7%94%A8%E6%88%B7%E7%9A%84%E6%A0%87%E7%AD%BE%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[啥是用户画像？只是用户的标签吗？
+
+内容转载于：https://www.iamue.com/34391
+
+作者：秦路
+
+原文很长，干货很多，为了便于理解，我把文章拆分为了三期
+今天介绍第一期：认识用户画像
+
+用户画像是一个挺新颖的词，最初它是大数据行业言必及之的时髦概念。现在我们运营谈及用户画像，它也是和精准营销、精细化运营直接钩挂的。这篇文章主要讲产品和运营角度的用户画像。
+希望看完后，解决你一切关于用户画像的疑问。
+什么是用户画像用户画像一点也不神秘，它是根据用户在互联网留下的种种数据，主动或被动地收集，最后加工成一系列的标签。比如猜用户是男是女，哪里人，工资多少，有没有谈恋爱，喜欢什么，准备剁手购物吗？
+
+我们常把用户标签和用户画像对等。
+但凡用户画像的文章，类似上文图片都会出现，有用烂的趋势。
+标签化是最直观的解释，但它不等于用户画像。
+用户画像的正式名称是User Profile，大家往往把它和User Persona混淆，后者更恰当的名字是用户角色。是产品设计和用户调研的一种方式方法。当我们讨论产品、需求、场景、用户体验的时候，往往需要将焦点聚集在某类人群上，用户角色便是一种抽象的方法，是目标用户的集合。
+用户角色不指代具体的谁。「她是一位25岁的白领，211大学毕业，现在从事于互联网行业的设计工作，居住在北京。单身，平时喜爱摇滚乐」，这段话语，常用来描述产品的典型用户。
+本文谈的User Profile，更多是运营和数据息息相关的平台级应用，本质是对任何一个用户都能用标签和数据描述。
+用户画像的应用它在企业迈大迈强的过程中有举足轻重的作用。以下是主要的应用。
+精准营销：这是运营最熟悉的玩法，从粗放式到精细化，将用户群体切割成更细的粒度，辅以短信、推送、邮件、活动等手段，驱以关怀、挽回、激励等策略。
+数据应用：用户画像是很多数据产品的基础，诸如耳熟能详的推荐系统广告系统。操作过各大广告投放系统的同学想必都清楚，广告投放基于一系列人口统计相关的标签，性别、年龄、学历、兴趣偏好、手机等等。
+用户分析：虽然和Persona不一样，用户画像也是了解用户的必要补充。产品早期，PM们通过用户调研和访谈的形式了解用户。在产品用户量扩大后，调研的效用降低，这时候会辅以用户画像配合研究。新增的用户有什么特征，核心用户的属性是否变化等等。
+数据分析：这个就不用多提了，用户画像可以理解为业务层面的数据仓库，各类标签是多维分析的天然要素。数据查询平台会和这些数据打通。
+对大部分产品，用户画像用不到推荐系统，个性化推荐也提高不了几个利润，毕竟它需要大量的用户和数据作支撑。所以这些产品，更适合以用户画像为基础去驱动业务。
+提了那么多好处，但是据我了解，不少公司，花了一大笔钱招了不少人建设用户画像系统，结果用不起来。或者做了一份用户画像的报告，性别用户地理位置用户消费金额，看上去挺高大上的，看完也就看完了。
+归根结底，难以用好。
+很多用户画像初衷是好的，但是沦为了形式主义。
+举身边的例子，朋友在公司建立用户画像划分了百来个维度。用户消费、属性、行为无所不包。本来这不错啊，但是上线后运营看着这个干瞪眼。
+问题包含但不限于，用户有那么多维度，怎么合理地选择标签？我想定义用户的层级，VIP用户应该累积消费金额超过多少？是在什么时间窗口内？为什么选择这几个标准？后续应该怎么维护和监控？业务发生变化了这个标签要不要改？
+设立好标签，怎么验证用户画像的有效性？我怎么知道这套系统成功了呢？效果不佳怎么办？它有没有更多的应用场景？
+策略的执行也是一个纠结的问题。从岗位的执行看，运营背负着KPI。当月底KPI完不成时，你觉得他们更喜欢选择全量运营，还是精细化呢?
+我想不少公司都存在这样类似情况：使用过用户画像一段时间后，发现也就那么一回事，也就渐渐不再使用。
+这是用户画像在业务层面遇到老大难的问题。虽然企业自称建立用户画像，应用还是挺粗糙的。
+怎样深入理解用户画像画虎不全反类汪，想要用好它，首先得深入理解用户画像。
+现在运营按用户生命周期设立了几个标签，比如新用户、活跃用户、流失用户，这些标签当然够细分。但它真的是一个好标签么？不是。
+因为这些都是滞后性的。按流失用户的一般定义，往往是用户很长一段时间没有回应和行动，但是都几个月没有响应了，哪怕知道是流失用户也于事无补。它有价值，但太滞后。
+聪明的运营会设立一个新的标签，最近一次活跃距今天数，用户有六个月没有活跃，那么天数就是180天。这个比单纯的流失用户标签好，能凭此划分不同的距今天数，设立30天，90天，180天的时间节点。
+距今天数也不是最好的。用户有差异，同样两个用户A和B，哪怕不活跃天数相同，我也不能认为它们的流失可能性相等。该问题在低频场景更凸显，旅游APP，半年没有活跃也是正常的，此时距今天数力有未逮。
+回过头看流失用户，我们定义它，不是为了设立一个高大上的系统。任何企业，肯定一开始就希望流失用户越少越好，其次才是如何挽回。这种业务前提下，预防性的减少流失用户比已经流失的标签更重要。
+所以最好的标签的标签是用户流失概率，流失概率&gt;距今消费天数&gt;流失标签。
+不要想当然的归纳一个齐全完备的体系，却忽略了画像的核心价值。用户画像首先得是商业目的下的用户标签集合。
+猜用户是男是女，哪里人，工资多少，有没有谈恋爱，喜欢什么，准备剁手购物吗？探讨这些是没有意义的。是男是女如何影响消费决策，工资多少影响消费能力，有没有谈恋爱会否带来新的营销场景，剁手购物怎么精准推荐，这些才是用户画像背后的逻辑。
+不是我有了用户画像，便能驱动和提高业务。而是为了驱动和提高业务，才需要用户画像。这是很容易犯的错误。
+用户画像的标签一般通过两种形式获得，基于已有数据或者一定规则加工，流失标签和距今天数皆是。另外一种是基于已有的数据计算概率模型，会用到机器学习和数据挖掘。
+概率是介于0~1之间的数值。拿性别举例，除非能直接获取用户的身份证信息，用户很少会填写性别，填写的性别也不一定准确，网游中性别为女的扣脚大汉一抓一大把呢。
+这里就要增加一层推断用户真实性别的算法。中国人的性别和名字是强相关，建国建军，翠花翠兰，很容易判断。算法中常用贝叶斯，通过已有的姓名性别库预测新加入的用户性别。
+特殊情况下，不少姓名是中性，男女不辩。像晓晶，可男可女。更特殊的情况，看上去是男性的名字，也有可能是女性，我的初中老师就叫建军，然而是个和蔼可亲的小姐姐。
+特殊情况意味着特殊的概率，所以不能用非此即彼的二分法。所谓概率，它更习惯告诉你，通过模型推断，建军有95％的可能是男性姓名，表示为0.95；晓晶有55％的可能是男性，表示为0.55。
+虽然为了方便，模型会设立阈值，将50％以上的概率默认为男性，以下默认为女性。但业务部门的同学要清楚，用户标签的本质往往是0～1之间的概率。
+概率型的标签很难验证。某位用户被标上学生标签，要么真的哄他上传学籍证明，否则很难知道他是不是真的学生。这种黑箱情况下，针对学生用户进行营销活动，效果好与不好，都受标签准确率的影响。广告、推荐、精准营销都会遇到这个问题。
+概率肯定有多有少。90%流失概率的用户，和30%流失概率的用户，虽然是模型建立出的预测值，非真实，我们还是会认为前者更有离开的可能性，凭此设立运营策略。
+这带来一个新的问题，如何选择概率的阈值？
+我们想要挽回流失用户，选择80%以上概率的人群，还是60%呢？答案已经说过了，要考虑业务，挽回流失用户是手段不是目的，实际目的是通过挽回流失用户提高利润，那么阈值的选择迎刃而解。计算不同阈值下，挽回用户的收入和成本，选择最优解。
+推而广之，推荐系统也好，广告系统也罢，它们有更复杂的维度、标签、特征，本质也是找出用户最近想不想买车，用户最近想不想旅游。把最合适的信息在最恰当时机推给用户，获取最大的利益。
+我列举的案例，是简化过的。像姓名，在电商和消费行业，除了生理上的性别，还会建立消费模型上的性别标签，有些人虽然是男性，但购物行为是女性，这是要区分的。
+看到这里别怕，想要建好用户画像，说简单不简单，说难也不难。
+]]></content>
+      <categories>
+        <category>方法论</category>
+      </categories>
+      <tags>
+        <tag>用户画像</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法论-用户画像知识进阶</title>
+    <url>/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/</url>
+    <content><![CDATA[用户画像的架构
+
+内容转载于：https://www.iamue.com/34391
+
+作者：秦路
+
+原文很长，干货很多，为了便于理解，我把文章拆分为了三期
+今天介绍第三期：用户画像的进阶
+
+不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。
+用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，像金融领域，还会有风险画像，包括征信、违约、洗钱、还款能力、保险黑名单等。电商领域会有商品的类目偏好、品类偏好、品牌偏好，不一而足。
+
+上图是随手画的的例子，画一个架构不难，难得是了解每个标签背后的业务逻辑和落地方式，至于算法，又能单独扯很多文章了。
+从数据流向和加工看，用户画像包含上下级递进关系。
+以上文的流失系数举例，它通过建模，其依赖于用户早期的历史行为。而用户早期的历史行为，即10天内的消费金额、消费次数、登录次数等，本身也是一个标签，它们是通过原始的明细数据获得。
+
+上图列举了标签加工和计算的过程，很好理解。最上层的策略标签，是针对业务的落地，运营人员通过多个标签的组合形成一个用户群组，方便执行。
+公司越大，用户画像越复杂。某家主打内容分发的公司进入了全新的视频领域，现在有两款APP，那么用户画像的结构也需要改变。既有内容相关的标签，也有视频相关的标签，两者是并行且关联的。
+比如A用户在内容标签下是重度使用，而在视频标签下是轻度。比如B用户很久没打开内容APP有流失风险，但在视频APP的使用时长上看很忠诚。如此种种，看的是灵活应用。当然，姓名性别这类人口统计标签，是通用的。
+用户画像作为平台级的应用，很多运营策略及工具，都是在其基础上构建的。
+
+基于营销和消费相关的标签，新客、老客、用户的流失和忠诚、用户的消费水平和频率等，都是构成CRM（客户关系管理）的基础，可能大家更习惯叫它用户&#x2F;会员管理运营平台。
+它的作用在于，将数据化的标签，转换成产品运营策略。不同的标签对应不同的用户群体，也对应不同的营销手段。CRM的结构中会包含各类触达用户的常用渠道比如短信、邮件、推送等。也包含CMS（内容管理系统），执行人员通过其快速配置活动页、活动通道、优惠券等，靠营销活动拉动数据。
+老王的沙拉业务要是做大，那么运营平台就会以图中的结构搭建。老王在CRM中组合标签，新客老客流失客的数据借助BI监控，然后通过CMS系统配置红包啊优惠券啊等等，再通过短或Push触达。
+好的用户画像系统，既是数据生态体系，也是业务和运营的生态体系，它是一门复杂的交叉领域。
+万千用法，存乎一心。
+]]></content>
+      <categories>
+        <category>方法论</category>
+      </categories>
+      <tags>
+        <tag>用户画像</tag>
       </tags>
   </entry>
   <entry>
@@ -3087,74 +3192,6 @@ bat文件多开
       </tags>
   </entry>
   <entry>
-    <title>方法论-啥是用户画像？只是用户的标签吗？</title>
-    <url>/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E5%95%A5%E6%98%AF%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%EF%BC%9F%E5%8F%AA%E6%98%AF%E7%94%A8%E6%88%B7%E7%9A%84%E6%A0%87%E7%AD%BE%E5%90%97%EF%BC%9F/</url>
-    <content><![CDATA[啥是用户画像？只是用户的标签吗？
-
-内容转载于：https://www.iamue.com/34391
-
-作者：秦路
-
-原文很长，干货很多，为了便于理解，我把文章拆分为了三期
-今天介绍第一期：认识用户画像
-
-用户画像是一个挺新颖的词，最初它是大数据行业言必及之的时髦概念。现在我们运营谈及用户画像，它也是和精准营销、精细化运营直接钩挂的。这篇文章主要讲产品和运营角度的用户画像。
-希望看完后，解决你一切关于用户画像的疑问。
-什么是用户画像用户画像一点也不神秘，它是根据用户在互联网留下的种种数据，主动或被动地收集，最后加工成一系列的标签。比如猜用户是男是女，哪里人，工资多少，有没有谈恋爱，喜欢什么，准备剁手购物吗？
-
-我们常把用户标签和用户画像对等。
-但凡用户画像的文章，类似上文图片都会出现，有用烂的趋势。
-标签化是最直观的解释，但它不等于用户画像。
-用户画像的正式名称是User Profile，大家往往把它和User Persona混淆，后者更恰当的名字是用户角色。是产品设计和用户调研的一种方式方法。当我们讨论产品、需求、场景、用户体验的时候，往往需要将焦点聚集在某类人群上，用户角色便是一种抽象的方法，是目标用户的集合。
-用户角色不指代具体的谁。「她是一位25岁的白领，211大学毕业，现在从事于互联网行业的设计工作，居住在北京。单身，平时喜爱摇滚乐」，这段话语，常用来描述产品的典型用户。
-本文谈的User Profile，更多是运营和数据息息相关的平台级应用，本质是对任何一个用户都能用标签和数据描述。
-用户画像的应用它在企业迈大迈强的过程中有举足轻重的作用。以下是主要的应用。
-精准营销：这是运营最熟悉的玩法，从粗放式到精细化，将用户群体切割成更细的粒度，辅以短信、推送、邮件、活动等手段，驱以关怀、挽回、激励等策略。
-数据应用：用户画像是很多数据产品的基础，诸如耳熟能详的推荐系统广告系统。操作过各大广告投放系统的同学想必都清楚，广告投放基于一系列人口统计相关的标签，性别、年龄、学历、兴趣偏好、手机等等。
-用户分析：虽然和Persona不一样，用户画像也是了解用户的必要补充。产品早期，PM们通过用户调研和访谈的形式了解用户。在产品用户量扩大后，调研的效用降低，这时候会辅以用户画像配合研究。新增的用户有什么特征，核心用户的属性是否变化等等。
-数据分析：这个就不用多提了，用户画像可以理解为业务层面的数据仓库，各类标签是多维分析的天然要素。数据查询平台会和这些数据打通。
-对大部分产品，用户画像用不到推荐系统，个性化推荐也提高不了几个利润，毕竟它需要大量的用户和数据作支撑。所以这些产品，更适合以用户画像为基础去驱动业务。
-提了那么多好处，但是据我了解，不少公司，花了一大笔钱招了不少人建设用户画像系统，结果用不起来。或者做了一份用户画像的报告，性别用户地理位置用户消费金额，看上去挺高大上的，看完也就看完了。
-归根结底，难以用好。
-很多用户画像初衷是好的，但是沦为了形式主义。
-举身边的例子，朋友在公司建立用户画像划分了百来个维度。用户消费、属性、行为无所不包。本来这不错啊，但是上线后运营看着这个干瞪眼。
-问题包含但不限于，用户有那么多维度，怎么合理地选择标签？我想定义用户的层级，VIP用户应该累积消费金额超过多少？是在什么时间窗口内？为什么选择这几个标准？后续应该怎么维护和监控？业务发生变化了这个标签要不要改？
-设立好标签，怎么验证用户画像的有效性？我怎么知道这套系统成功了呢？效果不佳怎么办？它有没有更多的应用场景？
-策略的执行也是一个纠结的问题。从岗位的执行看，运营背负着KPI。当月底KPI完不成时，你觉得他们更喜欢选择全量运营，还是精细化呢?
-我想不少公司都存在这样类似情况：使用过用户画像一段时间后，发现也就那么一回事，也就渐渐不再使用。
-这是用户画像在业务层面遇到老大难的问题。虽然企业自称建立用户画像，应用还是挺粗糙的。
-怎样深入理解用户画像画虎不全反类汪，想要用好它，首先得深入理解用户画像。
-现在运营按用户生命周期设立了几个标签，比如新用户、活跃用户、流失用户，这些标签当然够细分。但它真的是一个好标签么？不是。
-因为这些都是滞后性的。按流失用户的一般定义，往往是用户很长一段时间没有回应和行动，但是都几个月没有响应了，哪怕知道是流失用户也于事无补。它有价值，但太滞后。
-聪明的运营会设立一个新的标签，最近一次活跃距今天数，用户有六个月没有活跃，那么天数就是180天。这个比单纯的流失用户标签好，能凭此划分不同的距今天数，设立30天，90天，180天的时间节点。
-距今天数也不是最好的。用户有差异，同样两个用户A和B，哪怕不活跃天数相同，我也不能认为它们的流失可能性相等。该问题在低频场景更凸显，旅游APP，半年没有活跃也是正常的，此时距今天数力有未逮。
-回过头看流失用户，我们定义它，不是为了设立一个高大上的系统。任何企业，肯定一开始就希望流失用户越少越好，其次才是如何挽回。这种业务前提下，预防性的减少流失用户比已经流失的标签更重要。
-所以最好的标签的标签是用户流失概率，流失概率&gt;距今消费天数&gt;流失标签。
-不要想当然的归纳一个齐全完备的体系，却忽略了画像的核心价值。用户画像首先得是商业目的下的用户标签集合。
-猜用户是男是女，哪里人，工资多少，有没有谈恋爱，喜欢什么，准备剁手购物吗？探讨这些是没有意义的。是男是女如何影响消费决策，工资多少影响消费能力，有没有谈恋爱会否带来新的营销场景，剁手购物怎么精准推荐，这些才是用户画像背后的逻辑。
-不是我有了用户画像，便能驱动和提高业务。而是为了驱动和提高业务，才需要用户画像。这是很容易犯的错误。
-用户画像的标签一般通过两种形式获得，基于已有数据或者一定规则加工，流失标签和距今天数皆是。另外一种是基于已有的数据计算概率模型，会用到机器学习和数据挖掘。
-概率是介于0~1之间的数值。拿性别举例，除非能直接获取用户的身份证信息，用户很少会填写性别，填写的性别也不一定准确，网游中性别为女的扣脚大汉一抓一大把呢。
-这里就要增加一层推断用户真实性别的算法。中国人的性别和名字是强相关，建国建军，翠花翠兰，很容易判断。算法中常用贝叶斯，通过已有的姓名性别库预测新加入的用户性别。
-特殊情况下，不少姓名是中性，男女不辩。像晓晶，可男可女。更特殊的情况，看上去是男性的名字，也有可能是女性，我的初中老师就叫建军，然而是个和蔼可亲的小姐姐。
-特殊情况意味着特殊的概率，所以不能用非此即彼的二分法。所谓概率，它更习惯告诉你，通过模型推断，建军有95％的可能是男性姓名，表示为0.95；晓晶有55％的可能是男性，表示为0.55。
-虽然为了方便，模型会设立阈值，将50％以上的概率默认为男性，以下默认为女性。但业务部门的同学要清楚，用户标签的本质往往是0～1之间的概率。
-概率型的标签很难验证。某位用户被标上学生标签，要么真的哄他上传学籍证明，否则很难知道他是不是真的学生。这种黑箱情况下，针对学生用户进行营销活动，效果好与不好，都受标签准确率的影响。广告、推荐、精准营销都会遇到这个问题。
-概率肯定有多有少。90%流失概率的用户，和30%流失概率的用户，虽然是模型建立出的预测值，非真实，我们还是会认为前者更有离开的可能性，凭此设立运营策略。
-这带来一个新的问题，如何选择概率的阈值？
-我们想要挽回流失用户，选择80%以上概率的人群，还是60%呢？答案已经说过了，要考虑业务，挽回流失用户是手段不是目的，实际目的是通过挽回流失用户提高利润，那么阈值的选择迎刃而解。计算不同阈值下，挽回用户的收入和成本，选择最优解。
-推而广之，推荐系统也好，广告系统也罢，它们有更复杂的维度、标签、特征，本质也是找出用户最近想不想买车，用户最近想不想旅游。把最合适的信息在最恰当时机推给用户，获取最大的利益。
-我列举的案例，是简化过的。像姓名，在电商和消费行业，除了生理上的性别，还会建立消费模型上的性别标签，有些人虽然是男性，但购物行为是女性，这是要区分的。
-看到这里别怕，想要建好用户画像，说简单不简单，说难也不难。
-]]></content>
-      <categories>
-        <category>方法论</category>
-      </categories>
-      <tags>
-        <tag>用户画像</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>方法论-如何建立正确的用户画像？</title>
     <url>/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E6%AD%A3%E7%A1%AE%E7%9A%84%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%EF%BC%9F/</url>
     <content><![CDATA[如何建立正确的用户画像
@@ -3209,43 +3246,6 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 
 再深入想一下业务场景，如果某个办公地点，每天都有五六笔的订单，分属不同的客户不同的时间段，外卖小哥得送个五六次，对人力成本是多大的浪费呀。运营可以在后台分析相关的数据，以团购或拼单的形式，促成订单合并，或许销售额的利润会下降，但是外卖的人力成本也节约了。这也是用画像作为数据分析的依据。
 老王的运营故事说完了，现在对用户画像的建立有一套想法了吧。
-]]></content>
-      <categories>
-        <category>方法论</category>
-      </categories>
-      <tags>
-        <tag>用户画像</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>方法论-用户画像知识进阶</title>
-    <url>/2019/03/27/%E6%96%B9%E6%B3%95%E8%AE%BA-%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E7%9F%A5%E8%AF%86%E8%BF%9B%E9%98%B6/</url>
-    <content><![CDATA[用户画像的架构
-
-内容转载于：https://www.iamue.com/34391
-
-作者：秦路
-
-原文很长，干货很多，为了便于理解，我把文章拆分为了三期
-今天介绍第三期：用户画像的进阶
-
-不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。
-用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，像金融领域，还会有风险画像，包括征信、违约、洗钱、还款能力、保险黑名单等。电商领域会有商品的类目偏好、品类偏好、品牌偏好，不一而足。
-
-上图是随手画的的例子，画一个架构不难，难得是了解每个标签背后的业务逻辑和落地方式，至于算法，又能单独扯很多文章了。
-从数据流向和加工看，用户画像包含上下级递进关系。
-以上文的流失系数举例，它通过建模，其依赖于用户早期的历史行为。而用户早期的历史行为，即10天内的消费金额、消费次数、登录次数等，本身也是一个标签，它们是通过原始的明细数据获得。
-
-上图列举了标签加工和计算的过程，很好理解。最上层的策略标签，是针对业务的落地，运营人员通过多个标签的组合形成一个用户群组，方便执行。
-公司越大，用户画像越复杂。某家主打内容分发的公司进入了全新的视频领域，现在有两款APP，那么用户画像的结构也需要改变。既有内容相关的标签，也有视频相关的标签，两者是并行且关联的。
-比如A用户在内容标签下是重度使用，而在视频标签下是轻度。比如B用户很久没打开内容APP有流失风险，但在视频APP的使用时长上看很忠诚。如此种种，看的是灵活应用。当然，姓名性别这类人口统计标签，是通用的。
-用户画像作为平台级的应用，很多运营策略及工具，都是在其基础上构建的。
-
-基于营销和消费相关的标签，新客、老客、用户的流失和忠诚、用户的消费水平和频率等，都是构成CRM（客户关系管理）的基础，可能大家更习惯叫它用户&#x2F;会员管理运营平台。
-它的作用在于，将数据化的标签，转换成产品运营策略。不同的标签对应不同的用户群体，也对应不同的营销手段。CRM的结构中会包含各类触达用户的常用渠道比如短信、邮件、推送等。也包含CMS（内容管理系统），执行人员通过其快速配置活动页、活动通道、优惠券等，靠营销活动拉动数据。
-老王的沙拉业务要是做大，那么运营平台就会以图中的结构搭建。老王在CRM中组合标签，新客老客流失客的数据借助BI监控，然后通过CMS系统配置红包啊优惠券啊等等，再通过短或Push触达。
-好的用户画像系统，既是数据生态体系，也是业务和运营的生态体系，它是一门复杂的交叉领域。
-万千用法，存乎一心。
 ]]></content>
       <categories>
         <category>方法论</category>
@@ -3344,6 +3344,151 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
       </categories>
       <tags>
         <tag>大佬思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬虫-怎么爬静态网站</title>
+    <url>/2019/03/25/%E7%88%AC%E8%99%AB-%E6%80%8E%E4%B9%88%E7%88%AC%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[爬虫-怎么爬静态网站爬静态网站主要分为两部分：
+
+爬静态网站的文字
+
+爬静态网站的图片
+
+
+[TOC]
+爬文字思路
+用requests模块得到网站的HTML
+
+用BeautifulSoup模块得到HTML的正则文本
+
+用find或者find_all函数从正则文本中得到自己想要的
+
+用repalce去除不需要的字符
+
+
+源代码# coding:utf-8# 使脚本可以识别中文# 爬网站：http://www.hbrchina.org/importfrom# 调用需要的模块if	req = requests.get (&#x27;http://www.hbrchina.org/2019-02-18/7150.html&#x27;   # 得到网站的HTML	req.encoding = req.apparent_encoding	#获取文本原来编码，使两者编码一致才能正确显示	html = req.text	bf = BeautifulSoup(html,&#x27;html.parser&#x27;  # 把HTML文件转为正则文件（我的理解是文本文件）	body = bf.body	texts = body.find_all (&#x27;div&#x27;  # 用find_all函数找到 这样的div文件，其class是article-content	print(texts[0  # 用replace函数提出所有的字符、空格等
+
+
+可以看到的结果
+爬图片思路
+用requests模块得到网站的HTML
+
+用BeautifulSoup得到HTML的正则文本
+
+用find函数从正则文本中得到自己想要的，比如关键词img
+
+利用urllib模块下载
+
+利用for语句下载所有图片
+
+
+源代码# coding:utf-8importfromif	rep = requests.get(&#x27;https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/&#x27;	rep.encoding = rep.apparent_encoding	html = rep.text	bs = BeautifulSoup(html,&#x27;html.parser&#x27;	img = bs.find_all(&#x27;img&#x27;	# 在bs正则文件中找到所有 带有img标签的结果	x=1	for    # 利用for语句得到每一个图片的src		imgsrc = i.get(&#x27;src&#x27;    # 从img中找到图片的下载链接，src		urllib.request.urlretrieve(imgsrc,&#x27;./%s.jpg&#x27;    # 利用urllib模块去下载图片		x=x+1		print
+
+
+爬虫时必须会用网页源代码以爬图片为例：
+这是我们要爬的网站：[https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/]
+打开网站后（我用的Chrome浏览器），键盘快捷键F12，即可打开网站的调试模式，效果如下：
+
+右侧就是网站的源代码，可以用来爬
+如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，选择检查，如下图所示：
+
+如果我们要快速定位某图片所在的代码位置，演示如下：
+
+用这种方法观察每一张图片的源码：
+它们的写法都是非常类似的，如下：
+&lt;img
+
+
+src是图片的下载地址，alt是图片的便签，每一张图片都在img语句中
+所以我们只要得到所有的img语句，然后从img语句中得到所有的src链接，就可以下载图片了。
+每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。
+对于小白，难度就在于怎么样找到要爬部分的特点
+
+以上
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora+七牛云，高效写Markdown|产品必用软件|第1期</title>
+    <url>/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/</url>
+    <content><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等
+而且产品人日常还要写写文章什么的。
+如果用传统的word去写文档，真的是：
+
+
+写作两分钟，格式两小时
+而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率
+进门右转，Markdown入门
+
+一篇文章主要有文字、链接、图片以及格式等组成
+利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些Latex排版)
+
+但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。
+最好可以一键式操作。
+下面就是见证奇迹的时刻！
+首先给大家推荐一篇博客，本文借鉴了这篇文章的内容。
+1. Markdown编辑器–TyporaTypora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。
+这是操作界面，干净、简约
+
+免费下载传送门	Typora官网
+
+2. 图片–最好用的截图工具–Snipaste
+
+windowns系统最好用
+核心功能有截图、贴图两个
+
+截图
+
+
+
+
+贴图
+
+
+免费下载传送门	官网点这里	参考资料
+
+3. 图床—用于存储写作用到的图片
+
+推荐 七牛云
+为什么是七牛云：
+
+
+提供稳定的存储服务，
+
+
+是免费的
+
+
+大家都在用
+七牛云图床使用指南
+
+4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具
+
+MPic
+windows系统少有的可以方便上传到图床的工具(且只支持七牛云)
+
+如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。
+而且你随时的分享，都不会受到影响！
+
+
+需要”设置账号“和你的七牛云绑定
+免费下载传送门	官网点这里	参考资料
+
+更多有趣的使用技巧，需要你自己去探索了！
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
       </tags>
   </entry>
   <entry>
@@ -3487,75 +3632,6 @@ while循环
       </tags>
   </entry>
   <entry>
-    <title>爬虫-怎么爬静态网站</title>
-    <url>/2019/03/25/%E7%88%AC%E8%99%AB-%E6%80%8E%E4%B9%88%E7%88%AC%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[爬虫-怎么爬静态网站爬静态网站主要分为两部分：
-
-爬静态网站的文字
-
-爬静态网站的图片
-
-
-[TOC]
-爬文字思路
-用requests模块得到网站的HTML
-
-用BeautifulSoup模块得到HTML的正则文本
-
-用find或者find_all函数从正则文本中得到自己想要的
-
-用repalce去除不需要的字符
-
-
-源代码# coding:utf-8# 使脚本可以识别中文# 爬网站：http://www.hbrchina.org/importfrom# 调用需要的模块if	req = requests.get (&#x27;http://www.hbrchina.org/2019-02-18/7150.html&#x27;   # 得到网站的HTML	req.encoding = req.apparent_encoding	#获取文本原来编码，使两者编码一致才能正确显示	html = req.text	bf = BeautifulSoup(html,&#x27;html.parser&#x27;  # 把HTML文件转为正则文件（我的理解是文本文件）	body = bf.body	texts = body.find_all (&#x27;div&#x27;  # 用find_all函数找到 这样的div文件，其class是article-content	print(texts[0  # 用replace函数提出所有的字符、空格等
-
-
-可以看到的结果
-爬图片思路
-用requests模块得到网站的HTML
-
-用BeautifulSoup得到HTML的正则文本
-
-用find函数从正则文本中得到自己想要的，比如关键词img
-
-利用urllib模块下载
-
-利用for语句下载所有图片
-
-
-源代码# coding:utf-8importfromif	rep = requests.get(&#x27;https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/&#x27;	rep.encoding = rep.apparent_encoding	html = rep.text	bs = BeautifulSoup(html,&#x27;html.parser&#x27;	img = bs.find_all(&#x27;img&#x27;	# 在bs正则文件中找到所有 带有img标签的结果	x=1	for    # 利用for语句得到每一个图片的src		imgsrc = i.get(&#x27;src&#x27;    # 从img中找到图片的下载链接，src		urllib.request.urlretrieve(imgsrc,&#x27;./%s.jpg&#x27;    # 利用urllib模块去下载图片		x=x+1		print
-
-
-爬虫时必须会用网页源代码以爬图片为例：
-这是我们要爬的网站：[https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/]
-打开网站后（我用的Chrome浏览器），键盘快捷键F12，即可打开网站的调试模式，效果如下：
-
-右侧就是网站的源代码，可以用来爬
-如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，选择检查，如下图所示：
-
-如果我们要快速定位某图片所在的代码位置，演示如下：
-
-用这种方法观察每一张图片的源码：
-它们的写法都是非常类似的，如下：
-&lt;img
-
-
-src是图片的下载地址，alt是图片的便签，每一张图片都在img语句中
-所以我们只要得到所有的img语句，然后从img语句中得到所有的src链接，就可以下载图片了。
-每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。
-对于小白，难度就在于怎么样找到要爬部分的特点
-
-以上
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了</title>
     <url>/2019/03/25/%E8%BD%AF%E4%BB%B6-Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%94%B9%E7%89%88%EF%BC%9A%E5%9F%BA%E4%BA%8EChromium%E5%86%85%E6%A0%B8%E7%9A%84Edge%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BB%88%E4%BA%8E%E5%8F%98%E5%A5%BD%E7%9C%8B%E4%BA%86/</url>
     <content><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了**微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。
@@ -3580,104 +3656,55 @@ src是图片的下载地址，alt是图片的便签，每一张图片都在img�
       </tags>
   </entry>
   <entry>
-    <title>Typora+七牛云，高效写Markdown|产品必用软件|第1期</title>
-    <url>/2019/02/22/%E8%BD%AF%E4%BB%B6-Typora-%E4%B8%83%E7%89%9B%E4%BA%91%EF%BC%8C%E9%AB%98%E6%95%88%E5%86%99Markdown-%E7%AC%AC1%E6%9C%9F/</url>
-    <content><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等
-而且产品人日常还要写写文章什么的。
-如果用传统的word去写文档，真的是：
+    <title> Windows系统最好用的文件预览工具|产品软件|5th</title>
+    <url>/2019/03/12/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E5%B7%A5%E5%85%B7-5th/</url>
+    <content><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。
+今天推荐的这一款软件就是 windows系统中 最好用的一款
+QuickLook
+QuickLook支持以下文件格式：
 
+图片: .png, .jpg, .bmp and .gif
 
-写作两分钟，格式两小时
-而不甘心的你，在学习了Markdown之后，不在为格式发愁了，大大提高了输出效率
-进门右转，Markdown入门
+压缩包： .zip, .rar, .7z
 
-一篇文章主要有文字、链接、图片以及格式等组成
-利用Markdown写作基本帮我们解决了格式排版的问题(如果对格式要求非常高，可以出门左转，学些Latex排版)
+PDF 文件
 
-但是所有的Markdown编辑器都不能很好的解决图片的问题，图片多为本地保存，既占空间，还不能移动到其他文件夹，所以想，如果可以上传到图床就好了。
-最好可以一键式操作。
-下面就是见证奇迹的时刻！
-首先给大家推荐一篇博客，本文借鉴了这篇文章的内容。
-1. Markdown编辑器–TyporaTypora是windows系统最好看的编辑器(个人认为：颜值最高)，但是对新手不是太友好，需要适应其“所见即所得”的理念。
-这是操作界面，干净、简约
+文本文件
 
-免费下载传送门	Typora官网
+Microsoft Word (.doc, .docx), Excel (.xls, .xlsx) and PowerPoint (.ppt, .pptx) files (需要安装 Office)
 
-2. 图片–最好用的截图工具–Snipaste
+视频文件 (.mp4, .mkv, .m2ts 等)
 
-windowns系统最好用
-核心功能有截图、贴图两个
+HTML 文件 (.htm, .html)
 
-截图
+Markdown 文件 (.md)
+
+其他文件和文件夹会显示一个信息框
 
 
 
+演示：
 
-贴图
-
-
-免费下载传送门	官网点这里	参考资料
-
-3. 图床—用于存储写作用到的图片
-
-推荐 七牛云
-为什么是七牛云：
+预览图片
 
 
-提供稳定的存储服务，
+
+预览markdown文件
 
 
-是免费的
+
+预览PDF文件
 
 
-大家都在用
-七牛云图床使用指南
 
-4. 一款帮助你摆脱本地图片路径困扰，一键上传到七牛云的工具
-
-MPic
-windows系统少有的可以方便上传到图床的工具(且只支持七牛云)
-
-如图所示，图片在上传到七牛云后，会自动生成一个链接，并自动复制到了剪贴板，此时你只要复制到Typora的文档中，就会自动生成图片了。
-而且你随时的分享，都不会受到影响！
+总之，用起来非常方便，大大提高工作的效率和逼格
 
 
-需要”设置账号“和你的七牛云绑定
-免费下载传送门	官网点这里	参考资料
 
-更多有趣的使用技巧，需要你自己去探索了！
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal</title>
-    <url>/2019/04/07/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6-%E6%A1%8C%E9%9D%A2%E6%97%A5%E5%8E%86DesktopCal/</url>
-    <content><![CDATA[Windows系统下最实用的日程管理软件-桌面日历DesktopCal时间管理，无论是对工作、还是学习都非常重要。
-所以有一款好用的时间管理软件，会让你事半功倍，时间安排更加心中有数
-今天推荐的一款应该是Windows系统下最实用的日常管理 软件
-桌面日历DesktopCal
-界面
-演示
-主要功能
+搜索微信号：darerpm，关注公众号
 
 
-自从发现了这款软件之后，真的是爱不释手
-
-
-这款软件可以很好的帮助你对整体的日程安排有一个非常直接的认识
-
-
-知道每一个任务或者计划需要多长时间，需要在哪几天完成等等
-
-
-官网地址
-下载方式关注微信公众号：产品汪darer，后台回复关键词：桌面日历DesktopCal，即可下载
+公众号后台回复QuickLook，即刻获得下载链接
 ]]></content>
       <categories>
         <category>软件资源</category>
@@ -3837,6 +3864,145 @@ Pandownload
       </tags>
   </entry>
   <entry>
+    <title>软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal</title>
+    <url>/2019/04/07/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%9C%80%E5%AE%9E%E7%94%A8%E7%9A%84%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6-%E6%A1%8C%E9%9D%A2%E6%97%A5%E5%8E%86DesktopCal/</url>
+    <content><![CDATA[Windows系统下最实用的日程管理软件-桌面日历DesktopCal时间管理，无论是对工作、还是学习都非常重要。
+所以有一款好用的时间管理软件，会让你事半功倍，时间安排更加心中有数
+今天推荐的一款应该是Windows系统下最实用的日常管理 软件
+桌面日历DesktopCal
+界面
+演示
+主要功能
+
+
+自从发现了这款软件之后，真的是爱不释手
+
+
+这款软件可以很好的帮助你对整体的日程安排有一个非常直接的认识
+
+
+知道每一个任务或者计划需要多长时间，需要在哪几天完成等等
+
+
+官网地址
+下载方式关注微信公众号：产品汪darer，后台回复关键词：桌面日历DesktopCal，即可下载
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床工具选择哪个好？|产品软件|2rd</title>
+    <url>/2019/03/01/%E8%BD%AF%E4%BB%B6-%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%AA%E5%A5%BD%EF%BC%9F-2rd/</url>
+    <content><![CDATA[
+
+在上一期我们介绍了Markdown写作必须知道的图床知识这是传送们，点击查看上期内容
+
+
+这一期，我们会介绍图片上传图床时，非常好用的工具，大大提高你的写作效率
+假如不利用图床工具，我们插入图片时，需要几步呢？
+以SM.MS图床为例演示
+演示demo
+
+假如，我们不使用图床工具，那我们就需要从本地上传到图床，然后复制其生成的Markdown指令，
+将指令复制到编辑器，即可使用。
+但很多情况下，我们会有如下需求：
+
+图片上传到图床后，自动把Markdown指令复制到粘贴板
+
+复制图片到剪贴板，然后工具可以自动上传到图床，并实现上一条的功能
+
+
+很棒的需求，确实有一些能够满足以上需求的工具
+[TOC]
+Mpic
+
+这一款图床工具仅仅支持七牛云
+
+
+如果你不用七牛云
+
+
+可以跳过这趴了
+
+软件图标，右键，之后会看到下图
+
+这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传
+图片上传后，会自动生成Markdown指令到粘贴板
+不过，需要你提前设置好七牛云的账号
+
+操作很简单，上手超级容易
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复mpic，即刻获得下载链接
+Fu
+
+这一款支持的图床有：SM.MS和路过图床
+
+
+如果你使用七牛云、阿里云、腾讯云、又拍云、微博等，可以跳过这一趴
+
+
+除了图床之外，这款还支持：
+
+
+sftp和ftp
+设置
+
+
+这一款同第一款一样，这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传
+图片上传后，会自动生成Markdown指令到粘贴板
+只要提前设置好即可
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复fu，即刻获得下载链接
+Picgo
+
+这三款中，颜值最高的图床工具
+
+
+支持平台最多的图床工具
+支持的平台有：
+
+勾选即可使用，但是需要设置和选择一个作为默认图床
+设置demo
+
+不过，这款不支持剪贴板自动上传到图床，需要设置快捷键，才可以支持剪贴板自动上传到图床
+我快捷键设置为ctrl+tab
+
+
+搜索微信号：darerpm，关注公众号
+
+
+公众号后台回复picgo，即刻获得下载链接
+
+经过实践发现，以上所有对gif动图的支持都不好，不能很好的支持自动上传，需要选择本地导入的方式。
+
+总之：
+如果你仅仅使用七牛云，选择Mpic
+如果你想使用sftp和ftp,必须选择Fu
+如果你想要一款高颜值，支持平台多的，选择Picgo
+
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>产品人必用的大幅提高办公效率的工具|产品软件更新|1st</title>
     <url>/2019/02/24/%E8%BD%AF%E4%BB%B6-%E4%BA%A7%E5%93%81%E4%BA%BA%E5%BF%85%E7%94%A8%E7%9A%84%E5%A4%A7%E5%B9%85%E6%8F%90%E9%AB%98%E5%8A%9E%E5%85%AC%E6%95%88%E7%8E%87%E7%9A%84%E5%B7%A5%E5%85%B7-1st/</url>
     <content><![CDATA[[TOC]
@@ -3961,172 +4127,6 @@ Ditto就是这样一款剪贴板增强神器
       </tags>
   </entry>
   <entry>
-    <title> Windows系统最好用的文件预览工具|产品软件|5th</title>
-    <url>/2019/03/12/%E8%BD%AF%E4%BB%B6-Windows%E7%B3%BB%E7%BB%9F%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E5%B7%A5%E5%85%B7-5th/</url>
-    <content><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。
-今天推荐的这一款软件就是 windows系统中 最好用的一款
-QuickLook
-QuickLook支持以下文件格式：
-
-图片: .png, .jpg, .bmp and .gif
-
-压缩包： .zip, .rar, .7z
-
-PDF 文件
-
-文本文件
-
-Microsoft Word (.doc, .docx), Excel (.xls, .xlsx) and PowerPoint (.ppt, .pptx) files (需要安装 Office)
-
-视频文件 (.mp4, .mkv, .m2ts 等)
-
-HTML 文件 (.htm, .html)
-
-Markdown 文件 (.md)
-
-其他文件和文件夹会显示一个信息框
-
-
-
-演示：
-
-预览图片
-
-
-
-预览markdown文件
-
-
-
-预览PDF文件
-
-
-
-总之，用起来非常方便，大大提高工作的效率和逼格
-
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复QuickLook，即刻获得下载链接
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图床工具选择哪个好？|产品软件|2rd</title>
-    <url>/2019/03/01/%E8%BD%AF%E4%BB%B6-%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E5%93%AA%E4%B8%AA%E5%A5%BD%EF%BC%9F-2rd/</url>
-    <content><![CDATA[
-
-在上一期我们介绍了Markdown写作必须知道的图床知识这是传送们，点击查看上期内容
-
-
-这一期，我们会介绍图片上传图床时，非常好用的工具，大大提高你的写作效率
-假如不利用图床工具，我们插入图片时，需要几步呢？
-以SM.MS图床为例演示
-演示demo
-
-假如，我们不使用图床工具，那我们就需要从本地上传到图床，然后复制其生成的Markdown指令，
-将指令复制到编辑器，即可使用。
-但很多情况下，我们会有如下需求：
-
-图片上传到图床后，自动把Markdown指令复制到粘贴板
-
-复制图片到剪贴板，然后工具可以自动上传到图床，并实现上一条的功能
-
-
-很棒的需求，确实有一些能够满足以上需求的工具
-[TOC]
-Mpic
-
-这一款图床工具仅仅支持七牛云
-
-
-如果你不用七牛云
-
-
-可以跳过这趴了
-
-软件图标，右键，之后会看到下图
-
-这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传
-图片上传后，会自动生成Markdown指令到粘贴板
-不过，需要你提前设置好七牛云的账号
-
-操作很简单，上手超级容易
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复mpic，即刻获得下载链接
-Fu
-
-这一款支持的图床有：SM.MS和路过图床
-
-
-如果你使用七牛云、阿里云、腾讯云、又拍云、微博等，可以跳过这一趴
-
-
-除了图床之外，这款还支持：
-
-
-sftp和ftp
-设置
-
-
-这一款同第一款一样，这款软件，既支持本地上传，也会识别粘贴板上的图片，自动上传
-图片上传后，会自动生成Markdown指令到粘贴板
-只要提前设置好即可
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复fu，即刻获得下载链接
-Picgo
-
-这三款中，颜值最高的图床工具
-
-
-支持平台最多的图床工具
-支持的平台有：
-
-勾选即可使用，但是需要设置和选择一个作为默认图床
-设置demo
-
-不过，这款不支持剪贴板自动上传到图床，需要设置快捷键，才可以支持剪贴板自动上传到图床
-我快捷键设置为ctrl+tab
-
-
-搜索微信号：darerpm，关注公众号
-
-
-公众号后台回复picgo，即刻获得下载链接
-
-经过实践发现，以上所有对gif动图的支持都不好，不能很好的支持自动上传，需要选择本地导入的方式。
-
-总之：
-如果你仅仅使用七牛云，选择Mpic
-如果你想使用sftp和ftp,必须选择Fu
-如果你想要一款高颜值，支持平台多的，选择Picgo
-
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-简单实用的To-Do清单-小黄条</title>
     <url>/2019/04/21/%E8%BD%AF%E4%BB%B6-%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84To-Do%E6%B8%85%E5%8D%95-%E5%B0%8F%E9%BB%84%E6%9D%A1/</url>
     <content><![CDATA[简单实用的To-Do清单-小黄条在前几期，为大家推荐了非常好用的桌面日程管理软件-桌面日历DesktopCal
@@ -4169,46 +4169,6 @@ App支持Widget，Widget上可直接完成任务，无需启动应用也能浏�
 关注微信公众号：产品汪darer，后台回复关键词：小黄条，即可下载
 
 
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-选择一款良心浏览器很重要-Cent浏览器</title>
-    <url>/2019/04/14/%E8%BD%AF%E4%BB%B6-%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E8%89%AF%E5%BF%83%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%88%E9%87%8D%E8%A6%81-Cent%E6%B5%8F%E8%A7%88%E5%99%A8/</url>
-    <content><![CDATA[选择一款良心浏览器很重要-Cent浏览器最近一段时间，996是最火的数字了，各方媒体、各方大佬都在发声
-但是在前不久，国内大厂旗下的浏览器做了一件非常非常流氓的事情：屏蔽了996.icu项目，也就是下面这个网址
-
-
-https://github.com/996icu/996.ICU
-部分浏览器屏蔽截图：
-
-据统计“流氓”浏览器包括但不仅限于：
-360系（360浏览器等）、腾讯系（QQ浏览器、微信等）、阿里系（UC浏览器、夸克浏览器等）、小米系（小米手机内嵌浏览器）等
-在发觉这件事情之后，我就立刻卸载了360安全浏览器和夸克浏览器（微信没有替代品，不然我也卸载了）
-
-
-没有能力去改变，但是我会选择去抵制
-
-
-在没有违反国家法律的情况下，用户有权选择自己想要的资讯
-那市场上有没有好用的替代浏览器呢？
-在卸载后，我主要尝试了Firefox浏览器和Cent浏览器，Firefox浏览器不是非常符合自己的使用习惯，最终选择了Cent浏览器。
-Cent浏览器是什么？Cent浏览器又称百分浏览器：追求速度、安全和简约的网络浏览器
-它基于最新的Chromium开源内核进行优化开发，充分继承其高速安全的特性
-如果问大家最好用的浏览器是什么？几乎六成的人会说是Chrome浏览器
-Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验更舒服
-
-从上图可见，主界面和Chrome几乎完全一样，操作上比Chrome更舒服
-主要特色功能
-比如，可以双击关闭Tab标签，还有许多定制的鼠标手势
-下载地址可以去 官网地址 下载
-或者 关注微信公众号：产品汪darer，后台回复关键词：Cent浏览器，即可下载
 ]]></content>
       <categories>
         <category>软件资源</category>
@@ -4337,59 +4297,43 @@ author:魏雅 @人人都是产品经理社区
       </tags>
   </entry>
   <entry>
-    <title>问答-工作被流程化，到底该不该？</title>
-    <url>/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/</url>
-    <content><![CDATA[
-
-看看同行们都在想些啥
-以下内容来自产品相关社区，如有侵权，请联系删除
-[TOC]
-Q1 : 工作被流程化，到底该不该？
-
-有人认为，流程化有助于公司拥有更长远的竞争力；
-
-有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
-
-author:Hysterin @人人都是产品经理
-如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
-无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
-从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
-但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
-举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
-很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
-三年过去，这位学员现在已在五百强企业做专职产品经理了。
-工作可以被流程化，可以被定性。但人不可以。记住这句话。
-Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
-
-当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
+    <title>软件-选择一款良心浏览器很重要-Cent浏览器</title>
+    <url>/2019/04/14/%E8%BD%AF%E4%BB%B6-%E9%80%89%E6%8B%A9%E4%B8%80%E6%AC%BE%E8%89%AF%E5%BF%83%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%88%E9%87%8D%E8%A6%81-Cent%E6%B5%8F%E8%A7%88%E5%99%A8/</url>
+    <content><![CDATA[选择一款良心浏览器很重要-Cent浏览器最近一段时间，996是最火的数字了，各方媒体、各方大佬都在发声
+但是在前不久，国内大厂旗下的浏览器做了一件非常非常流氓的事情：屏蔽了996.icu项目，也就是下面这个网址
 
 
-在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
+https://github.com/996icu/996.ICU
+部分浏览器屏蔽截图：
+
+据统计“流氓”浏览器包括但不仅限于：
+360系（360浏览器等）、腾讯系（QQ浏览器、微信等）、阿里系（UC浏览器、夸克浏览器等）、小米系（小米手机内嵌浏览器）等
+在发觉这件事情之后，我就立刻卸载了360安全浏览器和夸克浏览器（微信没有替代品，不然我也卸载了）
 
 
-如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
-author:李小玉 @人人都是产品经理
-别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
-当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
-如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
-做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
+没有能力去改变，但是我会选择去抵制
 
 
-被别人带跑偏，说明自己对方案的考虑存在纰漏
-Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
+在没有违反国家法律的情况下，用户有权选择自己想要的资讯
+那市场上有没有好用的替代浏览器呢？
+在卸载后，我主要尝试了Firefox浏览器和Cent浏览器，Firefox浏览器不是非常符合自己的使用习惯，最终选择了Cent浏览器。
+Cent浏览器是什么？Cent浏览器又称百分浏览器：追求速度、安全和简约的网络浏览器
+它基于最新的Chromium开源内核进行优化开发，充分继承其高速安全的特性
+如果问大家最好用的浏览器是什么？几乎六成的人会说是Chrome浏览器
+Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验更舒服
 
-有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
-author:阿不 @人人都是产品经理
-这个代码我看了。
-分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
-播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
-其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
+从上图可见，主界面和Chrome几乎完全一样，操作上比Chrome更舒服
+主要特色功能
+比如，可以双击关闭Tab标签，还有许多定制的鼠标手势
+下载地址可以去 官网地址 下载
+或者 关注微信公众号：产品汪darer，后台回复关键词：Cent浏览器，即可下载
 ]]></content>
       <categories>
-        <category>产品问答</category>
+        <category>软件资源</category>
       </categories>
       <tags>
-        <tag>产品问答</tag>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
       </tags>
   </entry>
   <entry>
@@ -4467,114 +4411,127 @@ Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？a
       </tags>
   </entry>
   <entry>
-    <title>问答-特斯拉入局，蔚来们是在裸泳吗？</title>
-    <url>/2019/03/29/%E9%97%AE%E7%AD%94-%E7%89%B9%E6%96%AF%E6%8B%89%E5%85%A5%E5%B1%80%EF%BC%8C%E8%94%9A%E6%9D%A5%E4%BB%AC%E6%98%AF%E5%9C%A8%E8%A3%B8%E6%B3%B3%E5%90%97%EF%BC%9F/</url>
+    <title>问答-工作被流程化，到底该不该？</title>
+    <url>/2019/04/27/%E9%97%AE%E7%AD%94-%E5%B7%A5%E4%BD%9C%E8%A2%AB%E6%B5%81%E7%A8%8B%E5%8C%96%EF%BC%8C%E5%88%B0%E5%BA%95%E8%AF%A5%E4%B8%8D%E8%AF%A5%EF%BC%9F/</url>
     <content><![CDATA[
 
-俗话说：“三人行，必有我师”
-
-
-看看同行们是怎么分析问题的
+看看同行们都在想些啥
 以下内容来自产品相关社区，如有侵权，请联系删除
 [TOC]
-:   特斯拉入局，蔚来们是在裸泳吗？
+Q1 : 工作被流程化，到底该不该？
 
-国内新能源汽车的领斗羊蔚来汽车在2018年成功完成了交付1万辆的Flag，然而却被前员工爆出1W辆部分是在蔚来对内部员工的激励措施下内部员工的购买，实际用户购买的出货量比对外公布的小，退货量也比外界想象的大。
-author:猫黎 @PMCAFF
-Answer
-对于蔚来汽车的体验，我得到了正反两方面的反馈。
-我的数位预订了蔚来汽车的朋友纷纷表示，ES8的补贴前售价44.80~54.80万元，若采用电池租赁方案，加上补贴，算下来顶配38万。
-“便宜啊，然后性能和特斯拉一模一样。” “蔚来汽车还有特斯拉做不到的，以用户的感受为第一，我都打算坐地铁去提车了，他们主动过来接我。”小伙伴们说。
+有人认为，流程化有助于公司拥有更长远的竞争力；
 
+有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
 
-性能和特斯拉一模一样，这位用户是认真的吗?!😂
-我听说，蔚来汽车经常组织购车者线下各种活动，以增强社交黏性。
-当然，黑ES8的理由更多。
-这款车是由江淮汽车代工的。毕竟江淮汽车是以5.68万起的瑞风S3为主打的低端车品牌，而蔚来ES8定位于中高端SUV，对标的是奥迪Q5等。二者甚是违和，江淮能够做高端车吗？
-这款车的尾标是江淮蔚来，很多车主刚提车就“抠尾标”。
+author:Hysterin @人人都是产品经理
+如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
+无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
+从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
+但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
+举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
+很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
+三年过去，这位学员现在已在五百强企业做专职产品经理了。
+工作可以被流程化，可以被定性。但人不可以。记住这句话。
+Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
 
-
-江淮蔚来、华晨宝马😂
-
-此外，充电问题。
-周末，我逛了下特斯拉体验中心，销售小姐以平静中不失骄傲的语气对我说：“特斯拉的充电桩遍布全国，而蔚来汽车是电池更换坞，电池装装拔拔。”
-蔚来汽车的一键加电预约，对于远途而言，也略有些搞笑。
-
-一个关键词
-如果蔚来汽车有一个关键词，毫无疑问，是“烧钱”。李斌曾说：“200亿元是造车的门槛。”
+当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
 
 
-凡是亏损，都不是最好的商业模式
-根据招股说明书，2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的收入是0元、0元、4600万元人民币。同期的亏损，分别是25.69亿、50.13亿、33.21亿人民币。累计亏损约为109亿元。
-
-（上表的货币单位为：百万元人民币）
-自2015年始，包括高瓴资本、腾讯、顺为资本、红杉资本、淡马锡、IDG、百度、厚朴、刘强东等超过50家知名投资机构，前前后后共融资6轮，累积募资约169亿元人民币。此外，有12.6亿元贷款。上市之前，最后一轮融资的估值是47亿美元。
-此次IPO，募集资金约为10.15亿美元，折合70亿元人民币。
-
-如此巨资，所费如何？
-最大头是研发费。2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的研发费用分别是14.7亿、26.0亿、14.6亿元。
-两厢对照，2017年比亚迪&#x2F;长城&#x2F;Tesla的研发费用分别为63亿、34亿、90亿元人民币。看起来，蔚来的研发烧钱仍前路漫漫。
-
-其次是销售和管理费用，2016年&#x2F;2017年&#x2F;2018上半年蔚来汽车分别是11.4亿、23.5亿、17.3亿元，其中广告费用分别为2.4亿、5.2亿、2.6亿元。
-蔚来汽车的门店，都在城市最繁华处例如上海中心、太古汇、北京东方广场等，所资不菲，号称单店投入8000万至上亿元。
-
-卖了多少车
-如特斯拉一样，蔚来汽车最为人诟病的，仍是交付连连推迟。
-微博网友@亚东 说：“订的车，蔚来说预计4月交付，后来推到5月、6月、7月，再后来说8月一定交付，现在又说9月一定交付。”
-按照原计划，蔚来在今年三四月交付2000台，实际至7月底仅交付481台。
-李斌全年的目标仍是1万台，还为此与另外一家小鹏汽车创始人打赌。
-
-目前，蔚来汽车的未交付订单有1.7万个。其中1.2万支付了5000元意向金，可退还；另外0.5万已支付了4.5万定金，不可退。
-对比一下特斯拉，在2010~2017年分别交付1542台、2369台、4424台、2.4万、3.4万、5.3万、7.6万、10.3万台。2018上半年交付7.1万台。
-从产量的角度，蔚来汽车基本处在特斯拉2010~2011年的水平。
-即便是特斯拉，也身处漩涡，新车型的大规模量产屡遭挑战。
-Elon Musk在去年8月份闹出一场“私有化”闹剧，就是因为股票价格的剧烈波动、以及季度财报周期的巨大压力。Musk说：“特斯拉是股市历史上最被做空的个股，存在大量想攻击特斯拉的人。”
-特斯拉至今仍在亏损。2018年二季报显示，特斯拉亏损7.2亿美元，同比扩大85.29%；一季度净亏损7.85亿美元。
-对于蔚来汽车而言，可能最坏的消息是国内汽车销量正在全面下滑。
-
-自称是“造车新势力”的互联网汽车人，李斌只是其中之一，还有小鹏汽车、奇点汽车、威马汽车等，如雨后春笋遍地开花，个个都想成为“中国特斯拉”。
-这种愿景，自然是美好的。但是最终谁可以到达彼岸，我们并不知道。
+在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
 
 
-不知道真假，反正各大媒体都在讲“2019年是造车新势力的洗牌之年”，是否为真，吃瓜群众在看
-：为什么传统企业要转型互联网？author:Ariel诗意 @PMCAFF
-Answer
-互联网化是大势所趋
-可以这样说，只要传统企业走进一天，那么意味着互联网也必须进入传统企业，比尔盖茨说过一句话：“21世纪是电子商务的时代，未来要么电子商务，要么无商可务”这句话的意思是说：在互联网发展的某一天，未来不再分你是传统企业，我是互联网企业，因为未来都是互联网企业，一个趋势的到来，是没有任何一个人能阻挡得了的，只有选择适应和拥抱，才之与时俱进。
-从消费主体的维度看，转型迫在眉睫
-以前，企业掌握信息优势和主动权，消费者只能被动接收。随着移动互联网的发展，移动互联技术让消费者掌握了甚至比企业还要多的信息，因此，用户拥有了更大的话语权和选择权。消费群（即社交、本地、移动和个性化消费群）正在崛起，移动互联网所开创的消费者主权时代正在引爆第三次零售革命，一夜之间赋予了渴望消费自由、消费平等、消费民主的消费者巨大的消费主权。没有互联网时，商家跟消费者之间的关系是以信息不对称为基础的—通俗地讲，就是“买的没有卖的精”。有了互联网之后，游戏规则变了。消费者鼠标一点就可以比价、在网上讨论，变得越来越有主动权和话语权。
+如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
+author:李小玉 @人人都是产品经理
+别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
+当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
+如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
+做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
 
 
-企业会出现越来越多的后向收费模式，比如削减商品的利润，而在后续的服务、社群等方面下大功夫，会越来越重视品牌效应，越来越重视消费者，越来越重视大数据营销等。
-利率持续下降——传统企业线下趋势
-2014年是品牌电商化的重要一年。传统企业受政策、产业供应链、物价等方面的不利影响，很多品牌、行业出现了毛利率从50%降到30%的情况。随之而来的是产业劳动力效率下降，上游工厂代工的形式走不通了。
+被别人带跑偏，说明自己对方案的考虑存在纰漏
+Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
 
-
-用工、用地成本只会越来越高，毛利率会不断下降。当成本提高了，企业想要赚钱就只有两条路：提高商品的质和增加卖出的量。
-未来，传统产业的毛利率都会下降到原来的三分之一以下，趋势不可避免。无论企业经营哪类产品，处于哪种领域，都会有互联网企业挑战你。传统企业不仅利率下降、产品压缩，而且价值链正接受挑战。
-
-
-传统企业受到最大影响的应该是思维的转变，大象转身是比较难的，盘根错节，利益交错，牵一发而动全身。
-消费者已经从线上线下走到场景化，传统企业再不转型还能抓住消费者吗？
-
-
-互联网企业会实体化，实体企业会互联网化，这是未来大趋势。
-：高德导航，会不会革了滴滴打车的命?
-
-高德地图也可以打车了，你是否还会用滴滴呢？
-author:尼卡 @PMCAFF
-Answer
-高德算是中间商，但是说颠覆滴滴，个人觉得目前来看不太可能，但是这个事情本身对用户对高德都是非常有利的。
-高德涉足网约车市场则是在意料之外又在情理之中。无论是从用户规模、用户习惯、市场竞争以及出行布局这几件维度来看，涉足网约车都有合理之处。
-高德有有7亿用户，从用户习惯来看，涉足网约车是高维打低维。用户用滴滴打车之前，往往需要用高德地图查询路线；很多网约车司机的导航地图也是高德。对司机、用户来说，在打车APP和地图APP之间来回跳转并不方便。高德作为导航软件，本来就是出行的第一入口，做网约车顺理成章。
-再者，高德推出顺风车，还是回归到了一站式公共出行服务平台——这是高德的核心逻辑。早在2017年就接入了滴滴、神州专车、首汽约车、曹操专车、摩拜、ofo这些出行方式。这次自己加入顺风车功能，本质上是对出行服务的补充。
-但是如果说类似滴滴乘客出事这种问题，对于高德叫车这种“中间商”，如果乘客是从高德叫的车，那么对于高德来说是否也应当负一定责任？另外高德如何保证下游对接的打车平台的服务能力足够也是一个问题。
+有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
+author:阿不 @人人都是产品经理
+这个代码我看了。
+分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
+播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
+其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
 ]]></content>
       <categories>
         <category>产品问答</category>
       </categories>
       <tags>
         <tag>产品问答</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>产品经理有哪些分类？</title>
+    <url>/2019/03/21/%E9%9A%8F%E6%83%B3-%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%9C%89%E5%93%AA%E4%BA%9B%E5%88%86%E7%B1%BB%EF%BC%9F/</url>
+    <content><![CDATA[产品经理有哪些细分领域，对应特点是什么？
+
+问：   产品经理有哪些细分领域，对应特点是什么？
+答：   可以分为以下几个方面回答：
+1：产品经理的细分领域； 2：不同类型产品经理的岗位要求。
+
+
+
+产品经理—Product Manager (简称为PM)   负责市场调查并根据用户的需求，确定开发何种产品，选择何种业务模式、商业模式等。并推动相应产品的开发组织，ta还要根据产品的生命周期，协调研发、营销、运营等，确定和组织实施相应的产品策略，以及其他一系列相关的产品管理活动。
+
+1：产品经理的细分领域
+
+按用户类型分：
+
+-To B 产品经理  -To C 产品经理
+
+按前后端分：
+
+-前端产品经理  -后端产品经理
+
+按工作内容分：
+
+-交互产品经理  -需求产品经理
+-商业产品经理  -策略产品经理
+-广告产品经理  -数据产品经理
+
+按设备分：
+
+-PC端产品经理 -移动端产品经理
+-H5端产品经理 -小程序产品经理
+
+按行业分：
+
+-社交产品经理  -电商产品经理 -金融产品经理
+-内容产品经理  -B2D产品经理    -工具产品经理
+
+2：不同类型产品经理的岗位要求
+因为产品经理分类众多，下面只列举几个比较有代表性的
+商业产品经理
+
+广告产品经理
+
+数据产品经理
+
+策略产品经理(增长方向)
+
+小程序产品经理(政务类)
+
+
+产品经理虽然脱胎于P&amp;G(宝洁)这一传统快消行业，但是随着互联网的不断发展与渗透，现在提到产品经理多指互联网领域。随着互联网行业的不断发展，产品经理的职位也越来越细化，每个人都涉及一个小领域，但是编者认为，产品经理最好的发展方向主要是两个：
+
+增长黑客方向(技术与产品思维于一身)；
+
+商业变现方向(完美平衡商业化和用户体验)。
+
+
+
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -4714,6 +4671,117 @@ Answer:
       </tags>
   </entry>
   <entry>
+    <title>问答-特斯拉入局，蔚来们是在裸泳吗？</title>
+    <url>/2019/03/29/%E9%97%AE%E7%AD%94-%E7%89%B9%E6%96%AF%E6%8B%89%E5%85%A5%E5%B1%80%EF%BC%8C%E8%94%9A%E6%9D%A5%E4%BB%AC%E6%98%AF%E5%9C%A8%E8%A3%B8%E6%B3%B3%E5%90%97%EF%BC%9F/</url>
+    <content><![CDATA[
+
+俗话说：“三人行，必有我师”
+
+
+看看同行们是怎么分析问题的
+以下内容来自产品相关社区，如有侵权，请联系删除
+[TOC]
+:   特斯拉入局，蔚来们是在裸泳吗？
+
+国内新能源汽车的领斗羊蔚来汽车在2018年成功完成了交付1万辆的Flag，然而却被前员工爆出1W辆部分是在蔚来对内部员工的激励措施下内部员工的购买，实际用户购买的出货量比对外公布的小，退货量也比外界想象的大。
+author:猫黎 @PMCAFF
+Answer
+对于蔚来汽车的体验，我得到了正反两方面的反馈。
+我的数位预订了蔚来汽车的朋友纷纷表示，ES8的补贴前售价44.80~54.80万元，若采用电池租赁方案，加上补贴，算下来顶配38万。
+“便宜啊，然后性能和特斯拉一模一样。” “蔚来汽车还有特斯拉做不到的，以用户的感受为第一，我都打算坐地铁去提车了，他们主动过来接我。”小伙伴们说。
+
+
+性能和特斯拉一模一样，这位用户是认真的吗?!😂
+我听说，蔚来汽车经常组织购车者线下各种活动，以增强社交黏性。
+当然，黑ES8的理由更多。
+这款车是由江淮汽车代工的。毕竟江淮汽车是以5.68万起的瑞风S3为主打的低端车品牌，而蔚来ES8定位于中高端SUV，对标的是奥迪Q5等。二者甚是违和，江淮能够做高端车吗？
+这款车的尾标是江淮蔚来，很多车主刚提车就“抠尾标”。
+
+
+江淮蔚来、华晨宝马😂
+
+此外，充电问题。
+周末，我逛了下特斯拉体验中心，销售小姐以平静中不失骄傲的语气对我说：“特斯拉的充电桩遍布全国，而蔚来汽车是电池更换坞，电池装装拔拔。”
+蔚来汽车的一键加电预约，对于远途而言，也略有些搞笑。
+
+一个关键词
+如果蔚来汽车有一个关键词，毫无疑问，是“烧钱”。李斌曾说：“200亿元是造车的门槛。”
+
+
+凡是亏损，都不是最好的商业模式
+根据招股说明书，2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的收入是0元、0元、4600万元人民币。同期的亏损，分别是25.69亿、50.13亿、33.21亿人民币。累计亏损约为109亿元。
+
+（上表的货币单位为：百万元人民币）
+自2015年始，包括高瓴资本、腾讯、顺为资本、红杉资本、淡马锡、IDG、百度、厚朴、刘强东等超过50家知名投资机构，前前后后共融资6轮，累积募资约169亿元人民币。此外，有12.6亿元贷款。上市之前，最后一轮融资的估值是47亿美元。
+此次IPO，募集资金约为10.15亿美元，折合70亿元人民币。
+
+如此巨资，所费如何？
+最大头是研发费。2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的研发费用分别是14.7亿、26.0亿、14.6亿元。
+两厢对照，2017年比亚迪&#x2F;长城&#x2F;Tesla的研发费用分别为63亿、34亿、90亿元人民币。看起来，蔚来的研发烧钱仍前路漫漫。
+
+其次是销售和管理费用，2016年&#x2F;2017年&#x2F;2018上半年蔚来汽车分别是11.4亿、23.5亿、17.3亿元，其中广告费用分别为2.4亿、5.2亿、2.6亿元。
+蔚来汽车的门店，都在城市最繁华处例如上海中心、太古汇、北京东方广场等，所资不菲，号称单店投入8000万至上亿元。
+
+卖了多少车
+如特斯拉一样，蔚来汽车最为人诟病的，仍是交付连连推迟。
+微博网友@亚东 说：“订的车，蔚来说预计4月交付，后来推到5月、6月、7月，再后来说8月一定交付，现在又说9月一定交付。”
+按照原计划，蔚来在今年三四月交付2000台，实际至7月底仅交付481台。
+李斌全年的目标仍是1万台，还为此与另外一家小鹏汽车创始人打赌。
+
+目前，蔚来汽车的未交付订单有1.7万个。其中1.2万支付了5000元意向金，可退还；另外0.5万已支付了4.5万定金，不可退。
+对比一下特斯拉，在2010~2017年分别交付1542台、2369台、4424台、2.4万、3.4万、5.3万、7.6万、10.3万台。2018上半年交付7.1万台。
+从产量的角度，蔚来汽车基本处在特斯拉2010~2011年的水平。
+即便是特斯拉，也身处漩涡，新车型的大规模量产屡遭挑战。
+Elon Musk在去年8月份闹出一场“私有化”闹剧，就是因为股票价格的剧烈波动、以及季度财报周期的巨大压力。Musk说：“特斯拉是股市历史上最被做空的个股，存在大量想攻击特斯拉的人。”
+特斯拉至今仍在亏损。2018年二季报显示，特斯拉亏损7.2亿美元，同比扩大85.29%；一季度净亏损7.85亿美元。
+对于蔚来汽车而言，可能最坏的消息是国内汽车销量正在全面下滑。
+
+自称是“造车新势力”的互联网汽车人，李斌只是其中之一，还有小鹏汽车、奇点汽车、威马汽车等，如雨后春笋遍地开花，个个都想成为“中国特斯拉”。
+这种愿景，自然是美好的。但是最终谁可以到达彼岸，我们并不知道。
+
+
+不知道真假，反正各大媒体都在讲“2019年是造车新势力的洗牌之年”，是否为真，吃瓜群众在看
+：为什么传统企业要转型互联网？author:Ariel诗意 @PMCAFF
+Answer
+互联网化是大势所趋
+可以这样说，只要传统企业走进一天，那么意味着互联网也必须进入传统企业，比尔盖茨说过一句话：“21世纪是电子商务的时代，未来要么电子商务，要么无商可务”这句话的意思是说：在互联网发展的某一天，未来不再分你是传统企业，我是互联网企业，因为未来都是互联网企业，一个趋势的到来，是没有任何一个人能阻挡得了的，只有选择适应和拥抱，才之与时俱进。
+从消费主体的维度看，转型迫在眉睫
+以前，企业掌握信息优势和主动权，消费者只能被动接收。随着移动互联网的发展，移动互联技术让消费者掌握了甚至比企业还要多的信息，因此，用户拥有了更大的话语权和选择权。消费群（即社交、本地、移动和个性化消费群）正在崛起，移动互联网所开创的消费者主权时代正在引爆第三次零售革命，一夜之间赋予了渴望消费自由、消费平等、消费民主的消费者巨大的消费主权。没有互联网时，商家跟消费者之间的关系是以信息不对称为基础的—通俗地讲，就是“买的没有卖的精”。有了互联网之后，游戏规则变了。消费者鼠标一点就可以比价、在网上讨论，变得越来越有主动权和话语权。
+
+
+企业会出现越来越多的后向收费模式，比如削减商品的利润，而在后续的服务、社群等方面下大功夫，会越来越重视品牌效应，越来越重视消费者，越来越重视大数据营销等。
+利率持续下降——传统企业线下趋势
+2014年是品牌电商化的重要一年。传统企业受政策、产业供应链、物价等方面的不利影响，很多品牌、行业出现了毛利率从50%降到30%的情况。随之而来的是产业劳动力效率下降，上游工厂代工的形式走不通了。
+
+
+用工、用地成本只会越来越高，毛利率会不断下降。当成本提高了，企业想要赚钱就只有两条路：提高商品的质和增加卖出的量。
+未来，传统产业的毛利率都会下降到原来的三分之一以下，趋势不可避免。无论企业经营哪类产品，处于哪种领域，都会有互联网企业挑战你。传统企业不仅利率下降、产品压缩，而且价值链正接受挑战。
+
+
+传统企业受到最大影响的应该是思维的转变，大象转身是比较难的，盘根错节，利益交错，牵一发而动全身。
+消费者已经从线上线下走到场景化，传统企业再不转型还能抓住消费者吗？
+
+
+互联网企业会实体化，实体企业会互联网化，这是未来大趋势。
+：高德导航，会不会革了滴滴打车的命?
+
+高德地图也可以打车了，你是否还会用滴滴呢？
+author:尼卡 @PMCAFF
+Answer
+高德算是中间商，但是说颠覆滴滴，个人觉得目前来看不太可能，但是这个事情本身对用户对高德都是非常有利的。
+高德涉足网约车市场则是在意料之外又在情理之中。无论是从用户规模、用户习惯、市场竞争以及出行布局这几件维度来看，涉足网约车都有合理之处。
+高德有有7亿用户，从用户习惯来看，涉足网约车是高维打低维。用户用滴滴打车之前，往往需要用高德地图查询路线；很多网约车司机的导航地图也是高德。对司机、用户来说，在打车APP和地图APP之间来回跳转并不方便。高德作为导航软件，本来就是出行的第一入口，做网约车顺理成章。
+再者，高德推出顺风车，还是回归到了一站式公共出行服务平台——这是高德的核心逻辑。早在2017年就接入了滴滴、神州专车、首汽约车、曹操专车、摩拜、ofo这些出行方式。这次自己加入顺风车功能，本质上是对出行服务的补充。
+但是如果说类似滴滴乘客出事这种问题，对于高德叫车这种“中间商”，如果乘客是从高德叫的车，那么对于高德来说是否也应当负一定责任？另外高德如何保证下游对接的打车平台的服务能力足够也是一个问题。
+]]></content>
+      <categories>
+        <category>产品问答</category>
+      </categories>
+      <tags>
+        <tag>产品问答</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HuPu商业化困境</title>
     <url>/2019/03/20/%E9%9A%8F%E6%83%B3-HuPu%E5%95%86%E4%B8%9A%E5%8C%96%E5%9B%B0%E5%A2%83/</url>
     <content><![CDATA[虎扑的商业化困局用户体验一句话：取消发帖门槛后，垃圾贴、卖片贴丛生
@@ -4808,74 +4876,6 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>产品经理有哪些分类？</title>
-    <url>/2019/03/21/%E9%9A%8F%E6%83%B3-%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%9C%89%E5%93%AA%E4%BA%9B%E5%88%86%E7%B1%BB%EF%BC%9F/</url>
-    <content><![CDATA[产品经理有哪些细分领域，对应特点是什么？
-
-问：   产品经理有哪些细分领域，对应特点是什么？
-答：   可以分为以下几个方面回答：
-1：产品经理的细分领域； 2：不同类型产品经理的岗位要求。
-
-
-
-产品经理—Product Manager (简称为PM)   负责市场调查并根据用户的需求，确定开发何种产品，选择何种业务模式、商业模式等。并推动相应产品的开发组织，ta还要根据产品的生命周期，协调研发、营销、运营等，确定和组织实施相应的产品策略，以及其他一系列相关的产品管理活动。
-
-1：产品经理的细分领域
-
-按用户类型分：
-
--To B 产品经理  -To C 产品经理
-
-按前后端分：
-
--前端产品经理  -后端产品经理
-
-按工作内容分：
-
--交互产品经理  -需求产品经理
--商业产品经理  -策略产品经理
--广告产品经理  -数据产品经理
-
-按设备分：
-
--PC端产品经理 -移动端产品经理
--H5端产品经理 -小程序产品经理
-
-按行业分：
-
--社交产品经理  -电商产品经理 -金融产品经理
--内容产品经理  -B2D产品经理    -工具产品经理
-
-2：不同类型产品经理的岗位要求
-因为产品经理分类众多，下面只列举几个比较有代表性的
-商业产品经理
-
-广告产品经理
-
-数据产品经理
-
-策略产品经理(增长方向)
-
-小程序产品经理(政务类)
-
-
-产品经理虽然脱胎于P&amp;G(宝洁)这一传统快消行业，但是随着互联网的不断发展与渗透，现在提到产品经理多指互联网领域。随着互联网行业的不断发展，产品经理的职位也越来越细化，每个人都涉及一个小领域，但是编者认为，产品经理最好的发展方向主要是两个：
-
-增长黑客方向(技术与产品思维于一身)；
-
-商业变现方向(完美平衡商业化和用户体验)。
-
-
-
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于手机厂商竞相推出折叠屏手机的思考</title>
     <url>/2019/02/25/%E9%9A%8F%E6%83%B3-%E5%85%B3%E4%BA%8E%E5%8E%82%E5%95%86%E6%8E%A8%E5%87%BA%E6%8A%98%E5%8F%A0%E5%B1%8F%E6%89%8B%E6%9C%BA%E7%9A%84%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。
@@ -4931,79 +4931,6 @@ Answer:
 
 我理想中的折叠屏手机
 
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随想-如果脱离现有的平台，你还剩下什么？</title>
-    <url>/2019/03/27/%E9%9A%8F%E6%83%B3-%E5%A6%82%E6%9E%9C%E8%84%B1%E7%A6%BB%E7%8E%B0%E6%9C%89%E7%9A%84%E5%B9%B3%E5%8F%B0%EF%BC%8C%E4%BD%A0%E8%BF%98%E5%89%A9%E4%B8%8B%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
-    <content><![CDATA[2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台，
-你还能剩下什么？
-
-
-
-说在前面的话：
-
-
-脱离平台的“硬件”，你还有平台带给你的“软件”
-
-先介绍下自己：
-现就读于安徽一985高校，本科毕业于河南一211高校
-
-我会从以下两个方面阐述观点：
-
-平台带给我哪些“软件”
-我的看法
-
-
-
-平台带给我哪些软件
-
-
-开拓视野
-在这里，我获得了与全国顶级高校的学生交流的机会(有幸去上海同济参加了一个两岸三地的创新创业比赛)；
-这是我第一次接触创业比赛、接触路演、接触另一种社会形态培养出来的学生，真的是一种打开异世界的感觉；在心底埋下了一颗种子，从此看世界的角度和思维都在慢慢改变。
-平台越高、看得越远。
-
-自信心
-在这里，我参加了学校和百度举办的创新创业活动，和来自全国高校的小伙伴同台竞技，并且取得了不错成绩；
-这次让我认识到，自己并没有那么差和不堪，给一个机会，有信心做到更好；
-平台会给你自信心。
-
-人脉&amp;资源
-在这里，我认识了各种各样优秀的人；他们各有所长，都对自己给予了帮助和启发；
-在为院系运营公众号时，结识一位朋友A；通过A，加入了学校团委下属的一个部门，幸运的有一次机会去同济参加了活动，认识了港理工B；后来我们一起参加百度的活动，获得了不错的成绩。
-人脉&amp;资源就像一个雪球，它会越滚越大，为你带来更多的机会。
-
-机会
-平台会提高你获得机会的几率，
-还是那句老话：机会是给有准备的人的
-所以：积极进取、以终为始
-
-
-
-我的看法
-
-
-人生就是一场赌局，平台越高，权限越高，筹码越多，赢得几率就越大；
-
-如果你不进取，无法和平台的高度匹配，那就如同风口上的猪，风没了，猪摔死了 ；
-
-人生如梯子，当第N阶以下台阶撤掉的时候，你只要在N+1阶就可以了。
-
-
-
-
-
-别人传播焦虑，我传递积极
-
-
-以上仅为我个人见解
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5100,41 +5027,70 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>随想-我对投资的认识</title>
-    <url>/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/</url>
-    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
-
-投资资产
-
-投资自己
+    <title>随想-如果脱离现有的平台，你还剩下什么？</title>
+    <url>/2019/03/27/%E9%9A%8F%E6%83%B3-%E5%A6%82%E6%9E%9C%E8%84%B1%E7%A6%BB%E7%8E%B0%E6%9C%89%E7%9A%84%E5%B9%B3%E5%8F%B0%EF%BC%8C%E4%BD%A0%E8%BF%98%E5%89%A9%E4%B8%8B%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
+    <content><![CDATA[2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台，
+你还能剩下什么？
 
 
-[TOC]
-1. 投资资产目的是让自己的财富实现增值
-目前国内的主要途径有：（入手程度由易到难）
 
-存储
-
-基金
-
-股票
-
-房产和房产出租
-
-创业
+说在前面的话：
 
 
-2. 投资自己目的是让自己更多创造财富的价值
-分为两块：
+脱离平台的“硬件”，你还有平台带给你的“软件”
 
-投资“硬件”
+先介绍下自己：
+现就读于安徽一985高校，本科毕业于河南一211高校
 
-投资“软件”
+我会从以下两个方面阐述观点：
+
+平台带给我哪些“软件”
+我的看法
 
 
-1. 投资硬件主要是锻炼身体、强健体魄、保养身体
-2. 投资软件主要是投资思想和技能
-比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
+
+平台带给我哪些软件
+
+
+开拓视野
+在这里，我获得了与全国顶级高校的学生交流的机会(有幸去上海同济参加了一个两岸三地的创新创业比赛)；
+这是我第一次接触创业比赛、接触路演、接触另一种社会形态培养出来的学生，真的是一种打开异世界的感觉；在心底埋下了一颗种子，从此看世界的角度和思维都在慢慢改变。
+平台越高、看得越远。
+
+自信心
+在这里，我参加了学校和百度举办的创新创业活动，和来自全国高校的小伙伴同台竞技，并且取得了不错成绩；
+这次让我认识到，自己并没有那么差和不堪，给一个机会，有信心做到更好；
+平台会给你自信心。
+
+人脉&amp;资源
+在这里，我认识了各种各样优秀的人；他们各有所长，都对自己给予了帮助和启发；
+在为院系运营公众号时，结识一位朋友A；通过A，加入了学校团委下属的一个部门，幸运的有一次机会去同济参加了活动，认识了港理工B；后来我们一起参加百度的活动，获得了不错的成绩。
+人脉&amp;资源就像一个雪球，它会越滚越大，为你带来更多的机会。
+
+机会
+平台会提高你获得机会的几率，
+还是那句老话：机会是给有准备的人的
+所以：积极进取、以终为始
+
+
+
+我的看法
+
+
+人生就是一场赌局，平台越高，权限越高，筹码越多，赢得几率就越大；
+
+如果你不进取，无法和平台的高度匹配，那就如同风口上的猪，风没了，猪摔死了 ；
+
+人生如梯子，当第N阶以下台阶撤掉的时候，你只要在N+1阶就可以了。
+
+
+
+
+
+别人传播焦虑，我传递积极
+
+
+以上仅为我个人见解
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5262,51 +5218,41 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>随想-新零售企业““智胜”未来</title>
-    <url>/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/</url>
-    <content><![CDATA[新零售企业“智胜”未来最近看到一篇蛮有趣的文章，新零售企业“智胜”未来
-作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
+    <title>随想-我对投资的认识</title>
+    <url>/2019/04/13/%E9%9A%8F%E6%83%B3-%E6%88%91%E5%AF%B9%E6%8A%95%E8%B5%84%E7%9A%84%E8%AE%A4%E8%AF%86/</url>
+    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
+
+投资资产
+
+投资自己
 
 
-以下是全文（有删改）：
-在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。
-现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
-随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。
+[TOC]
+1. 投资资产目的是让自己的财富实现增值
+目前国内的主要途径有：（入手程度由易到难）
 
-一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。
-生态格局演变与新生态价值从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。
+存储
 
-第一阶段，为我所用。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段&#x2F;渠道。
-第二阶段，分庭抗礼。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。
-第三阶段，互相融合。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。
+基金
 
+股票
 
-一句话道出了“美团”、“阿里”们的野心，要做大平台
-“大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。
+房产和房产出租
 
-随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。
-在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。
-在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。
-在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态&#x2F;场景拓展是大市场的引爆点。
-此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。
-近年来，线下业态&#x2F;场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式：
-
-餐饮零售化，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等；
-
-场景拓展，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等；
-
-跨界融合，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等；
-
-全渠道一站式消费体验，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。
+创业
 
 
-零售企业的“智”胜之道在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。
-第一，以线上线下融合，建立流量壁垒。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。
-第二，以赋能合纵连横，构建生态平台。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。
-但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。
-第三，以数据重塑管理模式，革故鼎新。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场&#x2F;消费者&#x2F;价值链&#x2F;品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。
-数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。
-“智”胜未来将是每一个零售企业都需要面临的重要抉择。
+2. 投资自己目的是让自己更多创造财富的价值
+分为两块：
+
+投资“硬件”
+
+投资“软件”
+
+
+1. 投资硬件主要是锻炼身体、强健体魄、保养身体
+2. 投资软件主要是投资思想和技能
+比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5392,6 +5338,60 @@ Answer:
 
 在相同条件下，满足用户的群体价值（让用户在群体中发光）比仅满足用户的个人价值（比如，给用户金钱奖励）更有用。
 人生来就希望被认可
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随想-新零售企业““智胜”未来</title>
+    <url>/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/</url>
+    <content><![CDATA[新零售企业“智胜”未来最近看到一篇蛮有趣的文章，新零售企业“智胜”未来
+作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
+
+
+以下是全文（有删改）：
+在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。
+现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
+随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。
+
+一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。
+生态格局演变与新生态价值从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。
+
+第一阶段，为我所用。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段&#x2F;渠道。
+第二阶段，分庭抗礼。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。
+第三阶段，互相融合。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。
+
+
+一句话道出了“美团”、“阿里”们的野心，要做大平台
+“大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。
+
+随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。
+在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。
+在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。
+在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态&#x2F;场景拓展是大市场的引爆点。
+此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。
+近年来，线下业态&#x2F;场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式：
+
+餐饮零售化，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等；
+
+场景拓展，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等；
+
+跨界融合，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等；
+
+全渠道一站式消费体验，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。
+
+
+零售企业的“智”胜之道在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。
+第一，以线上线下融合，建立流量壁垒。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。
+第二，以赋能合纵连横，构建生态平台。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。
+但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。
+第三，以数据重塑管理模式，革故鼎新。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场&#x2F;消费者&#x2F;价值链&#x2F;品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。
+数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。
+“智”胜未来将是每一个零售企业都需要面临的重要抉择。
 ]]></content>
       <categories>
         <category>随想</category>
