@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>随想-新零售企业““智胜”未来 | Darerd's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+// Check stored preference or system preference
+var stored = localStorage.getItem('dark');
+if (stored === null) {
+  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
+} else {
+  html.dataset.dark = stored;
+}
+
+// Update toggle icon based on current theme
+function updateToggleIcon() {
+  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
+}
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  var isDark = html.dataset.dark === 'true';
+  html.dataset.dark = isDark ? 'false' : 'true';
+  localStorage.setItem('dark', html.dataset.dark);
+  updateToggleIcon();
+});
+
+// Listen for system preference changes
+prefersDarkMode.addEventListener('change', (e) => {
+  if (localStorage.getItem('dark') === null) {
+    html.dataset.dark = e.matches ? 'true' : 'false';
+    updateToggleIcon();
+  }
+});
+
+// Add smooth transition for theme changes
+html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">随想-新零售企业““智胜”未来</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a id="search-toggle" href="javascript:;" rel="external nofollow noreferrer" aria-label="搜索"><i class="fa fa-search"></i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">随想-新零售企业““智胜”未来</h1><div class="post-meta">2019-03-21<span> | </span><span class="category"><a href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></span></div><div class="post-content"><h1 id="新零售企业“智胜”未来"><a href="#新零售企业“智胜”未来" class="headerlink" title="新零售企业“智胜”未来"></a>新零售企业“智胜”未来</h1><p>最近看到一篇蛮有趣的<a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.hbrchina.org/2019-02-13/7147.html">文章</a>，<code>新零售企业“智胜”未来</code></p>
+<p>作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。</p>
+<blockquote>
+</blockquote>
+<p>以下是全文（有删改）：</p>
+<p>在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。</p>
+<p>现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，<strong>全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源</strong>。</p>
+<p>随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="http://upload.hbrchina.org/2019/0213/1550028457604.jpg" alt="1550028961(1)"></p>
+<p>一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。</p>
+<h3 id="生态格局演变与新生态价值"><a href="#生态格局演变与新生态价值" class="headerlink" title="生态格局演变与新生态价值"></a>生态格局演变与新生态价值</h3><p>从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="http://upload.hbrchina.org/2019/0213/1550028507536.jpg" alt="1550029035(1)"></p>
+<p><strong>第一阶段，为我所用</strong>。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段&#x2F;渠道。</p>
+<p><strong>第二阶段，分庭抗礼</strong>。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。</p>
+<p><strong>第三阶段，互相融合</strong>。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。</p>
+<blockquote>
+</blockquote>
+<p>一句话道出了“美团”、“阿里”们的野心，要做大平台</p>
+<p>“大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。</p>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="http://upload.hbrchina.org/2019/0213/1550028536534.jpg" alt="1550029076(1)"></p>
+<p>随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，<strong>零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。</strong></p>
+<p>在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。</p>
+<p>在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。</p>
+<p>在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态&#x2F;场景拓展是大市场的引爆点。</p>
+<p>此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。</p>
+<p>近年来，线下业态&#x2F;场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式：</p>
+<ol>
+<li><p><strong>餐饮零售化</strong>，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等；</p>
+</li>
+<li><p><strong>场景拓展</strong>，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等；</p>
+</li>
+<li><p><strong>跨界融合</strong>，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等；</p>
+</li>
+<li><p><strong>全渠道一站式消费体验</strong>，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。</p>
+</li>
+</ol>
+<h3 id="零售企业的“智”胜之道"><a href="#零售企业的“智”胜之道" class="headerlink" title="零售企业的“智”胜之道"></a>零售企业的“智”胜之道</h3><p>在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。</p>
+<p>第一，<strong>以线上线下融合，建立流量壁垒</strong>。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。</p>
+<p>第二，<strong>以赋能合纵连横，构建生态平台</strong>。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。</p>
+<p>但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。</p>
+<p>第三，<strong>以数据重塑管理模式，革故鼎新</strong>。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场&#x2F;消费者&#x2F;价值链&#x2F;品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。</p>
+<p>数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。</p>
+<p>“智”胜未来将是每一个零售企业都需要面临的重要抉择。</p>
+</div><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E6%83%B3/" rel="tag">随想</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/b6c6d65a.html">爬虫-怎么爬静态网站</a><a class="next" href="/posts/b7fcec3f.html">产品经理有哪些分类？</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>分享技术与经验</p><a class="info-icon" href="https://github.com/Darerd" rel="external nofollow noreferrer" title="Github" target="_blank" style="margin-inline:5px"><i class="fa fa-github" style="margin-inline:5px"></i></a><a class="info-icon info-icon-wechat" href="javascript:;" rel="external nofollow noreferrer" title="微信公众号"><i class="fa fa-weixin" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"><i class="fa fa-rss" style="margin-inline:5px"></i></a></div></div><div class="widget heatmap-widget"><div class="widget-title"><i class="fa fa-calendar"> 博客热力图</i></div><div class="heatmap-container"><canvas id="blog-heatmap" width="220" height="110"></canvas></div><div class="heatmap-legend"><span class="legend-label">少</span><div class="legend-cells"><span class="legend-cell" data-level="0"></span><span class="legend-cell" data-level="1"></span><span class="legend-cell" data-level="2"></span><span class="legend-cell" data-level="3"></span><span class="legend-cell" data-level="4"></span></div><span class="legend-label">多</span></div></div><script>window.__heatmapData = {"2026-05-30":4,"2026-03-27":1,"2019-03-19":1,"2019-01-30":1,"2019-02-20":5,"2019-03-04":3,"2019-02-28":2,"2019-02-22":2,"2019-02-03":6,"2019-02-27":1,"2019-02-26":1,"2019-03-01":2,"2019-03-02":3,"2019-03-03":2,"2019-03-05":1,"2019-03-06":2,"2019-03-11":1,"2019-03-13":2,"2019-03-16":2,"2019-02-21":1,"2019-02-23":1,"2019-02-25":2,"2019-03-20":2,"2019-03-28":1,"2019-04-11":1,"2019-04-01":1,"2019-04-25":1,"2019-07-06":1,"2019-04-18":1,"2019-02-19":1,"2026-03-28":1,"2019-03-27":4,"2019-03-25":2,"2019-03-10":1,"2019-04-10":1,"2019-03-12":1,"2019-04-07":1,"2019-02-24":1,"2019-04-21":1,"2019-04-14":1,"2019-03-15":1,"2019-04-27":1,"2019-04-13":2,"2019-03-29":1,"2019-03-21":2,"2019-02-01":1,"2019-04-04":1,"2019-03-18":1};</script><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/AI-Agent/" style="font-size: 15px;">AI Agent</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 15px;">求职</a> <a href="/tags/Skill/" style="font-size: 15px;">Skill</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 15px;">面试</a> <a href="/tags/Claude-Code/" style="font-size: 15px;">Claude Code</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">开发工具</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next%E6%A8%A1%E6%9D%BF/" style="font-size: 15px;">Next模板</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" style="font-size: 15px;">笨方法学Python</a> <a href="/tags/LangGraph/" style="font-size: 15px;">LangGraph</a> <a href="/tags/%E6%8A%95%E7%A0%94/" style="font-size: 15px;">投研</a> <a href="/tags/A%E8%82%A1/" style="font-size: 15px;">A股</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 15px;">图床</a> <a href="/tags/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">产品书单</a> <a href="/tags/GEO/" style="font-size: 15px;">GEO</a> <a href="/tags/AI%E6%90%9C%E7%B4%A2/" style="font-size: 15px;">AI搜索</a> <a href="/tags/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96/" style="font-size: 15px;">内容优化</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 15px;">技巧</a> <a href="/tags/Open-claw/" style="font-size: 15px;">Open claw</a> <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" style="font-size: 15px;">阅读体会</a> <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" style="font-size: 15px;">用户画像</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px;">爬虫</a> <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" style="font-size: 15px;">大佬思考</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" style="font-size: 15px;">软件资源</a> <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" style="font-size: 15px;">产品必用软件</a> <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" style="font-size: 15px;">产品问答</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/26484047.html">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/de66d2ff.html">Skill-Manage：多 Agent 时代的技能同步管理器</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/333612a1.html">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/dd0cd406.html">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/ba9fdaa3.html">思考：为什么全网都在“养龙虾”？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/4e00d906.html">Claude Code 安装与使用指南（Mac & Windows）</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/fe91c6cc.html">微信PC端多开的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/675b265e.html">问答-工作被流程化，到底该不该？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/d3c2dd60.html">产品书单-《超级IP》：互联网新物种方法论</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/14a41619.html">软件-简单实用的To-Do清单-小黄条</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><div id="search-overlay"><div class="search-overlay-inner"><div class="search-overlay-close" title="关闭">&times;</div><input id="search-overlay-input" type="text" placeholder="搜索文章..." autocomplete="off"><div id="search-overlay-result"></div></div></div><div id="wechat-qr-overlay"><div class="wechat-qr-modal"><span class="wechat-qr-close">&times;</span><h3>微信公众号</h3><img src="/img/wechat-qr.png" alt="微信公众号二维码"><p>扫码关注，获取最新文章</p></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+// Check stored preference or system preference
+var stored = localStorage.getItem('dark');
+if (stored === null) {
+  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
+} else {
+  html.dataset.dark = stored;
+}
+
+// Update toggle icon based on current theme
+function updateToggleIcon() {
+  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
+}
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  var isDark = html.dataset.dark === 'true';
+  html.dataset.dark = isDark ? 'false' : 'true';
+  localStorage.setItem('dark', html.dataset.dark);
+  updateToggleIcon();
+});
+
+// Listen for system preference changes
+prefersDarkMode.addEventListener('change', (e) => {
+  if (localStorage.getItem('dark') === null) {
+    html.dataset.dark = e.matches ? 'true' : 'false';
+    updateToggleIcon();
+  }
+});
+
+// Add smooth transition for theme changes
+html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/search-overlay.js?v=1.0.0"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/heatmap.css?v=1.0.0"><script type="text/javascript" src="/js/heatmap.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/wechat-modal.css?v=1.0.0"><script type="text/javascript" src="/js/wechat-modal.js?v=1.0.0"></script></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>

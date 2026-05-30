@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>GetOfferSkill：用 AI 把求职流程从碎片化变成流水线 | Darerd's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+// Check stored preference or system preference
+var stored = localStorage.getItem('dark');
+if (stored === null) {
+  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
+} else {
+  html.dataset.dark = stored;
+}
+
+// Update toggle icon based on current theme
+function updateToggleIcon() {
+  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
+}
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  var isDark = html.dataset.dark === 'true';
+  html.dataset.dark = isDark ? 'false' : 'true';
+  localStorage.setItem('dark', html.dataset.dark);
+  updateToggleIcon();
+});
+
+// Listen for system preference changes
+prefersDarkMode.addEventListener('change', (e) => {
+  if (localStorage.getItem('dark') === null) {
+    html.dataset.dark = e.matches ? 'true' : 'false';
+    updateToggleIcon();
+  }
+});
+
+// Add smooth transition for theme changes
+html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a id="search-toggle" href="javascript:;" rel="external nofollow noreferrer" aria-label="搜索"><i class="fa fa-search"></i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</h1><div class="post-meta">2026-05-30<span> | </span><span class="category"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></span></div><div class="post-content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>做 GetOfferSkill 的原因很简单：我在面试过程中越来越明显地感受到，求职这件事太容易变成一个人的孤军作战。</p>
+<p>你看完一个 JD，靠自己判断重点；改简历，靠自己反复琢磨；准备面试，靠自己猜面试官会问什么；面完之后，复盘也往往只剩下“刚才那个问题我好像没答好”的模糊记忆。</p>
+<p>真正困难的地方不只是“缺一个工具”，而是缺一套能陪你从岗位分析、简历优化、模拟演练到面试复盘持续推进的流程。</p>
+<p>GetOfferSkill 就是为了解决这个问题而做的。</p>
+<span id="more"></span>
+
+<p>项目地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/darer5/GetOfferSkill">darer5&#x2F;GetOfferSkill</a></p>
+<h2 id="GetOfferSkill-是什么"><a href="#GetOfferSkill-是什么" class="headerlink" title="GetOfferSkill 是什么"></a>GetOfferSkill 是什么</h2><p>GetOfferSkill 是一个面向求职场景的 AI 技能流程包，它把求职拆成四个连续阶段：</p>
+<ol>
+<li>JD 分析。</li>
+<li>简历优化。</li>
+<li>面试模拟。</li>
+<li>面试复盘。</li>
+</ol>
+<p>这四个阶段分别对应项目里的四个 skill：</p>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>解决的问题</th>
+<th>适合什么时候用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>jd-analysis</code></td>
+<td>分析岗位 JD，提取关键词、岗位痛点和面试预测</td>
+<td>看到一个岗位，准备投递前</td>
+</tr>
+<tr>
+<td><code>resume-coach</code></td>
+<td>从 HR、猎头视角评估和优化简历</td>
+<td>投递前修改简历</td>
+</tr>
+<tr>
+<td><code>interview-practice</code></td>
+<td>多轮模拟面试，结合 STAR 法则追问并即时反馈</td>
+<td>面试前训练表达</td>
+</tr>
+<tr>
+<td><code>interview-review</code></td>
+<td>根据面试转写内容做复盘评分和改进建议</td>
+<td>面试后总结问题</td>
+</tr>
+</tbody></table>
+<p>它既可以作为一个完整流程使用，也可以单独调用其中某个技能。</p>
+<h2 id="为什么不是只做一个“简历优化工具”"><a href="#为什么不是只做一个“简历优化工具”" class="headerlink" title="为什么不是只做一个“简历优化工具”"></a>为什么不是只做一个“简历优化工具”</h2><p>从第一性原理看，求职不是一个“写简历”的问题，而是一个“匹配与表达”的问题。</p>
+<p>岗位 JD 决定了企业想找什么人；简历决定了你如何证明自己匹配；面试决定了你是否能现场表达出这种匹配；复盘决定了你下一次是否能更接近 offer。</p>
+<p>如果只优化简历，很容易出现一个问题：纸面内容看起来更漂亮了，但真正面试时仍然回答不出来，或者回答没有结构。</p>
+<p>所以 GetOfferSkill 的设计不是从“文档美化”出发，而是从完整求职链路出发。</p>
+<h2 id="使用方式一：一键完整流程"><a href="#使用方式一：一键完整流程" class="headerlink" title="使用方式一：一键完整流程"></a>使用方式一：一键完整流程</h2><p>当你想从头开始准备一个岗位，可以直接让 AI 进入完整流程：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">开始求职流程</span><br></pre></td></tr></table></figure>
+
+<p>然后依次提供：</p>
+<ol>
+<li>目标岗位 JD。</li>
+<li>当前简历内容。</li>
+<li>目标公司、岗位级别、面试方向。</li>
+<li>面试后的录音转写或回忆记录。</li>
+</ol>
+<p>完整流程会按顺序推进：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JD 分析 -&gt; 简历优化 -&gt; 面试模拟 -&gt; 面试复盘</span><br></pre></td></tr></table></figure>
+
+<p>这种方式适合你准备一个比较重要的岗位，比如大厂、转岗、晋升面试，或者需要系统准备的机会。</p>
+<h2 id="使用方式二：单独调用某个技能"><a href="#使用方式二：单独调用某个技能" class="headerlink" title="使用方式二：单独调用某个技能"></a>使用方式二：单独调用某个技能</h2><p>如果你只是想解决某一个具体问题，也可以单独调用。</p>
+<p>比如分析 JD：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">分析一下这个岗位</span><br></pre></td></tr></table></figure>
+
+<p>然后粘贴 JD，AI 会帮你拆解岗位关键词、核心要求、隐藏诉求和潜在面试问题。</p>
+<p>比如优化简历：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">帮我优化一下简历</span><br></pre></td></tr></table></figure>
+
+<p>然后粘贴简历内容，AI 会从岗位匹配度、表达结构、项目亮点、量化成果等维度给出建议。</p>
+<p>比如做模拟面试：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">开始一场产品经理岗位的模拟面试</span><br></pre></td></tr></table></figure>
+
+<p>AI 会进入面试官角色，连续追问，并在回答后给出即时反馈。</p>
+<h2 id="我最看重的部分：模拟演练"><a href="#我最看重的部分：模拟演练" class="headerlink" title="我最看重的部分：模拟演练"></a>我最看重的部分：模拟演练</h2><p>我做这个项目最初的动机，就是发现自己在面试准备中缺少稳定的模拟演练对象。</p>
+<p>面试训练和普通问答不一样。它需要连续追问，需要根据你的回答抓漏洞，需要判断你的表达是否结构化，也需要在你答偏时把问题拉回来。</p>
+<p>这也是 <code>interview-practice</code> 这个技能的重点：它不是简单列一堆面试题，而是尽量模拟真实面试中的互动过程。</p>
+<p>一个好的面试陪练至少应该做到三件事：</p>
+<ol>
+<li>追问具体细节，而不是只听结论。</li>
+<li>逼你用结构化方式表达经历。</li>
+<li>在回答结束后指出可改进之处。</li>
+</ol>
+<p>这部分内容来自我多年面试和被面试的经验。它不是一个“万能面经库”，而是一个帮助你把个人经历讲清楚、讲有力、讲匹配的训练流程。</p>
+<h2 id="一个推荐的使用流程"><a href="#一个推荐的使用流程" class="headerlink" title="一个推荐的使用流程"></a>一个推荐的使用流程</h2><p>如果你要准备一个真实岗位，我建议这样使用：</p>
+<p>第一步，把 JD 发给 <code>jd-analysis</code>，先搞清楚岗位真正看重什么。</p>
+<p>第二步，把简历和 JD 一起交给 <code>resume-coach</code>，让它帮你检查简历是否对准岗位关键词。</p>
+<p>第三步，用 <code>interview-practice</code> 做 2 到 3 轮模拟面试，每轮只聚焦一个方向，比如项目经历、业务理解、数据分析、冲突协作。</p>
+<p>第四步，面试结束后，把录音转写或回忆记录交给 <code>interview-review</code>，做结构化复盘。</p>
+<p>这样跑几轮之后，你会明显感觉到：自己不是在“背答案”，而是在不断校准表达。</p>
+<h2 id="适合谁使用"><a href="#适合谁使用" class="headerlink" title="适合谁使用"></a>适合谁使用</h2><p>GetOfferSkill 适合几类人：</p>
+<ol>
+<li>正在找工作的应届生。</li>
+<li>想跳槽但缺少面试练习的职场人。</li>
+<li>准备产品、运营、策略、数据、研发等岗位面试的人。</li>
+<li>想把 AI 当作长期求职教练的人。</li>
+</ol>
+<p>它不能替你拿到 offer，但可以帮你减少无效准备，把求职这件事变得更有节奏。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>GetOfferSkill 的核心价值，是把求职从碎片化动作变成一条可执行的流程。</p>
+<p>它不是只帮你润色简历，也不是只生成面试题，而是围绕“岗位理解、简历匹配、表达训练、复盘改进”建立一个闭环。</p>
+<p>对我来说，这个项目也是一次把个人面试经验沉淀成 AI skill 的尝试。经验如果只停留在脑子里，就只能偶尔帮到自己；但如果变成流程和工具，就可以被反复使用，也能帮助更多同样在求职路上孤军作战的人。</p>
+</div><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-Agent/" rel="tag">AI Agent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Skill/" rel="tag">Skill</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B1%82%E8%81%8C/" rel="tag">求职</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/333612a1.html">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a><a class="next" href="/posts/ba9fdaa3.html">思考：为什么全网都在“养龙虾”？</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>分享技术与经验</p><a class="info-icon" href="https://github.com/Darerd" rel="external nofollow noreferrer" title="Github" target="_blank" style="margin-inline:5px"><i class="fa fa-github" style="margin-inline:5px"></i></a><a class="info-icon info-icon-wechat" href="javascript:;" rel="external nofollow noreferrer" title="微信公众号"><i class="fa fa-weixin" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"><i class="fa fa-rss" style="margin-inline:5px"></i></a></div></div><div class="widget heatmap-widget"><div class="widget-title"><i class="fa fa-calendar"> 博客热力图</i></div><div class="heatmap-container"><canvas id="blog-heatmap" width="220" height="110"></canvas></div><div class="heatmap-legend"><span class="legend-label">少</span><div class="legend-cells"><span class="legend-cell" data-level="0"></span><span class="legend-cell" data-level="1"></span><span class="legend-cell" data-level="2"></span><span class="legend-cell" data-level="3"></span><span class="legend-cell" data-level="4"></span></div><span class="legend-label">多</span></div></div><script>window.__heatmapData = {"2026-05-30":4,"2026-03-27":1,"2019-03-19":1,"2019-01-30":1,"2019-02-20":5,"2019-03-04":3,"2019-02-28":2,"2019-02-22":2,"2019-02-03":6,"2019-02-27":1,"2019-02-26":1,"2019-03-01":2,"2019-03-02":3,"2019-03-03":2,"2019-03-05":1,"2019-03-06":2,"2019-03-11":1,"2019-03-13":2,"2019-03-16":2,"2019-02-21":1,"2019-02-23":1,"2019-02-25":2,"2019-03-20":2,"2019-03-28":1,"2019-04-11":1,"2019-04-01":1,"2019-04-25":1,"2019-07-06":1,"2019-04-18":1,"2019-02-19":1,"2026-03-28":1,"2019-03-27":4,"2019-03-25":2,"2019-03-10":1,"2019-04-10":1,"2019-03-12":1,"2019-04-07":1,"2019-02-24":1,"2019-04-21":1,"2019-04-14":1,"2019-03-15":1,"2019-04-27":1,"2019-04-13":2,"2019-03-29":1,"2019-03-21":2,"2019-02-01":1,"2019-04-04":1,"2019-03-18":1};</script><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/AI-Agent/" style="font-size: 15px;">AI Agent</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 15px;">求职</a> <a href="/tags/Skill/" style="font-size: 15px;">Skill</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 15px;">面试</a> <a href="/tags/Claude-Code/" style="font-size: 15px;">Claude Code</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">开发工具</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next%E6%A8%A1%E6%9D%BF/" style="font-size: 15px;">Next模板</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" style="font-size: 15px;">笨方法学Python</a> <a href="/tags/LangGraph/" style="font-size: 15px;">LangGraph</a> <a href="/tags/%E6%8A%95%E7%A0%94/" style="font-size: 15px;">投研</a> <a href="/tags/A%E8%82%A1/" style="font-size: 15px;">A股</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 15px;">图床</a> <a href="/tags/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">产品书单</a> <a href="/tags/GEO/" style="font-size: 15px;">GEO</a> <a href="/tags/AI%E6%90%9C%E7%B4%A2/" style="font-size: 15px;">AI搜索</a> <a href="/tags/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96/" style="font-size: 15px;">内容优化</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 15px;">技巧</a> <a href="/tags/Open-claw/" style="font-size: 15px;">Open claw</a> <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" style="font-size: 15px;">阅读体会</a> <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" style="font-size: 15px;">用户画像</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px;">爬虫</a> <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" style="font-size: 15px;">大佬思考</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" style="font-size: 15px;">软件资源</a> <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" style="font-size: 15px;">产品必用软件</a> <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" style="font-size: 15px;">产品问答</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/26484047.html">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/de66d2ff.html">Skill-Manage：多 Agent 时代的技能同步管理器</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/333612a1.html">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/dd0cd406.html">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/ba9fdaa3.html">思考：为什么全网都在“养龙虾”？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/4e00d906.html">Claude Code 安装与使用指南（Mac & Windows）</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/fe91c6cc.html">微信PC端多开的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/675b265e.html">问答-工作被流程化，到底该不该？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/d3c2dd60.html">产品书单-《超级IP》：互联网新物种方法论</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/14a41619.html">软件-简单实用的To-Do清单-小黄条</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><div id="search-overlay"><div class="search-overlay-inner"><div class="search-overlay-close" title="关闭">&times;</div><input id="search-overlay-input" type="text" placeholder="搜索文章..." autocomplete="off"><div id="search-overlay-result"></div></div></div><div id="wechat-qr-overlay"><div class="wechat-qr-modal"><span class="wechat-qr-close">&times;</span><h3>微信公众号</h3><img src="/img/wechat-qr.png" alt="微信公众号二维码"><p>扫码关注，获取最新文章</p></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+// Check stored preference or system preference
+var stored = localStorage.getItem('dark');
+if (stored === null) {
+  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
+} else {
+  html.dataset.dark = stored;
+}
+
+// Update toggle icon based on current theme
+function updateToggleIcon() {
+  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
+}
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  var isDark = html.dataset.dark === 'true';
+  html.dataset.dark = isDark ? 'false' : 'true';
+  localStorage.setItem('dark', html.dataset.dark);
+  updateToggleIcon();
+});
+
+// Listen for system preference changes
+prefersDarkMode.addEventListener('change', (e) => {
+  if (localStorage.getItem('dark') === null) {
+    html.dataset.dark = e.matches ? 'true' : 'false';
+    updateToggleIcon();
+  }
+});
+
+// Add smooth transition for theme changes
+html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/search-overlay.js?v=1.0.0"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/heatmap.css?v=1.0.0"><script type="text/javascript" src="/js/heatmap.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/wechat-modal.css?v=1.0.0"><script type="text/javascript" src="/js/wechat-modal.js?v=1.0.0"></script></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>(r=>{r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,o=r.imageLazyLoadSetting.preloadRatio||1,d=i();function i(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=i());for(var e,n=0;n<d.length;n++)0<=(e=(e=d[n]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*o||document.documentElement.clientHeight*o)&&(()=>{var t,e,a,o,i=d[n];e=function(){d=d.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,o=t.getAttribute("data-original"),a.onload=function(){t.src=o,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=o},t.src!==o&&(a.src=o)))})()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)})(this);</script></body></html>
