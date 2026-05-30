@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Skill-Manage 双通道物理隔离同步架构图</title>
+  <desc id="desc">Skill-Manage 将插件共享通道和全局自定义通道分开同步，避免重复加载和目录污染。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.plugin{fill:#ecfdf5;stroke:#10b981}.global{fill:#eff6ff;stroke:#3b82f6}.core{fill:#111827}.coreText{fill:#fff;font:700 28px Arial,'Microsoft YaHei',sans-serif}.title{fill:#0f172a;font:700 34px Arial,'Microsoft YaHei',sans-serif}.text{fill:#334155;font:500 20px Arial,'Microsoft YaHei',sans-serif}.small{fill:#475569;font:500 17px Arial,'Microsoft YaHei',sans-serif}.label{fill:#0f172a;font:700 22px Arial,'Microsoft YaHei',sans-serif}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="760" rx="28"/>
+  <text class="title" x="60" y="70">Skill-Manage：多 Agent 技能同步架构</text>
+  <text class="text" x="60" y="108">核心思想：插件技能只在插件通道同步，自定义技能只在全局通道同步。</text>
+
+  <rect class="core" x="420" y="150" width="360" height="90" rx="18"/>
+  <text class="coreText" x="480" y="205">Skill-Manage</text>
+  <text class="small" x="492" y="230" fill="#cbd5e1">元技能管理器</text>
+
+  <rect class="panel plugin" x="70" y="330" width="500" height="330" rx="22"/>
+  <text class="label" x="105" y="378">插件共享通道</text>
+  <text class="small" x="105" y="410">适合插件内置技能，避免写入全局目录</text>
+  <rect class="panel" x="110" y="455" width="420" height="48" rx="10"/>
+  <text class="small" x="138" y="486">custom-agent-skills-plugin</text>
+  <rect class="panel" x="110" y="520" width="420" height="48" rx="10"/>
+  <text class="small" x="138" y="551">chrome-devtools-plugin</text>
+  <rect class="panel" x="110" y="585" width="420" height="48" rx="10"/>
+  <text class="small" x="138" y="616">modern-web-guidance-plugin</text>
+
+  <rect class="panel global" x="630" y="330" width="500" height="330" rx="22"/>
+  <text class="label" x="665" y="378">全局自定义通道</text>
+  <text class="small" x="665" y="410">适合用户自定义技能，在多 Agent 间广播</text>
+  <rect class="panel" x="670" y="455" width="200" height="48" rx="10"/>
+  <text class="small" x="705" y="486">Gemini skills</text>
+  <rect class="panel" x="890" y="455" width="200" height="48" rx="10"/>
+  <text class="small" x="930" y="486">Codex skills</text>
+  <rect class="panel" x="670" y="545" width="200" height="48" rx="10"/>
+  <text class="small" x="695" y="576">Antigravity skills</text>
+  <rect class="panel" x="890" y="545" width="200" height="48" rx="10"/>
+  <text class="small" x="925" y="576">Claude skills</text>
+
+  <path class="arrow" d="M520 240 C420 270 330 295 280 330"/>
+  <path class="arrow" d="M680 240 C780 270 870 295 920 330"/>
+  <text class="small" x="260" y="292">识别插件技能</text>
+  <text class="small" x="840" y="292">识别自定义技能</text>
+
+  <rect x="280" y="690" width="640" height="42" rx="21" fill="#e2e8f0"/>
+  <text class="small" x="318" y="718">安全防护：隐藏目录保护、自我防删、权限降级、级联清理</text>
+</svg>
