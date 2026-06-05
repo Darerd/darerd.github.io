@@ -1,0 +1,216 @@
+/* ==============================================================================
+   Hexo Butterfly Custom Stylesheet
+   Created for a Premium, Tech-Focused Aesthetic
+   ============================================================================== */
+
+/* --- Import Google Fonts --- */
+/* Outfit is imported in _config.butterfly.yml, we apply it here */
+:root {
+  --global-font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --code-font: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  
+  /* Light Mode Colors */
+  --theme-main: #6366f1; /* Modern Indigo */
+  --theme-main-hover: #4f46e5;
+  --body-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --shadow-light: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.7);
+  --nav-text: #0f172a;
+  --border-color: #e2e8f0;
+
+  /* Heatmap Colors */
+  --heatmap-l0: #ebedf0;
+  --heatmap-l1: #9be9a8;
+  --heatmap-l2: #40c463;
+  --heatmap-l3: #30a14e;
+  --heatmap-l4: #216e39;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode Colors */
+  --body-bg: #090d16; /* Deep Obsidian */
+  --card-bg: #111827; /* Dark Grey/Blue */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --shadow-light: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+  --nav-bg: rgba(17, 24, 39, 0.7);
+  --nav-text: #f1f5f9;
+  --border-color: #1f2937;
+
+  /* Heatmap Colors */
+  --heatmap-l0: #161b22;
+  --heatmap-l1: #0e4429;
+  --heatmap-l2: #006d32;
+  --heatmap-l3: #26a641;
+  --heatmap-l4: #39d353;
+}
+
+/* --- Global Typography Overrides --- */
+body {
+  font-family: var(--global-font) !important;
+  background-color: var(--body-bg) !important;
+  color: var(--text-main) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--global-font) !important;
+  color: var(--text-main) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em;
+}
+
+/* Header site title text readability */
+#site-title, #site-subtitle {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* --- Navigation Bar Glassmorphism --- */
+#nav {
+  background: var(--nav-bg) !important;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#nav a {
+  color: var(--nav-text) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#nav a:hover {
+  color: var(--theme-main) !important;
+}
+
+/* --- Post Cards Layout & Animations --- */
+#recent-posts > .recent-post-item {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-light) !important;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#recent-posts > .recent-post-item:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-hover) !important;
+  border-color: var(--theme-main);
+}
+
+.recent-post-item .post_cover img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.recent-post-item:hover .post_cover img {
+  transform: scale(1.05) !important;
+}
+
+/* --- Aside Widgets Styles --- */
+.card-widget {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-light) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.card-widget:hover {
+  box-shadow: var(--shadow-hover) !important;
+  border-color: var(--theme-main);
+}
+
+/* --- Typography & Post Content Readability --- */
+#article-container {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: var(--text-main) !important;
+}
+
+#article-container p {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Custom rounded styling for note tags */
+.note {
+  border-radius: 8px !important;
+  padding: 1rem 1.25rem !important;
+  border-left-width: 4px !important;
+}
+
+/* --- Code Block Upgrades --- */
+figure.highlight {
+  background: #0d1117 !important; /* GitHub dark theme background */
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-light) !important;
+  overflow: hidden;
+  margin: 1.5rem 0 !important;
+}
+
+/* Code block title bar / toolbar */
+figure.highlight figcaption, 
+figure.highlight .highlight-tools {
+  background: #161b22 !important;
+  border-bottom: 1px solid #21262d !important;
+  color: #8b949e !important;
+  font-family: var(--global-font) !important;
+  font-size: 0.85rem !important;
+}
+
+/* Code fonts */
+figure.highlight td.code pre, 
+figure.highlight td.code,
+code {
+  font-family: var(--code-font) !important;
+}
+
+/* Copy button */
+.copy-notice {
+  font-family: var(--global-font) !important;
+  border-radius: 6px !important;
+}
+
+/* --- Scrollbar Beautification --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-main);
+}
+
+/* --- Custom Transition Animation --- */
+#body-wrap {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

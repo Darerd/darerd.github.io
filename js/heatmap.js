@@ -1,82 +1,149 @@
 (function () {
-  var data = window.__heatmapData || {};
-  var canvas = document.getElementById('blog-heatmap');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
+  function drawHeatmap() {
+    var data = window.__heatmapData;
+    if (!data) return; // Wait until data is loaded
+    
+    var canvas = document.getElementById('blog-heatmap');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
 
-  var CELL = 11;
-  var GAP = 2;
-  var COLS = 18; // 约18周
-  var ROWS = 7;  // 周一到周日
-  var OFFSET_X = 2;
-  var OFFSET_Y = 14;
+    // Clear canvas for redrawing
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // 颜色等级（仿 GitHub 绿色系）
-  var COLORS = ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+    var CELL = 11;
+    var GAP = 2;
+    var COLS = 18; // 约18周
+    var ROWS = 7;  // 周一到周日
+    var OFFSET_X = 2;
+    var OFFSET_Y = 14;
 
-  function getLevel(count) {
-    if (!count) return 0;
-    if (count === 1) return 1;
-    if (count === 2) return 2;
-    if (count <= 4) return 3;
-    return 4;
-  }
+    // Read theme colors from CSS variables
+    var rootStyles = getComputedStyle(document.documentElement);
+    var COLORS = [
+      rootStyles.getPropertyValue('--heatmap-l0').trim() || '#ebedf0',
+      rootStyles.getPropertyValue('--heatmap-l1').trim() || '#9be9a8',
+      rootStyles.getPropertyValue('--heatmap-l2').trim() || '#40c463',
+      rootStyles.getPropertyValue('--heatmap-l3').trim() || '#30a14e',
+      rootStyles.getPropertyValue('--heatmap-l4').trim() || '#216e39'
+    ];
 
-  // 生成过去 COLS*7 天的日期序列
-  var today = new Date();
-  today.setHours(0, 0, 0, 0);
+    function getLevel(count) {
+      if (!count) return 0;
+      if (count === 1) return 1;
+      if (count === 2) return 2;
+      if (count <= 4) return 3;
+      return 4;
+    }
 
-  // 从今天往前推，对齐到周日开始
-  var startDay = new Date(today);
-  startDay.setDate(today.getDate() - (COLS * ROWS - 1));
+    // Generate date sequence
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
 
-  // 月份标签
-  var monthLabels = [];
-  var prevMonth = -1;
+    var startDay = new Date(today);
+    startDay.setDate(today.getDate() - (COLS * ROWS - 1));
 
-  // 绘制月份标签和格子
-  var fontSize = 9;
-  ctx.font = fontSize + 'px sans-serif';
-  ctx.fillStyle = '#767676';
+    var fontSize = 9;
+    ctx.font = fontSize + 'px sans-serif';
 
-  for (var col = 0; col < COLS; col++) {
-    for (var row = 0; row < ROWS; row++) {
-      var idx = col * ROWS + row;
-      var d = new Date(startDay);
-      d.setDate(startDay.getDate() + idx);
+    var prevMonth = -1;
+    for (var col = 0; col < COLS; col++) {
+      for (var row = 0; row < ROWS; row++) {
+        var idx = col * ROWS + row;
+        var d = new Date(startDay);
+        d.setDate(startDay.getDate() + idx);
 
-      var year = d.getFullYear();
-      var month = d.getMonth();
-      var day = d.getDate();
-      var key = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+        var year = d.getFullYear();
+        var month = d.getMonth();
+        var day = d.getDate();
+        var key = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(day).padStart(2, '0');
 
-      var count = data[key] || 0;
-      var level = getLevel(count);
+        var count = data[key] || 0;
+        var level = getLevel(count);
 
-      var x = OFFSET_X + col * (CELL + GAP);
-      var y = OFFSET_Y + row * (CELL + GAP);
+        var x = OFFSET_X + col * (CELL + GAP);
+        var y = OFFSET_Y + row * (CELL + GAP);
 
-      // 月份标签（每列第一行，月份变化时显示）
-      if (row === 0 && month !== prevMonth) {
-        var monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        ctx.fillStyle = '#767676';
-        ctx.fillText(monthNames[month], x, OFFSET_Y - 3);
-        prevMonth = month;
+        // Draw Month labels (Jan, Feb...) at row 0 when month shifts
+        if (row === 0 && month !== prevMonth) {
+          var monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+          ctx.fillStyle = rootStyles.getPropertyValue('--text-muted').trim() || '#767676';
+          ctx.fillText(monthNames[month], x, OFFSET_Y - 3);
+          prevMonth = month;
+        }
+
+        // Draw Cell Rect
+        ctx.fillStyle = COLORS[level];
+        ctx.beginPath();
+        if (ctx.roundRect) {
+          ctx.roundRect(x, y, CELL, CELL, 2);
+        } else {
+          ctx.rect(x, y, CELL, CELL);
+        }
+        ctx.fill();
       }
-
-      // 绘制格子
-      ctx.fillStyle = COLORS[level];
-      ctx.beginPath();
-      ctx.roundRect(x, y, CELL, CELL, 2);
-      ctx.fill();
     }
   }
 
-  // tooltip
-  var tooltip = document.createElement('div');
-  tooltip.id = 'heatmap-tooltip';
-  tooltip.style.cssText = 'position:fixed;background:#333;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;pointer-events:none;display:none;z-index:9999;white-space:nowrap;';
-  document.body.appendChild(tooltip);
+  function initHeatmap() {
+    if (window.__heatmapData) {
+      drawHeatmap();
+      return;
+    }
+
+    // Fetch heatmap data asynchronously from generated json
+    fetch('/heatmap.json')
+      .then(function(res) { return res.json(); })
+      .then(function(json) {
+        window.__heatmapData = json;
+        drawHeatmap();
+      })
+      .catch(function(err) {
+        console.error('Failed to load heatmap data:', err);
+      });
+  }
+
+  // Initial Draw
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeatmap);
+  } else {
+    initHeatmap();
+  }
+
+  // MutationObserver to watch theme toggle on HTML tag
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === 'data-theme') {
+        setTimeout(drawHeatmap, 60); // Tiny timeout to let CSS repaint variables
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+
+  // Setup tooltip
+  var canvas = document.getElementById('blog-heatmap');
+  if (!canvas) return;
+  var CELL = 11;
+  var GAP = 2;
+  var OFFSET_X = 2;
+  var OFFSET_Y = 14;
+  var COLS = 18;
+  var ROWS = 7;
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var startDay = new Date(today);
+  startDay.setDate(today.getDate() - (COLS * ROWS - 1));
+
+  var tooltip = document.getElementById('heatmap-tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.id = 'heatmap-tooltip';
+    tooltip.style.cssText = 'position:fixed;background:rgba(15, 23, 42, 0.9);backdrop-filter:blur(6px);color:#fff;padding:6px 10px;border-radius:6px;font-size:11px;pointer-events:none;display:none;z-index:9999;white-space:nowrap;box-shadow:0 10px 15px -3px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.08);font-family:inherit;';
+    document.body.appendChild(tooltip);
+  }
 
   canvas.addEventListener('mousemove', function (e) {
     var rect = canvas.getBoundingClientRect();
@@ -94,12 +161,13 @@
       var month = d.getMonth();
       var day = d.getDate();
       var key = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+      var data = window.__heatmapData || {};
       var count = data[key] || 0;
       var dateStr = year + '/' + (month + 1) + '/' + day;
-      tooltip.textContent = dateStr + ': ' + count + ' 篇文章';
+      tooltip.textContent = dateStr + ' : ' + count + ' 篇文章';
       tooltip.style.display = 'block';
       tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top = (e.clientY - 28) + 'px';
+      tooltip.style.top = (e.clientY - 32) + 'px';
     } else {
       tooltip.style.display = 'none';
     }

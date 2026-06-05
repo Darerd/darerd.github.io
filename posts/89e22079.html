@@ -1,38 +1,184 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论 | Darerd's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论 | Darerd's Blog</title><meta name="author" content="Darerd"><meta name="copyright" content="Darerd"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="大家好，我是Darer 近期看了周鸿祎的书《我的互联网方法论》 整理了下看书时做的标注 并附上一些自己的理解 周鸿祎自述: 我的互联网方法论周鸿祎  互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。  互联网在给予消费者更多知情权和选择权的同时 也在减少消费者的知情权   什么是商业模式？其实，商业模式不是赚钱模式。 它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论">
+<meta property="og:url" content="https://darerd.github.io/posts/89e22079.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="大家好，我是Darer 近期看了周鸿祎的书《我的互联网方法论》 整理了下看书时做的标注 并附上一些自己的理解 周鸿祎自述: 我的互联网方法论周鸿祎  互联网革命是什么？那就是，消费者拥有了更多的知情权和选择权。  互联网在给予消费者更多知情权和选择权的同时 也在减少消费者的知情权   什么是商业模式？其实，商业模式不是赚钱模式。 它至少包含了四方面内容：产品模式、用户模式、推广模式，最后才是收入模">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://darerd.github.io/img/avatar.png">
+<meta property="article:published_time" content="2019-03-06T10:06:24.000Z">
+<meta property="article:modified_time" content="2026-05-30T08:14:03.916Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="阅读体会">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://darerd.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论",
+  "url": "https://darerd.github.io/posts/89e22079.html",
+  "image": "https://darerd.github.io/img/avatar.png",
+  "datePublished": "2019-03-06T10:06:24.000Z",
+  "dateModified": "2026-05-30T08:14:03.916Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Darerd",
+      "url": "https://darerd.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://darerd.github.io/posts/89e22079.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
-// Check stored preference or system preference
-var stored = localStorage.getItem('dark');
-if (stored === null) {
-  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
-} else {
-  html.dataset.dark = stored;
-}
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
-// Update toggle icon based on current theme
-function updateToggleIcon() {
-  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
-}
-updateToggleIcon();
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-toggle.addEventListener('click', () => {
-  var isDark = html.dataset.dark === 'true';
-  html.dataset.dark = isDark ? 'false' : 'true';
-  localStorage.setItem('dark', html.dataset.dark);
-  updateToggleIcon();
-});
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
 
-// Listen for system preference changes
-prefersDarkMode.addEventListener('change', (e) => {
-  if (localStorage.getItem('dark') === null) {
-    html.dataset.dark = e.matches ? 'true' : 'false';
-    updateToggleIcon();
-  }
-});
-
-// Add smooth transition for theme changes
-html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a id="search-toggle" href="javascript:;" rel="external nofollow noreferrer" aria-label="搜索"><i class="fa fa-search"></i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论</h1><div class="post-meta">2019-03-06<span> | </span><span class="category"><a href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/">方法论</a></span></div><div class="post-content"><p>大家好，我是Darer</p>
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Darerd's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">79</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&amp;fit=crop&amp;q=80&amp;w=1600);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Darerd's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">《我的互联网方法论》|好的产品就是让用户离不开你|产品方法论</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-06T10:06:24.000Z" title="发表于 2019-03-06 18:06:24">2019-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-30T08:14:03.916Z" title="更新于 2026-05-30 16:14:03">2026-05-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/">方法论</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>大家好，我是Darer</p>
 <p>近期看了周鸿祎的书《我的互联网方法论》</p>
 <p>整理了下看书时做的标注</p>
 <p>并附上一些自己的理解</p>
@@ -212,47 +358,22 @@ html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><
 </blockquote>
 <p>公众号后台回复<code>我的互联网方法论</code>，即刻下载</p>
 <hr>
-</div><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" rel="tag">阅读体会</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/285010c8.html">Test20-列表的操作</a><a class="next" href="/posts/8b5906b5.html">Test19-用循环语句、if语句和函数做一个小游戏</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>分享技术与经验</p><a class="info-icon" href="https://github.com/Darerd" rel="external nofollow noreferrer" title="Github" target="_blank" style="margin-inline:5px"><i class="fa fa-github" style="margin-inline:5px"></i></a><a class="info-icon info-icon-wechat" href="javascript:;" rel="external nofollow noreferrer" title="微信公众号"><i class="fa fa-weixin" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"><i class="fa fa-rss" style="margin-inline:5px"></i></a></div></div><div class="widget heatmap-widget"><div class="widget-title"><i class="fa fa-calendar"> 博客热力图</i></div><div class="heatmap-container"><canvas id="blog-heatmap" width="220" height="110"></canvas></div><div class="heatmap-legend"><span class="legend-label">少</span><div class="legend-cells"><span class="legend-cell" data-level="0"></span><span class="legend-cell" data-level="1"></span><span class="legend-cell" data-level="2"></span><span class="legend-cell" data-level="3"></span><span class="legend-cell" data-level="4"></span></div><span class="legend-label">多</span></div></div><script>window.__heatmapData = {"2026-05-30":4,"2026-03-27":1,"2019-03-19":1,"2019-01-30":1,"2019-02-20":5,"2019-03-04":3,"2019-02-28":2,"2019-02-22":2,"2019-02-03":6,"2019-02-27":1,"2019-02-26":1,"2019-03-01":2,"2019-03-02":3,"2019-03-03":2,"2019-03-05":1,"2019-03-06":2,"2019-03-11":1,"2019-03-13":2,"2019-03-16":2,"2019-02-21":1,"2019-02-23":1,"2019-02-25":2,"2019-03-20":2,"2019-03-28":1,"2019-04-11":1,"2019-04-01":1,"2019-04-25":1,"2019-07-06":1,"2019-04-18":1,"2019-02-19":1,"2026-03-28":1,"2019-03-27":4,"2019-03-25":2,"2019-03-10":1,"2019-04-10":1,"2019-03-12":1,"2019-04-07":1,"2019-02-24":1,"2019-04-21":1,"2019-04-14":1,"2019-03-15":1,"2019-04-27":1,"2019-04-13":2,"2019-03-29":1,"2019-03-21":2,"2019-02-01":1,"2019-04-04":1,"2019-03-18":1};</script><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/AI-Agent/" style="font-size: 15px;">AI Agent</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 15px;">求职</a> <a href="/tags/Skill/" style="font-size: 15px;">Skill</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 15px;">面试</a> <a href="/tags/Claude-Code/" style="font-size: 15px;">Claude Code</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">开发工具</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next%E6%A8%A1%E6%9D%BF/" style="font-size: 15px;">Next模板</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" style="font-size: 15px;">笨方法学Python</a> <a href="/tags/LangGraph/" style="font-size: 15px;">LangGraph</a> <a href="/tags/%E6%8A%95%E7%A0%94/" style="font-size: 15px;">投研</a> <a href="/tags/A%E8%82%A1/" style="font-size: 15px;">A股</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 15px;">图床</a> <a href="/tags/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">产品书单</a> <a href="/tags/GEO/" style="font-size: 15px;">GEO</a> <a href="/tags/AI%E6%90%9C%E7%B4%A2/" style="font-size: 15px;">AI搜索</a> <a href="/tags/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96/" style="font-size: 15px;">内容优化</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 15px;">技巧</a> <a href="/tags/Open-claw/" style="font-size: 15px;">Open claw</a> <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" style="font-size: 15px;">阅读体会</a> <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" style="font-size: 15px;">用户画像</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px;">爬虫</a> <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" style="font-size: 15px;">大佬思考</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" style="font-size: 15px;">软件资源</a> <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" style="font-size: 15px;">产品必用软件</a> <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" style="font-size: 15px;">产品问答</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/26484047.html">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/de66d2ff.html">Skill-Manage：多 Agent 时代的技能同步管理器</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/333612a1.html">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/dd0cd406.html">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/ba9fdaa3.html">思考：为什么全网都在“养龙虾”？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/4e00d906.html">Claude Code 安装与使用指南（Mac & Windows）</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/fe91c6cc.html">微信PC端多开的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/675b265e.html">问答-工作被流程化，到底该不该？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/d3c2dd60.html">产品书单-《超级IP》：互联网新物种方法论</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/14a41619.html">软件-简单实用的To-Do清单-小黄条</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><div id="search-overlay"><div class="search-overlay-inner"><div class="search-overlay-close" title="关闭">&times;</div><input id="search-overlay-input" type="text" placeholder="搜索文章..." autocomplete="off"><div id="search-overlay-result"></div></div></div><div id="wechat-qr-overlay"><div class="wechat-qr-modal"><span class="wechat-qr-close">&times;</span><h3>微信公众号</h3><img src="/img/wechat-qr.png" alt="微信公众号二维码"><p>扫码关注，获取最新文章</p></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
-
-// Check stored preference or system preference
-var stored = localStorage.getItem('dark');
-if (stored === null) {
-  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
-} else {
-  html.dataset.dark = stored;
-}
-
-// Update toggle icon based on current theme
-function updateToggleIcon() {
-  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
-}
-updateToggleIcon();
-
-toggle.addEventListener('click', () => {
-  var isDark = html.dataset.dark === 'true';
-  html.dataset.dark = isDark ? 'false' : 'true';
-  localStorage.setItem('dark', html.dataset.dark);
-  updateToggleIcon();
-});
-
-// Listen for system preference changes
-prefersDarkMode.addEventListener('change', (e) => {
-  if (localStorage.getItem('dark') === null) {
-    html.dataset.dark = e.matches ? 'true' : 'false';
-    updateToggleIcon();
-  }
-});
-
-// Add smooth transition for theme changes
-html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
-if (search_path.length == 0) {
-  search_path = 'search.xml';
-}
-var path = '/' + search_path;
-searchFunc(path, 'local-search-input', 'local-search-result');
-</script><script type="text/javascript" src="/js/search-overlay.js?v=1.0.0"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/heatmap.css?v=1.0.0"><script type="text/javascript" src="/js/heatmap.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/wechat-modal.css?v=1.0.0"><script type="text/javascript" src="/js/wechat-modal.js?v=1.0.0"></script></div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://darerd.github.io">Darerd</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://darerd.github.io/posts/89e22079.html">https://darerd.github.io/posts/89e22079.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://darerd.github.io" target="_blank">Darerd's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/">阅读体会</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/285010c8.html" title="Test20-列表的操作"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Test20-列表的操作</div></div><div class="info-2"><div class="info-item-1">  Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节我们来学习Python是怎么对列表实行操作的 [TOC] 示例：当你看到mystuff.append(&#39;hello&#39;)这样的代码时，它已经在Python内部激发了一个连锁反应。以下是它的工作原理。  Python看到你用到mystuff，于是就去找这个变量。也许它需要倒着检查看你有没有在哪里用=创建过这个变量，或者检查它是不是一个函数参数，或者看它是不是一个全局变量。不管哪种方式，它得先找到mystuff这个变量才行。  一旦它找到了mystuff，就轮到处理句点(.)这个操作符，而且开始查看mystuff内部的一些变量了。由于mystuff是一个列表，Python知道mystuff支持一些函数。  接下来轮到处理append。Python会将append和mystuff支持的所有函数的名称一一对比，如果确实有一个叫append的函数，那么Python就会去使用这个函数。  接下来Python看到了括号(并意识...</div></div></div></a><a class="pagination-related" href="/posts/8b5906b5.html" title="Test19-用循环语句、if语句和函数做一个小游戏"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Test19-用循环语句、if语句和函数做一个小游戏</div></div><div class="info-2"><div class="info-item-1">  Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  这一节我们用前面学习过的if语句、for语句、while语句和def定义函数等来做一个小游戏 [TOC] 源代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364# ex35.pyfromdef	print	next=raw_input(&quot;&gt; &quot;	if		how_much=int(next)	else		dead(&quot;man,learn to type a number.&quot;	if		print		exit(0	else		dead(&quot;You greedy bastard!&quot;		def	print	print	print	print	bear_moved=False	while		ne...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Darerd</div><div class="author-info-description">记录技术成长，分享个人经验</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">79</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的技术分享站！这里记录着我在前端和后端开发中的学习笔记与思考。</div></div><div class="card-widget heatmap-widget" id="blog-heatmap-card"><div class="item-headline"><i class="fas fa-calendar-alt"></i><span>博客热力图</span></div><div class="item-content"><div class="heatmap-container" style="display: flex; justify-content: center; padding: 10px 0;">
+  <canvas id="blog-heatmap" width="220" height="110"></canvas>
+</div>
+<div class="heatmap-legend" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-muted); padding: 0 10px;">
+  <span class="legend-label">少</span>
+  <div class="legend-cells" style="display: flex; gap: 2px;">
+    <span class="legend-cell" data-level="0" style="width: 10px; height: 10px; background-color: var(--heatmap-l0, #ebedf0); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="1" style="width: 10px; height: 10px; background-color: var(--heatmap-l1, #9be9a8); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="2" style="width: 10px; height: 10px; background-color: var(--heatmap-l2, #40c463); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="3" style="width: 10px; height: 10px; background-color: var(--heatmap-l3, #30a14e); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="4" style="width: 10px; height: 10px; background-color: var(--heatmap-l4, #216e39); border-radius: 2px;"></span>
+  </div>
+  <span class="legend-label">多</span>
+</div>
+<script defer src="/js/heatmap.js"></script>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%A8%E9%B8%BF%E7%A5%8E%E8%87%AA%E8%BF%B0-%E6%88%91%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B9%E6%B3%95%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">周鸿祎自述: 我的互联网方法论</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/26484047.html" title="为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a><time datetime="2026-05-30T08:30:00.000Z" title="发表于 2026-05-30 16:30:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/de66d2ff.html" title="Skill-Manage：多 Agent 时代的技能同步管理器">Skill-Manage：多 Agent 时代的技能同步管理器</a><time datetime="2026-05-30T08:20:00.000Z" title="发表于 2026-05-30 16:20:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/333612a1.html" title="VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a><time datetime="2026-05-30T08:10:00.000Z" title="发表于 2026-05-30 16:10:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dd0cd406.html" title="GetOfferSkill：用 AI 把求职流程从碎片化变成流水线">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a><time datetime="2026-05-30T08:00:00.000Z" title="发表于 2026-05-30 16:00:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ba9fdaa3.html" title="思考：为什么全网都在“养龙虾”？">思考：为什么全网都在“养龙虾”？</a><time datetime="2026-03-28T13:30:00.000Z" title="发表于 2026-03-28 21:30:00">2026-03-28</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Darerd</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div>
         <style>
             [bg-lazy] {
                 background-image: none !important;

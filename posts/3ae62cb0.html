@@ -1,38 +1,184 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录技术成长，分享个人经验"><title>通过上瘾模型分析虎扑是怎么让你一步步上瘾的 | Darerd's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/pure-min.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="https://unpkg.com/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="https://unpkg.com/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="https://unpkg.com/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="https://unpkg.com/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>通过上瘾模型分析虎扑是怎么让你一步步上瘾的 | Darerd's Blog</title><meta name="author" content="Darerd"><meta name="copyright" content="Darerd"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="通过上瘾模型分析虎扑是怎么让你一步步上瘾的上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。  **第一阶段：**引发用户去使用你的产品，这叫作“触发”。  第二阶段：行动。行动要兼具动机和能力，有了动机，还需要用户的能力足够完成行为。  第三阶段：给用户多变的酬赏。所谓多变的酬赏，就是指酬赏要有不可预期性。  第四阶段：是让用户在产品上进行越来越多的投入。用户与产品亲密接触得越多，沉没成本就越大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过上瘾模型分析虎扑是怎么让你一步步上瘾的">
+<meta property="og:url" content="https://darerd.github.io/posts/3ae62cb0.html">
+<meta property="og:site_name" content="Darerd&#39;s Blog">
+<meta property="og:description" content="通过上瘾模型分析虎扑是怎么让你一步步上瘾的上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。  **第一阶段：**引发用户去使用你的产品，这叫作“触发”。  第二阶段：行动。行动要兼具动机和能力，有了动机，还需要用户的能力足够完成行为。  第三阶段：给用户多变的酬赏。所谓多变的酬赏，就是指酬赏要有不可预期性。  第四阶段：是让用户在产品上进行越来越多的投入。用户与产品亲密接触得越多，沉没成本就越大">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://darerd.github.io/img/avatar.png">
+<meta property="article:published_time" content="2019-03-18T14:49:48.000Z">
+<meta property="article:modified_time" content="2026-05-30T08:14:03.924Z">
+<meta property="article:author" content="Darerd">
+<meta property="article:tag" content="随想">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://darerd.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "通过上瘾模型分析虎扑是怎么让你一步步上瘾的",
+  "url": "https://darerd.github.io/posts/3ae62cb0.html",
+  "image": "https://darerd.github.io/img/avatar.png",
+  "datePublished": "2019-03-18T14:49:48.000Z",
+  "dateModified": "2026-05-30T08:14:03.924Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Darerd",
+      "url": "https://darerd.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://darerd.github.io/posts/3ae62cb0.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
 
-// Check stored preference or system preference
-var stored = localStorage.getItem('dark');
-if (stored === null) {
-  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
-} else {
-  html.dataset.dark = stored;
-}
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
-// Update toggle icon based on current theme
-function updateToggleIcon() {
-  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
-}
-updateToggleIcon();
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-toggle.addEventListener('click', () => {
-  var isDark = html.dataset.dark === 'true';
-  html.dataset.dark = isDark ? 'false' : 'true';
-  localStorage.setItem('dark', html.dataset.dark);
-  updateToggleIcon();
-});
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
 
-// Listen for system preference changes
-prefersDarkMode.addEventListener('change', (e) => {
-  if (localStorage.getItem('dark') === null) {
-    html.dataset.dark = e.matches ? 'true' : 'false';
-    updateToggleIcon();
-  }
-});
-
-// Add smooth transition for theme changes
-html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">通过上瘾模型分析虎扑是怎么让你一步步上瘾的</h1><a id="logo" href="/.">Darerd's Blog</a><p class="description">分享技术与经验</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a id="search-toggle" href="javascript:;" rel="external nofollow noreferrer" aria-label="搜索"><i class="fa fa-search"></i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">通过上瘾模型分析虎扑是怎么让你一步步上瘾的</h1><div class="post-meta">2019-03-18<span> | </span><span class="category"><a href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></span></div><div class="post-content"><h1 id="通过上瘾模型分析虎扑是怎么让你一步步上瘾的"><a href="#通过上瘾模型分析虎扑是怎么让你一步步上瘾的" class="headerlink" title="通过上瘾模型分析虎扑是怎么让你一步步上瘾的"></a>通过上瘾模型分析虎扑是怎么让你一步步上瘾的</h1><p><strong>上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。</strong></p>
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '通过上瘾模型分析虎扑是怎么让你一步步上瘾的',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Darerd's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">79</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&amp;fit=crop&amp;q=80&amp;w=1600);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Darerd's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">通过上瘾模型分析虎扑是怎么让你一步步上瘾的</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">通过上瘾模型分析虎扑是怎么让你一步步上瘾的</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-18T14:49:48.000Z" title="发表于 2019-03-18 22:49:48">2019-03-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-30T08:14:03.924Z" title="更新于 2026-05-30 16:14:03">2026-05-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="通过上瘾模型分析虎扑是怎么让你一步步上瘾的"><a href="#通过上瘾模型分析虎扑是怎么让你一步步上瘾的" class="headerlink" title="通过上瘾模型分析虎扑是怎么让你一步步上瘾的"></a>通过上瘾模型分析虎扑是怎么让你一步步上瘾的</h1><p><strong>上瘾模型的四个阶段：触发、行动、多变的酬赏和投入。</strong></p>
 <ul>
 <li><p>**第一阶段：**引发用户去使用你的产品，这叫作“<strong>触发</strong>”。</p>
 </li>
@@ -106,47 +252,22 @@ html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><
 <hr>
 <p>在相同条件下，满足用户的群体价值（让用户在群体中发光）比仅满足用户的个人价值（比如，给用户金钱奖励）更有用。</p>
 <p><strong>人生来就希望被认可</strong></p>
-</div><div class="tags"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E6%83%B3/" rel="tag">随想</a></li></ul></div><div class="post-nav"><a class="pre" href="/posts/87b27750.html">常用网站导航</a><a class="next" href="/posts/2892ac0c.html">Test23-学习面向对象术语</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.png"/></a><p>分享技术与经验</p><a class="info-icon" href="https://github.com/Darerd" rel="external nofollow noreferrer" title="Github" target="_blank" style="margin-inline:5px"><i class="fa fa-github" style="margin-inline:5px"></i></a><a class="info-icon info-icon-wechat" href="javascript:;" rel="external nofollow noreferrer" title="微信公众号"><i class="fa fa-weixin" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"><i class="fa fa-rss" style="margin-inline:5px"></i></a></div></div><div class="widget heatmap-widget"><div class="widget-title"><i class="fa fa-calendar"> 博客热力图</i></div><div class="heatmap-container"><canvas id="blog-heatmap" width="220" height="110"></canvas></div><div class="heatmap-legend"><span class="legend-label">少</span><div class="legend-cells"><span class="legend-cell" data-level="0"></span><span class="legend-cell" data-level="1"></span><span class="legend-cell" data-level="2"></span><span class="legend-cell" data-level="3"></span><span class="legend-cell" data-level="4"></span></div><span class="legend-label">多</span></div></div><script>window.__heatmapData = {"2026-05-30":4,"2026-03-27":1,"2019-03-19":1,"2019-01-30":1,"2019-02-20":5,"2019-03-04":3,"2019-02-28":2,"2019-02-22":2,"2019-02-03":6,"2019-02-27":1,"2019-02-26":1,"2019-03-01":2,"2019-03-02":3,"2019-03-03":2,"2019-03-05":1,"2019-03-06":2,"2019-03-11":1,"2019-03-13":2,"2019-03-16":2,"2019-02-21":1,"2019-02-23":1,"2019-02-25":2,"2019-03-20":2,"2019-03-28":1,"2019-04-11":1,"2019-04-01":1,"2019-04-25":1,"2019-07-06":1,"2019-04-18":1,"2019-02-19":1,"2026-03-28":1,"2019-03-27":4,"2019-03-25":2,"2019-03-10":1,"2019-04-10":1,"2019-03-12":1,"2019-04-07":1,"2019-02-24":1,"2019-04-21":1,"2019-04-14":1,"2019-03-15":1,"2019-04-27":1,"2019-04-13":2,"2019-03-29":1,"2019-03-21":2,"2019-02-01":1,"2019-04-04":1,"2019-03-18":1};</script><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/AI-Agent/" style="font-size: 15px;">AI Agent</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 15px;">求职</a> <a href="/tags/Skill/" style="font-size: 15px;">Skill</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 15px;">面试</a> <a href="/tags/Claude-Code/" style="font-size: 15px;">Claude Code</a> <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">开发工具</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next%E6%A8%A1%E6%9D%BF/" style="font-size: 15px;">Next模板</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/" style="font-size: 15px;">笨方法学Python</a> <a href="/tags/LangGraph/" style="font-size: 15px;">LangGraph</a> <a href="/tags/%E6%8A%95%E7%A0%94/" style="font-size: 15px;">投研</a> <a href="/tags/A%E8%82%A1/" style="font-size: 15px;">A股</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 15px;">图床</a> <a href="/tags/%E4%BA%A7%E5%93%81%E4%B9%A6%E5%8D%95/" style="font-size: 15px;">产品书单</a> <a href="/tags/GEO/" style="font-size: 15px;">GEO</a> <a href="/tags/AI%E6%90%9C%E7%B4%A2/" style="font-size: 15px;">AI搜索</a> <a href="/tags/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96/" style="font-size: 15px;">内容优化</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 15px;">技巧</a> <a href="/tags/Open-claw/" style="font-size: 15px;">Open claw</a> <a href="/tags/%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" style="font-size: 15px;">阅读体会</a> <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/" style="font-size: 15px;">用户画像</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 15px;">爬虫</a> <a href="/tags/%E5%A4%A7%E4%BD%AC%E6%80%9D%E8%80%83/" style="font-size: 15px;">大佬思考</a> <a href="/tags/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/" style="font-size: 15px;">软件资源</a> <a href="/tags/%E4%BA%A7%E5%93%81%E5%BF%85%E7%94%A8%E8%BD%AF%E4%BB%B6/" style="font-size: 15px;">产品必用软件</a> <a href="/tags/%E4%BA%A7%E5%93%81%E9%97%AE%E7%AD%94/" style="font-size: 15px;">产品问答</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px;">随想</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/posts/26484047.html">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/de66d2ff.html">Skill-Manage：多 Agent 时代的技能同步管理器</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/333612a1.html">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/dd0cd406.html">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/ba9fdaa3.html">思考：为什么全网都在“养龙虾”？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/4e00d906.html">Claude Code 安装与使用指南（Mac & Windows）</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/fe91c6cc.html">微信PC端多开的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/675b265e.html">问答-工作被流程化，到底该不该？</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/d3c2dd60.html">产品书单-《超级IP》：互联网新物种方法论</a></li><li class="post-list-item"><a class="post-list-link" href="/posts/14a41619.html">软件-简单实用的To-Do清单-小黄条</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2026 <a href="/." rel="nofollow">Darerd's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><div id="search-overlay"><div class="search-overlay-inner"><div class="search-overlay-close" title="关闭">&times;</div><input id="search-overlay-input" type="text" placeholder="搜索文章..." autocomplete="off"><div id="search-overlay-result"></div></div></div><div id="wechat-qr-overlay"><div class="wechat-qr-modal"><span class="wechat-qr-close">&times;</span><h3>微信公众号</h3><img src="/img/wechat-qr.png" alt="微信公众号二维码"><p>扫码关注，获取最新文章</p></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><div class="darkmode-toggle">🌙</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
-
-// Check stored preference or system preference
-var stored = localStorage.getItem('dark');
-if (stored === null) {
-  html.dataset.dark = prefersDarkMode.matches ? 'true' : 'false';
-} else {
-  html.dataset.dark = stored;
-}
-
-// Update toggle icon based on current theme
-function updateToggleIcon() {
-  toggle.textContent = html.dataset.dark === 'true' ? '☀️' : '🌙';
-}
-updateToggleIcon();
-
-toggle.addEventListener('click', () => {
-  var isDark = html.dataset.dark === 'true';
-  html.dataset.dark = isDark ? 'false' : 'true';
-  localStorage.setItem('dark', html.dataset.dark);
-  updateToggleIcon();
-});
-
-// Listen for system preference changes
-prefersDarkMode.addEventListener('change', (e) => {
-  if (localStorage.getItem('dark') === null) {
-    html.dataset.dark = e.matches ? 'true' : 'false';
-    updateToggleIcon();
-  }
-});
-
-// Add smooth transition for theme changes
-html.style.transition = 'background-color 0.3s ease, color 0.3s ease';</script><script type="text/javascript" src="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="https://unpkg.com/@fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
-if (search_path.length == 0) {
-  search_path = 'search.xml';
-}
-var path = '/' + search_path;
-searchFunc(path, 'local-search-input', 'local-search-result');
-</script><script type="text/javascript" src="/js/search-overlay.js?v=1.0.0"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/heatmap.css?v=1.0.0"><script type="text/javascript" src="/js/heatmap.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="/css/wechat-modal.css?v=1.0.0"><script type="text/javascript" src="/js/wechat-modal.js?v=1.0.0"></script></div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://darerd.github.io">Darerd</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://darerd.github.io/posts/3ae62cb0.html">https://darerd.github.io/posts/3ae62cb0.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://darerd.github.io" target="_blank">Darerd's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9A%8F%E6%83%B3/">随想</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/87b27750.html" title="常用网站导航"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">常用网站导航</div></div><div class="info-2"><div class="info-item-1">网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮 1. 资讯👉cnBeta		👉数位时代	👉科技行者 2. 博客👉刘未鹏	👉酷壳	👉崔庆才	👈Benson‘s Blog 3. 社区👉产品经理	👉PMCAFF	👉V2EX​ 4. 管理👉哈佛商业评论	👉MBA智库 5. 数据分析👉国家数据	👉世界银行公开数据	👉移动观象台	👉百度指数	👉天眼查	👉艾瑞数据	👉APP Annie	👉七麦 6. 投融资👉创业邦	👉i黑马	👉创新工场 7. 产品资源👉产品原型设计	👉产品文档规范 8. 技术指南👉Python文档	👉Web文档	👉Git文档​	👉iFixit 9. 工具👉临时邮箱	👉临时手机号	👉创客贴 10. 软件下载👉MSDN	👉小众软件	👉胡萝卜周	👉吾爱破解 </div></div></div></a><a class="pagination-related" href="/posts/2892ac0c.html" title="Test23-学习面向对象术语"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Test23-学习面向对象术语</div></div><div class="info-2"><div class="info-item-1">  Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著  的学习思路和理解，如有不如之处，望指出！！！  本节学习面向对象术语 [TOC] 单词练习 类（class）：告诉python创建新类型的东西  对象（object）：两个意思，即最基本的东西，或者某个东西的实例  实例（instance）：让python创建一个时得到的东西  def：创建函数  self：在类的函数中，self指代被访问的对象或者实例的一个变量  继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似  组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系  属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量  是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）  有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）   语汇练习 class ...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/490c6cfd.html" title="随想-我对投资的认识"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-04-13</div><div class="info-item-2">随想-我对投资的认识</div></div><div class="info-2"><div class="info-item-1">我对投资的认识我认为投资主要分为两个部分：  投资资产  投资自己   [TOC] 1. 投资资产目的是让自己的财富实现增值 目前国内的主要途径有：（入手程度由易到难）  存储  基金  股票  房产和房产出租  创业   2. 投资自己目的是让自己更多创造财富的价值 分为两块：  投资“硬件”  投资“软件”   1. 投资硬件主要是锻炼身体、强健体魄、保养身体 2. 投资软件主要是投资思想和技能 比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等 </div></div></div></a><a class="pagination-related" href="/posts/ae884d67.html" title="随想-如果脱离现有的平台，你还剩下什么？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-27</div><div class="info-item-2">随想-如果脱离现有的平台，你还剩下什么？</div></div><div class="info-2"><div class="info-item-1">2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台， 你还能剩下什么？    说在前面的话：   脱离平台的“硬件”，你还有平台带给你的“软件”  先介绍下自己： 现就读于安徽一985高校，本科毕业于河南一211高校  我会从以下两个方面阐述观点：  平台带给我哪些“软件” 我的看法    平台带给我哪些软件   开拓视野 在这里，我获得了与全国顶级高校的学生交流的机会(有幸去上海同济参加了一个两岸三地的创新创业比赛)； 这是我第一次接触创业比赛、接触路演、接触另一种社会形态培养出来的学生，真的是一种打开异世界的感觉；在心底埋下了一颗种子，从此看世界的角度和思维都在慢慢改变。 平台越高、看得越远。  自信心 在这里，我参加了学校和百度举办的创新创业活动，和来自全国高校的小伙伴同台竞技，并且取得了不错成绩； 这次让我认识到，自己并没有那么差和不堪，给一个机会，有信心做到更好； 平台会给你自信心。  人脉&amp;资源 在这里，我认识了各种各样优秀的人；他们各有所长，都对自己给予了帮助和启发； 在为院系运营公众号时，结识一位朋友A；通过A，加入了学校团委下属的一个部门...</div></div></div></a><a class="pagination-related" href="/posts/c958a381.html" title="随想-我对996工作制的看法"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-04-04</div><div class="info-item-2">随想-我对996工作制的看法</div></div><div class="info-2"><div class="info-item-1">我对996工作制的看法由于996.icu的出现，最近关于996的讨论，越来越多，也看了不少人的看法 主流是两种看法：  如果你不认可公司的996制度，你可以不来，你可以不选择公司，没人逼你  另外一种是996违反劳动法，我们要维护自己的权益   先说下自己的看法，我会做996的工作，因为自己能力不够，因为自己没钱，因为自己没得选择， 但是我反对996的制度和文化，我不会赞同996的制度。 简单表达下对主流两种说法的态度： 支持第一种观点的主要是企业管理者和部分打工仔 这种观点明显是一种，你爱来不来，你不来有人来，中国不缺人。这根本就不是一种解决问题的态度，一种小孩子撒泼耍赖的态度。 996代表的是一种高负荷的工作强度，无数的研究告诉你，高负荷的工作带来的是低效的成果。 为什么明明知道这是一种低效的方法还不改正呢？ 因为改正的成本比不改正的成本高，为了追求更高的价值，肯定不改正。 其实个人认为大企业应该承担这种革新管理制度的责任，虽然国家经济发展越来越好，对全球经济发展贡献越来越多了，但是关于企业管理这块，咱们还很弱小，我们仍然不思进取，只会人海战术。 这也是一种企业应该承担起来的...</div></div></div></a><a class="pagination-related" href="/posts/38337747.html" title="HuPu商业化困境"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-20</div><div class="info-item-2">HuPu商业化困境</div></div><div class="info-2"><div class="info-item-1">虎扑的商业化困局用户体验一句话：取消发帖门槛后，垃圾贴、卖片贴丛生 数据 体育资讯排名对比  用户画像对比，都是直男额   百度指数 百度指数和Talkigdata的数据有些出入，两者对比，关注懂球帝的中年人更多   从数据看，虎扑现在是后有追兵，一家独大的地位受到了冲击，用户流失会不断增加 从定位来看，两者仍有不同，虎扑定位是Jrs社区，偏向UGC（用户分享内容），随着发帖权限的开放，内容质量越来越低，有逐渐脱离体育的本质，往日常生活社区发展，比如虎扑步行街的流量极大。 懂球帝定位是体育类深度资讯，从名字的“懂”就可以看出，偏向PGC（专业人士认识分享内容），从人群属性可以看到，懂球帝中年龄在30岁以上的用户较多，这部分年龄的人阅历更加丰富，更为专业。下面这个图更可以说明情况：  懂球号自媒体平台 最近也很明显感觉到虎扑上优质球评的帖子越来越少，撕逼贴越来越多 假以时日，失去了PGC江山的虎扑，定会在撕逼灌水社区中越走越远，历史证明这样的发展之路活不了，贴吧的没落就是很好的证据。 融资情况 2007年成立的虎扑，现在也已经12岁了，在2015年D轮融资后，开始着手IPO，但是无...</div></div></div></a><a class="pagination-related" href="/posts/4aa7e679.html" title="随想-新零售企业““智胜”未来"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-21</div><div class="info-item-2">随想-新零售企业““智胜”未来</div></div><div class="info-2"><div class="info-item-1">新零售企业“智胜”未来最近看到一篇蛮有趣的文章，新零售企业“智胜”未来 作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。   以下是全文（有删改）： 在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。 现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。 随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁...</div></div></div></a><a class="pagination-related" href="/posts/870b4fbc.html" title="关于手机厂商竞相推出折叠屏手机的思考"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-02-25</div><div class="info-item-2">关于手机厂商竞相推出折叠屏手机的思考</div></div><div class="info-2"><div class="info-item-1">前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。 去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。 [TOC] 1. 为什么厂商要竞相发布折叠屏手机？ 尽快的占领用户心智 现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。 全面屏手机，小米拔得头筹 折叠屏手机，三星、华为不遑多让 在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。  折叠屏是手机形态发展的下一个阶段，也有可能是终点 手机在经历全面屏的过渡期后，不可避免的要进入折叠屏 手机需要兼具通讯+上网两大功能 通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验 折叠屏即可大屏看视频、打游戏；又可小屏放兜里 对手机的复杂使用场景有着更好的兼容性   2. 2019年，折叠屏手机会占据主流市场？2019年，折叠屏手机应该还不会占据主流手机市场，不会是普罗大众的选择，还是土豪...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Darerd</div><div class="author-info-description">记录技术成长，分享个人经验</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">79</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的技术分享站！这里记录着我在前端和后端开发中的学习笔记与思考。</div></div><div class="card-widget heatmap-widget" id="blog-heatmap-card"><div class="item-headline"><i class="fas fa-calendar-alt"></i><span>博客热力图</span></div><div class="item-content"><div class="heatmap-container" style="display: flex; justify-content: center; padding: 10px 0;">
+  <canvas id="blog-heatmap" width="220" height="110"></canvas>
+</div>
+<div class="heatmap-legend" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-muted); padding: 0 10px;">
+  <span class="legend-label">少</span>
+  <div class="legend-cells" style="display: flex; gap: 2px;">
+    <span class="legend-cell" data-level="0" style="width: 10px; height: 10px; background-color: var(--heatmap-l0, #ebedf0); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="1" style="width: 10px; height: 10px; background-color: var(--heatmap-l1, #9be9a8); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="2" style="width: 10px; height: 10px; background-color: var(--heatmap-l2, #40c463); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="3" style="width: 10px; height: 10px; background-color: var(--heatmap-l3, #30a14e); border-radius: 2px;"></span>
+    <span class="legend-cell" data-level="4" style="width: 10px; height: 10px; background-color: var(--heatmap-l4, #216e39); border-radius: 2px;"></span>
+  </div>
+  <span class="legend-label">多</span>
+</div>
+<script defer src="/js/heatmap.js"></script>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E4%B8%8A%E7%98%BE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E8%99%8E%E6%89%91%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E4%B8%80%E6%AD%A5%E6%AD%A5%E4%B8%8A%E7%98%BE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">通过上瘾模型分析虎扑是怎么让你一步步上瘾的</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/26484047.html" title="为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到">为什么我开始做 GEO-Skill：GEO 优化让产品被 AI 采纳，被用户看到</a><time datetime="2026-05-30T08:30:00.000Z" title="发表于 2026-05-30 16:30:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/de66d2ff.html" title="Skill-Manage：多 Agent 时代的技能同步管理器">Skill-Manage：多 Agent 时代的技能同步管理器</a><time datetime="2026-05-30T08:20:00.000Z" title="发表于 2026-05-30 16:20:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/333612a1.html" title="VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架">VibeInvesTradingAgents：面向 A 股和基金的多 Agent 投研框架</a><time datetime="2026-05-30T08:10:00.000Z" title="发表于 2026-05-30 16:10:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dd0cd406.html" title="GetOfferSkill：用 AI 把求职流程从碎片化变成流水线">GetOfferSkill：用 AI 把求职流程从碎片化变成流水线</a><time datetime="2026-05-30T08:00:00.000Z" title="发表于 2026-05-30 16:00:00">2026-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ba9fdaa3.html" title="思考：为什么全网都在“养龙虾”？">思考：为什么全网都在“养龙虾”？</a><time datetime="2026-03-28T13:30:00.000Z" title="发表于 2026-03-28 21:30:00">2026-03-28</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Darerd</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div>
         <style>
             [bg-lazy] {
                 background-image: none !important;
