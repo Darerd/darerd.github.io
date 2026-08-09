@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>财富马拉松定位器</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Interactive demo</p>
+        <h1>财富马拉松定位器</h1>
+        <p class="hero-copy">先判断自己站在哪里，再决定下一公里怎么跑。输入收入、资产、负债和现金流，页面会实时给出阶段定位、风险边界和行动建议。</p>
+      </div>
+      <div class="hero-actions" aria-label="快速案例">
+        <button class="preset active" data-preset="starter">本金起步</button>
+        <button class="preset" data-preset="builder">资产积累</button>
+        <button class="preset" data-preset="earner">高收入低资产</button>
+        <button class="preset" data-preset="debt">负债压力</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <aside class="control-panel" aria-label="财务输入">
+        <div class="panel-head">
+          <h2>输入你的起点</h2>
+          <button id="resetBtn" type="button">重置</button>
+        </div>
+
+        <label class="field">
+          <span>年收入</span>
+          <strong><output id="incomeOut">30</output> 万</strong>
+          <input id="income" type="range" min="5" max="300" step="5" value="30">
+        </label>
+
+        <label class="field">
+          <span>可投资资产</span>
+          <strong><output id="assetsOut">50</output> 万</strong>
+          <input id="assets" type="range" min="0" max="3000" step="10" value="50">
+        </label>
+
+        <label class="field">
+          <span>总负债</span>
+          <strong><output id="debtOut">0</output> 万</strong>
+          <input id="debt" type="range" min="0" max="800" step="10" value="0">
+        </label>
+
+        <label class="field">
+          <span>年度偿债</span>
+          <strong><output id="debtPayOut">0</output> 万</strong>
+          <input id="debtPay" type="range" min="0" max="120" step="1" value="0">
+        </label>
+
+        <label class="field">
+          <span>年度生活支出</span>
+          <strong><output id="expenseOut">18</output> 万</strong>
+          <input id="expense" type="range" min="3" max="150" step="1" value="18">
+        </label>
+
+        <label class="field">
+          <span>长期预期收益率</span>
+          <strong><output id="returnOut">5</output>%</strong>
+          <input id="returnRate" type="range" min="1" max="10" step="0.5" value="5">
+        </label>
+      </aside>
+
+      <section class="dashboard" aria-live="polite">
+        <div class="status-strip">
+          <article>
+            <span>阶段定位</span>
+            <strong id="stageName">本金建立</strong>
+          </article>
+          <article>
+            <span>年度结余</span>
+            <strong id="surplus">12 万</strong>
+          </article>
+          <article>
+            <span>资产年收益</span>
+            <strong id="assetIncome">2.5 万</strong>
+          </article>
+          <article>
+            <span>自由覆盖率</span>
+            <strong id="freedomRatio">14%</strong>
+          </article>
+        </div>
+
+        <div class="main-grid">
+          <section class="map-card">
+            <div class="section-title">
+              <h2>个人投资地图</h2>
+              <span id="riskBadge">风险边界：稳健</span>
+            </div>
+            <div class="map-visual">
+              <div class="axis horizontal"><span>收入能力</span><span>资产规模</span></div>
+              <div class="axis vertical"><span>现金流安全</span><span>负债压力</span></div>
+              <div class="map-dot" id="mapDot">
+                <span id="dotLabel">你的位置</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="stage-card">
+            <div class="section-title">
+              <h2>下一公里</h2>
+              <span id="nextKm">提高收入，并留下钱</span>
+            </div>
+            <div class="projection-card">
+              <svg id="projectionChart" class="projection-chart" viewBox="0 0 620 340" role="img" aria-labelledby="projectionTitle projectionDesc">
+                <title id="projectionTitle">未来 20 年收支结构预测</title>
+                <desc id="projectionDesc">根据当前输入预测劳动收入、生活支出和资产收益曲线，并标记当前节点。</desc>
+              </svg>
+              <div class="chart-legend" aria-label="曲线说明">
+                <span><i class="legend-income"></i>劳动收入</span>
+                <span><i class="legend-expense"></i>生活支出</span>
+                <span><i class="legend-asset"></i>资产收益</span>
+                <span><i class="legend-dashed"></i>预测区间</span>
+              </div>
+            </div>
+            <p id="stageExplain" class="stage-explain">当前最重要的不是追热点，而是提高收入、控制支出，并稳定攒下第一桶本金。</p>
+          </section>
+        </div>
+
+        <section class="flow-card">
+          <div class="section-title">
+            <h2>财富飞轮</h2>
+            <span id="engineText">劳动收入仍是主引擎</span>
+          </div>
+          <div class="flow">
+            <div class="flow-node">
+              <b>收入</b>
+              <span id="flowIncome">30 万</span>
+            </div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node">
+              <b>结余</b>
+              <span id="flowSurplus">12 万</span>
+            </div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node">
+              <b>资产</b>
+              <span id="flowAssets">50 万</span>
+            </div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node">
+              <b>收益</b>
+              <span id="flowIncomeAsset">2.5 万</span>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span>偿债压力</span>
+            <div class="bar"><i id="debtBar"></i></div>
+            <strong id="debtPressure">0%</strong>
+          </div>
+          <div class="bar-row">
+            <span>现金流安全垫</span>
+            <div class="bar"><i id="safetyBar"></i></div>
+            <strong id="safetyRatio">40%</strong>
+          </div>
+        </section>
+
+        <section class="advice-card">
+          <h2>当前策略建议</h2>
+          <div id="adviceList" class="advice-list"></div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

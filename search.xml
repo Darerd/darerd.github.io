@@ -1,83 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
-    <url>/posts/4e00d906.html</url>
-    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
-
-
-Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
-/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-
-
-参考文档：Homebrew 国内镜像安装教程
-
-第二步：安装 Node.jsbrew install node
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
-第二步：安装 Node.js推荐使用 winget 安装最新版本：
-winget install -e --id OpenJS.NodeJS
-
-第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
-
-
-客户端选择安装完成后，有两种使用方式：
-
-
-
-方式
-工具
-特点
-
-
-
-CLI（命令行）
-CC Switch
-轻量，支持多 Agent 管理
-
-
-GUI（图形界面）
-Tokenicode
-轻量级图形界面，配合 CC Switch 做 Agent 管理
-
-
-推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
-
-总结
-
-
-平台
-核心依赖
-安装命令
-
-
-
-Mac
-Homebrew + Node.js
-国内镜像脚本
-
-
-Windows
-Git + Node.js
-winget + npm
-
-
-两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Claude Code</tag>
-        <tag>开发工具</tag>
-        <tag>Mac</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用网站导航</title>
     <url>/posts/87b27750.html</url>
     <content><![CDATA[网站汇总（不定时更新）😏0. 网站导航👉PMGEEK	👉阿猫阿狗导航	👉创造狮
@@ -218,51 +141,80 @@ AI 会进入面试官角色，连续追问，并在回答后给出即时反馈�
       </tags>
   </entry>
   <entry>
-    <title>LaTex:参考文献引用的方法</title>
-    <url>/posts/7fb4a513.html</url>
-    <content><![CDATA[LaTex排版时，引入参考文献的方法
-
-引入参考文献主要分为两种：
-
-不使用BibTex
-
-使用BibTex
+    <title>Claude Code 安装与使用指南（Mac &amp; Windows）</title>
+    <url>/posts/4e00d906.html</url>
+    <content><![CDATA[前言Claude Code 是 Anthropic 推出的 AI 编程助手 CLI 工具，本文介绍 Mac 和 Windows 两个平台的完整安装流程。
 
 
-这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
-
-利用BibTex的方法引入文献：
-分为以下四步：
-
-用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
-
-用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
-
-再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
-
-最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
+Mac 安装第一步：安装 HomebrewMac 推荐通过 Homebrew 来管理软件包。官方安装脚本在国内访问较慢，建议使用国内镜像源安装：
+/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
 
 
+参考文档：Homebrew 国内镜像安装教程
 
-如果你采用的是TexStudio作为编译器，具体的操作方法如下：
+第二步：安装 Node.jsbrew install node
 
-按F6编译写好的 .tex 文件
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
 
-按F8编译生成的 .aux 文件
 
-按F6编译写好的 .tex 文件
+Windows 安装第一步：安装 Git前往 git-scm.com 下载安装包，一路默认安装即可。
+第二步：安装 Node.js推荐使用 winget 安装最新版本：
+winget install -e --id OpenJS.NodeJS
 
-按F6编译写好的 .tex 文件
+第三步：安装 Claude Codenpm install -g @anthropic-ai/claude-code
+
+
+客户端选择安装完成后，有两种使用方式：
 
 
 
-以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
+方式
+工具
+特点
+
+
+
+CLI（命令行）
+CC Switch
+轻量，支持多 Agent 管理
+
+
+GUI（图形界面）
+Tokenicode
+轻量级图形界面，配合 CC Switch 做 Agent 管理
+
+
+推荐组合： Tokenicode + CC Switch，既有友好的图形界面，又能灵活管理多个 Agent。
+
+总结
+
+
+平台
+核心依赖
+安装命令
+
+
+
+Mac
+Homebrew + Node.js
+国内镜像脚本
+
+
+Windows
+Git + Node.js
+winget + npm
+
+
+两个平台最终都通过 npm install -g @anthropic-ai/claude-code 完成 Claude Code 的安装，步骤简洁，上手门槛低。
 ]]></content>
       <categories>
-        <category>产品经理学技术</category>
+        <category>技术分享</category>
       </categories>
       <tags>
-        <tag>LaTex</tag>
+        <tag>Claude Code</tag>
+        <tag>开发工具</tag>
+        <tag>Mac</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -380,63 +332,6 @@ nMask’s Blog
       </tags>
   </entry>
   <entry>
-    <title>Markdown:从0到1入门</title>
-    <url>/posts/2b83ed7f.html</url>
-    <content><![CDATA[**
-Markdown:从0到1入门**
-[TOC]
-
-写在前面的话：
-
-
-博主于2019年1月4号开始接触 Markdown语言，此前从未听说过；而且也非计算机背景。
-
-
-所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
-
-0.第零步
-
-认识 Markdown 语言：
-
-
-一篇详细的关于Markdown的介绍
-
-
-Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog
-
-1.第一步到这一步，我们知道Markdown是一种编译语言，算是HTML的一个子集，主要作用是让你专注于写作，“易读”、“易写”、“易记”。
-​	既然是一种语言，那就需要能够编辑它和翻译它的工具—Markdown编辑器
-​	我试了很多编辑器，如：小书匠、Bookpad、网易云笔记、简书，用来用去最后最爱的还是Typora。
-​	不过Typora和前面介绍的这些不太一样，它不支持左右分屏预览，而是所写及所得(卖个关子，用了你就清楚啦)。我不建议新手从Typora入手学Markdown，它的预览模式对新手很不友好；建议新手从网易云笔记或者简书的编辑器(线上编辑器，不需要下载软件，学习成本低)入手学习。
-
-到了这一步，你了解了Markdown语言，也知道需要编译工具，
-但是这里我必须要告诉你一个事实:markdown 没有统一的规范，每家编辑器都想实现特殊语法让自己的产品更好用，所以不同编译平台会有一篇不兼容
-
-一篇详细的介绍Markdown编辑器的帖子
-2. 第二步如果你看到这里，恭喜你，终于可以开始学Markdown语法了。
-这里就先推荐我自己写的一篇Markdown语法基本入门的帖子
-​	这里附上**#Typora编辑器基本编辑指南#**的md文件，供学习。
-下载地址
-种草几个不错的帖子：
-LaTex开源小屋
-帖子2
-
-网上有很多资源，自己取挖掘啦
-3. 第三步到了这一步，你应该已经用线上编译器做过一些练习和学习了，如果你还很兴趣，就可以下载一些编译器软件了，强烈推荐Typora
-Typora官网
-但是每一款编译器都有其优缺点，下面是一个关于Typora不足的讨论，可以看一下。偷偷告诉你，这个知乎问答的提问者就是我啊，可以点一下关注
-讨论的链接
-
-加油！坚持就是胜利！
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LaTex:从0到1入门</title>
     <url>/posts/6c815f3f.html</url>
     <content><![CDATA[
@@ -506,6 +401,63 @@ LaTeX 快速入门
       </categories>
       <tags>
         <tag>LaTex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown:从0到1入门</title>
+    <url>/posts/2b83ed7f.html</url>
+    <content><![CDATA[**
+Markdown:从0到1入门**
+[TOC]
+
+写在前面的话：
+
+
+博主于2019年1月4号开始接触 Markdown语言，此前从未听说过；而且也非计算机背景。
+
+
+所以本文非常适合新手&#x3D;&#x3D;从0到1入门&#x3D;&#x3D;
+
+0.第零步
+
+认识 Markdown 语言：
+
+
+一篇详细的关于Markdown的介绍
+
+
+Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog
+
+1.第一步到这一步，我们知道Markdown是一种编译语言，算是HTML的一个子集，主要作用是让你专注于写作，“易读”、“易写”、“易记”。
+​	既然是一种语言，那就需要能够编辑它和翻译它的工具—Markdown编辑器
+​	我试了很多编辑器，如：小书匠、Bookpad、网易云笔记、简书，用来用去最后最爱的还是Typora。
+​	不过Typora和前面介绍的这些不太一样，它不支持左右分屏预览，而是所写及所得(卖个关子，用了你就清楚啦)。我不建议新手从Typora入手学Markdown，它的预览模式对新手很不友好；建议新手从网易云笔记或者简书的编辑器(线上编辑器，不需要下载软件，学习成本低)入手学习。
+
+到了这一步，你了解了Markdown语言，也知道需要编译工具，
+但是这里我必须要告诉你一个事实:markdown 没有统一的规范，每家编辑器都想实现特殊语法让自己的产品更好用，所以不同编译平台会有一篇不兼容
+
+一篇详细的介绍Markdown编辑器的帖子
+2. 第二步如果你看到这里，恭喜你，终于可以开始学Markdown语法了。
+这里就先推荐我自己写的一篇Markdown语法基本入门的帖子
+​	这里附上**#Typora编辑器基本编辑指南#**的md文件，供学习。
+下载地址
+种草几个不错的帖子：
+LaTex开源小屋
+帖子2
+
+网上有很多资源，自己取挖掘啦
+3. 第三步到了这一步，你应该已经用线上编译器做过一些练习和学习了，如果你还很兴趣，就可以下载一些编译器软件了，强烈推荐Typora
+Typora官网
+但是每一款编译器都有其优缺点，下面是一个关于Typora不足的讨论，可以看一下。偷偷告诉你，这个知乎问答的提问者就是我啊，可以点一下关注
+讨论的链接
+
+加油！坚持就是胜利！
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -698,130 +650,51 @@ https://portal.qiniu.com/signup?code=3lnfyf7u5m5hu
       </tags>
   </entry>
   <entry>
-    <title>Markdown语法基本编辑指南</title>
-    <url>/posts/84a166a4.html</url>
-    <content><![CDATA[Markdown语法基本编辑指南
+    <title>LaTex:参考文献引用的方法</title>
+    <url>/posts/7fb4a513.html</url>
+    <content><![CDATA[LaTex排版时，引入参考文献的方法
 
+引入参考文献主要分为两种：
 
+不使用BibTex
 
-Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog
+使用BibTex
 
-本指南所用Markdown编辑器软件:Typora 0.9.60
 
-Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉使用。
+这里我们主要介绍更为复杂的第二种：使用BibTex引入参考文献
 
-Markdown语法
-突出显示
+利用BibTex的方法引入文献：
+分为以下四步：
 
-==我是高亮== （默认为黄色)`我是标记`
+用LaTex编译写好的 .tex 文件，这是会生成一个 .aux文件，这是告诉BibTex将使用那些引用
 
+用BibTex编译 .aux文件（有些仅编译 .bib文件，也可以）
 
+再次用LaTex编译 .tex 文件，这是文档已经插入了参考文献，但是引用的编号不对
 
-字体修饰
+最后在用LaTex编译一次 .tex文件，这是会自动生成正确的引用顺序（引用顺序是与在文章中引用文献的先后顺序有关）
 
-**加粗***斜体*&lt;u~~删除线~~
 
 
+如果你采用的是TexStudio作为编译器，具体的操作方法如下：
 
-自动编号
+按F6编译写好的 .tex 文件
 
-[TOC]
+按F8编译生成的 .aux 文件
 
+按F6编译写好的 .tex 文件
 
+按F6编译写好的 .tex 文件
 
-硬换行符
 
-&lt;brshift+enter双击space键，右侧会出现一个灰色的向下箭头
 
-
-
-字体颜色、字号、大小
-
-&lt;font&lt;font&lt;font&lt;font
-
-
-
-上下标
-
-H^2^H~2~O
-
-
-
-插入表情
-
-:happy:
-
-
-
-引用
-
-&gt;
-
-
-
-水平分割线
-
----***
-
-
-
-数学表达式
-
-使用$右键&gt;插入&gt;公式
-
-
-
-标注
-
-这是一个注释[^注释][^注释]： 这是一个注释
-
-
-
-插入图片(默认为 居中)
-
-右键&gt;插入&gt;图像可以直接从“剪贴板”复制过来
-
-
-
-调整图片尺寸
-
-&lt;img&lt;img
-
-
-
-插入视频
-
-将视频文件拖放到Typora中，Typora会自动插入视频
-
-
-HTML常用语法
-居中
-
-&lt;center
-
-
-
-高亮（默认为黄色）
-
-&lt;mark
-
-
-
-字体修饰
-
-&lt;b&lt;i&lt;u&lt;s
-
-
-
-上下标
-
-&lt; SUP&lt; SUB
+以上就是使用LaTex排版时，遇到的引入参考文献的解决方法
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
+        <tag>LaTex</tag>
       </tags>
   </entry>
   <entry>
@@ -964,6 +837,133 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
       <tags>
         <tag>Python</tag>
         <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown语法基本编辑指南</title>
+    <url>/posts/84a166a4.html</url>
+    <content><![CDATA[Markdown语法基本编辑指南
+
+
+
+Markdown语言侧重于内容编写，而不是排版，主要用于写 Blog
+
+本指南所用Markdown编辑器软件:Typora 0.9.60
+
+Typora 0.9.60 版本支持HTML和Markdown两种语言，但是两者不可交叉使用。
+
+Markdown语法
+突出显示
+
+==我是高亮== （默认为黄色)`我是标记`
+
+
+
+字体修饰
+
+**加粗***斜体*&lt;u~~删除线~~
+
+
+
+自动编号
+
+[TOC]
+
+
+
+硬换行符
+
+&lt;brshift+enter双击space键，右侧会出现一个灰色的向下箭头
+
+
+
+字体颜色、字号、大小
+
+&lt;font&lt;font&lt;font&lt;font
+
+
+
+上下标
+
+H^2^H~2~O
+
+
+
+插入表情
+
+:happy:
+
+
+
+引用
+
+&gt;
+
+
+
+水平分割线
+
+---***
+
+
+
+数学表达式
+
+使用$右键&gt;插入&gt;公式
+
+
+
+标注
+
+这是一个注释[^注释][^注释]： 这是一个注释
+
+
+
+插入图片(默认为 居中)
+
+右键&gt;插入&gt;图像可以直接从“剪贴板”复制过来
+
+
+
+调整图片尺寸
+
+&lt;img&lt;img
+
+
+
+插入视频
+
+将视频文件拖放到Typora中，Typora会自动插入视频
+
+
+HTML常用语法
+居中
+
+&lt;center
+
+
+
+高亮（默认为黄色）
+
+&lt;mark
+
+
+
+字体修饰
+
+&lt;b&lt;i&lt;u&lt;s
+
+
+
+上下标
+
+&lt; SUP&lt; SUB
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -1265,105 +1265,6 @@ Python 函数返回值return ，函数中一定要有return 返回值才是完�
       </tags>
   </entry>
   <entry>
-    <title>Test14-布尔表达式练习</title>
-    <url>/posts/51c64dbf.html</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-这节我们主要做“布尔逻辑表达式”（boolean logic expression）的练习
-[TOC]
-源代码# ex28.py##逻辑语句TrueFalse1&quot;test&quot;1TrueFalseTrue&quot;test&quot;&quot;test&quot;1&quot;test&quot;&quot;test&quot;notnotnotnotnot1&quot;chunky&quot;3
-
-
-应该看到的结果这里我只摘抄了以上部分布尔表达式，每一种表达式写法都类似
-
-这一块的知识，在高中时应该学过这里的逻辑问题
-这里只列出最简单的逻辑关系
-
-常见问题为什么“test” and “test”返回“test”,  1 and 1返回1， 而不是返回True呢？
-Python 和许多语言一样，都是返回两个被操作对象中的一个，而非它们的布尔表达式True或False。这意味着，如果你写了False and 1，得到的第一个操作数（False），而非第二个操作数（1）。
-
-
-
-这是**《笨方法学Python》**的第十四篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test15-if和else语言</title>
-    <url>/posts/24ac7f24.html</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节主要学习程序学习中都会学习的if和else语言，运用和理解起来也是非常简单
-[TOC]
-源代码# ex30.pypeople=30cars=40buses=15if	printelif	printelse	printif	printelif	printelse	printif	printelse	print
-
-
-应该看到的结果
-本节需要注意的事
-如果多个elif块都是True，Python会如何处理？
-
-Python只会运行它遇到的是True的第一个块，所以只有第一个为True的块会运行。
-
-if和elif的区别
-
-如果程序中判断事件很多，全部用if的话，会遍历整个程序，用elif 程序运行时，只要if或后续某一个elif之一满足逻辑值为True，则程序执行完对应输出语句后自动结束该轮if-elif（即不会再去冗余地执行后续的elif或else）
-示例如下：
-#encoding=utf-8a=88if    printif    printif    printelse    print print if    printelif    printelif    printelse    print
-
-
-以上指令的执行结果如下：
-正好88良好* 正好88
-
-
-
-if、elif和else语句注意一下两点：
-
-
-else、elif为子块，不能独立使用
-
-一个if语句中可以包含多个elif语句，但是结尾只能有一个else语句
-
-
-
-
-
-这是**《笨方法学Python》**的第十五篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Test13-用函数写一个简单的模块</title>
     <url>/posts/7baaa030.html</url>
     <content><![CDATA[
@@ -1456,64 +1357,49 @@ aList = [123print# 参数 -1  指向的是 abcprint# 参数 0  指向的是 123p
       </tags>
   </entry>
   <entry>
-    <title>Test17-for循环</title>
-    <url>/posts/807e9b41.html</url>
+    <title>Test15-if和else语言</title>
+    <url>/posts/24ac7f24.html</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-本节主要学习for循环语句和如何创建一个列表
+本节主要学习程序学习中都会学习的if和else语言，运用和理解起来也是非常简单
 [TOC]
-源代码# ex32.pythe_count=[1fruits=[&#x27;apples&#x27;change=[1#this first kind of for-loop goes through a listfor	print	#same as abovefor	print	#also we can go through mixed lists too#notice we have to use %r since we don&#x27;t know what&#x27;s in itfor	print	#we can also build lists,first start with an empty oneelements=[]#then use the range function to do 0 to 5 countsfor	print	#append is a function that lists understand	elements.append(i)	#now we can print them out toofor	print
+源代码# ex30.pypeople=30cars=40buses=15if	printelif	printelse	printif	printelif	printelse	printif	printelse	print
 
 
-应该看的结果
-这里需要注意的一点：
-注意%r和%s输出结果的不同
-这个知识点，前面有介绍过
-本节需要学习的知识
-range()指令
+应该看到的结果
+本节需要注意的事
+如果多个elif块都是True，Python会如何处理？
 
-range() 函数可创建一个整数列表，一般用在 for 循环中
-标准语法
-range(start, stop[, step])
+Python只会运行它遇到的是True的第一个块，所以只有第一个为True的块会运行。
 
+if和elif的区别
 
-参数说明
-
-start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0,5）;
-
-stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5
-
-step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)
+如果程序中判断事件很多，全部用if的话，会遍历整个程序，用elif 程序运行时，只要if或后续某一个elif之一满足逻辑值为True，则程序执行完对应输出语句后自动结束该轮if-elif（即不会再去冗余地执行后续的elif或else）
+示例如下：
+#encoding=utf-8a=88if    printif    printif    printelse    print print if    printelif    printelif    printelse    print
 
 
-示例
-&gt;&gt;&gt;range(10[0&gt;&gt;&gt; [1&gt;&gt;&gt; [0&gt;&gt;&gt; [0&gt;&gt;&gt; [0&gt;&gt;&gt; []&gt;&gt;&gt; []
+以上指令的执行结果如下：
+正好88良好* 正好88
 
 
 
-append()指令
-
-append() 方法用于在列表末尾添加新的对象。
-标准语法
-list.append(obj)
+if、elif和else语句注意一下两点：
 
 
-参数说明
+else、elif为子块，不能独立使用
 
-obj – 添加到列表末尾的对象。
-
-
-如何创建二维列表
-
-就是在列表中包含列表，如[[1,2,3],[4,5,6]]
+一个if语句中可以包含多个elif语句，但是结尾只能有一个else语句
 
 
 
-这是**《笨方法学Python》**的第十七篇文章
+
+
+这是**《笨方法学Python》**的第十五篇文章
 
 
 希望自己可以坚持下去
@@ -1617,57 +1503,36 @@ i=0numbers=[]def	global	while		numbers.append(i)		i=i+1	return	new_number=while_
       </tags>
   </entry>
   <entry>
-    <title>Test2_数字和数学计算</title>
-    <url>/posts/ebab8055.html</url>
+    <title>Test14-布尔表达式练习</title>
+    <url>/posts/51c64dbf.html</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-文章主要分为三个部分：
-
-原文—摘录至《笨方法学Python》第三版
-
-学习中遇到的问题
-
-附加练习
+这节我们主要做“布尔逻辑表达式”（boolean logic expression）的练习
+[TOC]
+源代码# ex28.py##逻辑语句TrueFalse1&quot;test&quot;1TrueFalseTrue&quot;test&quot;&quot;test&quot;1&quot;test&quot;&quot;test&quot;notnotnotnotnot1&quot;chunky&quot;3
 
 
-原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
+应该看到的结果这里我只摘抄了以上部分布尔表达式，每一种表达式写法都类似
 
+这一块的知识，在高中时应该学过这里的逻辑问题
+这里只列出最简单的逻辑关系
 
-遇到的问题
-利用Python做四则运算非常简单，但是除法运算略有一些复杂
-
-例如：
-print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
+常见问题为什么“test” and “test”返回“test”,  1 and 1返回1， 而不是返回True呢？
+Python 和许多语言一样，都是返回两个被操作对象中的一个，而非它们的布尔表达式True或False。这意味着，如果你写了False and 1，得到的第一个操作数（False），而非第二个操作数（1）。
 
 
 
-为了解决以上除法运算时出现的问题，我们需要理解浮点数
-
-2.0print# 输出结果是2.75
+这是**《笨方法学Python》**的第十四篇文章
 
 
-
-可以使用小括号强制计算的先后顺序
-
-布尔值也是基本数据类型
+希望自己可以坚持下去
 
 
-比较运算的结果直接输出布尔值（True or False）
-print# 输出结果是False
-
-
-附加练习以下摘录自原文
-
-每一行的代码用#写注释，说明一些这一行的作用
-
-使用浮点数重新写一下ex3.py
-
-
-
+希望你也可以坚持下去
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -1744,191 +1609,70 @@ base – 进制数，默认十进制。
       </tags>
   </entry>
   <entry>
-    <title>Test22-Python中字典、模块等的知识入门</title>
-    <url>/posts/c55b7258.html</url>
+    <title>Test17-for循环</title>
+    <url>/posts/807e9b41.html</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
 
 的学习思路和理解，如有不如之处，望指出！！！
 
-上一期，我们学期了字典(dictionary)这个知识
-因为后面要学习面向对象的编程：OOP，为了更好的学习和理解OOP的知识
-这一期，先学习下字典和模块的知识
+本节主要学习for循环语句和如何创建一个列表
 [TOC]
-字典(dictionary)字典是一种可变容器模型，且可存储任意类型对象。
-字典的每个键值 key&#x3D;&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：
-d = &#123;key1 : value1, key2 : value2 &#125;
+源代码# ex32.pythe_count=[1fruits=[&#x27;apples&#x27;change=[1#this first kind of for-loop goes through a listfor	print	#same as abovefor	print	#also we can go through mixed lists too#notice we have to use %r since we don&#x27;t know what&#x27;s in itfor	print	#we can also build lists,first start with an empty oneelements=[]#then use the range function to do 0 to 5 countsfor	print	#append is a function that lists understand	elements.append(i)	#now we can print them out toofor	print
 
 
-键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一
-键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
-&gt;&gt;&gt;dict = &#123;&#x27;a&#x27;&gt;&gt;&gt; &#x27;3&#x27;&gt;&gt;&gt; &#123;&#x27;a&#x27;
+应该看的结果
+这里需要注意的一点：
+注意%r和%s输出结果的不同
+这个知识点，前面有介绍过
+本节需要学习的知识
+range()指令
+
+range() 函数可创建一个整数列表，一般用在 for 循环中
+标准语法
+range(start, stop[, step])
 
 
-值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组
+参数说明
 
+start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0,5）;
 
-谈一下我的理解，不一定正确
+stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5
 
+step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)
 
-上面所说的键，也就是key。要求其是唯一的，不可重复
-
-很想软件注册时的用户名，要求不能和他人重复，且一般只能用数字、字母和下划线注册
-
-
-这样理解虽然不准确，可能会易懂一些
 
 示例
-dict = &#123;&#x27;Name&#x27; printprint###输出结果dict[&#x27;Name&#x27;dict[&#x27;Age&#x27;
-
-
-修改字典的内容
-向字典添加新内容的方法是增加新的键&#x2F;值对，修改或删除已有键&#x2F;值对
-示例
-dict = &#123;&#x27;Name&#x27; dict[&#x27;Age&#x27;dict[&#x27;School&#x27; printprint###输出结果dict[&#x27;Age&#x27;dict[&#x27;School&#x27;
-
-
-删除字典元素
-能删单一的元素也能清空字典，清空只需一项操作
-示例
-dict = &#123;&#x27;Name&#x27; deldict.clear()      # 清空词典所有条目del printprint
-
-
-模块Python 模块(Module)，是一个 Python 文件，以 .py结尾，包含了 Python 对象定义和Python语句。
-模块让你能够有逻辑地组织你的 Python 代码段。
-把相关的代码分配到一个模块里能让你的代码更好用，更易懂。
-模块能定义函数，类和变量，模块里也能包含可执行的代码。
-模块的引入用import语句
-import
-
-
-比如要引用模块 math，就可以在文件最开始的地方用 import math 来引入。在调用 math 模块中的函数时，必须这样引用：
-模块名.函数名
+&gt;&gt;&gt;range(10[0&gt;&gt;&gt; [1&gt;&gt;&gt; [0&gt;&gt;&gt; [0&gt;&gt;&gt; [0&gt;&gt;&gt; []&gt;&gt;&gt; []
 
 
 
+append()指令
+
+append() 方法用于在列表末尾添加新的对象。
+标准语法
+list.append(obj)
 
 
-这是**《笨方法学Python》**的第二十二篇文章
+参数说明
+
+obj – 添加到列表末尾的对象。
+
+
+如何创建二维列表
+
+就是在列表中包含列表，如[[1,2,3],[4,5,6]]
+
+
+
+这是**《笨方法学Python》**的第十七篇文章
 
 
 希望自己可以坚持下去
 
 
 希望你也可以坚持下去
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Test23-学习面向对象术语</title>
-    <url>/posts/2892ac0c.html</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-本节学习面向对象术语
-[TOC]
-单词练习
-类（class）：告诉python创建新类型的东西
-
-对象（object）：两个意思，即最基本的东西，或者某个东西的实例
-
-实例（instance）：让python创建一个时得到的东西
-
-def：创建函数
-
-self：在类的函数中，self指代被访问的对象或者实例的一个变量
-
-继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似
-
-组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系
-
-属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量
-
-是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）
-
-有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）
-
-
-语汇练习
-class X(Y)：创建一个叫X的类，它是Y的一种
-
-class X(object):def_init_(self,J)：类X有一个_init_接收self和J作为参数
-
-class X(object):def M(self,J)：类X有一个函数名称为M，它接收self和J作为参数
-
-foo=X():将foo设为类X的一个实例
-
-foo.M(J):从foo中找到M函数，并使用self和J参数调用它
-
-foo.K=Q：从foo中获取K属性，并将其设为Q
-
-
-每一条中，你看到X、Y、M、J、K、Q及foo的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样
-
-创建一个叫???的类，它是Y的一种
-
-类???有一个_init_，能接收self和???作为参数
-
-类???有一个函数名称为???，可以接收self和???作为参数
-
-将foo设为class ???的一个实例
-
-从foo中找到???函数，并使用self和???参数调用它
-
-从foo中获取???属性，并将其设为???
-
-
-源代码# ex41.pyimportfromimportWORD_URL=&quot;http://learncodethehardway.org/words.txt&quot;WORDS=[]PHRASES=&#123;    &quot;class %%%(%%%):&quot;     &quot;Make a class named %%% that is-a %%%.&quot;    &quot;class %%%(object):\n\tdef _init_(self,***)&quot;     &quot;class %%% has-a _init_ that takes self and *** parameters.&quot;    &quot;class %%%(object):\n\tdef ***(self, @@@)&quot;     &quot;class %%% has-a function named *** that takes self and @@@ parameters.&quot;    &quot;***=%%%()&quot;     &quot;Set *** to an instance of class %%%.&quot;    &quot;***.***(@@@)&quot;     &quot;From *** get the *** function, and call it with parameters self,@@@.&quot;    &quot;***.***=&#x27;***&#x27;&quot;     &quot;From *** get the *** attribute and set it to &#x27;***&#x27;.&quot;    &#125;    # do they want to drill phrases firstPHRASES_FIRST=Falseif    PHRASES_FIRST=True# load up the words from the websitefor    WORDS.append(word.strip())    def    class_names=[w.capitalize() for                random.sample(WORDS,snippet.count(&quot;%%%&quot;    other_names=random.sample(WORDS,snippet.count(&quot;***&quot;    results=[]    param_names=[]        for        param_count=random.randint(1        param_names.append(&#x27;,&#x27;            for        result=sentence[:]                # fake class names        for            result=result.replace(&quot;%%%&quot;        # fake other names        for            result=result.replace(&quot;***&quot;        # fake parameter lists        for            result=result.replace(&quot;@@@&quot;                results.append(result)    return    # keep going until they hit CTRL-Dtry    while        snippets=PHRASES.keys()        random.shuffle(snippets)                for            phrase=PHRASES[snippet]            question,answer=convert(snippet,phrase)            if                question,answer=answer,question                            print                        raw_input(&quot;&gt; &quot;            printexcept    print
-
-
-应该看到的结果
-代码解释
-
-目前能力不够，不能完全解释和理解每一段代码的作用
-
-
-下面仅介绍部分需要注意的知识
-
-Python异常处理
-
-最后一段用try/except语句来检测异常
-语法：
-try&lt;语句&gt;        #运行别的代码except&lt;语句&gt;        #如果在try部份引发了&#x27;name&#x27;异常except&lt;语句&gt;        #如果引发了&#x27;name&#x27;异常，获得附加的数据else&lt;语句&gt;        #如果没有异常发生
-
-
-try的工作原理是，当开始一个try语句后，python就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，try子句先执行，接下来会发生什么依赖于执行时是否出现异常。
-
-如果当try后的语句执行时发生异常，python就跳回到try并执行第一个匹配该异常的except子句，异常处理完毕，控制流就通过整个try语句（除非在处理异常时又引发新的异常）。
-
-如果在try后的语句里发生了异常，却没有匹配的except子句，异常将被递交到上层的try，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。
-
-如果在try子句执行时没有发生异常，python将执行else语句后的语句（如果有else的话），然后控制流通过整个try语句。
-
-
-更多关于Python异常处理的资料
-
-
-
-这是**《笨方法学Python》**的第二十三篇文章
-
-
-希望自己可以坚持下去
-
-
-希望你也可以坚持下去
-
-
-后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -2060,6 +1804,150 @@ Python将其成为“字典”，有的语言里它的名称是“散列”。
       </tags>
   </entry>
   <entry>
+    <title>Test2_数字和数学计算</title>
+    <url>/posts/ebab8055.html</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+文章主要分为三个部分：
+
+原文—摘录至《笨方法学Python》第三版
+
+学习中遇到的问题
+
+附加练习
+
+
+原文—摘录至《笨方法学Python》第三版printprintprintprintprintprintprintprintprintprintprintprintprint
+
+
+遇到的问题
+利用Python做四则运算非常简单，但是除法运算略有一些复杂
+
+例如：
+print# 输出结果是整数2# 对于整数除法来说，输出结果会自动(四舍五入)取整
+
+
+
+为了解决以上除法运算时出现的问题，我们需要理解浮点数
+
+2.0print# 输出结果是2.75
+
+
+
+可以使用小括号强制计算的先后顺序
+
+布尔值也是基本数据类型
+
+
+比较运算的结果直接输出布尔值（True or False）
+print# 输出结果是False
+
+
+附加练习以下摘录自原文
+
+每一行的代码用#写注释，说明一些这一行的作用
+
+使用浮点数重新写一下ex3.py
+
+
+
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test22-Python中字典、模块等的知识入门</title>
+    <url>/posts/c55b7258.html</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+上一期，我们学期了字典(dictionary)这个知识
+因为后面要学习面向对象的编程：OOP，为了更好的学习和理解OOP的知识
+这一期，先学习下字典和模块的知识
+[TOC]
+字典(dictionary)字典是一种可变容器模型，且可存储任意类型对象。
+字典的每个键值 key&#x3D;&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：
+d = &#123;key1 : value1, key2 : value2 &#125;
+
+
+键一般是唯一的，如果重复最后的一个键值对会替换前面的，值不需要唯一
+键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
+&gt;&gt;&gt;dict = &#123;&#x27;a&#x27;&gt;&gt;&gt; &#x27;3&#x27;&gt;&gt;&gt; &#123;&#x27;a&#x27;
+
+
+值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组
+
+
+谈一下我的理解，不一定正确
+
+
+上面所说的键，也就是key。要求其是唯一的，不可重复
+
+很想软件注册时的用户名，要求不能和他人重复，且一般只能用数字、字母和下划线注册
+
+
+这样理解虽然不准确，可能会易懂一些
+
+示例
+dict = &#123;&#x27;Name&#x27; printprint###输出结果dict[&#x27;Name&#x27;dict[&#x27;Age&#x27;
+
+
+修改字典的内容
+向字典添加新内容的方法是增加新的键&#x2F;值对，修改或删除已有键&#x2F;值对
+示例
+dict = &#123;&#x27;Name&#x27; dict[&#x27;Age&#x27;dict[&#x27;School&#x27; printprint###输出结果dict[&#x27;Age&#x27;dict[&#x27;School&#x27;
+
+
+删除字典元素
+能删单一的元素也能清空字典，清空只需一项操作
+示例
+dict = &#123;&#x27;Name&#x27; deldict.clear()      # 清空词典所有条目del printprint
+
+
+模块Python 模块(Module)，是一个 Python 文件，以 .py结尾，包含了 Python 对象定义和Python语句。
+模块让你能够有逻辑地组织你的 Python 代码段。
+把相关的代码分配到一个模块里能让你的代码更好用，更易懂。
+模块能定义函数，类和变量，模块里也能包含可执行的代码。
+模块的引入用import语句
+import
+
+
+比如要引用模块 math，就可以在文件最开始的地方用 import math 来引入。在调用 math 模块中的函数时，必须这样引用：
+模块名.函数名
+
+
+
+
+
+这是**《笨方法学Python》**的第二十二篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Test3_变量和命名</title>
     <url>/posts/bf8e4c99.html</url>
     <content><![CDATA[
@@ -2117,8 +2005,120 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
       </tags>
   </entry>
   <entry>
-    <title>Test4_字符串练习</title>
-    <url>/posts/3a25ae42.html</url>
+    <title>Test23-学习面向对象术语</title>
+    <url>/posts/2892ac0c.html</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+本节学习面向对象术语
+[TOC]
+单词练习
+类（class）：告诉python创建新类型的东西
+
+对象（object）：两个意思，即最基本的东西，或者某个东西的实例
+
+实例（instance）：让python创建一个时得到的东西
+
+def：创建函数
+
+self：在类的函数中，self指代被访问的对象或者实例的一个变量
+
+继承（inheritance）：指一个类可以继承另一个类的特性，和父子关系类似
+
+组合（composition）：指一个类可以将别的类作为它的部件构建起来，有点像车子和车轮的关系
+
+属性（attribute）：类的一个属性，它来自于组合，而且通常是一个变量
+
+是什么（is-a）：用来描述继承关系，如Salmon is-a Fish（鲑鱼是一种鱼）
+
+有什么（has-a）：用来描述某个东西是由另外一些东西组成的，或者某个东西有某个特征，如Salmon has-a mouth（鲑鱼有一张嘴）
+
+
+语汇练习
+class X(Y)：创建一个叫X的类，它是Y的一种
+
+class X(object):def_init_(self,J)：类X有一个_init_接收self和J作为参数
+
+class X(object):def M(self,J)：类X有一个函数名称为M，它接收self和J作为参数
+
+foo=X():将foo设为类X的一个实例
+
+foo.M(J):从foo中找到M函数，并使用self和J参数调用它
+
+foo.K=Q：从foo中获取K属性，并将其设为Q
+
+
+每一条中，你看到X、Y、M、J、K、Q及foo的地方，都可以将它们当作空白点来对待。例如，可以将句子写成下面这样
+
+创建一个叫???的类，它是Y的一种
+
+类???有一个_init_，能接收self和???作为参数
+
+类???有一个函数名称为???，可以接收self和???作为参数
+
+将foo设为class ???的一个实例
+
+从foo中找到???函数，并使用self和???参数调用它
+
+从foo中获取???属性，并将其设为???
+
+
+源代码# ex41.pyimportfromimportWORD_URL=&quot;http://learncodethehardway.org/words.txt&quot;WORDS=[]PHRASES=&#123;    &quot;class %%%(%%%):&quot;     &quot;Make a class named %%% that is-a %%%.&quot;    &quot;class %%%(object):\n\tdef _init_(self,***)&quot;     &quot;class %%% has-a _init_ that takes self and *** parameters.&quot;    &quot;class %%%(object):\n\tdef ***(self, @@@)&quot;     &quot;class %%% has-a function named *** that takes self and @@@ parameters.&quot;    &quot;***=%%%()&quot;     &quot;Set *** to an instance of class %%%.&quot;    &quot;***.***(@@@)&quot;     &quot;From *** get the *** function, and call it with parameters self,@@@.&quot;    &quot;***.***=&#x27;***&#x27;&quot;     &quot;From *** get the *** attribute and set it to &#x27;***&#x27;.&quot;    &#125;    # do they want to drill phrases firstPHRASES_FIRST=Falseif    PHRASES_FIRST=True# load up the words from the websitefor    WORDS.append(word.strip())    def    class_names=[w.capitalize() for                random.sample(WORDS,snippet.count(&quot;%%%&quot;    other_names=random.sample(WORDS,snippet.count(&quot;***&quot;    results=[]    param_names=[]        for        param_count=random.randint(1        param_names.append(&#x27;,&#x27;            for        result=sentence[:]                # fake class names        for            result=result.replace(&quot;%%%&quot;        # fake other names        for            result=result.replace(&quot;***&quot;        # fake parameter lists        for            result=result.replace(&quot;@@@&quot;                results.append(result)    return    # keep going until they hit CTRL-Dtry    while        snippets=PHRASES.keys()        random.shuffle(snippets)                for            phrase=PHRASES[snippet]            question,answer=convert(snippet,phrase)            if                question,answer=answer,question                            print                        raw_input(&quot;&gt; &quot;            printexcept    print
+
+
+应该看到的结果
+代码解释
+
+目前能力不够，不能完全解释和理解每一段代码的作用
+
+
+下面仅介绍部分需要注意的知识
+
+Python异常处理
+
+最后一段用try/except语句来检测异常
+语法：
+try&lt;语句&gt;        #运行别的代码except&lt;语句&gt;        #如果在try部份引发了&#x27;name&#x27;异常except&lt;语句&gt;        #如果引发了&#x27;name&#x27;异常，获得附加的数据else&lt;语句&gt;        #如果没有异常发生
+
+
+try的工作原理是，当开始一个try语句后，python就在当前程序的上下文中作标记，这样当异常出现时就可以回到这里，try子句先执行，接下来会发生什么依赖于执行时是否出现异常。
+
+如果当try后的语句执行时发生异常，python就跳回到try并执行第一个匹配该异常的except子句，异常处理完毕，控制流就通过整个try语句（除非在处理异常时又引发新的异常）。
+
+如果在try后的语句里发生了异常，却没有匹配的except子句，异常将被递交到上层的try，或者到程序的最上层（这样将结束程序，并打印缺省的出错信息）。
+
+如果在try子句执行时没有发生异常，python将执行else语句后的语句（如果有else的话），然后控制流通过整个try语句。
+
+
+更多关于Python异常处理的资料
+
+
+
+这是**《笨方法学Python》**的第二十三篇文章
+
+
+希望自己可以坚持下去
+
+
+希望你也可以坚持下去
+
+
+后面的内容多为《笨方法学Python》的实战了，更新会变慢了，也更难理解了
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test5_更多字符串练习</title>
+    <url>/posts/1564781b.html</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
@@ -2136,24 +2136,28 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 附加练习
 
 
-原文—摘录至《笨方法学Python》第三版&amp;# ex6.pyx=&quot;There are %d types of people.&quot;binary=&quot;binary&quot;do_not=&quot;don&#x27;t&quot;y=&quot;Those who know %s and those who %s.&quot;printprintprintprinthilarious=Falsejoke_evaluation=&quot;Isn&#x27;t that joke so funny?! %r &quot;printw=&quot;This is the left side of ...&quot;e=&quot;a sting with a right side.&quot;print# ex8.pyfomatter=&quot;%r %r %r %r&quot;printprintprintprintprint	&quot;I had this thing.&quot;	&quot;That you could type up right.&quot;	&quot;But it didn&#x27;t sing.&quot;	&quot;So I said goodnight.&quot;	)
+原文—摘录至《笨方法学Python》第三版、 &amp;# ex10.pytabby_cat=&quot;\t I&#x27;m tabbed in.&quot;persian_cat=&quot;I&#x27;m split \n on line. &quot;backslash_cat=&quot;I&#x27;m \\ a \\ cat.&quot;fat_cat= &quot;&quot;&quot;I&#x27;ll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass&quot;&quot;&quot;printprintprintprint# ex11.pyprintage=raw_input()printheight=raw_input()printweight=raw_input()print#ex12.pyage=raw_input(&quot;How old are you? &quot;height=raw_input(&quot;How tall are you? &quot;weight=raw_input(&quot;How much do you weigh? &quot;print
 
 
-遇到的问题
-ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号
-python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
+需要注意的几个地方
+python中 \t 的效果，类似于在word写作中，tab键起到的作用；
+\n 的效果，类似于在word写作中，enter 键起到的作用；
 
-True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。
+在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。
 
-%r的作用
-%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
+python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。
 
 
 附加练习以下摘录自原文
 
-每一行加一段注释
+下面是python支持的转义序列
 
-最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？
+\\					# 反斜杠（\）\&#x27;					# 单引号\&quot;					# 双引号\a            		# ASCII 响铃符\b					# ASCII 退格符\f 					# ASCII 进纸符\r					# ASCII 回车符\uxxxx				# 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx			# 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v					# ASCII 垂直制表符
+
+
+Python 的raw_input实现的是什么功能？以及其他用法
+
+input()和raw_input()有何不同？
 
 
 ]]></content>
@@ -2235,8 +2239,8 @@ argv就是所谓的”参数变量“（argument variable），这个变量保�
       </tags>
   </entry>
   <entry>
-    <title>Test5_更多字符串练习</title>
-    <url>/posts/1564781b.html</url>
+    <title>Test4_字符串练习</title>
+    <url>/posts/3a25ae42.html</url>
     <content><![CDATA[
 
 Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
@@ -2254,28 +2258,24 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 附加练习
 
 
-原文—摘录至《笨方法学Python》第三版、 &amp;# ex10.pytabby_cat=&quot;\t I&#x27;m tabbed in.&quot;persian_cat=&quot;I&#x27;m split \n on line. &quot;backslash_cat=&quot;I&#x27;m \\ a \\ cat.&quot;fat_cat= &quot;&quot;&quot;I&#x27;ll do a list:\t * Cat foog\t * Fishies\t * Catnip \n \t *Grass&quot;&quot;&quot;printprintprintprint# ex11.pyprintage=raw_input()printheight=raw_input()printweight=raw_input()print#ex12.pyage=raw_input(&quot;How old are you? &quot;height=raw_input(&quot;How tall are you? &quot;weight=raw_input(&quot;How much do you weigh? &quot;print
+原文—摘录至《笨方法学Python》第三版&amp;# ex6.pyx=&quot;There are %d types of people.&quot;binary=&quot;binary&quot;do_not=&quot;don&#x27;t&quot;y=&quot;Those who know %s and those who %s.&quot;printprintprintprinthilarious=Falsejoke_evaluation=&quot;Isn&#x27;t that joke so funny?! %r &quot;printw=&quot;This is the left side of ...&quot;e=&quot;a sting with a right side.&quot;print# ex8.pyfomatter=&quot;%r %r %r %r&quot;printprintprintprintprint	&quot;I had this thing.&quot;	&quot;That you could type up right.&quot;	&quot;But it didn&#x27;t sing.&quot;	&quot;So I said goodnight.&quot;	)
 
 
-需要注意的几个地方
-python中 \t 的效果，类似于在word写作中，tab键起到的作用；
-\n 的效果，类似于在word写作中，enter 键起到的作用；
+遇到的问题
+ex8.py 的代码中 %r打印出来的是单引号，但是实际上用的双引号
+python会用最有效的方式打印出字符串，而不是完全按照你写的方式来打印。
 
-在ex11.py 程序中，每行的print后面加了个逗号（，），这样print就不会输出换行符而结束这一行了。
+True和False是Pyhthon的关键字，用来表示真和假的概念。如果加了引号，就变成了字符串，无法实现原来的功能。
 
-python 中可以在一组三引号（&quot;&quot;&quot;）之间放入任意多行的文字。
+%r的作用
+%r是用来调试（debug）比较好，因为它会显示变量的原始数据，而%s、%d等符号是用来向用户显示输出的。
 
 
 附加练习以下摘录自原文
 
-下面是python支持的转义序列
+每一行加一段注释
 
-\\					# 反斜杠（\）\&#x27;					# 单引号\&quot;					# 双引号\a            		# ASCII 响铃符\b					# ASCII 退格符\f 					# ASCII 进纸符\r					# ASCII 回车符\uxxxx				# 值为16位十六进制值xxxx的字符（仅适用于Unicode）\Uxxxxxxxx			# 值为32位十六进制值xxxxxxxx的字符（仅适用于Unicode）\v					# ASCII 垂直制表符
-
-
-Python 的raw_input实现的是什么功能？以及其他用法
-
-input()和raw_input()有何不同？
+最后一行输出既有单引号又有双引号，你觉得这背后的机制是什么？
 
 
 ]]></content>
@@ -2322,6 +2322,77 @@ ex15.py 的作用就是用自己设计的脚本“打开”txt文件。
 利用pydoc 功能查一下read()命令、write()命令、close()命令等
 
 
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>笨方法学Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test8-变量、函数</title>
+    <url>/posts/b66884ca.html</url>
+    <content><![CDATA[
+
+Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
+
+的学习思路和理解，如有不如之处，望指出！！！
+
+这一节我们会学习到“函数”，函数可以做到以下三件事：
+
+它可以给代码段命名，就跟“变量”给字符串命名一样
+
+它可以接收参数，就想前面的脚本接收argv一样
+
+使用上面第一条和第二条，可以创建**“小命令”**
+
+
+文章主要分为以下部分：
+[TOC]
+源代码我们使用def指令建立函数
+# ex18.py# this one is like your scripts with argvdef	arg1,arg2=args	print#ok,that *args is actually pointless,we can just do thisdef	print#this just takes one argumentdef	print#this one takes no argumentsdef	print	print_two(&quot;darer&quot;print_two_again(&quot;darer&quot;print_one(&quot;First!&quot;print_none()
+
+
+应该看到的结果
+对源代码的解释
+首先我们告诉Python使用def命令创建一个函数，也就是define(定义)意思
+
+紧挨这def命令的是函数的名字。本例子中，它的名字是print_two，但是名字可以随便取，比如叫darerpm，但是最好可以体现这个函数的功能
+
+然后告诉函数，我们需要*args(asterisk argv),这和脚本的argv非常相似，参数必须圆括号()中才能执行
+
+接着用冒号:结束本行，然后开始下一行缩进(可使用tab键缩进)
+
+以print_two函数为例，其中第一行的作用是将参数解包，这个脚本参数解包的原理类似
+
+为了演示它的工作原理，我们把解包后的每一个参数都print出来
+
+
+函数print_two存在一些问题：它并不是创建函数最简单的方法，在Python函数中，可以跳过整个参数解包
+的过程，直接使用()里边的名称作为变量名，这就是print_two_again实验的功能。
+接下来的例子是print_one，它演示了函数如何接收单个参数
+最后一个例子是print_none，它演示了函数可以不接收任何参数
+常见问题
+函数命名有什么规则？
+和变量名一样，只要以字母、数字和下划线组成，而且不是数字开始，就可以了
+
+*args里的*是什么意思？
+它的功能是告诉Python把函数的所有参数都接收进来，然后放到名叫args的列表中去。和前面在用的argv差不多，只不过前者用在函数上。
+
+
+
+
+
+这是**《笨方法学Python》**的第八篇文章
+
+
+希望自己可以继续坚持下去
+
+
+希望你也可以坚持下去
+​
 ]]></content>
       <categories>
         <category>产品经理学技术</category>
@@ -2691,77 +2762,6 @@ GEO-Skill 选择先做离线版本，就是为了先解决“内容是否值得�
       </tags>
   </entry>
   <entry>
-    <title>Test8-变量、函数</title>
-    <url>/posts/b66884ca.html</url>
-    <content><![CDATA[
-
-Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. Show著
-
-的学习思路和理解，如有不如之处，望指出！！！
-
-这一节我们会学习到“函数”，函数可以做到以下三件事：
-
-它可以给代码段命名，就跟“变量”给字符串命名一样
-
-它可以接收参数，就想前面的脚本接收argv一样
-
-使用上面第一条和第二条，可以创建**“小命令”**
-
-
-文章主要分为以下部分：
-[TOC]
-源代码我们使用def指令建立函数
-# ex18.py# this one is like your scripts with argvdef	arg1,arg2=args	print#ok,that *args is actually pointless,we can just do thisdef	print#this just takes one argumentdef	print#this one takes no argumentsdef	print	print_two(&quot;darer&quot;print_two_again(&quot;darer&quot;print_one(&quot;First!&quot;print_none()
-
-
-应该看到的结果
-对源代码的解释
-首先我们告诉Python使用def命令创建一个函数，也就是define(定义)意思
-
-紧挨这def命令的是函数的名字。本例子中，它的名字是print_two，但是名字可以随便取，比如叫darerpm，但是最好可以体现这个函数的功能
-
-然后告诉函数，我们需要*args(asterisk argv),这和脚本的argv非常相似，参数必须圆括号()中才能执行
-
-接着用冒号:结束本行，然后开始下一行缩进(可使用tab键缩进)
-
-以print_two函数为例，其中第一行的作用是将参数解包，这个脚本参数解包的原理类似
-
-为了演示它的工作原理，我们把解包后的每一个参数都print出来
-
-
-函数print_two存在一些问题：它并不是创建函数最简单的方法，在Python函数中，可以跳过整个参数解包
-的过程，直接使用()里边的名称作为变量名，这就是print_two_again实验的功能。
-接下来的例子是print_one，它演示了函数如何接收单个参数
-最后一个例子是print_none，它演示了函数可以不接收任何参数
-常见问题
-函数命名有什么规则？
-和变量名一样，只要以字母、数字和下划线组成，而且不是数字开始，就可以了
-
-*args里的*是什么意思？
-它的功能是告诉Python把函数的所有参数都接收进来，然后放到名叫args的列表中去。和前面在用的argv差不多，只不过前者用在函数上。
-
-
-
-
-
-这是**《笨方法学Python》**的第八篇文章
-
-
-希望自己可以继续坚持下去
-
-
-希望你也可以坚持下去
-​
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>笨方法学Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>产品书单-《免费》：互联网时代纵横捭阖的商业模式</title>
     <url>/posts/f18a2316.html</url>
     <content><![CDATA[《免费》：互联网时代纵横捭阖的商业模式今天推荐一本所有互联网时代的“居民”都应该看的书：《免费》：互联网时代纵横捭阖的商业模式
@@ -2806,6 +2806,77 @@ Python系列之笨方法学Python是我学习《笨方法学Python》—Zed A. S
 作者介绍克里斯·安德森，自2001年起担任美国《连线》杂志总编辑。他被誉为“信息时代的精神领袖”。在其领导下，数字世界的“号角”——《连线》杂志获奖无数。他有关互联网经济的演讲赢得了广泛称赞。他还是一位才华横溢的记者，他的作品《长尾理论》开创了一个新的商业模式，同时，该书也成为全球畅销书。
 目录
 下载地址关注微信公众号：产品汪darer，后台回复关键词：免费，即可下载
+]]></content>
+      <categories>
+        <category>产品书单</category>
+      </categories>
+      <tags>
+        <tag>产品书单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>产品书单-《稀缺》：你是怎么不断陷入deadline循环的？</title>
+    <url>/posts/ba0f1c59.html</url>
+    <content><![CDATA[《稀缺》：你是怎么不断陷入deadline循环的？
+
+每一位产品人都应该多看书，读好书，多思考
+
+只有这样才能不断进步
+
+今天推荐一本蛮有趣的书：《稀缺》，稀缺，是“拥有”少于“需要”的感觉
+写在前面的话稀缺，是“拥有”少于“需要”的感觉，稀缺不是客观上的物质稀缺，而指一种会让人产生急迫感的稀缺心态。
+稀缺心态有利有弊，它可以为你提供专注红利，使你更聚焦在要做的事情的上，大大提高做事的效率；
+但是呢，凡事必有利弊，由于聚焦在要做的事情上，就会产生管窥心态，忽略身边的事情，比如由于要赶工，可能受到干扰后，会更容易发火。
+《稀缺》塞德希尔·穆来纳森/埃尔德·沙菲尔
+
+内容介绍
+
+《稀缺》是《思考，快与慢》作者丹尼尔·卡尼曼最推崇的行为经济学新作，它旨在揭示稀缺心态的各种复杂成因，并提出以“余闲”牵制稀缺的应对之法。所以，只有对“带宽”进行合理的规划和管理，我们才有可能从稀缺走向富足。
+稀缺会产生四种效应：
+
+稀缺会导致管窥效应
+
+所谓管窥，是指当我们专注于某件事时，会忽略其他事情，就像从管中窥看这个世界。
+面对稀缺，我们就更倾向于把注意力集中在最需要关注的事儿上面，这么一来，我们往往会忽视那些真正重要的事情。
+管窥效应会改变我们做出决策的方式。例如工作任务多而中断每天跑步，在这个稀缺状态下，就会做出损害长期价值的决定。
+
+稀缺会导致借用
+
+稀缺会导致一个人习惯性地透支未来的资源，长期来看，借用会让一个人更加匮乏。
+透支信用卡、借高利贷都是在透支未来的金钱，来解决当前的紧急状况。
+时间也经常被借用，这周的工作没有做完要拖到下一周，下周的事再拖到下下周，一直拖会长期处在稀缺状态里，让人彻底忽视时间管理、精力管理等提高工作效率的方法。
+
+
+永远陷入deadline的无限循环
+
+稀缺会导致没有余闲
+
+余闲就是我们剩余下来的、没有利用上的时间和空间。穷人为什么感觉生活特别累，是因为什么都缺，导致没有余闲。
+稀缺的本质就是没有余闲，余闲可能会让一个人的效率不是那么高，但是它带来的正向收益却是非常高的，是一种奢侈的心理享受。
+任何系统留一定的余闲都非常重要，它不是对资源的浪费，而是让系统更加高效运转的保证。
+
+
+永远为自己留下多余的时间，以便应对突发状况
+
+稀缺会引发带宽的不足
+
+带宽是我们的计算能力、关注能力、决策能力、执行能力和抵制诱惑能力的统称。我们平时最多只能关注七件事，如果超过了七件事就会引起带宽负担。
+带宽不足还会引起他们认知能力的下降。
+
+
+人的精力有限，开了太多程序，不就会卡死机了嘛！！
+
+
+所以啊，996真的是开倒车，996.icu
+作者介绍塞德希尔·穆来纳森（Sendhil Mullainathan）
+哈佛大学终身教授，哈佛大学行为经济学领域重要领头人。与普林斯顿大学心理学教授埃尔德·沙菲尔等人联合创立非营利性组织ideas42，致力于利用行为科学帮助人们解决社会问题。
+在麻省理工学院，与《贫穷的本质》作者阿比吉特·班纳吉等人联合创立“贫困行动实验室”，并于2002年荣获“麦克阿瑟天才奖”。
+埃尔德·沙菲尔（Eldar Shafir）
+1988年，获得麻省理工学院认知科学博士学位。古根海姆奖获得者。
+普林斯顿大学心理学教授，研究领域涉及认知科学、判断与决策、行为经济学等。
+与诺贝尔经济学奖获得者彼得· 戴蒙德和著名心理学家阿莫斯·特沃斯基共同开展过“货币幻觉”方面的研究。
+目录
+下载地址关注微信公众号：产品汪darer，后台回复关键词：稀缺，即可下载
 ]]></content>
       <categories>
         <category>产品书单</category>
@@ -3026,68 +3097,51 @@ TGIF
       </tags>
   </entry>
   <entry>
-    <title>产品书单-《稀缺》：你是怎么不断陷入deadline循环的？</title>
-    <url>/posts/ba0f1c59.html</url>
-    <content><![CDATA[《稀缺》：你是怎么不断陷入deadline循环的？
-
-每一位产品人都应该多看书，读好书，多思考
-
-只有这样才能不断进步
-
-今天推荐一本蛮有趣的书：《稀缺》，稀缺，是“拥有”少于“需要”的感觉
-写在前面的话稀缺，是“拥有”少于“需要”的感觉，稀缺不是客观上的物质稀缺，而指一种会让人产生急迫感的稀缺心态。
-稀缺心态有利有弊，它可以为你提供专注红利，使你更聚焦在要做的事情的上，大大提高做事的效率；
-但是呢，凡事必有利弊，由于聚焦在要做的事情上，就会产生管窥心态，忽略身边的事情，比如由于要赶工，可能受到干扰后，会更容易发火。
-《稀缺》塞德希尔·穆来纳森/埃尔德·沙菲尔
-
-内容介绍
-
-《稀缺》是《思考，快与慢》作者丹尼尔·卡尼曼最推崇的行为经济学新作，它旨在揭示稀缺心态的各种复杂成因，并提出以“余闲”牵制稀缺的应对之法。所以，只有对“带宽”进行合理的规划和管理，我们才有可能从稀缺走向富足。
-稀缺会产生四种效应：
-
-稀缺会导致管窥效应
-
-所谓管窥，是指当我们专注于某件事时，会忽略其他事情，就像从管中窥看这个世界。
-面对稀缺，我们就更倾向于把注意力集中在最需要关注的事儿上面，这么一来，我们往往会忽视那些真正重要的事情。
-管窥效应会改变我们做出决策的方式。例如工作任务多而中断每天跑步，在这个稀缺状态下，就会做出损害长期价值的决定。
-
-稀缺会导致借用
-
-稀缺会导致一个人习惯性地透支未来的资源，长期来看，借用会让一个人更加匮乏。
-透支信用卡、借高利贷都是在透支未来的金钱，来解决当前的紧急状况。
-时间也经常被借用，这周的工作没有做完要拖到下一周，下周的事再拖到下下周，一直拖会长期处在稀缺状态里，让人彻底忽视时间管理、精力管理等提高工作效率的方法。
-
-
-永远陷入deadline的无限循环
-
-稀缺会导致没有余闲
-
-余闲就是我们剩余下来的、没有利用上的时间和空间。穷人为什么感觉生活特别累，是因为什么都缺，导致没有余闲。
-稀缺的本质就是没有余闲，余闲可能会让一个人的效率不是那么高，但是它带来的正向收益却是非常高的，是一种奢侈的心理享受。
-任何系统留一定的余闲都非常重要，它不是对资源的浪费，而是让系统更加高效运转的保证。
-
-
-永远为自己留下多余的时间，以便应对突发状况
-
-稀缺会引发带宽的不足
-
-带宽是我们的计算能力、关注能力、决策能力、执行能力和抵制诱惑能力的统称。我们平时最多只能关注七件事，如果超过了七件事就会引起带宽负担。
-带宽不足还会引起他们认知能力的下降。
-
-
-人的精力有限，开了太多程序，不就会卡死机了嘛！！
-
-
-所以啊，996真的是开倒车，996.icu
-作者介绍塞德希尔·穆来纳森（Sendhil Mullainathan）
-哈佛大学终身教授，哈佛大学行为经济学领域重要领头人。与普林斯顿大学心理学教授埃尔德·沙菲尔等人联合创立非营利性组织ideas42，致力于利用行为科学帮助人们解决社会问题。
-在麻省理工学院，与《贫穷的本质》作者阿比吉特·班纳吉等人联合创立“贫困行动实验室”，并于2002年荣获“麦克阿瑟天才奖”。
-埃尔德·沙菲尔（Eldar Shafir）
-1988年，获得麻省理工学院认知科学博士学位。古根海姆奖获得者。
-普林斯顿大学心理学教授，研究领域涉及认知科学、判断与决策、行为经济学等。
-与诺贝尔经济学奖获得者彼得· 戴蒙德和著名心理学家阿莫斯·特沃斯基共同开展过“货币幻觉”方面的研究。
+    <title>产品书单-《超级IP》：互联网新物种方法论</title>
+    <url>/posts/d3c2dd60.html</url>
+    <content><![CDATA[《超级IP》：互联网新物种方法论前一阵子，看了一本书**《超级IP》：互联网新物种方法论**，书中提了不少实操性的方法
+建议大家看一看，非常感兴趣的可以去买一本纸质书，放在手边
+写在前面书中提出不少蛮有趣的见解
+这个时代“新物种”的第一个商业内涵：新想象——要有更多想象力的边界拓展。我们能否避免被万物互联的浪潮裹挟，取决于我们能否去洞察这个时代的先机。
+新物种”的第二个商业内涵是新物理，代表着新的模式架构和连接方式，超前洞察用户的深层需求，从而打造专属定制的新品类战略和引爆全方案。
+新物种”的第三个商业内涵是新物质，即新的材料和商业基因。
+新物种”的第四个商业内涵是新物语，新的话语体系和故事叙述方式。
+人生而孤独，却不甘寂寞。我们的潜意识是想通过分享内容，找到趣味相投的人，如同生物界的动物会通过散发气味找到同类。所以我们在朋友圈更新状态，分享的动作不重要，重要的是能否有积极的回应与点赞、热烈的评论和转发，一种源出同脉的认同。
+《超级IP》
+内容介绍一切商业皆内容，一切内容皆IP！
+从迪士尼、airbnb、YouTube、Instagram到微信、Papi酱、芈月传、鹿晗，IP浪潮席卷全球，这不仅仅是互联网领域的革命，更是未来商业的游戏新规则。
+IP从泛娱乐形态快速渗透新商业生态全维度，正深化为不同行业共同的战略方法，甚至是一种全新的商业生存方式，即IP化生存。
+超级IP的内核，是辨识度极高的可认同的商业符号，它意味着一种对于打动人心的内容的身份认同，意味着自带势能和流量，自带压强，或者具有足够压强的一种社群商业标签。
+在这种全新的商业表达中，IP俨然成为商业逻辑的基础设施。以IP为起点，产品、品牌、渠道、用户等商业元素与IP的连接形成场景化的解决方案，赋能商业，同时 IP价值不断沉淀，并形成新的商业反哺。在IP的催化作用之下，流量、用户、产品天然整合一体，并形成了极具吸引力的售卖逻辑。
+《超级IP：互联网新物种方法论》是逻辑思维联合创始人吴声对未来图景的深度思考，深度解构这一移动互联时代新的连接符号和话语体系，帮助企业、品牌、个人迎接IP时代的变革与挑战。
+作者介绍吴声，场景实验室创始人，场景基金管理合伙人，中国电子商务委员会执行秘书长。一九九五年毕业于南京大学，先后在凡客诚品、京东商城、乐蜂网等电子商务企业担任高管、顾问，作为联合创始人参与创办罗辑思维，运用场景思维策划多起IP商业案例。二零一五年著有《场景革命：重构人与商业的连接》。
 目录
-下载地址关注微信公众号：产品汪darer，后台回复关键词：稀缺，即可下载
+下载地址这是亚马逊购书链接
+关注微信公众号：产品汪darer，后台回复关键词：超级IP，即可下载
+]]></content>
+      <categories>
+        <category>产品书单</category>
+      </categories>
+      <tags>
+        <tag>产品书单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
+    <url>/posts/8efdbb86.html</url>
+    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
+写在前面
+举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
+长尾市场也称之为“利基市场”。 &quot;利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
+通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
+《长尾理论》
+内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
+这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
+传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
+作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
+目录
+下载地址这是亚马逊购书链接
+关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
 ]]></content>
       <categories>
         <category>产品书单</category>
@@ -3174,138 +3228,6 @@ OKR是指南针，KPI是秒表
       </tags>
   </entry>
   <entry>
-    <title>产品书单-《超级IP》：互联网新物种方法论</title>
-    <url>/posts/d3c2dd60.html</url>
-    <content><![CDATA[《超级IP》：互联网新物种方法论前一阵子，看了一本书**《超级IP》：互联网新物种方法论**，书中提了不少实操性的方法
-建议大家看一看，非常感兴趣的可以去买一本纸质书，放在手边
-写在前面书中提出不少蛮有趣的见解
-这个时代“新物种”的第一个商业内涵：新想象——要有更多想象力的边界拓展。我们能否避免被万物互联的浪潮裹挟，取决于我们能否去洞察这个时代的先机。
-新物种”的第二个商业内涵是新物理，代表着新的模式架构和连接方式，超前洞察用户的深层需求，从而打造专属定制的新品类战略和引爆全方案。
-新物种”的第三个商业内涵是新物质，即新的材料和商业基因。
-新物种”的第四个商业内涵是新物语，新的话语体系和故事叙述方式。
-人生而孤独，却不甘寂寞。我们的潜意识是想通过分享内容，找到趣味相投的人，如同生物界的动物会通过散发气味找到同类。所以我们在朋友圈更新状态，分享的动作不重要，重要的是能否有积极的回应与点赞、热烈的评论和转发，一种源出同脉的认同。
-《超级IP》
-内容介绍一切商业皆内容，一切内容皆IP！
-从迪士尼、airbnb、YouTube、Instagram到微信、Papi酱、芈月传、鹿晗，IP浪潮席卷全球，这不仅仅是互联网领域的革命，更是未来商业的游戏新规则。
-IP从泛娱乐形态快速渗透新商业生态全维度，正深化为不同行业共同的战略方法，甚至是一种全新的商业生存方式，即IP化生存。
-超级IP的内核，是辨识度极高的可认同的商业符号，它意味着一种对于打动人心的内容的身份认同，意味着自带势能和流量，自带压强，或者具有足够压强的一种社群商业标签。
-在这种全新的商业表达中，IP俨然成为商业逻辑的基础设施。以IP为起点，产品、品牌、渠道、用户等商业元素与IP的连接形成场景化的解决方案，赋能商业，同时 IP价值不断沉淀，并形成新的商业反哺。在IP的催化作用之下，流量、用户、产品天然整合一体，并形成了极具吸引力的售卖逻辑。
-《超级IP：互联网新物种方法论》是逻辑思维联合创始人吴声对未来图景的深度思考，深度解构这一移动互联时代新的连接符号和话语体系，帮助企业、品牌、个人迎接IP时代的变革与挑战。
-作者介绍吴声，场景实验室创始人，场景基金管理合伙人，中国电子商务委员会执行秘书长。一九九五年毕业于南京大学，先后在凡客诚品、京东商城、乐蜂网等电子商务企业担任高管、顾问，作为联合创始人参与创办罗辑思维，运用场景思维策划多起IP商业案例。二零一五年著有《场景革命：重构人与商业的连接》。
-目录
-下载地址这是亚马逊购书链接
-关注微信公众号：产品汪darer，后台回复关键词：超级IP，即可下载
-]]></content>
-      <categories>
-        <category>产品书单</category>
-      </categories>
-      <tags>
-        <tag>产品书单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>产品书单-《长尾理论》：为什么商业的未来是小众市场</title>
-    <url>/posts/8efdbb86.html</url>
-    <content><![CDATA[《长尾理论》：为什么商业的未来是小众市场今天推荐一本互联网从业者的必备枕边书：《长尾理论》：为什么商业的未来是小众市场
-写在前面
-举例来说，我们常用的汉字实际上不多，但因出现频次高，所以这些为数不多的汉字占据了上图红色区域；绝大部分的汉字难得一用，它们就属于那长长的蓝尾。 作者认为，只要存储和流通的渠道足够大，需求不旺或销量不佳的产品共同占据的市场份额就可以和那些数量不多的热卖品所占据的市场份额相匹敌甚至更大。
-长尾市场也称之为“利基市场”。 &quot;利基 ” 一词是英文 “Niche” 的音译，意译为 “ 壁龛 ” ，有拾遗补缺或见缝插针的意思。菲利普·科特勒在《营销管理》中给利基下的定义为：利基是更窄地确定某些群体，这是一个小市场并且它的需要没有被服务好，或者说 “ 有获取利益的基础 ” 。
-通过对市场的细分，企业集中力量于某个特定的目标市场，或严格针对一个细分市场，或重点经营一个产品和服务，创造出产品和服务优势。
-《长尾理论》
-内容介绍书中阐述，商业和文化的未来不在于传统需求曲线上那个代表“畅销商品”（hits）的头部； 而是那条代表“冷门商品”（misses）经常为人遗忘的长尾。 举例来说， 一家大型书店通常可摆放10万本书，但亚马逊网络书店的图书销售额中，有四分之一来自排名10万以后的书籍。这些“冷门”书籍的销售比例正以高速成长，预估未来可占整体书市的一半。
-这意味着消费者在面对无限的选择时，真正想要的东西、和想要取得的渠道都出现了重大的变化，一套崭新的商业模式也跟着崛起。
-传统的市场曲线是符合80&#x2F;20定律的，为了抢夺那带来80% 利润的畅销品市场，我们厮杀得天昏地暗，但是我们所谓的热门商品正越来越名不副实，比如说黄金电视节目的收视率几十年来一直在萎缩，若放在1970年，现在的一档最佳节目恐怕连前10名之列都难以进入。简言之，尽管我们仍然对大热门着迷，但它们的经济力量已经今非昔比。那么，那些反复无常的消费者们已经转向了什么地方？答案并非唯一。他们散向了四面八方，因为市场已经分化成了无数不同的领域。互联网的出现改变了这种局面，使得99%的商品都有机会进行销售，市场曲线中那条长长的尾部（所谓的利基产品）也咸鱼翻身，成为我们可以寄予厚望的新的利润增长点。
-作者介绍克里斯·安德森（Chris Anderson） 自2001年起担任美国《连线》杂志（Wired）总编辑。在他的领导之下，《连线》杂志五度获得“美国国家杂志奖”（National Magazine Award）的提名，并在2005年获得“卓越杂志奖”（General Excellence）金奖。
-目录
-下载地址这是亚马逊购书链接
-关注微信公众号：产品汪darer，后台回复关键词：长尾理论，即可下载
-]]></content>
-      <categories>
-        <category>产品书单</category>
-      </categories>
-      <tags>
-        <tag>产品书单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信PC端多开的方法</title>
-    <url>/posts/fe91c6cc.html</url>
-    <content><![CDATA[微信电脑版多开的方法现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？
-经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法
-以下内容来自网络，经验证，可以安全简单的使用
-bat文件多开
-第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。
-
-第二步，新建一个文本文档，命名“微信多开”在文档中键入：
-@echo offstart &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;exit
-
-
-两行 start &quot;&quot; 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在exit上面即可，以上代码所示是两开。
-完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入“微信多开.bat”。
-
-然后桌面上会出现一个bat文件，双击bat文件即可实现微信双开。
-
-
-操作起来，简单又方便
-]]></content>
-      <categories>
-        <category>技巧</category>
-      </categories>
-      <tags>
-        <tag>技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>思考：为什么全网都在“养龙虾”？</title>
-    <url>/posts/ba9fdaa3.html</url>
-    <content><![CDATA[2026开年首爆：为什么全网都在“养龙虾”？——OpenClaw爆火的思考2026年初，OpenClaw（俗称“龙虾”）以垂直攀升的姿态统治了 GitHub 和朋友圈。这只“龙虾”凭什么让程序猿的专属工具成了打工人的外挂？
-
-一、 技术平权：当 AI 从“嘴炮”长出了“手脚”过去我们用 AI，是**“对话式”**的。你求它写个文档，它给你一堆文字，你还得自己复制粘贴。
-而“龙虾”的爆火，本质上是 程序员常用ClaudeCode 的技术下放。；让每个人都可以轻松使用ClaudeCode的技术，使得大模型不再是一个只会聊天的机器人，而是一个能操作本地电脑的智能体（Agent）：
-
-不仅会说，更会干： 它能接管你的鼠标键盘，在 Excel、邮件、浏览器之间横跳。
-成本塌陷： 2026 年推理成本的断崖式下降，让“24 小时挂机干活”从奢侈品变成了可行的日常标配。
-心跳机制（Heartbeat）： 这是龙虾的灵魂。它不再是“拨一拨动一动”，而是具备了自动续命、定时巡视的主动性。你睡觉时，它的“心跳”在跳动，活儿就在推进。
-
-
-二、 心理透视：谁还没个想当“邪恶包工头”的梦？一个有趣的词：“邪恶包工头”心理。
-为什么企业家和白领会集体 FOMO（错失恐惧）？
-
-权力的赛博化： 现实中管理员工很累，但管理“龙虾”很爽。它绝对服从、不领薪水、没有情绪。这种通过手机随时随地“派活儿、查岗”的掌控感，极大满足了人性中对补偿性控制的渴望。
-效率降维打击： 当你发现隔壁工位的同事用“龙虾小队”5 分钟搞定了你一天的报销和周报，那种焦虑感比任何职场 PUA 都管用。
-
-
-三、 传播学视角：一场关于“龙虾”的狂欢从学术角度看，龙虾的火爆是一场精准的社会心理共振：
-
-形象化传播： “龙虾”这个绰号比“开源智能体架构”更具传播力。它降低了大众的认知门槛，让技术工具带上了“养成系”的色彩。
-数字主权的回归： 不同于大厂的云端黑盒，OpenClaw 的本地化部署给了一向谨慎的企业家一种“我的数据我做主”的心理安全感。
-
-
-四、 深度拷问：职场空心化，还是精英进化？当“养龙虾”成为职场主流，一个细思极恐的问题出现了：大家都在监工，谁在干实事？
-我们正面临一个潜在的**“空心化”危机**：
-
-技能退化： 习惯了让龙虾“一键代劳”的新人，是否会失去对底层业务逻辑的“手感”？
-职业断层： 那些初级、繁琐的岗位消失后，未来是否还有足够的土壤长出高级架构师？
-
-但硬币的另一面，是**“Agent 架构思维”精英**的崛起。未来的顶级白领，核心竞争力将不再是“亲自上手”，而是：
-
-拆解力： 把混沌的需求拆成龙虾能懂的子任务。
-纠错力： 在龙虾逻辑跑偏的瞬间，精准揪出那 20% 的幻觉。
-集成力： 编织一套海、陆、空协同的自动化工作流。
-
-
-五、 结语：控制还是被控制？龙虾的爆火，标志着我们正式从“AI 辅助时代”跨入了“AI 代理时代”。
-我们既享受着当“包工头”的爽感，也承担着被技术掏空的风险。正如一位资深“养虾人”所说：“如果你不知道龙虾是怎么帮你把活儿干完的，那么总有一天，你会发现自己也被某种算法‘自动化’掉了。”
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>Claude Code</tag>
-        <tag>Open claw</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习中需要了解的Python知识</title>
     <url>/posts/100707df.html</url>
     <content><![CDATA[在通过《笨方法学Python》学习Python的过程中，作者在每一节，提出了一些Python的知识，以让读者提前研习。
@@ -3365,6 +3287,234 @@ from# 示例# 要导入模块 fib 的 fibonacci 函数from
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>思考：为什么全网都在“养龙虾”？</title>
+    <url>/posts/ba9fdaa3.html</url>
+    <content><![CDATA[2026开年首爆：为什么全网都在“养龙虾”？——OpenClaw爆火的思考2026年初，OpenClaw（俗称“龙虾”）以垂直攀升的姿态统治了 GitHub 和朋友圈。这只“龙虾”凭什么让程序猿的专属工具成了打工人的外挂？
+
+一、 技术平权：当 AI 从“嘴炮”长出了“手脚”过去我们用 AI，是**“对话式”**的。你求它写个文档，它给你一堆文字，你还得自己复制粘贴。
+而“龙虾”的爆火，本质上是 程序员常用ClaudeCode 的技术下放。；让每个人都可以轻松使用ClaudeCode的技术，使得大模型不再是一个只会聊天的机器人，而是一个能操作本地电脑的智能体（Agent）：
+
+不仅会说，更会干： 它能接管你的鼠标键盘，在 Excel、邮件、浏览器之间横跳。
+成本塌陷： 2026 年推理成本的断崖式下降，让“24 小时挂机干活”从奢侈品变成了可行的日常标配。
+心跳机制（Heartbeat）： 这是龙虾的灵魂。它不再是“拨一拨动一动”，而是具备了自动续命、定时巡视的主动性。你睡觉时，它的“心跳”在跳动，活儿就在推进。
+
+
+二、 心理透视：谁还没个想当“邪恶包工头”的梦？一个有趣的词：“邪恶包工头”心理。
+为什么企业家和白领会集体 FOMO（错失恐惧）？
+
+权力的赛博化： 现实中管理员工很累，但管理“龙虾”很爽。它绝对服从、不领薪水、没有情绪。这种通过手机随时随地“派活儿、查岗”的掌控感，极大满足了人性中对补偿性控制的渴望。
+效率降维打击： 当你发现隔壁工位的同事用“龙虾小队”5 分钟搞定了你一天的报销和周报，那种焦虑感比任何职场 PUA 都管用。
+
+
+三、 传播学视角：一场关于“龙虾”的狂欢从学术角度看，龙虾的火爆是一场精准的社会心理共振：
+
+形象化传播： “龙虾”这个绰号比“开源智能体架构”更具传播力。它降低了大众的认知门槛，让技术工具带上了“养成系”的色彩。
+数字主权的回归： 不同于大厂的云端黑盒，OpenClaw 的本地化部署给了一向谨慎的企业家一种“我的数据我做主”的心理安全感。
+
+
+四、 深度拷问：职场空心化，还是精英进化？当“养龙虾”成为职场主流，一个细思极恐的问题出现了：大家都在监工，谁在干实事？
+我们正面临一个潜在的**“空心化”危机**：
+
+技能退化： 习惯了让龙虾“一键代劳”的新人，是否会失去对底层业务逻辑的“手感”？
+职业断层： 那些初级、繁琐的岗位消失后，未来是否还有足够的土壤长出高级架构师？
+
+但硬币的另一面，是**“Agent 架构思维”精英**的崛起。未来的顶级白领，核心竞争力将不再是“亲自上手”，而是：
+
+拆解力： 把混沌的需求拆成龙虾能懂的子任务。
+纠错力： 在龙虾逻辑跑偏的瞬间，精准揪出那 20% 的幻觉。
+集成力： 编织一套海、陆、空协同的自动化工作流。
+
+
+五、 结语：控制还是被控制？龙虾的爆火，标志着我们正式从“AI 辅助时代”跨入了“AI 代理时代”。
+我们既享受着当“包工头”的爽感，也承担着被技术掏空的风险。正如一位资深“养虾人”所说：“如果你不知道龙虾是怎么帮你把活儿干完的，那么总有一天，你会发现自己也被某种算法‘自动化’掉了。”
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>Claude Code</tag>
+        <tag>Open claw</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信PC端多开的方法</title>
+    <url>/posts/fe91c6cc.html</url>
+    <content><![CDATA[微信电脑版多开的方法现代人多会有多个微信号，在公司办公的时候，就想能够用电脑同时登录多个账号，那有没有安全、便捷的方法呢？
+经过多方搜索，找到了一个操作简单、目前使用起来很方便的方法
+以下内容来自网络，经验证，可以安全简单的使用
+bat文件多开
+第一步，我们找到微信电脑版的快捷方式，右键属性，找到“目标”，复制目标地址（打开后目标地址已被选中），比如我电脑上的地址是&quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;，注意，双引号要一块儿复制上。
+
+第二步，新建一个文本文档，命名“微信多开”在文档中键入：
+@echo offstart &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;start &quot;&quot; &quot;D:Program Files (x86)TencentWeChatWeChat.exe&quot;exit
+
+
+两行 start &quot;&quot; 后面的路径就是刚才复制的微信目标路径，双开就两行，多开就多复制几行放在exit上面即可，以上代码所示是两开。
+完了以后点文件-另存为，下方保存类型选择所有文件，文件名键入“微信多开.bat”。
+
+然后桌面上会出现一个bat文件，双击bat文件即可实现微信双开。
+
+
+操作起来，简单又方便
+]]></content>
+      <categories>
+        <category>技巧</category>
+      </categories>
+      <tags>
+        <tag>技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>投资是一场马拉松：如果终点是财富自由，你的起点在哪里？</title>
+    <url>/posts/4dfcc553.html</url>
+    <content><![CDATA[很多人第一次开始投资，问的都是同一个问题：
+“现在买什么？”
+买黄金？买红利？买纳斯达克？买 A 股？还是买最近热门的 AI、机器人、创新药？
+但如果把投资看成一场持续 20 年、30 年，甚至一生的马拉松，你会发现：“买什么”并不是最重要的第一个问题。
+真正应该先问的是：
+
+如果终点是财富自由，那么我现在站在哪里？
+
+
+
+先定义终点：什么是财富自由？很多人把财富自由理解成“我有 1000 万”，或者“我有一套房、两套房”。
+但财富自由真正重要的，不是一个固定数字，而是：
+
+资产产生的可持续现金流，能够覆盖你的长期生活支出，使你不再完全依赖劳动收入。
+
+如果一个家庭每年需要 30 万生活费，而这些支出几乎都依赖工资，那么无论工资多高，本质上仍然是：
+劳动收入 -&gt; 生活消费
+但如果有一天，资产每年也能产生 10 万、20 万、30 万现金流，工资就不再是唯一支柱。你会从“人赚钱”，慢慢走向“人赚钱 + 钱赚钱”。
+这才是财富马拉松真正的终点。
+起点不是本金，而是四个数字判断一个人的投资起点，不能只看“现在有多少钱”。至少要看四个维度：
+
+
+
+维度
+代表什么
+关键问题
+
+
+
+年收入
+未来创造现金流的能力
+我还能持续赚多少钱？
+
+
+可投资资产
+已经积累的本金
+有多少资产可以真正配置？
+
+
+负债
+财务杠杆和压力
+房贷、车贷、消费贷占多少？
+
+
+家庭现金流
+风险安全边际
+每年还能稳定留下多少钱？
+
+
+自住房通常不能简单算作可投资资产，因为它承担居住功能，也不容易像基金、债券、股票一样随时调仓。
+所以，真正决定你投资策略的，不是单一资产规模，而是：
+
+收入决定速度，资产决定距离，负债决定重量，现金流决定体力。
+
+四种常见起点同样是“开始投资”，不同人的优先级完全不同。
+低收入 + 低资产假设年收入 12 万，可投资资产 5 万，无负债。
+这时最容易把精力放在“哪个行业能涨 50%”“有没有翻倍股”。但 5 万本金即使赚 20%，也只是 1 万元。
+如果通过提升职业能力，把年收入从 12 万提高到 15 万，一年就多出 3 万现金流。
+这一阶段最值得投资的资产，往往是自己。目标不是暴富，而是：提高收入、建立储蓄、攒下第一桶本金。
+中等收入 + 中等资产假设年收入 40 万，可投资资产 200 万，负债较低。
+如果 200 万资产长期获得 5% 收益，一年就是 10 万。这个数字已经值得认真管理。
+这时投资逻辑要从“存钱思维”转向“资产配置思维”：现金负责流动性，债券负责防守，宽基 ETF 获取长期增长，红利资产提供现金流，黄金和海外资产用于分散风险。
+高收入 + 低资产假设年收入 200 万，但可投资资产只有 30 万。
+高收入不等于高财富。只要资产没有沉淀下来，财富仍然高度依赖劳动收入。一旦收入中断，财富机器也会停下来。
+这一阶段最重要的事，不是提高投资风险，而是尽快把强大的赚钱能力转化成资产。
+收入不错，但负债重假设年收入 50 万，可投资资产 30 万，房贷余额 100 万，每年还款 12 万。
+12 万占年收入的 24%。这还没算车贷、育儿、保险和日常生活。
+所以负债金额本身不是最关键的，真正关键的是：负债对现金流造成了多大压力。
+不同阶段，需要不同配速
+
+
+
+
+财富阶段
+核心任务
+投资重点
+
+
+
+本金建立
+提高收入，留下钱
+存款、货币基金、国债、少量宽基
+
+
+资产积累
+建立资产组合
+宽基 ETF、债券、红利、黄金
+
+
+资产增长
+让复利发挥作用
+ETF、QDII、REITs、优质企业
+
+
+财富管理
+控制回撤
+全球股票、债券、黄金、多资产
+
+
+财富保全
+保值与现金流
+全球配置、现金流、风险管理
+
+
+一个常见误区是：财富越多，就越应该买高风险资产。
+其实未必。很多时候，财富越多，越没有必要赌。因为本金变大以后，亏损 30% 的绝对金额可能会非常可怕。此时风险管理的重要性，会逐渐超过追求极致收益。
+财富自由从哪里开始？回到最开始的问题：如果财富自由是终点，起点在哪里？
+我的答案是：
+
+财富自由的起点，不是你第一次买股票，而是你第一次认真管理自己的收入、支出、资产和负债。
+
+完整路径可以浓缩成五步：
+
+
+
+让收入产生结余。
+让结余变成资产。
+让资产产生收益。
+让收益继续变成资产。
+让资产现金流逐渐覆盖生活。
+
+投资从来不是一场百米冲刺。
+有人第一年赚了 50%，第二年亏了 40%；有人十年追逐热点，最后没有留下多少资产；也有人从未买中过“年度牛股”，只是持续提高收入、控制负债、购买资产，然后坚持 20 年。
+最终决定结果的，往往不是某一年跑得多快，而是能不能一直留在赛道上。
+写在最后如果财富自由是一场马拉松：
+收入，是你的速度。
+储蓄，是你的第一桶水。
+资产，是你已经跑过的距离。
+负债，是你背负的重量。
+现金流，是你的体力。
+资产配置，是你的配速策略。
+复利，是跑得越远越明显的助推器。
+而风险管理决定：你能不能跑完全程。
+所以投资真正值得问的第一个问题，从来不是“明天买什么”，而是：
+
+我现在在哪里？我的下一公里，应该怎么跑？
+
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>投资</tag>
+        <tag>财富自由</tag>
+        <tag>方法论</tag>
       </tags>
   </entry>
   <entry>
@@ -3559,193 +3709,6 @@ from# 示例# 要导入模块 fib 的 fibonacci 函数from
       </tags>
   </entry>
   <entry>
-    <title>方法论-用户画像知识进阶</title>
-    <url>/posts/6ac12912.html</url>
-    <content><![CDATA[用户画像的架构
-
-内容转载于：https://www.iamue.com/34391
-
-作者：秦路
-
-原文很长，干货很多，为了便于理解，我把文章拆分为了三期
-今天介绍第三期：用户画像的进阶
-
-不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。
-用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，像金融领域，还会有风险画像，包括征信、违约、洗钱、还款能力、保险黑名单等。电商领域会有商品的类目偏好、品类偏好、品牌偏好，不一而足。
-
-上图是随手画的的例子，画一个架构不难，难得是了解每个标签背后的业务逻辑和落地方式，至于算法，又能单独扯很多文章了。
-从数据流向和加工看，用户画像包含上下级递进关系。
-以上文的流失系数举例，它通过建模，其依赖于用户早期的历史行为。而用户早期的历史行为，即10天内的消费金额、消费次数、登录次数等，本身也是一个标签，它们是通过原始的明细数据获得。
-
-上图列举了标签加工和计算的过程，很好理解。最上层的策略标签，是针对业务的落地，运营人员通过多个标签的组合形成一个用户群组，方便执行。
-公司越大，用户画像越复杂。某家主打内容分发的公司进入了全新的视频领域，现在有两款APP，那么用户画像的结构也需要改变。既有内容相关的标签，也有视频相关的标签，两者是并行且关联的。
-比如A用户在内容标签下是重度使用，而在视频标签下是轻度。比如B用户很久没打开内容APP有流失风险，但在视频APP的使用时长上看很忠诚。如此种种，看的是灵活应用。当然，姓名性别这类人口统计标签，是通用的。
-用户画像作为平台级的应用，很多运营策略及工具，都是在其基础上构建的。
-
-基于营销和消费相关的标签，新客、老客、用户的流失和忠诚、用户的消费水平和频率等，都是构成CRM（客户关系管理）的基础，可能大家更习惯叫它用户&#x2F;会员管理运营平台。
-它的作用在于，将数据化的标签，转换成产品运营策略。不同的标签对应不同的用户群体，也对应不同的营销手段。CRM的结构中会包含各类触达用户的常用渠道比如短信、邮件、推送等。也包含CMS（内容管理系统），执行人员通过其快速配置活动页、活动通道、优惠券等，靠营销活动拉动数据。
-老王的沙拉业务要是做大，那么运营平台就会以图中的结构搭建。老王在CRM中组合标签，新客老客流失客的数据借助BI监控，然后通过CMS系统配置红包啊优惠券啊等等，再通过短或Push触达。
-好的用户画像系统，既是数据生态体系，也是业务和运营的生态体系，它是一门复杂的交叉领域。
-万千用法，存乎一心。
-]]></content>
-      <categories>
-        <category>方法论</category>
-      </categories>
-      <tags>
-        <tag>用户画像</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>投资是一场马拉松：如果终点是财富自由，你的起点在哪里？</title>
-    <url>/posts/4dfcc553.html</url>
-    <content><![CDATA[很多人第一次开始投资，问的都是同一个问题：
-“现在买什么？”
-买黄金？买红利？买纳斯达克？买 A 股？还是买最近热门的 AI、机器人、创新药？
-但如果把投资看成一场持续 20 年、30 年，甚至一生的马拉松，你会发现：“买什么”并不是最重要的第一个问题。
-真正应该先问的是：
-
-如果终点是财富自由，那么我现在站在哪里？
-
-
-
-先定义终点：什么是财富自由？很多人把财富自由理解成“我有 1000 万”，或者“我有一套房、两套房”。
-但财富自由真正重要的，不是一个固定数字，而是：
-
-资产产生的可持续现金流，能够覆盖你的长期生活支出，使你不再完全依赖劳动收入。
-
-如果一个家庭每年需要 30 万生活费，而这些支出几乎都依赖工资，那么无论工资多高，本质上仍然是：
-劳动收入 -&gt; 生活消费
-但如果有一天，资产每年也能产生 10 万、20 万、30 万现金流，工资就不再是唯一支柱。你会从“人赚钱”，慢慢走向“人赚钱 + 钱赚钱”。
-这才是财富马拉松真正的终点。
-起点不是本金，而是四个数字判断一个人的投资起点，不能只看“现在有多少钱”。至少要看四个维度：
-
-
-
-维度
-代表什么
-关键问题
-
-
-
-年收入
-未来创造现金流的能力
-我还能持续赚多少钱？
-
-
-可投资资产
-已经积累的本金
-有多少资产可以真正配置？
-
-
-负债
-财务杠杆和压力
-房贷、车贷、消费贷占多少？
-
-
-家庭现金流
-风险安全边际
-每年还能稳定留下多少钱？
-
-
-自住房通常不能简单算作可投资资产，因为它承担居住功能，也不容易像基金、债券、股票一样随时调仓。
-所以，真正决定你投资策略的，不是单一资产规模，而是：
-
-收入决定速度，资产决定距离，负债决定重量，现金流决定体力。
-
-四种常见起点同样是“开始投资”，不同人的优先级完全不同。
-低收入 + 低资产假设年收入 12 万，可投资资产 5 万，无负债。
-这时最容易把精力放在“哪个行业能涨 50%”“有没有翻倍股”。但 5 万本金即使赚 20%，也只是 1 万元。
-如果通过提升职业能力，把年收入从 12 万提高到 15 万，一年就多出 3 万现金流。
-这一阶段最值得投资的资产，往往是自己。目标不是暴富，而是：提高收入、建立储蓄、攒下第一桶本金。
-中等收入 + 中等资产假设年收入 40 万，可投资资产 200 万，负债较低。
-如果 200 万资产长期获得 5% 收益，一年就是 10 万。这个数字已经值得认真管理。
-这时投资逻辑要从“存钱思维”转向“资产配置思维”：现金负责流动性，债券负责防守，宽基 ETF 获取长期增长，红利资产提供现金流，黄金和海外资产用于分散风险。
-高收入 + 低资产假设年收入 200 万，但可投资资产只有 30 万。
-高收入不等于高财富。只要资产没有沉淀下来，财富仍然高度依赖劳动收入。一旦收入中断，财富机器也会停下来。
-这一阶段最重要的事，不是提高投资风险，而是尽快把强大的赚钱能力转化成资产。
-收入不错，但负债重假设年收入 50 万，可投资资产 30 万，房贷余额 100 万，每年还款 12 万。
-12 万占年收入的 24%。这还没算车贷、育儿、保险和日常生活。
-所以负债金额本身不是最关键的，真正关键的是：负债对现金流造成了多大压力。
-不同阶段，需要不同配速
-
-
-
-
-财富阶段
-核心任务
-投资重点
-
-
-
-本金建立
-提高收入，留下钱
-存款、货币基金、国债、少量宽基
-
-
-资产积累
-建立资产组合
-宽基 ETF、债券、红利、黄金
-
-
-资产增长
-让复利发挥作用
-ETF、QDII、REITs、优质企业
-
-
-财富管理
-控制回撤
-全球股票、债券、黄金、多资产
-
-
-财富保全
-保值与现金流
-全球配置、现金流、风险管理
-
-
-一个常见误区是：财富越多，就越应该买高风险资产。
-其实未必。很多时候，财富越多，越没有必要赌。因为本金变大以后，亏损 30% 的绝对金额可能会非常可怕。此时风险管理的重要性，会逐渐超过追求极致收益。
-财富自由从哪里开始？回到最开始的问题：如果财富自由是终点，起点在哪里？
-我的答案是：
-
-财富自由的起点，不是你第一次买股票，而是你第一次认真管理自己的收入、支出、资产和负债。
-
-完整路径可以浓缩成五步：
-
-
-
-让收入产生结余。
-让结余变成资产。
-让资产产生收益。
-让收益继续变成资产。
-让资产现金流逐渐覆盖生活。
-
-投资从来不是一场百米冲刺。
-有人第一年赚了 50%，第二年亏了 40%；有人十年追逐热点，最后没有留下多少资产；也有人从未买中过“年度牛股”，只是持续提高收入、控制负债、购买资产，然后坚持 20 年。
-最终决定结果的，往往不是某一年跑得多快，而是能不能一直留在赛道上。
-写在最后如果财富自由是一场马拉松：
-收入，是你的速度。
-储蓄，是你的第一桶水。
-资产，是你已经跑过的距离。
-负债，是你背负的重量。
-现金流，是你的体力。
-资产配置，是你的配速策略。
-复利，是跑得越远越明显的助推器。
-而风险管理决定：你能不能跑完全程。
-所以投资真正值得问的第一个问题，从来不是“明天买什么”，而是：
-
-我现在在哪里？我的下一公里，应该怎么跑？
-
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>投资</tag>
-        <tag>财富自由</tag>
-        <tag>方法论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>方法论-如何建立正确的用户画像？</title>
     <url>/posts/8ba40c3d.html</url>
     <content><![CDATA[如何建立正确的用户画像
@@ -3800,6 +3763,43 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
 
 再深入想一下业务场景，如果某个办公地点，每天都有五六笔的订单，分属不同的客户不同的时间段，外卖小哥得送个五六次，对人力成本是多大的浪费呀。运营可以在后台分析相关的数据，以团购或拼单的形式，促成订单合并，或许销售额的利润会下降，但是外卖的人力成本也节约了。这也是用画像作为数据分析的依据。
 老王的运营故事说完了，现在对用户画像的建立有一套想法了吧。
+]]></content>
+      <categories>
+        <category>方法论</category>
+      </categories>
+      <tags>
+        <tag>用户画像</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法论-用户画像知识进阶</title>
+    <url>/posts/6ac12912.html</url>
+    <content><![CDATA[用户画像的架构
+
+内容转载于：https://www.iamue.com/34391
+
+作者：秦路
+
+原文很长，干货很多，为了便于理解，我把文章拆分为了三期
+今天介绍第三期：用户画像的进阶
+
+不同业务的画像标签体系并不一致，这需要数据和运营目的性的提炼。
+用户画像一般按业务属性划分多个类别模块。除了常见的人口统计，社会属性外。还有用户消费画像，用户行为画像，用户兴趣画像等。具体的画像得看产品形态，像金融领域，还会有风险画像，包括征信、违约、洗钱、还款能力、保险黑名单等。电商领域会有商品的类目偏好、品类偏好、品牌偏好，不一而足。
+
+上图是随手画的的例子，画一个架构不难，难得是了解每个标签背后的业务逻辑和落地方式，至于算法，又能单独扯很多文章了。
+从数据流向和加工看，用户画像包含上下级递进关系。
+以上文的流失系数举例，它通过建模，其依赖于用户早期的历史行为。而用户早期的历史行为，即10天内的消费金额、消费次数、登录次数等，本身也是一个标签，它们是通过原始的明细数据获得。
+
+上图列举了标签加工和计算的过程，很好理解。最上层的策略标签，是针对业务的落地，运营人员通过多个标签的组合形成一个用户群组，方便执行。
+公司越大，用户画像越复杂。某家主打内容分发的公司进入了全新的视频领域，现在有两款APP，那么用户画像的结构也需要改变。既有内容相关的标签，也有视频相关的标签，两者是并行且关联的。
+比如A用户在内容标签下是重度使用，而在视频标签下是轻度。比如B用户很久没打开内容APP有流失风险，但在视频APP的使用时长上看很忠诚。如此种种，看的是灵活应用。当然，姓名性别这类人口统计标签，是通用的。
+用户画像作为平台级的应用，很多运营策略及工具，都是在其基础上构建的。
+
+基于营销和消费相关的标签，新客、老客、用户的流失和忠诚、用户的消费水平和频率等，都是构成CRM（客户关系管理）的基础，可能大家更习惯叫它用户&#x2F;会员管理运营平台。
+它的作用在于，将数据化的标签，转换成产品运营策略。不同的标签对应不同的用户群体，也对应不同的营销手段。CRM的结构中会包含各类触达用户的常用渠道比如短信、邮件、推送等。也包含CMS（内容管理系统），执行人员通过其快速配置活动页、活动通道、优惠券等，靠营销活动拉动数据。
+老王的沙拉业务要是做大，那么运营平台就会以图中的结构搭建。老王在CRM中组合标签，新客老客流失客的数据借助BI监控，然后通过CMS系统配置红包啊优惠券啊等等，再通过短或Push触达。
+好的用户画像系统，既是数据生态体系，也是业务和运营的生态体系，它是一门复杂的交叉领域。
+万千用法，存乎一心。
 ]]></content>
       <categories>
         <category>方法论</category>
@@ -3874,6 +3874,30 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
       </categories>
       <tags>
         <tag>用户画像</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了</title>
+    <url>/posts/ee95cb26.html</url>
+    <content><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了**微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。
+泄露版Edge的开发完成度较高，在Windows 10上运行良好，但是，您可能会从Edge中看到一些还没有完工的地方。例如，微软尚未提供其预留选项卡功能，尚未实现使用手写笔功能的电子墨水特性，而黑暗模式目前只能通过手动打开测试标记获得，就像Google在Chrome中实现它一样。
+另一方面，微软也正在开发适用于Mac的Edge版本，但目前尚不清楚它是否会与新版Edge for Windows版本同时亮相。
+
+终于没有了Edge浏览器的塑料感了，质感更强了
+
+
+
+账户头像也可以定制了
+目前仅为泄漏版Edge浏览器，仅支持英文，后续若有官方发布，请尽快更新
+转载于网络
+若想尝鲜，关注微信公众号：产品汪darer
+后台回复：edge浏览器，即可下载
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
       </tags>
   </entry>
   <entry>
@@ -3966,6 +3990,75 @@ RFM模型是衡量客户价值和客户创利能力的重要工具和手段
       </categories>
       <tags>
         <tag>大佬思考</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬虫-怎么爬静态网站</title>
+    <url>/posts/b6c6d65a.html</url>
+    <content><![CDATA[爬虫-怎么爬静态网站爬静态网站主要分为两部分：
+
+爬静态网站的文字
+
+爬静态网站的图片
+
+
+[TOC]
+爬文字思路
+用requests模块得到网站的HTML
+
+用BeautifulSoup模块得到HTML的正则文本
+
+用find或者find_all函数从正则文本中得到自己想要的
+
+用repalce去除不需要的字符
+
+
+源代码# coding:utf-8# 使脚本可以识别中文# 爬网站：http://www.hbrchina.org/importfrom# 调用需要的模块if	req = requests.get (&#x27;http://www.hbrchina.org/2019-02-18/7150.html&#x27;   # 得到网站的HTML	req.encoding = req.apparent_encoding	#获取文本原来编码，使两者编码一致才能正确显示	html = req.text	bf = BeautifulSoup(html,&#x27;html.parser&#x27;  # 把HTML文件转为正则文件（我的理解是文本文件）	body = bf.body	texts = body.find_all (&#x27;div&#x27;  # 用find_all函数找到 这样的div文件，其class是article-content	print(texts[0  # 用replace函数提出所有的字符、空格等
+
+
+可以看到的结果
+爬图片思路
+用requests模块得到网站的HTML
+
+用BeautifulSoup得到HTML的正则文本
+
+用find函数从正则文本中得到自己想要的，比如关键词img
+
+利用urllib模块下载
+
+利用for语句下载所有图片
+
+
+源代码# coding:utf-8importfromif	rep = requests.get(&#x27;https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/&#x27;	rep.encoding = rep.apparent_encoding	html = rep.text	bs = BeautifulSoup(html,&#x27;html.parser&#x27;	img = bs.find_all(&#x27;img&#x27;	# 在bs正则文件中找到所有 带有img标签的结果	x=1	for    # 利用for语句得到每一个图片的src		imgsrc = i.get(&#x27;src&#x27;    # 从img中找到图片的下载链接，src		urllib.request.urlretrieve(imgsrc,&#x27;./%s.jpg&#x27;    # 利用urllib模块去下载图片		x=x+1		print
+
+
+爬虫时必须会用网页源代码以爬图片为例：
+这是我们要爬的网站：[https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/]
+打开网站后（我用的Chrome浏览器），键盘快捷键F12，即可打开网站的调试模式，效果如下：
+
+右侧就是网站的源代码，可以用来爬
+如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，选择检查，如下图所示：
+
+如果我们要快速定位某图片所在的代码位置，演示如下：
+
+用这种方法观察每一张图片的源码：
+它们的写法都是非常类似的，如下：
+&lt;img
+
+
+src是图片的下载地址，alt是图片的便签，每一张图片都在img语句中
+所以我们只要得到所有的img语句，然后从img语句中得到所有的src链接，就可以下载图片了。
+每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。
+对于小白，难度就在于怎么样找到要爬部分的特点
+
+以上
+]]></content>
+      <categories>
+        <category>产品经理学技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -4109,99 +4202,6 @@ while循环
       </tags>
   </entry>
   <entry>
-    <title>爬虫-怎么爬静态网站</title>
-    <url>/posts/b6c6d65a.html</url>
-    <content><![CDATA[爬虫-怎么爬静态网站爬静态网站主要分为两部分：
-
-爬静态网站的文字
-
-爬静态网站的图片
-
-
-[TOC]
-爬文字思路
-用requests模块得到网站的HTML
-
-用BeautifulSoup模块得到HTML的正则文本
-
-用find或者find_all函数从正则文本中得到自己想要的
-
-用repalce去除不需要的字符
-
-
-源代码# coding:utf-8# 使脚本可以识别中文# 爬网站：http://www.hbrchina.org/importfrom# 调用需要的模块if	req = requests.get (&#x27;http://www.hbrchina.org/2019-02-18/7150.html&#x27;   # 得到网站的HTML	req.encoding = req.apparent_encoding	#获取文本原来编码，使两者编码一致才能正确显示	html = req.text	bf = BeautifulSoup(html,&#x27;html.parser&#x27;  # 把HTML文件转为正则文件（我的理解是文本文件）	body = bf.body	texts = body.find_all (&#x27;div&#x27;  # 用find_all函数找到 这样的div文件，其class是article-content	print(texts[0  # 用replace函数提出所有的字符、空格等
-
-
-可以看到的结果
-爬图片思路
-用requests模块得到网站的HTML
-
-用BeautifulSoup得到HTML的正则文本
-
-用find函数从正则文本中得到自己想要的，比如关键词img
-
-利用urllib模块下载
-
-利用for语句下载所有图片
-
-
-源代码# coding:utf-8importfromif	rep = requests.get(&#x27;https://darerd.github.io/2019/03/21/%E9%9A%8F%E6%83%B3-%E6%96%B0%E9%9B%B6%E5%94%AE%E4%BC%81%E4%B8%9A%E2%80%9C%E2%80%9C%E6%99%BA%E8%83%9C%E2%80%9D%E6%9C%AA%E6%9D%A5/&#x27;	rep.encoding = rep.apparent_encoding	html = rep.text	bs = BeautifulSoup(html,&#x27;html.parser&#x27;	img = bs.find_all(&#x27;img&#x27;	# 在bs正则文件中找到所有 带有img标签的结果	x=1	for    # 利用for语句得到每一个图片的src		imgsrc = i.get(&#x27;src&#x27;    # 从img中找到图片的下载链接，src		urllib.request.urlretrieve(imgsrc,&#x27;./%s.jpg&#x27;    # 利用urllib模块去下载图片		x=x+1		print
-
-
-爬虫时必须会用网页源代码以爬图片为例：
-这是我们要爬的网站：[https://darerd.github.io/2019/03/21/随想-新零售企业““智胜”未来/]
-打开网站后（我用的Chrome浏览器），键盘快捷键F12，即可打开网站的调试模式，效果如下：
-
-右侧就是网站的源代码，可以用来爬
-如果需要快速定位到某一部分的代码所在位置，我们可以鼠标右键，选择检查，如下图所示：
-
-如果我们要快速定位某图片所在的代码位置，演示如下：
-
-用这种方法观察每一张图片的源码：
-它们的写法都是非常类似的，如下：
-&lt;img
-
-
-src是图片的下载地址，alt是图片的便签，每一张图片都在img语句中
-所以我们只要得到所有的img语句，然后从img语句中得到所有的src链接，就可以下载图片了。
-每一种爬虫程序都类似，找到要爬部分的特点，然后调用相应的模块。
-对于小白，难度就在于怎么样找到要爬部分的特点
-
-以上
-]]></content>
-      <categories>
-        <category>产品经理学技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了</title>
-    <url>/posts/ee95cb26.html</url>
-    <content><![CDATA[Edge浏览器大改版：基于Chromium内核的Edge浏览器终于变好看了**微软即将推出的基于Chromium内核的Edge浏览器完整安装包已经在线泄露。**泄露的版本似乎是微软预计很快将在公开预览版中发布的早期版本。微软的新版Edge基于Chromium，早期版本包括Chrome扩展支持，收藏夹同步以及对用户界面的一些自定义调整。
-泄露版Edge的开发完成度较高，在Windows 10上运行良好，但是，您可能会从Edge中看到一些还没有完工的地方。例如，微软尚未提供其预留选项卡功能，尚未实现使用手写笔功能的电子墨水特性，而黑暗模式目前只能通过手动打开测试标记获得，就像Google在Chrome中实现它一样。
-另一方面，微软也正在开发适用于Mac的Edge版本，但目前尚不清楚它是否会与新版Edge for Windows版本同时亮相。
-
-终于没有了Edge浏览器的塑料感了，质感更强了
-
-
-
-账户头像也可以定制了
-目前仅为泄漏版Edge浏览器，仅支持英文，后续若有官方发布，请尽快更新
-转载于网络
-若想尝鲜，关注微信公众号：产品汪darer
-后台回复：edge浏览器，即可下载
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Typora+七牛云，高效写Markdown|产品必用软件|第1期</title>
     <url>/posts/c72faef6.html</url>
     <content><![CDATA[作为一名产品经理，日常免不了要和大量的文档打交道，比如：需求文档、竞品分析、MRD、PRD等等
@@ -4278,38 +4278,6 @@ windows系统少有的可以方便上传到图床的工具(且只支持七牛云
       </tags>
   </entry>
   <entry>
-    <title>软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal</title>
-    <url>/posts/2c3f30b2.html</url>
-    <content><![CDATA[Windows系统下最实用的日程管理软件-桌面日历DesktopCal时间管理，无论是对工作、还是学习都非常重要。
-所以有一款好用的时间管理软件，会让你事半功倍，时间安排更加心中有数
-今天推荐的一款应该是Windows系统下最实用的日常管理 软件
-桌面日历DesktopCal
-界面
-演示
-主要功能
-
-
-自从发现了这款软件之后，真的是爱不释手
-
-
-这款软件可以很好的帮助你对整体的日程安排有一个非常直接的认识
-
-
-知道每一个任务或者计划需要多长时间，需要在哪几天完成等等
-
-
-官网地址
-下载方式关注微信公众号：产品汪darer，后台回复关键词：桌面日历DesktopCal，即可下载
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title> Windows系统最好用的文件预览工具|产品软件|5th</title>
     <url>/posts/3e71d4bc.html</url>
     <content><![CDATA[Windows系统最好用的文件预览工具|产品软件|5th预览功能是 mac系统中 非常好用的一个功能，只需要选中文件，点击空格，在无需打开对应程序的情况下直接预览文件内容，非常省时省力，在查阅文件内容时非常方便，不少文件打开是非常吃内存和比较耗时间的。
@@ -4369,120 +4337,28 @@ Markdown 文件 (.md)
       </tags>
   </entry>
   <entry>
-    <title>产品人必用的大幅提高办公效率的工具|产品软件更新|1st</title>
-    <url>/posts/a4af17e0.html</url>
-    <content><![CDATA[[TOC]
-Groupy
-
-每一位产品经理都会触发一下“彩蛋”：
-
-
-办公时会打开多个软件，需要在不同软件之间切换，查看
-
-
-有时会被搞的眼花缭乱
+    <title>软件-Windows系统下最实用的日程管理软件-桌面日历DesktopCal</title>
+    <url>/posts/2c3f30b2.html</url>
+    <content><![CDATA[Windows系统下最实用的日程管理软件-桌面日历DesktopCal时间管理，无论是对工作、还是学习都非常重要。
+所以有一款好用的时间管理软件，会让你事半功倍，时间安排更加心中有数
+今天推荐的一款应该是Windows系统下最实用的日常管理 软件
+桌面日历DesktopCal
+界面
+演示
+主要功能
 
 
-你肯定会有以下需求：
+自从发现了这款软件之后，真的是爱不释手
 
 
-希望把所有的软件整合在一起
+这款软件可以很好的帮助你对整体的日程安排有一个非常直接的认识
 
 
+知道每一个任务或者计划需要多长时间，需要在哪几天完成等等
 
 
-软件切换和查看可以非常方便
-
-
-
-
-既然有需求，那就一定有解决需求的办法：
-有这么一款软件，它可以把所有软件整合在一起，就像浏览器的标签页一样，点击不同的标签页即可实现软件之间的切换。
-
-Groupy可以帮助把Windows桌面上的多个软件整合到一个窗口，就如同浏览器的标签页一样。
-只需要把一个窗口拖到另外一个已经打开的窗口上，窗口就会自动整合到一起，每个窗口都会自动转换为标签页，只需要在标签页点击不同的标签，即可切换程序。
-你的工作桌面(without Groupy)
-
-经过Groupy整理后的桌面
-
-Groupy操作界面
-
-演示demo:
-
-更多好玩的功能，可以下载后探索
-在微信公众号后台回复：groupy，即刻免费下载
-
-Listary
-
-每一位产品人都会触发以下“彩蛋”
-
-
-电脑里文件太多了，每次领导要材料我就头疼
-
-
-找文件简直龟速
-
-
-你肯定有如下需求：
-
-
-文件检索定位迅速、高效
-
-
-
-
-操作简单，不费事
-
-
-
-
-既然有需求，就一定有解决需求的办法
-Listary是一款可以帮你迅速定位到文件位置的软件，默认双击ctrl键即刻调用
-Listary的界面非常简单
-界面演示：
-
-默认开机启动，检索时双击ctrl即刻调出检索窗口
-演示demo：
-
-有一个问题需要注意
-安装完Listary，它默认在桌面的空白区域双击出现 快捷菜单
-如图：
-
-如果你不喜欢，可以去设置关掉
-演示demo：
-
-这时，你在桌面空白处，双击就不会出现快捷菜单了
-更多好玩的功能，可以下载后探索
-在微信公众号后台回复：listary，即刻免费下载
-
-Ditto
-
-每一位产品人都会遇到这样的“彩蛋”
-
-
-windows系统自带的剪贴板太烂了
-
-
-每次只能粘贴上一次复制的东西
-
-
-不能粘贴前面几次复制的东西
-
-
-大大降低了工作效率
-
-
-有这样的需求，就一定会有解决办法滴
-Ditto就是这样一款剪贴板增强神器
-它可以保存你剪贴板内容，而且支持检索功能，你可以轻松找到之前复制的内容，不仅支持文字，还支持图片等
-界面演示：
-
-默认开机启动，默认快捷键ctrl+·打开
-演示demo：
-
-更多好玩的功能，可以下载后探索
-在微信公众号后台回复：ditto，即刻免费下载
-
+官网地址
+下载方式关注微信公众号：产品汪darer，后台回复关键词：桌面日历DesktopCal，即可下载
 ]]></content>
       <categories>
         <category>软件资源</category>
@@ -4590,98 +4466,6 @@ Picgo
 如果你想使用sftp和ftp,必须选择Fu
 如果你想要一款高颜值，支持平台多的，选择Picgo
 
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-简单实用的To-Do清单-小黄条</title>
-    <url>/posts/14a41619.html</url>
-    <content><![CDATA[简单实用的To-Do清单-小黄条在前几期，为大家推荐了非常好用的桌面日程管理软件-桌面日历DesktopCal
-用过的小伙伴应该会有这样一种感觉，桌面日历DesktopCal更适合从宏观的角度对时间做一个安排，但是如果具体到每时每刻要做的To-Do安排，桌面日历DesktopCal就会显得有些有气无力了。
-今天为大家推荐的小黄条To-Do清单，可以非常完美的解决这个痛点，和桌面日历DesktopCal的合作简直是绝配。
-
-界面
-Demo演示
-功能介绍
-无推送、无广告、无红点，不主动打扰
-
-一览式todolist清单，简单、纯粹、实用
-
-任务记录云端存储永不丢失
-
-任务支持简单排序，可对重要的任务设置“置顶”
-
-跨平台同步，覆盖所有办公场景，随时随地查看、记录、编辑、管理任务
-
-已完成的任务按天归档，方便快速回顾本周主要工作，高效输出工作周报
-
-windows版本支持嵌入桌面，搭配【极简】模式完美融入系统桌面
-
-windows版本支持窗体移动到屏幕边缘时自动隐藏，便于保护隐私
-
-windows版本支持自定义字体、字号、间距、文字颜色
-
-windows版本支持使用快捷键快速隐藏&#x2F;显示主界面
-
-App可对每个任务单独设置提醒
-
-App图标可显示未完成任务数量，需要在more页面手动开启
-
-App支持Widget，Widget上可直接完成任务，无需启动应用也能浏览、管理Todolist，更直观高效的自我管理
-
-
-下载地址
-官网地址
-
-关注微信公众号：产品汪darer，后台回复关键词：小黄条，即可下载
-
-
-]]></content>
-      <categories>
-        <category>软件资源</category>
-      </categories>
-      <tags>
-        <tag>软件资源</tag>
-        <tag>产品必用软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-选择一款良心浏览器很重要-Cent浏览器</title>
-    <url>/posts/dca76823.html</url>
-    <content><![CDATA[选择一款良心浏览器很重要-Cent浏览器最近一段时间，996是最火的数字了，各方媒体、各方大佬都在发声
-但是在前不久，国内大厂旗下的浏览器做了一件非常非常流氓的事情：屏蔽了996.icu项目，也就是下面这个网址
-
-
-https://github.com/996icu/996.ICU
-部分浏览器屏蔽截图：
-
-据统计“流氓”浏览器包括但不仅限于：
-360系（360浏览器等）、腾讯系（QQ浏览器、微信等）、阿里系（UC浏览器、夸克浏览器等）、小米系（小米手机内嵌浏览器）等
-在发觉这件事情之后，我就立刻卸载了360安全浏览器和夸克浏览器（微信没有替代品，不然我也卸载了）
-
-
-没有能力去改变，但是我会选择去抵制
-
-
-在没有违反国家法律的情况下，用户有权选择自己想要的资讯
-那市场上有没有好用的替代浏览器呢？
-在卸载后，我主要尝试了Firefox浏览器和Cent浏览器，Firefox浏览器不是非常符合自己的使用习惯，最终选择了Cent浏览器。
-Cent浏览器是什么？Cent浏览器又称百分浏览器：追求速度、安全和简约的网络浏览器
-它基于最新的Chromium开源内核进行优化开发，充分继承其高速安全的特性
-如果问大家最好用的浏览器是什么？几乎六成的人会说是Chrome浏览器
-Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验更舒服
-
-从上图可见，主界面和Chrome几乎完全一样，操作上比Chrome更舒服
-主要特色功能
-比如，可以双击关闭Tab标签，还有许多定制的鼠标手势
-下载地址可以去 官网地址 下载
-或者 关注微信公众号：产品汪darer，后台回复关键词：Cent浏览器，即可下载
 ]]></content>
       <categories>
         <category>软件资源</category>
@@ -4841,133 +4625,167 @@ Pandownload
       </tags>
   </entry>
   <entry>
-    <title>问答-怎么““骂”一个产品经理|产品问答|第4期</title>
-    <url>/posts/6671dd8c.html</url>
-    <content><![CDATA[
+    <title>产品人必用的大幅提高办公效率的工具|产品软件更新|1st</title>
+    <url>/posts/a4af17e0.html</url>
+    <content><![CDATA[[TOC]
+Groupy
 
-看看同行们都在想些啥
-以下内容来自产品相关社区，如有侵权，请联系删除
-[TOC]
-Q1：“骂”一个产品经理，最狠的方式是什么？
-
-在产品工作中，难免会出现摩擦的时刻；辣么，你曾见过“骂”一个产品经理的最狠方式是啥？一起来吐槽下~
+每一位产品经理都会触发一下“彩蛋”：
 
 
-看到这个问题，我就被吸引了，看看大家怎么说的
-author:Hsia @人人都是产品经理
-不就是抄的xxx吗
-author:向日葵诗人kevin @人人都是产品经理
-分享一个最近和技术撕逼的例子
-技术：你拿数据来说话
-我：功能没做我哪里来的数据
-技术：你去做用户调研，做访谈
-我：不可能每个功能都去做调研
-技术：那是你的事，不是我的事
-我……
-author:夜月沉星 @人人都是产品经理
-你写的文档，就和cxk打球一样
+办公时会打开多个软件，需要在不同软件之间切换，查看
 
 
-和cxk比较，真tm狠
-author:阳光懒人 @人人都是产品经理
+有时会被搞的眼花缭乱
 
-你自己需求都没想清楚
 
-不用那么麻烦了，把你抄的APP给我们下载一个
+你肯定会有以下需求：
 
-产品经理不就是把老板想法复述一遍么……
+
+希望把所有的软件整合在一起
 
 
 
 
-巴拉巴拉的还有很多，就不写了，附个链接，大家可以去补充
-Q2：朋友圈广告可以艾特好友有什么意义？author:阳光懒人 @人人都是产品经理
-朋友圈广告可以艾特好友，可能存在以下几个好处：
-
-增加了广告的社交属性，会让广告有更多的玩法，让广告商在设计广告的时候添加更多的互动性的创意，同时互动性、创意好的广告又能通过艾特功能提高传播效率和扩大传播范围，良性循环；
-
-对于用户来说，也会有几种场景会用到艾特功能，比如说：微信给女朋友推了一个channel化妆品广告，女朋友很心动然后就艾特男朋友。类似这样的互动玩法也会增加广告的乐趣，让广告植入不那么生硬；
-
-对于微信收集数据来说意义也是很大的，之前全靠推荐算法来推荐不同广告给不同用户群体，有了这个功能可能让广告投放更加精准。
+软件切换和查看可以非常方便
 
 
 
 
-看到这个消息，我的第一感受就是微信也要在商业化上提速了
-Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？author:chitang @人人都是产品经理
-关于微信发现一栏里的搜一搜和看一看在2017年5月份正式更新上线。但对于一个产品来说都属于半成品都未全面的打开流量入口，当然凭借微信月活跃用户量10亿来说未来这两个依旧是不可估量的流量入口，目前都还停留在“实验室”中；
-「搜一搜」
-搜一搜的feed流则提供了长尾流量的能力，一方面是给公众号导流，另一方面也提供了变现的可能性。同时出现了很多可选内容，公众号、朋友圈、小程序、文章、小说、音乐、表情、视频、搜狗、知乎、外部资讯；搜一搜将搜索能力延申到更多外部信息内容，这一举措算是比较大的创新了，打破了以往腾讯的封闭圈。
-对于全网搜索，已经是一片红海了，百度在移动端依然覆盖80%左右的市场份额，别说“怼”百度了，就是和360搜索“PK”起来都不是很容易。另外在用户搜索上，已经习惯性的通过百度或者谷歌等浏览器去搜索信息，很少人会去使用微信搜内容？用户习惯暂时形成不了，所以说搜一搜目前还是一个未成熟的功能。
-「看一看」
-看一看的内容主要是以展现朋友圈，好友，微信群，公众号等渠道看到的内容—统称为**“已关注或已关联”**内容。但还有未关注和未关联的内容也将展现在这里（这部分未关联内容可能和个人的兴趣关注、地理位置、热点资讯、好友的分享，转发，点赞等相关维度做信息推荐及展现）属于微信的个性化智能化推荐；
-微信对于「搜一搜」和「看一看」的流量分配中“看一看”目前的流量大于“搜一搜”；
-“搜一搜”则是用来帮助用户快速查找内容或服务，搜索项目包括朋友圈、文章、公众号、小说和表情等，但，&quot; 搜一搜 &quot;基于知乎用户的使用习惯和操作方式来看目前使用频次较少；
-&quot; 看一看 &quot; 所呈现内容，目前跟它们的阅读量、点赞量、转发量、留言评论量及赞赏数量等尚未显现出强关联的关系。看一看的主要呈现为：已认证公众号内容、原创内容、长篇内容这几大类型；用户可以浏览热点资讯、好友关注的资讯以及自己感兴趣的文章，“看一看”则提供了用户感兴趣的热点资讯“集合”，并且有小红点加持，消灭小红点的时候你也会打开它。
-其中，微信对于用户停留时长，即用户如果阅读这篇文章的时间越长，它越有可能被精选、分发到 &quot; 看一看 “、” 搜一搜 &quot; 等页面。
-再说一句，其中还存在用户使用习惯和人性的特点：被动获取内容  &gt; 主动获取内容，人性上都是比较懒惰的 … …
+既然有需求，那就一定有解决需求的办法：
+有这么一款软件，它可以把所有软件整合在一起，就像浏览器的标签页一样，点击不同的标签页即可实现软件之间的切换。
+
+Groupy可以帮助把Windows桌面上的多个软件整合到一个窗口，就如同浏览器的标签页一样。
+只需要把一个窗口拖到另外一个已经打开的窗口上，窗口就会自动整合到一起，每个窗口都会自动转换为标签页，只需要在标签页点击不同的标签，即可切换程序。
+你的工作桌面(without Groupy)
+
+经过Groupy整理后的桌面
+
+Groupy操作界面
+
+演示demo:
+
+更多好玩的功能，可以下载后探索
+在微信公众号后台回复：groupy，即刻免费下载
+
+Listary
+
+每一位产品人都会触发以下“彩蛋”
+
+
+电脑里文件太多了，每次领导要材料我就头疼
+
+
+找文件简直龟速
+
+
+你肯定有如下需求：
+
+
+文件检索定位迅速、高效
+
+
+
+
+操作简单，不费事
+
+
+
+
+既然有需求，就一定有解决需求的办法
+Listary是一款可以帮你迅速定位到文件位置的软件，默认双击ctrl键即刻调用
+Listary的界面非常简单
+界面演示：
+
+默认开机启动，检索时双击ctrl即刻调出检索窗口
+演示demo：
+
+有一个问题需要注意
+安装完Listary，它默认在桌面的空白区域双击出现 快捷菜单
+如图：
+
+如果你不喜欢，可以去设置关掉
+演示demo：
+
+这时，你在桌面空白处，双击就不会出现快捷菜单了
+更多好玩的功能，可以下载后探索
+在微信公众号后台回复：listary，即刻免费下载
+
+Ditto
+
+每一位产品人都会遇到这样的“彩蛋”
+
+
+windows系统自带的剪贴板太烂了
+
+
+每次只能粘贴上一次复制的东西
+
+
+不能粘贴前面几次复制的东西
+
+
+大大降低了工作效率
+
+
+有这样的需求，就一定会有解决办法滴
+Ditto就是这样一款剪贴板增强神器
+它可以保存你剪贴板内容，而且支持检索功能，你可以轻松找到之前复制的内容，不仅支持文字，还支持图片等
+界面演示：
+
+默认开机启动，默认快捷键ctrl+·打开
+演示demo：
+
+更多好玩的功能，可以下载后探索
+在微信公众号后台回复：ditto，即刻免费下载
+
 ]]></content>
       <categories>
-        <category>产品问答</category>
+        <category>软件资源</category>
       </categories>
       <tags>
-        <tag>产品问答</tag>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
       </tags>
   </entry>
   <entry>
-    <title>问答-工作被流程化，到底该不该？</title>
-    <url>/posts/675b265e.html</url>
-    <content><![CDATA[
-
-看看同行们都在想些啥
-以下内容来自产品相关社区，如有侵权，请联系删除
-[TOC]
-Q1 : 工作被流程化，到底该不该？
-
-有人认为，流程化有助于公司拥有更长远的竞争力；
-
-有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
-
-author:Hysterin @人人都是产品经理
-如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
-无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
-从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
-但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
-举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
-很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
-三年过去，这位学员现在已在五百强企业做专职产品经理了。
-工作可以被流程化，可以被定性。但人不可以。记住这句话。
-Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
-
-当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
+    <title>软件-选择一款良心浏览器很重要-Cent浏览器</title>
+    <url>/posts/dca76823.html</url>
+    <content><![CDATA[选择一款良心浏览器很重要-Cent浏览器最近一段时间，996是最火的数字了，各方媒体、各方大佬都在发声
+但是在前不久，国内大厂旗下的浏览器做了一件非常非常流氓的事情：屏蔽了996.icu项目，也就是下面这个网址
 
 
-在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
+https://github.com/996icu/996.ICU
+部分浏览器屏蔽截图：
+
+据统计“流氓”浏览器包括但不仅限于：
+360系（360浏览器等）、腾讯系（QQ浏览器、微信等）、阿里系（UC浏览器、夸克浏览器等）、小米系（小米手机内嵌浏览器）等
+在发觉这件事情之后，我就立刻卸载了360安全浏览器和夸克浏览器（微信没有替代品，不然我也卸载了）
 
 
-如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
-author:李小玉 @人人都是产品经理
-别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
-当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
-如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
-做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
+没有能力去改变，但是我会选择去抵制
 
 
-被别人带跑偏，说明自己对方案的考虑存在纰漏
-Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
+在没有违反国家法律的情况下，用户有权选择自己想要的资讯
+那市场上有没有好用的替代浏览器呢？
+在卸载后，我主要尝试了Firefox浏览器和Cent浏览器，Firefox浏览器不是非常符合自己的使用习惯，最终选择了Cent浏览器。
+Cent浏览器是什么？Cent浏览器又称百分浏览器：追求速度、安全和简约的网络浏览器
+它基于最新的Chromium开源内核进行优化开发，充分继承其高速安全的特性
+如果问大家最好用的浏览器是什么？几乎六成的人会说是Chrome浏览器
+Cent浏览器就像是根据国人习惯定制的Chrome浏览器，使用体验更舒服
 
-有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
-author:阿不 @人人都是产品经理
-这个代码我看了。
-分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
-播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
-其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
+从上图可见，主界面和Chrome几乎完全一样，操作上比Chrome更舒服
+主要特色功能
+比如，可以双击关闭Tab标签，还有许多定制的鼠标手势
+下载地址可以去 官网地址 下载
+或者 关注微信公众号：产品汪darer，后台回复关键词：Cent浏览器，即可下载
 ]]></content>
       <categories>
-        <category>产品问答</category>
+        <category>软件资源</category>
       </categories>
       <tags>
-        <tag>产品问答</tag>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
       </tags>
   </entry>
   <entry>
@@ -5089,108 +4907,179 @@ author:魏雅 @人人都是产品经理社区
       </tags>
   </entry>
   <entry>
-    <title>问答-特斯拉入局，蔚来们是在裸泳吗？</title>
-    <url>/posts/f43c164c.html</url>
+    <title>问答-怎么““骂”一个产品经理|产品问答|第4期</title>
+    <url>/posts/6671dd8c.html</url>
     <content><![CDATA[
 
-俗话说：“三人行，必有我师”
-
-
-看看同行们是怎么分析问题的
+看看同行们都在想些啥
 以下内容来自产品相关社区，如有侵权，请联系删除
 [TOC]
-:   特斯拉入局，蔚来们是在裸泳吗？
+Q1：“骂”一个产品经理，最狠的方式是什么？
 
-国内新能源汽车的领斗羊蔚来汽车在2018年成功完成了交付1万辆的Flag，然而却被前员工爆出1W辆部分是在蔚来对内部员工的激励措施下内部员工的购买，实际用户购买的出货量比对外公布的小，退货量也比外界想象的大。
-author:猫黎 @PMCAFF
-Answer
-对于蔚来汽车的体验，我得到了正反两方面的反馈。
-我的数位预订了蔚来汽车的朋友纷纷表示，ES8的补贴前售价44.80~54.80万元，若采用电池租赁方案，加上补贴，算下来顶配38万。
-“便宜啊，然后性能和特斯拉一模一样。” “蔚来汽车还有特斯拉做不到的，以用户的感受为第一，我都打算坐地铁去提车了，他们主动过来接我。”小伙伴们说。
+在产品工作中，难免会出现摩擦的时刻；辣么，你曾见过“骂”一个产品经理的最狠方式是啥？一起来吐槽下~
 
 
-性能和特斯拉一模一样，这位用户是认真的吗?!😂
-我听说，蔚来汽车经常组织购车者线下各种活动，以增强社交黏性。
-当然，黑ES8的理由更多。
-这款车是由江淮汽车代工的。毕竟江淮汽车是以5.68万起的瑞风S3为主打的低端车品牌，而蔚来ES8定位于中高端SUV，对标的是奥迪Q5等。二者甚是违和，江淮能够做高端车吗？
-这款车的尾标是江淮蔚来，很多车主刚提车就“抠尾标”。
+看到这个问题，我就被吸引了，看看大家怎么说的
+author:Hsia @人人都是产品经理
+不就是抄的xxx吗
+author:向日葵诗人kevin @人人都是产品经理
+分享一个最近和技术撕逼的例子
+技术：你拿数据来说话
+我：功能没做我哪里来的数据
+技术：你去做用户调研，做访谈
+我：不可能每个功能都去做调研
+技术：那是你的事，不是我的事
+我……
+author:夜月沉星 @人人都是产品经理
+你写的文档，就和cxk打球一样
 
 
-江淮蔚来、华晨宝马😂
+和cxk比较，真tm狠
+author:阳光懒人 @人人都是产品经理
 
-此外，充电问题。
-周末，我逛了下特斯拉体验中心，销售小姐以平静中不失骄傲的语气对我说：“特斯拉的充电桩遍布全国，而蔚来汽车是电池更换坞，电池装装拔拔。”
-蔚来汽车的一键加电预约，对于远途而言，也略有些搞笑。
+你自己需求都没想清楚
 
-一个关键词
-如果蔚来汽车有一个关键词，毫无疑问，是“烧钱”。李斌曾说：“200亿元是造车的门槛。”
+不用那么麻烦了，把你抄的APP给我们下载一个
 
-
-凡是亏损，都不是最好的商业模式
-根据招股说明书，2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的收入是0元、0元、4600万元人民币。同期的亏损，分别是25.69亿、50.13亿、33.21亿人民币。累计亏损约为109亿元。
-
-（上表的货币单位为：百万元人民币）
-自2015年始，包括高瓴资本、腾讯、顺为资本、红杉资本、淡马锡、IDG、百度、厚朴、刘强东等超过50家知名投资机构，前前后后共融资6轮，累积募资约169亿元人民币。此外，有12.6亿元贷款。上市之前，最后一轮融资的估值是47亿美元。
-此次IPO，募集资金约为10.15亿美元，折合70亿元人民币。
-
-如此巨资，所费如何？
-最大头是研发费。2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的研发费用分别是14.7亿、26.0亿、14.6亿元。
-两厢对照，2017年比亚迪&#x2F;长城&#x2F;Tesla的研发费用分别为63亿、34亿、90亿元人民币。看起来，蔚来的研发烧钱仍前路漫漫。
-
-其次是销售和管理费用，2016年&#x2F;2017年&#x2F;2018上半年蔚来汽车分别是11.4亿、23.5亿、17.3亿元，其中广告费用分别为2.4亿、5.2亿、2.6亿元。
-蔚来汽车的门店，都在城市最繁华处例如上海中心、太古汇、北京东方广场等，所资不菲，号称单店投入8000万至上亿元。
-
-卖了多少车
-如特斯拉一样，蔚来汽车最为人诟病的，仍是交付连连推迟。
-微博网友@亚东 说：“订的车，蔚来说预计4月交付，后来推到5月、6月、7月，再后来说8月一定交付，现在又说9月一定交付。”
-按照原计划，蔚来在今年三四月交付2000台，实际至7月底仅交付481台。
-李斌全年的目标仍是1万台，还为此与另外一家小鹏汽车创始人打赌。
-
-目前，蔚来汽车的未交付订单有1.7万个。其中1.2万支付了5000元意向金，可退还；另外0.5万已支付了4.5万定金，不可退。
-对比一下特斯拉，在2010~2017年分别交付1542台、2369台、4424台、2.4万、3.4万、5.3万、7.6万、10.3万台。2018上半年交付7.1万台。
-从产量的角度，蔚来汽车基本处在特斯拉2010~2011年的水平。
-即便是特斯拉，也身处漩涡，新车型的大规模量产屡遭挑战。
-Elon Musk在去年8月份闹出一场“私有化”闹剧，就是因为股票价格的剧烈波动、以及季度财报周期的巨大压力。Musk说：“特斯拉是股市历史上最被做空的个股，存在大量想攻击特斯拉的人。”
-特斯拉至今仍在亏损。2018年二季报显示，特斯拉亏损7.2亿美元，同比扩大85.29%；一季度净亏损7.85亿美元。
-对于蔚来汽车而言，可能最坏的消息是国内汽车销量正在全面下滑。
-
-自称是“造车新势力”的互联网汽车人，李斌只是其中之一，还有小鹏汽车、奇点汽车、威马汽车等，如雨后春笋遍地开花，个个都想成为“中国特斯拉”。
-这种愿景，自然是美好的。但是最终谁可以到达彼岸，我们并不知道。
+产品经理不就是把老板想法复述一遍么……
 
 
-不知道真假，反正各大媒体都在讲“2019年是造车新势力的洗牌之年”，是否为真，吃瓜群众在看
-：为什么传统企业要转型互联网？author:Ariel诗意 @PMCAFF
-Answer
-互联网化是大势所趋
-可以这样说，只要传统企业走进一天，那么意味着互联网也必须进入传统企业，比尔盖茨说过一句话：“21世纪是电子商务的时代，未来要么电子商务，要么无商可务”这句话的意思是说：在互联网发展的某一天，未来不再分你是传统企业，我是互联网企业，因为未来都是互联网企业，一个趋势的到来，是没有任何一个人能阻挡得了的，只有选择适应和拥抱，才之与时俱进。
-从消费主体的维度看，转型迫在眉睫
-以前，企业掌握信息优势和主动权，消费者只能被动接收。随着移动互联网的发展，移动互联技术让消费者掌握了甚至比企业还要多的信息，因此，用户拥有了更大的话语权和选择权。消费群（即社交、本地、移动和个性化消费群）正在崛起，移动互联网所开创的消费者主权时代正在引爆第三次零售革命，一夜之间赋予了渴望消费自由、消费平等、消费民主的消费者巨大的消费主权。没有互联网时，商家跟消费者之间的关系是以信息不对称为基础的—通俗地讲，就是“买的没有卖的精”。有了互联网之后，游戏规则变了。消费者鼠标一点就可以比价、在网上讨论，变得越来越有主动权和话语权。
 
 
-企业会出现越来越多的后向收费模式，比如削减商品的利润，而在后续的服务、社群等方面下大功夫，会越来越重视品牌效应，越来越重视消费者，越来越重视大数据营销等。
-利率持续下降——传统企业线下趋势
-2014年是品牌电商化的重要一年。传统企业受政策、产业供应链、物价等方面的不利影响，很多品牌、行业出现了毛利率从50%降到30%的情况。随之而来的是产业劳动力效率下降，上游工厂代工的形式走不通了。
+巴拉巴拉的还有很多，就不写了，附个链接，大家可以去补充
+Q2：朋友圈广告可以艾特好友有什么意义？author:阳光懒人 @人人都是产品经理
+朋友圈广告可以艾特好友，可能存在以下几个好处：
+
+增加了广告的社交属性，会让广告有更多的玩法，让广告商在设计广告的时候添加更多的互动性的创意，同时互动性、创意好的广告又能通过艾特功能提高传播效率和扩大传播范围，良性循环；
+
+对于用户来说，也会有几种场景会用到艾特功能，比如说：微信给女朋友推了一个channel化妆品广告，女朋友很心动然后就艾特男朋友。类似这样的互动玩法也会增加广告的乐趣，让广告植入不那么生硬；
+
+对于微信收集数据来说意义也是很大的，之前全靠推荐算法来推荐不同广告给不同用户群体，有了这个功能可能让广告投放更加精准。
 
 
-用工、用地成本只会越来越高，毛利率会不断下降。当成本提高了，企业想要赚钱就只有两条路：提高商品的质和增加卖出的量。
-未来，传统产业的毛利率都会下降到原来的三分之一以下，趋势不可避免。无论企业经营哪类产品，处于哪种领域，都会有互联网企业挑战你。传统企业不仅利率下降、产品压缩，而且价值链正接受挑战。
 
 
-传统企业受到最大影响的应该是思维的转变，大象转身是比较难的，盘根错节，利益交错，牵一发而动全身。
-消费者已经从线上线下走到场景化，传统企业再不转型还能抓住消费者吗？
+看到这个消息，我的第一感受就是微信也要在商业化上提速了
+Q3：「搜一搜」VS「看一看」，哪一个的流量更大？为什么？author:chitang @人人都是产品经理
+关于微信发现一栏里的搜一搜和看一看在2017年5月份正式更新上线。但对于一个产品来说都属于半成品都未全面的打开流量入口，当然凭借微信月活跃用户量10亿来说未来这两个依旧是不可估量的流量入口，目前都还停留在“实验室”中；
+「搜一搜」
+搜一搜的feed流则提供了长尾流量的能力，一方面是给公众号导流，另一方面也提供了变现的可能性。同时出现了很多可选内容，公众号、朋友圈、小程序、文章、小说、音乐、表情、视频、搜狗、知乎、外部资讯；搜一搜将搜索能力延申到更多外部信息内容，这一举措算是比较大的创新了，打破了以往腾讯的封闭圈。
+对于全网搜索，已经是一片红海了，百度在移动端依然覆盖80%左右的市场份额，别说“怼”百度了，就是和360搜索“PK”起来都不是很容易。另外在用户搜索上，已经习惯性的通过百度或者谷歌等浏览器去搜索信息，很少人会去使用微信搜内容？用户习惯暂时形成不了，所以说搜一搜目前还是一个未成熟的功能。
+「看一看」
+看一看的内容主要是以展现朋友圈，好友，微信群，公众号等渠道看到的内容—统称为**“已关注或已关联”**内容。但还有未关注和未关联的内容也将展现在这里（这部分未关联内容可能和个人的兴趣关注、地理位置、热点资讯、好友的分享，转发，点赞等相关维度做信息推荐及展现）属于微信的个性化智能化推荐；
+微信对于「搜一搜」和「看一看」的流量分配中“看一看”目前的流量大于“搜一搜”；
+“搜一搜”则是用来帮助用户快速查找内容或服务，搜索项目包括朋友圈、文章、公众号、小说和表情等，但，&quot; 搜一搜 &quot;基于知乎用户的使用习惯和操作方式来看目前使用频次较少；
+&quot; 看一看 &quot; 所呈现内容，目前跟它们的阅读量、点赞量、转发量、留言评论量及赞赏数量等尚未显现出强关联的关系。看一看的主要呈现为：已认证公众号内容、原创内容、长篇内容这几大类型；用户可以浏览热点资讯、好友关注的资讯以及自己感兴趣的文章，“看一看”则提供了用户感兴趣的热点资讯“集合”，并且有小红点加持，消灭小红点的时候你也会打开它。
+其中，微信对于用户停留时长，即用户如果阅读这篇文章的时间越长，它越有可能被精选、分发到 &quot; 看一看 “、” 搜一搜 &quot; 等页面。
+再说一句，其中还存在用户使用习惯和人性的特点：被动获取内容  &gt; 主动获取内容，人性上都是比较懒惰的 … …
+]]></content>
+      <categories>
+        <category>产品问答</category>
+      </categories>
+      <tags>
+        <tag>产品问答</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-简单实用的To-Do清单-小黄条</title>
+    <url>/posts/14a41619.html</url>
+    <content><![CDATA[简单实用的To-Do清单-小黄条在前几期，为大家推荐了非常好用的桌面日程管理软件-桌面日历DesktopCal
+用过的小伙伴应该会有这样一种感觉，桌面日历DesktopCal更适合从宏观的角度对时间做一个安排，但是如果具体到每时每刻要做的To-Do安排，桌面日历DesktopCal就会显得有些有气无力了。
+今天为大家推荐的小黄条To-Do清单，可以非常完美的解决这个痛点，和桌面日历DesktopCal的合作简直是绝配。
+
+界面
+Demo演示
+功能介绍
+无推送、无广告、无红点，不主动打扰
+
+一览式todolist清单，简单、纯粹、实用
+
+任务记录云端存储永不丢失
+
+任务支持简单排序，可对重要的任务设置“置顶”
+
+跨平台同步，覆盖所有办公场景，随时随地查看、记录、编辑、管理任务
+
+已完成的任务按天归档，方便快速回顾本周主要工作，高效输出工作周报
+
+windows版本支持嵌入桌面，搭配【极简】模式完美融入系统桌面
+
+windows版本支持窗体移动到屏幕边缘时自动隐藏，便于保护隐私
+
+windows版本支持自定义字体、字号、间距、文字颜色
+
+windows版本支持使用快捷键快速隐藏&#x2F;显示主界面
+
+App可对每个任务单独设置提醒
+
+App图标可显示未完成任务数量，需要在more页面手动开启
+
+App支持Widget，Widget上可直接完成任务，无需启动应用也能浏览、管理Todolist，更直观高效的自我管理
 
 
-互联网企业会实体化，实体企业会互联网化，这是未来大趋势。
-：高德导航，会不会革了滴滴打车的命?
+下载地址
+官网地址
 
-高德地图也可以打车了，你是否还会用滴滴呢？
-author:尼卡 @PMCAFF
-Answer
-高德算是中间商，但是说颠覆滴滴，个人觉得目前来看不太可能，但是这个事情本身对用户对高德都是非常有利的。
-高德涉足网约车市场则是在意料之外又在情理之中。无论是从用户规模、用户习惯、市场竞争以及出行布局这几件维度来看，涉足网约车都有合理之处。
-高德有有7亿用户，从用户习惯来看，涉足网约车是高维打低维。用户用滴滴打车之前，往往需要用高德地图查询路线；很多网约车司机的导航地图也是高德。对司机、用户来说，在打车APP和地图APP之间来回跳转并不方便。高德作为导航软件，本来就是出行的第一入口，做网约车顺理成章。
-再者，高德推出顺风车，还是回归到了一站式公共出行服务平台——这是高德的核心逻辑。早在2017年就接入了滴滴、神州专车、首汽约车、曹操专车、摩拜、ofo这些出行方式。这次自己加入顺风车功能，本质上是对出行服务的补充。
-但是如果说类似滴滴乘客出事这种问题，对于高德叫车这种“中间商”，如果乘客是从高德叫的车，那么对于高德来说是否也应当负一定责任？另外高德如何保证下游对接的打车平台的服务能力足够也是一个问题。
+关注微信公众号：产品汪darer，后台回复关键词：小黄条，即可下载
+
+
+]]></content>
+      <categories>
+        <category>软件资源</category>
+      </categories>
+      <tags>
+        <tag>软件资源</tag>
+        <tag>产品必用软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问答-工作被流程化，到底该不该？</title>
+    <url>/posts/675b265e.html</url>
+    <content><![CDATA[
+
+看看同行们都在想些啥
+以下内容来自产品相关社区，如有侵权，请联系删除
+[TOC]
+Q1 : 工作被流程化，到底该不该？
+
+有人认为，流程化有助于公司拥有更长远的竞争力；
+
+有人则认为，流程化会让员工越来越不值钱，因为缺乏自由创新的机会。
+
+author:Hysterin @人人都是产品经理
+如果要成为一个好的职场玩家，“工作被流程化”是非常必要的。
+无论是bajt等大厂还是ftg等海外大厂，其实每个人的分工都是比较明确的。
+从公司运转的角度来说，发展轨迹想要保持高速前行，就必须明确的分工从而更高地提升效率。也就是，无论你有多少才华，在工作分工上，都应该做好一颗螺丝钉。
+但很重要的一点是“工作被流程化”，不代表你本人也需要被“流程化”。
+举个例子，我的一位学员，最早就是新媒体实习编辑，每天负责写文章、搞线上活动。他如果一直这样下去，会稳稳当当地成为一个新媒体人。可是他一直不断地在充实自己，自学了Axure和AE、PS，用“产品经理”的思维去做一次活动和文章选题。
+很快，他的内容质量就超过了同时入职的人，并且打造了多个爆款活动，提前转正。而转正时，他提出要转行做产品经理，由于工作成果优异，并且他展示了很强大的学习能力，于是得到了公司的批准。
+三年过去，这位学员现在已在五百强企业做专职产品经理了。
+工作可以被流程化，可以被定性。但人不可以。记住这句话。
+Q2 ：当方案在会议中被审核时，如何坚持自己的方案核心，不被别人带跑偏呢？
+
+当规划好某个方案，会议对这个方案进行审核时，同事肯定会对此提出ABCDEF等等问题。
+
+
+在方案规划前期已经构思好的内容以及模块，在提问的过程中感觉被反复推翻，本身有点被他们带着走的感觉。
+
+
+如何坚持自己的方案核心，不被别人带跑偏呢？或者说，如何不被他人的观点影响？
+author:李小玉 @人人都是产品经理
+别人说的还是要听的。一个人做产品，肯定有想不周全或者不优秀的，评审的意义就是要吸取别人的意见，审视自己的成果。
+当然，评审中一定会有各种杂乱的声音。你需要自己明确自己的每一个想法，每一个意图，这样，当别人提出不同意见的时候，首先你会知道这个问题是不是你没想过或者有疑问的。如果是这种情况，你就需要当场迅速反应，并考虑其可能性和最优解，然后在会上敲定方案。
+如果质疑针对于你明确考虑过的点，那你就要勇于把你的设计意图表达出来，先让质疑人明白的意图，让他判断是否合理。如果意见仍然不统一，切记不要跟一个人杠，引入更多讨论人，以及决策者，以尽量短的时间得出一个多数人认同的方案。
+做产品没有绝对最优解，在这一刻团队达成共识，确定好当期的范围，就可以了。如果后续真的有问题，可以修复和优化。要知道，时间和人力都是宝贵的资源。
+
+
+被别人带跑偏，说明自己对方案的考虑存在纰漏
+Q3：B站代码曝光，显示该站推荐策略中“评论”的权重要高于“收藏”，合理吗？
+
+有人说这表示B站更重引战内容而非优质内容。但是据我所知，很多平台收藏的权重会高于评论，因为收藏才代表了内容的优质。那么对于这种“评论”的权重要高于“收藏”推荐策略你怎么看，认为合理吗？
+author:阿不 @人人都是产品经理
+这个代码我看了。
+分享是最高权重有0.6，这个可以理解，大部分平台都是分享权重无限高。能分享去外面吸引人来看的内容，到哪里都是爷爷。
+播放量、阅读量都是最低权重，因为相比二次互动，这些权重真的很低。
+其次评论权重高，则意味着注重互动，更重视能吸引大家讨论的内容
 ]]></content>
       <categories>
         <category>产品问答</category>
@@ -5430,67 +5319,114 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>关于手机厂商竞相推出折叠屏手机的思考</title>
-    <url>/posts/870b4fbc.html</url>
-    <content><![CDATA[前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。
-去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。
+    <title>问答-特斯拉入局，蔚来们是在裸泳吗？</title>
+    <url>/posts/f43c164c.html</url>
+    <content><![CDATA[
+
+俗话说：“三人行，必有我师”
+
+
+看看同行们是怎么分析问题的
+以下内容来自产品相关社区，如有侵权，请联系删除
 [TOC]
-1. 为什么厂商要竞相发布折叠屏手机？
-尽快的占领用户心智
-现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。
-全面屏手机，小米拔得头筹
-折叠屏手机，三星、华为不遑多让
-在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。
+:   特斯拉入局，蔚来们是在裸泳吗？
 
-折叠屏是手机形态发展的下一个阶段，也有可能是终点
-手机在经历全面屏的过渡期后，不可避免的要进入折叠屏
-手机需要兼具通讯+上网两大功能
-通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验
-折叠屏即可大屏看视频、打游戏；又可小屏放兜里
-对手机的复杂使用场景有着更好的兼容性
+国内新能源汽车的领斗羊蔚来汽车在2018年成功完成了交付1万辆的Flag，然而却被前员工爆出1W辆部分是在蔚来对内部员工的激励措施下内部员工的购买，实际用户购买的出货量比对外公布的小，退货量也比外界想象的大。
+author:猫黎 @PMCAFF
+Answer
+对于蔚来汽车的体验，我得到了正反两方面的反馈。
+我的数位预订了蔚来汽车的朋友纷纷表示，ES8的补贴前售价44.80~54.80万元，若采用电池租赁方案，加上补贴，算下来顶配38万。
+“便宜啊，然后性能和特斯拉一模一样。” “蔚来汽车还有特斯拉做不到的，以用户的感受为第一，我都打算坐地铁去提车了，他们主动过来接我。”小伙伴们说。
 
 
-2. 2019年，折叠屏手机会占据主流市场？2019年，折叠屏手机应该还不会占据主流手机市场，不会是普罗大众的选择，还是土豪们的“玩物”
-主要有以下几个原因：
-
-成本
-
-电量
-
-重量
+性能和特斯拉一模一样，这位用户是认真的吗?!😂
+我听说，蔚来汽车经常组织购车者线下各种活动，以增强社交黏性。
+当然，黑ES8的理由更多。
+这款车是由江淮汽车代工的。毕竟江淮汽车是以5.68万起的瑞风S3为主打的低端车品牌，而蔚来ES8定位于中高端SUV，对标的是奥迪Q5等。二者甚是违和，江淮能够做高端车吗？
+这款车的尾标是江淮蔚来，很多车主刚提车就“抠尾标”。
 
 
+江淮蔚来、华晨宝马😂
+
+此外，充电问题。
+周末，我逛了下特斯拉体验中心，销售小姐以平静中不失骄傲的语气对我说：“特斯拉的充电桩遍布全国，而蔚来汽车是电池更换坞，电池装装拔拔。”
+蔚来汽车的一键加电预约，对于远途而言，也略有些搞笑。
+
+一个关键词
+如果蔚来汽车有一个关键词，毫无疑问，是“烧钱”。李斌曾说：“200亿元是造车的门槛。”
 
 
-成本
-折叠屏采用的是OLED柔性屏幕，屏幕生产的良率低，成本高，现在手机均在一万三左右， 高昂的售价会导致其出货量低，产能低，成本下降的空间小。
-去年，苹果手机售价也达到一万元，结果大家都知道，市场给苹果浇了一盆冷水。
-而且最近几年，经济形势不好，消费者更会捂紧钱袋子
+凡是亏损，都不是最好的商业模式
+根据招股说明书，2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的收入是0元、0元、4600万元人民币。同期的亏损，分别是25.69亿、50.13亿、33.21亿人民币。累计亏损约为109亿元。
 
-电量
-消费者买折叠屏手机当然是为了享受到其大屏的爽感
-我们知道，屏幕越大、电量的消耗也是极高
-目前，电池技术的发展已到瓶颈，还没有突破性技术出现
-虽然厂商推出了快充技术，但是电量仍然是会制约折叠屏手机发展的一个重要因素
+（上表的货币单位为：百万元人民币）
+自2015年始，包括高瓴资本、腾讯、顺为资本、红杉资本、淡马锡、IDG、百度、厚朴、刘强东等超过50家知名投资机构，前前后后共融资6轮，累积募资约169亿元人民币。此外，有12.6亿元贷款。上市之前，最后一轮融资的估值是47亿美元。
+此次IPO，募集资金约为10.15亿美元，折合70亿元人民币。
 
-重量
-为了解决电量问题，目前方案多采用两款电池
-但是两块电池又会带来手机重量的增加
-前面我们提到，手机要求有较高的便携性，重量大的手机显然不会有好的体验
+如此巨资，所费如何？
+最大头是研发费。2016年&#x2F;2017年&#x2F;2018上半年，蔚来汽车的研发费用分别是14.7亿、26.0亿、14.6亿元。
+两厢对照，2017年比亚迪&#x2F;长城&#x2F;Tesla的研发费用分别为63亿、34亿、90亿元人民币。看起来，蔚来的研发烧钱仍前路漫漫。
+
+其次是销售和管理费用，2016年&#x2F;2017年&#x2F;2018上半年蔚来汽车分别是11.4亿、23.5亿、17.3亿元，其中广告费用分别为2.4亿、5.2亿、2.6亿元。
+蔚来汽车的门店，都在城市最繁华处例如上海中心、太古汇、北京东方广场等，所资不菲，号称单店投入8000万至上亿元。
+
+卖了多少车
+如特斯拉一样，蔚来汽车最为人诟病的，仍是交付连连推迟。
+微博网友@亚东 说：“订的车，蔚来说预计4月交付，后来推到5月、6月、7月，再后来说8月一定交付，现在又说9月一定交付。”
+按照原计划，蔚来在今年三四月交付2000台，实际至7月底仅交付481台。
+李斌全年的目标仍是1万台，还为此与另外一家小鹏汽车创始人打赌。
+
+目前，蔚来汽车的未交付订单有1.7万个。其中1.2万支付了5000元意向金，可退还；另外0.5万已支付了4.5万定金，不可退。
+对比一下特斯拉，在2010~2017年分别交付1542台、2369台、4424台、2.4万、3.4万、5.3万、7.6万、10.3万台。2018上半年交付7.1万台。
+从产量的角度，蔚来汽车基本处在特斯拉2010~2011年的水平。
+即便是特斯拉，也身处漩涡，新车型的大规模量产屡遭挑战。
+Elon Musk在去年8月份闹出一场“私有化”闹剧，就是因为股票价格的剧烈波动、以及季度财报周期的巨大压力。Musk说：“特斯拉是股市历史上最被做空的个股，存在大量想攻击特斯拉的人。”
+特斯拉至今仍在亏损。2018年二季报显示，特斯拉亏损7.2亿美元，同比扩大85.29%；一季度净亏损7.85亿美元。
+对于蔚来汽车而言，可能最坏的消息是国内汽车销量正在全面下滑。
+
+自称是“造车新势力”的互联网汽车人，李斌只是其中之一，还有小鹏汽车、奇点汽车、威马汽车等，如雨后春笋遍地开花，个个都想成为“中国特斯拉”。
+这种愿景，自然是美好的。但是最终谁可以到达彼岸，我们并不知道。
 
 
-3. 折叠屏手机会带来机遇吗？折叠屏手机一定会进入主流市场，顺利的话可能需要三年左右的时间
-折叠屏会带来与普通手机完全不同的交互体验
-对于软件开发者来说，这里会潜藏这巨大的机会
+不知道真假，反正各大媒体都在讲“2019年是造车新势力的洗牌之年”，是否为真，吃瓜群众在看
+：为什么传统企业要转型互联网？author:Ariel诗意 @PMCAFF
+Answer
+互联网化是大势所趋
+可以这样说，只要传统企业走进一天，那么意味着互联网也必须进入传统企业，比尔盖茨说过一句话：“21世纪是电子商务的时代，未来要么电子商务，要么无商可务”这句话的意思是说：在互联网发展的某一天，未来不再分你是传统企业，我是互联网企业，因为未来都是互联网企业，一个趋势的到来，是没有任何一个人能阻挡得了的，只有选择适应和拥抱，才之与时俱进。
+从消费主体的维度看，转型迫在眉睫
+以前，企业掌握信息优势和主动权，消费者只能被动接收。随着移动互联网的发展，移动互联技术让消费者掌握了甚至比企业还要多的信息，因此，用户拥有了更大的话语权和选择权。消费群（即社交、本地、移动和个性化消费群）正在崛起，移动互联网所开创的消费者主权时代正在引爆第三次零售革命，一夜之间赋予了渴望消费自由、消费平等、消费民主的消费者巨大的消费主权。没有互联网时，商家跟消费者之间的关系是以信息不对称为基础的—通俗地讲，就是“买的没有卖的精”。有了互联网之后，游戏规则变了。消费者鼠标一点就可以比价、在网上讨论，变得越来越有主动权和话语权。
 
-我理想中的折叠屏手机
 
+企业会出现越来越多的后向收费模式，比如削减商品的利润，而在后续的服务、社群等方面下大功夫，会越来越重视品牌效应，越来越重视消费者，越来越重视大数据营销等。
+利率持续下降——传统企业线下趋势
+2014年是品牌电商化的重要一年。传统企业受政策、产业供应链、物价等方面的不利影响，很多品牌、行业出现了毛利率从50%降到30%的情况。随之而来的是产业劳动力效率下降，上游工厂代工的形式走不通了。
+
+
+用工、用地成本只会越来越高，毛利率会不断下降。当成本提高了，企业想要赚钱就只有两条路：提高商品的质和增加卖出的量。
+未来，传统产业的毛利率都会下降到原来的三分之一以下，趋势不可避免。无论企业经营哪类产品，处于哪种领域，都会有互联网企业挑战你。传统企业不仅利率下降、产品压缩，而且价值链正接受挑战。
+
+
+传统企业受到最大影响的应该是思维的转变，大象转身是比较难的，盘根错节，利益交错，牵一发而动全身。
+消费者已经从线上线下走到场景化，传统企业再不转型还能抓住消费者吗？
+
+
+互联网企业会实体化，实体企业会互联网化，这是未来大趋势。
+：高德导航，会不会革了滴滴打车的命?
+
+高德地图也可以打车了，你是否还会用滴滴呢？
+author:尼卡 @PMCAFF
+Answer
+高德算是中间商，但是说颠覆滴滴，个人觉得目前来看不太可能，但是这个事情本身对用户对高德都是非常有利的。
+高德涉足网约车市场则是在意料之外又在情理之中。无论是从用户规模、用户习惯、市场竞争以及出行布局这几件维度来看，涉足网约车都有合理之处。
+高德有有7亿用户，从用户习惯来看，涉足网约车是高维打低维。用户用滴滴打车之前，往往需要用高德地图查询路线；很多网约车司机的导航地图也是高德。对司机、用户来说，在打车APP和地图APP之间来回跳转并不方便。高德作为导航软件，本来就是出行的第一入口，做网约车顺理成章。
+再者，高德推出顺风车，还是回归到了一站式公共出行服务平台——这是高德的核心逻辑。早在2017年就接入了滴滴、神州专车、首汽约车、曹操专车、摩拜、ofo这些出行方式。这次自己加入顺风车功能，本质上是对出行服务的补充。
+但是如果说类似滴滴乘客出事这种问题，对于高德叫车这种“中间商”，如果乘客是从高德叫的车，那么对于高德来说是否也应当负一定责任？另外高德如何保证下游对接的打车平台的服务能力足够也是一个问题。
 ]]></content>
       <categories>
-        <category>随想</category>
+        <category>产品问答</category>
       </categories>
       <tags>
-        <tag>随想</tag>
+        <tag>产品问答</tag>
       </tags>
   </entry>
   <entry>
@@ -5552,6 +5488,70 @@ Answer:
 商业变现方向(完美平衡商业化和用户体验)。
 
 
+
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于手机厂商竞相推出折叠屏手机的思考</title>
+    <url>/posts/870b4fbc.html</url>
+    <content><![CDATA[前几年全面屏手机逐渐占领市场，手机屏幕逐渐向着拥有更好视觉体验的方向进发。
+去年，柔宇科技发布第一款折叠屏手机(个人觉得设计挺丑的)，全球各大手机厂商均被爆出即将推出自家折叠屏手机。在MWC2019大会前夕，三星、华为先后发布自己折叠屏手机Hold和MateX。
+[TOC]
+1. 为什么厂商要竞相发布折叠屏手机？
+尽快的占领用户心智
+现在手机同质化太严重，去除Logo后，很难辨别这是谁家的“娃”。所以，厂商犹如军备竞赛一般竞相发布自己的新形态手机。
+全面屏手机，小米拔得头筹
+折叠屏手机，三星、华为不遑多让
+在公司营销的配合下，赚足了消费者的眼球，更快的占领用户的心智。
+
+折叠屏是手机形态发展的下一个阶段，也有可能是终点
+手机在经历全面屏的过渡期后，不可避免的要进入折叠屏
+手机需要兼具通讯+上网两大功能
+通讯需要手机具有更好的携带型和握感；上网需要手机有更好的视觉感官体验
+折叠屏即可大屏看视频、打游戏；又可小屏放兜里
+对手机的复杂使用场景有着更好的兼容性
+
+
+2. 2019年，折叠屏手机会占据主流市场？2019年，折叠屏手机应该还不会占据主流手机市场，不会是普罗大众的选择，还是土豪们的“玩物”
+主要有以下几个原因：
+
+成本
+
+电量
+
+重量
+
+
+
+
+成本
+折叠屏采用的是OLED柔性屏幕，屏幕生产的良率低，成本高，现在手机均在一万三左右， 高昂的售价会导致其出货量低，产能低，成本下降的空间小。
+去年，苹果手机售价也达到一万元，结果大家都知道，市场给苹果浇了一盆冷水。
+而且最近几年，经济形势不好，消费者更会捂紧钱袋子
+
+电量
+消费者买折叠屏手机当然是为了享受到其大屏的爽感
+我们知道，屏幕越大、电量的消耗也是极高
+目前，电池技术的发展已到瓶颈，还没有突破性技术出现
+虽然厂商推出了快充技术，但是电量仍然是会制约折叠屏手机发展的一个重要因素
+
+重量
+为了解决电量问题，目前方案多采用两款电池
+但是两块电池又会带来手机重量的增加
+前面我们提到，手机要求有较高的便携性，重量大的手机显然不会有好的体验
+
+
+3. 折叠屏手机会带来机遇吗？折叠屏手机一定会进入主流市场，顺利的话可能需要三年左右的时间
+折叠屏会带来与普通手机完全不同的交互体验
+对于软件开发者来说，这里会潜藏这巨大的机会
+
+我理想中的折叠屏手机
 
 ]]></content>
       <categories>
@@ -5649,50 +5649,6 @@ Answer:
       </tags>
   </entry>
   <entry>
-    <title>随想-我对996工作制的看法</title>
-    <url>/posts/c958a381.html</url>
-    <content><![CDATA[我对996工作制的看法由于996.icu的出现，最近关于996的讨论，越来越多，也看了不少人的看法
-主流是两种看法：
-
-如果你不认可公司的996制度，你可以不来，你可以不选择公司，没人逼你
-
-另外一种是996违反劳动法，我们要维护自己的权益
-
-
-先说下自己的看法，我会做996的工作，因为自己能力不够，因为自己没钱，因为自己没得选择，
-但是我反对996的制度和文化，我不会赞同996的制度。
-简单表达下对主流两种说法的态度：
-支持第一种观点的主要是企业管理者和部分打工仔
-这种观点明显是一种，你爱来不来，你不来有人来，中国不缺人。这根本就不是一种解决问题的态度，一种小孩子撒泼耍赖的态度。
-996代表的是一种高负荷的工作强度，无数的研究告诉你，高负荷的工作带来的是低效的成果。
-为什么明明知道这是一种低效的方法还不改正呢？
-因为改正的成本比不改正的成本高，为了追求更高的价值，肯定不改正。
-其实个人认为大企业应该承担这种革新管理制度的责任，虽然国家经济发展越来越好，对全球经济发展贡献越来越多了，但是关于企业管理这块，咱们还很弱小，我们仍然不思进取，只会人海战术。
-这也是一种企业应该承担起来的社会责任，而不是耍赖的说，你爱来不来。
-支持第二种说法的，多是打工仔，有人统计了996.icu的关注者，多是基层程序员。
-这类人拿起了法律的武器，个人还是蛮认可这种做法。可是其中应该也有不少是这样的想法吧，钱给的不够，给够了我才不反对996。
-关于这类人，我觉得我不佩服你，你从心里并不反对996这种文化，制度。你反对的是钱太少了。
-希望企业和社会都可以认识到996是一种落后的管理方式，都敢于承认这是一种错误，而不是一种耍赖的态度，那些反对996的程序员们，希望你们是真心的反对这种文化，而不是仅仅因为钱不够采取反对，希望社会重视起来法律，依法治国，只有企业觉得996的成本变高了，才会去变革管理方法，这样才会长久，没有先进的管理方法，一个企业是长久不了的。
-其实社会上比程序员996累的多的，没有保障的工作遍地都是。
-很多医生，列车乘务员，工厂的工人，农民工，个体户，金融从业者，科研工作者等等吧，他们的工作强度都不亚于996。
-我妈妈在一家药店（个体户）上班，可以说是867，全年就过年放个假，自己看着真的心疼
-我爸爸是农民工，工地的环境和工作强度，我体验过，很差
-而我，面对996，有什么办法吗？
-我觉得自己比父母的环境好太多了，对我自己而言，我自己会做996的工作，因为我一无所有，只有不断拼命的工作，但是如果你问我是否认可996的文化和制度，我不认可。
-错的就是错的，首先你要去承认，只有承认了，才能去做出改变。
-希望类似996的工作文化和制度，能在我这一辈终结，让自己的孩子未来过得更幸福。
-我只是中国亿万群体中的一个小个体，无力改变什么，只有在这写写东西，表达自己的观点，以后翻回来看看，也不后悔，给孩子看看，让他觉得老爸棒棒的。
-思绪很乱，写在火车卧铺上
-以上都是个人看法，严禁转载！！！
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>随想-如果脱离现有的平台，你还剩下什么？</title>
     <url>/posts/ae884d67.html</url>
     <content><![CDATA[2019&#x2F;1&#x2F;8-如果有一天你脱离了现在的平台，
@@ -5757,6 +5713,94 @@ Answer:
 
 
 以上仅为我个人见解
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随想-我对投资的认识</title>
+    <url>/posts/490c6cfd.html</url>
+    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
+
+投资资产
+
+投资自己
+
+
+[TOC]
+1. 投资资产目的是让自己的财富实现增值
+目前国内的主要途径有：（入手程度由易到难）
+
+存储
+
+基金
+
+股票
+
+房产和房产出租
+
+创业
+
+
+2. 投资自己目的是让自己更多创造财富的价值
+分为两块：
+
+投资“硬件”
+
+投资“软件”
+
+
+1. 投资硬件主要是锻炼身体、强健体魄、保养身体
+2. 投资软件主要是投资思想和技能
+比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随想-我对996工作制的看法</title>
+    <url>/posts/c958a381.html</url>
+    <content><![CDATA[我对996工作制的看法由于996.icu的出现，最近关于996的讨论，越来越多，也看了不少人的看法
+主流是两种看法：
+
+如果你不认可公司的996制度，你可以不来，你可以不选择公司，没人逼你
+
+另外一种是996违反劳动法，我们要维护自己的权益
+
+
+先说下自己的看法，我会做996的工作，因为自己能力不够，因为自己没钱，因为自己没得选择，
+但是我反对996的制度和文化，我不会赞同996的制度。
+简单表达下对主流两种说法的态度：
+支持第一种观点的主要是企业管理者和部分打工仔
+这种观点明显是一种，你爱来不来，你不来有人来，中国不缺人。这根本就不是一种解决问题的态度，一种小孩子撒泼耍赖的态度。
+996代表的是一种高负荷的工作强度，无数的研究告诉你，高负荷的工作带来的是低效的成果。
+为什么明明知道这是一种低效的方法还不改正呢？
+因为改正的成本比不改正的成本高，为了追求更高的价值，肯定不改正。
+其实个人认为大企业应该承担这种革新管理制度的责任，虽然国家经济发展越来越好，对全球经济发展贡献越来越多了，但是关于企业管理这块，咱们还很弱小，我们仍然不思进取，只会人海战术。
+这也是一种企业应该承担起来的社会责任，而不是耍赖的说，你爱来不来。
+支持第二种说法的，多是打工仔，有人统计了996.icu的关注者，多是基层程序员。
+这类人拿起了法律的武器，个人还是蛮认可这种做法。可是其中应该也有不少是这样的想法吧，钱给的不够，给够了我才不反对996。
+关于这类人，我觉得我不佩服你，你从心里并不反对996这种文化，制度。你反对的是钱太少了。
+希望企业和社会都可以认识到996是一种落后的管理方式，都敢于承认这是一种错误，而不是一种耍赖的态度，那些反对996的程序员们，希望你们是真心的反对这种文化，而不是仅仅因为钱不够采取反对，希望社会重视起来法律，依法治国，只有企业觉得996的成本变高了，才会去变革管理方法，这样才会长久，没有先进的管理方法，一个企业是长久不了的。
+其实社会上比程序员996累的多的，没有保障的工作遍地都是。
+很多医生，列车乘务员，工厂的工人，农民工，个体户，金融从业者，科研工作者等等吧，他们的工作强度都不亚于996。
+我妈妈在一家药店（个体户）上班，可以说是867，全年就过年放个假，自己看着真的心疼
+我爸爸是农民工，工地的环境和工作强度，我体验过，很差
+而我，面对996，有什么办法吗？
+我觉得自己比父母的环境好太多了，对我自己而言，我自己会做996的工作，因为我一无所有，只有不断拼命的工作，但是如果你问我是否认可996的文化和制度，我不认可。
+错的就是错的，首先你要去承认，只有承认了，才能去做出改变。
+希望类似996的工作文化和制度，能在我这一辈终结，让自己的孩子未来过得更幸福。
+我只是中国亿万群体中的一个小个体，无力改变什么，只有在这写写东西，表达自己的观点，以后翻回来看看，也不后悔，给孩子看看，让他觉得老爸棒棒的。
+思绪很乱，写在火车卧铺上
+以上都是个人看法，严禁转载！！！
 ]]></content>
       <categories>
         <category>随想</category>
@@ -5831,104 +5875,6 @@ Answer:
 以上，就是我利用不同网盘管理文件的方法
 如果你有更好的想法，可以下方留言讨论，欢迎转发分享！
 
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随想-我对投资的认识</title>
-    <url>/posts/490c6cfd.html</url>
-    <content><![CDATA[我对投资的认识我认为投资主要分为两个部分：
-
-投资资产
-
-投资自己
-
-
-[TOC]
-1. 投资资产目的是让自己的财富实现增值
-目前国内的主要途径有：（入手程度由易到难）
-
-存储
-
-基金
-
-股票
-
-房产和房产出租
-
-创业
-
-
-2. 投资自己目的是让自己更多创造财富的价值
-分为两块：
-
-投资“硬件”
-
-投资“软件”
-
-
-1. 投资硬件主要是锻炼身体、强健体魄、保养身体
-2. 投资软件主要是投资思想和技能
-比如旅游开阔视野、人情交际开拓人脉、投资知识，拥有技能等等
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随想-新零售企业““智胜”未来</title>
-    <url>/posts/4aa7e679.html</url>
-    <content><![CDATA[新零售企业“智胜”未来最近看到一篇蛮有趣的文章，新零售企业“智胜”未来
-作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
-
-
-以下是全文（有删改）：
-在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。
-现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
-随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。
-
-一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。
-生态格局演变与新生态价值从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。
-
-第一阶段，为我所用。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段&#x2F;渠道。
-第二阶段，分庭抗礼。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。
-第三阶段，互相融合。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。
-
-
-一句话道出了“美团”、“阿里”们的野心，要做大平台
-“大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。
-
-随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。
-在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。
-在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。
-在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态&#x2F;场景拓展是大市场的引爆点。
-此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。
-近年来，线下业态&#x2F;场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式：
-
-餐饮零售化，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等；
-
-场景拓展，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等；
-
-跨界融合，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等；
-
-全渠道一站式消费体验，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。
-
-
-零售企业的“智”胜之道在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。
-第一，以线上线下融合，建立流量壁垒。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。
-第二，以赋能合纵连横，构建生态平台。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。
-但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。
-第三，以数据重塑管理模式，革故鼎新。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场&#x2F;消费者&#x2F;价值链&#x2F;品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。
-数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。
-“智”胜未来将是每一个零售企业都需要面临的重要抉择。
 ]]></content>
       <categories>
         <category>随想</category>
@@ -6014,6 +5960,60 @@ Answer:
 
 在相同条件下，满足用户的群体价值（让用户在群体中发光）比仅满足用户的个人价值（比如，给用户金钱奖励）更有用。
 人生来就希望被认可
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随想-新零售企业““智胜”未来</title>
+    <url>/posts/4aa7e679.html</url>
+    <content><![CDATA[新零售企业“智胜”未来最近看到一篇蛮有趣的文章，新零售企业“智胜”未来
+作者是:罗兰贝格管理咨询全球高级合伙人兼大中华区副总裁 陈科，他认为全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
+
+
+以下是全文（有删改）：
+在过去几十年，中国传统线下零售发展迅速。而伴随着电商的崛起，线下传统零售的优势已不再如此突出。比如，一些企业存在供应链响应慢、渠道层级冗长、运营成本高等问题。但与此同时，线上零售的高速增长也难以为继，年复合增长率由2012年的61%回落至2017年的35%。但是中国线上零售的人口红利逐步消退，消费者转化率随之降低，线上获客成本不断攀升。
+现在消费者获取商品信息的渠道越来越多，并日趋碎片化。对于企业来说，单一的渠道已不足以支撑业务的发展。随着手机的普及，全渠道才是未来发展的核心关键，即线上线下零售体系充分融合，以完成对消费者的多触点沟通，从而获取更多的流量资源。
+随着80后和90后逐步升级为主流消费群体，消费者需求从基础的物质需求与计划性消费，逐渐向精神层面需求与及时性消费延伸。零售行业也随之进行了业态变迁：传统商超、百货、街边店满足了对基础物质和计划性消费的需求；外卖、便利店与无人零售门店业态的发展满足了人们对高效、及时性消费的需求；购物中心满足了休闲娱乐与社交需求定制的需求；门店与精品店则意欲服务于消费者个性化与品质需求；电商和多业态融合则在一定程度上兼顾了多元需求，并提供了更高的效率。
+
+一言以蔽之，零售业态的变迁最终将成为消费者需求变化的重要体现。
+生态格局演变与新生态价值从20世纪90年代互联网萌芽发展至今，零售业与互联网之间的关系，伴随着消费需求的逐步升级、第四次技术革命和行业演进周期，大致经历了三大发展阶段。
+
+第一阶段，为我所用。从20世纪90年代到2003年左右，互联网影响力尚微，主要形态为搜索引擎及门户网站，零售行业主要通过网页广告、定向广告等方式将互联网作为营销手段&#x2F;渠道。
+第二阶段，分庭抗礼。从2000年年初到2016年左右，随着技术突飞猛进与快速迭代，互联网企业从线上渠道切入既有市场，为消费者提供线上购物、交易、信息、社交等电商平台，实现了对零售行业“场”的重塑。多个互联网巨头浮现，行业发生爆发式增长，与传统零售体系形成分庭抗礼之势。
+第三阶段，互相融合。时至今日，单一线上或线下渠道皆不足以满足消费者日益“挑剔”的全方位需求。线下企业积极触网，线上企业则大规模建立线下触点，生产关系整体重组，形成“你中有我，我中有你”的融合格局，并形成了由“大平台”、“小生态”、“专服务”企业组成的生态格局。
+
+
+一句话道出了“美团”、“阿里”们的野心，要做大平台
+“大平台”企业是生态构建者，通过对流量和商户的聚集打造平台；“小生态”企业通常来自于传统垂直行业，覆盖产业链上下游，为消费者提供最终的产品或服务。在生态体系中，受到“大平台”企业在流量、数据等方面的扶持和辅助；而“专服务”企业则是平台上的中小微商户或提供专业服务的企业，在产业链细分环节有竞争优势，依附于“大平台”企业发展。
+
+随着数据赋能驱动的商业模式兴起，零售行业逐渐形成了一个新的生态价值体系。在这一体系中，零售企业可以通过2C与2B两种方式实现价值创新与数据赋能。
+在C端，企业通过消费者多维度数据分析，深度理解目标消费者诉求，围绕对“人”的刻画和对交易场景的深度挖掘，以实现新的生态价值。
+在B端，生态企业助力其他零售商户提升价值链效率以实现价值的案例也屡见不鲜。例如，为应对快速变化的消费者需求所产生的供需矛盾，数字化驱动的C2M供应模式凭借数据深度挖掘，整体打通需求端和供应端，实现数据低成本流动、供应链前移、全环节信息化来重塑产业链，以客户需求指导上游工厂生产。
+在线下业态层面，“效率”与“体验”是两大核心消费者需求，直击消费者核心两大需求的无人零售和业态&#x2F;场景拓展是大市场的引爆点。
+此外，无人零售由于技术方面要求较高，目前尚处于投资试水阶段，可视为中长期机会；由于人口老龄化、人工成本上涨、商铺租金上涨及消费升级对便利性需求增加等原因，智能自动贩卖机正步入成长期。
+近年来，线下业态&#x2F;场景拓展的变迁演化主要体现在线下传统商户向商业形态变迁以及销售渠道拓展两个方向，并依此方向衍生出四种主要模式：
+
+餐饮零售化，传统餐饮企业将餐饮食品打造为可零售贩卖的商品，以拳头产品延伸发展零售化商品。例如，海底捞的火锅底蘸料等产品，星巴克的咖啡豆等；
+
+场景拓展，传统零售店从线下渠道向线上线下同步融合发展，例如全家便利等；
+
+跨界融合，从单纯零售发展为融合餐饮、服务等其他业态的多元线下门店，例如超级物种等；
+
+全渠道一站式消费体验，既向多业态融合发展，又向多渠道融合发展——即基于物流和外卖能力进行线下拓展，实现餐饮+零售+到家配送业务的全方位融合服务。
+
+
+零售企业的“智”胜之道在新的零售格局之下，了解消费者全方位、多场景下的个性化需求，是决定零售企业能否在未来占有一席之地的核心所在。因此，建议零售企业从以下三个方面做好准备，“智”胜未来。
+第一，以线上线下融合，建立流量壁垒。零售业态新格局下，企业通过打造线上线下的无界融合，以消费者需求为核心，实现线上服务与线下场景的全渠道无缝融合，增加消费者触点及捕获需求，在增大消费者覆盖面的同时，全面提升用户体验，从而建立未来企业核心竞争力之流量壁垒。
+第二，以赋能合纵连横，构建生态平台。新的零售格局中，协作和智能是两个核心关键因素。早期企业都习惯于采取单兵突围战术，通过不断扩大但依然有限的内部资源、能力和时间，力求在全链条提升话语权或控制力，从而通过降低成本或以差异化竞争，获取市场竞争的胜利。
+但在当前大环境中，信息和需求变得多元、动态、复杂、模糊，无论是哪一类企业，都需要理解生态边界以及自己在生态内的定位。因此，与其单兵作战，不如合众家之力，共同构建有自身造血能力并有输血实力的生态系统，实现生态内互惠互利，服务于快速变化的消费者的多元化需求，打造集合各方资源的生态联合平台，快速拓展流量与边界，加强零售体系整体的竞争力。
+第三，以数据重塑管理模式，革故鼎新。价值管理学教会我们通过管理优化，尽可能地最大化交易价值。零售企业历经百年，由于市场&#x2F;消费者&#x2F;价值链&#x2F;品类的延伸及市场竞争环境的变化，通过管理优化和运营优化，保持企业的竞争力依然是这个时代最重要的话题之一，也是企业生存和发展的根基所在。
+数字经济时代，企业的核心价值将从最初的交易价值，转向通过交易价值和数据价值获取现金及利润，并最终形成以数据价值与衍生价值为利润核心。可能会出现更多的后向收费模式。
+“智”胜未来将是每一个零售企业都需要面临的重要抉择。
 ]]></content>
       <categories>
         <category>随想</category>
