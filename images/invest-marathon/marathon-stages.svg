@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">财富马拉松阶段图</title>
+  <desc id="desc">从本金积累到财富保全的五个阶段。</desc>
+  <rect width="960" height="520" rx="24" fill="#fbfaf7"/>
+  <text x="72" y="66" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="32" font-weight="700" fill="#111827">财富马拉松不是冲刺，而是分阶段配速</text>
+  <text x="72" y="105" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="18" fill="#6b7280">每个阶段的重点不同，适合的投资动作也不同</text>
+
+  <path d="M92 325 C210 190 330 408 452 268 C574 128 706 389 868 196" fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round"/>
+  <path d="M92 325 C210 190 330 408 452 268 C574 128 706 389 868 196" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <g>
+      <circle cx="92" cy="325" r="18" fill="#0f766e"/>
+      <rect x="50" y="355" width="160" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="130" y="389" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">本金建立</text>
+      <text x="130" y="418" text-anchor="middle" font-size="14" fill="#6b7280">提高收入，留下钱</text>
+    </g>
+    <g>
+      <circle cx="286" cy="298" r="18" fill="#2563eb"/>
+      <rect x="220" y="164" width="172" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="306" y="198" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">资产积累</text>
+      <text x="306" y="227" text-anchor="middle" font-size="14" fill="#6b7280">建立资产组合</text>
+    </g>
+    <g>
+      <circle cx="452" cy="268" r="18" fill="#7c3aed"/>
+      <rect x="396" y="318" width="176" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="484" y="352" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">资产增长</text>
+      <text x="484" y="381" text-anchor="middle" font-size="14" fill="#6b7280">让复利开始发力</text>
+    </g>
+    <g>
+      <circle cx="654" cy="276" r="18" fill="#d97706"/>
+      <rect x="570" y="130" width="184" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="662" y="164" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">财富管理</text>
+      <text x="662" y="193" text-anchor="middle" font-size="14" fill="#6b7280">控制回撤与波动</text>
+    </g>
+    <g>
+      <circle cx="868" cy="196" r="18" fill="#be123c"/>
+      <rect x="754" y="244" width="176" height="88" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="842" y="278" text-anchor="middle" font-size="19" font-weight="700" fill="#111827">财富保全</text>
+      <text x="842" y="307" text-anchor="middle" font-size="14" fill="#6b7280">现金流覆盖生活</text>
+    </g>
+  </g>
+</svg>
